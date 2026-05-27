@@ -9,7 +9,6 @@ const fraunces = Fraunces({
   display: "swap",
   variable: "--font-fraunces",
   weight: ["400", "500", "600", "700"],
-  axes: ["opsz"],
 });
 
 const dmSans = DM_Sans({
