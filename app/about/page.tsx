@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Hipsana is a practical guide to HIPAA and cybersecurity for solo dental, medical, and therapy practices. Here is how we work and who we serve.",
+    "How Hipsana works: a free HIPAA Security Scorecard and written risk review for solo dental, medical, and therapy practices, plus an intro to a vetted specialist when you want one.",
 };
 
 export default function AboutPage() {
@@ -16,52 +17,67 @@ export default function AboutPage() {
         </h1>
 
         <p className="mt-8 text-lg leading-relaxed text-muted">
-          Hipsana is built for a specific reader: the dentist, physician, or
+          Hipsana is built for a specific person: the dentist, physician, or
           therapist who owns a small practice, knows HIPAA is serious, and
-          doesn&rsquo;t have time to read a 4,000-page federal register entry.
+          doesn&rsquo;t have time to read hundreds of pages of federal
+          regulations to find out where they stand.
         </p>
 
         <h2>Who we serve</h2>
         <p>
           Solo practitioners and practice owners with one to ten staff. People
-          who can&rsquo;t hire a full-time compliance officer, can&rsquo;t afford
-          a $50,000 consulting engagement, and shouldn&rsquo;t need to. Most of
-          our readers are between 35 and 58, technically literate enough to use
-          modern software, but not interested in becoming IT specialists.
+          who run the whole practice themselves, know HIPAA carries real
+          personal risk, and have no in-house compliance help and no time to
+          build it.
         </p>
 
         <h2>How we work</h2>
         <p>
-          Every review starts with the actual regulation, not a vendor&rsquo;s
-          marketing page. When we say a product is HIPAA-compliant, we&rsquo;ve
-          verified the BAA (Business Associate Agreement) language, checked the
-          encryption claims against current NIST guidance, and noted the
-          configuration steps required &mdash; because most HIPAA violations
-          happen at the configuration layer, not the product layer.
+          It starts with the Scorecard: ten yes/no questions about how your
+          practice handles patient data, scored against the HIPAA Security Rule.
+          You get a number out of 100 and a written review of the gaps that
+          matter most for your practice.
         </p>
-
         <p>
-          When we recommend a product, we say why. When we don&rsquo;t, we say
-          why not. When a free option is good enough, we recommend the free
-          option even if it pays us nothing.
+          The review starts with the actual regulation, not a vendor&rsquo;s
+          marketing page. We look at what the Security Rule requires, where
+          practices often fall short, and what a fix actually involves, because
+          HIPAA problems often come down to how a tool is configured, not the
+          tool itself.
+        </p>
+        <p>
+          If you want help closing those gaps, we introduce you to a vetted
+          compliance specialist who does that work. The Scorecard and the review
+          are free.
         </p>
 
         <h2>What we are not</h2>
         <p>
-          We are not attorneys. We are not compliance officers. We are not
-          healthcare professionals. Hipsana is a publication, not a service.
-          Nothing here is legal, regulatory, medical, or financial advice. For
-          questions specific to your practice, consult someone licensed to give
-          you that answer.
+          We are not attorneys, compliance officers, or healthcare
+          professionals. The Scorecard and the written review are informational:
+          a starting point for understanding your risk, not legal or compliance
+          advice, and not a substitute for a professional engagement when your
+          situation calls for one.
+        </p>
+        <p>
+          We also don&rsquo;t handle patient data. The Scorecard asks how your
+          practice operates, never about individual patients, and we never
+          collect protected health information. For questions specific to your
+          practice, consult someone licensed to answer them.
         </p>
 
         <h2>How we make money</h2>
         <p>
-          Hipsana earns affiliate commissions on some of the products we
-          recommend. We disclose this on every page, and we maintain a strict
-          rule: commission rate never affects our recommendation. When a higher-
-          commission product isn&rsquo;t the right fit, we recommend a different
-          one. Full details on our{" "}
+          When the Scorecard surfaces gaps you want help with, we connect you to
+          a vetted compliance specialist who handles that work. If you decide to
+          work with them, their firm pays us a referral fee. It never costs you
+          anything, and it never changes what your review says.
+        </p>
+        <p>
+          Hipsana also earns affiliate commissions on a small number of the
+          tools we mention. That is a secondary part of how the site is funded,
+          it is disclosed where it applies, and a commission never decides what
+          we recommend. Full details on our{" "}
           <a href="/disclosure">disclosure page</a>.
         </p>
 
@@ -71,6 +87,17 @@ export default function AboutPage() {
           <a href="mailto:hello@hipsana.com">hello@hipsana.com</a>. We read
           every message and respond to most within a few business days.
         </p>
+      </div>
+
+      <div className="mt-14 max-w-prose border-t border-muted-border pt-10">
+        <p className="text-[17px] leading-relaxed text-muted">
+          See where your practice stands. Ten questions, about three minutes.
+        </p>
+        <div className="mt-6">
+          <Link href="/scorecard" className="btn-primary">
+            Check my practice &rarr;
+          </Link>
+        </div>
       </div>
     </section>
   );
