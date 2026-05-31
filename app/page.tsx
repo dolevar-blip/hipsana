@@ -1,10 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  description:
+    "A free HIPAA Security Scorecard for solo dental, medical, and therapy practices. Find your gaps in minutes, then get a written review and an intro to a vetted specialist.",
+};
 
 const pillars = [
   {
-    title: "Plain-language reviews",
+    title: "Plain-language risk findings",
     body:
-      "We translate HIPAA jargon into the language a busy clinician actually thinks in. No three-page preamble before the recommendation.",
+      "We translate the HIPAA Security Rule into the handful of gaps that actually put your practice at risk. The answer comes first, the jargon stays out.",
   },
   {
     title: "Solo-practice scale",
@@ -29,17 +35,18 @@ export default function HomePage() {
             HIPAA shouldn&rsquo;t require a compliance officer you can&rsquo;t afford.
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-muted">
-            Hipsana is a practical guide to cybersecurity and HIPAA for clinicians
-            who run their own practice. Reviews you can read in ten minutes,
-            recommendations you can implement in an afternoon.
+            Hipsana helps clinicians who run their own practice find the HIPAA
+            gaps that put them at risk, then fix them. Start with a free Security
+            Scorecard: ten questions, about three minutes, a score and a written
+            review at the end.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
-            <Link href="/about" className="btn-primary">
-              How we work
+            <Link href="/scorecard" className="btn-primary">
+              Check my practice &rarr;
             </Link>
-            <Link href="/disclosure" className="btn-secondary">
-              Our disclosure policy
+            <Link href="/about" className="btn-secondary">
+              How we work
             </Link>
           </div>
         </div>
@@ -72,19 +79,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Coming soon */}
+      {/* Start with the Scorecard */}
       <section className="container-page py-20 md:py-24">
         <div className="max-w-2xl">
-          <p className="eyebrow mb-3">What&rsquo;s next</p>
           <h2 className="font-display text-3xl tracking-tight md:text-4xl">
-            First reviews and tools coming soon.
+            Start with the free HIPAA Scorecard.
           </h2>
           <p className="mt-5 text-[17px] leading-relaxed text-muted">
-            We&rsquo;re building this site in public. The first round of reviews is
-            in progress, and the first interactive tool &mdash; a breach-exposure
-            checker for clinical practices &mdash; will launch alongside them.
+            Answer ten yes/no questions about how your practice handles patient
+            data. You&rsquo;ll get a score out of 100 and a written review of your
+            biggest gaps, plus the option to book a short risk review and an
+            intro to a vetted specialist if you want help. About three minutes.
           </p>
-          <p className="mt-5 text-[17px] leading-relaxed text-muted">
+
+          <div className="mt-8">
+            <Link href="/scorecard" className="btn-primary">
+              Check my practice &rarr;
+            </Link>
+          </div>
+
+          <p className="mt-8 text-[17px] leading-relaxed text-muted">
             For questions, partnership inquiries, or feedback, the address is{" "}
             <a
               href="mailto:hello@hipsana.com"
