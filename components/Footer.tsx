@@ -37,31 +37,34 @@ export default function Footer() {
         <div className="mt-12 space-y-6 border-t border-muted-border pt-8 text-xs leading-relaxed text-muted-light">
           <p>
             <strong className="font-semibold text-muted">
-              Affiliate disclosure:
+              How we make money:
             </strong>{" "}
-            Hipsana participates in affiliate programs for some of the products
-            we review. If you sign up for a product through one of our links, we
-            may earn a commission at no additional cost to you. Our
-            recommendations are not influenced by commission rates. We only
-            recommend products we&rsquo;ve tested or have direct experience with.
-            See our{" "}
+            The Scorecard and review are free. If we connect you with a vetted
+            specialist and you choose to work with them, their firm pays us a
+            referral fee. It never costs you anything and never changes your
+            review. We share your details with that one partner only. Some links
+            elsewhere on the site are affiliate links; commissions never affect
+            what we recommend. See our{" "}
             <Link href="/disclosure" className="underline hover:text-ink">
-              full disclosure policy
-            </Link>
-            .
+              Disclosure
+            </Link>{" "}
+            and{" "}
+            <Link href="/privacy" className="underline hover:text-ink">
+              Privacy
+            </Link>{" "}
+            pages.
           </p>
 
           <p>
             <strong className="font-semibold text-muted">
               Educational content only:
             </strong>{" "}
-            Hipsana provides informational content about cybersecurity practices
-            and compliance frameworks. We are not attorneys, compliance officers,
-            or healthcare professionals. Nothing on this site constitutes legal,
-            regulatory, medical, or financial advice. For questions specific to
-            your practice, consult a qualified professional. Regulations change;
-            verify current requirements with the relevant regulator (HHS, OCR,
-            FTC, etc.) before acting on any information here.
+            Hipsana provides informational content about cybersecurity and HIPAA
+            compliance. We are not attorneys, compliance officers, or healthcare
+            professionals, and nothing here is legal, regulatory, medical, or
+            financial advice. For your specific situation, consult a qualified
+            professional, and verify current requirements with the relevant
+            regulator (HHS, OCR, FTC) before acting.
           </p>
 
           <p className="pt-2">
