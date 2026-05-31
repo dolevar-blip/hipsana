@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Disclosure",
   description:
-    "Hipsana&rsquo;s affiliate disclosure, review methodology, and conflict-of-interest policy. Full transparency on how we make money and how we choose recommendations.",
+    "How Hipsana makes money: referral fees from vetted specialists, a smaller affiliate line, and our rule that neither ever changes what your review says.",
 };
 
 export default function DisclosurePage() {
@@ -12,93 +12,85 @@ export default function DisclosurePage() {
       <div className="prose-hipsana">
         <p className="eyebrow mb-3">Disclosure &amp; methodology</p>
         <h1 className="font-display text-4xl tracking-tight md:text-5xl">
-          Full transparency on how we make money.
+          How we make money, in plain terms.
         </h1>
 
         <p className="mt-8 text-lg leading-relaxed text-muted">
-          The short version: some of the products we recommend pay us a
-          commission when you sign up through our links. We disclose this on
-          every page where it applies. Our recommendations are not influenced by
-          commission rates.
+          The short version: when we connect you with a specialist and you hire
+          them, we get paid. When you click certain product links, we may earn a
+          small commission. Neither one changes what your Scorecard or review
+          tells you. Here are the details.
         </p>
 
-        <h2>Affiliate relationships</h2>
+        <h2>How the free review is paid for</h2>
         <p>
-          Hipsana participates in affiliate programs for cybersecurity and
-          compliance products that serve healthcare practices. When you click an
-          affiliate link on this site and sign up for the product, we may
-          receive a commission. The price you pay is the same as if you had
-          gone directly to the vendor.
+          The Scorecard and the written review are free to you. If your review
+          surfaces gaps you want help with, we introduce you to a vetted
+          compliance specialist who does that work. If you choose to hire them,
+          their firm pays us a referral fee.
+        </p>
+        <p>
+          You never pay us, and the fee never changes what your review says. If
+          the honest finding is that your practice is in good shape, that is
+          what we tell you, referral or not.
         </p>
 
+        <h2>How we handle your information</h2>
         <p>
-          A list of the specific affiliate programs we participate in is
-          maintained internally and disclosed at the article level when
-          relevant. We are not paid for reviews. We do not accept money in
-          exchange for favorable coverage.
+          To deliver the review, we share your details with that one specialist
+          partner and no one else. We do not sell your information. What we
+          collect, why, how long we keep it, and how to have it deleted is laid
+          out on our <a href="/privacy">Privacy page</a>.
         </p>
 
-        <h2>How we choose what to recommend</h2>
+        <h2>Affiliate links (a smaller, secondary part)</h2>
         <p>
-          For every product we cover, we evaluate against the same criteria:
-          actual HIPAA compliance (BAA available, encryption standards meet
-          current NIST guidance, audit logging present), fit for solo and small
-          practices, total cost over twelve months, and the friction of
-          day-to-day use.
+          Some pages mention specific tools, and a few of those are affiliate
+          links. If you sign up through one, we may earn a commission at no
+          extra cost to you. We label these where they appear. A commission is
+          never the reason we mention a tool, and when a free option does the
+          job, we say so.
         </p>
 
+        <h2>How we decide what to tell you</h2>
         <p>
-          Commission rate is not on that list. When a higher-commission product
-          fails the fit test for our reader, we recommend the lower-commission
-          product. When the right answer is a free product that pays us
-          nothing, we recommend the free product.
-        </p>
-
-        <h2>What you can expect from us</h2>
-        <p>
-          Inline disclosure on every page that contains affiliate links, before
-          the first recommendation. The phrase &ldquo;affiliate partner&rdquo;
-          will appear when applicable.
+          Whether we are scoring your practice or writing about a tool, we use
+          the same yardstick: what the HIPAA Security Rule actually requires,
+          what fits a one-to-ten-person practice, the real cost over a year, and
+          how much day-to-day friction it adds.
         </p>
         <p>
-          A clear separation between products we&rsquo;ve used personally,
-          products we&rsquo;ve evaluated but not used long-term, and products we
-          mention only for context. We will tell you which category each
-          recommendation falls into.
-        </p>
-        <p>
-          An honest accounting of trade-offs. Every product has weaknesses. We
-          name them.
+          Commission rate and referral fee are not on that list. When the right
+          answer earns us nothing, that is still the answer we give.
         </p>
 
         <h2>What we will not do</h2>
         <p>
-          We will not bury affiliate disclosures in tiny gray footer text. We
-          will not accept free product access in exchange for a favorable
-          review. We will not claim a product is &ldquo;100% HIPAA
-          compliant,&rdquo; because no product is &mdash; compliance depends on
-          how you configure and use it, and any vendor or publisher who tells
-          you otherwise is selling something.
+          We will not bury disclosures in tiny gray text. We will not accept
+          payment in exchange for a better score or a favorable write-up. We
+          will not call any product &ldquo;100% HIPAA compliant,&rdquo; because
+          none is. Compliance depends on how you configure and use it, and
+          anyone who tells you otherwise is selling something.
         </p>
 
         <h2>Educational content disclaimer</h2>
         <p>
-          Hipsana provides informational content about cybersecurity practices
-          and compliance frameworks. We are not attorneys, compliance officers,
-          or healthcare professionals. Nothing on this site constitutes legal,
-          regulatory, medical, or financial advice. For questions specific to
-          your practice, consult a qualified professional. Regulations change;
-          verify current requirements with the relevant regulator (HHS, OCR,
-          FTC, etc.) before acting on any information here.
+          Hipsana provides informational content about cybersecurity and HIPAA
+          compliance. We are not attorneys, compliance officers, or healthcare
+          professionals. Nothing here is legal, regulatory, medical, or
+          financial advice. For questions specific to your practice, consult a
+          qualified professional. Regulations change; verify current
+          requirements with the relevant regulator (HHS, OCR, FTC) before
+          acting.
         </p>
 
         <h2>Questions or corrections</h2>
         <p>
           If you spot an error, a stale recommendation, or a conflict of
-          interest we should disclose, please email{" "}
+          interest we should disclose, email{" "}
           <a href="mailto:hello@hipsana.com">hello@hipsana.com</a>. We respond
-          to corrections within a few business days and publish updates with a
-          dated note when content materially changes.
+          to corrections within a few business days and note material changes
+          with a date.
         </p>
       </div>
     </section>
