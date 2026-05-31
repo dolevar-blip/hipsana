@@ -33,8 +33,9 @@ export default function ScorecardPage() {
         </p>
         <p className="prose-hipsana mt-4">
           When you finish, you get a written review by email and the option to
-          book a short risk review with a vetted specialist. It takes about
-          three minutes, and there is no cost.
+          book a short risk review, with an introduction to a vetted specialist
+          if you want help closing the gaps. It takes about three minutes, and
+          there is no cost.
         </p>
       </div>
 
