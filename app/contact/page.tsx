@@ -32,10 +32,10 @@ export default function ContactPage() {
 
         <h2>What we can help with</h2>
         <p>
-          Corrections to anything we&rsquo;ve published. Suggestions for
-          products you&rsquo;d like to see reviewed. Partnership and outreach
-          inquiries from cybersecurity vendors serving the healthcare market.
-          Feedback on how we can make our reviews more useful.
+          Corrections to anything we&rsquo;ve published. Partnership and
+          outreach inquiries from cybersecurity and compliance vendors serving
+          the healthcare market. Feedback on the Scorecard or your review.
+          Questions about how Hipsana works.
         </p>
 
         <h2>What we can&rsquo;t help with</h2>
@@ -58,8 +58,9 @@ export default function ContactPage() {
 
         <p className="text-sm text-muted">
           Please do not send protected health information (PHI) by email.
-          Hipsana is a publisher, not a healthcare service, and our email is
-          not configured for PHI handling.
+          Hipsana is an educational publisher and a referral service, not a
+          healthcare provider, and our email is not configured for PHI
+          handling.
         </p>
       </div>
     </section>
