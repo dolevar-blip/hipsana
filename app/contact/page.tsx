@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -62,6 +63,19 @@ export default function ContactPage() {
           healthcare provider, and our email is not configured for PHI
           handling.
         </p>
+      </div>
+
+      <div className="mt-14 max-w-prose border-t border-muted-border pt-10">
+        <p className="text-[17px] leading-relaxed text-muted">
+          If a HIPAA question brought you here, the free Scorecard is the
+          fastest way to see where your practice stands. Ten questions, about
+          three minutes.
+        </p>
+        <div className="mt-6">
+          <Link href="/scorecard" className="btn-primary">
+            Check my practice &rarr;
+          </Link>
+        </div>
       </div>
     </section>
   );
