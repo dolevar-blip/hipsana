@@ -1,10 +1,12 @@
+// app/sitemap.ts
 import type { MetadataRoute } from "next";
+import { getPublishedArticles } from "@/content/articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://hipsana.com";
   const lastModified = new Date();
 
-  return [
+  const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified,
@@ -42,4 +44,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
   ];
+
+  const articleRoutes: MetadataRoute.Sitemap = getPublishedArticles().map(
+    (article) => ({
+      url: `${baseUrl}/articles/${article.slug}`,
+      lastModified: article.dateModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    })
+  );
+
+  return [...staticRoutes, ...articleRoutes];
 }
