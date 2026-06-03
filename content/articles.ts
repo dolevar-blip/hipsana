@@ -85,13 +85,19 @@ export const articles: Article[] = [
     datePublished: "2026-06-03",
     dateModified: "2026-06-03",
     body: [
+      {
+        type: "p",
+        runs: [
+          "A solo doctor once reported a data breach to the federal government, and the government fined him $100,000 for one document he didn't have. Here is the document every dental practice is required to keep, why a checklist won't pass for it, and how to tell if you are exposed.",
+        ],
+      },
       { type: "h2", text: "The short version" },
       {
         type: "ul",
         items: [
           [
             { strong: "Yes. " },
-            "A security risk analysis is a required part of the HIPAA Security Rule (45 CFR \u00a7 164.308(a)(1)(ii)(A)) for every covered dental practice, whether you run ten operatories or a single chair.",
+            "The HIPAA Security Rule requires one from every covered dental practice, whether you run ten operatories or a single chair. It is not optional, and not merely \"recommended.\"",
           ],
           [
             { strong: "It is the most common gap OCR finds. " },
@@ -125,11 +131,11 @@ export const articles: Article[] = [
           ". If you'd rather understand the why first, read on.",
         ],
       },
-      { type: "p", runs: ["Here is how that plays out in real life."] },
+      { type: "p", runs: ["Here is how that plays out, and what to actually do about it."] },
       {
         type: "p",
         runs: [
-          "In 2020, the HHS Office for Civil Rights (OCR) announced its first HIPAA settlement of the year. The target was a solo gastroenterologist in Ogden, Utah, seeing about 3,000 patients a year. He had done something most owners would call responsible: he filed a breach report with OCR after his electronic records vendor locked him out of his own patient data over a billing dispute. OCR opened a review of that complaint, and the review turned back on him. They found he had never conducted a risk analysis, and still had not completed one even after the agency walked him through what was required. He paid $100,000 and accepted two years of federal monitoring. (HHS Resolution Agreement, Steven A. Porter, M.D., 2020.)",
+          "Start with that solo doctor. He was a gastroenterologist in Ogden, Utah, seeing about 3,000 patients a year. Back in 2013 he reported his own records vendor to OCR for locking him out of his patients' data over a billing dispute. OCR opened a review of that complaint, and the review turned back on him: it found he had never conducted a risk analysis, and that he still had not completed one even after the agency walked him through what was required. The $100,000 settlement and two years of federal monitoring followed. (HHS Resolution Agreement, Steven A. Porter, M.D., 2020.)",
         ],
       },
       {
