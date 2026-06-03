@@ -79,16 +79,13 @@ function renderBlock(block: Block, i: number) {
       return <p key={i}>{renderRuns(block.runs)}</p>;
     case "quote":
       return (
-        <blockquote
-          key={i}
-          className="my-6 border-l-2 border-teal pl-4 italic text-muted"
-        >
+        <blockquote key={i} className="article-quote">
           {renderRuns(block.runs)}
         </blockquote>
       );
     case "ul":
       return (
-        <ul key={i} className="my-5 list-disc space-y-2 pl-6">
+        <ul key={i}>
           {block.items.map((item, j) => (
             <li key={j}>{renderRuns(item)}</li>
           ))}
@@ -131,7 +128,30 @@ export default function ArticlePage({
   const article = getArticleBySlug(params.slug);
   if (!article) notFound();
 
+  const body = article.body;
   const hasFaq = article.faq.length > 0;
+
+  // Lead: the first block, if it's a paragraph, is rendered as a standfirst.
+  const lead = body.length > 0 && body[0].type === "p" ? body[0] : null;
+
+  // "The short version" heading + the list that follows it become a styled card.
+  const tldrHeadingIndex = body.findIndex(
+    (b) => b.type === "h2" && b.text.trim().toLowerCase() === "the short version"
+  );
+  const tldrListIndex =
+    tldrHeadingIndex >= 0 && body[tldrHeadingIndex + 1]?.type === "ul"
+      ? tldrHeadingIndex + 1
+      : -1;
+  const tldrItems: InlineRun[][] =
+    tldrListIndex >= 0
+      ? (body[tldrListIndex] as Extract<Block, { type: "ul" }>).items
+      : [];
+
+  // Blocks consumed by the lead / card, so we don't render them twice.
+  const skip = new Set<number>();
+  if (lead) skip.add(0);
+  if (tldrHeadingIndex >= 0) skip.add(tldrHeadingIndex);
+  if (tldrListIndex >= 0) skip.add(tldrListIndex);
 
   return (
     <article className="container-page py-16 md:py-24">
@@ -146,42 +166,63 @@ export default function ArticlePage({
         />
       )}
 
-      <div className="prose-hipsana">
+      <div className="mx-auto max-w-prose">
         <p className="eyebrow mb-3">HIPAA &amp; Compliance</p>
-        <h1 className="mb-4 text-3xl font-semibold md:text-4xl">
+        <h1 className="mb-4 text-3xl font-semibold leading-tight md:text-4xl">
           {article.title}
         </h1>
-        <p className="mb-10 text-sm text-muted">
+        <p className="mb-8 text-sm text-muted">
           By {article.author} · Updated {formatDate(article.dateModified)}
         </p>
 
-        {article.body.map((block, i) => renderBlock(block, i))}
+        {lead && lead.type === "p" && (
+          <p className="article-lead">{renderRuns(lead.runs)}</p>
+        )}
+
+        {tldrHeadingIndex >= 0 && (
+          <aside className="key-takeaways">
+            <p className="key-takeaways-label">The short version</p>
+            <ul>
+              {tldrItems.map((item, j) => (
+                <li key={j}>{renderRuns(item)}</li>
+              ))}
+            </ul>
+          </aside>
+        )}
+
+        <div className="prose-hipsana">
+          {body.map((block, i) => (skip.has(i) ? null : renderBlock(block, i)))}
+        </div>
 
         {hasFaq && (
-          <section className="mt-14">
-            <h2>Frequently asked questions</h2>
-            {article.faq.map((item, i) => (
-              <div key={i} className="mt-6">
-                <h3>{item.question}</h3>
-                <p>{item.answer}</p>
-              </div>
-            ))}
+          <section className="mt-16">
+            <h2 className="font-display text-2xl tracking-tight md:text-3xl">
+              Frequently asked questions
+            </h2>
+            <div className="mt-8">
+              {article.faq.map((item, i) => (
+                <div key={i} className="faq-item">
+                  <h3>{item.question}</h3>
+                  <p>{item.answer}</p>
+                </div>
+              ))}
+            </div>
           </section>
         )}
-      </div>
 
-      <aside className="mt-16 rounded-lg border border-muted-border bg-muted-bg p-8">
-        <p className="font-display text-xl font-semibold text-ink">
-          Not sure where your practice stands?
-        </p>
-        <p className="mt-2 max-w-prose text-muted">
-          Answer 10 quick questions and get a free HIPAA Security Risk score for
-          your practice. No cost, no commitment.
-        </p>
-        <Link href="/scorecard" className="btn-primary mt-5">
-          Take the free Scorecard →
-        </Link>
-      </aside>
+        <aside className="article-cta">
+          <p className="font-display text-xl font-semibold text-ink">
+            Not sure where your practice stands?
+          </p>
+          <p className="mt-2 text-muted">
+            The free HIPAA Scorecard checks 10 core controls and scores your
+            practice out of 100. About three minutes, no cost.
+          </p>
+          <Link href="/scorecard" className="btn-primary mt-5">
+            Check my practice →
+          </Link>
+        </aside>
+      </div>
     </article>
   );
 }
