@@ -63,7 +63,83 @@
     @apply text-teal underline decoration-teal/30 underline-offset-2 transition-colors hover:decoration-teal;
   }
 
+  /* Body lists: custom teal dot markers, comfortable rhythm */
+  .prose-hipsana ul {
+    @apply my-5 space-y-2;
+    list-style: none;
+    padding-left: 0;
+  }
+  .prose-hipsana ul > li {
+    @apply relative pl-6;
+  }
+  .prose-hipsana ul > li::before {
+    content: "";
+    @apply absolute left-1 h-1.5 w-1.5 rounded-full bg-teal;
+    top: 0.7em;
+  }
+
   .eyebrow {
     @apply text-xs font-medium uppercase tracking-[0.14em] text-muted;
+  }
+
+  /* ---------- Article reading experience ---------- */
+
+  /* Standfirst / lead paragraph directly under the title */
+  .article-lead {
+    @apply mb-9 text-[1.3rem] leading-[1.55] text-muted md:text-[1.4rem];
+  }
+
+  /* "The short version" key-takeaways card */
+  .key-takeaways {
+    @apply my-10 rounded-2xl border border-teal/15 bg-teal-subtle px-6 py-7 md:px-8 md:py-8;
+  }
+  .key-takeaways-label {
+    @apply mb-5 text-xs font-medium uppercase tracking-[0.16em] text-teal;
+  }
+  .key-takeaways ul {
+    @apply space-y-4;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .key-takeaways li {
+    @apply relative pl-7 text-[16px] leading-[1.55] text-ink;
+  }
+  .key-takeaways li::before {
+    content: "\2192";
+    @apply absolute left-0 font-semibold text-teal;
+    top: 0.05em;
+  }
+  .key-takeaways strong {
+    @apply font-semibold text-ink;
+  }
+
+  /* Accent callout (the regulation quote) */
+  .article-quote {
+    @apply my-8 rounded-r-xl border-l-[3px] border-teal bg-teal-subtle/60 py-4 pl-6 pr-5 text-[17px] leading-relaxed text-ink;
+  }
+
+  /* Section divider */
+  .article-divider {
+    @apply my-14 border-0 border-t border-muted-border;
+  }
+
+  /* FAQ */
+  .faq-item {
+    @apply border-t border-muted-border pt-6;
+  }
+  .faq-item + .faq-item {
+    @apply mt-6;
+  }
+  .faq-item h3 {
+    @apply mt-0 mb-2 text-lg md:text-xl;
+  }
+  .faq-item p {
+    @apply text-[16px] leading-[1.65] text-muted;
+  }
+
+  /* Bottom Scorecard CTA */
+  .article-cta {
+    @apply mt-16 rounded-2xl border border-teal/15 bg-teal-subtle px-7 py-8 md:px-9;
   }
 }
