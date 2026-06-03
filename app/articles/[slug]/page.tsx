@@ -91,6 +91,32 @@ function renderBlock(block: Block, i: number) {
           ))}
         </ul>
       );
+    case "steps":
+      return (
+        <div key={i} className="my-10">
+          {block.items.map((step, j) => (
+            <div key={j} className="relative flex gap-5 pb-8 last:pb-0">
+              {j < block.items.length - 1 && (
+                <span
+                  aria-hidden="true"
+                  className="absolute bottom-0 left-[18px] top-9 w-px bg-teal/20"
+                />
+              )}
+              <div className="relative z-10 flex h-9 w-9 flex-none items-center justify-center rounded-full bg-teal text-sm font-semibold text-paper">
+                {j + 1}
+              </div>
+              <div className="pt-1">
+                <div className="font-display text-lg font-semibold text-ink">
+                  {step.label}
+                </div>
+                <p className="mt-1 text-[16px] leading-[1.6] text-muted">
+                  {step.detail}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      );
   }
 }
 
