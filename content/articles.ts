@@ -14,7 +14,8 @@ export type Block =
   | { type: "h2"; text: string }
   | { type: "h3"; text: string }
   | { type: "ul"; items: InlineRun[][] }
-  | { type: "quote"; runs: InlineRun[] };
+  | { type: "quote"; runs: InlineRun[] }
+  | { type: "steps"; items: { label: string; detail: string }[] };
 
 export type FaqItem = {
   question: string;
@@ -224,26 +225,37 @@ export const articles: Article[] = [
         ],
       },
       {
-        type: "ul",
+        type: "steps",
         items: [
-          [
-            { strong: "Inventory your ePHI. " },
-            "Map where electronic patient data actually lives. In a dental office that means more than the chart: digital X-rays and panoramic images, CBCT scans, intraoral photos, the practice-management system (Dentrix, Eaglesoft, Open Dental), imaging software (Dexis, iTero), the billing and insurance data, cloud backups, and anything synced to a laptop or phone.",
-          ],
-          [
-            { strong: "Identify threats and vulnerabilities " },
-            "to each of those, from ransomware and phishing down to an unencrypted backup drive in a desk.",
-          ],
-          [
-            { strong: "Rate likelihood and impact " },
-            "for each, so you can tell a minor issue from a serious one.",
-          ],
-          [{ strong: "Document your safeguards " }, "and the decisions you made."],
-          [{ strong: "Write a remediation plan " }, "for the gaps you found."],
-          [
-            { strong: "Keep the record. " },
-            "HIPAA requires documentation to be retained for six years.",
-          ],
+          {
+            label: "Inventory your ePHI",
+            detail:
+              "Map where electronic patient data actually lives: digital X-rays and CBCT scans, intraoral photos, the practice-management system (Dentrix, Eaglesoft, Open Dental), imaging software (Dexis, iTero), billing and insurance data, cloud backups, and anything synced to a laptop or phone.",
+          },
+          {
+            label: "Identify threats and vulnerabilities",
+            detail:
+              "For each of those, from ransomware and phishing down to an unencrypted backup drive in a desk drawer.",
+          },
+          {
+            label: "Rate likelihood and impact",
+            detail:
+              "Score each risk so you can tell a minor issue from a serious one.",
+          },
+          {
+            label: "Document your safeguards",
+            detail:
+              "Record the protections you have in place and the decisions you made.",
+          },
+          {
+            label: "Write a remediation plan",
+            detail: "Lay out how and when you will close each gap you found.",
+          },
+          {
+            label: "Keep the record",
+            detail:
+              "HIPAA requires the documentation to be retained for six years.",
+          },
         ],
       },
       {
