@@ -117,6 +117,26 @@ function renderBlock(block: Block, i: number) {
           ))}
         </div>
       );
+    case "image":
+      return (
+        <figure key={i} className="my-10">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={block.src}
+            alt={block.alt}
+            width={block.width}
+            height={block.height}
+            loading="lazy"
+            decoding="async"
+            className="h-auto w-full rounded-xl border border-muted-border"
+          />
+          {block.caption && (
+            <figcaption className="mt-3 text-sm leading-[1.6] text-muted">
+              {renderRuns(block.caption)}
+            </figcaption>
+          )}
+        </figure>
+      );
   }
 }
 
