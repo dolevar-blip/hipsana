@@ -218,7 +218,14 @@ export default function ArticlePage({
           {article.title}
         </h1>
         <p className="mb-8 text-sm text-muted">
-          By {article.author} · Updated {formatDate(article.dateModified)}
+          By{" "}
+          <Link
+            href="/about"
+            className="underline underline-offset-2 hover:text-ink"
+          >
+            {article.author}
+          </Link>{" "}
+          · Updated {formatDate(article.dateModified)}
         </p>
 
         {lead && lead.type === "p" && (
