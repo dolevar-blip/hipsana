@@ -15,7 +15,15 @@ export type Block =
   | { type: "h3"; text: string }
   | { type: "ul"; items: InlineRun[][] }
   | { type: "quote"; runs: InlineRun[] }
-  | { type: "steps"; items: { label: string; detail: string }[] };
+  | { type: "steps"; items: { label: string; detail: string }[] }
+  | {
+      type: "image";
+      src: string;
+      alt: string;
+      width: number;
+      height: number;
+      caption?: InlineRun[];
+    };
 
 export type FaqItem = {
   question: string;
@@ -143,6 +151,21 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "He is not a dentist. But to OCR, a solo physician and a solo dentist look identical: a small covered entity holding electronic patient data, answerable to the same baseline. The lesson here isn't \"don't report breaches.\" It's that the one document that would have protected him was the one he never had.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-settlement-porter-risk-analysis.webp",
+        alt: "Excerpts from the HHS Office for Civil Rights resolution agreement with Steven A. Porter, M.D., P.C., a solo practice, with the cited failure to conduct a risk analysis and the $100,000 settlement highlighted.",
+        width: 1500,
+        height: 562,
+        caption: [
+          "Source: U.S. Department of Health and Human Services, Office for Civil Rights. ",
+          {
+            text: "Resolution Agreement, Steven A. Porter, M.D., P.C. (2020)",
+            href: "https://www.hhs.gov/sites/default/files/porter-ra-cap-508.pdf",
+          },
+          ". Highlights added by Hipsana: a solo practice, the cited failure to conduct a risk analysis, and the $100,000 settlement.",
         ],
       },
       { type: "h2", text: "Is your dental practice even covered by HIPAA?" },
