@@ -506,27 +506,21 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "When a dentist asks what happens if they fail a HIPAA audit, the honest answer changes the question. If OCR finds during an investigation that your practice missed a HIPAA requirement, the usual outcome is a written settlement, a payment that for a small practice tends to land in five or six figures, and a corrective action plan the government oversees for two to three years. A random audit by itself almost never produces a fine. What costs practices money is the investigation that follows a complaint or a reported breach.",
+          "When a dentist asks what happens if they fail a HIPAA audit, the honest answer reframes the question. A random audit by itself almost never produces a fine. What costs practices money is an OCR investigation, and it usually starts with a patient complaint or a breach you are legally required to report. If that investigation finds you missed a HIPAA requirement, the typical result is a written settlement, a payment that for a small practice lands in five or six figures, and a corrective action plan the government oversees for two to three years.",
         ],
       },
       { type: "h2", text: "The short version" },
       {
         type: "ul",
         items: [
-          [
-            "A surprise OCR audit is rare, and on its own it has almost never produced a fine. The 2016-2017 audit round found violations but imposed no penalties and opened no investigations.",
-          ],
+          ["A surprise OCR audit is rare, and on its own it has almost never produced a fine. The 2016-2017 audit round found violations but imposed none."],
           [
             "The real financial risk is an OCR ",
             { strong: "investigation" },
-            ", and nearly all of them start the same way: a patient complaint, or a breach you are legally required to report yourself.",
+            ", and nearly all of them start the same way: a patient complaint, or a breach you have to report yourself.",
           ],
-          [
-            "“Failing” usually comes down to one finding. After a breach, the first document OCR asks for is your risk analysis, and most small practices either never did one or did a checkbox version.",
-          ],
-          [
-            "The price for that single gap, in recent cases, has run from roughly $10,000 to $225,000, plus two to three years of corrective action the government monitors directly.",
-          ],
+          ["“Failing” usually comes down to one finding. After a breach, the first document OCR asks for is your risk analysis, and most small practices never did a real one."],
+          ["Recent settlements for that single gap have run from about $10,000 to $225,000, plus two to three years of monitored corrective action."],
           [
             "The way to get ahead of it is to know your gaps before OCR does. ",
             { text: "Check your practice with the HIPAA Risk Scorecard.", href: "/scorecard" },
@@ -536,12 +530,12 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "In late 2021, an emergency medical provider in Oklahoma was hit by ransomware that locked files holding records for roughly 14,000 patients. The provider, Bryan County Ambulance Authority, reported the breach to federal regulators, as the law required. OCR opened an investigation and found one decisive thing: the organization had never conducted a risk analysis, the basic security review HIPAA requires of every covered practice. The matter settled for $90,000 plus three years of federal oversight (",
+          "In late 2021, an Oklahoma emergency medical provider was hit by ransomware that locked records for roughly 14,000 patients. The provider, Bryan County Ambulance Authority, reported the breach to OCR, as the law required. OCR opened an investigation and found one decisive thing: it had never conducted a risk analysis, the basic security review HIPAA requires of every covered practice. The matter settled for $90,000 and three years of federal oversight (",
           {
             text: "HHS, October 2024",
             href: "https://www.hhs.gov/about/news/2024/10/31/hhs-office-for-civil-rights-settles-hipaa-ransomware-cybersecurity-investigation-for-90000-dollars.html",
           },
-          "). It is an ambulance service, not a dental office. But the failure OCR cited has nothing to do with ambulances and everything to do with the most common gap it finds in small practices of every kind.",
+          "). It is an ambulance service, not a dental office. But the failure OCR cited has nothing to do with ambulances, and everything to do with the most common gap it finds in small practices of every kind.",
         ],
       },
 
@@ -549,21 +543,15 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Most dentists picture a HIPAA audit as a government official appearing unannounced, clipboard in hand, ready to fine you for the box you forgot to check. That is not how the money usually changes hands.",
-        ],
-      },
-      {
-        type: "p",
-        runs: [
-          "OCR runs a formal HIPAA Audit Program under the HITECH Act, but it is small and periodic. The last full round, in 2016-2017, reviewed 166 covered entities and 41 business associates. The current round, which OCR restarted in late 2024 after an eight-year pause, covers just 50 organizations and focuses on the risk analysis and risk management requirements of the Security Rule (",
+          "Most dentists picture an audit as an official appearing unannounced to fine you for a missing box. That is not how the money usually changes hands. OCR runs a formal HIPAA Audit Program under the HITECH Act, but it is small and periodic: the 2016-2017 round reviewed about 200 organizations, and the current round, restarted in late 2024, covers just 50, focused on the risk analysis and risk management requirements of the Security Rule (",
           { text: "HHS", href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/audit/index.html" },
-          "). Across hundreds of thousands of HIPAA-regulated practices, the odds that yours is randomly selected in any given year are low.",
+          "). Across hundreds of thousands of practices, the odds yours is randomly selected in a given year are low.",
         ],
       },
       {
         type: "p",
         runs: [
-          "Here is the part that surprises people. OCR itself frames the audit program as a way to improve compliance, not to punish. In 2024, the HHS Office of Inspector General reviewed the 2016-2017 round and concluded it had done little to improve cybersecurity, in part because OCR identified violations but imposed no penalties and the audits did not even trigger follow-up investigations. In other words, the thing most owners fear, failing a surprise audit, has historically carried no fine at all.",
+          "Here is the part that surprises people. OCR frames the audit program as a way to improve compliance, not to punish. When the HHS Office of Inspector General reviewed the 2016-2017 round in 2024, it found OCR had identified violations but imposed no penalties, and the audits did not even trigger follow-up investigations. The thing most owners fear, failing a surprise audit, has historically carried no fine at all.",
         ],
       },
       {
@@ -571,7 +559,7 @@ export const articles: Article[] = [
         runs: [
           "What actually puts a practice at financial risk is an OCR ",
           { strong: "investigation" },
-          ", which is a different process with a different trigger. An investigation starts when:",
+          ", a different process with a different trigger. It starts when:",
         ],
       },
       {
@@ -579,56 +567,53 @@ export const articles: Article[] = [
         items: [
           ["A patient or staff member files a complaint with OCR, or"],
           [
-            "You report a breach of unsecured patient information, which the Breach Notification Rule requires you to do (45 CFR §§164.400-414). Breaches affecting 500 or more people are also posted on OCR’s public portal, the list many in the industry call the “Wall of Shame.”",
+            "You report a breach of unsecured patient information, which the Breach Notification Rule requires (45 CFR §§164.400-414). Breaches affecting 500 or more people are also posted on OCR’s public portal, the “Wall of Shame.”",
           ],
         ],
       },
       {
         type: "p",
         runs: [
-          "The resumed audit program does add one wrinkle worth knowing: if an audit surfaces a serious problem, OCR can convert it into an investigation. So the program is not toothless going forward. But the dominant path to a penalty still runs through the breach you have to report or the complaint a patient files, not a random knock on the door.",
+          "The resumed audit program adds one wrinkle: if an audit surfaces a serious problem, OCR can convert it into an investigation. But the dominant path to a penalty still runs through the breach you report or the complaint a patient files, not a random knock on the door.",
         ],
       },
 
       { type: "h2", text: "What an OCR investigation actually looks like" },
       {
         type: "p",
-        runs: [
-          "Walk through the Bryan County case, because it is a clean map of the process and the timeline.",
-        ],
+        runs: ["The Bryan County case is a clean map of the process, and of the timeline."],
       },
       {
         type: "steps",
         items: [
           {
             label: "The trigger",
-            detail:
-              "A ransomware attack encrypted the provider's files in November 2021. It reported the breach to OCR in May 2022.",
+            detail: "Ransomware encrypted the provider's files in November 2021. It reported the breach to OCR in May 2022.",
           },
           {
             label: "OCR opens an investigation",
             detail: "In June 2022, weeks after the breach report, OCR opened its review.",
           },
           {
-            label: "OCR requests documents, and one comes first",
+            label: "One document comes first",
             detail:
-              "After a breach, one of the first things OCR requests is your risk analysis and the date you last completed it. A risk analysis is the required, written exercise of finding where patient data lives and what could go wrong with it (45 CFR §164.308(a)(1)(ii)(A)). It is the foundation the rest of your security sits on.",
+              "After a breach, one of the first things OCR asks for is your risk analysis and when you last completed it. It is the required written exercise of finding where patient data lives and what could go wrong with it (45 CFR §164.308(a)(1)(ii)(A)).",
           },
           {
             label: "OCR makes findings",
-            detail: "Here, the finding was blunt: no evidence the organization had ever done a risk analysis.",
+            detail: "Here it was blunt: no evidence the provider had ever done one.",
           },
           {
             label: "Resolution",
             detail:
-              "Most matters end in a Resolution Agreement: a monetary settlement plus a Corrective Action Plan, with no admission of wrongdoing. Bryan County settled for $90,000 and a plan OCR will monitor for three years. OCR reserves a formal Civil Money Penalty for the most serious cases.",
+              "Most matters end in a Resolution Agreement, a settlement plus a Corrective Action Plan, with no admission of wrongdoing. Bryan County paid $90,000 and accepted a plan OCR monitors for three years. A formal Civil Money Penalty is reserved for the worst cases.",
           },
         ],
       },
       {
         type: "p",
         runs: [
-          "Two things about this process catch practices off guard. First, it is slow. Bryan County's breach happened in 2021 and did not settle until late 2024. In another 2024 settlement, a vendor's breaches from 2018 and 2019 took roughly six years to resolve. An investigation is not a bad afternoon; it can shadow a practice for years. Second, the corrective action plan is the part people underestimate. It is not a one-time fine you pay and forget. It is a multi-year commitment, supervised by the government, to fix what they found.",
+          "Two things catch practices off guard. It is slow: Bryan County's 2021 breach did not settle until late 2024, and another 2024 case ran roughly six years from breach to resolution. And the corrective action plan, not the check, is what people underestimate. It is a multi-year commitment, supervised by the government, to fix what they found.",
         ],
       },
 
@@ -636,45 +621,39 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "This is where the fear needs calibrating in both directions, because the honest numbers are smaller than the headlines and larger than most owners assume.",
-        ],
-      },
-      {
-        type: "p",
-        runs: [
-          "OCR launched a Risk Analysis Initiative in October 2024 to focus investigations on this single requirement. In roughly the first year it announced more than a dozen settlements, spanning organizations from small physician groups to large hospital systems and IT vendors. The common thread in nearly all of them was the same gap Bryan County had: failing to conduct an accurate and thorough risk analysis. A few of the published outcomes for that one failure:",
+          "The honest numbers are smaller than the headlines and larger than most owners assume. In October 2024, OCR launched a Risk Analysis Initiative to focus investigations on this one requirement, and in its first year it announced more than a dozen settlements, from small physician groups to hospital systems. Nearly all shared Bryan County's gap: no accurate, thorough risk analysis. A few published outcomes for that single failure:",
         ],
       },
       {
         type: "ul",
         items: [
-          ["A behavioral health provider settled for $225,000 plus a two-year corrective action plan after a ransomware attack."],
-          ["Another small provider settled for $10,000."],
-          ["Bryan County's emergency provider settled for $90,000."],
-          ["A wellness-plan vendor settled for roughly $228,000."],
+          ["A behavioral health provider: $225,000, plus a two-year corrective action plan, after ransomware."],
+          ["Another small provider: $10,000."],
+          ["Bryan County's emergency service: $90,000."],
+          ["A wellness-plan vendor: about $228,000."],
         ],
       },
       {
         type: "p",
         runs: [
-          "For a solo or small dental practice, the realistic exposure for a serious HIPAA failure sits in the five-to-six-figure range, not the seven-figure range you may have seen quoted. The headline numbers, the multimillion-dollar figures, generally attach to large organizations or to the most serious tier of violation. The statutory ceiling does exist: the maximum annual penalty for the worst tier, willful neglect that is never corrected, is $2,190,294 for 2026 (",
+          "For a solo or small dental practice, realistic exposure for a serious failure sits in the five-to-six-figure range, not the seven-figure range you may have seen quoted. The multimillion-dollar numbers attach to large organizations or the worst tier of violation. The statutory ceiling is real, the maximum annual penalty for willful neglect left uncorrected is $2,190,294 for 2026 (",
           {
             text: "Federal Register, January 2026",
             href: "https://www.federalregister.gov/documents/2026/01/28/2026-01688/annual-civil-monetary-penalties-inflation-adjustment",
           },
-          "). But under OCR's longstanding enforcement approach, that top cap applies in practice only to that worst category. A small practice that reports a breach and shows good-faith effort is not the profile that draws it.",
+          "), but under OCR's longstanding approach that cap applies in practice only to that worst category. A small practice that reports a breach and shows good-faith effort is not the profile that draws it.",
         ],
       },
       {
         type: "p",
         runs: [
-          "The costs that do not show up as a single dollar figure are worth naming too. The corrective action plan means years of work under OCR supervision: redo the risk analysis, build a risk management plan, rewrite your policies, train your staff, and report your progress. If your breach crossed the 500-person threshold, your practice name sits on a public federal list. For a solo dentist whose reputation is the practice, that exposure can outlast the check you write.",
+          "The costs that are not a dollar figure matter too. The corrective action plan means years of work under OCR supervision. If a breach crossed the 500-person line, your practice name sits on a public federal list. For a solo dentist whose reputation is the practice, that can outlast the check.",
         ],
       },
       {
         type: "p",
         runs: [
-          "One dental-specific point surprises people: the most common reason OCR has actually fined dental practices is not a breach at all. It is the Right of Access rule, the requirement to give patients a copy of their own records, usually within 30 days. In 2022, eight dental practices settled with OCR for a combined $305,500, most of them over access failures. So the two paths that most often end in a penalty for a dentist are a reported breach, where the risk analysis is the issue, and a patient who could not get their records and filed a complaint.",
+          "One dental-specific point is worth knowing, because it is the other common way a dentist ends up in front of OCR. In 2022, dental practices were a focus of OCR's Right of Access enforcement, the rule that requires giving patients a copy of their records, usually within 30 days. That September, OCR settled three dental cases at once, for $30,000, $80,000, and $25,000, each over a patient who waited months for records they were owed. So the two paths that most often end in a penalty for a dentist are a reported breach, where the risk analysis is the issue, and a records request the patient had to chase.",
         ],
       },
 
@@ -682,21 +661,15 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Step back from the individual cases and a pattern is hard to miss. The expensive failure is almost never exotic. It is the risk analysis, missing or done as a checkbox.",
+          "Step back, and the pattern is hard to miss: the expensive failure is almost never exotic. After a breach, the risk analysis is the first thing OCR asks to see, because it shows whether you were watching your own vulnerabilities before something went wrong. A current, honest one does not make you breach-proof, but it changes the conversation, and the factors OCR weighs when setting a penalty include your compliance history and your good-faith effort to fix problems (45 CFR §160.408).",
         ],
       },
       {
         type: "p",
         runs: [
-          "That is not an accident of which cases get publicized. After a breach, the risk analysis is one of the first things OCR asks to see, because it reveals whether the practice was paying attention to its own vulnerabilities before something went wrong. A current, honest risk analysis does not make you breach-proof. It does change the conversation: it shows you took the required step, and the factors OCR weighs when setting a penalty include your history of compliance and your good-faith efforts to fix problems (45 CFR §160.408).",
-        ],
-      },
-      {
-        type: "p",
-        runs: [
-          "This is also where most practices quietly fall short, and it is worth being honest about why. The risk analysis is required of every covered practice, but it is not a form you fill out in twenty minutes. HHS offers a free Security Risk Assessment Tool, and it is a reasonable place to start learning what the exercise involves. It is not, by itself, a finished assessment that would satisfy an OCR investigator. A downloaded template tells you the questions; it does not tell you which answers are wrong in your practice. If you have never run one, ",
+          "This is also where most practices quietly fall short. The risk analysis is required of every covered practice, but it is not a twenty-minute form. HHS offers a free Security Risk Assessment Tool, a reasonable place to start, but not a finished assessment that would satisfy an investigator: it gives you the questions, not which answers are wrong in your office. If you have never run one, ",
           { text: "our guide to the dental HIPAA risk assessment", href: "/articles/do-dental-practices-need-hipaa-risk-assessment" },
-          " walks through what it has to cover.",
+          " covers what it has to include.",
         ],
       },
       {
@@ -704,7 +677,7 @@ export const articles: Article[] = [
         runs: [
           "That is the gap the ",
           { text: "HIPAA Risk Scorecard", href: "/scorecard" },
-          " is built to surface. It checks the core controls OCR looks at first, gives you a clear score, and follows with a short risk review and an intro to a vetted specialist if you want help closing the gaps. It takes a few minutes, and it tells you where you stand before a breach or a complaint forces the question. ",
+          " is built to surface. It checks the controls OCR looks at first, scores your practice, and follows with a short review and an intro to a vetted specialist if you want help. A few minutes, and you see where you stand before a breach or a complaint forces the question. ",
           { text: "Check your practice now.", href: "/scorecard" },
         ],
       },
@@ -713,7 +686,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "If you want to be the practice that comes through an investigation intact rather than the one that writes a six-figure check, the work is not mysterious. It mirrors what OCR puts in nearly every corrective action plan, which tells you exactly what “good” looks like in their eyes.",
+          "The work is not mysterious. It mirrors what OCR puts in nearly every corrective action plan, which is a fair description of what “good” looks like to them.",
         ],
       },
       {
@@ -721,34 +694,34 @@ export const articles: Article[] = [
         items: [
           [
             { strong: "Do a real risk analysis. " },
-            "Map where patient data lives, how it moves, and what could expose it. Write it down and date it. This is the single highest-value step, and the one OCR checks first.",
+            "Map where patient data lives and what could expose it. Write it down and date it. This is the highest-value step, and the one OCR checks first.",
           ],
           [
             { strong: "Build a risk management plan. " },
-            "A risk analysis that finds problems and fixes nothing is worse than none at all. List the gaps it surfaced and how you will close each one.",
+            "An analysis that finds problems and fixes nothing is worse than none. List each gap and how you will close it.",
           ],
           [
-            { strong: "Put real business associate agreements in place. " },
-            "Every vendor that touches patient data, your practice management software, your IT company, your billing service, needs a signed BAA (45 CFR §164.504(e)). Missing BAAs are a recurring finding.",
+            { strong: "Sign real business associate agreements. " },
+            "Every vendor that touches patient data, your practice-management software, IT company, billing service, needs one (45 CFR §164.504(e)). Missing BAAs are a recurring finding.",
           ],
           [
-            { strong: "Write your policies and procedures, and follow them. " },
+            { strong: "Write your policies, and follow them. " },
             "“We know what to do” is not a policy. OCR expects documents you can produce.",
           ],
           [
             { strong: "Train your team, and keep the records. " },
-            "A receptionist's mistake is the practice's liability. Annual training, documented, is both a requirement and a defense.",
+            "A front-desk mistake is the practice's liability. Documented annual training is both a requirement and a defense.",
           ],
           [
             { strong: "Have a breach response plan. " },
-            "If something does happen, knowing how to investigate and report it on time keeps a manageable incident from becoming a Breach Notification Rule violation on top of the breach itself.",
+            "Knowing how to report on time keeps a manageable incident from becoming a Breach Notification Rule violation on top of the breach.",
           ],
         ],
       },
       {
         type: "p",
         runs: [
-          "None of these is expensive on its own. What makes them feel impossible is not knowing which ones your practice is actually missing, which is the entire reason the risk analysis comes first.",
+          "None of these is expensive alone. What makes them feel impossible is not knowing which you are missing, which is the whole reason the risk analysis comes first.",
         ],
       },
 
@@ -757,21 +730,50 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "“We’re too small to be on OCR’s radar.” " },
-          "The Risk Analysis Initiative explicitly reached small physician groups, and one settlement for this failure was $10,000, a figure that only makes sense for a very small organization. OCR’s stated position is that no entity is too large or too small to be held to the risk analysis requirement.",
+          "The Risk Analysis Initiative reached small physician groups, and one settlement for this failure was $10,000, a number that only makes sense for a very small organization. OCR’s position is that no entity is too small for the requirement.",
         ],
       },
       {
         type: "p",
         runs: [
-          { strong: "“If I report my own breach, I’m just inviting a fine.” " },
-          "Not reporting is far worse. A failure to notify is its own violation, and trying to hide a breach is exactly the kind of conduct that pushes a case toward the willful-neglect category. The practices that fare best are the ones that report promptly and show they had taken the required steps beforehand.",
+          { strong: "“Reporting my own breach just invites a fine.” " },
+          "Not reporting is far worse. A failure to notify is its own violation, and hiding a breach is the kind of conduct that pushes a case toward willful neglect. The practices that fare best report promptly and show they had done the groundwork.",
         ],
       },
       {
         type: "p",
         runs: [
           { strong: "“A clean audit means I’m fine.” " },
-          "The audit program and an investigation test different things, and passing one says little about the other. The audit selects a handful of practices for a documentation review. The investigation is what happens after a real-world breach or complaint, and that is where the money is.",
+          "The audit and an investigation test different things. The audit is a documentation review of a handful of practices. The investigation is what happens after a real breach or complaint, and that is where the money is.",
+        ],
+      },
+
+      {
+        type: "p",
+        runs: [
+          { strong: "This is general information, not legal advice. " },
+          "Hipsana is not a law firm, a compliance officer, or a healthcare provider. Verify current requirements with HHS or qualified counsel before acting.",
+        ],
+      },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is the founder of Hipsana, where he runs the HIPAA Risk Scorecard and the short practice risk reviews behind it. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. Its compliance writing starts from primary regulators (HHS, OCR, NIST) and is checked against their current text before anything goes live. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          ["HHS Office for Civil Rights, settlement with Bryan County Ambulance Authority (October 2024)."],
+          ["HHS Office for Civil Rights, HIPAA Audit Program."],
+          ["HHS Office of Inspector General, review of OCR's HIPAA Audit Program (2024)."],
+          ["45 CFR §§ 164.308, 164.400-414, 164.504(e), and 160.404-160.408."],
+          ["Federal Register, HHS civil monetary penalty inflation adjustment, effective January 28, 2026."],
+          ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025."],
+          ["HHS Office for Civil Rights, Right of Access enforcement actions (2022)."],
         ],
       },
     ],
