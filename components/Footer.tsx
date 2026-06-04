@@ -42,9 +42,7 @@ export default function Footer() {
             The Scorecard and review are free. If we connect you with a vetted
             specialist and you choose to work with them, their firm pays us a
             referral fee. It never costs you anything and never changes your
-            review. We share your details with that one partner only. Some links
-            elsewhere on the site are affiliate links; commissions never affect
-            what we recommend. See our{" "}
+            review. We share your details with that one partner only. See our{" "}
             <Link href="/disclosure" className="underline hover:text-ink">
               Disclosure
             </Link>{" "}
