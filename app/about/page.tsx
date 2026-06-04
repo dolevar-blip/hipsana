@@ -73,13 +73,6 @@ export default function AboutPage() {
           work with them, their firm pays us a referral fee. It never costs you
           anything, and it never changes what your review says.
         </p>
-        <p>
-          Hipsana also earns affiliate commissions on a small number of the
-          tools we mention. That is a secondary part of how the site is funded,
-          it is disclosed where it applies, and a commission never decides what
-          we recommend. Full details on our{" "}
-          <a href="/disclosure">disclosure page</a>.
-        </p>
 
         <h2>Contact</h2>
         <p>
