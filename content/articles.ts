@@ -506,7 +506,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "When a dentist asks what happens if they fail a HIPAA audit, the honest answer reframes the question. A random audit by itself almost never produces a fine. What costs practices money is an OCR investigation, and it usually starts with a patient complaint or a breach you are legally required to report. If that investigation finds you missed a HIPAA requirement, the typical result is a written settlement, a payment that for a small practice lands in five or six figures, and a corrective action plan the government oversees for two to three years.",
+          "A surprise HIPAA audit almost never ends in a fine. What actually costs a dental practice five or six figures is the OCR investigation that follows a breach or a complaint, and it usually comes down to one document most practices never finished: the risk analysis. Here is what that process really looks like, what it costs, and how to get ahead of it.",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -536,6 +536,16 @@ export const articles: Article[] = [
             href: "https://www.hhs.gov/about/news/2024/10/31/hhs-office-for-civil-rights-settles-hipaa-ransomware-cybersecurity-investigation-for-90000-dollars.html",
           },
           "). It is an ambulance service, not a dental office. But the failure OCR cited has nothing to do with ambulances, and everything to do with the most common gap it finds in small practices of every kind.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-settlement-bryan-county-risk-analysis.webp",
+        alt: "Excerpt from the U.S. HHS Office for Civil Rights announcement of the $90,000 Bryan County Ambulance Authority settlement, showing OCR's finding that the provider had failed to conduct a compliant risk analysis.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "OCR's first Risk Analysis Initiative settlement: Bryan County Ambulance Authority paid $90,000 after OCR found it had never conducted a compliant risk analysis. Source: HHS / OCR, October 31, 2024.",
         ],
       },
 
@@ -657,6 +667,12 @@ export const articles: Article[] = [
         ],
       },
 
+      {
+        type: "quote",
+        runs: [
+          "OCR's audits are built to improve compliance, not to fine. The money comes from the investigation that follows a breach.",
+        ],
+      },
       { type: "h2", text: "The one document OCR checks first" },
       {
         type: "p",
