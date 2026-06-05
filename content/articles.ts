@@ -1065,6 +1065,425 @@ export const articles: Article[] = [
       { question: "Should I pay the ransom in a ransomware attack?", answer: "This is a decision for counsel, your insurer, and law enforcement, not a quick call in the moment. Paying does not remove your duty to notify affected patients and HHS, and the FBI generally discourages payment because it funds further attacks and does not guarantee that you get your data back. This is general information, not legal advice." },
     ],
   },
+  {
+    slug: "how-much-does-a-hipaa-risk-assessment-cost-for-a-dental-practice",
+    status: "published",
+    title: "How Much Does a HIPAA Risk Assessment Cost for a Dental Practice? (2026)",
+    description:
+      "A HIPAA risk assessment for a dental practice usually runs $1,500 to $6,000 with a specialist; the free HHS tool is $0. What each path buys, and why cheap can cost more.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-05",
+    dateModified: "2026-06-05",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "Ask three vendors what a HIPAA risk assessment costs and you will get three numbers, anywhere from $0 to $15,000. Each one can be defended, which is why the price tag means little until you separate what you are actually buying. For a solo dental office, the assessment itself is usually a few thousand dollars. The expensive mistake is treating the cheapest version as the whole job, then learning during an investigation that it was not.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "About $1,500 to $6,000 for a specialist-run analysis. " },
+            "The free federal SRA tool is $0, and software platforms that include an assessment start in the low hundreds of dollars a year. These are 2026 market estimates; your number depends on how much you do in-house.",
+          ],
+          [
+            { strong: "The free government tool is a starting point, not a finished analysis. " },
+            "By its own disclaimer, using it does not guarantee compliance.",
+          ],
+          [
+            { strong: "Skipping it is the expensive path. " },
+            "One small imaging practice that never did one paid $5,000 to federal regulators, then had to complete the analysis anyway under two years of monitoring.",
+          ],
+          [
+            { strong: "It is required by law right now. " },
+            "A proposed 2026 overhaul would raise the bar and the price, but it is not final yet.",
+          ],
+          [
+            { strong: "Not sure which gaps you would be paying to fix? " },
+            "The Scorecard checks the 10 items OCR looks at first, in about three minutes. ",
+            { text: "Check my practice \u2192", href: "/scorecard" },
+          ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Short answer: " },
+          "for a solo or small dental practice in 2026, a HIPAA risk analysis performed by a specialist typically runs about $1,500 to $6,000. The HHS Security Risk Assessment Tool is free. Software platforms that bundle an assessment start in the low hundreds of dollars a year. What you pay comes down to how complex your setup is and how much of the work you keep in-house.",
+        ],
+      },
+      { type: "h2", text: "What a risk assessment actually is under HIPAA" },
+      {
+        type: "p",
+        runs: [
+          "The HIPAA Security Rule requires every covered practice to run what the rule calls an \"accurate and thorough assessment\" of the risks to its electronic protected health information. That language is the law itself, at 45 CFR \u00a7 164.308(a)(1)(ii)(A). HHS calls it a risk analysis; vendors usually call it a risk assessment or a security risk assessment (SRA). Same obligation.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Two things matter for your budget. First, it is not optional and not tied to your size. When federal regulators settled with a single-location imaging provider in 2025, the official statement put it plainly: \"Small providers also must conduct accurate and thorough risk analyses.\" Second, the analysis is the foundation everything else sits on. Your access controls, staff training, backups, and breach plan all depend on first knowing where your patient data lives and what threatens it. Skip the analysis and the rest is guesswork.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "That is also why \"do I even need one?\" has a one-word answer. If you are still asking it, start with ",
+          { text: "whether a dental practice needs a HIPAA risk assessment", href: "/articles/do-dental-practices-need-hipaa-risk-assessment" },
+          ".",
+        ],
+      },
+      { type: "h2", text: "The four ways to get one, and what each really costs" },
+      {
+        type: "p",
+        runs: [
+          "There is no single price because there is no single product. Here are the four paths a small practice actually chooses between, cheapest first.",
+        ],
+      },
+      { type: "h3", text: "1. The free HHS SRA tool: $0" },
+      {
+        type: "p",
+        runs: [
+          { strong: "What it is. " },
+          "A downloadable application from the federal government, currently version 3.6, about 166 questions, that walks you through the assessment and produces a report. It runs on your own computer, and the government never sees your answers.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Who it fits. " },
+          "A very small, low-complexity practice with the time and discipline to work through it honestly.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Where it falls short. " },
+          "The tool gives you a questionnaire and a report. It does not tell you how to fix what it finds. It does not monitor anything afterward, and it does not write your policies. The government says so itself: its disclaimer reads \"neither required by nor guarantees compliance.\"",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Verdict. " },
+          "A real starting point, not a finish line. More on that gap below.",
+        ],
+      },
+      { type: "h3", text: "2. A DIY spreadsheet or template: near $0" },
+      {
+        type: "p",
+        runs: [
+          { strong: "What it is. " },
+          "A downloaded checklist or template you fill in yourself.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Who it fits. " },
+          "Almost no one, honestly.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Where it falls short. " },
+          "It lacks the structure, the documentation, and the year-over-year review that regulators expect. It also makes it easy to produce a \"checkbox\" analysis that looks finished but is not, which is exactly the kind of paper exercise OCR has repeatedly found inadequate.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Verdict. " },
+          "The cheapest option on paper, and the most likely to fail you when it counts.",
+        ],
+      },
+      { type: "h3", text: "3. A compliance platform or software: about $500 to $2,000+ a year (estimated)" },
+      {
+        type: "p",
+        runs: [
+          { strong: "What it is. " },
+          "A paid service that runs the assessment and then adds policy templates, staff training, vendor tracking, and an audit trail you can show a regulator. Small-practice plans start in the low hundreds a year and climb with features.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Who it fits. " },
+          "The practice that wants structure and ongoing documentation without consultant prices.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Where it falls short. " },
+          "It still needs your honest input, and hands-on review of your physical setup, waiting room, front desk, paper records, varies by product.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Verdict. " },
+          "Good value for most small practices that want to stay audit-ready, not just assessed once.",
+        ],
+      },
+      { type: "h3", text: "4. A consultant or specialist: about $1,500 to $6,000 for the assessment (estimated)" },
+      {
+        type: "p",
+        runs: [
+          { strong: "What it is. " },
+          "An expert who performs the analysis for you, often including an onsite look at your physical setup, a plan tailored to fix what they find, and documentation built to hold up under review. Hourly rates commonly run $150 to $300.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Who it fits. " },
+          "Practices with real complexity, like several locations, an imaging-heavy setup, or a recent breach, plus anyone who wants a defensible, expert-reviewed analysis.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Where it falls short. " },
+          "The cost and scheduling, plus some disruption to your day.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Verdict. " },
+          "The strongest choice when the stakes or the complexity are high.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "A fuller first-year program, meaning the assessment plus the work of fixing what it finds and setting up policies and training, commonly lands around $5,000 to $15,000 for a small practice (2026 estimates). The assessment is the first line item, not the whole bill.",
+        ],
+      },
+      { type: "h2", text: "Risk assessment, gap analysis, vulnerability scan: which one are you buying?" },
+      {
+        type: "p",
+        runs: [
+          "Part of the reason quotes swing so widely is that practices are often pricing different services and assuming they are the same. Three terms get used interchangeably, and only one is the legal requirement.",
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "Risk analysis (required). " },
+            "The accurate, thorough assessment HIPAA actually mandates: where your patient data lives, what threatens it, how likely and how serious each risk is, and a plan to reduce it. This is the line item above.",
+          ],
+          [
+            { strong: "Gap analysis (not required, still useful). " },
+            "A higher-level check of whether your safeguards and policies exist, measured against a HIPAA checklist. A good starting point. On its own, it does not satisfy the risk-analysis requirement.",
+          ],
+          [
+            { strong: "Vulnerability scan or penetration test (not required, sometimes wise). " },
+            "Technical tests that probe your network for weak points. They produce useful evidence that can feed your risk analysis, but they are not the analysis itself, and they carry their own price, often $300 to $3,000 for a scan and more for a pen test.",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "If a quote looks cheap, check what it actually covers. A questionnaire or a gap checklist by itself is not the risk analysis OCR looks for, and paying for the wrong one is how a practice ends up exposed while believing it is covered.",
+        ],
+      },
+      { type: "h2", text: "Why the free tool is not the same as a finished risk analysis" },
+      {
+        type: "p",
+        runs: [
+          "This is the part that costs practices the most, so it is worth being precise.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Running the SRA tool feels like completing your risk analysis. It is not the same thing. The tool documents your answers to a set of questions. HIPAA asks for an accurate and thorough assessment plus a risk-management step, meaning you actually reduce the risks you found. A questionnaire with no remediation behind it, no follow-up, and no written policies is a starting point that regulators have, case after case, treated as not enough.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Put plainly: the tool can tell you that a laptop has no encryption. It cannot encrypt the laptop, write the policy that says you will, or prove a year later that you did. That work is the risk analysis OCR is actually looking for.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Most solo practices have two or three HIPAA gaps they cannot see. " },
+          "The Scorecard checks the 10 items OCR auditors look at first, then sends you a short written review of your gaps and an intro to a vetted specialist who can help you close them. About three minutes. ",
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      { type: "h2", text: "The real cost of skipping it" },
+      {
+        type: "p",
+        runs: [
+          "The cleanest way to understand the price of a risk analysis is to look at what skipping one costs.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "In May 2025, federal regulators settled with Vision Upright MRI, a single-location imaging provider in San Jose. An unauthorized party had reached the server holding its medical images, exposing the records of 21,778 people. When OCR investigated, it found the practice had never conducted a HIPAA risk analysis and had missed the 60-day deadline to notify the affected patients.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-settlement-vision-upright-mri-risk-analysis.webp",
+        alt: "Exhibit from the HHS Office for Civil Rights press release on the Vision Upright MRI settlement: OCR found the single-location imaging provider had never conducted a HIPAA risk analysis, exposing 21,778 patients' records; it paid a $5,000 settlement and entered a two-year corrective action plan.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "Source: U.S. Department of Health and Human Services, Office for Civil Rights. ",
+          {
+            text: "Settlement with Vision Upright MRI (May 15, 2025)",
+            href: "https://www.hhs.gov/press-room/hhs-hipaa-investigate-vum.html",
+          },
+          ". Highlights added by Hipsana: a single-location provider that never ran a risk analysis, the $5,000 settlement, and the two-year corrective action plan.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The settlement payment was $5,000. That is roughly what a paid assessment would have cost in the first place. But the money was the small part. The practice also signed a two-year corrective action plan that required it to do the risk analysis anyway, build a risk-management plan, write HIPAA policies, train its staff, and send every overdue breach notice, with federal regulators checking its progress the whole time.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "So the \"save money by skipping it\" route cost about the same as the assessment in fines, plus all the work it had avoided, plus two years of oversight. Doing it up front is the cheaper option, not the more expensive one. For what an investigation looks like from the inside, see ",
+          { text: "what happens when a dental practice fails a HIPAA audit", href: "/articles/what-happens-if-dental-practice-fails-hipaa-audit" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Vision Upright MRI is not an outlier. In October 2024, OCR launched a Risk Analysis Initiative, an enforcement push aimed squarely at organizations that had not done an adequate analysis. Across 2025, the settlements ran from a few thousand dollars for small providers into the millions for large ones, and the deficiency cited again and again was the same: no accurate and thorough risk analysis. Size was not a defense.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Knowing your gaps before an investigator does is the cheapest insurance there is. " },
+          "You can see where your practice stands in about three minutes. ",
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      { type: "h2", text: "What the proposed HIPAA changes could do to the price" },
+      {
+        type: "p",
+        runs: [
+          "One thing to watch before you budget. Everything above describes the law as it stands today. There is also a proposed overhaul of the Security Rule.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "HHS published the proposal in the Federal Register on January 6, 2025 (its rulemaking ID is RIN 0945-AA22). If finalized as written, it would turn several safeguards that are currently flexible into hard requirements, among them encryption of patient data, multi-factor authentication, routine vulnerability scanning, and penetration testing. That would raise compliance costs across the board. HHS's own analysis estimated the proposal would cost the healthcare industry roughly $9 billion in its first year, which is part of why more than 100 hospital and provider groups have asked the agency to withdraw it.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "As of June 2026, the proposal is not final, and there is no confirmed date for if or when it will be. Two practical takeaways. Do not spend money now trying to comply with a rule that has not been written. And know that a thorough annual risk analysis is your head start either way, because every version of HIPAA, current and proposed, is built on it.",
+        ],
+      },
+      { type: "h2", text: "How to get a risk analysis done without overpaying" },
+      {
+        type: "p",
+        runs: ["A sensible path for a solo or small practice:"],
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Map where your patient data lives",
+            detail:
+              "About one to two hours. List every place ePHI is stored, sent, or received: practice-management software, email, imaging, backups, laptops, phones, plus any vendor that touches it. The analysis is only as good as this inventory.",
+          },
+          {
+            label: "Pick your path by complexity",
+            detail:
+              "One location, a simple setup, and time to do it carefully? The free tool or a low-cost platform may be enough. Multiple locations, teledentistry, a recent scare, or no spare time? Use a specialist.",
+          },
+          {
+            label: "Do the analysis",
+            detail:
+              "A day to a few weeks, depending on the path. Identify the real risks to that data, and how likely and how serious each one is.",
+          },
+          {
+            label: "Build a risk-management plan",
+            detail:
+              "This is the step that actually protects you: decide what you will fix, in what order, by when. The analysis finds the gaps; this closes them.",
+          },
+          {
+            label: "Document everything and set an annual review",
+            detail:
+              "Save the analysis, the plan, and a record of what you did. Repeat it every year and after any material change to your setup, like new software or a new location.",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "If you remember one thing, make it this: pay for the version that produces a real, documented analysis and a plan to fix what it finds. That is what holds up later, regardless of which path you chose to get there.",
+        ],
+      },
+      { type: "h2", text: "The catch" },
+      {
+        type: "p",
+        runs: ["A few honest caveats."],
+      },
+      {
+        type: "p",
+        runs: [
+          "A risk analysis is not a one-time purchase. HIPAA expects it to be ongoing, refreshed every year and after meaningful changes to your systems. The first assessment usually costs more than the annual update, so budget for both.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Cost climbs with complexity. What moves a dental practice's number: how many operatory and front-desk workstations you run, your practice-management system (Dentrix, Eaglesoft, Open Dental, or similar), digital imaging, cloud versus on-premise servers, the number of locations, teledentistry, and whether you have a prior assessment to build on. A breach already on the books pushes you toward a specialist and a higher number.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "And the cheapest route is only cheap if it produces a real analysis. A bargain assessment that turns out to be a checkbox exercise becomes the most expensive option of all if regulators come knocking, as the cases above show. If the worst has already happened, here is ",
+          { text: "what to do after a dental data breach", href: "/articles/dental-data-breach-response" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This article is general information, not legal advice. What a risk assessment costs is a market estimate, not a fixed quote; confirm current requirements with the ",
+          { text: "U.S. Department of Health and Human Services", href: "https://www.hhs.gov/hipaa/for-professionals/index.html" },
+          " or qualified counsel before you act. The risk-analysis requirement is at ",
+          { text: "45 CFR 164.308(a)(1)(ii)(A)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308" },
+          ", and the case described comes from HHS.",
+        ],
+      },
+    ],
+    faq: [
+      { question: "Is the free HHS SRA tool enough for a dental practice?", answer: "It is a legitimate place to start, and for a very small, simple practice it can carry a lot of the assessment. But by its own disclaimer it does not guarantee compliance, and it stops at a report. The risk-management work that follows, the part where you fix what you found and document it, is what regulators actually weigh, and the tool does not do that for you." },
+      { question: "How much does a HIPAA risk assessment cost for a solo dentist?", answer: "As a 2026 estimate: about $1,500 to $6,000 for a specialist-led assessment, $0 for the federal tool, and low hundreds of dollars a year for a software platform that includes one. A full first-year compliance program, with remediation, policies, training, and safeguards on top of the assessment, commonly runs $5,000 to $15,000." },
+      { question: "How often does a dental practice need a risk analysis?", answer: "At least once a year, and again after any material change such as new software, a new location, or a breach. HIPAA treats it as an ongoing process, not a one-time event." },
+      { question: "Does a small practice really need one?", answer: "Yes. The requirement does not scale with size, and federal regulators have settled with single-location providers specifically to make that point. A small practice with patient data carries the same core obligation as a hospital." },
+      { question: "Who can perform a HIPAA risk assessment, and can I do it myself?", answer: "You can do it yourself. HIPAA does not require an outside firm, and the free federal tool exists for exactly that. What matters is that the analysis is accurate, thorough, documented, and followed by a plan to fix what it finds. Many small practices run the assessment in-house and bring in help only for the parts they cannot judge alone, such as technical testing or a recent breach. If you want a quick read on which gaps you would be doing it for, the Scorecard shows you in about three minutes." },
+      { question: "How long does a HIPAA risk assessment take?", answer: "Anywhere from an afternoon with the free tool for a simple solo practice to a few weeks for a consultant-led review with an onsite visit and a written plan. The larger time cost is usually fixing what the analysis turns up, not running the analysis." },
+      { question: "Does the Hipsana Scorecard replace a risk analysis?", answer: "No, and we would not claim it does. The Scorecard is a fast self-check of the gaps OCR looks at first. A formal risk analysis is the documented, thorough assessment the law requires. The Scorecard shows you where you likely stand so you can decide what to do next, including a short free review and an intro to a specialist." },
+    ],
+  },
 ];
 
 export function getAllArticles(): Article[] {
