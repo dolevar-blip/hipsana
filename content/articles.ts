@@ -841,6 +841,230 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "dental-data-breach-response",
+    status: "published",
+    title: "What to Do If Your Dental Practice Has a Data Breach: The First 60 Days (2026)",
+    description:
+      "A dental data breach starts a 60-day HIPAA clock. The exact steps to take, who to notify, and what OCR looks for first, anchored to a real OCR settlement.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-05",
+    dateModified: "2026-06-05",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "Someone in your office clicks the wrong link, or your practice-management software (Dentrix, Eaglesoft, or Open Dental) stops opening and a ransom note appears on the screen. Maybe a laptop full of patient records walks out the door. The moment you realize patient data may be exposed, a legal clock starts. Under HIPAA you have a fixed number of days to tell the people affected, and federal regulators pay attention to what you do next. Here is the order to do things in, the deadlines that actually bind you, and the one mistake that turns a bad week into a federal investigation.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [{ strong: "Contain it first, then assess." }, " Disconnect affected systems without wiping them, get a third-party forensics firm involved, and only then work out whether the incident is a reportable breach."],
+          [{ strong: "You have 60 days to tell patients." }, " Notify each affected individual without unreasonable delay and no later than 60 calendar days after you discover the breach (45 CFR 164.404)."],
+          [{ strong: "HHS gets notified too." }, " If 500 or more people are affected, report to HHS within that same 60 days. If fewer than 500, log it and file by roughly March 1 of the following year (45 CFR 164.408)."],
+          [{ strong: "Encrypted data may be off the hook." }, " The rules apply only to \"unsecured\" patient information. Data encrypted to the federal standard can fall under a safe harbor and may not trigger notice at all."],
+          [{ strong: "The report you file is what opens the investigation." }, " When a small New York neurology practice reported a ransomware attack, the first thing OCR asked for was its risk analysis. There wasn't one. It paid $25,000."],
+        ],
+      },
+      { type: "h2", text: "The first hour: contain it, but don't destroy the evidence" },
+      {
+        type: "p",
+        runs: [
+          "Your instinct will be to make the problem disappear. Resist deleting anything. The same logs and forensic data you might be tempted to wipe are exactly what you will need to prove what happened and to answer regulators later. The first hour sets up everything that follows.",
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          [{ strong: "Isolate, don't wipe or power down." }, " Disconnect affected devices from the network to stop the spread, but leave them running and intact. Shutting a machine off can overwrite forensic evidence that shows how the attacker got in."],
+          [{ strong: "Bring in a third-party forensics firm, not just your IT company." }, " The people who set up your network are not always the right ones to investigate a breach inside it. A dedicated cybersecurity or digital-forensics team works out how the attacker got in, what they reached, and whether data actually left the building."],
+          [{ strong: "Start a written timeline." }, " Record when you first noticed something, what you saw, and every step you take. The discovery date drives every deadline that follows."],
+          [{ strong: "Call your cyber-insurer." }, " If you carry cyber coverage, notify them right away. Many policies require prompt notice and provide a breach coach who runs the response, and some deny claims if you act on your own first."],
+          [{ strong: "Report it to the FBI." }, " Filing with the FBI's Internet Crime Complaint Center at ic3.gov is voluntary, but law enforcement may share intelligence on the attacker and occasionally help with recovery. It does not replace your duty to notify patients."],
+          [{ strong: "Don't rush to pay a ransom." }, " Paying does not erase your notification obligations, and the FBI generally discourages it. Make that call with counsel and your insurer, not in a panic."],
+        ],
+      },
+      { type: "h2", text: "Is this even a reportable breach?" },
+      {
+        type: "p",
+        runs: [
+          "Not every security scare is a reportable breach, but HIPAA puts the burden on you to prove it isn't. A breach can take many shapes: ransomware that locks your records, a lost or stolen laptop, an email sent to the wrong patient, a former employee who copied files on the way out, or a stolen server. Whatever the cause, the same test applies.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Under the Breach Notification Rule (45 CFR 164.402), any impermissible use or disclosure of unsecured protected health information is presumed to be a breach unless you can show a low probability that the information was compromised. You make that call through a documented four-factor risk assessment that weighs the nature of the data involved, who received it, whether it was actually viewed or acquired, and how far the risk has since been contained.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Two words decide whether the rule applies at all. \"Unsecured\" patient information is data that has not been encrypted or destroyed to the standard HHS specifies; if a stolen laptop was properly encrypted, you may fall under the encryption safe harbor and owe no notification, while data sitting in plain text gets no such protection. \"Discovered\" is defined broadly: a breach is treated as discovered on the first day anyone on your team knew about it, or reasonably should have (45 CFR 164.404(a)(2)), so your 60-day clock can start running before you have all the facts.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Ransomware deserves a separate note. Owners often assume that if the attacker only locked the data instead of stealing it, nothing was really \"disclosed.\" OCR rejects that reasoning. Its ",
+          { text: "Ransomware Fact Sheet", href: "https://www.hhs.gov/hipaa/for-professionals/security/guidance/cybersecurity/ransomware-fact-sheet/index.html" },
+          " is blunt:",
+        ],
+      },
+      {
+        type: "quote",
+        runs: ["When ePHI is encrypted in a ransomware attack, \"a breach has occurred because the ePHI encrypted by the ransomware was acquired.\""],
+      },
+      {
+        type: "p",
+        runs: [
+          "The attacker taking control of your data is itself the breach, and notification is presumed required unless your risk assessment shows a low probability of compromise.",
+        ],
+      },
+      { type: "h2", text: "The 60-day clock: exactly who you must notify" },
+      {
+        type: "p",
+        runs: [
+          "Once you have confirmed a reportable breach, HIPAA's Breach Notification Rule (45 CFR 164.400 through 164.414) lays out who hears about it and when. For a solo or small dental practice, four notifications can apply.",
+        ],
+      },
+      {
+        type: "steps",
+        items: [
+          { label: "1. The affected patients: within 60 days", detail: "Send written notice by first-class mail, or by email if the patient agreed to electronic notice, without unreasonable delay and no later than 60 calendar days after discovery (45 CFR 164.404). The letter must explain what happened, what information was involved, what you are doing about it, and what the patient can do to protect themselves." },
+          { label: "2. HHS: timing depends on the headcount", detail: "If 500 or more individuals are affected, notify the Secretary of HHS at the same time you notify patients, through the online breach portal (45 CFR 164.408). If fewer than 500 are affected, keep an internal log and submit it to HHS no later than 60 days after the calendar year ends, which in practice means by about March 1." },
+          { label: "3. The media: only for larger breaches", detail: "If a breach affects more than 500 residents of a single state or jurisdiction, you must also notify prominent media outlets serving that area, within the same 60-day window (45 CFR 164.406). Most small-practice breaches stay under this threshold, but a large patient list can cross it." },
+          { label: "4. Your own clock, if a vendor was breached", detail: "If the breach happened at a business associate (your billing company, cloud host, or IT vendor), they must notify you without unreasonable delay and no later than 60 days after they discover it (45 CFR 164.410). The clock for telling your patients is still yours to manage, which is why many practices contractually require vendors to report within days, not weeks." },
+        ],
+      },
+      { type: "h2", text: "A real case: the report that opened the door" },
+      {
+        type: "p",
+        runs: [
+          "In December 2020, a small New York neurology practice called Comprehensive Neurology, PC reported to the HHS Office for Civil Rights that its entire IT network, including all of its electronic patient records, had been encrypted by ransomware. About 6,800 people were affected. The exposed data included names, clinical information, Social Security numbers, and driver's license numbers.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Here is the part most practice owners miss. The breach report Comprehensive was legally required to file is the same document that opened a federal investigation. And the first thing investigators looked for was something every covered entity must already have: an accurate, thorough risk analysis of where its patient data lived and how it was protected (45 CFR 164.308(a)(1)). Comprehensive didn't have one. In April 2025 it agreed to pay $25,000 and to operate under a corrective action plan monitored by OCR for two years.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The dollar figure is small by enforcement standards. The lesson is not. OCR did not penalize the practice for being attacked; ransomware hits well-run organizations too. It acted because, when investigators asked the practice to show how it had assessed its own risks, there was nothing to show.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-settlement-comprehensive-neurology-risk-analysis.webp",
+        alt: "Highlighted excerpts from the OCR settlement with Comprehensive Neurology, PC, a small New York neurology practice that failed to conduct an accurate and thorough risk analysis and paid $25,000.",
+        width: 1500,
+        height: 562,
+        caption: [
+          "Excerpts from the OCR settlement, highlighted. Source: ",
+          { text: "U.S. Department of Health and Human Services, April 25, 2025", href: "https://www.hhs.gov/press-room/ocr-hipaa-racap-np.html" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The fine is rarely the worst part. A ransomware attack can freeze your scheduling, billing, and imaging for days, and a breach notice arriving in your patients' mailboxes can cost trust that took years to build. Those losses are harder to measure than a settlement, and they are why the response you run in the first week matters as much as any check you might eventually write.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The hard part of a breach isn't fixing the gaps. It's knowing which ones you have before OCR does. The HIPAA Risk Scorecard checks the 10 things OCR looks at first, then gives you a short risk review and an intro to a vetted specialist. It takes about 3 minutes. ",
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      { type: "h2", text: "What OCR looks for after a breach" },
+      {
+        type: "p",
+        runs: [
+          "A breach report triggers a review of your entire security program, not just the incident. Drawing on its own guidance from the Comprehensive case, OCR expects a practice to produce a current risk analysis showing where electronic patient data enters, moves through, and leaves its systems, alongside a risk management plan that actually closes the gaps that analysis found. It looks for audit controls that record and let you review system activity, encryption of patient data in transit and at rest where appropriate, workforce training built around your practice and each person's real job, and evidence that you fed the lessons from any incident back into how you work.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "None of this is about the attack itself. It is about whether you ran a real compliance program before it happened. That is the gap between owning a free risk-assessment template and having something that would hold up under an OCR review.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "A free self-assessment tool will get you started. It won't tell you whether your program would survive a breach report landing on a regulator's desk tomorrow. If you want a clear read on where your practice actually stands, ",
+          { text: "start with the Scorecard", href: "/scorecard" },
+          ".",
+        ],
+      },
+      { type: "h2", text: "How to make sure you never read this in a panic" },
+      {
+        type: "p",
+        runs: [
+          "Breach response is the expensive end of HIPAA. The cheap end is prevention, and it begins with the same document OCR asked Comprehensive for. If you are reading this before anything has gone wrong, this is where your attention pays off most. A handful of moves cover most of the risk for a small dental practice:",
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          [{ strong: "Run a real risk analysis, then fix what it finds." }, " This is the single most-cited failure in OCR settlements. We break down what one involves in ", { text: "our guide to HIPAA risk assessments for dental practices", href: "/articles/do-dental-practices-need-hipaa-risk-assessment" }, "."],
+          [{ strong: "Encrypt laptops, backups, and any device that touches patient data," }, " so a lost or stolen device falls under the safe harbor."],
+          [{ strong: "Sign a business associate agreement with every vendor that handles patient data," }, " and require fast breach reporting inside it."],
+          [{ strong: "Train your team on phishing and basic security," }, " since most breaches start with a click."],
+          [{ strong: "Keep tested, offline backups," }, " so ransomware can't take your records hostage."],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "If a colleague's breach is what brought you here, the honest next step is to find out whether your own practice would hold up, which is exactly what ",
+          { text: "the Scorecard", href: "/scorecard" },
+          " is built to show you before a regulator ever asks. And if you want to understand what a federal investigation involves before you ever face one, we walk through it in ",
+          { text: "what happens when a dental practice fails a HIPAA audit", href: "/articles/what-happens-if-dental-practice-fails-hipaa-audit" },
+          ".",
+        ],
+      },
+      { type: "h2", text: "The catch: where this gets complicated" },
+      { type: "p", runs: ["A few things trip up small practices:"] },
+      {
+        type: "ul",
+        items: [
+          [{ strong: "Small breaches still require patient notice." }, " The under-500 rule changes only when you tell HHS, not whether you tell the people affected. They still get notified within 60 days."],
+          [{ strong: "\"Discovery\" may be earlier than you think." }, " If a staff member noticed something odd weeks ago, your clock may have started then, not on the day you formally confirmed the breach."],
+          [{ strong: "You carry the burden of proof." }, " If you decide an incident was not a reportable breach, you must document the risk assessment that justifies it (45 CFR 164.414). \"We assumed it was fine\" is not a defense."],
+          [{ strong: "State law often adds rules." }, " Most states have their own breach-notification laws, some with shorter deadlines or different triggers than HIPAA. Check your state's requirements, or have someone check them for you."],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This article is general information, not legal advice. Breach decisions depend on facts specific to your practice; confirm current requirements with the ",
+          { text: "U.S. Department of Health and Human Services", href: "https://www.hhs.gov/hipaa/for-professionals/index.html" },
+          " or qualified counsel before you act. The case and rules described here come from HHS and the ",
+          { text: "Code of Federal Regulations", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D" },
+          ".",
+        ],
+      },
+    ],
+    faq: [
+      { question: "How long do I have to report a HIPAA breach?", answer: "You must notify affected individuals without unreasonable delay and no later than 60 calendar days after you discover the breach (45 CFR 164.404). If 500 or more people are affected, you also notify HHS within that same 60 days. For breaches affecting fewer than 500 people, you keep an internal log and report it to HHS no later than 60 days after the end of the calendar year." },
+      { question: "Do I have to report a breach if fewer than 500 patients were affected?", answer: "Yes. The size of the breach changes when you notify HHS, not whether you notify patients. Affected individuals still receive notice within 60 days. Breaches under 500 people are recorded in an internal log and submitted to HHS annually, by roughly March 1 of the following year (45 CFR 164.408)." },
+      { question: "What if the data breach was my IT company's fault?", answer: "A business associate, such as your IT vendor or billing company, must notify you of a breach without unreasonable delay and no later than 60 days after they discover it (45 CFR 164.410). The legal responsibility to notify your patients still rests with your practice, which is why many practices require vendors by contract to report breaches within a few days." },
+      { question: "Is a ransomware attack automatically a HIPAA breach?", answer: "Usually, but not always. When ransomware encrypts patient data, OCR's position is that a breach has occurred because the attacker acquired control of the data. HIPAA then presumes a reportable breach unless you can show, through a documented four-factor risk assessment, a low probability that the information was compromised (45 CFR 164.402). If the data was already encrypted to the HHS standard, the encryption safe harbor may apply." },
+      { question: "Will OCR fine a small dental practice over a breach?", answer: "Small practices are investigated and do pay. In 2025, OCR settled with a small New York neurology practice for $25,000 after a ransomware breach, because the practice had never conducted a required risk analysis. OCR's focus after a breach is whether you ran a real security program, not whether you happened to be attacked." },
+      { question: "Do I have to notify the media about a breach?", answer: "Only for larger breaches. If a breach affects more than 500 residents of a single state or jurisdiction, you must notify prominent media outlets serving that area within 60 days (45 CFR 164.406). Most small-practice breaches do not reach this threshold." },
+      { question: "Do I have to report a breach to anyone besides HHS?", answer: "Possibly. Beyond notifying affected patients, HHS, and sometimes the media under HIPAA, reporting the attack to the FBI's Internet Crime Complaint Center at ic3.gov is voluntary but recommended. Many states also have their own breach-notification laws that can require notice to the state attorney general or other agencies, sometimes on a shorter timeline than HIPAA. Check your state's rules, or ask counsel." },
+      { question: "What happens if I don't report a breach?", answer: "Failing to report a breach you were required to report can itself be treated as a violation, and HHS has indicated it can rise to the level of willful neglect, which carries higher mandatory penalties. The notification rules are not optional, and the burden is on you to document any decision that an incident was not reportable." },
+      { question: "Should I pay the ransom in a ransomware attack?", answer: "This is a decision for counsel, your insurer, and law enforcement, not a quick call in the moment. Paying does not remove your duty to notify affected patients and HHS, and the FBI generally discourages payment because it funds further attacks and does not guarantee that you get your data back. This is general information, not legal advice." },
+    ],
+  },
 ];
 
 export function getAllArticles(): Article[] {
