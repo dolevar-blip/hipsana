@@ -11,9 +11,9 @@ const config: Config = {
         ink: "#0A0A0A",
         paper: "#FFFFFF",
         teal: {
-          DEFAULT: "#0F766E",
-          hover: "#0B5F58",
-          subtle: "#F0FDFA",
+          DEFAULT: "#1D4ED8",
+          hover: "#1E40AF",
+          subtle: "#EFF6FF",
         },
         muted: {
           DEFAULT: "#525252",
