@@ -1,23 +1,15 @@
 import type { Metadata } from "next";
-import { Fraunces, DM_Sans } from "next/font/google";
+import { Lexend } from "next/font/google";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const lexend = Lexend({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-fraunces",
-  weight: ["400", "500", "600", "700"],
-});
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-dm-sans",
-  weight: ["400", "500", "600", "700"],
+  variable: "--font-lexend",
 });
 
 const GA_MEASUREMENT_ID = "G-9SDHNCV0H0";
@@ -51,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${dmSans.variable}`}>
+    <html lang="en" className={lexend.variable}>
       <body className="min-h-screen flex flex-col">
         <ScrollToTop />
         <Script
