@@ -36,7 +36,7 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-md bg-ink px-5 py-3 text-sm font-medium text-paper transition-colors hover:bg-teal;
+    @apply inline-flex items-center justify-center rounded-md bg-teal px-5 py-3 text-sm font-medium text-paper transition-colors hover:bg-teal-hover;
   }
 
   .btn-secondary {
