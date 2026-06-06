@@ -21,8 +21,8 @@ const MONTHS = [
 ];
 
 function formatDate(iso: string): string {
-  const [y, m, d] = iso.split("-").map(Number);
-  return `${MONTHS[m - 1]} ${d}, ${y}`;
+  const [y, m] = iso.split("-").map(Number);
+  return `${MONTHS[m - 1]} ${y}`;
 }
 
 // Pre-render a static page for every article (published + draft) at build time.
