@@ -79,6 +79,60 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Proof from the public record */}
+      <section className="border-t border-muted-border bg-teal-subtle">
+        <div className="container-page py-16 md:py-20">
+          <div className="max-w-3xl">
+            <p className="eyebrow mb-3">From the public record</p>
+            <h2 className="font-display text-3xl tracking-tight md:text-4xl">
+              What a missing risk analysis actually costs
+            </h2>
+            <p className="mt-5 text-[17px] leading-relaxed text-muted">
+              In 2020, a solo physician&rsquo;s practice settled with HHS for
+              $100,000 and two years of federal monitoring. The trigger
+              wasn&rsquo;t a hacker or a stolen laptop. OCR found the practice
+              had never completed one basic document:{" "}
+              <Link
+                href="/articles/do-dental-practices-need-hipaa-risk-assessment"
+                className="text-teal underline decoration-teal/30 underline-offset-2 hover:decoration-teal"
+              >
+                the risk analysis the HIPAA Security Rule requires
+              </Link>
+              . To OCR, a solo physician and a solo dentist answer to the same
+              baseline. The free Scorecard checks whether that document, and the
+              gaps around it, exist in yours.
+            </p>
+
+            <figure className="mt-8">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/ocr-hipaa-settlement-porter-risk-analysis.webp"
+                alt="Excerpts from the HHS Office for Civil Rights resolution agreement with Steven A. Porter, M.D., P.C., a solo practice, with the cited failure to conduct a risk analysis and the $100,000 settlement highlighted."
+                width={1500}
+                height={562}
+                loading="lazy"
+                decoding="async"
+                className="h-auto w-full rounded-xl border border-muted-border"
+              />
+              <figcaption className="mt-3 text-sm leading-[1.6] text-muted">
+                Source: U.S. Department of Health and Human Services, Office for
+                Civil Rights.{" "}
+                <a
+                  href="https://www.hhs.gov/about/news/2020/03/03/health-care-provider-pays-100000-settlement-ocr-failing-implement-hipaa.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-teal underline decoration-teal/30 underline-offset-2 hover:decoration-teal"
+                >
+                  Press release, March 3, 2020
+                </a>{" "}
+                (the practice of Steven A. Porter, M.D.). Highlights added by
+                Hipsana.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       {/* Start with the Scorecard */}
       <section className="container-page py-20 md:py-24">
         <div className="max-w-2xl">
