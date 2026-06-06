@@ -28,8 +28,15 @@ export default function ScorecardPage() {
         </h1>
         <p className="prose-hipsana mt-6">
           Those fines almost always trace back to gaps a practice couldn&rsquo;t
-          see on its own. In three minutes, get your score and a written review
-          of what to fix &mdash; free, and no sales call.
+          see on its own.
+        </p>
+        <p className="prose-hipsana mt-6">
+          This free Scorecard checks the 10 HIPAA controls that matter most for a
+          solo practice.
+        </p>
+        <p className="prose-hipsana mt-6">
+          In about three minutes you get a score out of 100 and a written review
+          of what to fix.
         </p>
       </div>
 
