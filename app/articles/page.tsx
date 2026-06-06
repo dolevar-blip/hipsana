@@ -14,8 +14,8 @@ const MONTHS = [
 ];
 
 function formatDate(iso: string): string {
-  const [y, m, d] = iso.split("-").map(Number);
-  return `${MONTHS[m - 1]} ${d}, ${y}`;
+  const [y, m] = iso.split("-").map(Number);
+  return `${MONTHS[m - 1]} ${y}`;
 }
 
 export const metadata: Metadata = {
@@ -39,7 +39,7 @@ export default function ArticlesIndexPage() {
     <div className="container-page py-16 md:py-24">
       <div className="max-w-prose">
         <p className="eyebrow mb-3">Articles</p>
-        <h1 className="text-3xl font-semibold leading-tight md:text-4xl">
+        <h1 className="text-4xl font-semibold leading-[1.1] md:text-5xl">
           HIPAA, in plain language.
         </h1>
         <p className="mt-5 text-lg leading-relaxed text-muted">
@@ -61,7 +61,7 @@ export default function ArticlesIndexPage() {
                   className="group block py-7"
                 >
                   <p className="text-xs uppercase tracking-[0.14em] text-muted-light">
-                    {formatDate(article.dateModified)}
+                    Updated {formatDate(article.dateModified)}
                   </p>
                   <h2 className="mt-2 font-display text-xl font-semibold text-ink transition-colors group-hover:text-teal md:text-2xl">
                     {article.title}
