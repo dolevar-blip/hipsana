@@ -7,9 +7,24 @@ export const metadata: Metadata = {
     "How Hipsana works: a free HIPAA Security Scorecard and written risk review for solo dental, medical, and therapy practices, plus an intro to a vetted specialist when you want one.",
 };
 
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Hipsana",
+  url: "https://hipsana.com",
+  description:
+    "HIPAA guidance and a free Security Scorecard for solo and small dental, medical, and therapy practices. Every claim traces to a primary source.",
+  founder: { "@type": "Person", name: "Dolev Arama" },
+  email: "hello@hipsana.com",
+};
+
 export default function AboutPage() {
   return (
     <section className="container-page py-20 md:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+      />
       <div className="prose-hipsana">
         <p className="eyebrow mb-3">About Hipsana</p>
         <h1 className="font-display text-4xl tracking-tight md:text-5xl">
@@ -49,6 +64,24 @@ export default function AboutPage() {
           If you want help closing those gaps, we introduce you to a vetted
           compliance specialist who does that work. The Scorecard and the review
           are free.
+        </p>
+
+        <h2>The standard behind Hipsana</h2>
+        <p>
+          Hipsana is built to a single standard. Everything it publishes traces
+          to a primary source: the HIPAA Security Rule itself, the enforcement
+          record the HHS Office for Civil Rights publishes, and NIST&rsquo;s
+          security guidance. Anything that can&rsquo;t be verified against a
+          regulator is labeled as such, never guessed. The discipline is the
+          point. It lets a practice owner see exactly where they stand and
+          confirm every word of it independently.
+        </p>
+        <p>
+          Hipsana was founded by Dolev Arama and built for a single audience:
+          solo and small practices that carry a hospital&rsquo;s HIPAA
+          obligations without a hospital&rsquo;s compliance department. The work
+          is narrow on purpose, turning a sprawling federal rulebook into the
+          handful of things that actually put a practice at risk.
         </p>
 
         <h2>What we are not</h2>
