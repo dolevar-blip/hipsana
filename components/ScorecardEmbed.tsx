@@ -8,6 +8,7 @@ const WIDGET_SCRIPT_SRC = "https://tally.so/widgets/embed.js";
 
 export default function ScorecardEmbed() {
   const startFired = useRef(false);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
     // 1) Load Tally's embed script so the iframe auto-resizes to its content.
@@ -51,6 +52,17 @@ export default function ScorecardEmbed() {
       }
       if (!payload || typeof payload !== "object") return;
 
+      // Tally renders inside an inline iframe, so advancing a step does NOT
+      // trigger the route-based <ScrollToTop/>. On each page change, pull the
+      // form's top into view so the new question is visible. Guard on top < 0
+      // (form already scrolled past) so we never yank the page on first load.
+      if (payload.event === "Tally.FormPageView") {
+        const node = iframeRef.current;
+        if (node && node.getBoundingClientRect().top < 0) {
+          node.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+
       const gtag = (window as any).gtag;
       if (typeof gtag !== "function") return;
 
@@ -69,6 +81,7 @@ export default function ScorecardEmbed() {
 
   return (
     <iframe
+      ref={iframeRef}
       data-tally-src={TALLY_EMBED_SRC}
       loading="lazy"
       width="100%"
