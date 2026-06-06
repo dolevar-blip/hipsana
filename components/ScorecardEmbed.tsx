@@ -53,14 +53,13 @@ export default function ScorecardEmbed() {
       if (!payload || typeof payload !== "object") return;
 
       // Tally renders inside an inline iframe, so advancing a step does NOT
-      // trigger the route-based <ScrollToTop/>. On each page change, pull the
-      // form's top into view so the new question is visible. Guard on top < 0
-      // (form already scrolled past) so we never yank the page on first load.
-      if (payload.event === "Tally.FormPageView") {
-        const node = iframeRef.current;
-        if (node && node.getBoundingClientRect().top < 0) {
-          node.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
+      // trigger the route-based <ScrollToTop/>; the new question sits low in the
+      // iframe (below Tally's cover image) and stays off-screen. On each page
+      // change, scroll the form to the top of the viewport so the question shows.
+      // Guard on scrollY > 100 (the user has scrolled down to the form) so we
+      // never yank the page during the initial load while the hero is on screen.
+      if (payload.event === "Tally.FormPageView" && window.scrollY > 100) {
+        iframeRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
       }
 
       const gtag = (window as any).gtag;
