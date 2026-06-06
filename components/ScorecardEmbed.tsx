@@ -9,6 +9,7 @@ const WIDGET_SCRIPT_SRC = "https://tally.so/widgets/embed.js";
 export default function ScorecardEmbed() {
   const startFired = useRef(false);
   const iframeRef = useRef<HTMLIFrameElement>(null);
+  const firstPageViewSeen = useRef(false);
 
   useEffect(() => {
     // 1) Load Tally's embed script so the iframe auto-resizes to its content.
@@ -53,13 +54,17 @@ export default function ScorecardEmbed() {
       if (!payload || typeof payload !== "object") return;
 
       // Tally renders inside an inline iframe, so advancing a step does NOT
-      // trigger the route-based <ScrollToTop/>; the new question sits low in the
-      // iframe (below Tally's cover image) and stays off-screen. On each page
-      // change, scroll the form to the top of the viewport so the question shows.
-      // Guard on scrollY > 100 (the user has scrolled down to the form) so we
-      // never yank the page during the initial load while the hero is on screen.
-      if (payload.event === "Tally.FormPageView" && window.scrollY > 100) {
-        iframeRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      // trigger the route-based <ScrollToTop/>; the new question can land below
+      // the page hero, at the bottom of the viewport. On each page change we
+      // scroll the form to the top so the question is featured. The very first
+      // FormPageView is the page shown on load, so we skip it (no yank before
+      // the visitor acts); every later page view is a real navigation.
+      if (payload.event === "Tally.FormPageView") {
+        if (!firstPageViewSeen.current) {
+          firstPageViewSeen.current = true;
+        } else {
+          iframeRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       }
 
       const gtag = (window as any).gtag;
