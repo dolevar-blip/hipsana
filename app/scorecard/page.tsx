@@ -20,22 +20,16 @@ export const metadata: Metadata = {
 
 export default function ScorecardPage() {
   return (
-    <div className="container-page py-16 md:py-24">
+    <div className="container-page pt-8 pb-16 md:pt-12 md:pb-24">
       <div className="max-w-prose">
         <p className="eyebrow">Free HIPAA Security Scorecard</p>
         <h1 className="mt-3 text-3xl font-semibold md:text-5xl">
           One HIPAA Audit Could Cost You Six Figures.
         </h1>
         <p className="prose-hipsana mt-6">
-          Most solo practices have two or three HIPAA gaps they cannot see. This
-          Scorecard checks 10 core HIPAA Security Rule controls and scores your
-          practice out of 100.
-        </p>
-        <p className="prose-hipsana mt-4">
-          When you finish, you get a written review by email and the option to
-          book a short risk review, with an introduction to a vetted specialist
-          if you want help closing the gaps. It takes about three minutes, and
-          there is no cost.
+          Those fines almost always trace back to gaps a practice couldn&rsquo;t
+          see on its own. In three minutes, get your score and a written review
+          of what to fix &mdash; free, and no sales call.
         </p>
       </div>
 
