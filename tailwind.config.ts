@@ -23,7 +23,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ["var(--font-lexend)", "system-ui", "sans-serif"],
+        display: ["var(--font-ibm-plex-sans)", "system-ui", "sans-serif"],
         sans: ["var(--font-lexend)", "system-ui", "sans-serif"],
       },
       maxWidth: {
