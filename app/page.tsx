@@ -28,7 +28,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="container-page pt-24 pb-20 md:pt-32 md:pb-28">
+      <section className="container-page pt-12 pb-20 md:pt-16 md:pb-28">
         <div className="max-w-3xl">
           <p className="eyebrow mb-5">For solo dental, medical, and therapy practices</p>
           <h1 className="font-display text-[2.75rem] leading-[1.05] tracking-tight md:text-[3.75rem]">
