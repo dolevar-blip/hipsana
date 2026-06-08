@@ -205,7 +205,9 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The HIPAA Security Rule is organized around safeguards, and the very first administrative safeguard is the risk analysis. The text at 45 CFR \u00a7 164.308(a)(1)(ii)(A) reads:",
+          "The HIPAA Security Rule is organized around safeguards, and the very first administrative safeguard is the risk analysis. The text at ",
+          { text: "45 CFR \u00a7 164.308(a)(1)(ii)(A)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308" },
+          " reads:",
         ],
       },
       {
@@ -303,7 +305,9 @@ export const articles: Article[] = [
         items: [
           [
             { strong: "What it is. " },
-            "The federal government, through HHS and the ONC, publishes a free Security Risk Assessment (SRA) Tool that walks you through the questions.",
+            "The federal government, through HHS and the ONC, publishes a free ",
+            { text: "Security Risk Assessment (SRA) Tool", href: "https://healthit.gov/privacy-security/security-risk-assessment-tool/" },
+            " that walks you through the questions.",
           ],
           [
             { strong: "Who it fits. " },
@@ -361,7 +365,9 @@ export const articles: Article[] = [
           ],
           [
             { strong: "The shortfall. " },
-            "It costs more than the other two, and quality varies, so the specialist still has to fit a solo-practice budget and workflow.",
+            "It costs more than the other two, and quality varies, so the specialist still has to fit a solo-practice budget and workflow. (For the actual numbers, here is ",
+            { text: "what a dental HIPAA risk assessment typically costs", href: "/articles/how-much-does-a-hipaa-risk-assessment-cost-for-a-dental-practice" },
+            ".)",
           ],
           [
             { strong: "Verdict. " },
@@ -399,7 +405,9 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "HHS published a Notice of Proposed Rulemaking in the Federal Register on January 6, 2025, proposing the first major overhaul of the Security Rule in over two decades. The comment period closed in March 2025. As of this writing, ",
+          "HHS published ",
+          { text: "a Notice of Proposed Rulemaking in the Federal Register", href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information" },
+          " on January 6, 2025, proposing the first major overhaul of the Security Rule in over two decades. The comment period closed in March 2025. As of this writing, ",
           { strong: "OCR has not published a final rule" },
           ", and industry analysts now expect finalization in late 2026 or early 2027. So the changes below are proposed, not yet law.",
         ],
@@ -420,7 +428,11 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Treat the risk analysis as the foundation of your HIPAA program, not a box to check before an audit. It is required now, it is the first thing OCR looks for, and a missing or thin one is what turns a bad day into a six-figure settlement.",
+          "Treat the risk analysis as the foundation of your HIPAA program, not a box to check before an audit. It is required now, it is the first thing OCR looks for, and a missing or thin one is what turns a bad day into a six-figure settlement. For what that bad day actually looks like, see ",
+          { text: "what happens when a dental practice fails a HIPAA audit", href: "/articles/what-happens-if-dental-practice-fails-hipaa-audit" },
+          " and, if a breach is the trigger, ",
+          { text: "what to do in the first 60 days after a breach", href: "/articles/dental-data-breach-response" },
+          ".",
         ],
       },
       {
@@ -577,7 +589,9 @@ export const articles: Article[] = [
         items: [
           ["A patient or staff member files a complaint with OCR, or"],
           [
-            "You report a breach of unsecured patient information, which the Breach Notification Rule requires (45 CFR §§164.400-414). Breaches affecting 500 or more people are also posted on OCR’s public portal, the “Wall of Shame.”",
+            "You report a breach of unsecured patient information, which the ",
+            { text: "Breach Notification Rule", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D" },
+            " requires (45 CFR §§164.400-414). Breaches affecting 500 or more people are also posted on OCR’s public portal, the “Wall of Shame.”",
           ],
         ],
       },
@@ -683,7 +697,9 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "This is also where most practices quietly fall short. The risk analysis is required of every covered practice, but it is not a twenty-minute form. HHS offers a free Security Risk Assessment Tool, a reasonable place to start, but not a finished assessment that would satisfy an investigator: it gives you the questions, not which answers are wrong in your office. If you have never run one, ",
+          "This is also where most practices quietly fall short. The risk analysis is required of every covered practice, but it is not a twenty-minute form. HHS offers a free ",
+          { text: "Security Risk Assessment Tool", href: "https://healthit.gov/privacy-security/security-risk-assessment-tool/" },
+          ", a reasonable place to start, but not a finished assessment that would satisfy an investigator: it gives you the questions, not which answers are wrong in your office. If you have never run one, ",
           { text: "our guide to the dental HIPAA risk assessment", href: "/articles/do-dental-practices-need-hipaa-risk-assessment" },
           " covers what it has to include.",
         ],
@@ -730,14 +746,18 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Have a breach response plan. " },
-            "Knowing how to report on time keeps a manageable incident from becoming a Breach Notification Rule violation on top of the breach.",
+            "Knowing how to report on time keeps a manageable incident from becoming a Breach Notification Rule violation on top of the breach, and we walk through ",
+            { text: "the first 60 days after a dental data breach", href: "/articles/dental-data-breach-response" },
+            " step by step.",
           ],
         ],
       },
       {
         type: "p",
         runs: [
-          "None of these is expensive alone. What makes them feel impossible is not knowing which you are missing, which is the whole reason the risk analysis comes first.",
+          "None of these is expensive alone, and ",
+          { text: "what a dental HIPAA risk assessment actually costs", href: "/articles/how-much-does-a-hipaa-risk-assessment-cost-for-a-dental-practice" },
+          " ranges from free with the federal tool to a specialist's fee. What makes them feel impossible is not knowing which you are missing, which is the whole reason the risk analysis comes first.",
         ],
       },
 
@@ -949,7 +969,9 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Here is the part most practice owners miss. The breach report Comprehensive was legally required to file is the same document that opened a federal investigation. And the first thing investigators looked for was something every covered entity must already have: an accurate, thorough risk analysis of where its patient data lived and how it was protected (45 CFR 164.308(a)(1)). Comprehensive didn't have one. In April 2025 it agreed to pay $25,000 and to operate under a corrective action plan monitored by OCR for two years.",
+          "Here is the part most practice owners miss. The breach report Comprehensive was legally required to file is the same document that opened a federal investigation. And the first thing investigators looked for was something every covered entity must already have: an accurate, thorough risk analysis of where its patient data lived and how it was protected (",
+          { text: "45 CFR 164.308(a)(1)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308" },
+          "). Comprehensive didn't have one. In April 2025 it agreed to pay $25,000 and to operate under a corrective action plan monitored by OCR for two years.",
         ],
       },
       {
@@ -1008,7 +1030,9 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Breach response is the expensive end of HIPAA. The cheap end is prevention, and it begins with the same document OCR asked Comprehensive for. If you are reading this before anything has gone wrong, this is where your attention pays off most. A handful of moves cover most of the risk for a small dental practice:",
+          "Breach response is the expensive end of HIPAA. The cheap end is prevention, and it begins with the same document OCR asked Comprehensive for. We break down ",
+          { text: "what a dental HIPAA risk assessment costs", href: "/articles/how-much-does-a-hipaa-risk-assessment-cost-for-a-dental-practice" },
+          " separately. If you are reading this before anything has gone wrong, this is where your attention pays off most. A handful of moves cover most of the risk for a small dental practice:",
         ],
       },
       {
@@ -1087,7 +1111,9 @@ export const articles: Article[] = [
         items: [
           [
             { strong: "About $1,500 to $6,000 for a specialist-run analysis. " },
-            "The free federal SRA tool is $0, and software platforms that include an assessment start in the low hundreds of dollars a year. These are 2026 market estimates; your number depends on how much you do in-house.",
+            "The ",
+            { text: "free federal SRA tool", href: "https://healthit.gov/privacy-security/security-risk-assessment-tool/" },
+            " is $0, and software platforms that include an assessment start in the low hundreds of dollars a year. These are 2026 market estimates; your number depends on how much you do in-house.",
           ],
           [
             { strong: "The free government tool is a starting point, not a finished analysis. " },
@@ -1388,7 +1414,9 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "HHS published the proposal in the Federal Register on January 6, 2025 (its rulemaking ID is RIN 0945-AA22). If finalized as written, it would turn several safeguards that are currently flexible into hard requirements, among them encryption of patient data, multi-factor authentication, routine vulnerability scanning, and penetration testing. That would raise compliance costs across the board. HHS's own analysis estimated the proposal would cost the healthcare industry roughly $9 billion in its first year, which is part of why more than 100 hospital and provider groups have asked the agency to withdraw it.",
+          "HHS published ",
+          { text: "the proposal in the Federal Register", href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information" },
+          " on January 6, 2025 (its rulemaking ID is RIN 0945-AA22). If finalized as written, it would turn several safeguards that are currently flexible into hard requirements, among them encryption of patient data, multi-factor authentication, routine vulnerability scanning, and penetration testing. That would raise compliance costs across the board. HHS's own analysis estimated the proposal would cost the healthcare industry roughly $9 billion in its first year, which is part of why more than 100 hospital and provider groups have asked the agency to withdraw it.",
         ],
       },
       {
