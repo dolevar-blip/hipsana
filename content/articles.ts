@@ -869,7 +869,7 @@ export const articles: Article[] = [
       "A dental data breach starts a 60-day HIPAA clock. The exact steps to take, who to notify, and what OCR looks for first, anchored to a real OCR settlement.",
     author: "Dolev Arama",
     datePublished: "2026-06-05",
-    dateModified: "2026-06-05",
+    dateModified: "2026-06-11",
     body: [
       {
         type: "p",
@@ -1076,6 +1076,25 @@ export const articles: Article[] = [
           ".",
         ],
       },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is the founder of Hipsana, where he runs the HIPAA Risk Scorecard and the short practice risk reviews behind it. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. Its compliance writing starts from primary regulators (HHS, OCR, NIST) and is checked against their current text before anything goes live. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          ["HHS Office for Civil Rights, Resolution Agreement and press release, Comprehensive Neurology, PC (April 2025)."],
+          ["HHS Office for Civil Rights, Ransomware Fact Sheet."],
+          ["45 CFR §§ 164.400-414, Breach Notification Rule (eCFR, current)."],
+          ["45 CFR § 164.308(a)(1) (eCFR, current)."],
+          ["FBI Internet Crime Complaint Center (ic3.gov)."],
+        ],
+      },
     ],
     faq: [
       { question: "How long do I have to report a HIPAA breach?", answer: "You must notify affected individuals without unreasonable delay and no later than 60 calendar days after you discover the breach (45 CFR 164.404). If 500 or more people are affected, you also notify HHS within that same 60 days. For breaches affecting fewer than 500 people, you keep an internal log and report it to HHS no later than 60 days after the end of the calendar year." },
@@ -1097,7 +1116,7 @@ export const articles: Article[] = [
       "A HIPAA risk assessment for a dental practice usually runs $1,500 to $6,000 with a specialist; the free HHS tool is $0. What each path buys, and why cheap can cost more.",
     author: "Dolev Arama",
     datePublished: "2026-06-05",
-    dateModified: "2026-06-05",
+    dateModified: "2026-06-11",
     body: [
       {
         type: "p",
@@ -1499,6 +1518,25 @@ export const articles: Article[] = [
           " or qualified counsel before you act. The risk-analysis requirement is at ",
           { text: "45 CFR 164.308(a)(1)(ii)(A)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308" },
           ", and the case described comes from HHS.",
+        ],
+      },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is the founder of Hipsana, where he runs the HIPAA Risk Scorecard and the short practice risk reviews behind it. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. Its compliance writing starts from primary regulators (HHS, OCR, NIST) and is checked against their current text before anything goes live. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          ["HHS Office for Civil Rights, settlement with Vision Upright MRI (May 2025)."],
+          ["HHS Office for Civil Rights, Risk Analysis Initiative (announced October 2024)."],
+          ["HHS, Security Risk Assessment (SRA) Tool (HealthIT.gov), version 3.6."],
+          ["45 CFR § 164.308(a)(1)(ii)(A) (eCFR, current)."],
+          ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025 (RIN 0945-AA22)."],
         ],
       },
     ],
