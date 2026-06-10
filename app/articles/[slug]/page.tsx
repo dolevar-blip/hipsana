@@ -25,6 +25,15 @@ function formatDate(iso: string): string {
   return `${MONTHS[m - 1]} ${y}`;
 }
 
+// First in-body image: each published cornerstone carries one annotated OCR
+// exhibit. Used for og:image and the BlogPosting image field; articles without
+// an image block (the internal draft) simply omit both.
+function getArticleImage(article: Article) {
+  return article.body.find(
+    (block): block is Extract<Block, { type: "image" }> => block.type === "image"
+  );
+}
+
 // Pre-render a static page for every article (published + draft) at build time.
 export function generateStaticParams(): { slug: string }[] {
   return getAllArticles().map((article) => ({ slug: article.slug }));
@@ -41,6 +50,8 @@ export function generateMetadata({
   const article = getArticleBySlug(params.slug);
   if (!article) return {};
 
+  const image = getArticleImage(article);
+
   return {
     title: article.title,
     description: article.description,
@@ -50,6 +61,18 @@ export function generateMetadata({
       description: article.description,
       url: `${SITE_URL}/articles/${article.slug}`,
       type: "article",
+      ...(image
+        ? {
+            images: [
+              {
+                url: `${SITE_URL}${image.src}`,
+                width: image.width,
+                height: image.height,
+                alt: image.alt,
+              },
+            ],
+          }
+        : {}),
     },
     ...(article.status === "draft"
       ? { robots: { index: false, follow: false } }
@@ -153,11 +176,13 @@ function faqJsonLd(article: Article) {
 }
 
 function articleJsonLd(article: Article) {
+  const image = getArticleImage(article);
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: article.title,
     description: article.description,
+    ...(image ? { image: [`${SITE_URL}${image.src}`] } : {}),
     datePublished: article.datePublished,
     dateModified: article.dateModified,
     author: { "@type": "Person", name: article.author },
