@@ -4,6 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   description:
     "A free HIPAA Security Scorecard for solo dental, medical, and therapy practices. Find your gaps in minutes, then get a written review and an intro to a vetted specialist.",
+  alternates: { canonical: "/" },
 };
 
 const pillars = [
