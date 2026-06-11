@@ -5,6 +5,14 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "How Hipsana works: a free HIPAA Security Scorecard and written risk review for solo dental, medical, and therapy practices, plus an intro to a vetted specialist when you want one.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About · Hipsana",
+    description:
+      "How Hipsana works: a free HIPAA Security Scorecard and written risk review for solo dental, medical, and therapy practices, plus an intro to a vetted specialist when you want one.",
+    url: "https://hipsana.com/about",
+    type: "website",
+  },
 };
 
 const orgJsonLd = {
