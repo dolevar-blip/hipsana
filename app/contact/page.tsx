@@ -5,6 +5,14 @@ export const metadata: Metadata = {
   title: "Contact",
   description:
     "Get in touch with Hipsana. Email hello@hipsana.com for questions, corrections, partnership inquiries, or feedback.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact · Hipsana",
+    description:
+      "Get in touch with Hipsana. Email hello@hipsana.com for questions, corrections, partnership inquiries, or feedback.",
+    url: "https://hipsana.com/contact",
+    type: "website",
+  },
 };
 
 export default function ContactPage() {
