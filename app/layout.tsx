@@ -37,6 +37,14 @@ export const metadata: Metadata = {
     url: "https://hipsana.com",
     siteName: "Hipsana",
     type: "website",
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Hipsana — HIPAA & cybersecurity for solo dental, medical, and therapy practices.",
+      },
+    ],
   },
   robots: {
     index: true,
