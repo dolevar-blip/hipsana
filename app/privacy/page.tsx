@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/privacy",
   },
+  openGraph: {
+    title: "Privacy Policy · Hipsana",
+    description:
+      "What Hipsana collects when you use the HIPAA Security Risk Scorecard, why we collect it, who we share it with, how long we keep it, and how to request deletion.",
+    url: "https://hipsana.com/privacy",
+    type: "website",
+  },
 };
 
 export default function PrivacyPage() {
