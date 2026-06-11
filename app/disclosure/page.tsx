@@ -4,6 +4,14 @@ export const metadata: Metadata = {
   title: "Disclosure",
   description:
     "How Hipsana makes money: referral fees from vetted specialists, a smaller affiliate line, and our rule that neither ever changes what your review says.",
+  alternates: { canonical: "/disclosure" },
+  openGraph: {
+    title: "Disclosure · Hipsana",
+    description:
+      "How Hipsana makes money: referral fees from vetted specialists, a smaller affiliate line, and our rule that neither ever changes what your review says.",
+    url: "https://hipsana.com/disclosure",
+    type: "website",
+  },
 };
 
 export default function DisclosurePage() {
