@@ -92,7 +92,7 @@ export const articles: Article[] = [
       "Yes. The HIPAA Security Rule requires a risk analysis from every dental practice, solo or group. Here's what OCR actually checks, and how to get it done.",
     author: "Dolev Arama",
     datePublished: "2026-06-03",
-    dateModified: "2026-06-03",
+    dateModified: "2026-06-11",
     body: [
       {
         type: "p",
@@ -118,7 +118,12 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Do it at least once a year, " },
-            "and again after anything material changes: new software, a new location, a data breach.",
+            "and again after anything material changes: new software, a new location, a data breach. AI counts as new software; ",
+            {
+              text: "whether ChatGPT and other AI tools are HIPAA compliant in a dental practice",
+              href: "/articles/is-chatgpt-hipaa-compliant-dental-practice",
+            },
+            " is its own question.",
           ],
           [
             { strong: "The 2026 overhaul is still proposed, not final. " },
@@ -513,7 +518,7 @@ export const articles: Article[] = [
       "A random HIPAA audit rarely ends in a fine. The real risk is an OCR investigation after a breach or complaint, and what failing actually costs a small dental practice.",
     author: "Dolev Arama",
     datePublished: "2026-06-04",
-    dateModified: "2026-06-04",
+    dateModified: "2026-06-11",
     body: [
       {
         type: "p",
@@ -734,7 +739,12 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Sign real business associate agreements. " },
-            "Every vendor that touches patient data, your practice-management software, IT company, billing service, needs one (45 CFR §164.504(e)). Missing BAAs are a recurring finding.",
+            "Every vendor that touches patient data, your practice-management software, IT company, billing service, needs one (45 CFR §164.504(e)). Missing BAAs are a recurring finding, and AI tools are the newest place they go missing; here is ",
+            {
+              text: "which AI tools will sign a BAA for a dental practice",
+              href: "/articles/is-chatgpt-hipaa-compliant-dental-practice",
+            },
+            ".",
           ],
           [
             { strong: "Write your policies, and follow them. " },
@@ -910,7 +920,12 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Not every security scare is a reportable breach, but HIPAA puts the burden on you to prove it isn't. A breach can take many shapes: ransomware that locks your records, a lost or stolen laptop, an email sent to the wrong patient, a former employee who copied files on the way out, or a stolen server. Whatever the cause, the same test applies.",
+          "Not every security scare is a reportable breach, but HIPAA puts the burden on you to prove it isn't. A breach can take many shapes: ransomware that locks your records, a lost or stolen laptop, an email sent to the wrong patient, a former employee who copied files on the way out, a stolen server, or ",
+          {
+            text: "patient information pasted into a public AI tool",
+            href: "/articles/is-chatgpt-hipaa-compliant-dental-practice",
+          },
+          ". Whatever the cause, the same test applies.",
         ],
       },
       {
@@ -1499,7 +1514,12 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Cost climbs with complexity. What moves a dental practice's number: how many operatory and front-desk workstations you run, your practice-management system (Dentrix, Eaglesoft, Open Dental, or similar), digital imaging, cloud versus on-premise servers, the number of locations, teledentistry, and whether you have a prior assessment to build on. A breach already on the books pushes you toward a specialist and a higher number.",
+          "Cost climbs with complexity. What moves a dental practice's number: how many operatory and front-desk workstations you run, your practice-management system (Dentrix, Eaglesoft, Open Dental, or similar), digital imaging, cloud versus on-premise servers, the number of locations, teledentistry, and whether you have a prior assessment to build on. A breach already on the books pushes you toward a specialist and a higher number. So does adding AI: every scribe or chatbot is one more system in scope, and ",
+          {
+            text: "whether ChatGPT is HIPAA compliant for a dental practice",
+            href: "/articles/is-chatgpt-hipaa-compliant-dental-practice",
+          },
+          " is worth settling before you buy.",
         ],
       },
       {
@@ -1548,6 +1568,354 @@ export const articles: Article[] = [
       { question: "Who can perform a HIPAA risk assessment, and can I do it myself?", answer: "You can do it yourself. HIPAA does not require an outside firm, and the free federal tool exists for exactly that. What matters is that the analysis is accurate, thorough, documented, and followed by a plan to fix what it finds. Many small practices run the assessment in-house and bring in help only for the parts they cannot judge alone, such as technical testing or a recent breach. If you want a quick read on which gaps you would be doing it for, the Scorecard shows you in about three minutes." },
       { question: "How long does a HIPAA risk assessment take?", answer: "Anywhere from an afternoon with the free tool for a simple solo practice to a few weeks for a consultant-led review with an onsite visit and a written plan. The larger time cost is usually fixing what the analysis turns up, not running the analysis." },
       { question: "Does the Hipsana Scorecard replace a risk analysis?", answer: "No, and we would not claim it does. The Scorecard is a fast self-check of the gaps OCR looks at first. A formal risk analysis is the documented, thorough assessment the law requires. The Scorecard shows you where you likely stand so you can decide what to do next, including a short free review and an intro to a specialist." },
+    ],
+  },
+  {
+    slug: "is-chatgpt-hipaa-compliant-dental-practice",
+    status: "published",
+    title: "Is ChatGPT HIPAA Compliant for a Dental Practice? (2026)",
+    description:
+      "ChatGPT's everyday plans are not HIPAA compliant, by OpenAI's own terms. Which AI tools will sign a BAA for a dental practice, and what OCR asks for first.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-11",
+    dateModified: "2026-06-11",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "Mostly no. ChatGPT's Free, Plus, Pro, Team, and self-serve Business plans are not HIPAA compliant for patient information: OpenAI offers no Business Associate Agreement for them, and HIPAA bars giving patient data to a vendor without one (45 CFR \u00a7 164.502(e)). AI becomes legal in a dental practice through a signed BAA plus a risk analysis listing the tool.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The question usually arrives the practical way: somewhere in the past month, there is a fair chance someone in your office pasted a patient email into ChatGPT to draft a reply. It is fast, it writes well, and it is free. That one paste is where most practices meet this question without realizing they asked it.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "That is OpenAI's own position, not a cautious reading of it. " },
+            "The company ",
+            {
+              text: "does not offer a Business Associate Agreement",
+              href: "https://help.openai.com/en/articles/8660679-how-can-i-get-a-business-associate-agreement-baa-with-openai",
+            },
+            " for any of those everyday plans, so patient information must never go into them, no matter which privacy settings are switched on.",
+          ],
+          [
+            { strong: "HIPAA does not ban AI. " },
+            "It treats an AI vendor the way it treats any vendor that touches patient data: as a business associate that needs a signed BAA before the first patient detail flows.",
+          ],
+          [
+            { strong: "Two documents decide your exposure: " },
+            "a BAA with the AI vendor, and a ",
+            {
+              text: "risk analysis",
+              href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308",
+            },
+            " that lists the tool. The second one is the document OCR's current enforcement initiative is built around.",
+          ],
+          [
+            { strong: "A \"HIPAA compliant\" badge is a claim, not a contract. " },
+            "The badge says compliance is possible on the vendor's platform. The agreement with your practice's name on it is what counts in an investigation.",
+          ],
+          [
+            { strong: "Not sure where your practice stands? " },
+            "The Scorecard checks the 10 items OCR looks at first, in about three minutes. ",
+            { text: "Check my practice \u2192", href: "/scorecard" },
+          ],
+        ],
+      },
+      { type: "h2", text: "Why every dental office is suddenly asking" },
+      {
+        type: "p",
+        runs: [
+          "AI arrived in dentistry from three directions at once: scribes that listen chairside and write the clinical note, imaging tools that flag findings on x-rays, and general chatbots the front desk quietly adopted for emails and insurance narratives. The federal government noticed. HHS issued a request for information on AI adoption in clinical care, and the American Dental Association ",
+          {
+            text: "answered in February 2026",
+            href: "https://adanews.ada.org/ada-news/2026/february/ada-responds-to-hhs-request-for-information-on-ai-adoption-in-dentistry/",
+          },
+          ", noting that adoption decisions fall on practice owners precisely when, in its words, \"regulatory status is unclear,\" a burden it called heaviest for small offices.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Here is the part that cuts through the noise: there is no AI-specific HIPAA rule. The existing rules apply to AI software exactly as they apply to your practice management system or your cloud backup. That makes the answer to this article's question less about ChatGPT and more about two requirements that have existed for years.",
+        ],
+      },
+      { type: "h2", text: "What HIPAA actually says when an AI tool touches patient data" },
+      {
+        type: "p",
+        runs: [
+          "First, the vendor question. Under HIPAA, any company that creates, receives, maintains, or transmits protected health information on your behalf is a business associate, and the rules require a signed Business Associate Agreement before that information reaches it (45 CFR \u00a7 160.103 and \u00a7 164.502(e)). An AI scribe that hears your exam-room conversation, a chatbot that drafts replies to identifiable patient emails, an imaging model that reads a named x-ray: all of these sit squarely inside that definition. No BAA, no patient data. There is no volume exception, and no exception for having only done it once.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Second, the inventory question. The Security Rule requires an accurate and thorough ",
+          {
+            text: "risk analysis",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308",
+          },
+          " covering every system that holds or moves electronic patient information (45 CFR \u00a7 164.308(a)(1)(ii)(A)). A new AI tool is a new system. If your last risk analysis predates your first AI tool, it no longer describes the practice you actually run. We covered ",
+          {
+            text: "whether a dental practice needs a risk assessment at all",
+            href: "/articles/do-dental-practices-need-hipaa-risk-assessment",
+          },
+          " separately; the short answer is yes, and AI only raises the stakes.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "There is a third path the vendors like to mention: de-identified data is not protected health information, so HIPAA does not restrict it. True, and narrower than it sounds. The de-identification standard (45 CFR \u00a7 164.514) requires stripping 18 categories of identifiers, including most dates and contact details, or a formal expert determination. Deleting a name from a note whose story still identifies the patient does not qualify.",
+        ],
+      },
+      { type: "h2", text: "Is ChatGPT itself HIPAA compliant?" },
+      {
+        type: "p",
+        runs: [
+          "Not by default, and for the versions a solo practice would realistically sign up for, not at all. OpenAI's own terms draw the lines:",
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "Free, Plus, Pro, Team, and self-serve Business: no. " },
+            "OpenAI states it does not offer a BAA for these plans. Typing patient information into them is an impermissible disclosure the moment you hit enter, whether or not anything ever leaks. Privacy toggles like turning off training do not change that legal fact.",
+          ],
+          [
+            { strong: "ChatGPT Enterprise and Edu: possible, with conditions. " },
+            "A BAA is available only to sales-managed accounts, arranged through OpenAI's sales team. This is corporate procurement, not a settings page.",
+          ],
+          [
+            { strong: "ChatGPT for Healthcare and the API: yes, for eligible customers. " },
+            "OpenAI now offers a dedicated healthcare product with a BAA and a stated commitment that customer content is not used to train models, and it signs BAAs case by case for zero-data-retention API endpoints. Both are aimed at organizations with technical staff.",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "What the free version is still good for, with zero patient information in it: blank consent templates, job postings, a recall letter with placeholder fields, supplier emails. The line is identifiability, and one pasted patient message crosses it. If your team uses public AI at all, that line belongs in writing and in training, because a staff member who crosses it creates the practice's violation, not a personal one.",
+        ],
+      },
+      { type: "h2", text: "Which AI tools will sign a BAA, and which will not" },
+      {
+        type: "p",
+        runs: [
+          "Current as of June 2026, taken from each vendor's published terms rather than from reputation. These pages change; confirm the live text before you rely on a row.",
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "OpenAI: " },
+            "BAA available for the API (zero-data-retention endpoints, approved case by case) and for sales-managed ChatGPT Enterprise, Edu, and ChatGPT for Healthcare. ",
+            {
+              text: "Explicitly unavailable",
+              href: "https://help.openai.com/en/articles/8660679-how-can-i-get-a-business-associate-agreement-baa-with-openai",
+            },
+            " for Free, Plus, Pro, Team, and self-serve Business.",
+          ],
+          [
+            { strong: "Google: " },
+            "the Workspace BAA is accepted electronically in the ",
+            { text: "Admin console", href: "https://support.google.com/a/answer/3407054" },
+            "; Google's ",
+            {
+              text: "covered-functionality list",
+              href: "https://workspace.google.com/terms/2015/1/hipaa_functionality/",
+            },
+            " (updated May 14, 2026) includes Gemini in Workspace and the Gemini app, and excludes Gemini in Chrome and all third-party add-ons. Consumer Gemini on a personal account carries no BAA.",
+          ],
+          [
+            { strong: "Microsoft: " },
+            "commercial Microsoft 365 customers get the HIPAA BAA by default through Microsoft's Data Protection Addendum, and Microsoft lists Microsoft 365 Copilot among the in-scope services. Copilot inside the consumer and Family plans is a consumer product with no BAA.",
+          ],
+          [
+            { strong: "Dental AI vendors (scribes, imaging, front-desk tools): " },
+            "most advertise HIPAA compliance and BAA availability. Treat those as vendor statements. The test is whether they will execute a BAA naming your practice and put their data-retention and model-training terms in writing before the first patient is recorded.",
+          ],
+        ],
+      },
+      { type: "h2", text: "AI scribes and the operatory microphone" },
+      {
+        type: "p",
+        runs: [
+          "Scribes deserve their own section because they do something no other office tool does: they record patient conversations, which means they create protected health information at the source, in audio. Three questions decide whether that is safe. Where do the recordings and transcripts live, and for how long? Is the audio used to train the vendor's models? And does the patient know a system is listening? Recording-consent rules also exist in state law, separate from HIPAA, and they vary; this is general information, not legal advice.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Before any scribe goes live, get four things from the vendor in writing: a BAA naming your practice, the retention period for audio and transcripts, a model-training commitment, and the procedure for exporting or deleting your data if you leave. A vendor that hesitates on any of the four has answered the real question.",
+        ],
+      },
+      { type: "h2", text: "What enforcement looks like when a dental vendor fails: MMG Fusion" },
+      {
+        type: "p",
+        runs: [
+          "On March 5, 2026, OCR ",
+          {
+            text: "announced a settlement",
+            href: "https://www.hhs.gov/press-room/ocr-mmg-fusion-hipaa-agreement.html",
+          },
+          " with MMG Fusion, LLC, a Maryland company whose software handled patient communication and marketing for dental practices, which made it a business associate to the dentists who used it. In December 2020 an intruder got into MMG's systems and reached the information of roughly 15 million people: names, phone numbers, mailing and email addresses, birth dates, and the dates and times of appointments. The data surfaced on the dark web. OCR learned of it only from a complaint in 2023, because MMG had never notified the practices it served. The investigation found MMG had also failed to conduct an accurate and thorough risk analysis.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-settlement-mmg-fusion-risk-analysis.webp",
+        alt: "Exhibit from the HHS Office for Civil Rights press release on the MMG Fusion settlement: OCR found the Maryland dental software vendor, a business associate to dental practices, had failed to conduct an accurate and thorough HIPAA risk analysis and never notified the practices of a December 2020 breach that exposed about 15 million people's information; it paid a $10,000 settlement and entered a three-year corrective action plan.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "Source: U.S. Department of Health and Human Services, Office for Civil Rights. ",
+          {
+            text: "Settlement with MMG Fusion, LLC (March 5, 2026)",
+            href: "https://www.hhs.gov/press-room/ocr-mmg-fusion-hipaa-agreement.html",
+          },
+          ". Highlights added by Hipsana: a dental software vendor with no compliant risk analysis, the $10,000 settlement, the three-year corrective action plan, and roughly 15 million people exposed.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Two lessons sit in that exhibit. The settlement was $10,000 against 15 million records because OCR weighed the company's financial condition; MMG was effectively gone. The dentists were not. Their patients' data had been exposed for years while the practices, the covered entities in the chain, knew nothing. A vendor's collapse does not transfer the relationship with your patients anywhere; it lands back on you. And the case was the twelfth enforcement action in OCR's Risk Analysis Initiative, the same document-first pattern we described in ",
+          {
+            text: "what happens when a dental practice fails a HIPAA audit",
+            href: "/articles/what-happens-if-dental-practice-fails-hipaa-audit",
+          },
+          ": the investigation opens with a request for the risk analysis, and the absence of one is the finding.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "An AI tool you adopted this year is exactly the kind of system OCR expects to find listed in that document, and a vendor's badge will not stand in for it. " },
+          "Most solo practices carry two or three HIPAA gaps they cannot see from the inside. The Scorecard checks the 10 items OCR asks about first, then offers a short free risk review and, if you want one, an intro to a vetted specialist. Takes about three minutes. ",
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      { type: "h2", text: "If patient information already went into a public AI tool" },
+      {
+        type: "p",
+        runs: [
+          "This happens in ordinary, well-run offices, usually at the front desk, and panic is the wrong response. Documented action is the right one. Stop using that channel for patient content. Write down what was entered and when, and which account was used. Then run a breach risk assessment: the structured, written evaluation of how probable it is the information was compromised. Some incidents end there, documented as low probability. Others start notification clocks. The full sequence, including the deadlines, is in ",
+          {
+            text: "what to do after a dental data breach",
+            href: "/articles/dental-data-breach-response",
+          },
+          ". The one unacceptable response is the undocumented shrug, because that is the line investigators quote later.",
+        ],
+      },
+      { type: "h2", text: "How to bring AI into the practice without creating a HIPAA problem" },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Inventory what is already in use",
+            detail:
+              "Ask every team member which AI tools they have touched for work in the past month, on any device, personal phones included. No blame attached; you are mapping, not policing. About 30 minutes at a staff meeting.",
+          },
+          {
+            label: "Sort every tool into one of three buckets",
+            detail:
+              "Never touches patient information: keep. Touches it under a signed BAA: keep, with the paperwork checked. Touches it with no BAA: stops today. The vendor list above does most of the sorting.",
+          },
+          {
+            label: "Collect the paperwork for the keepers",
+            detail:
+              "Get the BAA naming your practice, then the vendor's written answers on retention and model training, then the export-or-delete procedure. An afternoon of email, and the vendors that handle it smoothly are telling you something too.",
+          },
+          {
+            label: "Update your risk analysis",
+            detail:
+              "Add each approved tool as a system that creates or transmits patient information, note its risks, and record the safeguards you chose. If the analysis itself is missing or stale, that is the first repair, and it is the one OCR checks.",
+          },
+          {
+            label: "Write the one-page AI rule and train on it",
+            detail:
+              "Which tools are approved, what may never be typed into a public chatbot, and who to tell when something slips. Ten minutes at a staff meeting beats a binder nobody opens, and the training itself is a HIPAA requirement you can document.",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "If the fix list ends in hiring help, ",
+          {
+            text: "what a HIPAA risk assessment costs for a dental practice",
+            href: "/articles/how-much-does-a-hipaa-risk-assessment-cost-for-a-dental-practice",
+          },
+          " breaks down the market so you do not overpay.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Want the gaps mapped before you start? " },
+          "The Scorecard surfaces them in about three minutes, and the free review walks through the result with you. ",
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      { type: "h2", text: "The catch" },
+      {
+        type: "p",
+        runs: [
+          "A signed BAA is necessary and not sufficient. It makes the vendor legally accountable; it does not make their servers secure, and MMG Fusion is the proof that when a vendor fails, the patients and the notification duties are still yours. Treat vendor selection as a security control, not a signature to collect.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "And the ground is still moving. A proposed overhaul of the ",
+          {
+            text: "HIPAA Security Rule",
+            href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information",
+          },
+          " published in January 2025 would harden the technical requirements behind everything in this article. As of June 2026 it remains a proposal, not law, and OCR's AI-specific guidance is still developing. Write your AI policy against today's rules, date it, and expect to revisit it.",
+        ],
+      },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is the founder of Hipsana, where he runs the HIPAA Risk Scorecard and the short practice risk reviews behind it. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. Its compliance writing starts from primary regulators (HHS, OCR, NIST) and is checked against their current text before anything goes live. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          ["HHS Office for Civil Rights, settlement with MMG Fusion, LLC (March 5, 2026); 12th action in the Risk Analysis Initiative."],
+          ["HHS Office for Civil Rights, Risk Analysis Initiative (announced October 2024)."],
+          ["OpenAI, \"How can I get a Business Associate Agreement (BAA) with OpenAI?\" help article and business-data security page (accessed June 2026)."],
+          ["Google Workspace Admin Help, \"HIPAA Compliance with Google Workspace and Cloud Identity,\" and the HIPAA Included Functionality list (as of May 14, 2026)."],
+          ["Microsoft, HIPAA/HITECH documentation: the BAA via the Microsoft Products and Services Data Protection Addendum, with Microsoft 365 Copilot listed in scope (accessed June 2026)."],
+          ["American Dental Association, response to the HHS request for information on AI adoption in clinical care (February 2026)."],
+          ["45 CFR \u00a7 160.103; \u00a7 164.502(e); \u00a7 164.308(a)(1)(ii)(A); \u00a7 164.514 (eCFR, current)."],
+          ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025 (RIN 0945-AA22)."],
+        ],
+      },
+    ],
+    faq: [
+      { question: "Can I use the free version of ChatGPT for anything in a dental office?", answer: "Yes, for work that contains no patient information: drafting a job posting, a blank consent template, a generic oral-hygiene handout, a supplier email. The line is patient information of any kind; even a name alone or a recognizable photo crosses it, and so does one pasted patient email." },
+      { question: "Is ChatGPT Plus or Team HIPAA compliant if I turn off chat history and training?", answer: "No. Privacy toggles change what the vendor does with the data, not your legal position. Without a Business Associate Agreement, sending patient information to the service is an impermissible disclosure under HIPAA, and OpenAI states it does not offer a BAA for these plans." },
+      { question: "Does removing the patient's name make the data safe to paste?", answer: "Usually not. HIPAA's de-identification standard requires removing 18 categories of identifiers, most dates and all contact details among them, or obtaining a formal expert determination. A note with the name deleted but the story intact is often still identifiable, and still protected health information." },
+      { question: "Are AI scribes a HIPAA violation?", answer: "Not inherently. A scribe with a signed BAA, clear retention and model-training terms, patient awareness of the recording, and a line in your risk analysis can be used compliantly. The same scribe adopted on a free trial with none of that paperwork is an open liability." },
+      { question: "Is there a HIPAA-compliant version of ChatGPT a small practice can actually get?", answer: "The compliant paths today are procurement products aimed at organizations with IT support: OpenAI's API, sales-managed Enterprise and Edu accounts, and ChatGPT for Healthcare. Most solo practices that want generative AI near patient data end up on a healthcare-specific tool that bundles the BAA, or they keep public AI strictly on the no-patient-data side of the line." },
+      { question: "What should I do if a team member already put patient details into a public AI tool?", answer: "Stop using that channel for patient content. Note exactly what was entered and when. Then run a documented breach risk assessment to judge the probability the information was compromised. Some incidents are defensibly low risk; others start notification obligations. The worst response is an undocumented shrug, because that is the gap investigators later quote." },
+      { question: "Does the Hipsana Scorecard check AI risks?", answer: "It checks the foundations those risks land on: whether you have a current risk analysis, signed BAAs, staff training, and the other items OCR asks for first. AI tools enter your practice through exactly those doors. The Scorecard takes about three minutes, and the free review that follows can flag where an AI tool you use still needs paperwork." },
     ],
   },
 ];
