@@ -92,7 +92,7 @@ export const articles: Article[] = [
       "Yes. The HIPAA Security Rule requires a risk analysis from every dental practice, solo or group. Here's what OCR actually checks, and how to get it done.",
     author: "Dolev Arama",
     datePublished: "2026-06-03",
-    dateModified: "2026-06-11",
+    dateModified: "2026-06-12",
     body: [
       {
         type: "p",
@@ -123,7 +123,12 @@ export const articles: Article[] = [
               text: "whether ChatGPT and other AI tools are HIPAA compliant in a dental practice",
               href: "/articles/is-chatgpt-hipaa-compliant-dental-practice",
             },
-            " is its own question.",
+            " is its own question, and so is ",
+            {
+              text: "the BAA test for an AI scribe that records visits",
+              href: "/articles/are-ai-scribes-hipaa-compliant-dental-practice",
+            },
+            ".",
           ],
           [
             { strong: "The 2026 overhaul is still proposed, not final. " },
@@ -518,7 +523,7 @@ export const articles: Article[] = [
       "A random HIPAA audit rarely ends in a fine. The real risk is an OCR investigation after a breach or complaint, and what failing actually costs a small dental practice.",
     author: "Dolev Arama",
     datePublished: "2026-06-04",
-    dateModified: "2026-06-11",
+    dateModified: "2026-06-12",
     body: [
       {
         type: "p",
@@ -744,6 +749,11 @@ export const articles: Article[] = [
               text: "which AI tools will sign a BAA for a dental practice",
               href: "/articles/is-chatgpt-hipaa-compliant-dental-practice",
             },
+            ", and ",
+            {
+              text: "the five-question test to run on any AI scribe vendor",
+              href: "/articles/are-ai-scribes-hipaa-compliant-dental-practice",
+            },
             ".",
           ],
           [
@@ -879,7 +889,7 @@ export const articles: Article[] = [
       "A dental data breach starts a 60-day HIPAA clock. The exact steps to take, who to notify, and what OCR looks for first, anchored to a real OCR settlement.",
     author: "Dolev Arama",
     datePublished: "2026-06-05",
-    dateModified: "2026-06-11",
+    dateModified: "2026-06-12",
     body: [
       {
         type: "p",
@@ -924,6 +934,11 @@ export const articles: Article[] = [
           {
             text: "patient information pasted into a public AI tool",
             href: "/articles/is-chatgpt-hipaa-compliant-dental-practice",
+          },
+          ", or a breach at ",
+          {
+            text: "the AI scribe vendor that records your visits",
+            href: "/articles/are-ai-scribes-hipaa-compliant-dental-practice",
           },
           ". Whatever the cause, the same test applies.",
         ],
@@ -1131,7 +1146,7 @@ export const articles: Article[] = [
       "A HIPAA risk assessment for a dental practice usually runs $1,500 to $6,000 with a specialist; the free HHS tool is $0. What each path buys, and why cheap can cost more.",
     author: "Dolev Arama",
     datePublished: "2026-06-05",
-    dateModified: "2026-06-11",
+    dateModified: "2026-06-12",
     body: [
       {
         type: "p",
@@ -1519,7 +1534,12 @@ export const articles: Article[] = [
             text: "whether ChatGPT is HIPAA compliant for a dental practice",
             href: "/articles/is-chatgpt-hipaa-compliant-dental-practice",
           },
-          " is worth settling before you buy.",
+          " is worth settling before you buy; the same goes for ",
+          {
+            text: "the BAA an AI scribe needs before it hears a patient",
+            href: "/articles/are-ai-scribes-hipaa-compliant-dental-practice",
+          },
+          ".",
         ],
       },
       {
@@ -1578,7 +1598,7 @@ export const articles: Article[] = [
       "ChatGPT's everyday plans are not HIPAA compliant, by OpenAI's own terms. Which AI tools will sign a BAA for a dental practice, and what OCR asks for first.",
     author: "Dolev Arama",
     datePublished: "2026-06-11",
-    dateModified: "2026-06-11",
+    dateModified: "2026-06-12",
     body: [
       {
         type: "p",
@@ -1651,7 +1671,12 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "First, the vendor question. Under HIPAA, any company that creates, receives, maintains, or transmits protected health information on your behalf is a business associate, and the rules require a signed Business Associate Agreement before that information reaches it (45 CFR \u00a7 160.103 and \u00a7 164.502(e)). An AI scribe that hears your exam-room conversation, a chatbot that drafts replies to identifiable patient emails, an imaging model that reads a named x-ray: all of these sit squarely inside that definition. No BAA, no patient data. There is no volume exception, and no exception for having only done it once.",
+          "First, the vendor question. Under HIPAA, any company that creates, receives, maintains, or transmits protected health information on your behalf is a business associate, and the rules require a signed Business Associate Agreement before that information reaches it (45 CFR \u00a7 160.103 and \u00a7 164.502(e)). ",
+          {
+            text: "An AI scribe that hears your exam-room conversation",
+            href: "/articles/are-ai-scribes-hipaa-compliant-dental-practice",
+          },
+          ", a chatbot that drafts replies to identifiable patient emails, an imaging model that reads a named x-ray: all of these sit squarely inside that definition. No BAA, no patient data. There is no volume exception, and no exception for having only done it once.",
         ],
       },
       {
