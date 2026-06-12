@@ -1918,6 +1918,350 @@ export const articles: Article[] = [
       { question: "Does the Hipsana Scorecard check AI risks?", answer: "It checks the foundations those risks land on: whether you have a current risk analysis, signed BAAs, staff training, and the other items OCR asks for first. AI tools enter your practice through exactly those doors. The Scorecard takes about three minutes, and the free review that follows can flag where an AI tool you use still needs paperwork." },
     ],
   },
+  {
+    slug: "are-ai-scribes-hipaa-compliant-dental-practice",
+    status: "published",
+    title: "Are AI Scribes HIPAA Compliant for a Dental Practice? (2026)",
+    description:
+      "AI scribes are HIPAA compliant only when the vendor signs a BAA and your risk analysis lists the tool. The five-question test to run before you sign up.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-12",
+    dateModified: "2026-06-12",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "Sometimes, and never by default. An AI scribe is HIPAA compliant for a dental practice only when the vendor signs a Business Associate Agreement before patient data flows (45 CFR \u00a7 164.502(e)) and your risk analysis lists the tool. Some scribe vendors will sign one; consumer AI tools mostly will not. Five questions sort them.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The pitch has probably reached you already: an AI scribe listens to the exam-room conversation, writes the clinical note while you work, and gives you your evenings back. The demos are genuinely impressive. But the demo is not where compliance lives. Compliance lives in one contract the salesperson rarely opens first, and a small Illinois practice once paid $31,000 for not having it.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "It depends on the contract, not the technology. " },
+            "HIPAA treats an AI scribe vendor like any other vendor that touches patient data: a business associate (45 CFR \u00a7 160.103) that needs a signed BAA before the first patient detail reaches it.",
+          ],
+          [
+            { strong: "A scribe handles patient data by design. " },
+            "It hears the patient's name, voice, and clinical story. There is no usage light enough to keep it outside HIPAA.",
+          ],
+          [
+            { strong: "\"We never store your audio\" does not exempt the vendor. " },
+            "Under ",
+            {
+              text: "OCR's cloud guidance",
+              href: "https://www.hhs.gov/hipaa/for-professionals/special-topics/health-information-technology/cloud-computing/index.html",
+            },
+            ", a service that receives or transmits patient data is a business associate even if it cannot view a word of it.",
+          ],
+          [
+            { strong: "A missing BAA alone has cost a small practice $31,000. " },
+            "The Center for Children's Digestive Health paid exactly that in 2017, for exactly one cited failure: no signed agreement with a records vendor.",
+          ],
+          [
+            { strong: "Five written questions sort any AI vendor. " },
+            "The BAA test below takes one email, and the vendor's answers tell you whether the tool can be used legally in your operatory.",
+          ],
+        ],
+      },
+      { type: "h2", text: "What does an AI scribe actually do with patient data?" },
+      {
+        type: "p",
+        runs: [
+          "An ambient AI scribe records the visit through a phone or an operatory microphone, then turns the transcript into a draft clinical note. Vendors market the same product as ambient AI or AI note-taking. Close cousins are arriving through the same dental AI sales channels: AI phone agents that answer patient calls, voice-driven perio charting, and models that read x-rays. Different products, identical legal posture.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "HIPAA's trigger phrase is \"creates, receives, maintains, or transmits\" protected health information on a practice's behalf. Any company doing that for you is a ",
+          {
+            text: "business associate",
+            href: "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html",
+          },
+          " under 45 CFR \u00a7 160.103, and the rule has required a signed agreement with every business associate since long before anyone said \"large language model.\" A scribe does all four verbs at once, with the richest data a practice produces: the patient's own spoken words.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This is a different question from the one we answered about consumer chatbots. ",
+          {
+            text: "Whether ChatGPT is HIPAA compliant in a dental practice",
+            href: "/articles/is-chatgpt-hipaa-compliant-dental-practice",
+          },
+          " turns on staff pasting patient details into a tool that was never meant to hold them. A scribe is the opposite case: a tool built to take patient data, where the only open question is whether the legal plumbing was installed before the data started flowing.",
+        ],
+      },
+      { type: "h2", text: "The $31,000 lesson: a missing BAA was the entire case" },
+      {
+        type: "p",
+        runs: [
+          "In 2017, the Center for Children's Digestive Health, a small pediatric subspecialty group running seven clinics in Illinois, paid ",
+          {
+            text: "$31,000 to settle a HIPAA Privacy Rule investigation",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/ccdh/index.html",
+          },
+          ". There was no hack and no headline breach. OCR opened its file on CCDH while investigating FileFax, a records-storage vendor, and looked for the one document that should have existed: a signed Business Associate Agreement covering the patient records CCDH had been handing to FileFax since 2003. Neither side could produce one.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "HHS did not bury the lesson; it titled the announcement \"No Business Associate Agreement? $31K Mistake.\" And the story did not end with the practice. FileFax itself ",
+          {
+            text: "later paid $100,000",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/filefax/index.html",
+          },
+          " over its handling of those same records, after it had already gone out of business. Both sides of one missing contract were penalized.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-settlement-ccdh-business-associate.webp",
+        alt: "Excerpts from the U.S. HHS Office for Civil Rights announcement of the $31,000 Center for Children's Digestive Health settlement, highlighting that the practice was small and that neither party could produce a signed Business Associate Agreement.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "A missing vendor contract as the entire case: CCDH paid $31,000 after OCR found no signed BAA behind twelve years of record-sharing. Source: ",
+          {
+            text: "HHS / OCR, April 20, 2017",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/ccdh/index.html",
+          },
+          ". Highlights added by Hipsana.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "OCR has not announced an enforcement action involving an AI scribe; its published settlement list contains none as of this writing. Read that as a countdown rather than a comfort. The agency needs no AI precedent, because the failure an unvetted scribe invites is the one OCR has penalized again and again: patient data in a vendor's hands with no BAA behind it. CCDH's vendor held paper charts in storage. A scribe vendor holds a recording of everything said in your operatory. Same rule, richer data.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "A vendor contract you cannot produce is the kind of gap a practice never notices until someone asks. ",
+          {
+            strong: "The free HIPAA Risk Scorecard checks the 10 areas OCR investigators ask about first, missing BAAs included, then sends a short written review of your top gaps and an intro to a vetted specialist if you want one. About three minutes. ",
+          },
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      { type: "h2", text: "The BAA test: five questions to send any AI scribe vendor" },
+      {
+        type: "p",
+        runs: [
+          "Send these in writing before any pilot begins, and keep the replies with the contract. A vendor that lives comfortably with HIPAA answers all five inside a day. Evasion on any one of them is itself an answer.",
+        ],
+      },
+      { type: "h3", text: "1. Will you sign a BAA for the exact plan I'm buying?" },
+      {
+        type: "p",
+        runs: [
+          "Vendors often advertise \"HIPAA compliant\" across the whole product while the BAA exists only on a higher tier or a sales-managed account. The question is not whether a BAA exists somewhere in the catalog; it is whether one covers your subscription, signed before patient data flows, trial included. There is also no such thing as a government HIPAA certification, so a badge on the website is a marketing claim, not a contract. What a real agreement contains is no mystery either: HHS publishes ",
+          {
+            text: "sample BAA provisions",
+            href: "https://www.hhs.gov/hipaa/for-professionals/covered-entities/sample-business-associate-agreement-provisions/index.html",
+          },
+          " you can compare against. The red flag: \"the platform is fully compliant,\" with no paperwork attached.",
+        ],
+      },
+      { type: "h3", text: "2. Where does the recording go, and what does the BAA say about keeping it?" },
+      {
+        type: "p",
+        runs: [
+          "The audio is protected health information from the moment of capture. Ask what is stored, where it lives, how long it is kept, and whether deletion timelines appear in the BAA rather than on a marketing page.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Some vendors answer that they never store recordings at all. That can be a genuinely good design choice, but it does not remove them from HIPAA. ",
+          {
+            text: "OCR's guidance on cloud services",
+            href: "https://www.hhs.gov/hipaa/for-professionals/special-topics/health-information-technology/cloud-computing/index.html",
+          },
+          " is explicit that a company receiving or maintaining patient data is a business associate even when it cannot view that data, and the narrow \"conduit\" exception covers pure transmission services like an internet provider, not a service that turns your audio into a note.",
+        ],
+      },
+      { type: "h3", text: "3. Do you train your AI on my patients' data, and is the answer in the contract?" },
+      {
+        type: "p",
+        runs: [
+          "Using patient data to improve a model is a use of protected health information, and every use must be permitted by the BAA. A good answer excludes your patients' data from model training in writing, or limits training to data de-identified under the HIPAA standard (45 CFR \u00a7 164.514), which means stripping 18 categories of identifiers or obtaining a formal expert determination. \"We anonymize everything\" with no named method is the red flag here; deleting names from notes whose stories still identify the patient does not qualify.",
+        ],
+      },
+      { type: "h3", text: "4. Who else touches the data, and are they under BAAs too?" },
+      {
+        type: "p",
+        runs: [
+          "Most scribes are assembled from other companies' parts: the underlying AI model from one company, transcription from another, hosting from a third. Each subcontractor that handles patient data must itself be bound by a business associate agreement, all the way down the chain. You do not need the vendor's supplier list published; you need written confirmation that the chain is covered. A vendor that cannot say whether its own model provider signed has answered the question.",
+        ],
+      },
+      { type: "h3", text: "5. If you have a breach, what do I get, and when?" },
+      {
+        type: "p",
+        runs: [
+          "When a scribe vendor is breached, the legal cleanup lands on your desk, not theirs: the Breach Notification Rule (45 CFR \u00a7\u00a7 164.400-414) puts the duty to notify patients and HHS on the practice. So the BAA must obligate the vendor to report a breach of unsecured patient data to you, and the useful question is the number: in how many days, written where? \"That has never happened to us\" is not a notification clause. For what those first weeks actually involve, see ",
+          {
+            text: "what a dental data breach response looks like",
+            href: "/articles/dental-data-breach-response",
+          },
+          ".",
+        ],
+      },
+      { type: "h2", text: "Adding an AI scribe the compliant way" },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Get the BAA signed before the pilot",
+            detail:
+              "If real patient conversations flow during a trial, the trial needs the BAA. A pilot is not a legal grace period, and the CCDH case shows that sharing records without the agreement is itself the violation.",
+          },
+          {
+            label: "Run the five questions in writing",
+            detail:
+              "Email them and file the replies with the contract. Written vendor answers are what diligence looks like on paper if anyone ever asks.",
+          },
+          {
+            label: "Add the tool to your risk analysis",
+            detail:
+              "A system that hears every visit changes your risk picture. Update the document and date the change, noting who can access recordings and transcripts.",
+          },
+          {
+            label: "Set the operatory rules",
+            detail:
+              "Decide who may run the scribe and how patients are told, including what happens when a patient declines. Many states require consent from everyone being recorded, so check your state's recording-consent law first.",
+          },
+          {
+            label: "Train the team on the line",
+            detail:
+              "The scribe becomes the approved channel for AI in the operatory. Patient details still never go into personal chatbot accounts, which is where most accidental disclosures begin.",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Step three deserves its own emphasis. The Security Rule requires an accurate and thorough ",
+          {
+            text: "risk analysis",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308",
+          },
+          " covering every system that touches electronic patient information (45 CFR \u00a7 164.308(a)(1)(ii)(A)), and that document is what OCR's current enforcement initiative is built around. If your last one predates your first AI tool, it describes a practice you no longer run. We covered ",
+          {
+            text: "what a compliant risk assessment involves",
+            href: "/articles/do-dental-practices-need-hipaa-risk-assessment",
+          },
+          " separately.",
+        ],
+      },
+      { type: "h2", text: "When an AI scribe is not the compliant choice" },
+      {
+        type: "p",
+        runs: [
+          "Walk away, or wait, in four situations. The vendor will not sign a BAA on the tier you can afford; there is no workaround, and no privacy toggle substitutes for the contract. The free or trial mode runs on the same consumer-grade systems as the free chatbots, with no BAA behind it. The vendor cannot answer the subcontractor question. Or your state's recording-consent rules cannot be met in your actual workflow.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "And the test travels. AI phone agents, voice charting, x-ray reading models, website chatbots that take patient messages: if a tool touches patient information in any of the four ways the rule names, it takes the same five questions before it sits in on a single visit.",
+        ],
+      },
+      { type: "h2", text: "Does the proposed Security Rule update change the answer?" },
+      {
+        type: "p",
+        runs: [
+          "Not yet, and not in the direction vendors might hope. The overhaul ",
+          {
+            text: "proposed in January 2025",
+            href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information",
+          },
+          " would harden the technical safeguards behind vendor relationships, but as of June 2026 no final rule has been issued and the current Security Rule remains the law. The BAA requirement in this article predates AI by two decades and applies either way. Run the test against today's rules and date the answers; revisit them when OCR finalizes.",
+        ],
+      },
+      { type: "h2", text: "The bottom line" },
+      {
+        type: "p",
+        runs: [
+          "An AI scribe can be used legally in a dental practice, and the practices that do it well share one habit: they treat the contract as part of the product. A signed BAA on the exact tier they bought and five written vendor answers on file, with the tool listed in a dated risk analysis. That is the whole test, and it costs one email to start.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Not sure what your practice would show if someone asked tomorrow? ",
+          {
+            strong: "The free HIPAA Risk Scorecard asks ten yes/no questions about how your practice handles patient data, scores you out of 100, then sends a short written review of your top gaps and an introduction to a vetted specialist if a referral makes sense. About three minutes. ",
+          },
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "This is general information, not legal advice. " },
+          "Hipsana is not a law firm, a compliance officer, or a healthcare provider. Verify current requirements with HHS or qualified counsel before acting.",
+        ],
+      },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is the founder of Hipsana, where he runs the HIPAA Risk Scorecard and the short practice risk reviews behind it. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. Its compliance writing starts from primary regulators (HHS, OCR, NIST) and is checked against their current text before anything goes live. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          ["HHS Office for Civil Rights, \"No Business Associate Agreement? $31K Mistake\": resolution agreement with the Center for Children's Digestive Health (April 20, 2017)."],
+          ["HHS Office for Civil Rights, \"Consequences for HIPAA violations don't stop when a business closes\": Filefax, Inc. settlement (February 13, 2018)."],
+          ["HHS Office for Civil Rights, Guidance on HIPAA & Cloud Computing (business associate status of no-view services; the conduit exception)."],
+          ["HHS, Business Associate Contracts: sample business associate agreement provisions (current)."],
+          ["45 CFR \u00a7 160.103; \u00a7 164.502(e); \u00a7 164.308(a)(1)(ii)(A); \u00a7 164.514; \u00a7\u00a7 164.400-414 (eCFR, current)."],
+          ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025 (RIN 0945-AA22)."],
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Is there such a thing as a HIPAA-certified AI scribe?",
+        answer:
+          "No. Neither HHS nor OCR certifies any product as HIPAA compliant, so a certification badge is marketing shorthand at best. Compliance is a property of your arrangement with the vendor: a signed BAA on your plan, honest configuration, and a risk analysis that lists the tool.",
+      },
+      {
+        question: "The vendor says it never stores recordings. Do I still need a BAA?",
+        answer:
+          "Yes. OCR's cloud-computing guidance states that a vendor receiving or maintaining patient data is a business associate even if it cannot view that data, and the narrow conduit exception covers pure transmission services like an internet provider, not a service that turns your audio into a clinical note.",
+      },
+      {
+        question: "Do my patients have to consent before I use an AI scribe?",
+        answer:
+          "Tell them regardless; trust is cheaper to keep than to rebuild. HIPAA itself permits uses of patient information for treatment, but separate state recording-consent laws often require the consent of everyone being recorded, and those vary by state. Check yours before the first recorded visit. This is general information, not legal advice.",
+      },
+      {
+        question: "We piloted a scribe for a month with no BAA. How bad is that?",
+        answer:
+          "Treat it as a real gap, not a footnote. Disclosing patient information to a vendor without a BAA is the exact failure behind the $31,000 CCDH settlement. Stop the data flow and either get the agreement signed or drop the tool. Then document what was shared and have the incident assessed rather than quietly filed away.",
+      },
+      {
+        question: "How do I find out whether the scribe is my only gap?",
+        answer:
+          "A scribe contract is one line in a longer checklist. The free HIPAA Risk Scorecard asks ten yes/no questions about how your practice handles patient data, scores you out of 100, and ends with a short written review of your top gaps, plus an intro to a vetted specialist if a referral makes sense.",
+      },
+    ],
+  },
 ];
 
 export function getAllArticles(): Article[] {
