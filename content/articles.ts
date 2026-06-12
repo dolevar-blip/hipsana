@@ -1072,6 +1072,7 @@ export const articles: Article[] = [
           [{ strong: "Encrypt laptops, backups, and any device that touches patient data," }, " so a lost or stolen device falls under the safe harbor."],
           [{ strong: "Sign a business associate agreement with every vendor that handles patient data," }, " and require fast breach reporting inside it."],
           [{ strong: "Train your team on phishing and basic security," }, " since most breaches start with a click."],
+          [{ strong: "Put the free-AI line in writing," }, " so patient details never land in a public chatbot. ", { text: "The staff AI-use policy a small practice needs", href: "/articles/staff-free-ai-tools-patient-data-dental-policy" }, " takes one page."],
           [{ strong: "Keep tested, offline backups," }, " so ransomware can't take your records hostage."],
         ],
       },
@@ -1728,7 +1729,12 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "What the free version is still good for, with zero patient information in it: blank consent templates, job postings, a recall letter with placeholder fields, supplier emails. The line is identifiability, and one pasted patient message crosses it. If your team uses public AI at all, that line belongs in writing and in training, because a staff member who crosses it creates the practice's violation, not a personal one.",
+          "What the free version is still good for, with zero patient information in it: blank consent templates, job postings, a recall letter with placeholder fields, supplier emails. The line is identifiability, and one pasted patient message crosses it. If your team uses public AI at all, that line belongs in writing and in training, because a staff member who crosses it creates the practice's violation, not a personal one. What that written rule needs to say, and how to put it in force in a small office, is covered in ",
+          {
+            text: "the staff AI-use policy a dental practice needs",
+            href: "/articles/staff-free-ai-tools-patient-data-dental-policy",
+          },
+          ".",
         ],
       },
       { type: "h2", text: "Which AI tools will sign a BAA, and which will not" },
@@ -2199,7 +2205,12 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "And the test travels. AI phone agents, voice charting, x-ray reading models, website chatbots that take patient messages: if a tool touches patient information in any of the four ways the rule names, it takes the same five questions before it sits in on a single visit.",
+          "And the test travels. AI phone agents, voice charting, x-ray reading models, website chatbots that take patient messages: if a tool touches patient information in any of the four ways the rule names, it takes the same five questions before it sits in on a single visit. And the products are only half the answer: which staff may use which AI tools at all belongs in ",
+          {
+            text: "a written staff AI-use policy",
+            href: "/articles/staff-free-ai-tools-patient-data-dental-policy",
+          },
+          ", which is its own guide.",
         ],
       },
       { type: "h2", text: "Does the proposed Security Rule update change the answer?" },
@@ -2284,6 +2295,340 @@ export const articles: Article[] = [
         question: "How do I find out whether the scribe is my only gap?",
         answer:
           "A scribe contract is one line in a longer checklist. The free HIPAA Risk Scorecard asks ten yes/no questions about how your practice handles patient data, scores you out of 100, and ends with a short written review of your top gaps, plus an intro to a vetted specialist if a referral makes sense.",
+      },
+    ],
+  },
+  {
+    slug: "staff-free-ai-tools-patient-data-dental-policy",
+    status: "published",
+    title: "Staff Using Free AI Tools With Patient Data? The Policy Your Dental Practice Needs (2026)",
+    description:
+      "Free AI tools don't sign BAAs, so one pasted patient detail is an impermissible disclosure. The five-part AI use policy a dental practice needs.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-12",
+    dateModified: "2026-06-12",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "Almost certainly, and the fix is a one-page rule. Most free AI tools will not sign a Business Associate Agreement, so the moment a staff member pastes a patient's details into one, the practice has made an impermissible disclosure under 45 CFR \u00a7 164.502(a). HIPAA already requires the written policy, the training, and the sanctions that prevent it. Here is what that policy needs to say.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Picture the quiet version of a data breach. Your front-desk coordinator is behind on recall letters, so she pastes a list of patient names into a free chatbot and asks it to draft the wording. No hacker, no ransom note, nothing on the news. Under HIPAA, the upload itself is the disclosure: patient information just left your practice for a company that owes your patients nothing. In survey after survey, most healthcare workers admit to using exactly these tools for work.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [{ strong: "Your staff are probably already doing it. " }, "Netskope's healthcare threat report found 71% of healthcare workers still using personal AI accounts for work, and in a Black Book survey of U.S. health-system staff, 17% of the frontline workers who use generic AI tools said they sometimes or often include identifiable patient information."],
+          [{ strong: "A free AI tool cannot legally hold patient data. " }, "OpenAI offers no Business Associate Agreement on ChatGPT's free or consumer paid tiers, and the same is true across consumer chatbots. No BAA means patient information may not go in at all (45 CFR \u00a7 164.502(e))."],
+          [{ strong: "One paste is an impermissible disclosure. " }, "The Privacy Rule's baseline (45 CFR \u00a7 164.502(a)) is that patient information goes nowhere unless a rule permits it, and no rule permits a chatbot without an agreement. OCR settled with an Alabama dental practice for $62,500 over patient lists that went to outside parties, and cited the practice's missing written policies by section."],
+          [{ strong: "HIPAA already requires the policy. " }, "Written policies and procedures (\u00a7 164.530(i)), workforce training (\u00a7 164.530(b)), and applied sanctions (\u00a7 164.530(e)) are standing obligations, not new AI red tape. The policy below simply points them at AI."],
+          [{ strong: "Prohibition alone fails, so give a sanctioned lane. " }, "Staff reach for AI to save time. A policy that holds pairs the hard line on patient data with an approved way to keep the time savings without it."],
+        ],
+      },
+      { type: "h2", text: "Why this lands on the owner's desk" },
+      {
+        type: "p",
+        runs: [
+          "Security teams call it shadow AI: staff using AI tools the practice never approved, usually with good intentions and on personal accounts. The numbers say it is the norm, not the exception. Netskope's research, reported in April 2026, found 71% of healthcare workers still using personal AI accounts for work, down from 87% a year earlier but nowhere near zero. A Black Book survey of 228 U.S. health-system employees found 58% of frontline staff using generic tools like ChatGPT, Gemini, or Copilot at least monthly, and 17% of those users admitting that identifiable patient information sometimes goes in. The warning is coming from inside dentistry too: dental IT providers now publish ",
+          {
+            text: "explicit alarms about staff feeding patient data to free AI tools",
+            href: "https://opendental.blog/ai-threat-free-ai-tools-e-phi/",
+          },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Two facts turn that habit into the owner's problem. First, the violation belongs to the practice, not the employee: a covered entity must ensure compliance by its workforce (45 CFR \u00a7 164.306(a)(4)), so a well-meaning shortcut by your assistant is your disclosure. Second, there is no consumer tier to buy your way out with. OpenAI signs Business Associate Agreements only for sales-managed enterprise and education plans and qualifying API arrangements, never for the free, Plus, or Team tiers, so a staff member's paid personal ChatGPT login is the same consumer product with a credit card attached. ",
+          {
+            text: "Whether ChatGPT itself can ever be HIPAA compliant in a dental practice",
+            href: "/articles/is-chatgpt-hipaa-compliant-dental-practice",
+          },
+          " is a question we took apart separately; this guide is about the people using it.",
+        ],
+      },
+      { type: "h2", text: "What HIPAA already requires from a five-person office" },
+      {
+        type: "p",
+        runs: [
+          "None of the obligations below were written for AI. All of them were written for exactly this shape of problem: a workforce member, a shortcut, and patient data leaving the building.",
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          [{ strong: "A default of no. " }, "45 CFR \u00a7 164.502(a) sets the Privacy Rule's baseline: patient information is not used or disclosed unless a rule permits it. A chatbot with no BAA is not a permitted destination, full stop."],
+          [{ strong: "Training, scaled to the job. " }, "\u00a7 164.530(b)(1) requires training every workforce member on your policies, as necessary and appropriate for their role. A documented ten-minute staff meeting on the AI line qualifies."],
+          [{ strong: "Sanctions you actually apply. " }, "\u00a7 164.530(e)(1) requires appropriate sanctions against workforce members who break the rules, with each application documented. The Security Rule repeats the demand for electronic data at \u00a7 164.308(a)(1)(ii)(C)."],
+          [{ strong: "The policies themselves, in writing. " }, "\u00a7 164.530(i) requires written policies and procedures, kept current. On the security side, \u00a7 164.308(a)(5)(i) adds a security awareness and training program for the whole workforce, management included."],
+          [{ strong: "Someone whose job it is. " }, "\u00a7 164.530(a)(1) requires a designated privacy official. In a solo practice that is usually the owner or the office manager; the title matters less than the designation being written down."],
+        ],
+      },
+      { type: "h2", text: "The $62,500 case where the missing policy was cited by name" },
+      {
+        type: "p",
+        runs: [
+          "In March 2022, OCR announced ",
+          {
+            text: "a $62,500 settlement with Northcutt Dental-Fairhope, LLC",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/northcutt/index.html",
+          },
+          ", a dental practice in small-town Alabama with about 17 employees. In 2017 the owner ran for state senate and handed his campaign manager an Excel spreadsheet with the names and addresses of thousands of patients; campaign letters went out addressed \"Dear Valued Patient.\" The next spring, a campaign email reached 5,385 patients, sent through the practice's own marketing vendor.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "OCR's resolution agreement lists four findings, and the quiet two should worry a practice owner more than the loud two. The loud findings are the disclosures themselves, both cited under \u00a7 164.502(a). The quiet findings are the paperwork: the practice did not designate a privacy official until late 2017 (\u00a7 164.530(a)) and had no written policies and procedures at all until 2018 (\u00a7 164.530(i)). The missing documents carry their own section numbers in the federal record, right next to the disclosures.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-settlement-northcutt-dental-impermissible-disclosure.webp",
+        alt: "Excerpts from the Covered Conduct section of the OCR resolution agreement with Northcutt Dental-Fairhope, LLC, highlighting the $62,500 resolution amount, two impermissible disclosures of patient information, the late designation of a privacy official, and the absence of written policies and procedures until 2018.",
+        width: 1500,
+        height: 962,
+        caption: [
+          "The findings that cost $62,500: two impermissible disclosures, no privacy official, and no written policies until 2018. Source: ",
+          {
+            text: "HHS / OCR Resolution Agreement, March 2022",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/northcutt/index.html",
+          },
+          ". Highlights added by Hipsana.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Northcutt was not an AI case, and it was not a rogue-employee case: the disclosure decision came from the owner himself. That is exactly why it matters here. OCR needed no hacker, no breach report, and no bad intent. It needed patient data going to an outside party no rule permitted, and a practice that could not produce the policy that should have stopped it. Finding B is the sharpest edge for the AI question: the marketing vendor was a company the practice already worked with, and the disclosure was still impermissible because it served purposes outside the service arrangement in place. Swap \"campaign emails through the marketing vendor\" for \"patient list into a free chatbot\" and the legal shape is identical: a familiar tool, fed patient data for a purpose no agreement covers.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The corrective action plan is the most useful page in the file, because it is OCR writing out the policy program it expects from a 17-person practice: written policies covering uses, disclosures, and training, submitted for federal approval; every workforce member documented as having read and understood them before touching patient data; new hires trained within 14 days; violations investigated, sanctioned, and reported. You can wait for OCR to install that machinery for you, at $62,500 plus two years of supervision, or you can build the one-page version yourself this month.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Most owners cannot say today which of those documents their practice could actually produce. ",
+          {
+            strong: "The free HIPAA Risk Scorecard checks the 10 areas OCR investigators ask about first, written policies and staff training included, then sends a short written review of your top gaps and an intro to a vetted specialist if you want one. About three minutes. ",
+          },
+          {
+            text: "Check my practice \u2192",
+            href: "/scorecard",
+          },
+        ],
+      },
+      { type: "h2", text: "The five parts of a staff AI-use policy that holds" },
+      { type: "h3", text: "1. The hard line: no patient information in any AI tool without a BAA" },
+      {
+        type: "p",
+        runs: [
+          "One sentence carries most of the weight: no patient information, in any form, goes into any AI tool unless the practice has a signed Business Associate Agreement covering that exact tool and has approved it in writing. Then define patient information the way staff actually meet it: names, photos, x-rays, chart notes, schedules, insurance details, voicemail transcripts, and any story specific enough to identify someone even with the name removed. Give the team a test they can remember: if you would not post it on the practice's public Facebook page, it does not go into a chatbot.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Spell out that the line covers personal devices and personal accounts. The disclosure happens where the data goes, not whose phone it left from, and the surveys above show personal accounts are precisely where the habit lives.",
+        ],
+      },
+      { type: "h3", text: "2. The sanctioned lane: what staff may use, and for what" },
+      {
+        type: "p",
+        runs: [
+          "A policy that only says no will lose to the time pressure that sent staff to AI in the first place; the survey data shows people reach for these tools to work faster, not to misbehave. So give the lane. AI is fine for work with zero patient information in it: blank consent templates, job postings, a recall letter with placeholder fields, supplier emails, patient-education drafts about procedures in general. And if the practice adopts a tool that is allowed to touch patient data, name it in the policy as the approved channel. An ambient scribe with a signed BAA is the usual first case, and ",
+          {
+            text: "how to vet an AI scribe before it hears a patient",
+            href: "/articles/are-ai-scribes-hipaa-compliant-dental-practice",
+          },
+          " is its own five-question test.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "One honest warning belongs in the policy text: \"I removed the name\" is not de-identification. HIPAA's standard (45 CFR \u00a7 164.514) requires stripping 18 categories of identifiers or a formal expert determination, and a detailed clinical story can identify a patient with no name attached. For day-to-day use, the workable rule is fictional placeholders, never lightly edited real cases.",
+        ],
+      },
+      { type: "h3", text: "3. Training that fits a staff meeting" },
+      {
+        type: "p",
+        runs: [
+          "\u00a7 164.530(b) does not demand a seminar. It demands that every workforce member is trained on your policies, appropriately for their role, and that you can prove it happened. Ten minutes at a staff meeting covers the AI rule: what counts as patient information, the no-BAA line, the approved lane, and who to tell when something slips. Have everyone sign a one-line acknowledgment with the date. New hires get the same ten minutes in their first week, before they touch patient data, which is exactly the sequencing OCR wrote into Northcutt's corrective action plan.",
+        ],
+      },
+      { type: "h3", text: "4. Sanctions you can defend" },
+      {
+        type: "p",
+        runs: [
+          "The rule asks for appropriate sanctions, which means graduated and documented, not theatrical. A workable scale: a documented conversation for a first slip with no patient harm, a written warning plus retraining for a repeat, and termination on the table for knowing or repeated disclosure. Two things matter more than severity. The scale is written into the policy before anyone violates it, and every application is documented, because \u00a7 164.530(e)(2) requires the record. An owner who quietly forgives the first incident has, on paper, no sanctions program at all.",
+        ],
+      },
+      { type: "h3", text: "5. The response path: what happens when someone slips anyway" },
+      {
+        type: "p",
+        runs: [
+          "Assume a slip. The policy's last section tells staff to report it the same day, with no punishment for the reporting itself, because silence is the expensive version. The practice then documents exactly what was entered and where, and runs a breach risk assessment to judge whether notification duties start. Some incidents are defensibly low risk; an identifiable patient record pasted into a tool that trains on its inputs usually is not. The mechanics of that assessment, and the 60-day notification clock behind it, are covered in ",
+          {
+            text: "what to do when a dental practice has a data breach",
+            href: "/articles/dental-data-breach-response",
+          },
+          ".",
+        ],
+      },
+      { type: "h2", text: "Put it in force this week" },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Name the owner of the rule",
+            detail:
+              "Designate your privacy official in writing if you never have: the owner or office manager, one sentence, signed and dated. Northcutt's missing designation was a cited finding on its own. Ten minutes.",
+          },
+          {
+            label: "Write the one-page policy",
+            detail:
+              "The five parts above, in your own plain language: the hard line, the approved lane, training, sanctions, and the report-it path. One page that gets read beats a binder that gets shelved. About an hour.",
+          },
+          {
+            label: "Map what staff already use",
+            detail:
+              "Ask every team member which AI tools they have touched for work in the past month, personal phones included. No blame attached; you are finding out where patient data may already be going. Fifteen minutes at a staff meeting.",
+          },
+          {
+            label: "Train and collect signatures",
+            detail:
+              "Walk the page at the same meeting, take the edge-case questions, and have everyone sign and date a one-line acknowledgment. That signature stack is your training documentation under \u00a7 164.530(b). Ten minutes.",
+          },
+          {
+            label: "Date it into your risk analysis",
+            detail:
+              "Add staff AI use to your risk analysis as an identified risk, with the policy as the control, and date the update. If your last risk analysis predates ChatGPT, it describes a practice you no longer run.",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Step five is where the policy connects to the document OCR asks for first in nearly every investigation. ",
+          {
+            text: "What a compliant dental risk assessment involves",
+            href: "/articles/do-dental-practices-need-hipaa-risk-assessment",
+          },
+          " is covered separately, and the short answer is that a one-page AI policy is one of the cheapest controls it will ever list.",
+        ],
+      },
+      { type: "h2", text: "The catch" },
+      {
+        type: "p",
+        runs: [
+          "Three complications deserve a line in the policy or a note on your calendar.",
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          [{ strong: "AI is arriving inside tools you already trust. " }, "Practice-management systems, imaging software, and email platforms add AI features by quiet update. The policy line: a new AI feature inside an approved tool still needs a yes before patient data flows through it, because the BAA you signed may not cover the new processing."],
+          [{ strong: "State law is adding its own layer. " }, "A growing number of states are legislating AI in healthcare separately from HIPAA. This article covers the federal floor; if your state has its own AI or privacy statute, the policy deserves a counsel check before you rely on it."],
+          [{ strong: "The Security Rule overhaul is still pending. " }, "The update ", { text: "proposed in January 2025", href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information" }, " would tighten the technical side of everything here, but as of June 2026 no final rule has been issued and the current Security Rule remains the law. Write the policy against today's rules, date it, and revisit it when OCR finalizes."],
+        ],
+      },
+      { type: "h2", text: "The bottom line" },
+      {
+        type: "p",
+        runs: [
+          "Free AI in a dental practice is a people problem before it is a technology problem, and HIPAA solved the people problem decades ago: a written rule, ten minutes of documented training, sanctions with dates on them, and one person whose job it is. Northcutt Dental paid $62,500 in a case where the missing paperwork was cited by section right next to the disclosures. The one-page version costs you an afternoon, and it is the difference between an employee's mistake and a federal finding.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Not sure what your practice would show if someone asked tomorrow? ",
+          {
+            strong: "The free HIPAA Risk Scorecard asks ten yes/no questions about how your practice handles patient data, scores you out of 100, then sends a short written review of your top gaps and an introduction to a vetted specialist if a referral makes sense. About three minutes. ",
+          },
+          {
+            text: "Check my practice \u2192",
+            href: "/scorecard",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          {
+            strong: "This is general information, not legal advice. ",
+          },
+          "Hipsana is not a law firm, a compliance officer, or a healthcare provider. Verify current requirements with HHS or qualified counsel before acting.",
+        ],
+      },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is the founder of Hipsana, where he runs the HIPAA Risk Scorecard and the short practice risk reviews behind it. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. Its compliance writing starts from primary regulators (HHS, OCR, NIST) and is checked against their current text before anything goes live. ",
+          {
+            text: "More about Hipsana \u2192",
+            href: "/about",
+          },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          ["HHS Office for Civil Rights, Resolution Agreement and Corrective Action Plan, Northcutt Dental-Fairhope, LLC, HHS Transaction No. 18-304734 (signed March 8, 2022; announced March 28, 2022)."],
+          ["HHS Office for Civil Rights, \"Four HIPAA enforcement actions hold healthcare providers accountable with compliance\" (March 28, 2022)."],
+          ["45 CFR \u00a7 164.502(a) and (e); \u00a7 164.514; \u00a7 164.530(a), (b), (e), (i); \u00a7 164.306(a)(4); \u00a7 164.308(a)(1)(ii)(C) and (a)(5)(i) (eCFR, current)."],
+          ["OpenAI published documentation: Business Associate Agreements limited to sales-managed ChatGPT Enterprise and Edu plans and qualifying API arrangements; none offered on Free, Plus, or Team tiers (as referenced June 2026)."],
+          ["Netskope Threat Labs healthcare findings, as reported by Medical Economics (April 2026): 71% of healthcare workers using personal AI accounts for work."],
+          ["Black Book Market Research survey of 228 U.S. health-system employees (December 2025), as reported by Managed Healthcare Executive (June 2026): 58% of frontline staff use generic AI tools at least monthly; 17% of those users sometimes or often include identifiable patient information."],
+          ["Reuben Kamp (Darkhorse Tech), \"AI Threat? Is Your Staff Using Free AI Tools With e-PHI?\", Open Dental Blog (February 2026)."],
+          ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025 (RIN 0945-AA22)."],
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Can my staff use ChatGPT at all, or is it banned in a dental office?",
+        answer:
+          "They can use it for work that contains zero patient information: blank templates, job postings, generic patient-education drafts, supplier emails. HIPAA does not ban tools; it bans patient information going where no agreement protects it. The policy's job is to draw that line in writing and to name an approved alternative for work that does involve patient data.",
+      },
+      {
+        question: "A staff member pays for ChatGPT Plus. Does a paid account make it compliant?",
+        answer:
+          "No. OpenAI offers a Business Associate Agreement only on sales-managed enterprise and education plans and qualifying API arrangements, not on the free, Plus, or Team tiers. A personal paid login is the same consumer product with a subscription attached, so patient information still may not go into it.",
+      },
+      {
+        question: "Someone already pasted patient details into a free AI tool. Do I have to fire them?",
+        answer:
+          "Not necessarily, and a panic firing is the wrong first move. Apply the sanction your written policy sets for a first incident, document it, and run a breach risk assessment on what was disclosed, because notification duties may apply. If you have no written policy yet, that gap is the bigger finding. What an investigator wants to see is a documented, proportionate response, not a dramatic one.",
+      },
+      {
+        question: "Does a verbal \"don't put patient stuff in ChatGPT\" count as a policy?",
+        answer:
+          "No. HIPAA requires policies and procedures in writing (45 CFR \u00a7 164.530(i)) and documented training on them (\u00a7 164.530(b)). The same instruction, written on one page and signed and dated by your team, is the difference between a rule and a rumor. Northcutt Dental's missing written policies were a federally cited finding in a $62,500 settlement.",
+      },
+      {
+        question: "What if we only use AI with the patient names removed?",
+        answer:
+          "Removing a name is not de-identification under HIPAA. The standard at 45 CFR \u00a7 164.514 requires stripping 18 categories of identifiers or obtaining a formal expert determination, and a detailed clinical story can identify a patient by itself. For routine use, fictional placeholder details are the safe version; truly de-identified data is achievable, but it is a project, not a habit.",
+      },
+      {
+        question: "How do I find out whether staff AI use is my only gap?",
+        answer:
+          "It almost never is; AI enters a practice through the same doors OCR checks first, like training, written policies, and vendor agreements. The free HIPAA Risk Scorecard asks ten yes/no questions about how your practice handles patient data, scores you out of 100, and ends with a short written review of your top gaps, plus an intro to a vetted specialist if a referral makes sense.",
       },
     ],
   },
