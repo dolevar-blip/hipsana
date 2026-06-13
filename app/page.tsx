@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   description:
-    "A free HIPAA Security Scorecard for solo dental, medical, and therapy practices. Find your gaps in minutes, then get a written review and an intro to a vetted specialist.",
+    "A free HIPAA Security Scorecard for independent dental, medical, and therapy practices. Find your gaps in minutes, then get a written review and an intro to a vetted specialist.",
   alternates: { canonical: "/" },
 };
 
@@ -14,7 +14,7 @@ const pillars = [
       "We translate the HIPAA Security Rule into the handful of gaps that actually put your practice at risk. The answer comes first, the jargon stays out.",
   },
   {
-    title: "Solo-practice scale",
+    title: "Independent-practice scale",
     body:
       "Enterprise security tools are designed for IT departments you don&rsquo;t have. We focus on what works for a one-to-ten-person practice.",
   },
@@ -31,7 +31,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="container-page pt-12 pb-20 md:pt-16 md:pb-28">
         <div className="max-w-3xl">
-          <p className="eyebrow mb-5">For solo dental, medical, and therapy practices</p>
+          <p className="eyebrow mb-5">For independent dental, medical, and therapy practices</p>
           <h1 className="font-display text-[2.75rem] leading-[1.05] tracking-tight md:text-[3.75rem]">
             HIPAA shouldn&rsquo;t require a compliance officer you can&rsquo;t afford.
           </h1>
