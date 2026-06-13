@@ -15,6 +15,14 @@ export const metadata: Metadata = {
       "Check 10 core HIPAA Security Rule controls and get your practice's score out of 100, plus a written review.",
     url: "https://hipsana.com/scorecard",
     type: "website",
+    images: [
+      {
+        url: "/og-scorecard.png",
+        width: 1200,
+        height: 630,
+        alt: "Free HIPAA Security Scorecard by Hipsana: score your practice out of 100.",
+      },
+    ],
   },
 };
 
