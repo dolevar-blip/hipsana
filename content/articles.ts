@@ -34,6 +34,7 @@ export type Article = {
   slug: string; // URL: /articles/<slug>
   status: "published" | "draft";
   title: string; // <h1> and <title>
+  metaTitle?: string; // optional shorter SERP <title>; overrides title for the tab/SERP
   description: string; // meta description and on-page intro
   author: string;
   datePublished: string; // ISO date, e.g. "2026-06-02"
@@ -88,6 +89,7 @@ export const articles: Article[] = [
     slug: "do-dental-practices-need-hipaa-risk-assessment",
     status: "published",
     title: "Do Dental Practices Need a HIPAA Risk Assessment? (2026)",
+    metaTitle: "Do Dentists Need a HIPAA Risk Assessment? (2026)",
     description:
       "Yes. The HIPAA Security Rule requires a risk analysis from every dental practice, solo or group. Here's what OCR actually checks, and how to get it done.",
     author: "Dolev Arama",
@@ -519,6 +521,7 @@ export const articles: Article[] = [
     slug: "what-happens-if-dental-practice-fails-hipaa-audit",
     status: "published",
     title: "What Happens If a Dental Practice Fails a HIPAA Audit? (2026)",
+    metaTitle: "If a Dental Practice Fails a HIPAA Audit (2026)",
     description:
       "A random HIPAA audit rarely ends in a fine. The real risk is an OCR investigation after a breach or complaint, and what failing actually costs a small dental practice.",
     author: "Dolev Arama",
@@ -885,6 +888,7 @@ export const articles: Article[] = [
     slug: "dental-data-breach-response",
     status: "published",
     title: "What to Do If Your Dental Practice Has a Data Breach: The First 60 Days (2026)",
+    metaTitle: "Dental Practice Data Breach: What to Do (2026)",
     description:
       "A dental data breach starts a 60-day HIPAA clock. The exact steps to take, who to notify, and what OCR looks for first, anchored to a real OCR settlement.",
     author: "Dolev Arama",
@@ -1143,6 +1147,7 @@ export const articles: Article[] = [
     slug: "how-much-does-a-hipaa-risk-assessment-cost-for-a-dental-practice",
     status: "published",
     title: "How Much Does a HIPAA Risk Assessment Cost for a Dental Practice? (2026)",
+    metaTitle: "HIPAA Risk Assessment Cost for Dentists (2026)",
     description:
       "A HIPAA risk assessment for a dental practice usually runs $1,500 to $6,000 with a specialist; the free HHS tool is $0. What each path buys, and why cheap can cost more.",
     author: "Dolev Arama",
@@ -1595,6 +1600,7 @@ export const articles: Article[] = [
     slug: "is-chatgpt-hipaa-compliant-dental-practice",
     status: "published",
     title: "Is ChatGPT HIPAA Compliant for a Dental Practice? (2026)",
+    metaTitle: "Is ChatGPT HIPAA Compliant for Dentists? (2026)",
     description:
       "ChatGPT's everyday plans are not HIPAA compliant, by OpenAI's own terms. Which AI tools will sign a BAA for a dental practice, and what OCR asks for first.",
     author: "Dolev Arama",
@@ -1953,6 +1959,7 @@ export const articles: Article[] = [
     slug: "are-ai-scribes-hipaa-compliant-dental-practice",
     status: "published",
     title: "Are AI Scribes HIPAA Compliant for a Dental Practice? (2026)",
+    metaTitle: "Are AI Scribes HIPAA Compliant for Dentists (2026)",
     description:
       "AI scribes are HIPAA compliant only when the vendor signs a BAA and your risk analysis lists the tool. The five-question test to run before you sign up.",
     author: "Dolev Arama",
@@ -2302,6 +2309,7 @@ export const articles: Article[] = [
     slug: "staff-free-ai-tools-patient-data-dental-policy",
     status: "published",
     title: "Staff Using Free AI Tools With Patient Data? The Policy Your Dental Practice Needs (2026)",
+    metaTitle: "Staff Using Free AI Tools With Patient Data (2026)",
     description:
       "Free AI tools don't sign BAAs, so one pasted patient detail is an impermissible disclosure. The five-part AI use policy a dental practice needs.",
     author: "Dolev Arama",
