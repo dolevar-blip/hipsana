@@ -25,15 +25,15 @@ const CLARITY_PROJECT_ID = "x0hl18yf1z";
 export const metadata: Metadata = {
   metadataBase: new URL("https://hipsana.com"),
   title: {
-    default: "Hipsana — HIPAA & cybersecurity for solo practices",
+    default: "Hipsana — HIPAA & cybersecurity for independent practices",
     template: "%s · Hipsana",
   },
   description:
-    "Practical HIPAA compliance and cybersecurity guidance for solo dental, medical, and therapy practices. Plain-language reviews, real product recommendations, no fluff.",
+    "Practical HIPAA compliance and cybersecurity guidance for independent dental, medical, and therapy practices. Plain-language reviews, real product recommendations, no fluff.",
   openGraph: {
-    title: "Hipsana — HIPAA & cybersecurity for solo practices",
+    title: "Hipsana — HIPAA & cybersecurity for independent practices",
     description:
-      "Practical HIPAA compliance and cybersecurity guidance for solo dental, medical, and therapy practices.",
+      "Practical HIPAA compliance and cybersecurity guidance for independent dental, medical, and therapy practices.",
     url: "https://hipsana.com",
     siteName: "Hipsana",
     type: "website",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
         url: "/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Hipsana — HIPAA & cybersecurity for solo dental, medical, and therapy practices.",
+        alt: "Hipsana — HIPAA & cybersecurity for independent dental, medical, and therapy practices.",
       },
     ],
   },
