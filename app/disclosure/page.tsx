@@ -11,6 +11,14 @@ export const metadata: Metadata = {
       "How Hipsana makes money: referral fees from vetted specialists, a smaller affiliate line, and our rule that neither ever changes what your review says.",
     url: "https://hipsana.com/disclosure",
     type: "website",
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Hipsana: HIPAA & cybersecurity for independent healthcare practices.",
+      },
+    ],
   },
 };
 
