@@ -53,7 +53,7 @@ export function generateMetadata({
   const image = getArticleImage(article);
 
   return {
-    title: article.title,
+    title: article.metaTitle ?? article.title,
     description: article.description,
     alternates: { canonical: `/articles/${article.slug}` },
     openGraph: {
