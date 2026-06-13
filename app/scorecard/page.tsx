@@ -5,7 +5,7 @@ import ScorecardEmbed from "@/components/ScorecardEmbed";
 export const metadata: Metadata = {
   title: "Free HIPAA Security Scorecard",
   description:
-    "A free 3-minute Scorecard that checks 10 core HIPAA Security Rule controls, scores your solo practice out of 100, and sends a written review.",
+    "A free 3-minute Scorecard that checks 10 core HIPAA Security Rule controls, scores your independent practice out of 100, and sends a written review.",
   alternates: {
     canonical: "/scorecard",
   },
