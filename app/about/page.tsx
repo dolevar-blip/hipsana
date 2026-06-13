@@ -12,6 +12,14 @@ export const metadata: Metadata = {
       "How Hipsana works: a free HIPAA Security Scorecard and written risk review for solo dental, medical, and therapy practices, plus an intro to a vetted specialist when you want one.",
     url: "https://hipsana.com/about",
     type: "website",
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Hipsana: HIPAA & cybersecurity for independent healthcare practices.",
+      },
+    ],
   },
 };
 
