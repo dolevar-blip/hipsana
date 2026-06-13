@@ -13,6 +13,14 @@ export const metadata: Metadata = {
       "What Hipsana collects when you use the HIPAA Security Risk Scorecard, why we collect it, who we share it with, how long we keep it, and how to request deletion.",
     url: "https://hipsana.com/privacy",
     type: "website",
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Hipsana: HIPAA & cybersecurity for independent healthcare practices.",
+      },
+    ],
   },
 };
 
