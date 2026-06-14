@@ -80,6 +80,71 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Common questions */}
+      <section className="border-t border-muted-border">
+        <div className="container-page py-16 md:py-20">
+          <div className="max-w-3xl">
+            <p className="eyebrow mb-3">Common questions</p>
+            <h2 className="font-display text-3xl tracking-tight md:text-4xl">
+              What practice owners ask first.
+            </h2>
+            <p className="mt-5 text-[17px] leading-relaxed text-muted">
+              Three of the questions we hear most, each answered plainly and
+              built on a real OCR case sourced to HHS or NIST.
+            </p>
+
+            <ul className="mt-10 space-y-6">
+              <li>
+                <Link
+                  href="/articles/what-happens-if-dental-practice-fails-hipaa-audit"
+                  className="font-display text-lg text-teal underline decoration-teal/30 underline-offset-2 hover:decoration-teal"
+                >
+                  What happens if a dental practice fails a HIPAA audit?
+                </Link>
+                <p className="mt-1 text-[15px] leading-relaxed text-muted">
+                  What a random audit actually triggers, and what a finding costs
+                  a small practice.
+                </p>
+              </li>
+              <li>
+                <Link
+                  href="/articles/how-much-does-a-hipaa-risk-assessment-cost-for-a-dental-practice"
+                  className="font-display text-lg text-teal underline decoration-teal/30 underline-offset-2 hover:decoration-teal"
+                >
+                  How much does a HIPAA risk assessment cost?
+                </Link>
+                <p className="mt-1 text-[15px] leading-relaxed text-muted">
+                  What the free HHS tool covers, and when paying a specialist is
+                  worth it.
+                </p>
+              </li>
+              <li>
+                <Link
+                  href="/articles/is-chatgpt-hipaa-compliant-dental-practice"
+                  className="font-display text-lg text-teal underline decoration-teal/30 underline-offset-2 hover:decoration-teal"
+                >
+                  Is ChatGPT HIPAA compliant for a dental practice?
+                </Link>
+                <p className="mt-1 text-[15px] leading-relaxed text-muted">
+                  Where everyday AI tools quietly create a HIPAA gap, and the one
+                  test that settles it.
+                </p>
+              </li>
+            </ul>
+
+            <p className="mt-10 text-[17px] leading-relaxed text-muted">
+              Or skip ahead and{" "}
+              <Link
+                href="/scorecard"
+                className="text-teal underline decoration-teal/30 underline-offset-2 hover:decoration-teal"
+              >
+                see where your own practice stands &rarr;
+              </Link>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Proof from the public record */}
       <section className="border-t border-muted-border bg-teal-subtle">
         <div className="container-page py-16 md:py-20">
