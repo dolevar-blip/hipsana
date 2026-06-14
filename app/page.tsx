@@ -2,169 +2,130 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  title: "About",
   description:
-    "A free HIPAA Security Scorecard for independent dental, medical, and therapy practices. Find your gaps in minutes, then get a written review and an intro to a vetted specialist.",
-  alternates: { canonical: "/" },
+    "A free HIPAA Security Scorecard and written risk review for independent dental, medical, and therapy practices, plus an intro to a vetted specialist.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About · Hipsana",
+    description:
+      "A free HIPAA Security Scorecard and written risk review for independent dental, medical, and therapy practices, plus an intro to a vetted specialist.",
+    url: "https://hipsana.com/about",
+    type: "website",
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Hipsana: HIPAA & cybersecurity for independent healthcare practices.",
+      },
+    ],
+  },
 };
 
-const pillars = [
-  {
-    title: "Plain-language risk findings",
-    body:
-      "We translate the HIPAA Security Rule into the handful of gaps that actually put your practice at risk. The answer comes first, the jargon stays out.",
-  },
-  {
-    title: "Independent-practice scale",
-    body:
-      "Enterprise security tools are designed for IT departments you don&rsquo;t have. We focus on what works for a one-to-ten-person practice.",
-  },
-  {
-    title: "Cited, not invented",
-    body:
-      "Every regulatory claim points back to HHS, OCR, or NIST. We qualify what we can&rsquo;t verify and tell you where we drew the line.",
-  },
-];
-
-export default function HomePage() {
+export default function AboutPage() {
   return (
-    <>
-      {/* Hero */}
-      <section className="container-page pt-12 pb-20 md:pt-16 md:pb-28">
-        <div className="max-w-3xl">
-          <p className="eyebrow mb-5">For independent dental, medical, and therapy practices</p>
-          <h1 className="font-display text-[2.75rem] leading-[1.05] tracking-tight md:text-[3.75rem]">
-            HIPAA shouldn&rsquo;t require a compliance officer you can&rsquo;t afford.
-          </h1>
-          <p className="mt-7 max-w-2xl text-lg leading-relaxed text-muted">
-            Hipsana helps clinicians who run their own practice find the HIPAA
-            gaps that put them at risk, then fix them. Start with a free Security
-            Scorecard: ten questions, about three minutes, a score and a written
-            review at the end.
-          </p>
+    <section className="container-page py-20 md:py-24">
+      <div className="prose-hipsana">
+        <p className="eyebrow mb-3">About Hipsana</p>
+        <h1 className="font-display text-4xl tracking-tight md:text-5xl">
+          For clinicians who run their own practice.
+        </h1>
 
-          <div className="mt-10 flex flex-wrap items-center gap-4">
-            <Link href="/scorecard" className="btn-primary">
-              Check my practice &rarr;
-            </Link>
-            <Link href="/about" className="btn-secondary">
-              How we work
-            </Link>
-          </div>
+        <p className="mt-8 text-lg leading-relaxed text-muted">
+          Hipsana is built for a specific person: the dentist, physician, or
+          therapist who owns a small practice, knows HIPAA is serious, and
+          doesn&rsquo;t have time to read hundreds of pages of federal
+          regulations to find out where they stand.
+        </p>
+
+        <h2>Who we serve</h2>
+        <p>
+          Solo practitioners and practice owners with one to ten staff. People
+          who run the whole practice themselves, know HIPAA carries real
+          personal risk, and have no in-house compliance help and no time to
+          build it.
+        </p>
+
+        <h2>How we work</h2>
+        <p>
+          It starts with the Scorecard: ten yes/no questions about how your
+          practice handles patient data, scored against the HIPAA Security Rule.
+          You get a number out of 100 and a written review of the gaps that
+          matter most for your practice.
+        </p>
+        <p>
+          The review starts with the actual regulation, not a vendor&rsquo;s
+          marketing page. We look at what the Security Rule requires, where
+          practices often fall short, and what a fix actually involves, because
+          HIPAA problems often come down to how a tool is configured, not the
+          tool itself.
+        </p>
+        <p>
+          If you want help closing those gaps, we introduce you to a vetted
+          compliance specialist who does that work. The Scorecard and the review
+          are free.
+        </p>
+
+        <h2>The standard behind Hipsana</h2>
+        <p>
+          Hipsana is built to a single standard. Everything it publishes traces
+          to a primary source: the HIPAA Security Rule itself, the enforcement
+          record the HHS Office for Civil Rights publishes, and NIST&rsquo;s
+          security guidance. Anything that can&rsquo;t be verified against a
+          regulator is labeled as such, never guessed. The discipline is the
+          point. It lets a practice owner see exactly where they stand and
+          confirm every word of it independently.
+        </p>
+        <p>
+          Hipsana was founded by Dolev Arama and built for a single audience:
+          solo and small practices that carry a hospital&rsquo;s HIPAA
+          obligations without a hospital&rsquo;s compliance department. The work
+          is narrow on purpose, turning a sprawling federal rulebook into the
+          handful of things that actually put a practice at risk.
+        </p>
+
+        <h2>What we are not</h2>
+        <p>
+          We are not attorneys, compliance officers, or healthcare
+          professionals. The Scorecard and the written review are informational:
+          a starting point for understanding your risk, not legal or compliance
+          advice, and not a substitute for a professional engagement when your
+          situation calls for one.
+        </p>
+        <p>
+          We also don&rsquo;t handle patient data. The Scorecard asks how your
+          practice operates, never about individual patients, and we never
+          collect protected health information. For questions specific to your
+          practice, consult someone licensed to answer them.
+        </p>
+
+        <h2>How we make money</h2>
+        <p>
+          When the Scorecard surfaces gaps you want help with, we connect you to
+          a vetted compliance specialist who handles that work. If you decide to
+          work with them, their firm pays us a referral fee. It never costs you
+          anything, and it never changes what your review says.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          Questions, corrections, or feedback: email{" "}
+          <a href="mailto:hello@hipsana.com">hello@hipsana.com</a>. We read
+          every message and respond to most within a few business days.
+        </p>
+      </div>
+
+      <div className="mt-14 max-w-prose border-t border-muted-border pt-10">
+        <p className="text-[17px] leading-relaxed text-muted">
+          See where your practice stands. Ten questions, about three minutes.
+        </p>
+        <div className="mt-6">
+          <Link href="/scorecard" className="btn-primary">
+            Check my practice &rarr;
+          </Link>
         </div>
-      </section>
-
-      {/* Pillars */}
-      <section className="border-t border-muted-border bg-muted-bg">
-        <div className="container-page py-20 md:py-24">
-          <p className="eyebrow mb-3">What makes us different</p>
-          <h2 className="font-display text-3xl tracking-tight md:text-4xl">
-            Three things we won&rsquo;t compromise on.
-          </h2>
-
-          <div className="mt-14 grid gap-10 md:grid-cols-3">
-            {pillars.map((pillar, idx) => (
-              <div key={pillar.title}>
-                <div className="font-display text-sm text-teal">
-                  0{idx + 1}
-                </div>
-                <h3 className="mt-3 font-display text-xl text-ink">
-                  {pillar.title}
-                </h3>
-                <p
-                  className="mt-3 text-[15px] leading-relaxed text-muted"
-                  dangerouslySetInnerHTML={{ __html: pillar.body }}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Proof from the public record */}
-      <section className="border-t border-muted-border bg-teal-subtle">
-        <div className="container-page py-16 md:py-20">
-          <div className="max-w-3xl">
-            <p className="eyebrow mb-3">From the public record</p>
-            <h2 className="font-display text-3xl tracking-tight md:text-4xl">
-              What a missing risk analysis actually costs
-            </h2>
-            <p className="mt-5 text-[17px] leading-relaxed text-muted">
-              In 2020, a solo physician&rsquo;s practice settled with HHS for
-              $100,000 and two years of federal monitoring. The trigger
-              wasn&rsquo;t a hacker or a stolen laptop. OCR found the practice
-              had never completed one basic document:{" "}
-              <Link
-                href="/articles/do-dental-practices-need-hipaa-risk-assessment"
-                className="text-teal underline decoration-teal/30 underline-offset-2 hover:decoration-teal"
-              >
-                the risk analysis the HIPAA Security Rule requires
-              </Link>
-              . To OCR, a solo physician and a solo dentist answer to the same
-              baseline. The free Scorecard checks whether that document, and the
-              gaps around it, exist in yours.
-            </p>
-
-            <figure className="mt-8">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/ocr-hipaa-settlement-porter-risk-analysis.webp"
-                alt="Excerpts from the HHS Office for Civil Rights resolution agreement with Steven A. Porter, M.D., P.C., a solo practice, with the cited failure to conduct a risk analysis and the $100,000 settlement highlighted."
-                width={1500}
-                height={562}
-                loading="lazy"
-                decoding="async"
-                className="h-auto w-full rounded-xl border border-muted-border"
-              />
-              <figcaption className="mt-3 text-sm leading-[1.6] text-muted">
-                Source: U.S. Department of Health and Human Services, Office for
-                Civil Rights.{" "}
-                <a
-                  href="https://www.hhs.gov/about/news/2020/03/03/health-care-provider-pays-100000-settlement-ocr-failing-implement-hipaa.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-teal underline decoration-teal/30 underline-offset-2 hover:decoration-teal"
-                >
-                  Press release, March 3, 2020
-                </a>{" "}
-                (the practice of Steven A. Porter, M.D.). Highlights added by
-                Hipsana.
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      {/* Start with the Scorecard */}
-      <section className="container-page py-20 md:py-24">
-        <div className="max-w-2xl">
-          <h2 className="font-display text-3xl tracking-tight md:text-4xl">
-            Start with the free HIPAA Scorecard.
-          </h2>
-          <p className="mt-5 text-[17px] leading-relaxed text-muted">
-            Answer ten yes/no questions about how your practice handles patient
-            data. You&rsquo;ll get a score out of 100 and a written review of your
-            biggest gaps, plus the option to book a short risk review and an
-            intro to a vetted specialist if you want help. About three minutes.
-          </p>
-
-          <div className="mt-8">
-            <Link href="/scorecard" className="btn-primary">
-              Check my practice &rarr;
-            </Link>
-          </div>
-
-          <p className="mt-8 text-[17px] leading-relaxed text-muted">
-            For questions, partnership inquiries, or feedback, the address is{" "}
-            <a
-              href="mailto:hello@hipsana.com"
-              className="text-teal underline decoration-teal/30 underline-offset-2 hover:decoration-teal"
-            >
-              hello@hipsana.com
-            </a>
-            .
-          </p>
-        </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
