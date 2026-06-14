@@ -4,7 +4,7 @@ import { getPublishedArticles } from "@/content/articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://hipsana.com";
-  const lastModified = new Date();
+  const lastModified = "2026-06-14";
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {
