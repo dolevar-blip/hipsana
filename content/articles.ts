@@ -523,7 +523,7 @@ export const articles: Article[] = [
     title: "What Happens If a Dental Practice Fails a HIPAA Audit? (2026)",
     metaTitle: "If a Dental Practice Fails a HIPAA Audit (2026)",
     description:
-      "A random HIPAA audit rarely ends in a fine. The real risk is an OCR investigation after a breach or complaint, and what failing actually costs a small dental practice.",
+      "A random HIPAA audit rarely ends in a fine. The real risk is an OCR investigation after a breach or complaint, and what failing costs a small dental practice.",
     author: "Dolev Arama",
     datePublished: "2026-06-04",
     dateModified: "2026-06-12",
@@ -1149,7 +1149,7 @@ export const articles: Article[] = [
     title: "How Much Does a HIPAA Risk Assessment Cost for a Dental Practice? (2026)",
     metaTitle: "HIPAA Risk Assessment Cost for Dentists (2026)",
     description:
-      "A HIPAA risk assessment for a dental practice usually runs $1,500 to $6,000 with a specialist; the free HHS tool is $0. What each path buys, and why cheap can cost more.",
+      "A HIPAA risk assessment for a dental practice runs $1,500–$6,000 with a specialist; the free HHS tool is $0. What each path buys, and why cheap can cost more.",
     author: "Dolev Arama",
     datePublished: "2026-06-05",
     dateModified: "2026-06-12",
