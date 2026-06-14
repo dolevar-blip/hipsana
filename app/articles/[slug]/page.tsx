@@ -185,7 +185,7 @@ function articleJsonLd(article: Article) {
     ...(image ? { image: [`${SITE_URL}${image.src}`] } : {}),
     datePublished: article.datePublished,
     dateModified: article.dateModified,
-    author: { "@type": "Person", name: article.author, url: `${SITE_URL}/about` },
+    author: { "@type": "Person", "@id": `${SITE_URL}/about#person`, name: article.author, url: `${SITE_URL}/about` },
     publisher: { "@type": "Organization", name: "Hipsana", logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` } },
     mainEntityOfPage: `${SITE_URL}/articles/${article.slug}`,
   };
