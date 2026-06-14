@@ -23,9 +23,25 @@ export const metadata: Metadata = {
   },
 };
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://hipsana.com/about#person",
+  name: "Dolev Arama",
+  url: "https://hipsana.com/about",
+  jobTitle: "Founder",
+  worksFor: { "@type": "Organization", "@id": "https://hipsana.com/#organization" },
+  description:
+    "Founder of Hipsana. He builds the HIPAA Risk Scorecard and writes the practice risk reviews, working from primary regulatory sources (HHS, OCR, NIST) rather than secondary summaries.",
+};
+
 export default function AboutPage() {
   return (
     <section className="container-page py-20 md:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
       <div className="prose-hipsana">
         <p className="eyebrow mb-3">About Hipsana</p>
         <h1 className="font-display text-4xl tracking-tight md:text-5xl">
@@ -78,11 +94,25 @@ export default function AboutPage() {
           confirm every word of it independently.
         </p>
         <p>
-          Hipsana was founded by Dolev Arama and built for a single audience:
+          Hipsana is built for a single audience:
           solo and small practices that carry a hospital&rsquo;s HIPAA
           obligations without a hospital&rsquo;s compliance department. The work
           is narrow on purpose, turning a sprawling federal rulebook into the
           handful of things that actually put a practice at risk.
+        </p>
+
+        <h2>About the author</h2>
+        <p>
+          Hipsana is written by its founder, Dolev Arama. He built the Scorecard
+          and writes the reviews behind it. He is not an attorney, and Hipsana is
+          a publisher and referral service, not a law firm or a healthcare
+          provider. And he won&rsquo;t pretend to be a compliance authority. What
+          he brings instead is one rule he doesn&rsquo;t break: if a claim
+          can&rsquo;t be traced to the regulator that made it (HHS, OCR, or
+          NIST), it doesn&rsquo;t go on the site, and anything he can&rsquo;t
+          verify gets labeled, not guessed. That&rsquo;s the point. You never
+          have to take his word for any of it: the sources are named, and you can
+          open every one yourself.
         </p>
 
         <h2>What we are not</h2>
