@@ -4,12 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "How Hipsana works: a free HIPAA Security Scorecard and written risk review for independent dental, medical, and therapy practices, plus an intro to a vetted specialist when you want one.",
+    "A free HIPAA Security Scorecard and written risk review for independent dental, medical, and therapy practices, plus an intro to a vetted specialist.",
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About · Hipsana",
     description:
-      "How Hipsana works: a free HIPAA Security Scorecard and written risk review for independent dental, medical, and therapy practices, plus an intro to a vetted specialist when you want one.",
+      "A free HIPAA Security Scorecard and written risk review for independent dental, medical, and therapy practices, plus an intro to a vetted specialist.",
     url: "https://hipsana.com/about",
     type: "website",
     images: [
