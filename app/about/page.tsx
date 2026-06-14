@@ -23,24 +23,9 @@ export const metadata: Metadata = {
   },
 };
 
-const orgJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Hipsana",
-  url: "https://hipsana.com",
-  description:
-    "HIPAA guidance and a free Security Scorecard for independent dental, medical, and therapy practices. Every claim traces to a primary source.",
-  founder: { "@type": "Person", name: "Dolev Arama" },
-  email: "hello@hipsana.com",
-};
-
 export default function AboutPage() {
   return (
     <section className="container-page py-20 md:py-24">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
-      />
       <div className="prose-hipsana">
         <p className="eyebrow mb-3">About Hipsana</p>
         <h1 className="font-display text-4xl tracking-tight md:text-5xl">
