@@ -19,14 +19,14 @@ function formatDate(iso: string): string {
 }
 
 export const metadata: Metadata = {
-  title: "Articles",
+  title: "HIPAA Compliance Guides for Independent Practices",
   description:
-    "Plain-language HIPAA and cybersecurity guidance for solo dental, medical, and therapy practices. Every regulatory claim is checked against HHS, OCR, or NIST.",
+    "Plain-language HIPAA and cybersecurity guidance for independent dental, medical, and therapy practices. Every regulatory claim is checked against HHS, OCR, or NIST.",
   alternates: { canonical: "/articles" },
   openGraph: {
-    title: "Articles · Hipsana",
+    title: "HIPAA Compliance Guides for Independent Practices · Hipsana",
     description:
-      "Plain-language HIPAA and cybersecurity guidance for solo dental, medical, and therapy practices.",
+      "Plain-language HIPAA and cybersecurity guidance for independent dental, medical, and therapy practices.",
     url: `${SITE_URL}/articles`,
     type: "website",
     images: [
@@ -51,7 +51,7 @@ export default function ArticlesIndexPage() {
           HIPAA, in plain language.
         </h1>
         <p className="mt-5 text-lg leading-relaxed text-muted">
-          Practical guidance for solo dental, medical, and therapy practices.
+          Practical guidance for independent dental, medical, and therapy practices.
           Every regulatory claim is checked against HHS, OCR, or NIST before it
           goes live.
         </p>
