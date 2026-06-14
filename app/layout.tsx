@@ -52,6 +52,33 @@ export const metadata: Metadata = {
   },
 };
 
+const siteJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://hipsana.com/#organization",
+      name: "Hipsana",
+      url: "https://hipsana.com",
+      logo: "https://hipsana.com/logo.png",
+      description:
+        "HIPAA guidance and a free Security Scorecard for independent dental, medical, and therapy practices. Every claim traces to a primary source.",
+      founder: { "@type": "Person", name: "Dolev Arama" },
+      email: "hello@hipsana.com",
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://hipsana.com/#website",
+      url: "https://hipsana.com",
+      name: "Hipsana",
+      description:
+        "Practical HIPAA compliance and cybersecurity guidance for independent dental, medical, and therapy practices.",
+      publisher: { "@id": "https://hipsana.com/#organization" },
+      inLanguage: "en-US",
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -60,6 +87,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${lexend.variable} ${ibmPlexSans.variable}`}>
       <body className="min-h-screen flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
+        />
         <ScrollToTop />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
