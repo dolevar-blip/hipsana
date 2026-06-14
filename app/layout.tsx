@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s · Hipsana",
   },
   description:
-    "Practical HIPAA compliance and cybersecurity guidance for independent dental, medical, and therapy practices. Plain-language reviews, real product recommendations, no fluff.",
+    "Practical HIPAA compliance and cybersecurity guidance for independent dental, medical, and therapy practices. Plain-language risk reviews from primary sources.",
   openGraph: {
     title: "Hipsana — HIPAA & cybersecurity for independent practices",
     description:
