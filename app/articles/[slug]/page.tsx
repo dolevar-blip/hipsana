@@ -191,6 +191,33 @@ function articleJsonLd(article: Article) {
   };
 }
 
+function breadcrumbJsonLd(article: Article) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: SITE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Articles",
+        item: `${SITE_URL}/articles`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: article.title,
+        item: `${SITE_URL}/articles/${article.slug}`,
+      },
+    ],
+  };
+}
+
 export default function ArticlePage({
   params,
 }: {
@@ -236,6 +263,10 @@ export default function ArticlePage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(article)) }}
         />
       )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd(article)) }}
+      />
 
       <div className="mx-auto max-w-prose">
         <p className="eyebrow mb-3">HIPAA &amp; Compliance</p>
