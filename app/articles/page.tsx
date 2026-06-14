@@ -21,7 +21,7 @@ function formatDate(iso: string): string {
 export const metadata: Metadata = {
   title: "HIPAA Compliance Guides for Independent Practices",
   description:
-    "Plain-language HIPAA and cybersecurity guidance for independent dental, medical, and therapy practices. Every regulatory claim is checked against HHS, OCR, or NIST.",
+    "Plain-language HIPAA and cybersecurity guidance for independent dental, medical, and therapy practices. Every claim is checked against HHS, OCR, or NIST.",
   alternates: { canonical: "/articles" },
   openGraph: {
     title: "HIPAA Compliance Guides for Independent Practices · Hipsana",
