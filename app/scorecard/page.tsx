@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import ScorecardEmbed from "@/components/ScorecardEmbed";
 
 export const metadata: Metadata = {
@@ -53,12 +52,7 @@ export default function ScorecardPage() {
       </div>
 
       <p className="mt-6 max-w-prose text-sm text-muted">
-        We use your answers to prepare your review. See how we handle your
-        details in our{" "}
-        <Link href="/privacy" className="underline hover:text-ink">
-          Privacy Policy
-        </Link>
-        .
+        We use your answers to prepare your review.
       </p>
     </div>
   );
