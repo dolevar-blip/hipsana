@@ -2640,6 +2640,372 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "does-my-dental-practice-need-a-baa",
+    status: "published",
+    title: "Does Your Dental Practice Need a BAA, and With Which Vendors? (2026)",
+    metaTitle: "Does Your Dental Practice Need a BAA? (2026)",
+    description:
+      "Does your dental practice need a BAA? Yes, if a vendor handles patient data. Which vendors, how to get one, and what one missing agreement can cost.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-17",
+    dateModified: "2026-06-17",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "A North Carolina clinic handed a stack of old X-ray films to a vendor that promised to recycle them for the silver. No contract, just a phone call. That one missing piece of paper cost the practice $750,000. The vendor was not doing anything sinister; it was digitizing films. The real problem was quieter: the clinic gave patient records to an outside company without a business associate agreement (BAA), the contract HIPAA requires before a vendor touches patient data. Your practice almost certainly needs one too, and probably with more vendors than you would guess. If a company creates, receives, stores, or transmits your patients' data, you need a signed BAA with it first. Here is which of your vendors qualify, how to get the agreement, and what skipping it costs.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "It depends on the vendor, and the list is longer than most practices think. " },
+            "Any company that creates, receives, stores, or transmits patient data on your behalf is a business associate, and it needs a signed BAA before the first record reaches it (45 CFR \u00a7 160.103 and \u00a7 164.502(e)).",
+          ],
+          [
+            { strong: "Your everyday software and service vendors usually qualify. " },
+            "Practice-management and imaging software, the billing or claims clearinghouse, your IT or managed-services provider, cloud backup, and any email or file-sharing that carries patient data typically each need one.",
+          ],
+          [
+            { strong: "\"They never look at the data\" is not an exemption. " },
+            "Under ",
+            {
+              text: "OCR's cloud guidance",
+              href: "https://www.hhs.gov/hipaa/for-professionals/special-topics/health-information-technology/cloud-computing/index.html",
+            },
+            ", a vendor that stores or transmits your patient data is a business associate even if it cannot read a single record.",
+          ],
+          [
+            { strong: "One missing BAA has cost a practice $750,000. " },
+            "Raleigh Orthopaedic paid exactly that in 2016 for one cited failure: giving a vendor patient records with no agreement in place.",
+          ],
+          [
+            { strong: "The fix is a signed agreement and a current list. " },
+            "Inventory every vendor that touches patient data, get a BAA from each, and review the list when vendors change. The Scorecard checks whether you have one with every vendor that touches patient data.",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Before you go vendor by vendor, it helps to see where your practice actually stands. The free HIPAA Scorecard checks your BAAs and the other controls an auditor looks at first, then scores your practice out of 100. About three minutes. ",
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      { type: "h2", text: "What a BAA is, and what HIPAA actually requires" },
+      {
+        type: "p",
+        runs: [
+          "A business associate agreement, or BAA, is a written contract between your practice and any outside company that handles protected health information on your behalf. HIPAA calls that company a ",
+          {
+            text: "business associate",
+            href: "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html",
+          },
+          " (45 CFR \u00a7 160.103). The rule is blunt about the order of operations: you may disclose patient data to a business associate only after it gives you satisfactory assurances, in writing, that it will protect the data (45 CFR \u00a7 164.502(e)).",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The Security Rule says the same thing for electronic records, in its own words. A covered practice may let a vendor create, receive, maintain, or transmit electronic patient information only after obtaining written assurances that the vendor will safeguard it (45 CFR \u00a7 164.308(b)). Those assurances have required contents: the vendor must agree to follow the Security Rule, to report security incidents and breaches back to you, and to bind its own subcontractors to the same terms (45 CFR \u00a7 164.314(a)).",
+        ],
+      },
+      {
+        type: "quote",
+        runs: [
+          "Under HIPAA, you may hand patient data to an outside company only after it signs an agreement promising, in writing, to protect it. No agreement, no data.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "That last line is not a slogan. It is the part Raleigh Orthopaedic missed, and it is the part a checklist alone will not catch.",
+        ],
+      },
+      { type: "h2", text: "Which of your vendors need a BAA?" },
+      {
+        type: "p",
+        runs: [
+          "Start with one question for each vendor: does this company create, receive, store, or transmit our patients' information to do its job? If the answer is yes, it is almost certainly a business associate, and it needs a BAA. That phrase covers far more than the companies that obviously look at patient charts.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Industry compliance guides put a typical dental office at eight to fifteen business associates, and some practices have more than twenty. Here is how the common dental-office vendors usually fall. Treat it as a starting map, not a substitute for checking each contract.",
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "Practice-management and imaging software (PMS, EHR, the cloud platform behind your charts and x-rays): " },
+            "Yes. It stores your entire patient database. Cloud-based vendors almost always have a BAA ready on request.",
+          ],
+          [
+            { strong: "Billing service or claims clearinghouse: " },
+            "Yes. It transmits claims containing patient data to payers on your behalf.",
+          ],
+          [
+            { strong: "IT support or managed-services provider (MSP): " },
+            "Almost always yes. If the company can reach the systems that hold patient data, even only to fix them, it is a business associate. This is the vendor practices most often forget.",
+          ],
+          [
+            { strong: "Cloud storage and backup: " },
+            "Yes. A service that stores electronic patient data is a business associate even when the data is encrypted and the vendor never views it.",
+          ],
+          [
+            { strong: "Email, secure messaging, and file-sharing: " },
+            "It depends. If the service stores or routes patient data through its own systems, such as emailing an x-ray to a specialist, the provider needs a BAA. A pure transmission line, like your phone carrier or internet provider, does not.",
+          ],
+          [
+            { strong: "Records, film, and hard-drive disposal (shredding and e-waste): " },
+            "Yes, when the vendor handles media that still contains patient data. Raleigh's vendor was, in effect, a film-recycling service.",
+          ],
+          [
+            { strong: "Answering service, virtual reception, and scheduling: " },
+            "Yes, if the staff or software can see patient names, numbers, or appointment details.",
+          ],
+          [
+            { strong: "AI tools (scribes, chatbots, imaging assistants): " },
+            "Yes, on the same terms as any other vendor. Whether ",
+            {
+              text: "ChatGPT is HIPAA compliant in a dental practice",
+              href: "/articles/is-chatgpt-hipaa-compliant-dental-practice",
+            },
+            ", and how to run ",
+            {
+              text: "the five-question BAA test on an AI scribe",
+              href: "/articles/are-ai-scribes-hipaa-compliant-dental-practice",
+            },
+            ", are their own questions.",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The one real exception is narrow. A vendor that only carries data from one point to another without storing it, a true conduit such as the postal service or an internet provider, is not a business associate. OCR draws the line at whether the company maintains or can access the data, not at whether anyone there looks. That is why cloud storage and most email services are business associates and the phone company is not. When in doubt, treat the vendor as one and ask for the agreement.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "A few relationships do not need a BAA, and they trip people up. You do not sign one with another healthcare provider you share records with for a patient's treatment. That is why a dental lab you send impressions or images to for a case does not need one: under HIPAA's treatment exception, HHS and the ADA treat the lab as another health care provider, not your business associate. You also do not sign one with your own staff, who are workforce members rather than vendors. The treatment exception is narrow, though: if that lab or another provider does a non-treatment job for you, such as billing or records review, the BAA requirement comes back.",
+        ],
+      },
+      { type: "h2", text: "What one missing BAA can cost" },
+      {
+        type: "p",
+        runs: [
+          "The risk is not theoretical, and it is not only historical. In 2025, an attacker reached roughly 1.2 million patient records at Absolute Dental, a Nevada dental group, through a single compromised account belonging to its outside IT vendor. The practice agreed to a $3.3 million class-action settlement, with a final approval hearing set for July 2026. A BAA would not have stopped that intrusion by itself, but the case is a plain lesson in why the contract matters: your vendor's access to your systems is your attack surface, and the BAA is where you pin down what that vendor must do to protect it.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Skipping the agreement is its own, separately punishable failure. Raleigh Orthopaedic Clinic reported a breach to the federal government in 2013, after it gave a vendor the X-ray films and records of 17,300 patients so the films could be digitized and the silver recovered. The arrangement was made over the phone, with no BAA. OCR's investigation did not turn on the recycling. It turned on the missing contract. The clinic paid $750,000 and accepted a corrective action plan that, among other things, required it to name one person responsible for getting a BAA from every vendor before any data is shared.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-settlement-raleigh-orthopaedic-business-associate.webp",
+        alt: "Excerpt from the HHS Office for Civil Rights resolution agreement with Raleigh Orthopaedic Clinic: the practice paid $750,000 for failing to execute a business associate agreement before giving a vendor the protected health information of 17,300 patients.",
+        width: 1500,
+        height: 946,
+        caption: [
+          "From the U.S. Department of Health and Human Services, Office for Civil Rights settlement with Raleigh Orthopaedic Clinic, P.A. (2016). ",
+          {
+            text: "Read the HHS announcement \u2192",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/raleigh-orthopaedic-clinic/index.html",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "If a vendor breach does reach your patients, ",
+          {
+            text: "responding to a dental data breach",
+            href: "/articles/dental-data-breach-response",
+          },
+          " is a separate process with its own deadlines. The cheaper path is to close the gap before anything goes wrong.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Most practices have at least one vendor touching patient data without a signed BAA, and it is the kind of gap that is hard to see from inside the office. The free HIPAA Scorecard checks for it, and for the other controls OCR looks at first, in about three minutes. ",
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      { type: "h2", text: "How to get a BAA from a vendor" },
+      {
+        type: "p",
+        runs: [
+          "None of this needs a lawyer for the routine cases. It needs a list and a few emails.",
+        ],
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "List every vendor that touches patient data",
+            detail:
+              "Walk through your software, your service providers, and anyone with access to your systems or records. The IT company, the billing service, the cloud backup, the imaging platform: write them all down. This list is the part most practices have never made.",
+          },
+          {
+            label: "Ask each vendor for its BAA",
+            detail:
+              "Established vendors keep one ready and will send it when you ask. If a vendor does not know what a BAA is, treat that as a warning sign about how it handles patient data.",
+          },
+          {
+            label: "Read the three things it must contain",
+            detail:
+              "The agreement must require the vendor to safeguard the data, to report breaches and security incidents to you, and to hold its own subcontractors to the same terms (45 CFR \u00a7 164.314(a)). A BAA that quietly disclaims all of that is not doing its job.",
+          },
+          {
+            label: "Sign it before any data flows",
+            detail:
+              "The agreement has to be in place before you share anything. Signing one after a disclosure does not cure the disclosure, which is the exact timing the Raleigh settlement turned on.",
+          },
+          {
+            label: "Keep the list current and owned",
+            detail:
+              "Store the signed agreements with the vendor list, and review it whenever you add or change a vendor. Naming one person to own this was literally part of the corrective action OCR ordered.",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Keeping track of which vendors have a signed BAA is also part of a real ",
+          {
+            text: "HIPAA risk analysis",
+            href: "/articles/do-dental-practices-need-hipaa-risk-assessment",
+          },
+          ", the document the same enforcement office checks first. The two go together: the risk analysis is where you notice the gap, and the BAA is how you close it.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Not sure which of your vendors are missing one? The Scorecard runs through the controls an auditor checks first, including signed BAAs, and scores where your practice stands. ",
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      { type: "h2", text: "When a vendor will not sign, and other edge cases" },
+      {
+        type: "p",
+        runs: ["A few situations come up often enough to plan for."],
+      },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "The vendor refuses, or will only sign on a tier you cannot afford: " },
+            "Then you cannot use it for anything involving patient data. No privacy setting or paid add-on substitutes for the contract; find a vendor that will sign.",
+          ],
+          [
+            { strong: "\"We will send you our BAA\": " },
+            "That is normal and fine. Read it anyway. The vendor's version still has to meet the required contents, and some are written to protect the vendor more than your patients.",
+          ],
+          [
+            { strong: "Subcontractors behind your vendor: " },
+            "You do not sign with them directly. Your vendor is responsible for binding its own subcontractors, such as the data center behind your cloud software, to the same terms (45 CFR \u00a7 164.308(b)). The chain has to hold the whole way down.",
+          ],
+          [
+            { strong: "Agencies you are required to report to: " },
+            "Sharing data because the law requires it, such as a report to a state board, is not a business-associate relationship and does not need a BAA.",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "One change is on the horizon. A proposed overhaul of the ",
+          {
+            text: "HIPAA Security Rule",
+            href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information",
+          },
+          ", published in January 2025, would add a step to all of this: practices would have to obtain written verification from each vendor that it has actually deployed the required technical safeguards, refreshed every year. As of June 2026 it is still a proposal, not law. Build your vendor list against today's rules, date it, and expect the bar to rise.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "This is general information, not legal advice. " },
+          "Whether a particular vendor counts as a business associate can depend on the specific facts of the arrangement. When a relationship is unclear, confirm it against current HHS guidance or with qualified counsel before you share patient data.",
+        ],
+      },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          ["HHS Office for Civil Rights, \"$750,000 settlement highlights the need for HIPAA business associate agreements,\" resolution agreement with Raleigh Orthopaedic Clinic, P.A. (2016)."],
+          ["HHS Office for Civil Rights, \"Guidance on HIPAA & Cloud Computing\" (a cloud or transmission vendor that maintains protected health information is a business associate, encrypted or not)."],
+          ["HHS Office for Civil Rights, sample business associate agreement provisions (accessed June 2026)."],
+          ["American Dental Association, FAQs on HIPAA business associates (a dental lab is a healthcare provider; no BAA is needed to share PHI for treatment)."],
+          ["Jordan v. Absolute Dental Group, LLC, No. 2:25-cv-00986 (D. Nev.); $3.3 million proposed class-action settlement over a 2025 vendor-account breach; final approval hearing July 30, 2026."],
+          ["45 CFR \u00a7 160.103; \u00a7 164.502(e); \u00a7 164.504(e); \u00a7 164.308(b); \u00a7 164.314(a) (eCFR, current)."],
+          ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025 (RIN 0945-AA22)."],
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Does a solo dental practice really need BAAs, or is that just for large groups?",
+        answer:
+          "It applies to every covered practice, regardless of size. The rules make no exception for solo or small offices, and OCR has settled cases with single-doctor practices. If a vendor handles your patient data, you need a BAA with it whether you run one chair or ten.",
+      },
+      {
+        question: "Is my practice-management or imaging software vendor a business associate?",
+        answer:
+          "Almost always, yes. That software stores or processes your patients' records, which is the definition of a business associate. Cloud-based dental software vendors typically have a BAA ready and will provide it on request.",
+      },
+      {
+        question: "Do I need a BAA with my IT or computer-support company?",
+        answer:
+          "Usually yes. If the company can access the systems that hold patient data, even only to maintain or repair them, it is a business associate under HIPAA. This is one of the most commonly missed agreements in small practices.",
+      },
+      {
+        question: "Do I need a BAA with my dental lab?",
+        answer:
+          "Usually no. HHS and the ADA treat a dental lab as its own healthcare provider, and sharing patient information with it for a patient's treatment falls under HIPAA's treatment exception, which does not require a BAA. You would need one only if a lab or other provider does a non-treatment job for your practice, such as billing or records review.",
+      },
+      {
+        question: "We email x-rays to specialists. Does the email provider need a BAA?",
+        answer:
+          "If the provider stores or routes that patient data through its systems, yes. Most standard email and file-sharing services that hold the message are business associates. A pure conduit that only transmits without storing, like your phone or internet carrier, is not.",
+      },
+      {
+        question: "What happens if a vendor refuses to sign a BAA?",
+        answer:
+          "Then you cannot use that vendor for anything involving patient data. No privacy toggle or paid tier substitutes for the contract. The practical answer is to choose a vendor that will sign one.",
+      },
+      {
+        question: "Is having a BAA the same as being HIPAA compliant?",
+        answer:
+          "No. A signed BAA is one required piece. You still need a risk analysis and written policies, with the safeguards themselves actually in place. The Scorecard checks the BAA alongside the other core controls so you can see the whole picture, not just one part.",
+      },
+      {
+        question: "Can a BAA be backdated to cover data we already shared?",
+        answer:
+          "A BAA cannot be backdated. The agreement has to be in place before you disclose patient data to the vendor. Signing one afterward does not undo the earlier disclosure, which is exactly the timing the Raleigh Orthopaedic settlement turned on.",
+      },
+    ],
+  },
 ];
 
 export function getAllArticles(): Article[] {
