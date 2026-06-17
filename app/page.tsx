@@ -195,6 +195,29 @@ export default function HomePage() {
                 Hipsana.
               </figcaption>
             </figure>
+
+            <div className="mt-10 rounded-xl border border-muted-border bg-white p-6">
+              <p className="eyebrow mb-2">Report</p>
+              <h3 className="font-display text-xl text-ink">
+                <Link
+                  href="/articles/dental-hipaa-breach-and-enforcement-report"
+                  className="transition-colors hover:text-teal"
+                >
+                  Dental HIPAA Breach and Enforcement Report (2026)
+                </Link>
+              </h3>
+              <p className="mt-2 text-[15px] leading-relaxed text-muted">
+                We read the public HHS breach and enforcement data so you
+                don&rsquo;t have to: how dental practices actually get breached,
+                and the one failure OCR keeps fining them for.
+              </p>
+              <Link
+                href="/articles/dental-hipaa-breach-and-enforcement-report"
+                className="mt-3 inline-block text-sm font-medium text-teal"
+              >
+                Read the report &rarr;
+              </Link>
+            </div>
           </div>
         </div>
       </section>
