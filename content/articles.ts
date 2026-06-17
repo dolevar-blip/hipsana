@@ -41,6 +41,7 @@ export type Article = {
   status: "published" | "draft";
   title: string; // <h1> and <title>
   metaTitle?: string; // optional shorter SERP <title>; overrides title for the tab/SERP
+  kind?: "report"; // optional content-type label; drives the "Report" eyebrow and the index/home prominence. Absent = standard guide.
   description: string; // meta description and on-page intro
   author: string;
   datePublished: string; // ISO date, e.g. "2026-06-02"
@@ -3423,6 +3424,340 @@ export const articles: Article[] = [
     ],
   },
 
+  {
+    slug: "dental-hipaa-breach-and-enforcement-report",
+    status: "published",
+    kind: "report",
+    title: "Dental HIPAA Breach and Enforcement Report (2026)",
+    metaTitle: "Dental HIPAA Breaches & Fines: 2026 Data",
+    description: "We read the public HHS data so you don't have to: how dental practices actually get breached, and the one failure OCR keeps fining them for in 2026.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-17",
+    dateModified: "2026-06-17",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "The largest dental data breach on record exposed 8.9 million people. Like most breaches in dentistry, it did not begin with a master hacker breaking through a hardened wall. It began with the kind of ordinary failure the public record keeps showing: a compromised login, a compromised vendor, or ransomware that slips in behind one of them. That is the first pattern in the data. The second matters more to a small practice. When federal regulators settle a case afterward, the violation they name is rarely the breach itself. It is the one document underneath it that most independent practices begin and never finish. We read the public HHS data so you can see both patterns plainly, and what they mean for a practice your size."
+        ]
+      },
+      {
+        type: "h2",
+        text: "The short version"
+      },
+      {
+        type: "ul",
+        items: [
+          [
+            {
+              strong: "The public data is clear, and we did the reading. "
+            },
+            "Every figure here comes from HHS's own breach portal, its annual reports to Congress, and its published settlements. We do not sell compliance services, so this is a read of the record, not a sales pitch."
+          ],
+          [
+            {
+              strong: "Dental breaches almost never start with a sophisticated hack. "
+            },
+            "The most common reported cause is ransomware, and the entry point behind it is usually a compromised login or a vendor with access to your systems. A direct break-in is rare."
+          ],
+          [
+            {
+              strong: "OCR changed what it punishes. "
+            },
+            "Since late 2024, its Risk Analysis Initiative has treated the missing risk analysis, not the breach, as the violation. The attacker is the trigger; the unaddressed gap is the finding."
+          ],
+          [
+            {
+              strong: "The fines are not reserved for the giants. "
+            },
+            "A dental software vendor settled for $10,000. A treatment center with fewer than 2,000 patients paid $103,000 and rebuilt its program under two years of federal monitoring."
+          ],
+          [
+            {
+              strong: "The control OCR cites most is the one the Scorecard checks first. "
+            },
+            "See where your practice stands in about three minutes. ",
+            {
+              text: "Check my practice →",
+              href: "/scorecard"
+            }
+          ]
+        ]
+      },
+      {
+        type: "p",
+        runs: [
+          {
+            strong: "The short answer: "
+          },
+          "the public record tells two stories at once. Dental practices get breached through ransomware, compromised email, and compromised vendors, ordinary failures rather than exotic attacks. And when OCR investigates, it increasingly fines the practice for never having run an accurate, thorough risk analysis, the foundation the entire Security Rule sits on at 45 CFR § 164.308(a)(1)(ii)(A). The breach gets the headlines. The missing risk analysis gets the penalty."
+        ]
+      },
+      {
+        type: "h2",
+        text: "What this report covers"
+      },
+      {
+        type: "p",
+        runs: [
+          "This is a plain reading of two public datasets that rarely get read together: the breaches healthcare practices report to the federal government, and the settlements the government reaches with them afterward. One shows how patient data actually leaks. The other shows what it costs when regulators get involved, and why. We pointed the lens at dental and small independent practices, because the published numbers say something specific about practices your size, and most summaries miss it."
+        ]
+      },
+      {
+        type: "h2",
+        text: "How dental practices actually get breached"
+      },
+      {
+        type: "p",
+        runs: [
+          "Start with the scale. In 2024, the most recent full year HHS has reported to Congress, it received 742 reports of large breaches, those affecting 500 or more people, with 663 of them for breaches that occurred that year. Across those, the records of more than 242 million individuals were exposed or impermissibly disclosed, an annual record. One incident drove most of it: the ransomware attack on the billing clearinghouse Change Healthcare alone accounted for an estimated 192 million. Hacking and IT incidents were the leading cause by far, 81% of the large breaches that year, and the trend has not reversed: 2025 set a new record, with 772 large breaches reported."
+        ]
+      },
+      {
+        type: "p",
+        runs: [
+          "That large-breach list is the part of the iceberg above the water. The same year, HHS received 74,299 reports of breaches affecting fewer than 500 people. Those smaller incidents, the kind a solo practice is far likelier to have, are not posted by name; federal law only requires public listing of the breaches affecting 500 or more. So when you read the named cases below, remember they are the visible minority. Most small-practice breaches never appear with a name attached."
+        ]
+      },
+      {
+        type: "h3",
+        text: "The dental cases, by the numbers"
+      },
+      {
+        type: "p",
+        runs: [
+          "Filter the public breach portal to dental and oral-health organizations and a clear shape appears. The headline numbers come from large dental insurers and software vendors, the entities that hold millions of records at once. The cause, almost every time, is mundane."
+        ]
+      },
+      {
+        type: "table",
+        headers: [
+          "Dental organization",
+          "Year",
+          "People affected",
+          "Reported cause"
+        ],
+        rows: [
+          [
+            "MCNA Dental",
+            "2023",
+            "~8.9 million",
+            "Ransomware (LockBit)"
+          ],
+          [
+            "Delta Dental of California",
+            "2023",
+            "~6.9 million",
+            "Vendor / supply chain (MOVEit)"
+          ],
+          [
+            "Delta Dental of Virginia",
+            "2025",
+            "145,918",
+            "Compromised employee email"
+          ],
+          [
+            "32 Pearls (WA)",
+            "2025",
+            "23,517",
+            "Ransomware"
+          ],
+          [
+            "Upper Dublin Family Dentistry (PA)",
+            "2025",
+            "~5,000",
+            "Ransomware"
+          ],
+          [
+            "Olde Towne Medical & Dental (VA)",
+            "2025",
+            "2,567",
+            "Ransomware"
+          ]
+        ],
+        caption: "Selected dental-sector breaches, with the cause as reported to regulators or in public breach notices. Counts are approximate where a final figure is still being confirmed."
+      },
+      {
+        type: "p",
+        runs: [
+          "Read down the last column. The biggest dental breach on record, MCNA Dental in 2023, was ransomware. The second biggest, Delta Dental of California, came in through a third party, the MOVEit file-transfer flaw that swept up thousands of organizations at once. The smaller 2025 cases follow the same script: ransomware that locked the files at a Pennsylvania family dentistry and a Seattle practice, a compromised inbox at a dental insurer. What they share is not sophistication. Security researchers who track dental breaches keep finding the same thing underneath the ransomware, a trusted login or a trusted vendor rather than a direct break-in of a hardened system. The door tends to be unlocked before the attacker arrives. Which vendors hold a key is the question behind every ",
+          {
+            text: "business associate agreement",
+            href: "/articles/does-my-dental-practice-need-a-baa"
+          },
+          ", and ",
+          {
+            text: "a breach is a clock that starts the moment you find it",
+            href: "/articles/dental-data-breach-response"
+          },
+          "."
+        ]
+      },
+      {
+        type: "h2",
+        text: "What OCR actually fines you for"
+      },
+      {
+        type: "p",
+        runs: [
+          "Here is where the second dataset matters more than the first. OCR's Risk Analysis Initiative, whose first settlement landed in October 2024, was a deliberate decision to concentrate enforcement on a single failure the agency kept finding behind breach after breach: regulated entities that never performed a complete, accurate risk analysis of where their patient data lives and what threatens it. OCR's position, stated more plainly with each settlement, is that this failure is itself the violation. The attacker who encrypted the files did not create the legal exposure. The gap an honest risk analysis should have caught, and a real plan should have closed, did."
+        ]
+      },
+      {
+        type: "p",
+        runs: [
+          "The settlements that have come out of the initiative make the point better than any summary. The breach that drew OCR's attention is different every time. The finding is the same every time."
+        ]
+      },
+      {
+        type: "table",
+        headers: [
+          "Entity",
+          "Announced",
+          "Settlement",
+          "What triggered it",
+          "What OCR found"
+        ],
+        rows: [
+          [
+            "Bryan County, Oklahoma",
+            "2024",
+            "$90,000",
+            "Ransomware",
+            "No risk analysis"
+          ],
+          [
+            "MMG Fusion (dental software)",
+            "2026",
+            "$10,000",
+            "PHI exposed and posted online",
+            "No risk analysis; failed to notify clients"
+          ],
+          [
+            "Health Fitness Corporation",
+            "2025",
+            "$227,816",
+            "Server left misconfigured",
+            "No risk analysis"
+          ],
+          [
+            "Top of the World Ranch",
+            "2026",
+            "$103,000",
+            "Phishing email",
+            "No risk analysis"
+          ]
+        ],
+        caption: "Selected settlements under OCR's Risk Analysis Initiative: different triggers, one recurring finding. Source: HHS Office for Civil Rights settlement announcements."
+      },
+      {
+        type: "p",
+        runs: [
+          "The dollar figures range widely, from the $10,000 paid by the dental software vendor MMG Fusion to the $227,816 paid by a wellness company for a server left exposed for nearly three years, with settlements like Behavioral Health Solution of Deer Oaks at $225,000 and a Syracuse surgery center at $250,000 in between. The check is never the real cost. Every settlement carries a corrective action plan, often monitored for two to three years, that orders the practice to build the program it skipped. By the middle of 2026 OCR had collected more than $1.2 million across at least six enforcement actions, after roughly $6.6 million in HIPAA fines the year before. ",
+          {
+            text: "An OCR investigation",
+            href: "/articles/what-happens-if-dental-practice-fails-hipaa-audit"
+          },
+          " is an expensive and public way to be told to do the paperwork."
+        ]
+      },
+      {
+        type: "p",
+        runs: [
+          "Note who turns up on that list. MMG Fusion is a dental software vendor, and OCR fined it not only for failing to run a risk analysis but for failing to tell the dental practices it served that their patients' data had been exposed. The initiative is not aimed at dentistry. Dentistry is not exempt from it."
+        ]
+      },
+      {
+        type: "h2",
+        text: "What this means for an independent practice"
+      },
+      {
+        type: "p",
+        runs: [
+          "Put the two datasets side by side and the instruction for a small practice writes itself. Breaches arrive through ordinary doors: ransomware, a compromised inbox, a vendor with access. Fines arrive through one document: the risk analysis that was never finished. In its 2024 report, OCR named the failures it keeps finding underneath these cases, incomplete risk analyses, user accounts with more access than they need, and weak authentication like default passwords and single-factor remote logins. None of that is exotic. It is the same handful of safeguards a small practice can put in place on purpose, for a fraction of what a settlement costs. ",
+          {
+            text: "What that program runs per year",
+            href: "/articles/how-much-does-hipaa-compliance-cost-for-a-dental-practice"
+          },
+          " is its own question, and ",
+          {
+            text: "the risk analysis is the line item everything else depends on",
+            href: "/articles/do-dental-practices-need-hipaa-risk-assessment"
+          },
+          "."
+        ]
+      },
+      {
+        type: "p",
+        runs: [
+          {
+            strong: "The cheapest version of this is the one you build before OCR builds it for you. "
+          },
+          "The Scorecard checks the 10 controls OCR looks at first and sends you a short written read of where your practice stands. About three minutes, no cost. ",
+          {
+            text: "Check my practice →",
+            href: "/scorecard"
+          }
+        ]
+      },
+      {
+        type: "h2",
+        text: "How we compiled this report"
+      },
+      {
+        type: "p",
+        runs: [
+          "The figures here are drawn from public records, as of June 2026. Aggregate breach counts come from the HHS annual Reports to Congress on breaches of unsecured protected health information. Named breach cases come from the HHS Office for Civil Rights breach portal, which by law lists only breaches affecting 500 or more people, supplemented by company and state breach notices and the reporting of the HIPAA Journal and Becker's Dental Review. Settlement details come from OCR's own enforcement announcements. We are not a law firm, and nothing here is legal advice. Figures reflect the public record at the date shown and are updated as that record changes. Where a breach count was still being finalized, we have marked it as approximate."
+        ]
+      },
+      {
+        type: "h2",
+        text: "How to cite this report"
+      },
+      {
+        type: "p",
+        runs: [
+          "Journalists, researchers, and writers are welcome to cite this report. A suggested citation:"
+        ]
+      },
+      {
+        type: "quote",
+        runs: [
+          "Hipsana, Dental HIPAA Breach and Enforcement Report (2026), https://hipsana.com/articles/dental-hipaa-breach-and-enforcement-report"
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "How many healthcare data breaches happen each year?",
+        answer: "In 2024, the most recent year HHS has reported to Congress, it received 742 reports of breaches affecting 500 or more people, and across the breaches that occurred that year, more than 242 million individuals' records were exposed, plus another 74,299 smaller breaches affecting fewer than 500 people each. The smaller breaches, the kind a solo practice is likeliest to have, are reported to HHS but not posted publicly by name."
+      },
+      {
+        question: "What is the largest dental data breach?",
+        answer: "The 2023 ransomware attack on MCNA Dental, which exposed the records of roughly 8.9 million people after the LockBit group copied hundreds of gigabytes of data and published some of it when MCNA refused to pay. The second largest was Delta Dental of California, with about 6.9 million people affected through the MOVEit supply-chain attack the same year."
+      },
+      {
+        question: "What does OCR actually fine dental and medical practices for?",
+        answer: "Increasingly, for failing to conduct an accurate and thorough risk analysis, the foundational requirement of the HIPAA Security Rule at 45 CFR 164.308(a)(1)(ii)(A). Since late 2024, OCR's Risk Analysis Initiative has treated the missing risk analysis, rather than the breach that exposed it, as the central violation in case after case."
+      },
+      {
+        question: "How large are HIPAA fines for small practices?",
+        answer: "They vary widely. Recent settlements range from $10,000 paid by a dental software vendor to six-figure amounts in ransomware cases, with a small Illinois treatment center paying $103,000 and a wellness company paying $227,816. The financial penalty is rarely the largest cost; nearly every settlement also includes a corrective action plan monitored for two to three years."
+      },
+      {
+        question: "What is the OCR Risk Analysis Initiative?",
+        answer: "An enforcement focus the HHS Office for Civil Rights launched in 2024 to concentrate its resources on a single recurring failure: organizations that never performed a complete risk analysis of their electronic patient data. Its first settlement, with an Oklahoma ambulance service, came in October 2024, and OCR has resolved more than a dozen cases under it since, with the agency signaling it will extend the same scrutiny to risk management, acting on what the analysis finds, next."
+      },
+      {
+        question: "How do most dental data breaches start?",
+        answer: "Across the public cases, the most common reported cause is ransomware, and the entry point behind it is almost always a compromised login or a vendor with access to the practice's systems, not a direct break-in. The common thread is a trusted login or a trusted third party, not a sophisticated attack."
+      },
+      {
+        question: "Do small dental practices really get investigated?",
+        answer: "Yes. Federal regulators have settled with single-location providers and practices with fewer than 2,000 patients specifically to show that size is not a defense. A breach is what draws OCR's attention; the state of your compliance program is what determines the outcome."
+      }
+    ]
+  },
 ];
 
 export function getAllArticles(): Article[] {
