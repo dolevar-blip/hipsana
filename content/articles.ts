@@ -526,7 +526,7 @@ export const articles: Article[] = [
       "A random HIPAA audit rarely ends in a fine. The real risk is an OCR investigation after a breach or complaint, and what failing costs a small dental practice.",
     author: "Dolev Arama",
     datePublished: "2026-06-04",
-    dateModified: "2026-06-12",
+    dateModified: "2026-06-17",
     body: [
       {
         type: "p",
@@ -747,7 +747,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Sign real business associate agreements. " },
-            "Every vendor that touches patient data, your practice-management software, IT company, billing service, needs one (45 CFR §164.504(e)). Missing BAAs are a recurring finding, and AI tools are the newest place they go missing; here is ",
+            { text: "Every vendor that touches patient data", href: "/articles/does-my-dental-practice-need-a-baa" }, ", your practice-management software, IT company, billing service, needs one (45 CFR §164.504(e)). Missing BAAs are a recurring finding, and AI tools are the newest place they go missing; here is ",
             {
               text: "which AI tools will sign a BAA for a dental practice",
               href: "/articles/is-chatgpt-hipaa-compliant-dental-practice",
@@ -893,7 +893,7 @@ export const articles: Article[] = [
       "A dental data breach starts a 60-day HIPAA clock. The exact steps to take, who to notify, and what OCR looks for first, anchored to a real OCR settlement.",
     author: "Dolev Arama",
     datePublished: "2026-06-05",
-    dateModified: "2026-06-12",
+    dateModified: "2026-06-17",
     body: [
       {
         type: "p",
@@ -1074,7 +1074,7 @@ export const articles: Article[] = [
         items: [
           [{ strong: "Run a real risk analysis, then fix what it finds." }, " This is the single most-cited failure in OCR settlements. We break down what one involves in ", { text: "our guide to HIPAA risk assessments for dental practices", href: "/articles/do-dental-practices-need-hipaa-risk-assessment" }, "."],
           [{ strong: "Encrypt laptops, backups, and any device that touches patient data," }, " so a lost or stolen device falls under the safe harbor."],
-          [{ strong: "Sign a business associate agreement with every vendor that handles patient data," }, " and require fast breach reporting inside it."],
+          [{ strong: "Sign a " }, { text: "business associate agreement", href: "/articles/does-my-dental-practice-need-a-baa" }, { strong: " with every vendor that handles patient data," }, " and require fast breach reporting inside it."],
           [{ strong: "Train your team on phishing and basic security," }, " since most breaches start with a click."],
           [{ strong: "Put the free-AI line in writing," }, " so patient details never land in a public chatbot. ", { text: "The staff AI-use policy a small practice needs", href: "/articles/staff-free-ai-tools-patient-data-dental-policy" }, " takes one page."],
           [{ strong: "Keep tested, offline backups," }, " so ransomware can't take your records hostage."],
@@ -1605,7 +1605,7 @@ export const articles: Article[] = [
       "ChatGPT's everyday plans are not HIPAA compliant, by OpenAI's own terms. Which AI tools will sign a BAA for a dental practice, and what OCR asks for first.",
     author: "Dolev Arama",
     datePublished: "2026-06-11",
-    dateModified: "2026-06-12",
+    dateModified: "2026-06-17",
     body: [
       {
         type: "p",
@@ -1634,7 +1634,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "HIPAA does not ban AI. " },
-            "It treats an AI vendor the way it treats any vendor that touches patient data: as a business associate that needs a signed BAA before the first patient detail flows.",
+            "It treats an AI vendor the way it treats ", { text: "any vendor that touches patient data", href: "/articles/does-my-dental-practice-need-a-baa" }, ": as a business associate that needs a signed BAA before the first patient detail flows.",
           ],
           [
             { strong: "Two documents decide your exposure: " },
@@ -1964,7 +1964,7 @@ export const articles: Article[] = [
       "AI scribes are HIPAA compliant only when the vendor signs a BAA and your risk analysis lists the tool. The five-question test to run before you sign up.",
     author: "Dolev Arama",
     datePublished: "2026-06-12",
-    dateModified: "2026-06-12",
+    dateModified: "2026-06-17",
     body: [
       {
         type: "p",
@@ -1984,7 +1984,7 @@ export const articles: Article[] = [
         items: [
           [
             { strong: "It depends on the contract, not the technology. " },
-            "HIPAA treats an AI scribe vendor like any other vendor that touches patient data: a business associate (45 CFR \u00a7 160.103) that needs a signed BAA before the first patient detail reaches it.",
+            "HIPAA treats an AI scribe vendor like ", { text: "any other vendor that touches patient data", href: "/articles/does-my-dental-practice-need-a-baa" }, ": a business associate (45 CFR \u00a7 160.103) that needs a signed BAA before the first patient detail reaches it.",
           ],
           [
             { strong: "A scribe handles patient data by design. " },
