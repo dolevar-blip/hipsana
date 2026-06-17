@@ -140,6 +140,49 @@ function renderBlock(block: Block, i: number) {
           ))}
         </div>
       );
+    case "table":
+      return (
+        <figure key={i} className="my-10 overflow-x-auto">
+          <table className="w-full border-collapse text-left text-[15px]">
+            <thead>
+              <tr>
+                {block.headers.map((h, j) => (
+                  <th
+                    key={j}
+                    scope="col"
+                    className="border-b-2 border-teal/30 px-3 py-2.5 font-display text-sm font-semibold text-ink"
+                  >
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {block.rows.map((row, r) => (
+                <tr key={r} className="border-b border-muted-border">
+                  {row.map((cell, c) => (
+                    <td
+                      key={c}
+                      className={
+                        c === 0
+                          ? "px-3 py-2.5 font-medium text-ink"
+                          : "px-3 py-2.5 text-muted"
+                      }
+                    >
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          {block.caption && (
+            <figcaption className="mt-3 text-sm leading-[1.6] text-muted">
+              {block.caption}
+            </figcaption>
+          )}
+        </figure>
+      );
     case "image":
       return (
         <figure key={i} className="my-10">
