@@ -2654,7 +2654,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "A North Carolina clinic handed a stack of old X-ray films to a vendor that promised to recycle them for the silver. No contract, just a phone call. That one missing piece of paper cost the practice $750,000. The vendor was not doing anything sinister; it was digitizing films. The real problem was quieter: the clinic gave patient records to an outside company without a business associate agreement (BAA), the contract HIPAA requires before a vendor touches patient data. Your practice almost certainly needs one too, and probably with more vendors than you would guess. If a company creates, receives, stores, or transmits your patients' data, you need a signed BAA with it first. Here is which of your vendors qualify, how to get the agreement, and what skipping it costs.",
+          "A North Carolina clinic gave a vendor the X-ray films of 17,300 patients to recycle for the silver. No contract, just a phone call. That missing piece of paper cost it $750,000. The problem was not the recycling; it was handing patient records to a vendor without a business associate agreement (BAA), the contract HIPAA requires first. If a company creates, receives, stores, or transmits your patients' data, you need a signed BAA. Here is which vendors qualify, how to get one, and what skipping it costs.",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -2735,7 +2735,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Industry compliance guides put a typical dental office at eight to fifteen business associates, and some practices have more than twenty. Here is how the common dental-office vendors usually fall. Treat it as a starting map, not a substitute for checking each contract.",
+          "Industry compliance guides estimate that a typical dental office works with roughly eight to fifteen business associates, though the number varies widely by practice. Here is how the common dental-office vendors usually fall. Treat it as a starting map, not a substitute for checking each contract.",
         ],
       },
       {
@@ -2751,7 +2751,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "IT support or managed-services provider (MSP): " },
-            "Almost always yes. If the company can reach the systems that hold patient data, even only to fix them, it is a business associate. This is the vendor practices most often forget.",
+            "Almost always yes. If the company can reach the systems that hold patient data, even only to fix them, it is a business associate. It is one of the most commonly overlooked.",
           ],
           [
             { strong: "Cloud storage and backup: " },
@@ -2838,7 +2838,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Most practices have at least one vendor touching patient data without a signed BAA, and it is the kind of gap that is hard to see from inside the office. The free HIPAA Scorecard checks for it, and for the other controls OCR looks at first, in about three minutes. ",
+          "A missing or unsigned BAA is a common finding in HIPAA audits and breach investigations, and it is the kind of thing that is hard to spot from inside the office. The free HIPAA Scorecard checks for it, and for the other controls OCR looks at first, in about three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -2855,7 +2855,7 @@ export const articles: Article[] = [
           {
             label: "List every vendor that touches patient data",
             detail:
-              "Walk through your software, your service providers, and anyone with access to your systems or records. The IT company, the billing service, the cloud backup, the imaging platform: write them all down. This list is the part most practices have never made.",
+              "Walk through your software, your service providers, and anyone with access to your systems or records. The IT company, the billing service, the cloud backup, the imaging platform: write them all down. Many practices have never made this list.",
           },
           {
             label: "Ask each vendor for its BAA",
