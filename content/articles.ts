@@ -3494,6 +3494,16 @@ export const articles: Article[] = [
         ]
       },
       {
+        type: "image",
+        src: "/ocr-risk-analysis-initiative-settlements.webp",
+        alt: "Bar chart of four 2024 to 2026 HIPAA settlements under OCR's Risk Analysis Initiative: Health Fitness Corporation $227,816 for a misconfigured server, Top of the World Ranch $103,000 for a phishing email, Bryan County Ambulance Authority $90,000 for ransomware, and MMG Fusion $10,000 for dental software that posted patient data online. The breaches and amounts differ, but OCR's finding in every case was the same: failure to conduct a risk analysis under 45 CFR 164.308(a)(1)(ii)(A).",
+        width: 1500,
+        height: 760,
+        caption: [
+          "Selected settlements under OCR's Risk Analysis Initiative, 2024 to 2026: four different triggers, one recurring finding. Source: HHS / OCR settlement announcements.",
+        ],
+      },
+      {
         type: "h2",
         text: "What this report covers"
       },
