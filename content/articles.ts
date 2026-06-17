@@ -244,7 +244,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "This isn't a dormant rule. OCR has run a standing enforcement initiative around the right of access and around risk analysis, and its investigators consistently report that the absence of a completed risk analysis is the most frequent finding when they open a file. The Porter settlement is one named example of many. So is the broader pattern: when something goes wrong, the first request is \"show me your risk analysis,\" and a missing or thin one converts an incident into a finding.",
+          "This isn't a dormant rule. OCR has run a standing enforcement initiative around the right of access and around risk analysis, and its investigators consistently report that the absence of a completed risk analysis is the most frequent finding when they open a file. The Porter settlement is one named example of many. So is ", { text: "the broader pattern", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, ": when something goes wrong, the first request is \"show me your risk analysis,\" and a missing or thin one converts an incident into a finding.",
         ],
       },
       {
@@ -665,7 +665,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The honest numbers are smaller than the headlines and larger than most owners assume. In October 2024, OCR launched a Risk Analysis Initiative to focus investigations on this one requirement, and in its first year it announced more than a dozen settlements, from small physician groups to hospital systems. Nearly all shared Bryan County's gap: no accurate, thorough risk analysis. A few published outcomes for that single failure:",
+          "The honest numbers are smaller than the headlines and larger than most owners assume. In October 2024, OCR launched a Risk Analysis Initiative to focus investigations on this one requirement, and in its first year it announced ", { text: "more than a dozen settlements", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, ", from small physician groups to hospital systems. Nearly all shared Bryan County's gap: no accurate, thorough risk analysis. A few published outcomes for that single failure:",
         ],
       },
       {
@@ -1019,7 +1019,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The dollar figure is small by enforcement standards. The lesson is not. OCR did not penalize the practice for being attacked; ransomware hits well-run organizations too. It acted because, when investigators asked the practice to show how it had assessed its own risks, there was nothing to show.",
+          "The dollar figure is small by enforcement standards. The lesson is not. OCR did not penalize the practice for being attacked; ", { text: "ransomware hits well-run organizations", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, " too. It acted because, when investigators asked the practice to show how it had assessed its own risks, there was nothing to show.",
         ],
       },
       {
@@ -2812,7 +2812,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The risk is not theoretical, and it is not only historical. In 2025, an attacker reached roughly 1.2 million patient records at Absolute Dental, a Nevada dental group, through a single compromised account belonging to its outside IT vendor. The practice agreed to a $3.3 million class-action settlement, with a final approval hearing set for July 2026. A BAA would not have stopped that intrusion by itself, but the case is a plain lesson in why the contract matters: your vendor's access to your systems is your attack surface, and the BAA is where you pin down what that vendor must do to protect it.",
+          "The risk is ", { text: "not theoretical", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, ", and it is not only historical. In 2025, an attacker reached roughly 1.2 million patient records at Absolute Dental, a Nevada dental group, through a single compromised account belonging to its outside IT vendor. The practice agreed to a $3.3 million class-action settlement, with a final approval hearing set for July 2026. A BAA would not have stopped that intrusion by itself, but the case is a plain lesson in why the contract matters: your vendor's access to your systems is your attack surface, and the BAA is where you pin down what that vendor must do to protect it.",
         ],
       },
       {
@@ -3272,7 +3272,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Top of the World Ranch Treatment Center is a small addiction-treatment provider in Illinois, not a dental practice, but the failure OCR fined it for is the one any small practice can have. In 2023 it reported that a phishing email had let an attacker into a staff inbox, exposing the records of 1,980 patients, the same click a dental front desk faces every day. OCR's finding was not about the breach. It was that the practice had not conducted an accurate and thorough risk analysis, the foundation the whole program sits on.",
+          "Top of the World Ranch Treatment Center is a small addiction-treatment provider in Illinois, not a dental practice, but ", { text: "the failure OCR fined it for", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, " is the one any small practice can have. In 2023 it reported that a phishing email had let an attacker into a staff inbox, exposing the records of 1,980 patients, the same click a dental front desk faces every day. OCR's finding was not about the breach. It was that the practice had not conducted an accurate and thorough risk analysis, the foundation the whole program sits on.",
         ],
       },
       {
@@ -3490,7 +3490,7 @@ export const articles: Article[] = [
           {
             strong: "The short answer: "
           },
-          "the public record tells two stories at once. Dental practices get breached through ransomware, compromised email, and compromised vendors, ordinary failures rather than exotic attacks. And when OCR investigates, it increasingly fines the practice for never having run an accurate, thorough risk analysis, the foundation the entire Security Rule sits on at 45 CFR § 164.308(a)(1)(ii)(A). The breach gets the headlines. The missing risk analysis gets the penalty."
+          "the public record tells two stories at once. Dental practices get breached through ransomware, compromised email, and compromised vendors, ordinary failures rather than exotic attacks. And when OCR investigates, it increasingly fines the practice for never having run an accurate, thorough risk analysis, the foundation the entire Security Rule sits on at ", { text: "45 CFR § 164.308(a)(1)(ii)(A)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308" }, ". The breach gets the headlines. The missing risk analysis gets the penalty."
         ]
       },
       {
@@ -3520,7 +3520,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Start with the scale. In 2024, the most recent full year HHS has reported to Congress, it received 742 reports of large breaches, those affecting 500 or more people, with 663 of them for breaches that occurred that year. Across those, the records of more than 242 million individuals were exposed or impermissibly disclosed, an annual record. One incident drove most of it: the ransomware attack on the billing clearinghouse Change Healthcare alone accounted for an estimated 192 million. Hacking and IT incidents were the leading cause by far, 81% of the large breaches that year, and the trend has not reversed: 2025 set a new record, with 772 large breaches reported."
+          "Start with the scale. In 2024, the most recent full year HHS has ", { text: "reported to Congress", href: "https://www.hhs.gov/hipaa/for-professionals/breach-notification/reports-congress/index.html" }, ", it received 742 reports of large breaches, those affecting 500 or more people, with 663 of them for breaches that occurred that year. Across those, the records of more than 242 million individuals were exposed or impermissibly disclosed, an annual record. One incident drove most of it: the ransomware attack on the billing clearinghouse Change Healthcare alone accounted for an estimated 192 million. Hacking and IT incidents were the leading cause by far, 81% of the large breaches that year, and the trend has not reversed: 2025 set a new record, with 772 large breaches reported."
         ]
       },
       {
@@ -3536,7 +3536,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Filter the public breach portal to dental and oral-health organizations and a clear shape appears. The headline numbers come from large dental insurers and software vendors, the entities that hold millions of records at once. The cause, almost every time, is mundane."
+          "Filter ", { text: "the public breach portal", href: "https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" }, " to dental and oral-health organizations and a clear shape appears. The headline numbers come from large dental insurers and software vendors, the entities that hold millions of records at once. The cause, almost every time, is mundane."
         ]
       },
       {
@@ -3659,6 +3659,20 @@ export const articles: Article[] = [
           ]
         ],
         caption: "Selected settlements under OCR's Risk Analysis Initiative: different triggers, one recurring finding. Source: HHS Office for Civil Rights settlement announcements."
+      },
+      {
+        type: "p",
+        runs: [
+          "Primary sources: ",
+          { text: "Bryan County", href: "https://www.hhs.gov/about/news/2024/10/31/hhs-office-for-civil-rights-settles-hipaa-ransomware-cybersecurity-investigation-for-90000-dollars.html" },
+          ", ",
+          { text: "MMG Fusion", href: "https://www.hhs.gov/press-room/ocr-mmg-fusion-hipaa-agreement.html" },
+          ", ",
+          { text: "Health Fitness Corporation", href: "https://www.hhs.gov/press-room/ocr-settles-hipaa-security-rule-investigation-health-fitness-corporation.html" },
+          ", and ",
+          { text: "Top of the World Ranch", href: "https://www.hhs.gov/press-room/ocr-settles-hipaa-security-rule-investigation-twrtc.html" },
+          "."
+        ]
       },
       {
         type: "p",
