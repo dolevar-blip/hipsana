@@ -312,7 +312,9 @@ export default function ArticlePage({
       />
 
       <div className="mx-auto max-w-prose">
-        <p className="eyebrow mb-3">HIPAA &amp; Compliance</p>
+        <p className="eyebrow mb-3">
+          {article.kind === "report" ? "Report" : "HIPAA & Compliance"}
+        </p>
         <h1 className="mb-4 text-3xl font-semibold leading-tight md:text-4xl">
           {article.title}
         </h1>
