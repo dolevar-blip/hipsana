@@ -23,6 +23,12 @@ export type Block =
       width: number;
       height: number;
       caption?: InlineRun[];
+    }
+  | {
+      type: "table";
+      headers: string[];
+      rows: string[][];
+      caption?: string;
     };
 
 export type FaqItem = {
@@ -1152,7 +1158,7 @@ export const articles: Article[] = [
       "A HIPAA risk assessment for a dental practice runs $1,500–$6,000 with a specialist; the free HHS tool is $0. What each path buys, and why cheap can cost more.",
     author: "Dolev Arama",
     datePublished: "2026-06-05",
-    dateModified: "2026-06-12",
+    dateModified: "2026-06-17",
     body: [
       {
         type: "p",
@@ -1343,7 +1349,8 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "A fuller first-year program, meaning the assessment plus the work of fixing what it finds and setting up policies and training, commonly lands around $5,000 to $15,000 for a small practice (2026 estimates). The assessment is the first line item, not the whole bill.",
+          { text: "A fuller first-year program", href: "/articles/how-much-does-hipaa-compliance-cost-for-a-dental-practice" },
+          ", meaning the assessment plus the work of fixing what it finds and setting up policies and training, commonly lands around $5,000 to $15,000 for a small practice (2026 estimates). The assessment is the first line item, not the whole bill.",
         ],
       },
       { type: "h2", text: "Risk assessment, gap analysis, vulnerability scan: which one are you buying?" },
@@ -3005,7 +3012,401 @@ export const articles: Article[] = [
           "A BAA cannot be backdated. The agreement has to be in place before you disclose patient data to the vendor. Signing one afterward does not undo the earlier disclosure, which is exactly the timing the Raleigh Orthopaedic settlement turned on.",
       },
     ],
+  },  {
+    slug: "how-much-does-hipaa-compliance-cost-for-a-dental-practice",
+    status: "published",
+    title: "How Much Does HIPAA Compliance Cost for a Dental Practice Per Year? (2026)",
+    metaTitle: "Annual HIPAA Compliance Cost for Dentists (2026)",
+    description:
+      "HIPAA compliance costs a dental practice about $1,500\u2013$12,000 a year, less if you run it yourself, more if you hand it off. Where the money goes.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-17",
+    dateModified: "2026-06-17",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "For a solo or small dental practice, HIPAA compliance runs roughly $1,500 to $12,000 a year, and the spread between those two numbers is the whole story. Run it yourself with software and you sit near the bottom; hand it to a firm and you sit near the top. What actually decides your bill is not which tool you buy, but whether you run the ongoing program the law requires or skip it, the way a small treatment center recently did before regulators billed it $103,000 and made it build the program anyway. Done on purpose, the program costs a fraction of that. Here is what it runs, and where the money goes.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "Roughly $1,500 to $12,000 a year, and the range is that wide for a reason. " },
+            "A solo practice that runs compliance itself with software sits near the bottom; one that hands it to an outside firm sits near the top. Year one costs more. These are 2026 estimates.",
+          ],
+          [
+            { strong: "Compliance is a program, not a purchase. " },
+            "The risk assessment is one line item. Policies, training, vendor agreements, secure email, backups, and monitoring are the rest, and they renew every year.",
+          ],
+          [
+            { strong: "The cheapest software is not the same as an audit-ready program. " },
+            "A $99-a-month subscription can run the paperwork; it cannot prove a year later that you actually fixed what it found.",
+          ],
+          [
+            { strong: "Skipping the program is the expensive path. " },
+            "One small treatment center that never built one paid $103,000 and spent two years rebuilding it under federal supervision.",
+          ],
+          [
+            { strong: "Not sure which line items you are missing? " },
+            "The Scorecard checks the 10 controls OCR looks at first, in about three minutes. ",
+            { text: "Check my practice \u2192", href: "/scorecard" },
+          ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Short answer: " },
+          "for a solo or small dental practice in 2026, running a HIPAA compliance program costs roughly $1,500 to $12,000 a year. You land near the low end if you run it yourself with a compliance platform, and near the high end if you hand it to a healthcare-experienced IT or compliance firm. Year one usually costs more, because of the first assessment and the work of fixing what it finds. The assessment is one line item; the recurring program is everything else.",
+        ],
+      },
+      { type: "h2", text: "What you are actually paying for" },
+      {
+        type: "p",
+        runs: [
+          "HIPAA compliance is not a product you buy once. The law treats it as an ongoing program: find your risks, fix them, document everything, train your people, and prove it year after year. That is why a single price never fits. You are funding a set of moving parts that renew annually, not a one-time invoice.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The foundation is the risk analysis the Security Rule requires at 45 CFR \u00a7 164.308(a)(1)(ii)(A), the same accurate-and-thorough assessment every covered practice must run. The rest of the program sits on top of it: written policies, workforce training, a signed agreement with every vendor that touches patient data, secure email and encryption, reliable backups, and ongoing monitoring. The risk analysis anchors the budget because everything else depends on first knowing where your data lives and what threatens it.",
+        ],
+      },
+      { type: "h2", text: "Two ways to run it: do it yourself, or hand it off" },
+      {
+        type: "p",
+        runs: [
+          "Almost every small practice picks one of two paths. The difference between them is mostly your time versus your money.",
+        ],
+      },
+      { type: "h3", text: "Path 1. Run it yourself with software: about $1,500 to $4,000 a year (estimated)" },
+      {
+        type: "p",
+        runs: [
+          { strong: "What it is. " },
+          "A compliance platform built for small practices does the heavy lifting: it walks you through the risk analysis, gives you policy templates, tracks your vendor agreements, runs staff training, and keeps an audit trail you can show a regulator. You add cheaper pieces around it, secure email, backups, and your own hours.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "What it costs. " },
+          "A small-practice compliance platform runs about $500 to $3,000 a year. Staff training adds $4 to $100 per person per year. The rest is your time, a few hours to set up and a few more to keep current.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Who it fits. " },
+          "A solo or very small practice with a simple setup and the discipline to keep the documentation honest, year after year.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Where it falls short. " },
+          "The platform runs the paperwork; it does not judge your physical setup, configure your network, or catch a misconfigured server. And it only protects you if you keep it current, a platform you stop maintaining stops counting.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Verdict. " },
+          "The best value for most small practices that will genuinely keep up with it.",
+        ],
+      },
+      { type: "h3", text: "Path 2. Hand it to an outside firm: about $6,000 to $12,000 a year (estimated)" },
+      {
+        type: "p",
+        runs: [
+          { strong: "What it is. " },
+          "A healthcare-experienced IT provider, often called a managed service provider or MSP, or a compliance firm runs the program for you: the annual assessment, remediation, policy maintenance, training, vendor management, and monitoring, with someone accountable for keeping it current.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "What it costs. " },
+          "For a small dental practice, a managed compliance and IT arrangement commonly runs about $6,000 to $12,000 a year, depending on how many workstations, locations, and systems you have. Larger or multi-location practices pay more.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Who it fits. " },
+          "Practices with real complexity, several operatories, multiple locations, heavy imaging, teledentistry, or a recent breach, and anyone who does not have the spare hours and wants it handled.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Where it falls short. " },
+          "The cost, and the need to pick a firm that actually knows healthcare. A generic IT company that has never read the Security Rule can leave you exposed while charging you to feel covered.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Verdict. " },
+          "The right call when the stakes or the complexity are high, or when your time is worth more than the savings.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Your practice", "Likely path"],
+        rows: [
+          ["Solo owner, one office", "Run it yourself with software"],
+          ["Two to five providers, one office", "Either \u2014 your time decides"],
+          ["Multiple locations", "Hand it to an MSP"],
+          ["Heavy imaging or teledentistry", "Hand it to an MSP"],
+          ["A recent breach, or no spare hours", "Hand it to an MSP"],
+        ],
+        caption: "A rule of thumb, not a rule. The more systems, locations, and risk you carry, the more an outside firm earns its fee.",
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "You cannot budget for a gap you cannot see. " },
+          "The Scorecard checks the 10 controls OCR looks at first and sends you a short written review of where your practice stands. About three minutes. ",
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      { type: "h2", text: "What it costs by practice size" },
+      {
+        type: "p",
+        runs: [
+          "Rough 2026 ranges for the ongoing program, before year-one setup. Within each row, the low end is self-managed and the high end is outsourced; your number moves with your systems and locations.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Practice size", "Estimated annual cost", "Typical path"],
+        rows: [
+          ["Solo, one location", "$1,500\u2013$6,000", "Self-managed to light MSP"],
+          ["Two to five providers", "$3,000\u2013$10,000", "Either"],
+          ["Multiple locations", "$8,000\u2013$15,000+", "MSP"],
+        ],
+        caption: "2026 estimates for the recurring program; year one runs higher. How we built these is explained below.",
+      },
+      { type: "h2", text: "Where the money actually goes" },
+      {
+        type: "p",
+        runs: [
+          "Whichever path you choose, the annual budget breaks into the same line items. Here is what each one is, and what it runs for a small practice in 2026 (estimates; the platform and MSP paths usually bundle several of these into one fee).",
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "The risk analysis (required). " },
+            "The accurate, thorough assessment HIPAA mandates, refreshed every year. A specialist runs $1,500 to $6,000; the free federal tool is $0; software bundles it for low hundreds a year. ",
+            { text: "What a HIPAA risk assessment actually costs", href: "/articles/how-much-does-a-hipaa-risk-assessment-cost-for-a-dental-practice" },
+            " breaks this line down on its own.",
+          ],
+          [
+            { strong: "Policies and documentation. " },
+            "Written HIPAA policies and the records that prove you follow them. Templates come with most platforms; a consultant-built set costs more. Either way, they need updating as your practice changes.",
+          ],
+          [
+            { strong: "Workforce training. " },
+            "Annual HIPAA training for everyone who touches patient data, from the front desk up. Online modules run $4 to $100 per person per year.",
+          ],
+          [
+            { strong: "Business associate agreements. " },
+            "A signed BAA with every vendor that handles patient data: your practice-management software, imaging, email, IT, billing. Most practices do not pay for the agreement itself; the cost, and the gap OCR keeps finding, is identifying every vendor that needs one and keeping the records current. ",
+            { text: "Which vendors need a BAA", href: "/articles/does-my-dental-practice-need-a-baa" },
+            " covers who counts.",
+          ],
+          [
+            { strong: "Secure email, encryption, and backups. " },
+            "HIPAA-compliant email, device and file encryption, and reliable backups of your records. Often a few dollars per mailbox a month plus your IT setup, and frequently bundled into a platform or MSP fee.",
+          ],
+          [
+            { strong: "Monitoring and vulnerability scanning. " },
+            "Watching your systems for trouble and scanning for weak points. A small-footprint scanning program runs about $600 to $3,000 a year, and matters more if the proposed 2026 rules become law.",
+          ],
+        ],
+      },
+      { type: "h2", text: "Year one costs more than every year after" },
+      {
+        type: "p",
+        runs: [
+          "The single most useful thing to know before you budget: your first year costs more than the years that follow.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Year one carries the setup, the initial risk analysis, fixing what it turns up, writing your policies from scratch, getting every vendor under a BAA. For a small practice that brings in help, that first year commonly lands around $5,000 to $15,000, less if you do more of it yourself. After that you drop to the recurring figure: the annual assessment refresh, training, renewals, and monitoring, which is why the ongoing number is lower. Budget for both, and do not let the larger first-year figure scare you off. Skipping it costs far more, as the next section shows.",
+        ],
+      },
+      { type: "h2", text: "What it cost the practice that skipped it" },
+      {
+        type: "p",
+        runs: [
+          "The clearest way to price a compliance program is to look at what skipping one costs.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Top of the World Ranch Treatment Center is a small addiction-treatment provider in Illinois, not a dental practice, but the failure OCR fined it for is the one any small practice can have. In 2023 it reported that a phishing email had let an attacker into a staff inbox, exposing the records of 1,980 patients, the same click a dental front desk faces every day. OCR's finding was not about the breach. It was that the practice had not conducted an accurate and thorough risk analysis, the foundation the whole program sits on.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-settlement-top-of-the-world-ranch-risk-analysis.webp",
+        alt: "Exhibit from the HHS Office for Civil Rights press release on the Top of the World Ranch Treatment Center settlement: OCR found the small Illinois addiction-treatment provider had not conducted an accurate and thorough HIPAA risk analysis after a phishing email exposed 1,980 patients' records; it paid a $103,000 settlement and entered a two-year corrective action plan.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "Source: U.S. Department of Health and Human Services, Office for Civil Rights. ",
+          {
+            text: "Settlement with Top of the World Ranch Treatment Center (February 19, 2026)",
+            href: "https://www.hhs.gov/press-room/ocr-settles-hipaa-security-rule-investigation-twrtc.html",
+          },
+          ". Highlights added by Hipsana: a small provider that had not conducted an accurate and thorough risk analysis, the $103,000 settlement, and the two-year corrective action plan.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "In February 2026 the center paid $103,000 and signed a two-year corrective action plan that ordered it to do the very things it had skipped: run the risk analysis, build a plan to fix what it finds, write and maintain policies, and train staff every year, all under federal monitoring. In other words, OCR made it build the program anyway, at a multiple of what the program would have cost. The center had fewer than 2,000 patients; size has never been a defense, and ",
+          { text: "an OCR investigation", href: "/articles/what-happens-if-dental-practice-fails-hipaa-audit" },
+          " is an expensive way to learn that.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "A program you can show a regulator costs far less than the one OCR builds for you. " },
+          "See where your practice stands in about three minutes. ",
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      { type: "h2", text: "The proposed rules could raise the floor" },
+      {
+        type: "p",
+        runs: [
+          "One caveat before you lock a number. A proposed overhaul of the Security Rule, published in the Federal Register on January 6, 2025 (rulemaking ID RIN 0945-AA22), would, if finalized as written, make several now-flexible safeguards mandatory, encryption, multi-factor authentication, and routine vulnerability scanning among them, which would raise the monitoring and scanning line items. As of June 2026 it is not final and has no confirmed date, so do not spend now to meet a rule that does not exist yet. The foundation, a thorough risk analysis, is required either way.",
+        ],
+      },
+      { type: "h2", text: "How to budget without overpaying" },
+      {
+        type: "p",
+        runs: ["A sensible path for a solo or small dental practice:"],
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Inventory what you have",
+            detail:
+              "About an hour. List every place patient data lives: practice-management software, email, imaging, backups, laptops, phones, plus every vendor that touches it. Your budget tracks this list, and a bigger, more connected setup costs more to protect.",
+          },
+          {
+            label: "Run the risk analysis first",
+            detail:
+              "It is the foundation and the legal requirement, and it tells you what you actually need to spend on. Doing it before you buy tools keeps you from paying for fixes you do not need, or missing ones you do.",
+          },
+          {
+            label: "Pick your path by time and complexity",
+            detail:
+              "Simple setup and time to keep up? A compliance platform you run yourself is the cheaper route. Multiple locations, heavy imaging, teledentistry, no spare hours, or a recent scare? An MSP or compliance firm is worth the higher fee.",
+          },
+          {
+            label: "Fund year one, then the renewal",
+            detail:
+              "Expect the first year to cost more for setup and remediation. Budget a lower recurring figure for the annual refresh, training, renewals, and monitoring. Both are real, so plan for both.",
+          },
+          {
+            label: "Keep the proof, every year",
+            detail:
+              "Save the assessment, the policies, the training records, and proof you fixed what you found. That documentation is what holds up under review, and it is what turns a one-time spend into an audit-ready program.",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "If you remember one thing: pay for the version that produces real, documented proof you found your gaps and closed them. That paper trail is what holds up if OCR ever calls.",
+        ],
+      },
+      { type: "h2", text: "How we estimated these costs" },
+      {
+        type: "p",
+        runs: [
+          "These ranges are 2026 estimates, not a fixed quote or a formal survey. We built them from published pricing for the two ways a small practice runs compliance. The self-managed range combines a small-practice compliance platform, staff training, and your own hours. The managed range reflects a healthcare-experienced IT or compliance firm running the program for you. Year one adds the initial assessment and the work of fixing what it finds. The figures exclude major breach remediation, enterprise or multi-state programs, and legal fees, and they round to practical bands. Your number depends on your systems, locations, and how much you keep in-house.",
+        ],
+      },
+      { type: "h2", text: "The catch" },
+      {
+        type: "p",
+        runs: ["A few honest caveats."],
+      },
+      {
+        type: "p",
+        runs: [
+          "The wide range is real, not a hedge. A disciplined solo practice running good software can stay compliant for a couple thousand dollars a year; a multi-location group that outsources everything will pay several times that. Your number depends on your setup and the path you pick, which is why no one can quote you a single figure sight unseen.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "And cheap is only cheap if it produces an audit-ready program. A bargain platform you half-finish, or a budget IT vendor who never runs a real risk analysis, becomes the most expensive option the moment regulators come knocking, the way it did for the treatment center above. If the worst has already happened, here is ",
+          { text: "what to do after a dental data breach", href: "/articles/dental-data-breach-response" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This article is general information, not legal advice. The cost figures here are 2026 market estimates, not quotes; your number will vary, and you should confirm current requirements with the ",
+          { text: "U.S. Department of Health and Human Services", href: "https://www.hhs.gov/hipaa/for-professionals/index.html" },
+          " or qualified counsel before you act. The risk-analysis requirement is at ",
+          { text: "45 CFR 164.308(a)(1)(ii)(A)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308" },
+          ", and the settlement described comes from HHS.",
+        ],
+      },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          ["HHS Office for Civil Rights, settlement with Top of the World Ranch Treatment Center (February 2026)."],
+          ["HHS Office for Civil Rights, Risk Analysis Initiative (announced October 2024)."],
+          ["45 CFR \u00a7 164.308(a)(1)(ii)(A) (eCFR, current)."],
+          ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025 (RIN 0945-AA22)."],
+          ["Cost ranges are 2026 market estimates, synthesized from published small-practice pricing across compliance platforms, healthcare managed-IT providers, and consultants; figures are rounded and your number will vary with your setup."],
+        ],
+      },
+    ],
+    faq: [
+      { question: "How much does HIPAA compliance cost per year for a small dental practice?", answer: "As a 2026 estimate, roughly $1,500 to $12,000 a year. You sit near the low end running it yourself with a compliance platform (about $1,500 to $4,000), and near the high end handing it to a healthcare-experienced IT or compliance firm (about $6,000 to $12,000). Year one usually costs more because of the initial assessment and setup." },
+      { question: "Which HIPAA compliance costs are required, and which are optional?", answer: "The risk analysis, written policies, workforce training, business associate agreements, and a breach-response process are core requirements under the HIPAA Rules. How you meet them, free tool or paid platform, in-house or outsourced, is your choice. Some technical safeguards, like encryption, are currently addressable, meaning you implement them or document an equally effective alternative; the proposed 2026 rules would make several of them mandatory. Vulnerability scanning and penetration testing are not required today, though they are sensible and may become required if that proposal is finalized." },
+      { question: "Is compliance software enough on its own?", answer: "For a simple solo practice, a good platform can run most of the program: the risk analysis, policies, training, and vendor tracking. What it cannot do is judge your physical setup, configure your network, or do the work for you. A subscription you do not fully complete leaves the same gap a regulator looks for." },
+      { question: "Can a dental practice stay HIPAA compliant without hiring anyone?", answer: "Yes. HIPAA does not require you to hire a compliance officer or an outside firm. A solo or small practice can run the program itself with a compliance platform that handles the risk analysis, policies, training, and vendor tracking, plus a few hours of your time a year. The catch is discipline: the do-it-yourself path only works if you keep the documentation current and act on what the risk analysis finds." },
+      { question: "Is it cheaper to do HIPAA compliance myself or hire an MSP?", answer: "Doing it yourself with software is cheaper in dollars, about $1,500 to $4,000 a year for a small practice, but it costs your time and discipline. An MSP or compliance firm runs about $6,000 to $12,000 a year and handles it for you. The right choice depends on your complexity and how much your hours are worth." },
+      { question: "Why does the first year cost more?", answer: "Year one carries the setup: the initial risk analysis, fixing what it finds, writing policies from scratch, and getting every vendor under a business associate agreement. A small practice that brings in help commonly spends $5,000 to $15,000 in year one, then drops to a lower recurring figure for annual refreshes, training, and monitoring." },
+      { question: "Is HIPAA compliance a tax-deductible business expense?", answer: "Generally, yes. Compliance software, training, and professional services are ordinary and necessary business expenses, and HIPAA being legally required strengthens that case, so they are typically deductible. Larger one-time purchases, such as new equipment, may need to be depreciated rather than deducted in full the first year. This is general information, not tax advice; confirm the specifics with your accountant." },
+      { question: "What is the cheapest way for a solo practice to stay HIPAA compliant?", answer: "Run the free federal risk-assessment tool, add a low-cost compliance platform for policies and training, put a BAA in place with every vendor, and keep the documentation current yourself. That can hold annual costs to a couple thousand dollars, but only if you genuinely do the work and keep the proof. The savings disappear if the result is a checkbox exercise." },
+      { question: "Does a solo dental practice really need all of this?", answer: "Yes. The HIPAA Security Rule does not scale its core obligations to your size, and federal regulators have settled with single-location providers, and practices with fewer than 2,000 patients, specifically to make that point. A small practice with patient data carries the same foundational duties as a hospital." },
+      { question: "Can the Hipsana Scorecard tell me what I will need to budget for?", answer: "It points you at the gaps. The Scorecard checks the 10 controls OCR looks at first and sends you a short written review of where your practice stands, which is the fastest way to see which line items you are actually missing before you spend. It is not a formal risk analysis, and we would not claim it is." },
+    ],
   },
+
 ];
 
 export function getAllArticles(): Article[] {
