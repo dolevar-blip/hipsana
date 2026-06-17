@@ -784,7 +784,8 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "None of these is expensive alone, and ",
+          { text: "None of these is expensive alone", href: "/articles/how-much-does-hipaa-compliance-cost-for-a-dental-practice" },
+          ", and ",
           { text: "what a dental HIPAA risk assessment actually costs", href: "/articles/how-much-does-a-hipaa-risk-assessment-cost-for-a-dental-practice" },
           " ranges from free with the federal tool to a specialist's fee. What makes them feel impossible is not knowing which you are missing, which is the whole reason the risk analysis comes first.",
         ],
@@ -1070,7 +1071,9 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Breach response is the expensive end of HIPAA. The cheap end is prevention, and it begins with the same document OCR asked Comprehensive for. We break down ",
+          "Breach response is the expensive end of HIPAA. ",
+          { text: "The cheap end is prevention", href: "/articles/how-much-does-hipaa-compliance-cost-for-a-dental-practice" },
+          ", and it begins with the same document OCR asked Comprehensive for. We break down ",
           { text: "what a dental HIPAA risk assessment costs", href: "/articles/how-much-does-a-hipaa-risk-assessment-cost-for-a-dental-practice" },
           " separately. If you are reading this before anything has gone wrong, this is where your attention pays off most. A handful of moves cover most of the risk for a small dental practice:",
         ],
@@ -2839,7 +2842,9 @@ export const articles: Article[] = [
             text: "responding to a dental data breach",
             href: "/articles/dental-data-breach-response",
           },
-          " is a separate process with its own deadlines. The cheaper path is to close the gap before anything goes wrong.",
+          " is a separate process with its own deadlines. ",
+          { text: "The cheaper path", href: "/articles/how-much-does-hipaa-compliance-cost-for-a-dental-practice" },
+          " is to close the gap before anything goes wrong.",
         ],
       },
       {
@@ -3082,6 +3087,17 @@ export const articles: Article[] = [
         runs: [
           "Almost every small practice picks one of two paths. The difference between them is mostly your time versus your money.",
         ],
+      },
+      {
+        type: "table",
+        headers: ["What to weigh", "Self-managed", "Managed"],
+        rows: [
+          ["Typical annual cost", "$1,500\u2013$4,000", "$6,000\u2013$12,000"],
+          ["Who does the work", "You, with a platform", "An outside firm"],
+          ["Best for", "A simple solo practice with time to keep up", "Complexity, multiple locations, or no spare hours"],
+          ["Main risk", "You stop keeping it current", "Hiring a firm that does not know healthcare"],
+        ],
+        caption: "Two paths, one goal: an audit-ready program. The right one depends on your complexity and what your time is worth.",
       },
       { type: "h3", text: "Path 1. Run it yourself with software: about $1,500 to $4,000 a year (estimated)" },
       {
@@ -3341,7 +3357,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "These ranges are 2026 estimates, not a fixed quote or a formal survey. We built them from published pricing for the two ways a small practice runs compliance. The self-managed range combines a small-practice compliance platform, staff training, and your own hours. The managed range reflects a healthcare-experienced IT or compliance firm running the program for you. Year one adds the initial assessment and the work of fixing what it finds. The figures exclude major breach remediation, enterprise or multi-state programs, and legal fees, and they round to practical bands. Your number depends on your systems, locations, and how much you keep in-house.",
+          "These ranges are 2026 estimates, not a fixed quote or a formal survey. We built them from publicly available pricing published by HIPAA compliance vendors, healthcare IT providers, training vendors, and managed compliance services that serve small healthcare practices. The self-managed range combines a small-practice compliance platform, staff training, and your own hours. The managed range reflects a healthcare-experienced IT or compliance firm running the program for you. Year one adds the initial assessment and the work of fixing what it finds. The figures exclude major breach remediation, enterprise or multi-state programs, and legal fees, and they round to practical bands. Your number depends on your systems, locations, and how much you keep in-house.",
         ],
       },
       { type: "h2", text: "The catch" },
@@ -3389,7 +3405,7 @@ export const articles: Article[] = [
           ["HHS Office for Civil Rights, Risk Analysis Initiative (announced October 2024)."],
           ["45 CFR \u00a7 164.308(a)(1)(ii)(A) (eCFR, current)."],
           ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025 (RIN 0945-AA22)."],
-          ["Cost ranges are 2026 market estimates, synthesized from published small-practice pricing across compliance platforms, healthcare managed-IT providers, and consultants; figures are rounded and your number will vary with your setup."],
+          ["Cost ranges are 2026 market estimates, synthesized from publicly available pricing published by HIPAA compliance vendors, healthcare IT and managed-compliance providers, and training vendors serving small practices; figures are rounded and your number will vary with your setup."],
         ],
       },
     ],
