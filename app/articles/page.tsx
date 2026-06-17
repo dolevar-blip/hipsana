@@ -42,6 +42,11 @@ export const metadata: Metadata = {
 
 export default function ArticlesIndexPage() {
   const articles = getPublishedArticles();
+  // Pin reports to the top of the index; every other article keeps its existing order.
+  const ordered = [
+    ...articles.filter((a) => a.kind === "report"),
+    ...articles.filter((a) => a.kind !== "report"),
+  ];
 
   return (
     <div className="container-page py-16 md:py-24">
@@ -62,12 +67,17 @@ export default function ArticlesIndexPage() {
           <p className="text-muted">New articles are on the way.</p>
         ) : (
           <ul className="border-t border-muted-border">
-            {articles.map((article) => (
+            {ordered.map((article) => (
               <li key={article.slug} className="border-b border-muted-border">
                 <Link
                   href={`/articles/${article.slug}`}
                   className="group block py-7"
                 >
+                  {article.kind === "report" && (
+                    <span className="mb-2 inline-block rounded bg-teal-subtle px-2 py-0.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-teal">
+                      Report
+                    </span>
+                  )}
                   <p className="text-xs uppercase tracking-[0.14em] text-muted-light">
                     Updated {formatDate(article.dateModified)}
                   </p>
