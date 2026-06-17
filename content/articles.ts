@@ -434,7 +434,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "If finalized, the overhaul would, among other things, remove much of the \"addressable\" flexibility and make safeguards like encryption and multi-factor authentication explicitly required, add vulnerability scanning, and compress breach-related timelines. The direction is clearly toward less discretion and more provable, documented controls.",
+          "If finalized, the overhaul would, among other things, remove much of the \"addressable\" flexibility and make safeguards like ", { text: "encryption", href: "/articles/is-email-hipaa-compliant-dental-practice" }, " and multi-factor authentication explicitly required, add vulnerability scanning, and compress breach-related timelines. The direction is clearly toward less discretion and more provable, documented controls.",
         ],
       },
       {
@@ -916,7 +916,7 @@ export const articles: Article[] = [
           [{ strong: "Contain it first, then assess." }, " Disconnect affected systems without wiping them, get a third-party forensics firm involved, and only then work out whether the incident is a reportable breach."],
           [{ strong: "You have 60 days to tell patients." }, " Notify each affected individual without unreasonable delay and no later than 60 calendar days after you discover the breach (45 CFR 164.404)."],
           [{ strong: "HHS gets notified too." }, " If 500 or more people are affected, report to HHS within that same 60 days. If fewer than 500, log it and file by roughly March 1 of the following year (45 CFR 164.408)."],
-          [{ strong: "Encrypted data may be off the hook." }, " The rules apply only to \"unsecured\" patient information. Data encrypted to the federal standard can fall under a safe harbor and may not trigger notice at all."],
+          [{ strong: "Encrypted data may be off the hook." }, " The rules apply only to \"unsecured\" patient information. Data ", { text: "encrypted to the federal standard", href: "/articles/is-email-hipaa-compliant-dental-practice" }, " can fall under a safe harbor and may not trigger notice at all."],
           [{ strong: "The report you file is what opens the investigation." }, " When a small New York neurology practice reported a ransomware attack, the first thing OCR asked for was its risk analysis. There wasn't one. It paid $25,000."],
         ],
       },
@@ -2770,7 +2770,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Email, secure messaging, and file-sharing: " },
-            "It depends. If the service stores or routes patient data through its own systems, such as emailing an x-ray to a specialist, the provider needs a BAA. A pure transmission line, like your phone carrier or internet provider, does not.",
+            "It depends. If the service stores or routes patient data through its own systems, such as ", { text: "emailing an x-ray to a specialist", href: "/articles/is-email-hipaa-compliant-dental-practice" }, ", the provider needs a BAA. A pure transmission line, like your phone carrier or internet provider, does not.",
           ],
           [
             { strong: "Records, film, and hard-drive disposal (shredding and e-waste): " },
@@ -3241,7 +3241,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Secure email, encryption, and backups. " },
-            "HIPAA-compliant email, device and file encryption, and reliable backups of your records. Often a few dollars per mailbox a month plus your IT setup, and frequently bundled into a platform or MSP fee.",
+            { text: "HIPAA-compliant email", href: "/articles/is-email-hipaa-compliant-dental-practice" }, ", device and file encryption, and reliable backups of your records. Often a few dollars per mailbox a month plus your IT setup, and frequently bundled into a platform or MSP fee.",
           ],
           [
             { strong: "Monitoring and vulnerability scanning. " },
@@ -3424,6 +3424,328 @@ export const articles: Article[] = [
     ],
   },
 
+  {
+    slug: "is-email-hipaa-compliant-dental-practice",
+    status: "published",
+    title: "Is Your Dental Practice's Email HIPAA Compliant? (2026)",
+    metaTitle: "HIPAA-Compliant Email for Dentists (2026)",
+    description:
+      "Is your dental practice's email HIPAA compliant? Standard Gmail and Microsoft 365 don't encrypt patient records by default. Here's how to fix it.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-18",
+    dateModified: "2026-06-18",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "Probably not the way you are using it. HIPAA does not ban emailing patient information, but it does require you to secure it, and standard Gmail or Microsoft 365 will not encrypt an outgoing message on its own. After a small clinic sent the records of 1,263 patients to an unknown email account, federal regulators fined it $25,000. Here is what the rules actually require, what is changing in 2026, and how to close the gap before it is your practice.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "HIPAA does not forbid email. " },
+            "The Privacy Rule lets you email patient information as long as you add reasonable safeguards. The practical catch is that \"reasonable\" almost always lands on encryption.",
+          ],
+          [
+            { strong: "Encryption is \"addressable,\" not skippable. " },
+            "You may use an alternative, but only if you document why encryption is not reasonable for your practice. OCR treats unencrypted patient email as a gap.",
+          ],
+          [
+            { strong: "Free Gmail can never qualify. " },
+            "Google will not sign an agreement for a consumer @gmail.com account. Paid Google Workspace and Microsoft 365 can qualify, with a signed agreement and the right settings.",
+          ],
+          [
+            { strong: "Emailing an x-ray to a lab or specialist is the real exposure. " },
+            "That is provider to provider, where there is no patient consent to fall back on, so the message has to be encrypted.",
+          ],
+          [
+            { strong: "A patient may still ask for plain email. " },
+            "If they request it and you warn them of the risk, you must honor it, and you are not responsible for what happens in transit.",
+          ],
+          [
+            { strong: "Encryption buys a safe harbor. " },
+            "A properly encrypted message that goes astray is usually not a reportable breach, as long as the decryption key was not exposed too.",
+          ],
+        ],
+      },
+
+      { type: "h2", text: "Does HIPAA actually let a dental practice email patient information?" },
+      {
+        type: "p",
+        runs: [
+          "Yes. The HIPAA Privacy Rule lets a dental practice communicate with patients by email, as long as it applies reasonable safeguards, such as checking the address before hitting send. ",
+          { text: "HHS has said this plainly", href: "https://www.hhs.gov/hipaa/for-professionals/faq/570/does-hipaa-permit-health-care-providers-to-use-email-to-discuss-health-issues-with-patients/index.html" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The Security Rule then governs the electronic copy. It does not flatly require encryption. Encryption sits in the rule as an \"addressable\" specification in ",
+          { text: "two places", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312" },
+          ", one for data at rest on your devices and one for data in transit across the internet.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "\"Addressable\" does not mean optional. It means you either encrypt, or you document why encryption is not reasonable for your practice and put an equivalent safeguard in its place. Two myths waste a lot of time here. A confidentiality line at the bottom of the message does not make an unencrypted email compliant. And a password is not encryption: a password keeps someone out of a file, while encryption scrambles the contents so that intercepting the message reveals nothing.",
+        ],
+      },
+
+      { type: "h2", text: "Is Gmail HIPAA compliant? Is Microsoft 365?" },
+      {
+        type: "p",
+        runs: [
+          "Not in their consumer form. A free @gmail.com or @outlook.com account cannot be made compliant under any setting, because the vendor will not sign a ",
+          { text: "business associate agreement", href: "/articles/does-my-dental-practice-need-a-baa" },
+          " covering it. That agreement, or BAA, is the contract that makes a vendor responsible for the patient data it touches. Without one, sending protected health information through that account is a violation the moment it leaves your outbox.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Paid Google Workspace and Microsoft 365 are different. Both will sign a BAA, and both can be configured to handle patient data. Signing it is step one, not the finish line. The agreement covers the vendor's own systems. It does not cover your staff using a personal account on the side, a plugin or archiver that needs its own agreement, or an auto-forward rule that quietly copies messages somewhere else.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "There is also a quieter gap in transit. These services protect mail with TLS, a method that encrypts the connection between two mail servers. It works only when the receiving server also supports it. When it does not, many systems fall back to sending in plain text, and the standard product does not encrypt the message itself on its own. For anything sensitive, you want encryption that travels with the message, not just protection on the link.",
+        ],
+      },
+
+      { type: "h2", text: "Can I email an x-ray to a specialist or lab?" },
+      {
+        type: "p",
+        runs: [
+          "This is where most dental practices are exposed. Panoramic films, CBCT scans, intraoral photos, and the referral note that travels with them are all protected health information. Emailing them to a specialist, a lab, or another office is provider-to-provider communication, and the rules here are stricter than they are for a message to a patient.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "When you email a patient, you can rely on their consent after a warning. With another provider or a lab, that fallback does not exist, and warning the recipient is not enough. Unless the message is encrypted, or it moves through a service that has signed a BAA with you, that routine email of an x-ray is the exact transmission the Security Rule expects you to protect.",
+        ],
+      },
+
+      { type: "h2", text: "What if a patient asks me to email their own records?" },
+      {
+        type: "p",
+        runs: [
+          "A patient has the right to receive their own records by ordinary, unencrypted email if they ask for it. You give them a brief warning that an unencrypted message could be read in transit, confirm they still want it that way, and then you have to honor the request. ",
+          { text: "HHS has been explicit about this", href: "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/access/index.html" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Once you have warned them and complied, you are not responsible for breach notification if that message is intercepted on the way to them. The duty that remains is small and practical: enter the address correctly. This exception is narrow. It covers a patient receiving their own information, and never the lab-and-specialist email above.",
+        ],
+      },
+
+      { type: "h2", text: "What does OCR fine dental practices for?" },
+      {
+        type: "p",
+        runs: [
+          "In 2020, a small clinic in rural North Carolina learned how this plays out. Metropolitan Community Health Services, which provides medical and dental care to an underserved community as Agape Health Services, reported that the protected health information of 1,263 patients had been disclosed to an unknown email account. The Office for Civil Rights investigated, and found the problem was bigger than one message.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The clinic had never completed a risk analysis, had no written security policies, and had not trained its staff on HIPAA until 2016, despite operating since the late 1990s. It paid $25,000 and accepted two years of federal monitoring, and OCR noted it had reduced the figure because of the clinic's size and mission. The lesson is not the dollar amount. It is that an email mistake opens the door, and the investigation then examines everything behind it.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-settlement-metro-agape-email-disclosure.webp",
+        alt: "Exhibit from the HHS Office for Civil Rights settlement with Metropolitan Community Health Services, doing business as Agape Health Services: the small North Carolina clinic disclosed the protected health information of 1,263 patients to an unknown email account, had never conducted a HIPAA risk analysis or trained its staff, and paid a $25,000 settlement with a two-year corrective action plan.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "Source: U.S. Department of Health and Human Services, Office for Civil Rights. ",
+          {
+            text: "Settlement with Metropolitan Community Health Services / Agape Health Services (July 23, 2020)",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/metro/index.html",
+          },
+          ". Highlights added by Hipsana: the disclosure of 1,263 patients' records to an unknown email account, the missing risk analysis, and the $25,000 settlement.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Metro is one entry in a long pattern. We track the named dental settlements and the failures behind them in our ",
+          { text: "dental HIPAA breach and enforcement report", href: "/articles/dental-hipaa-breach-and-enforcement-report" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "You do not have to guess which of these gaps is yours. The free ",
+          { text: "HIPAA Scorecard", href: "/scorecard" },
+          " checks your email and vendor coverage along with eight other core controls and names your top gap in about three minutes. It is a starting point, not an audit-ready program, but it tells you where you stand.",
+        ],
+      },
+
+      { type: "h2", text: "Encryption and the breach safe harbor" },
+      {
+        type: "p",
+        runs: [
+          "Encryption does more than reduce risk. It can keep an accident from becoming a reportable breach at all. The Breach Notification Rule applies only to \"unsecured\" patient information. If a message was encrypted to the federal standard that ",
+          { text: "HHS specifies", href: "https://www.hhs.gov/hipaa/for-professionals/breach-notification/guidance/index.html" },
+          ", which points to encryption methods tested by NIST, then a message that goes to the wrong place is generally not a breach you have to report. Send the same records unencrypted and a single wrong address can become a ",
+          { text: "60-day notification clock and an OCR investigation", href: "/articles/dental-data-breach-response" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "There is one condition that is easy to miss. The safe harbor holds only if the decryption key was not exposed along with the data. If an intruder takes both the encrypted message and the key that unlocks it, or the encryption did not meet the standard, the safe harbor does not apply and you are back to reporting. Keep keys and passwords separate from the data they protect.",
+        ],
+      },
+
+      { type: "h2", text: "What is changing under the proposed 2026 rule?" },
+      {
+        type: "p",
+        runs: [
+          "You have probably seen headlines that HIPAA now requires encryption. It does not, yet. A proposed overhaul of the Security Rule was ",
+          { text: "published in the Federal Register on January 6, 2025", href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information" },
+          ". It would remove much of the \"addressable\" flexibility and make encryption mandatory at rest and in transit. As of mid-2026 it is still a proposal: the comment period closed in March 2025, the target date for a final rule passed with nothing published, and a coalition of industry groups has asked HHS to withdraw it. It could be finalized, changed, delayed, or dropped.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The practical answer does not wait on the outcome. The current rule already expects you to assess transmission security and to either encrypt or document why not, and OCR already fines unencrypted patient email today. Whatever happens to the proposal, the email safeguards below are what a current ",
+          { text: "risk analysis", href: "/articles/do-dental-practices-need-hipaa-risk-assessment" },
+          " points to.",
+        ],
+      },
+
+      { type: "h2", text: "How to make your dental practice's email HIPAA compliant" },
+      {
+        type: "p",
+        runs: [
+          "There is no single \"HIPAA email\" switch. You are choosing how patient information moves, and most practices end up combining a couple of the options below.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Option", "What it is", "Best for", "The catch"],
+        rows: [
+          [
+            "Enforced TLS (Workspace or 365 + BAA)",
+            "Encrypts the connection between mail servers",
+            "Routine mail to providers whose servers also support it",
+            "Falls back to plain text if the other side does not support TLS",
+          ],
+          [
+            "Encrypted email or portal pickup",
+            "Encrypts the message itself, or delivers it through a secure link",
+            "Sending records to any recipient, inside or outside healthcare",
+            "The recipient may have to open a portal or verify identity",
+          ],
+          [
+            "Secure patient portal",
+            "Patient data stays off email entirely",
+            "Detailed clinical records and patient access requests",
+            "The patient has to log in",
+          ],
+          [
+            "Keep PHI out of the message",
+            "Send only logistics, with no patient detail",
+            "Appointment reminders and scheduling",
+            "Hard to enforce, and the address itself can be patient information",
+          ],
+        ],
+        caption:
+          "Four ways to handle patient information in email. Most practices combine the first two for provider messages and a portal for full records.",
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "List where patient data leaves by email",
+            detail:
+              "Referrals to specialists, x-rays to labs, claims, and any message a patient asked for. That same list belongs in your risk analysis.",
+          },
+          {
+            label: "Get a BAA with your email provider",
+            detail:
+              "Move off any consumer @gmail.com or @outlook.com account. On Google Workspace or Microsoft 365, sign the business associate agreement in the admin console.",
+          },
+          {
+            label: "Turn on real encryption for outbound patient data",
+            detail:
+              "Enforce TLS, then add message-level encryption or a secure portal for anything sensitive, so the contents are protected even when the receiving server is not.",
+          },
+          {
+            label: "Write the rule down and train the team",
+            detail:
+              "One page: no patient data from personal accounts, nothing sensitive in a subject line, and exactly how to send securely. Then document that the training happened.",
+          },
+          {
+            label: "Record any alternative you choose",
+            detail:
+              "If you rely on something other than encryption anywhere, write down why it is reasonable. That documentation is what an addressable specification requires.",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "None of this is expensive. A compliant email plan with encryption usually runs ",
+          { text: "a few dollars per mailbox a month", href: "/articles/how-much-does-hipaa-compliance-cost-for-a-dental-practice" },
+          ", often bundled into a practice-management platform or your IT provider's fee. The costly version is the one Metro paid, after the fact.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This is general information about HIPAA and email, not legal advice. Your own risk analysis, and any stricter rules in your state, decide what is reasonable for your specific practice.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Does a confidentiality notice at the bottom of an email make it HIPAA compliant?",
+        answer:
+          "No. A disclaimer does not secure the message or satisfy the Security Rule. If the email contains patient information and is not encrypted or sent through a service under a business associate agreement, the disclaimer changes nothing.",
+      },
+      {
+        question: "Is a password-protected attachment the same as encryption?",
+        answer:
+          "Not necessarily. A password can control who opens a file, but it does not always scramble the contents in transit. HIPAA's breach safe harbor depends on encryption that meets the federal standard, not on a password alone.",
+      },
+      {
+        question: "Is free Gmail ever acceptable for patient email?",
+        answer:
+          "No. Google does not sign a business associate agreement for consumer @gmail.com accounts, so they cannot be used for protected health information under any configuration. Paid Google Workspace, with a signed agreement and proper settings, can be.",
+      },
+      {
+        question: "Do I need a business associate agreement with my email provider?",
+        answer:
+          "If the service stores or routes your patients' information through its systems, yes. Standard hosted email that holds your messages is a business associate. A pure conduit that only carries data without storing it is the narrow exception.",
+      },
+      {
+        question: "Is a secure patient portal better than email?",
+        answer:
+          "For detailed clinical records, usually yes, because the data never travels through ordinary email. Many practices use a portal for records and reserve encrypted email for quick provider-to-provider messages.",
+      },
+      {
+        question: "What does HIPAA-compliant email cost a small dental practice?",
+        answer:
+          "Often a few dollars per mailbox per month for a compliant plan with encryption, and it is frequently bundled into a practice-management platform or an IT provider's fee.",
+      },
+    ],
+  },
   {
     slug: "dental-hipaa-breach-and-enforcement-report",
     status: "published",
