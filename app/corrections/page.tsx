@@ -110,7 +110,8 @@ export default function CorrectionsPage() {
           most likely to see it. This page is also the single place we record
           material corrections, so there is one public account of what changed
           and when. When we make one, it will appear here with the date and what
-          was corrected.
+          was corrected. As of June 2026, we have not had to record a material
+          correction.
         </p>
 
         <h2>How quickly we fix things</h2>
