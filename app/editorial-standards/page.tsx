@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Editorial Standards · Hipsana",
+  title: "Editorial Standards",
   description:
     "How Hipsana sources, verifies, updates, and corrects its HIPAA guidance, and how we keep it independent of how we make money.",
   alternates: { canonical: "https://hipsana.com/editorial-standards" },
