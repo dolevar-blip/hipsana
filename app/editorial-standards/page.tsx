@@ -176,7 +176,10 @@ export default function EditorialStandardsPage() {
           recommendation, or a source we should have cited, email{" "}
           <a href="mailto:hello@hipsana.com">hello@hipsana.com</a> and tell us
           what is wrong. We check it against the source, correct the page when it
-          is warranted, and note material changes with a date.
+          is warranted, and note material changes with a date. The full
+          corrections policy, including what we count as a correction and where
+          corrections appear, is on our{" "}
+          <a href="/corrections">Corrections</a> page.
         </p>
 
         <h2>Educational content disclaimer</h2>
