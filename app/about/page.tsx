@@ -85,13 +85,14 @@ export default function AboutPage() {
 
         <h2>The standard behind Hipsana</h2>
         <p>
-          Hipsana is built to a single standard. Everything it publishes traces
+          Hipsana is built to a single standard. Every regulatory claim traces
           to a primary source: the HIPAA Security Rule itself, the enforcement
           record the HHS Office for Civil Rights publishes, and NIST&rsquo;s
-          security guidance. Anything that can&rsquo;t be verified against a
-          regulator is labeled as such, never guessed. The discipline is the
-          point. It lets a practice owner see exactly where they stand and
-          confirm every word of it independently.
+          security guidance. Where a figure comes from breach data or industry
+          research, we name the source. Anything we cannot verify against a
+          regulator, we label rather than guess. The discipline is the point. It
+          lets a practice owner see exactly where they stand and confirm every
+          word of it independently.
         </p>
         <p>
           Hipsana is built for a single audience:
@@ -107,10 +108,11 @@ export default function AboutPage() {
           and writes the reviews behind it. He is not an attorney, and Hipsana is
           a publisher and referral service, not a law firm or a healthcare
           provider. And he won&rsquo;t pretend to be a compliance authority. What
-          he brings instead is one rule he doesn&rsquo;t break: if a claim
-          can&rsquo;t be traced to the regulator that made it (HHS, OCR, or
-          NIST), it doesn&rsquo;t go on the site, and anything he can&rsquo;t
-          verify gets labeled, not guessed. That&rsquo;s the point. You never
+          he brings instead is one rule he doesn&rsquo;t break: every regulatory
+          claim is traced to the regulator that made it (HHS, OCR, or NIST).
+          Where a figure comes from breach data or industry research, the source
+          is named, and anything he can&rsquo;t verify gets labeled, not guessed.
+          That&rsquo;s the point. You never
           have to take his word for any of it: the sources are named, and you can
           open every one yourself.
         </p>
