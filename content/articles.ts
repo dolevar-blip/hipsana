@@ -697,7 +697,12 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "One dental-specific point is worth knowing, because it is the other common way a dentist ends up in front of OCR. In 2022, dental practices were a focus of OCR's Right of Access enforcement, the rule that requires giving patients a copy of their records, usually within 30 days. That September, OCR settled three dental cases at once, for $30,000, $80,000, and $25,000, each over a patient who waited months for records they were owed. So the two paths that most often end in a penalty for a dentist are a reported breach, where the risk analysis is the issue, and a records request the patient had to chase.",
+          "One dental-specific point is worth knowing, because it is the other common way a dentist ends up in front of OCR. In 2022, dental practices were a focus of OCR's Right of Access enforcement, the rule that requires giving patients a copy of their records, usually within 30 days. That September, OCR settled three dental cases at once, for $30,000, $80,000, and $25,000, each over a patient who waited months for records they were owed. So the two paths that most often end in a penalty for a dentist are a reported breach, where the risk analysis is the issue, and ",
+          {
+            text: "a records request the patient had to chase",
+            href: "/articles/how-to-handle-a-patient-records-request-dental-practice",
+          },
+          ".",
         ],
       },
 
@@ -3743,6 +3748,367 @@ export const articles: Article[] = [
         question: "What does HIPAA-compliant email cost a small dental practice?",
         answer:
           "Often a few dollars per mailbox per month for a compliant plan with encryption, and it is frequently bundled into a practice-management platform or an IT provider's fee.",
+      },
+    ],
+  },
+  {
+    slug: "how-to-handle-a-patient-records-request-dental-practice",
+    status: "published",
+    title:
+      "How to Handle a Patient Records Request at a Dental Practice (2026)",
+    metaTitle: "Patient Records Requests for Dentists (2026)",
+    description:
+      "A patient asks for their dental records. HIPAA gives you 30 days, strict limits on fees, and few ways to say no. Get it wrong and OCR fines start at $25,000.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-19",
+    dateModified: "2026-06-19",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "The HIPAA right of access is a patient's legal right to see and get a copy of their own health information, including their dental records, from the practice that holds it.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "When a patient asks for their records, you generally have 30 calendar days to provide them, plus one 30-day extension if you send written notice first. You can charge a reasonable, cost-based fee for copies, but not when a bill is unpaid, and not for records sent through a patient portal.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Get the timing or the fee wrong, and it is the kind of mistake the government has been fining dental practices for. In October 2024, the HHS Office for Civil Rights fined a solo Maryland dental practice, Gums Dental Care, $70,000. The reason was not a data breach. A patient had asked, by email, for copies of her and her children's dental records. The practice replied the same day but never sent the records, and kept refusing for almost three years. When the dentist contested the penalty all the way to a federal appeals board, the board sided with the government. It was the 50th time OCR has imposed a penalty for a records-access failure since 2019.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-settlement-gums-dental-right-of-access.webp",
+        alt: "Exhibit from the HHS Office for Civil Rights enforcement action against Gums Dental Care: OCR found the solo Maryland dental practice failed to give a patient timely access to her own and her children's records and imposed a $70,000 civil monetary penalty, its 50th right-of-access penalty since 2019.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "Source: U.S. Department of Health and Human Services, Office for Civil Rights. ",
+          {
+            text: "Civil monetary penalty against Gums Dental Care (October 2024)",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/index.html",
+          },
+          ". Highlights added by Hipsana: the $70,000 penalty, OCR's 50th right-of-access penalty, and the roughly three years the records were withheld.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why a records request is the HIPAA gap most likely to cost you",
+      },
+      {
+        type: "p",
+        runs: [
+          "The right of access has become OCR's most active enforcement priority under the Privacy Rule. Since the agency launched its Right of Access Initiative in 2019, it has imposed 50 penalties for it, and dental practices keep showing up on that list. On a single day, ",
+          {
+            text: "in September 2022, OCR settled three separate cases against dental practices",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/september-2022-right-of-access-initiative/index.html",
+          },
+          " for the same failure: not giving patients their records on time.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "What makes this different from most HIPAA risks is who triggers it. A breach usually starts with an attacker. A right-of-access violation starts with your own patient, who only has to file a short complaint with OCR when they cannot get their records. That complaint is also one of the most common ways ",
+          {
+            text: "an OCR investigation into a practice",
+            href: "/articles/what-happens-if-dental-practice-fails-hipaa-audit",
+          },
+          " begins in the first place. And the penalties are not reserved for large groups. Gums Dental Care is a solo office. The 2022 settlements ran from $25,000 to $80,000 and hit practices in Illinois, Georgia, and Nevada.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          {
+            strong:
+              "Most solo practices carry two or three HIPAA gaps they can't see. The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, including whether your records-request process would hold up, then sends you a short written review and an introduction to a vetted specialist. It takes about three minutes. ",
+          },
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      { type: "h2", text: "What the right of access actually covers" },
+      {
+        type: "p",
+        runs: [
+          "Under ",
+          {
+            text: "45 CFR 164.524",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.524",
+          },
+          ", a patient can inspect and get a copy of the protected health information you keep about them in what HIPAA calls the designated record set. For a dental practice, that is broader than most people assume. It includes the clinical chart and treatment notes, your imaging (panoramic, bitewing, CBCT), and the billing records you use to make decisions about that patient.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "A few things sit outside the right of access. Psychotherapy notes kept separate from the rest of the record are excluded, as is information compiled in reasonable anticipation of a lawsuit. Almost nothing else in a typical dental file qualifies. If a patient asks for everything, the safe assumption is that you owe them their full chart, including images and billing.",
+        ],
+      },
+      { type: "h2", text: "The 30-day clock, and the one extension you get" },
+      {
+        type: "p",
+        runs: [
+          "You must act on a records request within 30 calendar days of receiving it. That is an outer limit, not a target. ",
+          {
+            text: "OCR's own guidance",
+            href: "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/access/index.html",
+          },
+          " encourages practices to respond sooner, and a portal can make it near-instant. You may take one extension of up to 30 more days, but only if, inside the first 30 days, you give the patient a written statement explaining the delay and the date you will deliver. You get that extension once per request. There is no second one.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Stage", "What HIPAA requires"],
+        rows: [
+          [
+            "Day 0",
+            "Patient submits a request. The clock starts the day you receive it.",
+          ],
+          [
+            "By Day 30",
+            "Provide the records, or send a written denial on a permitted ground, or send written notice of a one-time extension.",
+          ],
+          [
+            "Extension",
+            "Up to 30 additional days. Only one. The written notice must go out within the first 30 days and name a completion date.",
+          ],
+          [
+            "By Day 60",
+            "If you took the extension, the records (or a written denial) are due.",
+          ],
+        ],
+        caption:
+          "The federal timeline under 45 CFR 164.524. Your state may require less time (see below).",
+      },
+      {
+        type: "p",
+        runs: [
+          "One trap inside the clock: handing over part of the record on time does not count as meeting the deadline. In the 2022 cases, Chicago's Family Dental Care produced only portions of a patient's records and did not deliver the complete file until months later. That partial response was treated as a failure, and the practice paid $30,000.",
+        ],
+      },
+      { type: "h2", text: "What you can charge, and what you can't" },
+      {
+        type: "p",
+        runs: [
+          "You are allowed to charge a reasonable, cost-based fee when a patient asks for copies. The fee can include only the labor to copy the records, the cost of supplies such as a CD or USB drive, and postage if the patient wants them mailed. You may also charge to prepare a summary, but only if the patient agrees to one in advance.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["You CAN charge for", "You CANNOT charge for"],
+        rows: [
+          [
+            "Labor to copy the records (paper or electronic)",
+            "Searching for or retrieving the records",
+          ],
+          [
+            "Supplies (CD, USB) if the patient wants portable media",
+            "The cost of maintaining your records system or software",
+          ],
+          [
+            "Postage, if the records are mailed",
+            "A fee on records the patient receives through a portal",
+          ],
+          [
+            "A summary, only if the patient agrees to one",
+            "Anything, as a condition of an unpaid treatment bill",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This is where two of the dental cases turned. A Georgia practice, Great Expressions Dental Center of Georgia, told a patient she had to pay a $170 copying fee and would not release her records until she did. OCR found the fee was not reasonable and the delay was unlawful, and the practice paid $80,000. Gums Dental Care charged a $25 fee for records the patient had asked to receive by email. Because there is no real copying or supply cost for an emailed record, OCR found even that small fee improper. And you cannot hold records hostage over an unpaid dental bill. A patient's right to their record does not depend on whether they have settled their account.",
+        ],
+      },
+      { type: "h2", text: "The form and format the patient asks for" },
+      {
+        type: "p",
+        runs: [
+          "If a patient asks for their records in a specific form, you have to provide them that way when it is readily producible. If they want an electronic copy and you keep the chart electronically, you generally owe them an electronic copy. If you cannot produce the exact format requested, you provide a readable alternative you both can agree on.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Saying you have no secure way to send it is not a way out. Gums Dental Care argued it had no secure website and therefore could not email the records. OCR rejected that: the practice still had to provide the records in some other form and format, and offering nothing at all was the violation. If your ",
+          {
+            text: "email is not set up to carry patient information securely",
+            href: "/articles/is-email-hipaa-compliant-dental-practice",
+          },
+          ", the answer is a different delivery method, not silence.",
+        ],
+      },
+      { type: "h2", text: "Your state law can require more" },
+      {
+        type: "p",
+        runs: [
+          "Everything above is the federal floor. HIPAA sets a minimum, and a state law that gives patients more protection, including faster access or a lower fee, is not overridden by it. When both apply, you follow whichever rule is more protective of the patient. That is settled under HIPAA's preemption rule (45 CFR 160.203), and ",
+          {
+            text: "HHS has confirmed",
+            href: "https://www.hhs.gov/guidance/document/faq-403-how-do-i-know-if-state-law-more-stringent-hipaa-privacy-rule",
+          },
+          " that a state law giving patients more timely access is the one that governs.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "In practice this usually means a shorter clock or a smaller fee. Texas requires electronic records within 15 days, not 30. California gives patients 15 business days and caps copying at 25 cents per page. Other states set their own limits. So before you rely on the 30-day window or settle on a copying fee, check what your state requires, because the stricter rule is the one OCR and your state dental board will hold you to.",
+        ],
+      },
+      { type: "h2", text: "When you can actually say no" },
+      {
+        type: "p",
+        runs: [
+          "The grounds for denying a records request are narrow and specific, and they are listed at 45 CFR 164.524(a)(2)-(3). A few denials are reviewable, meaning a licensed professional who was not involved in the original decision can be asked to look again, for example a determination that releasing the record is reasonably likely to endanger someone's life or safety. Most of the everyday reasons a practice might want to say no are not on the list at all.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Suspecting that a patient will misuse the records is not a permitted reason. In the Gums case, the dentist argued the patient might use the records to commit insurance fraud. OCR was explicit that this is not a lawful basis to deny access. Neither is an unpaid bill, a dispute with the patient, or simple inconvenience. When you do deny any part of a request, the denial has to be in writing, in plain language, sent within the same 30-day or 60-day window, and it must tell the patient how to seek a review if one applies and how to complain to you or to OCR. Any part of the record you do not have a ground to withhold still has to be released.",
+        ],
+      },
+      { type: "h2", text: "Who else can ask for the records" },
+      {
+        type: "p",
+        runs: [
+          "The right of access belongs to the patient, but a personal representative steps into the patient's shoes. For an adult, that is usually someone with legal authority such as a healthcare power of attorney. For a child, a parent or guardian is generally the personal representative, though state law carves out exceptions that matter in practice. Requests involving minors and parents raise enough of their own questions that they deserve separate treatment, which we will cover on its own.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Patients can also direct you to send their records straight to a third party, such as a new dentist or an attorney. A 2020 federal court decision, ",
+          {
+            text: "Ciox Health v. Azar",
+            href: "https://www.hhs.gov/hipaa/court-order-right-of-access/index.html",
+          },
+          ", narrowed this. In plain terms: when a patient gets their own copy, the cost-based fee limit still applies; when they direct records to a third party, that specific fee cap no longer governs. Verify a third-party request the same way you would any other, and make sure the instruction to send is clear and in writing.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "How to fulfill a records request, step by step",
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Log the request the day it arrives",
+            detail:
+              "Write down who asked, what they asked for, the date, and how they want to receive it. The 30-day clock starts on that date, so the date is the single most important thing you record. You may require the request in writing or on your own form, as long as you have told patients that and it does not become a barrier or a delay.",
+          },
+          {
+            label: "Verify identity, then stop",
+            detail:
+              "Confirm the requester is the patient or an authorized personal representative. Reasonable verification is required, but it cannot become a stalling tactic. Do not add hurdles beyond what you would use to confirm anyone's identity.",
+          },
+          {
+            label: "Pull the complete record",
+            detail:
+              "Chart, treatment notes, all imaging, and billing. Partial is not compliant. If part of it is genuinely excluded, set only that part aside and prepare the rest.",
+          },
+          {
+            label: "Match the format",
+            detail:
+              "If they asked for an electronic copy and you can produce one, send it electronically. If you cannot send it the requested way safely, offer a clear alternative rather than nothing.",
+          },
+          {
+            label: "Calculate a lawful fee, or none",
+            detail:
+              "Charge only the permitted copying costs. Charge nothing for a portal copy. Never condition release on an unpaid bill. If you do charge, you can require prepayment of that permitted amount.",
+          },
+          {
+            label: "Deliver within 30 days, or send the extension notice",
+            detail:
+              "If you need more time, the written extension notice has to go out before day 30 and name a completion date. You get one extension, not two.",
+          },
+          {
+            label: "Keep proof",
+            detail:
+              "Save what you sent, when, and to whom. If a complaint ever lands, your dated log is the difference between a quick close and a penalty.",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "If you are not certain your current process would survive a single patient complaint, that is exactly what the Scorecard surfaces. You get a short risk review and, if it makes sense, an introduction to a specialist who handles this for practices your size. ",
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      { type: "h2", text: "Where solo practices slip" },
+      {
+        type: "p",
+        runs: [
+          "The practices that get fined are rarely the ones acting in bad faith. They are the ones without a written procedure, where a records request lands on whoever happens to open the mail, gets set aside during a busy week, and quietly blows past day 30. By the time the patient is frustrated enough to file with OCR, the only documentation is a vague memory of we were getting to it. The gap is almost never knowledge of the rule. It is the absence of a simple, owned, dated process that survives a busy front desk.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "One change worth watching: OCR has a ",
+          {
+            text: "proposed rule",
+            href: "https://www.federalregister.gov/documents/2021/01/21/2020-27157/proposed-modifications-to-the-hipaa-privacy-rule-to-support-and-remove-barriers-to-coordinated-care",
+          },
+          ", still in proposed form as of 2026 with a federal consultation step held in February 2026, that would shorten the standard response time from 30 days to 15. It is not final, and the 30-day rule remains the federal law today. But the direction is toward less time, not more, and in several states the deadline is already shorter, which is one more reason to fix the process now rather than rely on the back half of a 30-day window.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "A records request is one of the few HIPAA gaps a single patient can report with one click. The free HIPAA Risk Scorecard flags the ones OCR looks at first in about three minutes, then points you to the fix. ",
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This is general information about HIPAA's right of access, not legal advice. Your own situation, and any stricter rules in your state, decide what applies to your specific practice.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "How long does a dental practice have to provide records?",
+        answer:
+          "Thirty calendar days from receiving the request, under 45 CFR 164.524. You can take one extension of up to 30 more days, but only if you send the patient written notice of the delay and a completion date within the first 30 days. Some states require faster turnaround.",
+      },
+      {
+        question: "Can I charge a patient for a copy of their dental records?",
+        answer:
+          "Yes, a reasonable, cost-based fee covering labor to copy, supplies, and postage. You cannot charge for searching or retrieving records, you cannot charge for a copy delivered through a patient portal, and you cannot condition release on an unpaid bill.",
+      },
+      {
+        question: "Can I refuse to release records if the patient owes us money?",
+        answer:
+          "No. An unpaid bill is not a permitted reason to deny a patient access to their record. The two are separate matters.",
+      },
+      {
+        question:
+          "What if a patient asks for records by email and we don't have secure email?",
+        answer:
+          "You still have to provide the records. If you cannot send them by email safely, offer another form or format. Sending nothing is the violation, as OCR made clear in the Gums Dental Care case.",
+      },
+      {
+        question:
+          "Does a parent automatically get a copy of their child's dental records?",
+        answer:
+          "Usually, because a parent is generally the child's personal representative under HIPAA. State law creates exceptions, so this is one to handle carefully. We cover parental access to a minor's records on its own.",
+      },
+      {
+        question: "Does my state have different rules than HIPAA?",
+        answer:
+          "It might, and if it does, the stricter rule wins. HIPAA is a federal floor. Some states require faster turnaround, such as Texas at 15 days for electronic records, and some cap copying fees, such as California at 25 cents per page. Check your state's medical-records law alongside HIPAA and follow whichever is more protective of the patient.",
       },
     ],
   },
