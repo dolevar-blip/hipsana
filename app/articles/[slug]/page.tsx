@@ -318,7 +318,7 @@ export default function ArticlePage({
         <h1 className="mb-4 text-3xl font-semibold leading-tight md:text-4xl">
           {article.title}
         </h1>
-        <p className="mb-8 text-sm text-muted">
+        <p className="mb-1 text-sm text-muted">
           By{" "}
           <Link
             href="/about"
@@ -326,7 +326,9 @@ export default function ArticlePage({
           >
             {article.author}
           </Link>{" "}
-          · Updated {formatDate(article.dateModified)} ·{" "}
+          · Updated {formatDate(article.dateModified)}
+        </p>
+        <p className="mb-8 text-sm text-muted">
           <Link
             href="/editorial-standards"
             className="underline underline-offset-2 hover:text-ink"
