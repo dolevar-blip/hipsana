@@ -326,7 +326,13 @@ export default function ArticlePage({
           >
             {article.author}
           </Link>{" "}
-          · Updated {formatDate(article.dateModified)}
+          · Updated {formatDate(article.dateModified)} ·{" "}
+          <Link
+            href="/editorial-standards"
+            className="underline underline-offset-2 hover:text-ink"
+          >
+            How we research and source
+          </Link>
         </p>
 
         {lead && lead.type === "p" && (
