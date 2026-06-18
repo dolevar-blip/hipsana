@@ -60,10 +60,11 @@ export default function EditorialStandardsPage() {
         </h1>
         <p className="mt-4 text-sm text-muted">Last updated: June 18, 2026</p>
         <p className="mt-8 text-lg leading-relaxed text-muted">
-          The short version: we hold every factual and regulatory statement on
-          this site to one standard. It traces to a primary source, the agency
-          that wrote the rule or recorded the case, or it gets labeled as
-          unverified, never guessed. Much of the HIPAA guidance online leans on
+          The short version: every regulatory statement on this site traces to
+          a primary source, the agency that wrote the rule or recorded the case.
+          Where a figure comes from breach data or industry research, we name the
+          source so you can weigh it. Anything we cannot verify, we label rather
+          than guess. Much of the HIPAA guidance online leans on
           vendor summaries and secondhand coverage; we work from the regulator’s
           own text and link to it, so you never have to take our word for it. We
           write about a subject where one wrong detail can cost a practice real
@@ -84,8 +85,8 @@ export default function EditorialStandardsPage() {
           Hipsana is written by its founder, Dolev Arama, who is accountable for
           the accuracy of what appears here. He does not claim to be a compliance
           authority. What he holds to is the sourcing discipline below: if a
-          statement cannot be traced to the regulator that made it, it does not
-          go on the site. There is more about who we serve, and why, on our{" "}
+          regulatory statement cannot be traced to the regulator that made it, it
+          does not go on the site. There is more about who we serve, and why, on our{" "}
           <a href="/about">About page</a>.
         </p>
 
@@ -175,9 +176,7 @@ export default function EditorialStandardsPage() {
           recommendation, or a source we should have cited, email{" "}
           <a href="mailto:hello@hipsana.com">hello@hipsana.com</a> and tell us
           what is wrong. We check it against the source, correct the page when it
-          is warranted, and note material changes with a date. Our{" "}
-          <a href="/corrections">corrections policy</a> sets out what we treat
-          as a correction and where corrections appear.
+          is warranted, and note material changes with a date.
         </p>
 
         <h2>Educational content disclaimer</h2>
