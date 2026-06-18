@@ -261,6 +261,28 @@ function breadcrumbJsonLd(article: Article) {
   };
 }
 
+function datasetJsonLd(article: Article) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: article.title,
+    description: article.description,
+    url: `${SITE_URL}/articles/${article.slug}`,
+    creator: { "@type": "Organization", name: "Hipsana", url: SITE_URL },
+    datePublished: article.datePublished,
+    dateModified: article.dateModified,
+    isAccessibleForFree: true,
+    license: `${SITE_URL}/terms`,
+    keywords: [
+      "dental data breach",
+      "HIPAA enforcement",
+      "OCR Risk Analysis Initiative",
+      "risk analysis",
+      "healthcare data breach statistics",
+    ],
+  };
+}
+
 export default function ArticlePage({
   params,
 }: {
@@ -310,6 +332,12 @@ export default function ArticlePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd(article)) }}
       />
+      {article.kind === "report" && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetJsonLd(article)) }}
+        />
+      )}
 
       <div className="mx-auto max-w-prose">
         <p className="eyebrow mb-3">
