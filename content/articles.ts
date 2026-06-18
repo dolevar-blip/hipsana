@@ -3803,12 +3803,18 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The right of access has become OCR's most active enforcement priority under the Privacy Rule. Since the agency launched its Right of Access Initiative in 2019, it has imposed 50 penalties for it, and dental practices keep showing up on that list. On a single day, ",
+          "The right of access has become OCR's most active enforcement priority under the Privacy Rule. Since the agency launched its Right of Access Initiative in 2019, it has imposed more than 50 penalties under it, reaching its 53rd in 2025. Dental practices keep showing up on that list. On a single day, ",
           {
             text: "in September 2022, OCR settled three separate cases against dental practices",
             href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/september-2022-right-of-access-initiative/index.html",
           },
           " for the same failure: not giving patients their records on time.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Reading through the dental cases OCR has published, the trigger is almost always mundane: an improper fee, or a request that sat unanswered for months. The expensive part was never the records. It was ignoring the request.",
         ],
       },
       {
@@ -3960,7 +3966,24 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "In practice this usually means a shorter clock or a smaller fee. Texas requires electronic records within 15 days, not 30. California gives patients 15 business days and caps copying at 25 cents per page. Other states set their own limits. So before you rely on the 30-day window or settle on a copying fee, check what your state requires, because the stricter rule is the one OCR and your state dental board will hold you to.",
+          "In practice this usually means a shorter clock or a tighter fee cap. The deadline alone can run well under the federal default:",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Jurisdiction", "Deadline to provide records"],
+        rows: [
+          ["Federal (HIPAA floor)", "30 calendar days, plus one 30-day extension"],
+          ["Texas", "15 business days"],
+          ["California", "15 days for copies; 5 business days to inspect"],
+        ],
+        caption:
+          "Examples only. Many states set a shorter deadline or cap copying fees. Confirm your own state's medical-records law, because the stricter rule is the one OCR and your state dental board will hold you to.",
+      },
+      {
+        type: "p",
+        runs: [
+          "So before you rely on the 30-day window or set a copying fee, check what your state requires.",
         ],
       },
       { type: "h2", text: "When you can actually say no" },
@@ -4038,13 +4061,6 @@ export const articles: Article[] = [
           },
         ],
       },
-      {
-        type: "p",
-        runs: [
-          "If you are not certain your current process would survive a single patient complaint, that is exactly what the Scorecard surfaces. You get a short risk review and, if it makes sense, an introduction to a specialist who handles this for practices your size. ",
-          { text: "Check my practice \u2192", href: "/scorecard" },
-        ],
-      },
       { type: "h2", text: "Where solo practices slip" },
       {
         type: "p",
@@ -4108,7 +4124,7 @@ export const articles: Article[] = [
       {
         question: "Does my state have different rules than HIPAA?",
         answer:
-          "It might, and if it does, the stricter rule wins. HIPAA is a federal floor. Some states require faster turnaround, such as Texas at 15 days for electronic records, and some cap copying fees, such as California at 25 cents per page. Check your state's medical-records law alongside HIPAA and follow whichever is more protective of the patient.",
+          "It might, and if it does, the stricter rule wins. HIPAA is a federal floor. Some states require faster turnaround, such as Texas at 15 business days, and some cap copying fees, such as California at 25 cents per page. Check your state's medical-records law alongside HIPAA and follow whichever is more protective of the patient.",
       },
     ],
   },
