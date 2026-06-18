@@ -62,7 +62,7 @@ const siteJsonLd = {
       url: "https://hipsana.com",
       logo: "https://hipsana.com/logo.png",
       description:
-        "HIPAA guidance and a free Security Scorecard for independent dental, medical, and therapy practices. Every claim traces to a primary source.",
+        "HIPAA guidance and a free Security Scorecard for independent dental, medical, and therapy practices. Regulatory claims trace to primary sources, and every source is named.",
       founder: { "@type": "Person", name: "Dolev Arama" },
       email: "hello@hipsana.com",
       publishingPrinciples: "https://hipsana.com/editorial-standards",
