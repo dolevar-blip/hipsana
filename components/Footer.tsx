@@ -21,6 +21,9 @@ export default function Footer() {
             <Link href="/about" className="text-muted hover:text-ink">
               About
             </Link>
+            <Link href="/editorial-standards" className="text-muted hover:text-ink">
+              Editorial Standards
+            </Link>
             <Link href="/disclosure" className="text-muted hover:text-ink">
               Disclosure
             </Link>
