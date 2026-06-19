@@ -85,13 +85,25 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${lexend.variable} ${ibmPlexSans.variable}`}>
       <body className="min-h-screen flex flex-col">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-teal focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-paper"
+        >
+          Skip to content
+        </a>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
         />
         <ScrollToTop />
         <Header />
-        <main className="flex-1">{children}</main>
+        <main
+          id="main-content"
+          tabIndex={-1}
+          className="flex-1 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
+        >
+          {children}
+        </main>
         <Footer />
         <Analytics />
       </body>
