@@ -7,7 +7,6 @@ const TALLY_EMBED_SRC = `https://tally.so/embed/${TALLY_FORM_ID}?alignLeft=1&hid
 const WIDGET_SCRIPT_SRC = "https://tally.so/widgets/embed.js";
 
 export default function ScorecardEmbed() {
-  const startFired = useRef(false);
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const firstPageViewSeen = useRef(false);
 
@@ -40,7 +39,7 @@ export default function ScorecardEmbed() {
       loadEmbeds();
     }
 
-    // 2) Listen for Tally's form events and forward them to GA4.
+    // 2) Listen for Tally's page-change events to scroll the form to the top.
     const handleMessage = (event: MessageEvent) => {
       let payload: any = event.data;
       if (typeof payload === "string") {
@@ -65,17 +64,6 @@ export default function ScorecardEmbed() {
         } else {
           iframeRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
         }
-      }
-
-      const gtag = (window as any).gtag;
-      if (typeof gtag !== "function") return;
-
-      if (payload.event === "Tally.FormLoaded" && !startFired.current) {
-        startFired.current = true;
-        gtag("event", "scorecard_start");
-      }
-      if (payload.event === "Tally.FormSubmitted") {
-        gtag("event", "scorecard_complete");
       }
     };
 
