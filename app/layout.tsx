@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Lexend, IBM_Plex_Sans } from "next/font/google";
-import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -18,8 +18,6 @@ const ibmPlexSans = IBM_Plex_Sans({
   display: "swap",
   variable: "--font-ibm-plex-sans",
 });
-
-const GA_MEASUREMENT_ID = "G-9SDHNCV0H0";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hipsana.com"),
@@ -92,21 +90,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
         />
         <ScrollToTop />
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}');
-          `}
-        </Script>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
