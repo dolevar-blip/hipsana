@@ -166,7 +166,7 @@ export default function ResultPage({ searchParams }: { searchParams: SP }) {
 
   const intro =
     band === "high"
-      ? "A score this low means several of the controls OCR looks at first aren't in place."
+      ? "A score this low means several of the controls OCR most commonly cites aren't in place."
       : band === "gaps"
       ? "Your foundations are partly in place, with a few gaps that carry real weight."
       : band === "strong"
