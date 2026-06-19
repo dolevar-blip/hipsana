@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Disclosure",
   description:
-    "How Hipsana makes money: referral fees from vetted specialists, a smaller affiliate line, and our rule that neither ever changes what your review says.",
+    "How Hipsana makes money: referral fees from specialists, a smaller affiliate line, and our rule that neither ever changes what your review says.",
   alternates: { canonical: "/disclosure" },
   openGraph: {
     title: "Disclosure · Hipsana",
     description:
-      "How Hipsana makes money: referral fees from vetted specialists, a smaller affiliate line, and our rule that neither ever changes what your review says.",
+      "How Hipsana makes money: referral fees from specialists, a smaller affiliate line, and our rule that neither ever changes what your review says.",
     url: "https://hipsana.com/disclosure",
     type: "website",
     images: [
@@ -41,7 +41,7 @@ export default function DisclosurePage() {
         <h2>How the free review is paid for</h2>
         <p>
           The Scorecard and the written review are free to you. If your review
-          surfaces gaps you want help with, we introduce you to a vetted
+          surfaces gaps you want help with, we introduce you to a
           compliance specialist who does that work. If you choose to hire them,
           their firm pays us a referral fee.
         </p>
