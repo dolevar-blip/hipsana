@@ -220,7 +220,7 @@ export const articles: Article[] = [
           "So the threshold question is settled. The real question is what the rule actually demands once you're in.",
         ],
       },
-      { type: "h2", text: "What the rule says, and what OCR actually checks first" },
+      { type: "h2", text: "What the rule says, and what OCR actually checks" },
       {
         type: "p",
         runs: [
@@ -734,7 +734,7 @@ export const articles: Article[] = [
         runs: [
           "That is the gap the ",
           { text: "HIPAA Risk Scorecard", href: "/scorecard" },
-          " is built to surface. It checks the controls OCR looks at first, scores your practice, and follows with a short review and an intro to a specialist if you want help. A few minutes, and you see where you stand before a breach or a complaint forces the question. ",
+          " is built to surface. It checks the controls OCR most commonly cites, scores your practice, and follows with a short review and an intro to a specialist if you want help. A few minutes, and you see where you stand before a breach or a complaint forces the question. ",
           { text: "Check your practice now.", href: "/scorecard" },
         ],
       },
@@ -868,7 +868,7 @@ export const articles: Article[] = [
       {
         question: "Is the free HHS risk assessment tool enough?",
         answer:
-          "It is a fair starting point for understanding what a risk analysis involves, but it is not a finished assessment on its own. It gives you the questions, not the answer to which gaps exist in your specific practice. The HIPAA Risk Scorecard checks the controls OCR looks at first and follows with a short review.",
+          "It is a fair starting point for understanding what a risk analysis involves, but it is not a finished assessment on its own. It gives you the questions, not the answer to which gaps exist in your specific practice. The HIPAA Risk Scorecard checks the controls OCR most commonly cites and follows with a short review.",
       },
       {
         question: "What happens if a breach affects more than 500 patients?",
@@ -903,7 +903,7 @@ export const articles: Article[] = [
     title: "What to Do If Your Dental Practice Has a Data Breach: The First 60 Days (2026)",
     metaTitle: "Dental Practice Data Breach: What to Do (2026)",
     description:
-      "A dental data breach starts a 60-day HIPAA clock. The exact steps to take, who to notify, and what OCR looks for first, anchored to a real OCR settlement.",
+      "A dental data breach starts a 60-day HIPAA clock. The exact steps to take, who to notify, and what OCR most commonly cites, anchored to a real OCR settlement.",
     author: "Dolev Arama",
     datePublished: "2026-06-05",
     dateModified: "2026-06-17",
@@ -1048,7 +1048,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The hard part of a breach isn't fixing the gaps. It's knowing which ones you have before OCR does. The HIPAA Risk Scorecard checks the 10 things OCR looks at first, then gives you a short risk review and an intro to a specialist. It takes about 3 minutes. ",
+          "The hard part of a breach isn't fixing the gaps. It's knowing which ones you have before OCR does. The HIPAA Risk Scorecard checks the areas OCR most commonly cites, then gives you a short risk review and an intro to a specialist. It takes about 3 minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -1199,7 +1199,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Not sure which gaps you would be paying to fix? " },
-            "The Scorecard checks the 10 items OCR looks at first, in about three minutes. ",
+            "The Scorecard checks the areas OCR most commonly cites, in about three minutes. ",
             { text: "Check my practice \u2192", href: "/scorecard" },
           ],
         ],
@@ -1415,7 +1415,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "Most solo practices have two or three HIPAA gaps they cannot see. " },
-          "The Scorecard checks the 10 items OCR auditors look at first, then sends you a short written review of your gaps and an intro to a specialist who can help you close them. About three minutes. ",
+          "The Scorecard checks the areas OCR most commonly cites, then sends you a short written review of your gaps and an intro to a specialist who can help you close them. About three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -1609,7 +1609,7 @@ export const articles: Article[] = [
       { question: "Does a small practice really need one?", answer: "Yes. The requirement does not scale with size, and federal regulators have settled with single-location providers specifically to make that point. A small practice with patient data carries the same core obligation as a hospital." },
       { question: "Who can perform a HIPAA risk assessment, and can I do it myself?", answer: "You can do it yourself. HIPAA does not require an outside firm, and the free federal tool exists for exactly that. What matters is that the analysis is accurate, thorough, documented, and followed by a plan to fix what it finds. Many small practices run the assessment in-house and bring in help only for the parts they cannot judge alone, such as technical testing or a recent breach. If you want a quick read on which gaps you would be doing it for, the Scorecard shows you in about three minutes." },
       { question: "How long does a HIPAA risk assessment take?", answer: "Anywhere from an afternoon with the free tool for a simple solo practice to a few weeks for a consultant-led review with an onsite visit and a written plan. The larger time cost is usually fixing what the analysis turns up, not running the analysis." },
-      { question: "Does the Hipsana Scorecard replace a risk analysis?", answer: "No, and we would not claim it does. The Scorecard is a fast self-check of the gaps OCR looks at first. A formal risk analysis is the documented, thorough assessment the law requires. The Scorecard shows you where you likely stand so you can decide what to do next, including a short free review and an intro to a specialist." },
+      { question: "Does the Hipsana Scorecard replace a risk analysis?", answer: "No, and we would not claim it does. The Scorecard is a fast self-check of the gaps OCR most commonly cites. A formal risk analysis is the documented, thorough assessment the law requires. The Scorecard shows you where you likely stand so you can decide what to do next, including a short free review and an intro to a specialist." },
     ],
   },
   {
@@ -1618,7 +1618,7 @@ export const articles: Article[] = [
     title: "Is ChatGPT HIPAA Compliant for a Dental Practice? (2026)",
     metaTitle: "Is ChatGPT HIPAA Compliant for Dentists? (2026)",
     description:
-      "ChatGPT's everyday plans are not HIPAA compliant, by OpenAI's own terms. Which AI tools will sign a BAA for a dental practice, and what OCR asks for first.",
+      "ChatGPT's everyday plans are not HIPAA compliant, by OpenAI's own terms. Which AI tools will sign a BAA for a dental practice, and what OCR most commonly cites.",
     author: "Dolev Arama",
     datePublished: "2026-06-11",
     dateModified: "2026-06-17",
@@ -1667,7 +1667,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Not sure where your practice stands? " },
-            "The Scorecard checks the 10 items OCR looks at first, in about three minutes. ",
+            "The Scorecard checks the areas OCR most commonly cites, in about three minutes. ",
             { text: "Check my practice \u2192", href: "/scorecard" },
           ],
         ],
@@ -1854,7 +1854,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "An AI tool you adopted this year is exactly the kind of system OCR expects to find listed in that document, and a vendor's badge will not stand in for it. " },
-          "Most solo practices carry two or three HIPAA gaps they cannot see from the inside. The Scorecard checks the 10 items OCR asks about first, then offers a short free risk review and, if you want one, an intro to a specialist. Takes about three minutes. ",
+          "Most solo practices carry two or three HIPAA gaps they cannot see from the inside. The Scorecard checks the areas OCR most commonly cites, then offers a short free risk review and, if you want one, an intro to a specialist. Takes about three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -1968,7 +1968,7 @@ export const articles: Article[] = [
       { question: "Are AI scribes a HIPAA violation?", answer: "Not inherently. A scribe with a signed BAA, clear retention and model-training terms, patient awareness of the recording, and a line in your risk analysis can be used compliantly. The same scribe adopted on a free trial with none of that paperwork is an open liability." },
       { question: "Is there a HIPAA-compliant version of ChatGPT a small practice can actually get?", answer: "The compliant paths today are procurement products aimed at organizations with IT support: OpenAI's API, sales-managed Enterprise and Edu accounts, and ChatGPT for Healthcare. Most solo practices that want generative AI near patient data end up on a healthcare-specific tool that bundles the BAA, or they keep public AI strictly on the no-patient-data side of the line." },
       { question: "What should I do if a team member already put patient details into a public AI tool?", answer: "Stop using that channel for patient content. Note exactly what was entered and when. Then run a documented breach risk assessment to judge the probability the information was compromised. Some incidents are defensibly low risk; others start notification obligations. The worst response is an undocumented shrug, because that is the gap investigators later quote." },
-      { question: "Does the Hipsana Scorecard check AI risks?", answer: "It checks the foundations those risks land on: whether you have a current risk analysis, signed BAAs, staff training, and the other items OCR asks for first. AI tools enter your practice through exactly those doors. The Scorecard takes about three minutes, and the free review that follows can flag where an AI tool you use still needs paperwork." },
+      { question: "Does the Hipsana Scorecard check AI risks?", answer: "It checks the foundations those risks land on: whether you have a current risk analysis, signed BAAs, staff training, and the other items OCR most commonly cites. AI tools enter your practice through exactly those doors. The Scorecard takes about three minutes, and the free review that follows can flag where an AI tool you use still needs paperwork." },
     ],
   },
   {
@@ -2103,7 +2103,7 @@ export const articles: Article[] = [
         runs: [
           "A vendor contract you cannot produce is the kind of gap a practice never notices until someone asks. ",
           {
-            strong: "The free HIPAA Risk Scorecard checks the 10 areas OCR investigators ask about first, missing BAAs included, then sends a short written review of your top gaps and an intro to a specialist if you want one. About three minutes. ",
+            strong: "The free HIPAA Risk Scorecard checks the areas OCR most commonly cites, missing BAAs included, then sends a short written review of your top gaps and an intro to a specialist if you want one. About three minutes. ",
           },
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
@@ -2445,7 +2445,7 @@ export const articles: Article[] = [
         runs: [
           "Most owners cannot say today which of those documents their practice could actually produce. ",
           {
-            strong: "The free HIPAA Risk Scorecard checks the 10 areas OCR investigators ask about first, written policies and staff training included, then sends a short written review of your top gaps and an intro to a specialist if you want one. About three minutes. ",
+            strong: "The free HIPAA Risk Scorecard checks the areas OCR most commonly cites, written policies and staff training included, then sends a short written review of your top gaps and an intro to a specialist if you want one. About three minutes. ",
           },
           {
             text: "Check my practice \u2192",
@@ -2651,7 +2651,7 @@ export const articles: Article[] = [
       {
         question: "How do I find out whether staff AI use is my only gap?",
         answer:
-          "It almost never is; AI enters a practice through the same doors OCR checks first, like training, written policies, and vendor agreements. The free HIPAA Risk Scorecard asks ten yes/no questions about how your practice handles patient data, scores you out of 100, and ends with a short written review of your top gaps, plus an intro to a specialist if a referral makes sense.",
+          "It almost never is; AI enters a practice through the same doors OCR checks, like training, written policies, and vendor agreements. The free HIPAA Risk Scorecard asks ten yes/no questions about how your practice handles patient data, scores you out of 100, and ends with a short written review of your top gaps, plus an intro to a specialist if a referral makes sense.",
       },
     ],
   },
@@ -2855,7 +2855,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "A missing or unsigned BAA is a common finding in HIPAA audits and breach investigations, and it is the kind of thing that is hard to spot from inside the office. The free HIPAA Scorecard checks for it, and for the other controls OCR looks at first, in about three minutes. ",
+          "A missing or unsigned BAA is a common finding in HIPAA audits and breach investigations, and it is the kind of thing that is hard to spot from inside the office. The free HIPAA Scorecard checks for it, and for the other controls OCR most commonly cites, in about three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -3061,7 +3061,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Not sure which line items you are missing? " },
-            "The Scorecard checks the 10 controls OCR looks at first, in about three minutes. ",
+            "The Scorecard checks the areas OCR most commonly cites, in about three minutes. ",
             { text: "Check my practice \u2192", href: "/scorecard" },
           ],
         ],
@@ -3192,7 +3192,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "You cannot budget for a gap you cannot see. " },
-          "The Scorecard checks the 10 controls OCR looks at first and sends you a short written review of where your practice stands. About three minutes. ",
+          "The Scorecard checks the areas OCR most commonly cites and sends you a short written review of where your practice stands. About three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -3424,7 +3424,7 @@ export const articles: Article[] = [
       { question: "Is HIPAA compliance a tax-deductible business expense?", answer: "Generally, yes. Compliance software, training, and professional services are ordinary and necessary business expenses, and HIPAA being legally required strengthens that case, so they are typically deductible. Larger one-time purchases, such as new equipment, may need to be depreciated rather than deducted in full the first year. This is general information, not tax advice; confirm the specifics with your accountant." },
       { question: "What is the cheapest way for a solo practice to stay HIPAA compliant?", answer: "Run the free federal risk-assessment tool, add a low-cost compliance platform for policies and training, put a BAA in place with every vendor, and keep the documentation current yourself. That can hold annual costs to a couple thousand dollars, but only if you genuinely do the work and keep the proof. The savings disappear if the result is a checkbox exercise." },
       { question: "Does a solo dental practice really need all of this?", answer: "Yes. The HIPAA Security Rule does not scale its core obligations to your size, and federal regulators have settled with single-location providers, and practices with fewer than 2,000 patients, specifically to make that point. A small practice with patient data carries the same foundational duties as a hospital." },
-      { question: "Can the Hipsana Scorecard tell me what I will need to budget for?", answer: "It points you at the gaps. The Scorecard checks the 10 controls OCR looks at first and sends you a short written review of where your practice stands, which is the fastest way to see which line items you are actually missing before you spend. It is not a formal risk analysis, and we would not claim it is." },
+      { question: "Can the Hipsana Scorecard tell me what I will need to budget for?", answer: "It points you at the gaps. The Scorecard checks the areas OCR most commonly cites and sends you a short written review of where your practice stands, which is the fastest way to see which line items you are actually missing before you spend. It is not a formal risk analysis, and we would not claim it is." },
     ],
   },
 
@@ -4101,7 +4101,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "A records request is one of the few HIPAA gaps a single patient can report with one click. The free HIPAA Risk Scorecard flags the ones OCR looks at first in about three minutes, then points you to the fix. ",
+          "A records request is one of the few HIPAA gaps a single patient can report with one click. The free HIPAA Risk Scorecard flags the ones OCR most commonly cites in about three minutes, then points you to the fix. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -4771,7 +4771,7 @@ export const articles: Article[] = [
           {
             strong: "The cheapest version of this is the one you build before OCR builds it for you. "
           },
-          "The Scorecard checks the 10 controls OCR looks at first and sends you a short written read of where your practice stands. About three minutes, no cost. ",
+          "The Scorecard checks the areas OCR most commonly cites and sends you a short written read of where your practice stands. About three minutes, no cost. ",
           {
             text: "Check my practice →",
             href: "/scorecard"
