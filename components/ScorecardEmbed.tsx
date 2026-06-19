@@ -62,7 +62,13 @@ export default function ScorecardEmbed() {
         if (!firstPageViewSeen.current) {
           firstPageViewSeen.current = true;
         } else {
-          iframeRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+          const reduceMotion = window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+          ).matches;
+          iframeRef.current?.scrollIntoView({
+            behavior: reduceMotion ? "auto" : "smooth",
+            block: "start",
+          });
         }
       }
     };
