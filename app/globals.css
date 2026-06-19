@@ -40,7 +40,7 @@
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-md border border-muted-border bg-paper px-5 py-3 text-sm font-medium text-ink transition-colors hover:border-ink;
+    @apply inline-flex items-center justify-center rounded-md border border-muted-light bg-paper px-5 py-3 text-sm font-medium text-ink transition-colors hover:border-ink;
   }
 
   .prose-hipsana {
@@ -141,5 +141,18 @@
   /* Bottom Scorecard CTA */
   .article-cta {
     @apply mt-16 rounded-2xl border border-teal/15 bg-teal-subtle px-7 py-8 md:px-9;
+  }
+}
+
+/* Respect the user's reduced-motion preference. Kept outside @layer so it
+   reliably overrides Tailwind transitions and animations. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
