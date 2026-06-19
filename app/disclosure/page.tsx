@@ -54,7 +54,7 @@ export default function DisclosurePage() {
         <h2>How we handle your information</h2>
         <p>
           To deliver the review, we share your details with that one specialist
-          partner and no one else. We do not sell your information. What we
+          partner and no one else. We do not sell or rent your information to data brokers, hand it to multiple companies, or share it for unrelated advertising. What we
           collect, why, how long we keep it, and how to have it deleted is laid
           out on our <a href="/privacy">Privacy page</a>.
         </p>
