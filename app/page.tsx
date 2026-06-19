@@ -230,8 +230,8 @@ export default function HomePage() {
           </h2>
           <p className="mt-5 text-[17px] leading-relaxed text-muted">
             Answer ten yes/no questions about how your practice handles patient
-            data. You&rsquo;ll get a score out of 100 and a written review of your
-            biggest gaps, plus the option to book a short risk review and an
+            data. You&rsquo;ll get a score out of 100, based on your answers, and a
+            written review of the gaps they point to, plus the option to book a short risk review and an
             intro to a specialist if you want help. About three minutes.
           </p>
 
