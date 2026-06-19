@@ -17,28 +17,32 @@ export default function Footer() {
             </p>
           </div>
 
-          <nav className="flex flex-wrap gap-x-7 gap-y-2 text-sm">
-            <Link href="/about" className="text-muted hover:text-ink">
-              About
-            </Link>
-            <Link href="/editorial-standards" className="text-muted hover:text-ink">
-              Editorial Standards
-            </Link>
-            <Link href="/corrections" className="text-muted hover:text-ink">
-              Corrections
-            </Link>
-            <Link href="/disclosure" className="text-muted hover:text-ink">
-              Disclosure
-            </Link>
-            <Link href="/privacy" className="text-muted hover:text-ink">
-              Privacy
-            </Link>
-            <Link href="/terms" className="text-muted hover:text-ink">
-              Terms
-            </Link>
-            <Link href="/contact" className="text-muted hover:text-ink">
-              Contact
-            </Link>
+          <nav className="flex flex-col gap-y-2 text-sm md:flex-row md:flex-wrap md:gap-x-7">
+            <div className="flex flex-wrap gap-x-7 gap-y-2">
+              <Link href="/about" className="text-muted hover:text-ink">
+                About
+              </Link>
+              <Link href="/disclosure" className="text-muted hover:text-ink">
+                Disclosure
+              </Link>
+              <Link href="/privacy" className="text-muted hover:text-ink">
+                Privacy
+              </Link>
+              <Link href="/contact" className="text-muted hover:text-ink">
+                Contact
+              </Link>
+            </div>
+            <div className="flex flex-wrap gap-x-7 gap-y-2">
+              <Link href="/editorial-standards" className="text-muted hover:text-ink">
+                Editorial Standards
+              </Link>
+              <Link href="/corrections" className="text-muted hover:text-ink">
+                Corrections
+              </Link>
+              <Link href="/terms" className="text-muted hover:text-ink">
+                Terms
+              </Link>
+            </div>
           </nav>
         </div>
 
