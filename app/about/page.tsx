@@ -4,12 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "A free HIPAA Security Scorecard and written risk review for independent dental, medical, and therapy practices, plus an intro to a vetted specialist.",
+    "A free HIPAA Security Scorecard and written risk review for independent dental, medical, and therapy practices, plus an intro to a specialist.",
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About · Hipsana",
     description:
-      "A free HIPAA Security Scorecard and written risk review for independent dental, medical, and therapy practices, plus an intro to a vetted specialist.",
+      "A free HIPAA Security Scorecard and written risk review for independent dental, medical, and therapy practices, plus an intro to a specialist.",
     url: "https://hipsana.com/about",
     type: "website",
     images: [
@@ -78,8 +78,7 @@ export default function AboutPage() {
           tool itself.
         </p>
         <p>
-          If you want help closing those gaps, we introduce you to a vetted
-          compliance specialist who does that work. The Scorecard and the review
+          If you want help closing those gaps, we introduce you to a compliance specialist who does that work. The Scorecard and the review
           are free.
         </p>
 
@@ -135,7 +134,7 @@ export default function AboutPage() {
         <h2>How we make money</h2>
         <p>
           When the Scorecard surfaces gaps you want help with, we connect you to
-          a vetted compliance specialist who handles that work. If you decide to
+          a compliance specialist who handles that work. If you decide to
           work with them, their firm pays us a referral fee. It never costs you
           anything, and it never changes what your review says.
         </p>
@@ -161,3 +160,4 @@ export default function AboutPage() {
     </section>
   );
 }
+
