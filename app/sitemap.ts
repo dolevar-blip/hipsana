@@ -50,6 +50,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
+      url: `${baseUrl}/accessibility`,
+      lastModified: "2026-06-19",
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
       url: `${baseUrl}/privacy`,
       lastModified,
       changeFrequency: "yearly",
