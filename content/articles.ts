@@ -4022,7 +4022,9 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The right of access belongs to the patient, but a personal representative steps into the patient's shoes. For an adult, that is usually someone with legal authority such as a healthcare power of attorney. For a child, a parent or guardian is generally the personal representative, though state law carves out exceptions that matter in practice. Requests involving minors and parents raise enough of their own questions that they deserve separate treatment, which we will cover on its own.",
+          "The right of access belongs to the patient, but a personal representative steps into the patient's shoes. For an adult, that is usually someone with legal authority such as a healthcare power of attorney. For a child, a parent or guardian is generally the personal representative, though state law carves out exceptions that matter in practice. Requests involving minors and parents raise enough of their own questions that they deserve separate treatment, ",
+          { text: "which we cover on its own", href: "/articles/parental-access-to-a-childs-dental-records" },
+          ".",
         ],
       },
       {
@@ -4880,6 +4882,275 @@ export const articles: Article[] = [
         answer: "Yes. Federal regulators have settled with single-location providers and practices with fewer than 2,000 patients specifically to show that size is not a defense. A breach is what draws OCR's attention; the state of your compliance program is what determines the outcome."
       }
     ]
+  },
+  {
+    slug: "parental-access-to-a-childs-dental-records",
+    status: "published",
+    title: "Parental Access to a Child's Dental Records: What HIPAA Requires (2026)",
+    metaTitle: "Parental Access to a Child's Dental Records",
+    description: "Under HIPAA, a parent is usually a child's personal representative and can get the dental records, with exceptions. OCR made it an enforcement priority in 2025.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-19",
+    dateModified: "2026-06-19",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "In 2022, a Las Vegas dental practice paid $25,000 to settle a federal HIPAA case. The trigger was not a breach or a hacker. A mother had asked for copies of her own and her child's dental records, and the practice spent more than eight months not handing them over.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Under HIPAA, a parent is usually their child's personal representative, which generally gives them the right to see and get a copy of the child's dental records, the same right the patient would have. A handful of situations change that, and state law sets some of the edges. But for routine dental care, the parent of an unemancipated minor can access the child's record, and the mistake that gets practices penalized is almost always the opposite of what you would expect: not handing records to the wrong person, but wrongly refusing a parent who had every right to them.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This is now a federal enforcement priority. On December 3, 2025, the HHS Office for Civil Rights (OCR) sent ",
+          { text: "a letter to HIPAA-covered providers", href: "https://www.hhs.gov/sites/default/files/ocr-letter-hipaa-privacy-rule-and-parental-access-to-minor-childrens-medical-records.pdf" },
+          " warning that parents are being denied access to their children's records, and stating that OCR will use all civil remedies available, including civil money penalties, to enforce the rule. That Las Vegas case, ",
+          { text: "Paradise Family Dental", href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/paradise/index.html" },
+          ", is exactly the kind it has in mind.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-settlement-paradise-dental-parental-access.webp",
+        alt: "Exhibit from the HHS Office for Civil Rights enforcement action against Paradise Family Dental: OCR found the Las Vegas dental practice failed to give a mother timely access to her own and her minor child's records, and the practice agreed to a $25,000 settlement, one of three dental right-of-access settlements OCR announced that day in September 2022.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "Source: U.S. Department of Health and Human Services, Office for Civil Rights. ",
+          { text: "Resolution agreement with Paradise Family Dental (September 2022)", href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/paradise/index.html" },
+          ". Highlights added by Hipsana: the $25,000 settlement, the eight-plus months the records were delayed, and that it was one of three dental practices OCR settled with the same day.",
+        ],
+      },
+      { type: "h2", text: "Does a parent have the right to their child's dental records?" },
+      {
+        type: "p",
+        runs: [
+          "In most cases, yes. Under ",
+          { text: "45 CFR 164.502(g)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502" },
+          ", a covered entity must treat a person who has authority under applicable law to make health care decisions for an unemancipated minor as that child's personal representative. A personal representative stands in the patient's shoes, exercising the patient's rights, including the ",
+          { text: "right of access", href: "/articles/how-to-handle-a-patient-records-request-dental-practice" },
+          " to the record. Because a parent usually has the authority to make health decisions for their child, the parent is usually the child's personal representative, and the practice owes them the same access the patient would get.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "OCR stated it plainly in its December 2025 letter: in most cases a parent is the personal representative of an unemancipated minor child, and the Privacy Rule generally gives the parent the right to access the child's records, unless one of the limited exceptions applies. For a dental office, the records at issue are the same designated record set any patient can request: the clinical chart, treatment notes, imaging, and the billing used to make decisions about that child. What the parent has a right to is a copy of that information, not the original chart, which the practice keeps. OCR's own fact sheet for parents, ",
+          { text: "Am I My Child's \"Personal Representative\" Under HIPAA?", href: "https://www.hhs.gov/sites/default/files/am-i-my-childs.pdf" },
+          ", confirms a parent who is the personal representative can get the child's complete record.",
+        ],
+      },
+      { type: "h2", text: "Two different questions: who consents, and who gets the records" },
+      {
+        type: "p",
+        runs: [
+          "A lot of confusion at the front desk comes from blending two separate questions. The first is who may consent to the child's treatment. The second is who may get a copy of the child's records. They are not the same, and they can have different answers.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Consent to treatment is largely a matter of state law, and the American Dental Association's practice guidance notes that, as a practical matter, the parent who brings the child in is generally the one who authorizes that visit's care. Access to records is governed by HIPAA, plus any stricter state rule, and here the custody label does most of the damage. A parent who is the child's personal representative generally has access regardless of who brought the child in or who pays the bill. Treating \"the parent who pays\" or \"the parent with primary custody\" as the only one entitled to records is a common, avoidable error.",
+        ],
+      },
+      { type: "h2", text: "The three times a parent is not the personal representative" },
+      {
+        type: "p",
+        runs: [
+          "HIPAA carves out three narrow situations where a parent is not the child's personal representative for some or all of the record. As OCR's December 2025 letter lists them:",
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          [{ strong: "The child consented to the care alone. " }, "When the child lawfully consents to a health care service and no parental consent is required under state law, the parent is not the personal representative for the records related to that care."],
+          [{ strong: "A court directed the care. " }, "When the child gets care at the direction of a court, or a person the court appointed, the parent is not the representative for that care."],
+          [{ strong: "The parent agreed to confidentiality. " }, "When the parent agrees that the child and the provider may have a confidential relationship, the parent's representative status is limited to the scope of that agreement."],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "OCR is explicit that these exceptions are generally limited to certain types of health care services, such as mental health care. Routine dental treatment rarely falls into one of these minor-consent categories, so for most dental visits the parent remains the personal representative. The caution is that state law decides the edges, and a dental record can occasionally touch a protected area, so confirm your state's minor-consent law rather than assuming.",
+        ],
+      },
+      { type: "h2", text: "Can a non-custodial or divorced parent get the records?" },
+      {
+        type: "p",
+        runs: [
+          "Usually, yes. HIPAA does not distinguish between a custodial and a non-custodial parent. What matters is whether the parent still has the legal authority to make health decisions for the child, and that authority survives a divorce unless a court order or state law removes it.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "State law often says this directly, and several states name dental records specifically. ",
+          { text: "Texas Family Code 153.073", href: "https://statutes.capitol.texas.gov/Docs/FA/htm/FA.153.htm" },
+          " gives a parent who is a conservator the right of access to the child's \"medical, dental, psychological, and educational records\" at all times, \"unless limited by court order.\" ",
+          { text: "Louisiana law", href: "https://legis.la.gov/Legis/Law.aspx?d=107593" },
+          " states that access to a minor child's medical, dental, and school records \"shall not be denied to a parent solely because he is not the child's custodial or domiciliary parent.\" The practical rule for the front desk: do not deny a parent based on custody alone. If a court order limits a parent's access, that is different, and staff may reasonably ask to see the relevant order or decree.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "When parents are divorced or separated, three moves keep staff out of trouble:",
+        ],
+      },
+      {
+        type: "steps",
+        items: [
+          { label: "Don't deny based on custody alone", detail: "A parent who is the personal representative gets the records, and a parent usually stays the personal representative after a divorce, whether or not they have primary custody." },
+          { label: "Ask for the court order only if access is supposedly limited", detail: "If a parent claims a custody or protective order restricts the other parent's access, ask to see that order and follow what it actually says, rather than guessing." },
+          { label: "Don't require the other parent's sign-off", detail: "One parent who is the personal representative is enough. You do not need both parents to approve, and adding that step is the kind of extra barrier OCR's December 2025 letter warns against." },
+        ],
+      },
+      { type: "h2", text: "When can a dental practice refuse a parent?" },
+      {
+        type: "p",
+        runs: [
+          "There are a few situations where you can, or must, say no. Each needs a specific basis, not a blanket policy.",
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          [{ strong: "An emancipated minor. " }, "Under ", { text: "164.502(g)(2)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502" }, ", an emancipated minor is generally treated like an adult, so a parent is not automatically the personal representative. Emancipation is defined by state law."],
+          [{ strong: "Suspected abuse, neglect, or endangerment. " }, "A provider may decide not to treat a parent as the personal representative when, in the provider's professional judgment, the child has been or may be subjected to domestic violence, abuse, or neglect by that parent, or treating the parent as representative could endanger the child. OCR notes this requires an individualized, patient-specific determination."],
+          [{ strong: "A specific minor-consent record. " }, "Where the minor lawfully consented to particular care alone, the parent may not get the records tied to that care, though OCR is clear the parent still gets the rest of the child's record."],
+          [{ strong: "A court order. " }, "If a court order specifically limits a parent's access, follow it."],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "What you cannot do is invent a reason. OCR's December letter warns covered entities not to place additional limitations on a parent's access beyond any limits that already exist in applicable law, and not to require a child to authorize parental access where no law requires it.",
+        ],
+      },
+      { type: "h2", text: "Who controls a child's dental records" },
+      {
+        type: "table",
+        headers: ["Situation", "Who controls access to the records", "Where the rule comes from"],
+        rows: [
+          ["Routine dental care, unemancipated minor", "The parent, as personal representative", "45 CFR 164.502(g) (HHS)"],
+          ["Care the minor lawfully consented to alone (e.g., certain mental-health or STI care), where state law allows", "The minor, for that care only", "Dec. 3, 2025 OCR letter; 164.502(g)(3)(i)(A)"],
+          ["Care ordered by a court", "The minor / the court", "164.502(g)(3)(i)(B)"],
+          ["Parent agreed to a confidential relationship for some care", "Limited to the scope of that agreement", "164.502(g)(3)(i)(C)"],
+          ["Non-custodial parent, no court order limiting access", "Same access as the custodial parent", "State law, e.g., Tex. Fam. Code 153.073; La. R.S. 9:351"],
+          ["Emancipated minor", "The minor (a parent is not automatically the representative)", "164.502(g)(2); state emancipation law"],
+          ["Suspected abuse, neglect, or endangerment by the parent", "The practice may decline to treat the parent as representative", "164.502(g)(5)"],
+          ["State law is stricter than HIPAA", "The stricter state rule applies", "45 CFR 160.203 (preemption)"],
+        ],
+        caption: "How parental access changes by situation. HIPAA is a federal floor; always confirm your state's law, which can be stricter.",
+      },
+      { type: "h2", text: "Patient portals and the \"flip the switch\" problem" },
+      {
+        type: "p",
+        runs: [
+          "One trap is technical, not legal. Many practices use a patient portal or an electronic record run by an outside vendor, and some systems automatically restrict or hand over a child's account at a set age, such as 13. If those default settings block a parent who is the personal representative from records they are entitled to, that is a problem the practice owns, not the vendor's.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "OCR flagged this in December 2025: practices should work with the business associates that run their portals to ensure a parent who is the personal representative gets full electronic access, and should fix default settings that wrongly deny it. If your portal vendor touches PHI, that is a ",
+          { text: "business associate", href: "/articles/does-my-dental-practice-need-a-baa" },
+          " relationship, and parental access is one more setting to confirm with them.",
+        ],
+      },
+      { type: "h2", text: "What OCR is enforcing now" },
+      {
+        type: "p",
+        runs: [
+          "The December 2025 letter did two things. It reminded providers of a rule that has existed for years, and it announced that OCR is making parental access to children's medical records an enforcement priority and will use all civil remedies available, including civil money penalties. OCR said it issued the letter after learning that parents were being denied access, in some cases because a system required the child to authorize it first.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The track record is already there. Paradise Family Dental's $25,000 settlement came out of a single complaint: a mother asked for her and her child's records in April 2020 and did not receive them until the end of that December. It was one of three dental practices OCR settled with on the same day in 2022, part of a broader ",
+          { text: "right-of-access enforcement effort", href: "/articles/how-to-handle-a-patient-records-request-dental-practice" },
+          " that has produced dozens of cases since 2019. None of those cases involved a breach. They involved a request that went unanswered.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Most solo practices carry two or three HIPAA gaps they can't see, and a written policy for parent and minor record requests is a common one. The free HIPAA Risk Scorecard checks the 10 areas OCR investigates most, then sends a short written review and an introduction to a specialist. It takes about three minutes. ",
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      { type: "h2", text: "A simple policy for a parent's request" },
+      {
+        type: "steps",
+        items: [
+          { label: "Confirm who is asking", detail: "Verify the requester is a parent or guardian who is the child's personal representative. Reasonable verification is required, but it cannot become a stalling tactic or an extra hurdle beyond what you would use for any patient." },
+          { label: "Check for a court order or a minor-consent issue", detail: "Ask whether any custody order limits a parent's access, and whether the records involve care the minor consented to alone under state law. For routine dental care, usually neither applies." },
+          { label: "Default to access for both parents", detail: "Absent a specific legal limit, a parent who is the personal representative gets the record, regardless of custody or who pays the bill." },
+          { label: "Pull the complete record", detail: "Chart, treatment notes, imaging, and billing. If a narrow part is genuinely excluded, set only that part aside and prepare the rest." },
+          { label: "Meet the deadline", detail: "The federal clock is 30 days, and several states are shorter. Do not rely on the back half of the window." },
+          { label: "Don't add money barriers", detail: "You may charge a reasonable, cost-based copy fee, but not for a portal copy, and never condition release on an unpaid bill." },
+          { label: "Write it down and keep proof", detail: "A short, dated log of who asked, what you sent, and when is the difference between a quick close and a penalty if a complaint is ever filed." },
+        ],
+      },
+      { type: "h2", text: "Where practices slip" },
+      {
+        type: "p",
+        runs: [
+          "The practices that get penalized are rarely acting in bad faith. Paradise, the Las Vegas practice, did send the records in the end; it just took more than eight months, and by then a complaint was already with OCR. The pattern is almost always the same: no written rule, a request that lands on whoever opens the mail, a front-desk staffer who hesitates over a divorce situation, and a deadline that quietly slides past. The fix is not legal expertise. It is a short, owned procedure that tells your team the default answer, the few real exceptions, and the deadline.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Parental access is one of the gaps a single parent can report to OCR with one short complaint, and it is now an enforcement priority. The free HIPAA Risk Scorecard flags the policy and training gaps OCR most often cites, in about three minutes. ",
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This is general information about HIPAA and parental access, not legal advice. Your own situation, your patients' specific circumstances, and any stricter rules in your state decide what applies to your practice. When a custody order or a possible safety concern is involved, that is the moment to check the order and, if needed, your counsel.",
+        ],
+      },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          ["HHS Office for Civil Rights, \"The HIPAA Privacy Rule and Parental Access to Minor Children's Medical Records,\" Dear Colleague letter (December 3, 2025)."],
+          ["HHS Office for Civil Rights, resolution agreement with B. Steven L. Hardy, D.D.S., LTD, doing business as Paradise Family Dental (September 2022)."],
+          ["HHS Office for Civil Rights, \"Does the HIPAA Privacy Rule allow parents the right to see their children's medical records?\" FAQ (accessed June 2026)."],
+          ["HHS Office for Civil Rights, \"Am I My Child's 'Personal Representative' Under HIPAA?\" fact sheet (accessed June 2026)."],
+          ["HHS Office for Civil Rights, \"Personal Representatives\" guidance (accessed June 2026)."],
+          ["45 CFR § 164.502(g) (personal representatives, including unemancipated minors and the abuse, neglect, or endangerment provision); § 164.524 (right of access); § 160.203 (preemption) (eCFR, current)."],
+          ["Texas Family Code § 153.073 (rights of a parent at all times, including access to a child's dental records) (Texas Legislature, current)."],
+          ["Louisiana Revised Statutes § 9:351 (access to a child's records and a non-custodial parent) (Louisiana State Legislature, current)."],
+          ["American Dental Association, \"Custody Arrangements\" (Managing Professional Risks: The Consent Process) (accessed June 2026). Cited only for the dental-practice norm on who consents to a child's treatment, not for any legal rule."],
+        ],
+      },
+    ],
+    faq: [
+      { question: "Does a parent automatically get their child's dental records?", answer: "Usually. A parent is generally the child's personal representative under HIPAA, which gives them the same right of access the patient has. Limited exceptions apply, mostly tied to care a minor consented to alone under state law, and a court order can change the answer." },
+      { question: "Can a non-custodial parent get their child's dental records?", answer: "Generally yes. HIPAA does not distinguish custodial from non-custodial parents. A non-custodial parent keeps the same access unless a court order or state law removes their authority. Several states name dental records specifically, and some, like Louisiana, bar denying a parent access solely because they are not the child's custodial parent." },
+      { question: "Can a divorced parent be denied records because the other parent pays the bill?", answer: "No. Access to a child's records does not depend on who pays. A parent who is the child's personal representative is entitled to the record regardless of financial responsibility, absent a court order limiting access." },
+      { question: "When can we refuse a parent access to a child's record?", answer: "In limited situations: an emancipated minor, a specific record tied to care the minor lawfully consented to alone, a court order limiting access, or a professional judgment that the parent's access could endanger the child due to abuse or neglect. Each needs a specific basis, not a blanket policy." },
+      { question: "Our patient portal locks a child's account at 13. Is that a problem?", answer: "It can be. If the default setting blocks a parent who is the personal representative from records they are entitled to, you should work with your portal or records vendor to fix the configuration. OCR raised this exact issue in December 2025." },
+      { question: "Can we require both parents to approve releasing a child's records?", answer: "No. A parent who is the child's personal representative can exercise the child's access right on their own, the same way the patient could. HIPAA does not require a second parent's signature, and OCR's December 2025 letter cautions practices not to add authorization steps that no law requires. The exception to watch for is a court order that specifically limits a parent's access." },
+    ],
   },
 ];
 
