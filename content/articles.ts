@@ -257,7 +257,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "The hard part isn't running the analysis. It's knowing which gaps you have before OCR does. " },
-          "The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, then you get a short written review and an introduction to a vetted specialist. Three minutes. ",
+          "The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, then you get a short written review and an introduction to a specialist. Three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -458,7 +458,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "Start by finding out where you actually stand. ",
-          { strong: "Most solo practices carry two or three HIPAA gaps they can't see. The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, then sends you a short written review and an introduction to a vetted specialist. It takes about three minutes. " },
+          { strong: "Most solo practices carry two or three HIPAA gaps they can't see. The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, then sends you a short written review and an introduction to a specialist. It takes about three minutes. " },
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -734,7 +734,7 @@ export const articles: Article[] = [
         runs: [
           "That is the gap the ",
           { text: "HIPAA Risk Scorecard", href: "/scorecard" },
-          " is built to surface. It checks the controls OCR looks at first, scores your practice, and follows with a short review and an intro to a vetted specialist if you want help. A few minutes, and you see where you stand before a breach or a complaint forces the question. ",
+          " is built to surface. It checks the controls OCR looks at first, scores your practice, and follows with a short review and an intro to a specialist if you want help. A few minutes, and you see where you stand before a breach or a complaint forces the question. ",
           { text: "Check your practice now.", href: "/scorecard" },
         ],
       },
@@ -1048,7 +1048,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The hard part of a breach isn't fixing the gaps. It's knowing which ones you have before OCR does. The HIPAA Risk Scorecard checks the 10 things OCR looks at first, then gives you a short risk review and an intro to a vetted specialist. It takes about 3 minutes. ",
+          "The hard part of a breach isn't fixing the gaps. It's knowing which ones you have before OCR does. The HIPAA Risk Scorecard checks the 10 things OCR looks at first, then gives you a short risk review and an intro to a specialist. It takes about 3 minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -1415,7 +1415,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "Most solo practices have two or three HIPAA gaps they cannot see. " },
-          "The Scorecard checks the 10 items OCR auditors look at first, then sends you a short written review of your gaps and an intro to a vetted specialist who can help you close them. About three minutes. ",
+          "The Scorecard checks the 10 items OCR auditors look at first, then sends you a short written review of your gaps and an intro to a specialist who can help you close them. About three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -1854,7 +1854,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "An AI tool you adopted this year is exactly the kind of system OCR expects to find listed in that document, and a vendor's badge will not stand in for it. " },
-          "Most solo practices carry two or three HIPAA gaps they cannot see from the inside. The Scorecard checks the 10 items OCR asks about first, then offers a short free risk review and, if you want one, an intro to a vetted specialist. Takes about three minutes. ",
+          "Most solo practices carry two or three HIPAA gaps they cannot see from the inside. The Scorecard checks the 10 items OCR asks about first, then offers a short free risk review and, if you want one, an intro to a specialist. Takes about three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -2103,7 +2103,7 @@ export const articles: Article[] = [
         runs: [
           "A vendor contract you cannot produce is the kind of gap a practice never notices until someone asks. ",
           {
-            strong: "The free HIPAA Risk Scorecard checks the 10 areas OCR investigators ask about first, missing BAAs included, then sends a short written review of your top gaps and an intro to a vetted specialist if you want one. About three minutes. ",
+            strong: "The free HIPAA Risk Scorecard checks the 10 areas OCR investigators ask about first, missing BAAs included, then sends a short written review of your top gaps and an intro to a specialist if you want one. About three minutes. ",
           },
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
@@ -2260,7 +2260,7 @@ export const articles: Article[] = [
         runs: [
           "Not sure what your practice would show if someone asked tomorrow? ",
           {
-            strong: "The free HIPAA Risk Scorecard asks ten yes/no questions about how your practice handles patient data, scores you out of 100, then sends a short written review of your top gaps and an introduction to a vetted specialist if a referral makes sense. About three minutes. ",
+            strong: "The free HIPAA Risk Scorecard asks ten yes/no questions about how your practice handles patient data, scores you out of 100, then sends a short written review of your top gaps and an introduction to a specialist if a referral makes sense. About three minutes. ",
           },
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
@@ -2317,7 +2317,7 @@ export const articles: Article[] = [
       {
         question: "How do I find out whether the scribe is my only gap?",
         answer:
-          "A scribe contract is one line in a longer checklist. The free HIPAA Risk Scorecard asks ten yes/no questions about how your practice handles patient data, scores you out of 100, and ends with a short written review of your top gaps, plus an intro to a vetted specialist if a referral makes sense.",
+          "A scribe contract is one line in a longer checklist. The free HIPAA Risk Scorecard asks ten yes/no questions about how your practice handles patient data, scores you out of 100, and ends with a short written review of your top gaps, plus an intro to a specialist if a referral makes sense.",
       },
     ],
   },
@@ -2445,7 +2445,7 @@ export const articles: Article[] = [
         runs: [
           "Most owners cannot say today which of those documents their practice could actually produce. ",
           {
-            strong: "The free HIPAA Risk Scorecard checks the 10 areas OCR investigators ask about first, written policies and staff training included, then sends a short written review of your top gaps and an intro to a vetted specialist if you want one. About three minutes. ",
+            strong: "The free HIPAA Risk Scorecard checks the 10 areas OCR investigators ask about first, written policies and staff training included, then sends a short written review of your top gaps and an intro to a specialist if you want one. About three minutes. ",
           },
           {
             text: "Check my practice \u2192",
@@ -2582,7 +2582,7 @@ export const articles: Article[] = [
         runs: [
           "Not sure what your practice would show if someone asked tomorrow? ",
           {
-            strong: "The free HIPAA Risk Scorecard asks ten yes/no questions about how your practice handles patient data, scores you out of 100, then sends a short written review of your top gaps and an introduction to a vetted specialist if a referral makes sense. About three minutes. ",
+            strong: "The free HIPAA Risk Scorecard asks ten yes/no questions about how your practice handles patient data, scores you out of 100, then sends a short written review of your top gaps and an introduction to a specialist if a referral makes sense. About three minutes. ",
           },
           {
             text: "Check my practice \u2192",
@@ -2651,7 +2651,7 @@ export const articles: Article[] = [
       {
         question: "How do I find out whether staff AI use is my only gap?",
         answer:
-          "It almost never is; AI enters a practice through the same doors OCR checks first, like training, written policies, and vendor agreements. The free HIPAA Risk Scorecard asks ten yes/no questions about how your practice handles patient data, scores you out of 100, and ends with a short written review of your top gaps, plus an intro to a vetted specialist if a referral makes sense.",
+          "It almost never is; AI enters a practice through the same doors OCR checks first, like training, written policies, and vendor agreements. The free HIPAA Risk Scorecard asks ten yes/no questions about how your practice handles patient data, scores you out of 100, and ends with a short written review of your top gaps, plus an intro to a specialist if a referral makes sense.",
       },
     ],
   },
@@ -3852,7 +3852,7 @@ export const articles: Article[] = [
         runs: [
           {
             strong:
-              "Most solo practices carry two or three HIPAA gaps they can't see. The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, including whether your records-request process would hold up, then sends you a short written review and an introduction to a vetted specialist. It takes about three minutes. ",
+              "Most solo practices carry two or three HIPAA gaps they can't see. The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, including whether your records-request process would hold up, then sends you a short written review and an introduction to a specialist. It takes about three minutes. ",
           },
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
