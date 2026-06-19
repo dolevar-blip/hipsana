@@ -67,8 +67,8 @@ export default function AboutPage() {
         <p>
           It starts with the Scorecard: ten yes/no questions about how your
           practice handles patient data, scored against the HIPAA Security Rule.
-          You get a number out of 100 and a written review of the gaps that
-          matter most for your practice.
+          You get a number out of 100, based on your answers, and a written
+          review of the gaps they point to.
         </p>
         <p>
           The review starts with the actual regulation, not a vendor&rsquo;s
@@ -160,4 +160,3 @@ export default function AboutPage() {
     </section>
   );
 }
-
