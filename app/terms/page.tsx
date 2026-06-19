@@ -46,7 +46,7 @@ export default function TermsPage() {
           free information about HIPAA and cybersecurity, a free Scorecard that
           estimates where your practice stands against the HIPAA Security Rule,
           and a free written review. When you want help closing a gap, we can
-          introduce you to a vetted specialist. We are not attorneys, compliance
+          introduce you to a specialist. We are not attorneys, compliance
           officers, or healthcare professionals. We are not a HIPAA
           &ldquo;covered entity&rdquo; or &ldquo;business associate,&rdquo; and
           we do not handle protected health information (PHI).
@@ -68,7 +68,7 @@ export default function TermsPage() {
         <h2>Introductions to specialists</h2>
         <p>
           If your review surfaces gaps you want help with, we may introduce you
-          to one vetted specialist who does that work. The introduction is
+          to one specialist who does that work. The introduction is
           optional, and the choice is always yours. The specialist is an
           independent company: they, not Hipsana, are responsible for the
           services they provide, the agreement you sign with them, and the
