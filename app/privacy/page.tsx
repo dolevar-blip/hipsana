@@ -83,7 +83,7 @@ export default function PrivacyPage() {
           </li>
           <li>Schedule and hold your free risk review.</li>
           <li>
-            Connect you with a vetted specialist partner who conducts the review
+            Connect you with a specialist partner who conducts the review
             (see below).
           </li>
           <li>Respond to your messages.</li>
@@ -92,7 +92,7 @@ export default function PrivacyPage() {
 
         <h2>Who we share it with</h2>
         <p>
-          To deliver the free review, we share your details with one vetted
+          To deliver the free review, we share your details with one
           specialist partner who carries out the assessment and may follow up
           with you. We share your information with that one partner only. We do
           not sell your information or pass it to multiple companies.
