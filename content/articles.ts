@@ -2458,7 +2458,9 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "One sentence carries most of the weight: no patient information, in any form, goes into any AI tool unless the practice has a signed Business Associate Agreement covering that exact tool and has approved it in writing. Then define patient information the way staff actually meet it: names, photos, x-rays, chart notes, schedules, insurance details, voicemail transcripts, and any story specific enough to identify someone even with the name removed. Give the team a test they can remember: if you would not post it on the practice's public Facebook page, it does not go into a chatbot.",
+          "One sentence carries most of the weight: no patient information, in any form, goes into any AI tool unless the practice has a signed Business Associate Agreement covering that exact tool and has approved it in writing. Then define patient information the way staff actually meet it: names, photos, x-rays, chart notes, schedules, insurance details, voicemail transcripts, and any story specific enough to identify someone even with the name removed. Give the team a test they can remember: if you would not ",
+          { text: "post it on the practice's public Facebook page", href: "/articles/hipaa-social-media-rules-dental-practice" },
+          ", it does not go into a chatbot.",
         ],
       },
       {
@@ -2602,10 +2604,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
-          {
-            text: "More about Hipsana \u2192",
-            href: "/about",
-          },
+          { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
       { type: "h2", text: "Sources" },
@@ -3717,6 +3716,26 @@ export const articles: Article[] = [
           "This is general information about HIPAA and email, not legal advice. Your own risk analysis, and any stricter rules in your state, decide what is reasonable for your specific practice.",
         ],
       },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          ["HHS Office for Civil Rights, Resolution Agreement and Corrective Action Plan, Metropolitan Community Health Services (doing business as Agape Health Services) (July 23, 2020)."],
+          ["HHS Office for Civil Rights, FAQ 570, “Does HIPAA permit health care providers to use email to discuss health issues with patients?” (accessed June 2026)."],
+          ["HHS Office for Civil Rights, guidance on rendering unsecured protected health information unusable, unreadable, or indecipherable (the breach-notification encryption safe harbor; accessed June 2026)."],
+          ["HHS Office for Civil Rights, individuals’ right of access under HIPAA guidance (accessed June 2026)."],
+          ["45 CFR \u00a7 164.312 (technical safeguards, including encryption); \u00a7 164.402 (breach definition and the unsecured-PHI safe harbor) (eCFR, current)."],
+          ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025 (RIN 0945-AA22)."],
+        ],
+      },
     ],
     faq: [
       {
@@ -4092,6 +4111,27 @@ export const articles: Article[] = [
           "This is general information about HIPAA's right of access, not legal advice. Your own situation, and any stricter rules in your state, decide what applies to your specific practice.",
         ],
       },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          ["HHS Office for Civil Rights, civil monetary penalty against Gums Dental Care, LLC (October 2024)."],
+          ["HHS Office for Civil Rights, September 2022 Right of Access Initiative settlements, including Family Dental Care and Great Expressions Dental Center of Georgia (September 2022)."],
+          ["HHS Office for Civil Rights, individuals’ right of access under HIPAA guidance (accessed June 2026)."],
+          ["HHS Office for Civil Rights, FAQ 403, “How do I know if a state law is more stringent than the HIPAA Privacy Rule?” (accessed June 2026)."],
+          ["Ciox Health, LLC v. Azar (D.D.C. 2020) (fee limits on patient-directed transmissions to third parties)."],
+          ["45 CFR \u00a7 164.524 (right of access, including fees and the grounds for denial); \u00a7 160.203 (preemption) (eCFR, current)."],
+          ["Federal Register, proposed modifications to the HIPAA Privacy Rule to support and remove barriers to coordinated care, January 21, 2021."],
+        ],
+      },
     ],
     faq: [
       {
@@ -4125,6 +4165,304 @@ export const articles: Article[] = [
         question: "Does my state have different rules than HIPAA?",
         answer:
           "It might, and if it does, the stricter rule wins. HIPAA is a federal floor. Some states require faster turnaround, such as Texas at 15 business days, and some cap copying fees, such as California at 25 cents per page. Check your state's medical-records law alongside HIPAA and follow whichever is more protective of the patient.",
+      },
+    ],
+  },
+  {
+    slug: "hipaa-social-media-rules-dental-practice",
+    status: "published",
+    title: "HIPAA Rules for Dental Social Media: Patient Photos and Review Responses (2026)",
+    metaTitle: "HIPAA Social Media Rules for Dentists (2026)",
+    description: "Patient photos need written HIPAA authorization, and review replies can break the law. The named OCR dental cases, two rules, and a safe review template.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-19",
+    dateModified: "2026-06-19",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "A North Carolina dentist replied to a one-star Google review. Naming the patient in that reply cost the practice a $50,000 HIPAA penalty.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "HIPAA does not ban dental practices from social media. It draws two lines: you need a patient's written authorization to post their photo or testimonial, and you cannot reveal that someone is your patient when you reply to a review. Get either wrong and a routine marketing task becomes a HIPAA disclosure. Here is what counts, and what OCR has fined.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-penalty-igbinadolor-dental-review-disclosure.webp",
+        alt: "Exhibit from the HHS Office for Civil Rights enforcement action against Igbinadolor D.M.D. and Associates: OCR found the North Carolina dental practice disclosed a patient's information in a public reply to an online review and imposed a $50,000 civil monetary penalty.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "Source: U.S. Department of Health and Human Services, Office for Civil Rights. ",
+          { text: "Civil monetary penalty against Igbinadolor D.M.D. and Associates (2022)", href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/index.html" },
+          ". Highlights added by Hipsana: the $50,000 penalty and the patient information disclosed in the practice's reply to the review.",
+        ],
+      },
+      { type: "h2", text: "Why this is the gap most practices miss" },
+      {
+        type: "p",
+        runs: [
+          "Posting before-and-after photos and replying to Google reviews are ordinary marketing for a modern practice. They are also two of the few HIPAA mistakes OCR has fined dental offices for by name, in ",
+          { text: "public resolutions you can read on hhs.gov", href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/index.html" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The reason practices slip is that \"social media\" feels like one topic with one rule (\"get consent\"). It is actually two different rules from two different parts of the Privacy Rule, and the second one surprises people. Replying to a bad review at all, in a way that confirms the person was your patient, is a disclosure of protected health information. You can break HIPAA without sharing a single clinical detail.",
+        ],
+      },
+      { type: "h2", text: "Social media's two HIPAA rules, not one" },
+      {
+        type: "p",
+        runs: [
+          { strong: "Rule 1: posting about a patient is marketing. " },
+          "Under ",
+          { text: "45 CFR 164.508", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.508" },
+          ", a covered practice needs a signed authorization before it uses a patient's PHI for marketing. A before-and-after photo or a named patient testimonial is marketing, and each one needs written authorization first. The Privacy Rule's narrow exceptions to that requirement (a treatment communication or a face-to-face conversation) do not cover a promotional post built around a patient. Routine treatment and billing never need authorization, but promoting your practice with a patient's image or words does.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Rule 2: responding to a review is a disclosure. " },
+          "Under 45 CFR 164.502(a), you may not disclose PHI except as the rule permits. The fact that a named individual is your patient is itself PHI. So when you reply \"Thanks for being a valued patient, please call the office,\" you have confirmed publicly that the reviewer is your patient. Add any detail about their visit and the disclosure gets worse. This is the rule that catches dentists who are only trying to be polite or to defend their reputation.",
+        ],
+      },
+      { type: "h2", text: "What OCR has actually fined dental practices for" },
+      {
+        type: "p",
+        runs: [
+          "These are not hypotheticals. Three dental practices have paid OCR penalties for this exact behavior, and ",
+          { text: "OCR has kept enforcing it", href: "/articles/dental-hipaa-breach-and-enforcement-report" },
+          ":",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Igbinadolor D.M.D. and Associates (North Carolina): $50,000 (2022). " },
+          "A patient posted a negative review on the practice's Google page under a pseudonym. The same day, the practice replied and named the patient three times, disclosing their symptoms and the recommended treatment. OCR imposed a $50,000 civil money penalty for an impermissible disclosure under 164.502(a). The practice made its position worse by ignoring OCR's data request and subpoena and not contesting the findings.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "New Vision Dental (California): $23,000 (2022). " },
+          "The owner responded to negative Yelp reviews by posting patients' information. OCR's settlement required a $23,000 payment, a corrective action plan, two years of monitoring, and a public substitute notice of the disclosure.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Elite Dental Associates (Texas): $10,000 (2019). " },
+          "Responding to a patient's review, the practice posted her name, treatment plan details, and her insurance and cost information. OCR found the practice had done the same on other reviews and had no policy for releasing PHI on social media, with gaps in its Notice of Privacy Practices.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The pattern is identical across all three: a public reply meant to set the record straight that revealed a patient. OCR has fined this from $10,000 to $50,000, and the statutory penalties run far higher.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Before your next one-star review tempts a detailed reply: most practices have never checked whether their review and social-media habits expose them this way. The free HIPAA Scorecard surfaces the gaps in a few minutes, then a short expert review walks you through what to fix first. " },
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      { type: "h2", text: "What can a dental practice post safely?" },
+      {
+        type: "p",
+        runs: [
+          "Almost anything that does not identify a patient is fine. General oral-health tips, procedure explainers in the abstract, team introductions, office tours, new-equipment news, community events, and promotions are all clear of HIPAA, because none of them reveal who your patients are. The same content tied to \"here's how we fixed Sarah's smile\" is not safe, unless Sarah signed an authorization.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Safe to post (no authorization)", "Needs written authorization first", "Never post (even with a casual \"ok\")"],
+        rows: [
+          ["Oral-health tips and general procedure explainers", "Before-and-after photos of a patient", "A reply that names or confirms a reviewer is your patient"],
+          ["Team highlights, office tours, equipment news", "Patient testimonials (named or identifiable)", "Clinical details about a specific person, publicly"],
+          ["Promotions, hours, community events", "\"Patient of the month\" or case stories", "Another patient's information to rebut a reviewer"],
+          ["De-identified educational images (no identifiers)", "Reposting a patient's own public testimonial about you", "PHI in comments, DMs, or \"private\" groups"],
+        ],
+      },
+      { type: "h2", text: "How to respond to a negative review without breaking HIPAA" },
+      {
+        type: "p",
+        runs: [
+          "You can respond. You just cannot confirm the person is your patient or reference their care. A safe reply stays generic and steers the conversation offline, without ever acknowledging treatment.",
+        ],
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Do not confirm they are a patient",
+            detail: "Write a statement that would read the same to any visitor, for example: \"We take all feedback seriously and follow strict patient-privacy laws that limit what we can discuss publicly.\"",
+          },
+          {
+            label: "Move it offline",
+            detail: "Invite the person to call the office or email a named contact so a manager can help. Offline, once you have confirmed who they are, you can speak freely.",
+          },
+          {
+            label: "Never correct the record with PHI",
+            detail: "Resist the urge to explain \"you actually missed two appointments\" or \"your insurance denied the claim.\" That is the exact move that cost Igbinadolor $50,000.",
+          },
+          {
+            label: "Apply one policy to every review",
+            detail: "Use the same template for good and bad reviews, so a generic reply never reads as an admission. Write the policy down so whoever manages the accounts follows it.",
+          },
+          {
+            label: "Consider not replying at all",
+            detail: "A no-reply approach is always HIPAA-safe. Offline outreach often resolves more than a public reply does.",
+          },
+        ],
+      },
+      { type: "h2", text: "What does a compliant photo authorization need?" },
+      {
+        type: "p",
+        runs: [
+          "A valid HIPAA authorization (164.508) is a signed document, not a verbal yes and not a line buried in your intake paperwork. At a minimum it names the patient, describes exactly what will be shared (for example, intraoral before-and-after photos), says where and how long it will be used (your Instagram and website) and who may see it, and tells the patient they can revoke it in writing. It is signed and dated. The ADA publishes sample authorization forms in its HIPAA compliance manual. Keep the signed form on file. If OCR ever asks, \"we had verbal permission\" is not a defense.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "For a photo of a child patient, the authorization has to come from the parent or guardian who is the child's personal representative under HIPAA.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "\"Anonymized\" is not a magic word. ",
+          { text: "HHS's de-identification standard", href: "https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html" },
+          " treats a full-face photograph as one of the 18 identifiers that must be removed. An image counts as de-identified only once every identifier is gone and you have no reason to think the person could still be recognized. Cropping a face helps, but a distinctive smile, a caption, your account, or the photo's hidden metadata can still point to one patient. The safe default for any patient-specific image is a signed authorization.",
+        ],
+      },
+      { type: "h2", text: "The catch: edge cases that trip practices up" },
+      {
+        type: "p",
+        runs: [
+          { strong: "A patient's chart in the background. " },
+          "The most common slip is not a testimonial at all. It is a team photo or an office reel with a screen or a chart visible behind everyone. If a patient's information is readable in the frame, posting it is a disclosure, the same as naming them.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Staff personal accounts. " },
+          "A hygienist posting \"crazy case today\" from their own phone is still your exposure if it reveals a patient. Your social-media policy has to cover personal accounts, not only the practice page.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Your social-media manager may be a business associate. " },
+          "If you hand patient information to an outside marketing or social-media agency (to pull a testimonial, say), that vendor is handling PHI on your behalf and generally needs ",
+          { text: "a signed business associate agreement", href: "/articles/does-my-dental-practice-need-a-baa" },
+          ". Posting non-patient content does not trigger this; handling PHI does.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "The patient who shares first. " },
+          "If a patient publicly posts their own before-and-after or tags your office, that is their disclosure, not yours. But the moment you repost or add your own detail, it becomes your disclosure. Resharing for marketing still needs authorization.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Deleting is not undoing. " },
+          "Removing a non-compliant post lowers ongoing exposure, but it does not undo a disclosure that already happened. Under 45 CFR 164.402, any impermissible disclosure of unsecured PHI is presumed to be a reportable breach unless you document a risk assessment showing a low probability that the information was compromised, which is hard to show for something posted in public. A public slip can carry breach-notification duties even after the post is gone.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "State law can be stricter. " },
+          "HIPAA is the federal floor. Several states add tighter rules on patient images and dental records. Where your state is stricter, follow the stricter rule.",
+        ],
+      },
+      { type: "h2", text: "What to do this week" },
+      {
+        type: "p",
+        runs: [
+          "Two moves cover most of the risk. First, write or update a one-page social-media policy that names the two rules above and applies to personal accounts, the same way you would set ",
+          { text: "a policy for staff handling patient data", href: "/articles/staff-free-ai-tools-patient-data-dental-policy" },
+          ". Second, switch your review replies to a single generic template starting today, before the next one-star review tempts a detailed rebuttal.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "If you are not sure where your current gaps are, the free HIPAA Scorecard checks your practice against the controls OCR actually enforces, including the marketing and disclosure points behind every case above. It takes a few minutes and ends with a short, no-pressure expert review. ",
+          { text: "Check my practice \u2192", href: "/scorecard" },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This is general information about HIPAA and social media, not legal advice. Your own situation, and any stricter rules in your state, decide what applies to your specific practice.",
+        ],
+      },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          ["HHS Office for Civil Rights, Notice of Proposed Determination, U. Phillip Igbinadolor, D.M.D. & Associates, P.A., OCR Transaction No. 16-225168 (October 2020; $50,000 civil monetary penalty announced 2022)."],
+          ["HHS Office for Civil Rights, Resolution Agreement and Corrective Action Plan, New Vision Dental (2022)."],
+          ["HHS Office for Civil Rights, Resolution Agreement and Corrective Action Plan, Elite Dental Associates (2019)."],
+          ["HHS Office for Civil Rights, “Guidance Regarding Methods for De-identification of Protected Health Information” (the 18 identifiers and the de-identification standard; accessed June 2026)."],
+          ["American Dental Association, sample HIPAA patient authorization forms (HIPAA compliance manual; accessed June 2026)."],
+          ["45 CFR \u00a7 164.508 (uses and disclosures for which an authorization is required, including marketing); \u00a7 164.502(a) (general rules for uses and disclosures); \u00a7 164.514(b) (de-identification); \u00a7 164.402 (breach definition and presumption); \u00a7 160.203 (preemption) (eCFR, current)."],
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Can I respond to a Google or Yelp review as a dentist?",
+        answer: "Yes, but only with a generic statement that does not confirm the reviewer is your patient or mention their care. Naming them or referencing treatment is an impermissible disclosure, which is what led to OCR's $50,000 penalty against a North Carolina practice.",
+      },
+      {
+        question: "Do I need consent to post before-and-after photos?",
+        answer: "Yes. Patient photos used to promote your practice are marketing under HIPAA, so you need a signed authorization (45 CFR 164.508) before posting. A verbal yes is not sufficient.",
+      },
+      {
+        question: "Can I ask a patient to take down a negative review?",
+        answer: "You can ask, and you can reply, but two limits apply. You cannot reveal any of their health information while doing it, and you cannot make their care conditional on removing the review or retaliate if they keep it. The safe path is a generic public reply plus a private, offline invitation to make it right. Pressuring a patient by airing details of their treatment is exactly what OCR penalizes.",
+      },
+      {
+        question: "Can I repost a testimonial the patient wrote themselves?",
+        answer: "A patient sharing their own experience is their choice. But the moment you republish it on your channels to attract patients, you are using their PHI for marketing and need a signed authorization.",
+      },
+      {
+        question: "Is it okay if the photo does not show the patient's face?",
+        answer: "Lower risk, but not automatically safe. A full-face image is a HIPAA identifier, and even a cropped one can still identify a patient through its caption or your account. For any patient-specific image, get written authorization.",
+      },
+      {
+        question: "Can my staff post about patients from their personal accounts?",
+        answer: "No. The same rules apply, and it is still your practice's liability. Your staff data-handling policy should explicitly cover personal devices and accounts.",
+      },
+      {
+        question: "What if we already posted something we should not have?",
+        answer: "Take it down and document what happened. Then run the breach risk assessment to see whether notification is required. Then fix the policy so it does not happen again.",
       },
     ],
   },
