@@ -227,9 +227,24 @@ export default function ResultPage({ searchParams }: { searchParams: SP }) {
         <p className="prose-hipsana mt-6">{cta}</p>
       </div>
 
-      <div className="mt-10 max-w-prose">
+      <h2 className="mt-12 max-w-prose font-display text-2xl tracking-tight md:text-3xl">
+        Book your free 15-minute review
+      </h2>
+
+      <div className="mt-6 max-w-prose">
         <ReviewBookingEmbed email={bemail} name={bname} />
       </div>
+
+      <p className="mt-4 max-w-prose text-sm text-muted">
+        Prefer not to use the calendar, or having trouble with it? Email{" "}
+        <a
+          href="mailto:hello@hipsana.com"
+          className="text-teal underline decoration-teal/30 underline-offset-2 hover:decoration-teal"
+        >
+          hello@hipsana.com
+        </a>{" "}
+        and we&rsquo;ll set up your review.
+      </p>
 
       <p className="mt-6 max-w-prose text-sm italic text-muted">
         By booking, you agree we may share your details with a specialist
