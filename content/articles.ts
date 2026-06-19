@@ -938,7 +938,7 @@ export const articles: Article[] = [
           [{ strong: "Isolate, don't wipe or power down." }, " Disconnect affected devices from the network to stop the spread, but leave them running and intact. Shutting a machine off can overwrite forensic evidence that shows how the attacker got in."],
           [{ strong: "Bring in a third-party forensics firm, not just your IT company." }, " The people who set up your network are not always the right ones to investigate a breach inside it. A dedicated cybersecurity or digital-forensics team works out how the attacker got in, what they reached, and whether data actually left the building."],
           [{ strong: "Start a written timeline." }, " Record when you first noticed something, what you saw, and every step you take. The discovery date drives every deadline that follows."],
-          [{ strong: "Call your cyber-insurer." }, " If you carry cyber coverage, notify them right away. Many policies require prompt notice and provide a breach coach who runs the response, and some deny claims if you act on your own first."],
+          [{ strong: "Call your cyber-insurer." }, " If you carry ", { text: "cyber coverage", href: "/articles/dental-practice-cyber-insurance" }, ", notify them right away. Many policies require prompt notice and provide a breach coach who runs the response, and some deny claims if you act on your own first."],
           [{ strong: "Report it to the FBI." }, " Filing with the FBI's Internet Crime Complaint Center at ic3.gov is voluntary, but law enforcement may share intelligence on the attacker and occasionally help with recovery. It does not replace your duty to notify patients."],
           [{ strong: "Don't rush to pay a ransom." }, " Paying does not erase your notification obligations, and the FBI generally discourages it. Make that call with counsel and your insurer, not in a panic."],
         ],
@@ -2816,7 +2816,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The risk is ", { text: "not theoretical", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, ", and it is not only historical. In 2025, an attacker reached roughly 1.2 million patient records at Absolute Dental, a Nevada dental group, through a single compromised account belonging to its outside IT vendor. The practice agreed to a $3.3 million class-action settlement, with a final approval hearing set for July 2026. A BAA would not have stopped that intrusion by itself, but the case is a plain lesson in why the contract matters: your vendor's access to your systems is your attack surface, and the BAA is where you pin down what that vendor must do to protect it.",
+          "The risk is ", { text: "not theoretical", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, ", and it is not only historical. In 2025, an attacker reached roughly 1.2 million patient records at Absolute Dental, a Nevada dental group, through a single compromised account belonging to its outside IT vendor. The practice agreed to a ", { text: "$3.3 million class-action settlement", href: "/articles/dental-practice-cyber-insurance" }, ", with a final approval hearing set for July 2026. A BAA would not have stopped that intrusion by itself, but the case is a plain lesson in why the contract matters: your vendor's access to your systems is your attack surface, and the BAA is where you pin down what that vendor must do to protect it.",
         ],
       },
       {
@@ -5150,6 +5150,317 @@ export const articles: Article[] = [
       { question: "When can we refuse a parent access to a child's record?", answer: "In limited situations: an emancipated minor, a specific record tied to care the minor lawfully consented to alone, a court order limiting access, or a professional judgment that the parent's access could endanger the child due to abuse or neglect. Each needs a specific basis, not a blanket policy." },
       { question: "Our patient portal locks a child's account at 13. Is that a problem?", answer: "It can be. If the default setting blocks a parent who is the personal representative from records they are entitled to, you should work with your portal or records vendor to fix the configuration. OCR raised this exact issue in December 2025." },
       { question: "Can we require both parents to approve releasing a child's records?", answer: "No. A parent who is the child's personal representative can exercise the child's access right on their own, the same way the patient could. HIPAA does not require a second parent's signature, and OCR's December 2025 letter cautions practices not to add authorization steps that no law requires. The exception to watch for is a court order that specifically limits a parent's access." },
+    ],
+  },
+  {
+    slug: "dental-practice-cyber-insurance",
+    status: "published",
+    title: "Cyber Insurance for a Dental Practice: Cost, Coverage, and HIPAA (2026)",
+    metaTitle: "Dental Cyber Insurance: Cost & Coverage (2026)",
+    description:
+      "What cyber insurance covers for a dental practice, what it costs, and whether it actually pays a HIPAA penalty. A plain, primary-sourced guide, no sales pitch.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-19",
+    dateModified: "2026-06-19",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "In early 2025, a Nevada dental group's network was broken into through an account that belonged to its outside IT vendor. The records of more than 1.2 million patients were exposed, and a proposed $3.3 million settlement was reached to resolve the lawsuits that followed. None of that money came from HIPAA. It was never supposed to.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Cyber insurance is the thing that pays when a breach turns into a bill. This page explains what it covers, what it leaves out, what it tends to cost a small practice, and the one question owners get wrong more than any other: does it actually cover a HIPAA penalty? We do not sell insurance, so nothing here is a pitch. It is what the primary sources and the policies themselves say.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            "Cyber insurance pays for breach response: the forensic investigation, notifying patients, credit monitoring, rebuilding systems, lost income, and a ransom payment where paying one is lawful. HIPAA pays for none of it.",
+          ],
+          [
+            "It also pays to defend you when patients sue and when OCR opens an investigation. Whether it pays a HIPAA penalty itself is the uncertain part, and that turns on your state and your exact policy.",
+          ],
+          [
+            "HIPAA does not require you to carry it. A contract can: your IT vendor's business associate agreement, a lender, or a dental support organization may each require a policy.",
+          ],
+          [
+            "Your regular business owner's policy almost certainly excludes data breaches. Cyber is sold as its own coverage.",
+          ],
+          [
+            "Insurers increasingly require the security controls HIPAA already expects before they will issue a policy: multi-factor authentication, encryption, tested backups, and a documented risk analysis.",
+          ],
+        ],
+      },
+      { type: "h2", text: "What cyber insurance actually covers, and what it doesn't" },
+      {
+        type: "p",
+        runs: [
+          "A cyber policy is built in three layers, and it helps to know which layer pays for what.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/dental-cyber-insurance-absolute-dental-breach.webp",
+        alt: "Summary card for the 2025 Absolute Dental Group data breach: a 3.3 million dollar class-action settlement, more than 1.2 million patients affected, and a breach traced to a third-party IT vendor account. Labeled as a class-action settlement, not an OCR penalty.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "Source: the breach is recorded on the ",
+          { text: "HHS OCR breach portal", href: "https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" },
+          "; a proposed $3.3 million class-action settlement (Jordan v. Absolute Dental Group, LLC) in the U.S. District Court for the District of Nevada, with a final approval hearing set for 2026. This is a civil settlement, not an OCR penalty. Highlights added by Hipsana.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "First-party coverage pays your own out-of-pocket costs after an incident: hiring forensic investigators to find what happened, notifying affected patients, providing credit monitoring, restoring lost data, covering income you lose while the practice is down, and, where it is lawful, a ransomware payment. The U.S. Government Accountability Office describes these as the core losses cyber insurance was created to offset.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Third-party coverage pays when someone else comes after you: patients filing a class action, or a business partner claiming you failed to protect their data. This is the layer that would respond to a lawsuit like the one that produced the $3.3 million Absolute Dental settlement.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Regulatory coverage is the layer people misread. Almost every policy with a regulatory-proceedings clause will pay to defend you during an OCR investigation. The penalty itself is a separate question, and the next section is about exactly that.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "What a cyber policy generally will not pay is worth knowing too. GAO notes that policies commonly exclude losses from systemic or catastrophic events such as acts of war, and that carriers increasingly add ",
+          { strong: "widespread-event" },
+          " exclusions and sublimits that cap how much is available for a specific loss like ransomware. Read those clauses before you assume a number is covered.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The table below maps the real costs of the Absolute Dental breach to what a cyber policy typically covers.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Breach cost", "Cyber insurance usually pays?", "Seen at Absolute Dental (2025)"],
+        rows: [
+          ["Forensics to find what happened", "Yes, first-party", "Outside cyber experts engaged"],
+          ["Notifying patients (1.2M+)", "Yes, first-party", "Breach notices sent"],
+          ["Credit monitoring for patients", "Yes, first-party", "Reimbursed to patients via the settlement"],
+          ["Rebuilding and securing systems", "Yes, first-party", "Done at the practice's own cost"],
+          ["Patient lawsuits and settlement", "Yes, third-party", "$3.3M class-action settlement"],
+          ["Defending an OCR investigation", "Usually, under the regulatory clause", "Not publicly disclosed"],
+          ["The HIPAA penalty itself", "Depends on state and policy", "Not publicly disclosed"],
+        ],
+        caption:
+          "A real dental breach mapped to what a cyber policy typically covers. \u201cUsually\u201d is a general pattern, not a promise: coverage varies by carrier, state, and policy. A dash means the item was not publicly disclosed.",
+      },
+      { type: "h2", text: "Does cyber insurance cover a HIPAA fine?" },
+      {
+        type: "p",
+        runs: [
+          "The honest answer is that it depends, and the difference between defense and the penalty is where it depends.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Defending an OCR investigation, the legal and response costs of dealing with the government, is usually covered under a policy's regulatory clause. The penalty itself is far less certain. Coverage turns on your state's law and your policy's exact wording. As a general legal principle, penalties that are punitive in nature are often not insurable as a matter of public policy, and some states limit insuring civil penalties at all. Other policies carry a specific sublimit for regulatory fines that is much smaller than the headline coverage amount. Two practices with the same loss can get two different answers.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The penalties themselves are set in tiers. Under ",
+          { text: "45 CFR 160.404", href: "https://www.ecfr.gov/current/title-45/part-160/section-160.404" },
+          ", HIPAA civil money penalties run across four tiers based on culpability, from a violation you did not know about up to willful neglect left uncorrected. As of the amounts that took effect on January 28, 2026, the top of that range reaches $2,190,294 for identical violations in a year. In practice, settlements with small practices land far below the ceiling, usually in the tens to hundreds of thousands of dollars, because OCR weighs your size, your intent, and your cooperation. The ceiling is real. It is not the number a solo office should plan around.",
+        ],
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Get the regulatory clause in writing",
+            detail:
+              "Ask your broker to confirm, in writing, whether the policy covers OCR investigation defense, whether it covers a penalty, and the sublimit on each.",
+          },
+          {
+            label: "Check your own state",
+            detail:
+              "Ask whether penalties are insurable where you practice. The answer is not the same in every state, and it can decide whether the fine is yours to pay.",
+          },
+          {
+            label: "Only attest to controls you have",
+            detail:
+              "Insurers can deny a claim if a forensic review shows the security controls you listed on the application were not actually in place when the breach occurred.",
+          },
+          {
+            label: "Read the exclusions",
+            detail:
+              "War, widespread-event, and prior-known-incident exclusions are common, and any of them can quietly remove coverage you assumed you had.",
+          },
+        ],
+      },
+      { type: "h2", text: "Does HIPAA require a dental practice to carry cyber insurance?" },
+      {
+        type: "p",
+        runs: [
+          "No. There is no provision in HIPAA, the Privacy Rule, the Security Rule, or the Breach Notification Rule that requires a covered entity to buy cyber insurance. Anyone who tells you the law mandates it is mistaken.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "What can require it is a contract. Your IT vendor's business associate agreement may oblige one side to carry cyber-liability coverage at a set limit. A lender financing your equipment, or a dental support organization you affiliate with, can require it as well. Those obligations are real, but they come from the contract, not from HIPAA. If a vendor's agreement is where you first ran into this, our guide on ",
+          { text: "which vendors need a BAA", href: "/articles/does-my-dental-practice-need-a-baa" },
+          " covers the rest.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "There is also a rule change worth watching, and worth describing accurately, because most write-ups get it wrong. In January 2025, OCR proposed a major update to the HIPAA Security Rule. As of mid-2026 it is still a proposed rule. It was published as a notice of proposed rulemaking in the Federal Register on January 6, 2025, the comment period has closed, and OCR has not issued a final rule. If it is finalized as written, it would remove the long-standing \u201caddressable versus required\u201d distinction in 45 CFR 164.306(d) and make multi-factor authentication and encryption mandatory. It would not require insurance. It would require the same controls insurers already demand.",
+        ],
+      },
+      { type: "h2", text: "How much does cyber insurance cost for a dental practice?" },
+      {
+        type: "p",
+        runs: [
+          "There is no single price, and any source that gives you one without caveats is guessing. The premium depends on how many patient records you hold, the security controls you can prove, your claims history, and the state you practice in. Industry sources put a small practice's standalone cyber premium in the low thousands of dollars a year for a $1 million limit, but treat that as a starting range, not a quote. Get an actual quote before you budget around it.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Two facts from primary sources put that premium in perspective. GAO has documented that healthcare faces lower coverage limits, rising premiums, and more exclusions than most other sectors, so a dental practice should expect a tighter market than a retail shop would. And IBM's 2025 Cost of a Data Breach Report puts the average healthcare breach at $7.42 million, the highest of any sector. That average is pulled up by large hospital systems, and a solo practice will not see anything close to it. But the response costs that drive it, forensics, patient notification, credit monitoring, and legal fees, still run into the tens or hundreds of thousands for a small practice, and you pay them whether or not OCR ever issues a penalty.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This is also where cyber insurance and compliance spending sit next to each other without overlapping. The cost of getting compliant, the risk assessment and the fixes, is a different line item from the cost of transferring what is left over to an insurer. We break the compliance side down in two other pieces: ",
+          { text: "what a risk assessment costs", href: "/articles/how-much-does-a-hipaa-risk-assessment-cost-for-a-dental-practice" },
+          " and ",
+          { text: "what full HIPAA compliance costs per year", href: "/articles/how-much-does-hipaa-compliance-cost-for-a-dental-practice" },
+          ".",
+        ],
+      },
+      { type: "h2", text: "What insurers require before they will cover you (and how it overlaps with HIPAA)" },
+      {
+        type: "p",
+        runs: [
+          "Cyber underwriting has quietly turned into a security audit. Insurers no longer take your word for it. Major brokers report that carriers can decline coverage outright when the basics are missing, and many now run an external scan of your network before they quote. On the application, they ask, in writing, for your security risk analysis.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The same short list of controls shows up on nearly every application: multi-factor authentication, endpoint protection, backups that are tested and cannot be silently deleted, a written incident response plan, and a documented risk analysis. None of that is unfamiliar. CISA names the same controls as essential defenses against ransomware, and HIPAA's Security Rule already requires most of them. The work that makes you insurable is, almost line for line, the work that makes you pass an OCR audit.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "There is a sting in the tail. If you attest to a control you do not actually have, and a breach happens, a forensic review can surface the gap and the claim can be denied. The controls have to be real, and you have to be able to show the documentation. That is the same standard OCR applies.",
+        ],
+      },
+      {
+        type: "p",
+        runs: ["Here is how the application questions line up with the rule."],
+      },
+      {
+        type: "table",
+        headers: ["What the cyber insurer asks", "The matching HIPAA Security Rule control"],
+        rows: [
+          ["Do you enforce MFA on email, remote access, and admin accounts?", "Access control and authentication, 45 CFR 164.312(a)(1) and 164.312(d)"],
+          ["Do you encrypt ePHI at rest and in transit?", "Encryption, 45 CFR 164.312(a)(2)(iv) and 164.312(e)(2)(ii)"],
+          ["Have you done a security risk analysis?", "Risk analysis, 45 CFR 164.308(a)(1)(ii)(A)"],
+          ["Do you keep tested, offline backups?", "Contingency plan and data backup, 45 CFR 164.308(a)(7)"],
+          ["Do you have a written incident response plan?", "Security incident procedures, 45 CFR 164.308(a)(6)"],
+          ["Do you train staff to spot phishing?", "Security awareness and training, 45 CFR 164.308(a)(5)"],
+        ],
+        caption:
+          "The same controls decide whether you are insurable and whether you pass an OCR audit. One set of work covers both.",
+      },
+      { type: "h2", text: "The bottom line" },
+      {
+        type: "p",
+        runs: [
+          "Compliance and insurance answer two different questions. HIPAA tells you what you are required to do to protect patient data. Doing it is what makes you both audit-ready and insurable. Cyber insurance is what pays when something gets through anyway. You need both, and neither one is a substitute for the other.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The fastest way to see where you stand is to check the controls an insurer and OCR both ask about: multi-factor authentication, encryption, backups, and a risk analysis. Our free ",
+          { text: "HIPAA Risk Scorecard", href: "/scorecard" },
+          " does exactly that. It takes a few minutes, it names your specific gaps, and it shows you what an underwriter or an auditor would find before they find it. From there, a short review walks you through closing them, which is also what tends to bring an insurer's premium down.",
+        ],
+      },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          ["U.S. District Court for the District of Nevada, Jordan v. Absolute Dental Group, LLC (proposed class-action settlement, final approval hearing 2026)."],
+          ["HHS Office for Civil Rights, Breach Portal report, Absolute Dental Group (2025)."],
+          ["45 CFR \u00a7 160.404, civil money penalty amounts (eCFR, current)."],
+          ["Federal Register, HHS civil monetary penalty inflation adjustment, effective January 28, 2026 (2026-01688)."],
+          ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025 (90 FR 800)."],
+          ["45 CFR \u00a7\u00a7 164.306, 164.308, 164.312, Security Rule standards (eCFR, current)."],
+          ["U.S. Government Accountability Office, Cyber Insurance: Insurers and Policyholders Face Challenges in an Evolving Market (GAO-21-477, 2021)."],
+          ["U.S. Government Accountability Office, Cyber Insurance: Action Needed to Assess Potential Federal Response to Catastrophic Attacks (GAO-22-104256, 2022)."],
+          ["Cybersecurity and Infrastructure Security Agency (CISA), #StopRansomware Guide."],
+          ["Federal Trade Commission, Data Breach Response: A Guide for Business."],
+          ["IBM, Cost of a Data Breach Report 2025 (healthcare figures)."],
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Does cyber insurance cover HIPAA fines?",
+        answer:
+          "Sometimes, and not in the way most owners assume. The cost of defending an OCR investigation is usually covered under a policy's regulatory clause. The penalty itself is far less certain: coverage depends on your state's law and your policy wording, some policies cap regulatory fines at a low sublimit, and penalties that are punitive in nature are often not insurable as a matter of public policy. Ask your broker to confirm, in writing, exactly what is covered and at what limit before you rely on it.",
+      },
+      {
+        question: "Is cyber insurance required for HIPAA compliance?",
+        answer:
+          "No. HIPAA does not require a covered entity to carry cyber insurance. What can require it is a contract, such as your IT vendor's business associate agreement, a lender, or a dental support organization. Separately, insurers increasingly expect controls like multi-factor authentication, encryption, and tested backups before they will issue a policy, which HIPAA's Security Rule calls for anyway.",
+      },
+      {
+        question: "How much is cyber insurance for a small dental practice?",
+        answer:
+          "It varies widely. Industry sources put a small practice's standalone cyber premium in the low thousands of dollars a year for a $1 million limit, but the real number depends on your patient-record count, the security controls you can prove, your claims history, and your state. Get a quote rather than budgeting from a published range. For perspective, GAO reports that healthcare faces tighter terms and higher premiums than most sectors.",
+      },
+      {
+        question: "What is the difference between cyber insurance and HIPAA compliance?",
+        answer:
+          "HIPAA compliance is the set of safeguards you are legally required to put in place to protect patient data. Cyber insurance is a financial product that pays for the response and the liability after a breach happens anyway: forensics, patient notification, lawsuits, and regulatory defense. Compliance is the prevention and the legal duty; insurance is the backstop. Neither replaces the other.",
+      },
+      {
+        question: "Will my business owner's policy cover a data breach?",
+        answer:
+          "Almost certainly not. A standard business owner's policy typically excludes losses from electronic data breaches, which is why cyber is sold as its own coverage. GAO has documented that traditional property and casualty policies increasingly carve cyber out and offer it separately. If you are unsure, ask your broker to point to the exact clause in your policy.",
+      },
+      {
+        question: "Can a cyber insurance claim be denied even if I have a policy?",
+        answer:
+          "Yes. The two most common reasons are an excluded event, such as a war or widespread-event exclusion, and a mismatch between the controls you listed on your application and what was actually running when the breach occurred. Carriers have denied claims after a forensic review found that an attested control, like enforced multi-factor authentication, was not in place. Document your controls and keep the documentation current.",
+      },
     ],
   },
 ];
