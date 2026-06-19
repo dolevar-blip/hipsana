@@ -305,6 +305,17 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
+          "One data flow that is easy to leave out of that inventory is your own website. A booking page or contact form can send patient details to third parties through analytics or advertising code, so it belongs in the same analysis, ",
+          {
+            text: "as the rules on website tracking pixels spell out",
+            href: "/articles/are-tracking-pixels-hipaa-compliant-dental-practice",
+          },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
           "This is also why a generic checklist fails the test. A checklist tracks whether you have a policy; a risk analysis evaluates whether that policy actually protects the data in your environment. OCR has said as much, and the practices that get cited often have a binder of policies and no real analysis behind them.",
         ],
       },
@@ -2803,7 +2814,12 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The one real exception is narrow. A vendor that only carries data from one point to another without storing it, a true conduit such as the postal service or an internet provider, is not a business associate. OCR draws the line at whether the company maintains or can access the data, not at whether anyone there looks. That is why cloud storage and most email services are business associates and the phone company is not. When in doubt, treat the vendor as one and ask for the agreement.",
+          "The one real exception is narrow. A vendor that only carries data from one point to another without storing it, a true conduit such as the postal service or an internet provider, is not a business associate. OCR draws the line at whether the company maintains or can access the data, not at whether anyone there looks. That is why cloud storage and most email services are business associates and the phone company is not. When in doubt, treat the vendor as one and ask for the agreement. The opposite case also comes up: a few vendors that receive patient data will not sign a BAA at all, the way website analytics and advertising pixels such as Google Analytics and the Meta Pixel do, which is why ",
+          {
+            text: "website tracking pixels are their own HIPAA problem",
+            href: "/articles/are-tracking-pixels-hipaa-compliant-dental-practice",
+          },
+          ".",
         ],
       },
       {
@@ -5807,6 +5823,372 @@ export const articles: Article[] = [
         question: "Does HIPAA require me to encrypt text messages?",
         answer:
           "Not outright. Encryption is an addressable safeguard, which means you either use it or document why it is not reasonable. The simpler answer for texts is to keep clinical detail out entirely and move anything sensitive to a secure portal or a call. Even with minimal texts, you should still evaluate the security of any method you use.",
+      },
+    ],
+  },
+  {
+    slug: "are-tracking-pixels-hipaa-compliant-dental-practice",
+    status: "published",
+    title: "Are Tracking Pixels HIPAA Compliant? A Dentist's Guide (2026)",
+    metaTitle: "Are Tracking Pixels HIPAA Compliant? (Dental)",
+    description:
+      "Are tracking pixels HIPAA compliant for a dental practice? It depends on the page. Here is what OCR, Google, the FTC, and the courts actually say in 2026.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-19",
+    dateModified: "2026-06-19",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "The honest answer is that it depends which page the pixel sits on. On a homepage that only shows information, a Facebook or Google tracking pixel is usually fine. On your online booking page, the same pixel can quietly hand a patient's information to a third party, and that is the version that has drawn regulatory attention and lawsuits. In 2025, the dental chain Aspen Dental agreed to a settlement fund of more than $18 million in a case built on that scenario. Here is where the line actually falls, what a 2024 court ruling did and did not change, and how to tell if your own site is on the wrong side of it.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "It depends on the page. " },
+            "A tracking pixel on a page with no patient information, like your homepage, hours, or directions, is generally outside HIPAA. On a page that touches patient data, it usually is not.",
+          ],
+          [
+            { strong: "The booking page is where the risk concentrates. " },
+            "When a patient requests an appointment online, a pixel can send their details to a third party. OCR treats that as a disclosure of protected health information.",
+          ],
+          [
+            { strong: "No BAA is available for them. " },
+            "Google does not offer a business associate agreement for Google Analytics, and as of 2026 none is available for the Meta Pixel either, so on a page that handles patient data there is no agreement that would make them compliant.",
+          ],
+          [
+            { strong: "A cookie banner does not fix it. " },
+            "Clicking \"accept cookies\" is not a HIPAA authorization, and neither is a line in your privacy policy. OCR says this directly.",
+          ],
+          [
+            { strong: "A 2024 ruling narrowed one theory, not the rule. " },
+            "A court struck down OCR's claim that an IP address plus a visit to a public health page is automatically protected information. The rest of the guidance still stands.",
+          ],
+          [
+            { strong: "Two separate risks. " },
+            "HIPAA is enforced by the government, not by patients. Patients sue under other laws, which is how a dental chain ended up settling for more than $18 million.",
+          ],
+        ],
+      },
+
+      { type: "h2", text: "When is a tracking pixel actually a HIPAA problem?" },
+      {
+        type: "p",
+        runs: [
+          "A tracking pixel is a small piece of third-party code, like the Meta Pixel or Google Analytics, that records what a visitor does and sends it back to the company that made it. The HIPAA question is not whether you run one. It is whether the page it sits on can send a patient's information to that company. ",
+          {
+            text: "HHS OCR drew the line around what the page can see",
+            href: "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/hipaa-online-tracking/index.html",
+          },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "On a page a patient has to log in to reach, like a patient portal, the pixel generally has access to protected health information, so HIPAA applies. On a general marketing page that anyone can read without logging in, like your hours or job postings, it usually does not. The surprise is in the middle: a page that lets someone book an appointment, fill in a contact form, or complete a new-patient intake form without logging in can still expose patient data, because the visitor types in a name and a reason for the visit. OCR treats that as a disclosure too.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Google says the same thing about its own product. Its official guidance tells HIPAA-regulated entities not to put Google Analytics on authenticated pages, and not to put it on unauthenticated pages that relate to the provision of health care. ",
+          {
+            text: "You can read Google's instruction in its own words",
+            href: "https://support.google.com/analytics/answer/13297105",
+          },
+          ".",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Usually fine", "Treat as risky", "Almost always a problem"],
+        rows: [
+          [
+            "Homepage, hours, directions, parking",
+            "A service page that names a specific treatment",
+            "The online appointment-booking page",
+          ],
+          [
+            "Job postings and general practice info",
+            "A URL that reveals the service, like /dental-implants",
+            "The patient portal or any logged-in page",
+          ],
+          [
+            "A blog post with no form on it",
+            "A plain contact form (name and email only)",
+            "A new-patient or intake form, or any form asking the reason for a visit",
+          ],
+        ],
+        caption:
+          "The dividing line is whether the page can send patient information to a third party, and a service page mainly becomes risky when a URL, a form, or other data can tie a visitor to that treatment. Adapted from HHS OCR guidance and Google's own instructions for HIPAA-regulated sites.",
+      },
+
+      { type: "h2", text: "Why you can't just sign a BAA and move on" },
+      {
+        type: "p",
+        runs: [
+          "For most vendors that handle patient data, the fix is a business associate agreement, a contract that binds them to HIPAA's rules. OCR's guidance is built on it: if a tracking vendor receives protected health information, you may only share it ",
+          {
+            text: "with a permission under the Privacy Rule",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502",
+          },
+          ", and that vendor has to sign an agreement.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Here is the catch for pixels. Google states plainly that it makes no representations that Analytics meets HIPAA and does not offer business associate agreements for the service. As of 2026, there is no such agreement on offer for the Meta Pixel either. So on a page that handles patient data, the contract that would make the pixel compliant does not exist. The only route the rules leave open is a signed HIPAA authorization from each visitor before any tracking happens, which is not practical for a marketing website.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "And the shortcuts do not work. A cookie banner asking visitors to accept tracking is not a HIPAA authorization. Naming the pixel in your privacy policy does not create permission to share. Even a promise from the vendor to strip the data after it arrives is not enough, because the disclosure already happened when the page sent it. The agreement question that sits underneath all of this, which vendors count as business associates and what the contract has to say, is its own topic, covered in ",
+          {
+            text: "does my dental practice need a BAA",
+            href: "/articles/does-my-dental-practice-need-a-baa",
+          },
+          ".",
+        ],
+      },
+
+      { type: "h2", text: "Did the 2024 court ruling make this go away?" },
+      {
+        type: "p",
+        runs: [
+          "Partly, and a lot of online advice gets this wrong in both directions. In June 2024, a federal court in American Hospital Association v. Becerra struck down one specific piece of OCR's guidance: the claim that an IP address combined with a visit to a public, no-login page about a health condition is automatically protected information. That theory is gone, nationwide. ",
+          {
+            text: "OCR notes the ruling at the top of its own bulletin",
+            href: "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/hipaa-online-tracking/index.html",
+          },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "But that is the only part that fell. The rest of the guidance still applies: patient portals and logged-in pages, booking pages and intake forms that collect patient data, the business associate requirement, the duty to address tracking in your risk analysis, and breach notification when patient data leaks. The ruling is about the limits of HIPAA, and it does not touch the other ways a pixel can create legal exposure for a practice, the FTC and private lawsuits, which run on different laws entirely. The accurate read is narrow: pixels are not banned, and the ruling did not make the issue disappear.",
+        ],
+      },
+
+      { type: "h2", text: "It's not only HIPAA: the FTC and the courts" },
+      {
+        type: "p",
+        runs: [
+          "Even where HIPAA stops, two other doors stay open. The Federal Trade Commission has pursued health companies over data shared through pixels. In its first action under the Health Breach Notification Rule, it reached a $1.5 million civil penalty with the prescription-discount service GoodRx over allegations that it shared users' health information with Facebook and Google through tracking pixels and other tools. ",
+          {
+            text: "The FTC laid out the case in its own announcement",
+            href: "https://www.ftc.gov/news-events/news/press-releases/2023/02/ftc-enforcement-action-bar-goodrx-sharing-consumers-sensitive-health-info-advertising",
+          },
+          ". GoodRx is a health app rather than a dental office, so that specific rule may not reach your practice, but it shows the direction regulators are moving, and the FTC's deception authority can reach any business that misstates how it handles data.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The more common consequence has been private litigation. Patients have no private right of action under HIPAA itself; it is enforced by the government, federal regulators and, in some cases, state attorneys general, not by individuals. Instead, patients sue under state wiretapping and privacy laws, arguing that a pixel intercepted their communications without consent. A 27-hospital system, Advocate Aurora Health, ",
+          {
+            text: "agreed to a settlement of more than $12 million",
+            href: "https://www.advocateaurorasettlement.com/home/faqs2/",
+          },
+          " over tracking pixels on its website and patient portal, while denying any wrongdoing. Those cases have produced multimillion-dollar settlements against healthcare providers, and dental practices are not exempt.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["", "Who can act", "Over what"],
+        rows: [
+          [
+            "HIPAA",
+            "HHS Office for Civil Rights",
+            "Sending patient data to a vendor with no permission and no BAA",
+          ],
+          [
+            "FTC",
+            "Federal Trade Commission",
+            "Misleading privacy claims; health apps under the Health Breach Notification Rule",
+          ],
+          [
+            "Lawsuits",
+            "Patients, by class action",
+            "State wiretapping and privacy laws, since HIPAA has no private right of action",
+          ],
+          [
+            "State AGs",
+            "State attorneys general",
+            "State consumer-protection and privacy laws, and in some cases HIPAA itself",
+          ],
+        ],
+        caption:
+          "Four separate doors. One tracking pixel on the wrong page can open more than one of them at the same time.",
+      },
+
+      { type: "h2", text: "What Aspen Dental's $18 million settlement shows" },
+      {
+        type: "p",
+        runs: [
+          "In 2025, Aspen Dental Management agreed to a settlement fund of more than $18 million in a class action, ",
+          {
+            text: "Donnelly v. Aspen Dental Management",
+            href: "https://www.aspendentalpixelsettlement.com/",
+          },
+          ". The patients claimed the dental chain's website used the Meta Pixel and Google tools that allegedly sent information about people who booked appointments online to Facebook and Google, without their consent. Aspen denied any wrongdoing, and a settlement is not a court finding that a company broke the law.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The lesson for a small practice is not the headline number. This was not a hospital with a vast data operation. It was an ordinary booking page. The payout per patient was small; the total came from the sheer number of people who had booked. The same setup, a Facebook or Google pixel firing on your \"request an appointment\" page, is the same kind of tracking the case was built on.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/pixel-class-action-settlement-aspen-dental-tracking.webp",
+        alt:
+          "Summary card for the 2025 Aspen Dental tracking-pixel class-action settlement: Aspen Dental Management agreed to a settlement fund of more than 18 million dollars to resolve claims that tracking pixels on its appointment-booking website sent patient information to Meta (Facebook) and Google without consent. The company denied wrongdoing. Labeled as a private class-action settlement, not an OCR penalty or government fine.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "Source: Donnelly v. Aspen Dental Management, Inc., No. 2025LA000036 (Circuit Court of Sangamon County, Illinois), a settlement fund of more than $18 million over tracking pixels that allegedly sent online-booking data to Meta and Google. Aspen Dental denied wrongdoing. This is a private class-action settlement, not a government penalty.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "You do not have to guess whether your own booking page has the same gap. The free ",
+          { text: "HIPAA Scorecard", href: "/scorecard" },
+          " checks your website tracking and vendor setup along with eight other core controls, and names your top gap in about three minutes. It is a starting point, not a full audit, but it tells you where you stand.",
+        ],
+      },
+
+      { type: "h2", text: "How to check your dental website for tracking pixels" },
+      {
+        type: "p",
+        runs: [
+          "You do not need a developer for the first pass. Five steps tell you most of what you need to know, and the result feeds straight into the ",
+          {
+            text: "dental HIPAA risk assessment",
+            href: "/articles/do-dental-practices-need-hipaa-risk-assessment",
+          },
+          " every practice has to keep.",
+        ],
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Inventory every tag on your site",
+            detail:
+              "List the trackers you run: the Meta Pixel, Google Analytics, Google Tag Manager, ad pixels, chat widgets, and form tools. Pay special attention to Google Tag Manager, since it is a container that can load many other trackers at once and most practices don't know what is firing through it. A free privacy scanner or your browser's developer tools will show what actually fires on each page.",
+          },
+          {
+            label: "Sort your pages into two piles",
+            detail:
+              "Marketing pages with no patient data on one side: homepage, services, blog. Pages that touch patient data on the other: the booking page, the patient portal, intake and contact forms.",
+          },
+          {
+            label: "Pull pixels off any page that touches patient data",
+            detail:
+              "Remove or block the Meta Pixel, Google Analytics, and ad tags on the booking page, the portal, and any form that collects a name plus a reason for the visit. This is the single highest-value fix.",
+          },
+          {
+            label: "Check your URLs and page titles",
+            detail:
+              "A link like /book?service=root-canal puts the treatment name into the data the page sends to any pixel loaded on it. Strip health detail out of the URLs and page titles on any page you still track.",
+          },
+          {
+            label: "Write it into your risk analysis",
+            detail:
+              "OCR's stated enforcement priority for tracking is the Security Rule. Record what tracks what, and your decision to keep pixels off patient-data pages, in your risk analysis.",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Going dark is not the only option. You can still measure your traffic without the HIPAA exposure: keep marketing pixels only on pages with no patient data, and for everything else use analytics that never send visitor data to a third party, like server-side logging or privacy-first tools that do not rely on cookies. For the record, this site is built to sidestep the problem: privacy-first, cookieless analytics and no third-party advertising or social pixels at all. The expensive path is sorting it out after a dispute has already begun.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This is general information about HIPAA, the FTC Act, and state privacy law, not legal advice. This is an unsettled and fast-moving area, and the right answer depends on your specific site and your state. Before you rely on any tracking setup on a page that could touch patient data, have it reviewed by counsel.",
+        ],
+      },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          [
+            "HHS Office for Civil Rights, \u201cUse of Online Tracking Technologies by HIPAA Covered Entities and Business Associates\u201d (hhs.gov, accessed June 2026), including the June 20, 2024 vacatur note for Am. Hosp. Ass\u2019n v. Becerra, No. 4:23-cv-1110 (N.D. Tex.).",
+          ],
+          [
+            "45 CFR \u00a7 164.502(a) (permitted uses and disclosures of PHI) and \u00a7 164.508(a)(3) (authorization required for marketing) (eCFR, current).",
+          ],
+          [
+            "45 CFR \u00a7 164.308(a) (security risk analysis and risk management) and \u00a7 164.312(e) (transmission security) (eCFR, current).",
+          ],
+          [
+            "45 CFR \u00a7 160.103 (definitions of \u201cbusiness associate\u201d and \u201cprotected health information\u201d) (eCFR, current).",
+          ],
+          [
+            "Google, \u201cHIPAA and Google Analytics,\u201d Analytics Help (support.google.com, accessed June 2026): Google does not offer a business associate agreement for Google Analytics, and HIPAA-regulated entities should not set Analytics tags on HIPAA-covered pages.",
+          ],
+          [
+            "Federal Trade Commission, \u201cFTC Enforcement Action to Bar GoodRx from Sharing Consumers\u2019 Sensitive Health Info for Advertising\u201d (ftc.gov, Feb. 1, 2023): first action under the Health Breach Notification Rule; $1.5 million civil penalty.",
+          ],
+          [
+            "Donnelly, et al. v. Aspen Dental Management, Inc., No. 2025LA000036 (Cir. Ct. Sangamon County, Ill.): settlement fund of more than $18 million over tracking-pixel disclosures; the company denied wrongdoing (official settlement website, accessed June 2026).",
+          ],
+          [
+            "In re Advocate Aurora Health Pixel Litigation, No. 2:22-cv-1253 (E.D. Wis.): a $12,225,000 settlement fund over tracking pixels on the system's website and patient portal; the company denied wrongdoing (official settlement website, accessed June 2026).",
+          ],
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Is Google Analytics HIPAA compliant?",
+        answer:
+          "No, not as a HIPAA-compliant tool: Google does not offer a business associate agreement for Google Analytics, so it does not belong on any page that handles patient data, like your booking page or patient portal. On a marketing page with no patient information, such as your homepage, it is generally fine.",
+      },
+      {
+        question: "Is the Facebook (Meta) pixel allowed on a dental website?",
+        answer:
+          "In practice, keep it off any page that handles patient data. There is no business associate agreement available for the Meta Pixel, so on a booking page, a patient portal, or an intake form it can create an impermissible disclosure of protected health information. On a marketing page with no patient data, it is generally fine.",
+      },
+      {
+        question: "Didn't a 2024 court ruling say tracking pixels are fine now?",
+        answer:
+          "No. The 2024 ruling in AHA v. Becerra struck down one narrow theory, that an IP address plus a visit to a public health page is automatically protected. The rules for booking pages, patient portals, and business associate agreements still apply, and the ruling does not affect the FTC or private lawsuits.",
+      },
+      {
+        question: "Does a cookie consent banner make tracking HIPAA compliant?",
+        answer:
+          "No. Clicking accept on a cookie banner is not a HIPAA authorization, and neither is a disclosure in your privacy policy. HIPAA requires a permission under the Privacy Rule and a signed agreement with any vendor that receives patient data.",
+      },
+      {
+        question: "Can a patient sue my dental practice over a tracking pixel?",
+        answer:
+          "Not under HIPAA itself, which has no private right of action and is enforced by the government, not by individuals. But patients have sued healthcare providers under state wiretapping and privacy laws over website pixels, and those cases have produced large settlements, including ones involving a national dental chain and a major hospital system.",
+      },
+      {
+        question: "What can I use instead of Google Analytics or the Meta Pixel?",
+        answer:
+          "Keep marketing pixels only on pages with no patient data. For everything else, use analytics that never send visitor data to a third party, such as server-side logging or privacy-first, cookieless tools. Document the choice in your risk analysis.",
       },
     ],
   },
