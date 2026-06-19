@@ -13,11 +13,8 @@ type Props = {
 
 /**
  * Inline Cal.com booking widget for the result page.
- * - Prefills the attendee's email + practice name (passed from the URL) via the
- *   embed config object, which is Cal.com's reliable prefill path for inline embeds.
- * - Forwards a successful booking to GA4 as `review_booked` (the held meeting is the
- *   goal metric). Listens to both the current and legacy event names, guarded so it
- *   fires once.
+ * Prefills the attendee's email + practice name (passed from the URL) via the
+ * embed config object, which is Cal.com's reliable prefill path for inline embeds.
  */
 export default function ReviewBookingEmbed({ email, name }: Props) {
   useEffect(() => {
@@ -76,29 +73,6 @@ export default function ReviewBookingEmbed({ email, name }: Props) {
       hideEventTypeDetails: false,
       styles: { branding: { brandColor: BRAND } },
     });
-
-    let fired = false;
-    const onBooking = () => {
-      if (fired) return;
-      fired = true;
-      const gtag = (window as any).gtag;
-      if (typeof gtag === "function") gtag("event", "review_booked");
-    };
-    // bookingSuccessfulV2 is current; bookingSuccessful is the legacy name.
-    Cal("on", { action: "bookingSuccessfulV2", callback: onBooking });
-    Cal("on", { action: "bookingSuccessful", callback: onBooking });
-
-    return () => {
-      const Cal2 = (window as any).Cal;
-      if (typeof Cal2 === "function") {
-        try {
-          Cal2("off", { action: "bookingSuccessfulV2", callback: onBooking });
-          Cal2("off", { action: "bookingSuccessful", callback: onBooking });
-        } catch {
-          /* no-op */
-        }
-      }
-    };
   }, [email, name]);
 
   return (
