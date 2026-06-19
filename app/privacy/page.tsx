@@ -95,7 +95,7 @@ export default function PrivacyPage() {
           To deliver the free review, we share your details with one
           specialist partner who carries out the assessment and may follow up
           with you. We share your information with that one partner only. We do
-          not sell your information or pass it to multiple companies.
+          not sell or rent it to data brokers, hand it to multiple companies, or share it for unrelated advertising.
         </p>
         <p>
           We may also share information with the service providers that run our
