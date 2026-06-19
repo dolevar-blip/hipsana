@@ -232,7 +232,7 @@ export default function HomePage() {
             Answer ten yes/no questions about how your practice handles patient
             data. You&rsquo;ll get a score out of 100 and a written review of your
             biggest gaps, plus the option to book a short risk review and an
-            intro to a vetted specialist if you want help. About three minutes.
+            intro to a specialist if you want help. About three minutes.
           </p>
 
           <div className="mt-8">
