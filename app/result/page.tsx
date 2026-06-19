@@ -186,9 +186,9 @@ export default function ResultPage({ searchParams }: { searchParams: SP }) {
 
   const cta =
     band === "high"
-      ? "The free 15-minute review shows you which of these to fix first, and exactly how, for a practice your size. Most of it is more fixable than it looks. It's run by us, not a salesperson, and there's nothing to buy."
+      ? "The free 15-minute review walks through what your answers flag and what each gap tends to mean for a practice your size, in plain English. If you want help closing them, we'll point you to a specialist. Most of it is more fixable than it looks. It's run by us, not a salesperson, and there's nothing to buy."
       : band === "gaps"
-      ? "The free 15-minute review shows you which of these to fix first, and exactly how, for a practice your size. It's run by us, not a salesperson, and there's nothing to buy."
+      ? "The free 15-minute review walks through what your answers flag and what each gap tends to mean for a practice your size, in plain English. If you want help closing them, we'll point you to a specialist. It's run by us, not a salesperson, and there's nothing to buy."
       : band === "strong"
       ? `The free 15-minute review confirms what's solid and walks you through ${
           failed.length === 1 ? "that point" : "those points"
