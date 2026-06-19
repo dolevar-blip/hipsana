@@ -107,12 +107,9 @@ export default function PrivacyPage() {
         <h2>Analytics and cookies</h2>
         <p>
           We use Google Analytics to see, in aggregate, how visitors use the
-          site, such as which pages are read. We also use Microsoft Clarity,
-          which produces heatmaps and session recordings (replays of how
-          visitors move through our pages) so we can find where the site is
-          confusing and improve it. These tools may set cookies. You can block
-          or delete cookies in your browser settings, and you can opt out of
-          Google Analytics using Google&rsquo;s browser add-on.
+          site, such as which pages are read. Google Analytics may set cookies.
+          You can block or delete cookies in your browser settings, and you can
+          opt out of Google Analytics using Google&rsquo;s browser add-on.
         </p>
 
         <h2>How long we keep it</h2>
