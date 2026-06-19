@@ -232,7 +232,7 @@ export default function ResultPage({ searchParams }: { searchParams: SP }) {
       </div>
 
       <p className="mt-6 max-w-prose text-sm italic text-muted">
-        By booking, you agree we may share your details with a vetted specialist
+        By booking, you agree we may share your details with a specialist
         if a referral makes sense.
       </p>
 
