@@ -5463,6 +5463,353 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "hipaa-text-messaging-dental-practice",
+    status: "published",
+    title: "Is Texting Patients HIPAA Compliant? A Dentist's Guide (2026)",
+    metaTitle: "Texting Patients: HIPAA + TCPA Rules (Dental)",
+    description:
+      "Is texting patients HIPAA compliant for a dental practice? Yes, but a second law, the TCPA, controls consent and opt-outs. Here is the full 2026 picture.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-19",
+    dateModified: "2026-06-19",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "Yes, and that is only half of the answer. HIPAA lets a dental practice text appointment reminders without special permission, as long as the message stays minimal. But a second federal law decides whether you were allowed to text in the first place, and whether you stopped when a patient asked you to. That law is the TCPA, and a different agency enforces it. In 2024, a Texas dental group agreed to pay about $1 million to settle a class-action texting lawsuit that covered thousands of people over several years. Here is what each law actually requires, what changed in 2026, and how to satisfy both.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "HIPAA allows the reminder. " },
+            "Appointment reminders count as treatment, so the Privacy Rule lets you send them without a signed authorization. The catch is content: keep the text to logistics.",
+          ],
+          [
+            { strong: "A HIPAA yes is not a TCPA yes. " },
+            "The TCPA is a separate law, run by the FCC, not HHS. It governs consent to text and the right to opt out. The same reminder can satisfy HIPAA and still break the TCPA.",
+          ],
+          [
+            { strong: "Giving you a number is usually the consent. " },
+            "When a patient hands you their cell number, that is generally treated as permission to text them about their care, absent instructions otherwise. Marketing is different, and it needs written consent.",
+          ],
+          [
+            { strong: "STOP has to work. " },
+            "Since April 2025, a patient can opt out using any reasonable wording, and you have to honor it. The penalty for ignoring an opt-out is charged for every message.",
+          ],
+          [
+            { strong: "Your texting vendor usually needs a BAA. " },
+            "Most texting platforms store and handle patient information for you, which makes them a business associate. A pure phone carrier that only passes the message along is the narrow exception. No agreement, no compliant texting.",
+          ],
+          [
+            { strong: "The math is per message. " },
+            "TCPA damages run $500 to $1,500 for each text. Across a patient list that adds up fast, which is how a Texas dental group ended up settling for about $1 million.",
+          ],
+        ],
+      },
+
+      { type: "h2", text: "Does HIPAA let a dental practice text patients?" },
+      {
+        type: "p",
+        runs: [
+          "Yes. The HIPAA Privacy Rule treats an appointment reminder as part of treatment, so you do not need a separate authorization to send one. ",
+          { text: "HHS says this plainly", href: "https://www.hhs.gov/hipaa/for-professionals/faq/286/are-appointment-reminders-allowed-under-hipaa-without-authorization/index.html" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The limit is on what the message says. The ",
+          { text: "minimum necessary standard does not apply to a message you send to the patient about their own care", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502" },
+          ", but that is not a license to put clinical detail in a text. A reminder can be read on a lock screen or seen by someone holding the phone, so the safe content is the logistics of the visit and nothing about why the patient is coming in.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Patients also get a say in how you reach them. Under ",
+          { text: "45 CFR 164.522(b)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.522" },
+          ", a patient can ask you to use a specific number or channel, and you have to accommodate a reasonable request. If someone asks you not to text them, that preference belongs in their record.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "One more HIPAA point sits behind the scenes: the service that sends the texts. Most reminder and texting platforms store your patient list and the messages, so they ",
+          { text: "create, receive, or maintain protected health information on your behalf", href: "https://www.hhs.gov/hipaa/for-professionals/special-topics/cloud-computing/index.html" },
+          ", which makes them a business associate that needs a signed agreement. A pure phone carrier that only passes a message along, without storing it, is the narrow conduit exception. If you are not sure which one your vendor is, treat it as a business associate and get the agreement.",
+        ],
+      },
+
+      { type: "h2", text: "What can you put in a text reminder, and what you can't?" },
+      {
+        type: "p",
+        runs: [
+          "Treat the text like a postcard a stranger could glance at. The date, the time, where to go, and who to call are fine. The reason for the visit is safer left out, because a text can be read by whoever is holding the phone.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Safe to include", "Use with care", "Keep out of a plain text"],
+        rows: [
+          [
+            "Appointment date, time, and location",
+            "The provider's name, when the specialty itself reveals a condition",
+            "The procedure, diagnosis, or treatment planned",
+          ],
+          [
+            "Practice name and a callback number",
+            "A balance due, which falls outside the FCC's health care message exemption",
+            "Any clinical note, test result, or image",
+          ],
+          [
+            "Generic prep and a \"reply STOP to opt out\" line",
+            "A department name that hints at why the patient is coming",
+            "Anything a patient would not want a stranger to read",
+          ],
+        ],
+        caption:
+          "What belongs in a standard appointment text. When you need to send anything in the right-hand column, move it to a secure portal or a phone call.",
+      },
+
+      { type: "h2", text: "Is texting patients a TCPA violation?" },
+      {
+        type: "p",
+        runs: [
+          "Not by itself. The TCPA, the Telephone Consumer Protection Act, treats a text as a phone call, and it runs on the FCC's rulebook, not HIPAA's. The question it asks is narrow: did you have the patient's consent to send an automated text to that number, and is the message about their care rather than a promotion?",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "For a dental practice, that consent usually already exists. There is no blanket exemption for health care texts, but the ",
+          { text: "FCC has long treated a patient who gives a health care provider their cell number", href: "https://www.fcc.gov/document/tcpa-omnibus-declaratory-ruling-and-order" },
+          " as having consented to care-related messages at that number, within the scope of the relationship and absent instructions otherwise. The ",
+          { text: "American Dental Association describes the same rule", href: "https://www.ada.org/resources/practice/legal-and-regulatory/follow-the-rules-when-phoning-patients" },
+          ". Courts have been re-examining how far that rule reaches, so treat it as the usual starting point rather than a guarantee: a reminder sent to a patient who gave you their number, with no marketing in it, generally clears the consent bar.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Marketing changes everything. A text promoting whitening or a membership plan is not a care message, and it needs the patient's prior express written consent before it goes out. Folding a promotion into an otherwise routine reminder is the fastest way to lose the protection the reminder had.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["", "HIPAA (HHS)", "TCPA (FCC)"],
+        rows: [
+          [
+            "What it asks",
+            "Is the patient's information protected?",
+            "Were you allowed to send this text?",
+          ],
+          [
+            "Who enforces it",
+            "HHS Office for Civil Rights",
+            "The FCC, plus private lawsuits and state attorneys general",
+          ],
+          [
+            "Consent for a reminder",
+            "None needed, because it is treatment",
+            "The patient giving you their number counts as consent",
+          ],
+          [
+            "Marketing texts",
+            "Need the patient's authorization",
+            "Need prior express written consent",
+          ],
+          [
+            "Opt-out",
+            "Honor confidential-communication requests",
+            "Honor any reasonable STOP, since April 2025",
+          ],
+          [
+            "The penalty",
+            "OCR settlements and corrective action plans",
+            "$500 to $1,500 for each text",
+          ],
+        ],
+        caption:
+          "Two laws, two separate yes-or-no questions. The same reminder can pass the HIPAA column and fail the TCPA column at the same time.",
+      },
+
+      { type: "h2", text: "What about consent and opt-outs?" },
+      {
+        type: "p",
+        runs: [
+          "The opt-out rules got stricter in 2025. Since April 11, 2025, a patient can revoke consent using any reasonable method, not just a keyword you chose for them. A reply of STOP counts, and so does any clear wording to the same effect. Once it arrives, you have to stop.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "One newer wrinkle works in your favor, for now. The FCC has a \"revoke-all\" rule that would treat a STOP to one kind of message as a STOP to everything you send. ",
+          { text: "In January 2026 the FCC pushed that requirement back to January 31, 2027", href: "https://www.fcc.gov/document/cgb-extends-effective-date-tcpas-consent-revocation-rule" },
+          ", so for now an opt-out applies to the program the patient replied to. The simpler practice is to honor it broadly anyway.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "There is also a Do Not Call angle. Texts to a number on the National Do Not Call Registry can draw a claim, and courts are still working out exactly how those rules apply to texts. The safe path does not depend on the outcome: text patients who gave you their number for care, keep marketing on a separate track, and honor every opt-out.",
+        ],
+      },
+
+      { type: "h2", text: "What did Jefferson Dental do wrong?" },
+      {
+        type: "p",
+        runs: [
+          "In 2024, a Texas dental group showed how the opt-out rule bites. Jefferson Dental, a network of more than 60 clinics run by JDC Healthcare Management, faced a class-action lawsuit claiming it kept sending marketing texts to people who had already replied STOP, and to numbers listed on the National Do Not Call Registry, over a four-year stretch.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The company denied any wrongdoing, but agreed to pay about $1 million to settle. The deal covered roughly 10,000 people, which works out to a small check each. The lesson for a solo practice is not the headline number. It is that the texts were not exotic. They were ordinary marketing texts that ignored opt-outs, and the per-message math did the rest.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/tcpa-class-action-settlement-jefferson-dental-texting.webp",
+        alt: "Summary card for the 2024 Jefferson Dental TCPA class-action settlement: a Texas dental group with more than 60 clinics agreed to pay about one million dollars to resolve claims it kept texting consumers after they replied STOP and after they registered on the National Do Not Call Registry. Labeled as a private class-action settlement, not an OCR penalty or government fine.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "Source: Lee v. JDC Healthcare Management, LLC (doing business as Jefferson Dental), No. 3:23-cv-01134-E (N.D. Tex.), a TCPA class-action settlement of about $1 million covering roughly 10,000 people, over texts sent after a STOP request and to Do Not Call numbers. The company denied wrongdoing. This is a private civil settlement, not a government penalty.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "You do not have to guess whether your texting setup has the same gap. The free ",
+          { text: "HIPAA Scorecard", href: "/scorecard" },
+          " checks your vendor coverage and your patient-communication practices along with eight other core controls, and names your top gap in about three minutes. It is a starting point, not a full audit, but it tells you where you stand.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "A texting class action is also exactly the kind of liability that ",
+          { text: "a dental practice's cyber and liability insurance", href: "/articles/dental-practice-cyber-insurance" },
+          " is meant to absorb, though policies vary widely on what they actually cover.",
+        ],
+      },
+
+      { type: "h2", text: "How to text patients the right way" },
+      {
+        type: "p",
+        runs: [
+          "None of this requires a lawyer. Five habits keep a dental practice on the right side of both laws.",
+        ],
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Capture consent at intake, and write it down",
+            detail:
+              "When a patient gives you a cell number, note that they agreed to text reminders, with the date. That record is what proves consent if anyone ever asks.",
+          },
+          {
+            label: "Keep the message to logistics",
+            detail:
+              "Date, time, location, and a callback number. No procedure, no diagnosis, no test name. Treat the text like a postcard a stranger could read.",
+          },
+          {
+            label: "Sign a BAA with your texting service",
+            detail:
+              "Most texting platforms store your patient list and messages, which makes them a business associate. A pure carrier that only passes the message along is the exception. If in doubt, sign the agreement before the first message goes out.",
+          },
+          {
+            label: "Put STOP in every message, and honor it fast",
+            detail:
+              "Add a simple opt-out line, make sure a STOP reply actually removes the patient from the list, and log the date it arrived. That record is what proves you honored it. Ignoring an opt-out is where the per-message penalties start.",
+          },
+          {
+            label: "Keep marketing on a separate track",
+            detail:
+              "Promotions need written consent and their own opt-in. Never fold an offer into a care reminder, because it strips the reminder of the consent it had.",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "A compliant texting setup is not expensive. Most practice-management platforms include reminders under a business associate agreement, and the secure version costs a fraction of what one ignored opt-out can. The costly path is the one Jefferson Dental took, after the fact. Email raises a parallel set of questions, which we cover in ",
+          { text: "is your dental practice's email HIPAA compliant", href: "/articles/is-email-hipaa-compliant-dental-practice" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This is general information about HIPAA and the TCPA, not legal advice. The TCPA changes often and varies by state, and your own risk analysis decides what is reasonable for your specific practice. When a texting program grows large or starts to include any marketing, have it reviewed by counsel.",
+        ],
+      },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          ["HHS Office for Civil Rights, FAQ 286, “Are appointment reminders allowed under the HIPAA Privacy Rule without authorizations?” (accessed June 2026)."],
+          ["45 CFR \u00a7 164.522(b) (confidential communications) and \u00a7 164.502(b) (minimum necessary, including uses and disclosures to the individual) (eCFR, current)."],
+          ["45 CFR \u00a7 164.312(e) (transmission security, an addressable specification) (eCFR, current)."],
+          ["45 CFR \u00a7 160.103 (definition of \u201cbusiness associate\u201d); HHS, Modifications to the HIPAA Rules (Omnibus Rule), 78 FR 5566 (Jan. 25, 2013); and HHS guidance on cloud computing and the conduit exception (hhs.gov, accessed June 2026)."],
+          ["Federal Communications Commission, 2015 TCPA Omnibus Declaratory Ruling and Order, FCC 15-72, 30 FCC Rcd 7961 (July 10, 2015) (health care message exemption; prior express consent)."],
+          ["Federal Communications Commission, 1992 TCPA Order, 7 FCC Rcd 8752 (1992) (providing a telephone number constitutes prior express consent to be called at that number, absent instructions to the contrary)."],
+          ["47 CFR \u00a7 64.1200 (FCC rules implementing the TCPA: consent, revocation of consent, and the National Do Not Call Registry) (eCFR, current)."],
+          ["Federal Communications Commission, Consumer and Governmental Affairs Bureau, Order DA-26-12A1 (Jan. 6, 2026) (extending the “revoke-all” provision of \u00a7 64.1200(a)(10) to January 31, 2027)."],
+          ["47 U.S.C. \u00a7 227(b)(3), (c)(5) (TCPA private right of action; statutory damages of $500 per violation, up to $1,500 for willful or knowing violations)."],
+          ["American Dental Association, “Follow the Rules When Phoning Patients” (TCPA health care message guidance; accessed June 2026)."],
+          ["Lee v. JDC Healthcare Management, LLC (doing business as Jefferson Dental), TCPA class-action settlement (2024); the company denied wrongdoing."],
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Do I need a patient's consent to send appointment reminder texts?",
+        answer:
+          "In practice, yes, and you usually already have it. When a patient gives you their cell number, the FCC treats that as consent to be contacted about their care. Keep the reminder free of marketing, include an opt-out, and note the consent in your records.",
+      },
+      {
+        question: "Is sending an appointment reminder by text a HIPAA violation?",
+        answer:
+          "No, not on its own. HIPAA treats reminders as part of treatment. The risk comes from putting clinical detail in the message, using a texting vendor with no business associate agreement, or ignoring a patient's request to stop.",
+      },
+      {
+        question: "Do I need a business associate agreement with my texting vendor?",
+        answer:
+          "Yes, if the service sends or stores messages that include patient information. A platform texting on your behalf is a business associate, and it needs a signed agreement before it handles any patient data.",
+      },
+      {
+        question: "What happens if I keep texting after a patient replies STOP?",
+        answer:
+          "That is a TCPA problem, and the damages are charged per message, from $500 to $1,500 each. Spread across a patient list, the exposure climbs quickly. One Texas dental group settled a case like this for about $1 million.",
+      },
+      {
+        question: "Can I text patients about promotions or special offers?",
+        answer:
+          "Only with separate, written consent. Marketing texts fall under stricter TCPA rules than care reminders, and mixing a promotion into a reminder removes the protection the reminder had.",
+      },
+      {
+        question: "Does HIPAA require me to encrypt text messages?",
+        answer:
+          "Not outright. Encryption is an addressable safeguard, which means you either use it or document why it is not reasonable. The simpler answer for texts is to keep clinical detail out entirely and move anything sensitive to a secure portal or a call. Even with minimal texts, you should still evaluate the security of any method you use.",
+      },
+    ],
+  },
 ];
 
 export function getAllArticles(): Article[] {
