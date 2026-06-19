@@ -208,6 +208,12 @@ export default function ResultPage({ searchParams }: { searchParams: SP }) {
           Your practice scored {Number.isFinite(score) ? score : scoreRaw}/100.
         </h1>
 
+        <p className="prose-hipsana mt-3 text-sm">
+          This is an educational self-assessment based only on your answers, not
+          an audit or legal advice. A high score doesn&rsquo;t mean your practice
+          is compliant.
+        </p>
+
         <p className="prose-hipsana mt-6">{intro}</p>
 
         {band !== "clear" && lead ? (
