@@ -78,6 +78,8 @@ export default function ReviewBookingEmbed({ email, name }: Props) {
   return (
     <div
       id="review-cal-inline"
+      role="region"
+      aria-label="Book your free 15-minute review"
       style={{ minHeight: 600, width: "100%", overflow: "auto" }}
     />
   );
