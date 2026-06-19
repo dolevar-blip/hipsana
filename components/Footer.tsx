@@ -48,7 +48,7 @@ export default function Footer() {
             <strong className="font-semibold text-muted">
               How we make money:
             </strong>{" "}
-            The Scorecard and review are free. If we connect you with a vetted
+            The Scorecard and review are free. If we connect you with a
             specialist and you choose to work with them, their firm pays us a
             referral fee. It never costs you anything and never changes your
             review. We share your details with that one partner only. See our{" "}
