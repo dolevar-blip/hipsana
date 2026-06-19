@@ -54,6 +54,17 @@ export default function ScorecardPage() {
       <p className="mt-6 max-w-prose text-sm text-muted">
         We use your answers to prepare your review.
       </p>
+
+      <p className="mt-3 max-w-prose text-sm text-muted">
+        Prefer not to use the form, or having trouble with it? Email{" "}
+        <a
+          href="mailto:hello@hipsana.com"
+          className="text-teal underline decoration-teal/30 underline-offset-2 hover:decoration-teal"
+        >
+          hello@hipsana.com
+        </a>{" "}
+        and we&rsquo;ll send it another way.
+      </p>
     </div>
   );
 }
