@@ -33,7 +33,7 @@ export default function PrivacyPage() {
           What we collect, and who we share it with.
         </h1>
 
-        <p className="mt-6 text-sm text-muted">Last updated: June 3, 2026</p>
+        <p className="mt-6 text-sm text-muted">Last updated: June 19, 2026</p>
 
         <p className="mt-6 text-lg leading-relaxed text-muted">
           Hipsana (&ldquo;we,&rdquo; &ldquo;us&rdquo;) publishes educational
@@ -106,10 +106,13 @@ export default function PrivacyPage() {
 
         <h2>Analytics and cookies</h2>
         <p>
-          We use Google Analytics to see, in aggregate, how visitors use the
-          site, such as which pages are read. Google Analytics may set cookies.
-          You can block or delete cookies in your browser settings, and you can
-          opt out of Google Analytics using Google&rsquo;s browser add-on.
+          We use Vercel Web Analytics to understand, in aggregate, how visitors
+          use the site, such as which pages are read. It is privacy-friendly: it
+          sets no cookies and collects no personal information, and visitors are
+          counted using an anonymized signal that cannot identify you or track
+          you across other sites. Some tools embedded on the site, such as our
+          form and scheduler, may set their own cookies, which you can block or
+          delete in your browser settings.
         </p>
 
         <h2>How long we keep it</h2>
