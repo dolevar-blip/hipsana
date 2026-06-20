@@ -3901,7 +3901,7 @@ export const articles: Article[] = [
       "How to Handle a Patient Records Request at a Dental Practice (2026)",
     metaTitle: "Patient Records Requests for Dentists (2026)",
     description:
-      "A patient asks for their dental records. HIPAA gives you 30 days, strict limits on fees, and few ways to say no. Get it wrong and OCR fines start at $25,000.",
+      "A patient asks for their dental records. HIPAA gives you 30 days, strict limits on fees, and few ways to say no. Get it wrong and one practice paid $70,000.",
     author: "Dolev Arama",
     datePublished: "2026-06-19",
     dateModified: "2026-06-19",
@@ -3921,13 +3921,13 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Get the timing or the fee wrong, and it is the kind of mistake the government has been fining dental practices for. In October 2024, the HHS Office for Civil Rights fined a solo Maryland dental practice, Gums Dental Care, $70,000. The reason was not a data breach. A patient had asked, by email, for copies of her and her children's dental records. The practice replied the same day but never sent the records, and kept refusing for almost three years. When the dentist contested the penalty all the way to a federal appeals board, the board sided with the government. It was the 50th time OCR has imposed a penalty for a records-access failure since 2019.",
+          "Get the timing or the fee wrong, and it is the kind of mistake the government has been fining dental practices for. In October 2024, the HHS Office for Civil Rights fined a solo Maryland dental practice, Gums Dental Care, $70,000. The reason was not a data breach. A patient had asked, by email, for copies of her and her children's dental records. The practice replied the same day but never sent the records, and kept refusing for almost three years. When the dentist contested the penalty all the way to a federal appeals board, the board sided with the government. It was the 50th enforcement action OCR has brought over a records-access failure since 2019.",
         ],
       },
       {
         type: "image",
         src: "/ocr-hipaa-settlement-gums-dental-right-of-access.webp",
-        alt: "Exhibit from the HHS Office for Civil Rights enforcement action against Gums Dental Care: OCR found the solo Maryland dental practice failed to give a patient timely access to her own and her children's records and imposed a $70,000 civil monetary penalty, its 50th right-of-access penalty since 2019.",
+        alt: "Exhibit from the HHS Office for Civil Rights enforcement action against Gums Dental Care: OCR found the solo Maryland dental practice failed to give a patient timely access to her own and her children's records and imposed a $70,000 civil monetary penalty, its 50th right-of-access enforcement action since 2019.",
         width: 1500,
         height: 760,
         caption: [
@@ -3936,7 +3936,7 @@ export const articles: Article[] = [
             text: "Civil monetary penalty against Gums Dental Care (October 2024)",
             href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/index.html",
           },
-          ". Highlights added by Hipsana: the $70,000 penalty, OCR's 50th right-of-access penalty, and the roughly three years the records were withheld.",
+          ". Highlights added by Hipsana: the $70,000 penalty, OCR's 50th right-of-access enforcement action, and the roughly three years the records were withheld.",
         ],
       },
       {
@@ -3952,7 +3952,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The right of access has become OCR's most active enforcement priority under the Privacy Rule. Since the agency launched its Right of Access Initiative in 2019, it has imposed more than 50 penalties under it, reaching its 53rd in 2025. Dental practices keep showing up on that list. On a single day, ",
+          "The right of access has become OCR's most active enforcement priority under the Privacy Rule. Since the agency launched its Right of Access Initiative in 2019, it has brought more than 50 enforcement actions under it, reaching its 54th by the end of 2025. Dental practices keep showing up on that list. On a single day, ",
           {
             text: "in September 2022, OCR settled three separate cases against dental practices",
             href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/september-2022-right-of-access-initiative/index.html",
@@ -3982,7 +3982,7 @@ export const articles: Article[] = [
         runs: [
           {
             strong:
-              "Most solo practices carry two or three HIPAA gaps they can't see. The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, including whether your records-request process would hold up, then sends you a short written review and an introduction to a specialist. It takes about three minutes. ",
+              "Most independent practices carry gaps they can't see from the inside. The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, including whether your records-request process would hold up, then sends you a short written review and an introduction to a specialist. It takes about three minutes. ",
           },
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
@@ -4079,7 +4079,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "This is where two of the dental cases turned. A Georgia practice, Great Expressions Dental Center of Georgia, told a patient she had to pay a $170 copying fee and would not release her records until she did. OCR found the fee was not reasonable and the delay was unlawful, and the practice paid $80,000. Gums Dental Care charged a $25 fee for records the patient had asked to receive by email. Because there is no real copying or supply cost for an emailed record, OCR found even that small fee improper. And you cannot hold records hostage over an unpaid dental bill. A patient's right to their record does not depend on whether they have settled their account.",
+          "This is where two of the dental cases turned. A Georgia practice, Great Expressions Dental Center of Georgia, told a patient she had to pay a $170 copying fee and would not release her records until she did. OCR concluded the fee went beyond what the Privacy Rule allows and that the delay denied the patient timely access, and the practice agreed to pay $80,000 to settle. Gums Dental Care charged a $25 fee for records the patient had asked to receive by email. Because there is no real copying or supply cost for an emailed record, OCR found even that small fee improper. And you cannot hold records hostage over an unpaid dental bill. A patient's right to their record does not depend on whether they have settled their account.",
         ],
       },
       { type: "h2", text: "The form and format the patient asks for" },
@@ -4123,11 +4123,11 @@ export const articles: Article[] = [
         headers: ["Jurisdiction", "Deadline to provide records"],
         rows: [
           ["Federal (HIPAA floor)", "30 calendar days, plus one 30-day extension"],
-          ["Texas", "15 business days"],
+          ["Texas", "30 days, no extension"],
           ["California", "15 days for copies; 5 business days to inspect"],
         ],
         caption:
-          "Examples only. Many states set a shorter deadline or cap copying fees. Confirm your own state's medical-records law, because the stricter rule is the one OCR and your state dental board will hold you to.",
+          "Examples only. Many states set a shorter deadline or cap copying fees. Confirm your own state's medical-records law, because the stricter rule is the one OCR and your state dental board will hold you to. (Texas: 22 Tex. Admin. Code \u00a7 108.8. California: Cal. Health & Safety Code \u00a7 123110.)",
       },
       {
         type: "p",
@@ -4158,7 +4158,9 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The right of access belongs to the patient, but a personal representative steps into the patient's shoes. For an adult, that is usually someone with legal authority such as a healthcare power of attorney. For a child, a parent or guardian is generally the personal representative, though state law carves out exceptions that matter in practice. Requests involving minors and parents raise enough of their own questions that they deserve separate treatment, ",
+          "The right of access belongs to the patient, but ",
+          { text: "a personal representative", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502" },
+          " steps into the patient's shoes. For an adult, that is usually someone with legal authority such as a healthcare power of attorney. For a child, a parent or guardian is generally the personal representative, though state law carves out exceptions that matter in practice. Requests involving minors and parents raise enough of their own questions that they deserve separate treatment, ",
           { text: "which we cover on its own", href: "/articles/parental-access-to-a-childs-dental-records" },
           ".",
         ],
@@ -4218,7 +4220,7 @@ export const articles: Article[] = [
           },
         ],
       },
-      { type: "h2", text: "Where solo practices slip" },
+      { type: "h2", text: "Where independent practices slip" },
       {
         type: "p",
         runs: [
@@ -4253,7 +4255,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
@@ -4302,7 +4304,7 @@ export const articles: Article[] = [
       {
         question: "Does my state have different rules than HIPAA?",
         answer:
-          "It might, and if it does, the stricter rule wins. HIPAA is a federal floor. Some states require faster turnaround, such as Texas at 15 business days, and some cap copying fees, such as California at 25 cents per page. Check your state's medical-records law alongside HIPAA and follow whichever is more protective of the patient.",
+          "It might, and if it does, the stricter rule wins. HIPAA is a federal floor. Some states are stricter than HIPAA. California, for example, requires copies within 15 days and caps the fee at 25 cents per page, and Texas requires dental records within 30 days, with no extension. Check your state's medical-records law alongside HIPAA and follow whichever is more protective of the patient.",
       },
     ],
   },
