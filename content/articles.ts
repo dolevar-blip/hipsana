@@ -1832,13 +1832,13 @@ export const articles: Article[] = [
             text: "announced a settlement",
             href: "https://www.hhs.gov/press-room/ocr-mmg-fusion-hipaa-agreement.html",
           },
-          " with MMG Fusion, LLC, a Maryland company whose software handled patient communication and marketing for dental practices, which made it a business associate to the dentists who used it. In December 2020 an intruder got into MMG's systems and reached the information of roughly 15 million people: names, phone numbers, mailing and email addresses, birth dates, and the dates and times of appointments. The data surfaced on the dark web. OCR learned of it only from a complaint in 2023, because MMG had never notified the practices it served. The investigation found MMG had also failed to conduct an accurate and thorough risk analysis.",
+          " with MMG Fusion, LLC, a Maryland company whose software handled patient communication and marketing for dental practices, which made it a business associate to the dentists who used it. In December 2020 an intruder got into MMG's systems and reached the information of roughly 15 million people: names, phone numbers, mailing and email addresses, birth dates, and the dates and times of appointments. The data surfaced on the dark web. OCR learned of it only from a complaint in 2023, because MMG had never notified the practices it served. OCR's investigation also concluded MMG had not conducted an accurate and thorough risk analysis. MMG resolved the matter by settlement, without admitting liability.",
         ],
       },
       {
         type: "image",
         src: "/ocr-hipaa-settlement-mmg-fusion-risk-analysis.webp",
-        alt: "Exhibit from the HHS Office for Civil Rights press release on the MMG Fusion settlement: OCR found the Maryland dental software vendor, a business associate to dental practices, had failed to conduct an accurate and thorough HIPAA risk analysis and never notified the practices of a December 2020 breach that exposed about 15 million people's information; it paid a $10,000 settlement and entered a three-year corrective action plan.",
+        alt: "Exhibit from the HHS Office for Civil Rights press release on the MMG Fusion settlement: OCR's investigation concluded the Maryland dental software vendor, a business associate to dental practices, had not conducted an accurate and thorough HIPAA risk analysis and had not notified the practices of a December 2020 breach that exposed about 15 million people's information; MMG resolved the matter by settlement, paying $10,000 and entering a three-year corrective action plan.",
         width: 1500,
         height: 760,
         caption: [
