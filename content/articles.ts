@@ -496,7 +496,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
@@ -866,7 +866,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
@@ -1177,7 +1177,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
@@ -1639,7 +1639,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
@@ -2007,7 +2007,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The regulatory claims here trace to HHS, OCR, and NIST and are checked against their current text before publishing. Figures name their source, and anything that can't be verified to one is labeled as general information rather than stated as fact. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
@@ -2692,7 +2692,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
@@ -3510,7 +3510,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
@@ -3844,7 +3844,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
@@ -4570,7 +4570,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
@@ -5299,7 +5299,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
@@ -5596,7 +5596,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
@@ -5955,7 +5955,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
@@ -6320,7 +6320,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
