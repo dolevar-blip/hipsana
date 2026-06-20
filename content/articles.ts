@@ -4881,8 +4881,10 @@ export const articles: Article[] = [
           { text: "MMG Fusion", href: "https://www.hhs.gov/press-room/ocr-mmg-fusion-hipaa-agreement.html" },
           ", ",
           { text: "Health Fitness Corporation", href: "https://www.hhs.gov/press-room/ocr-settles-hipaa-security-rule-investigation-health-fitness-corporation.html" },
-          ", and ",
+          ", ",
           { text: "Top of the World Ranch", href: "https://www.hhs.gov/press-room/ocr-settles-hipaa-security-rule-investigation-twrtc.html" },
+          ", and ",
+          { text: "PIH Health", href: "https://www.hhs.gov/press-room/ocr-hipaa-racap-pih.html" },
           "."
         ]
       },
@@ -4989,7 +4991,7 @@ export const articles: Article[] = [
           ["Health Fitness Corporation (IL)", "Mar 2025", "$227,816", "Misconfigured server"],
           ["Guam Memorial Hospital (GU)", "Apr 2025", "$25,000", "Ransomware"],
           ["Comstar (MA)", "May 2025", "$75,000", "Ransomware"],
-          ["PIH Health (CA)", "May 2025", "$600,000", "Phishing"],
+          ["PIH Health (CA)", "Apr 2025", "$600,000", "Phishing"],
           ["Syracuse surgery center (NY)", "Jul 2025", "$250,000", "Ransomware"],
           ["Top of the World Ranch (IL)", "Feb 2026", "$103,000", "Phishing"],
           ["MMG Fusion (MD)", "Mar 2026", "$10,000", "Vendor breach (unreported)"],
