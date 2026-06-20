@@ -148,6 +148,12 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
+          "This article explains whether a dental practice needs a HIPAA risk assessment. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
           "And \"your practice\" includes the solo office with one dentist and a front-desk coordinator. The risk analysis isn't a suggestion or an industry best practice; it is written into the rule as a requirement, and it is the first thing federal investigators ask to see.",
         ],
       },
@@ -212,6 +218,12 @@ export const articles: Article[] = [
             { strong: "\"I'm solo, so this is for bigger groups.\" " },
             "A single-location office is held to the same Security Rule standard as a hospital network. A solo dentist is also required to name a HIPAA Privacy Officer and Security Officer, and the only candidate is usually you. Not designating one is itself a documentable violation, with or without a breach.",
           ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Your practice's facts can change the answer, so for your specific situation, consult a healthcare attorney or qualified compliance professional.",
         ],
       },
       {
@@ -573,6 +585,12 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
+          "This article explains what happens if a dental practice fails a HIPAA audit. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
           "In late 2021, an Oklahoma emergency medical provider was hit by ransomware that locked records for roughly 14,000 patients. The provider, Bryan County Ambulance Authority, reported the breach to OCR, as the law required. OCR opened an investigation and found one decisive thing: it had never conducted a risk analysis, the basic security review HIPAA requires of every covered practice. The matter settled for $90,000 and three years of federal oversight (",
           {
             text: "HHS, October 2024",
@@ -697,6 +715,12 @@ export const articles: Article[] = [
             href: "https://www.federalregister.gov/documents/2026/01/28/2026-01688/annual-civil-monetary-penalties-inflation-adjustment",
           },
           "), but under OCR's longstanding approach that cap applies in practice only to that worst category. A small practice that reports a breach and shows good-faith effort is not the profile that draws it.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Your practice's facts can change the answer, so for your specific situation, consult a healthcare attorney or qualified compliance professional.",
         ],
       },
       {
@@ -936,6 +960,12 @@ export const articles: Article[] = [
           [{ strong: "The report you file is what opens the investigation." }, " When a small New York neurology practice reported a ransomware attack, the first thing OCR asked for was its risk analysis. There wasn't one. It paid $25,000."],
         ],
       },
+      {
+        type: "p",
+        runs: [
+          "This article explains what to do in the first 60 days after a dental practice data breach. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
       { type: "h2", text: "The first hour: contain it, but don't destroy the evidence" },
       {
         type: "p",
@@ -999,6 +1029,12 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "The attacker taking control of your data is itself the breach, and notification is presumed required unless your risk assessment shows a low probability of compromise.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Your practice's facts can change the answer, so for your specific situation, consult a healthcare attorney or qualified compliance professional.",
         ],
       },
       { type: "h2", text: "The 60-day clock: exactly who you must notify" },
@@ -1220,6 +1256,12 @@ export const articles: Article[] = [
         runs: [
           { strong: "Short answer: " },
           "for a solo or small dental practice in 2026, a HIPAA risk analysis performed by a specialist typically runs about $1,500 to $6,000. The HHS Security Risk Assessment Tool is free. Software platforms that bundle an assessment start in the low hundreds of dollars a year. What you pay comes down to how complex your setup is and how much of the work you keep in-house.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This article explains what a HIPAA risk assessment costs for a dental practice. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
         ],
       },
       { type: "h2", text: "What a risk assessment actually is under HIPAA" },
@@ -1683,6 +1725,12 @@ export const articles: Article[] = [
           ],
         ],
       },
+      {
+        type: "p",
+        runs: [
+          "This article explains whether ChatGPT is HIPAA compliant for a dental practice. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
       { type: "h2", text: "Why every dental office is suddenly asking" },
       {
         type: "p",
@@ -1733,6 +1781,12 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "There is a third path the vendors like to mention: de-identified data is not protected health information, so HIPAA does not restrict it. True, and narrower than it sounds. The de-identification standard (45 CFR \u00a7 164.514) requires stripping 18 categories of identifiers, including most dates and contact details, or a formal expert determination. Deleting a name from a note whose story still identifies the patient does not qualify.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Your practice's facts can change the answer, so for your specific situation, consult a healthcare attorney or qualified compliance professional.",
         ],
       },
       { type: "h2", text: "Is ChatGPT itself HIPAA compliant?" },
@@ -2036,6 +2090,12 @@ export const articles: Article[] = [
           ],
         ],
       },
+      {
+        type: "p",
+        runs: [
+          "This article explains whether AI scribes are HIPAA compliant for a dental practice. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
       { type: "h2", text: "What does an AI scribe actually do with patient data?" },
       {
         type: "p",
@@ -2239,6 +2299,12 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
+          "Your practice's facts can change the answer, so for your specific situation, consult a healthcare attorney or qualified compliance professional.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
           "And the test travels. AI phone agents, voice charting, x-ray reading models, website chatbots that take patient messages: if a tool touches patient information in any of the four ways the rule names, it takes the same five questions before it sits in on a single visit. And the products are only half the answer: which staff may use which AI tools at all belongs in ",
           {
             text: "a written staff AI-use policy",
@@ -2364,6 +2430,12 @@ export const articles: Article[] = [
           [{ strong: "One paste is an impermissible disclosure. " }, "The Privacy Rule's baseline (45 CFR \u00a7 164.502(a)) is that patient information goes nowhere unless a rule permits it, and no rule permits a chatbot without an agreement. OCR settled with an Alabama dental practice for $62,500 over patient lists that went to outside parties, and cited the practice's missing written policies by section."],
           [{ strong: "HIPAA already requires the policy. " }, "Written policies and procedures (\u00a7 164.530(i)), workforce training (\u00a7 164.530(b)), and applied sanctions (\u00a7 164.530(e)) are standing obligations, not new AI red tape. The policy below simply points them at AI."],
           [{ strong: "Prohibition alone fails, so give a sanctioned lane. " }, "Staff reach for AI to save time. A policy that holds pairs the hard line on patient data with an approved way to keep the time savings without it."],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This article explains the staff AI-use policy a dental practice needs. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
         ],
       },
       { type: "h2", text: "Why this lands on the owner's desk" },
@@ -2496,6 +2568,12 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "One honest warning belongs in the policy text: \"I removed the name\" is not de-identification. HIPAA's standard (45 CFR \u00a7 164.514) requires stripping 18 categories of identifiers or a formal expert determination, and a detailed clinical story can identify a patient with no name attached. For day-to-day use, the workable rule is fictional placeholders, never lightly edited real cases.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Your practice's facts can change the answer, so for your specific situation, consult a healthcare attorney or qualified compliance professional.",
         ],
       },
       { type: "h3", text: "3. Training that fits a staff meeting" },
@@ -2717,6 +2795,12 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
+          "This article explains when a dental practice needs a Business Associate Agreement, and with which vendors. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
           "Before you go vendor by vendor, it helps to see where your practice actually stands. The free HIPAA Scorecard checks your BAAs and the other controls an auditor looks at first, then scores your practice out of 100. About three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
@@ -2826,6 +2910,12 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "A few relationships do not need a BAA, and they trip people up. You do not sign one with another healthcare provider you share records with for a patient's treatment. That is why a dental lab you send impressions or images to for a case does not need one: under HIPAA's treatment exception, HHS and the ADA treat the lab as another health care provider, not your business associate. You also do not sign one with your own staff, who are workforce members rather than vendors. The treatment exception is narrow, though: if that lab or another provider does a non-treatment job for you, such as billing or records review, the BAA requirement comes back.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Your practice's facts can change the answer, so for your specific situation, consult a healthcare attorney or qualified compliance professional.",
         ],
       },
       { type: "h2", text: "What one missing BAA can cost" },
@@ -3087,6 +3177,12 @@ export const articles: Article[] = [
         runs: [
           { strong: "Short answer: " },
           "for a solo or small dental practice in 2026, running a HIPAA compliance program costs roughly $1,500 to $12,000 a year. You land near the low end if you run it yourself with a compliance platform, and near the high end if you hand it to a healthcare-experienced IT or compliance firm. Year one usually costs more, because of the first assessment and the work of fixing what it finds. The assessment is one line item; the recurring program is everything else.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This article explains what HIPAA compliance costs a dental practice per year. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
         ],
       },
       { type: "h2", text: "What you are actually paying for" },
@@ -3491,6 +3587,12 @@ export const articles: Article[] = [
           ],
         ],
       },
+      {
+        type: "p",
+        runs: [
+          "This article explains whether a dental practice's email is HIPAA compliant. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
 
       { type: "h2", text: "Does HIPAA actually let a dental practice email patient information?" },
       {
@@ -3513,6 +3615,12 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "\"Addressable\" does not mean optional. It means you either encrypt, or you document why encryption is not reasonable for your practice and put an equivalent safeguard in its place. Two myths waste a lot of time here. A confidentiality line at the bottom of the message does not make an unencrypted email compliant. And a password is not encryption: a password keeps someone out of a file, while encryption scrambles the contents so that intercepting the message reveals nothing.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Your practice's facts can change the answer, so for your specific situation, consult a healthcare attorney or qualified compliance professional.",
         ],
       },
 
@@ -3832,6 +3940,12 @@ export const articles: Article[] = [
         ],
       },
       {
+        type: "p",
+        runs: [
+          "This article explains how to handle a patient's records request at a dental practice. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
+      {
         type: "h2",
         text: "Why a records request is the HIPAA gap most likely to cost you",
       },
@@ -4019,6 +4133,12 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "So before you rely on the 30-day window or set a copying fee, check what your state requires.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Your practice's facts can change the answer, so for your specific situation, consult a healthcare attorney or qualified compliance professional.",
         ],
       },
       { type: "h2", text: "When you can actually say no" },
@@ -4220,6 +4340,12 @@ export const articles: Article[] = [
           ". Highlights added by Hipsana: the $50,000 penalty and the patient information disclosed in the practice's reply to the review.",
         ],
       },
+      {
+        type: "p",
+        runs: [
+          "This article explains the HIPAA rules for a dental practice's social media, including patient photos and review replies. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
       { type: "h2", text: "Why this is the gap most practices miss" },
       {
         type: "p",
@@ -4363,6 +4489,12 @@ export const articles: Article[] = [
           "\"Anonymized\" is not a magic word. ",
           { text: "HHS's de-identification standard", href: "https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html" },
           " treats a full-face photograph as one of the 18 identifiers that must be removed. An image counts as de-identified only once every identifier is gone and you have no reason to think the person could still be recognized. Cropping a face helps, but a distinctive smile, a caption, your account, or the photo's hidden metadata can still point to one patient. The safe default for any patient-specific image is a signed authorization.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Your practice's facts can change the answer, so for your specific situation, consult a healthcare attorney or qualified compliance professional.",
         ],
       },
       { type: "h2", text: "The catch: edge cases that trip practices up" },
@@ -4552,6 +4684,12 @@ export const articles: Article[] = [
           },
           "the public record tells two stories at once. Dental practices get breached through ransomware, compromised email, and compromised vendors, ordinary failures rather than exotic attacks. And when OCR investigates, it increasingly fines the practice for never having run an accurate, thorough risk analysis, the foundation the entire Security Rule sits on at ", { text: "45 CFR § 164.308(a)(1)(ii)(A)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308" }, ". The breach gets the headlines. The missing risk analysis gets the penalty."
         ]
+      },
+      {
+        type: "p",
+        runs: [
+          "This report explains how dental practices actually get breached and the one failure OCR keeps fining them for. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
       },
       {
         type: "image",
@@ -4786,6 +4924,12 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
+          "Your practice's facts can change the answer, so for your specific situation, consult a healthcare attorney or qualified compliance professional.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
           {
             strong: "The cheapest version of this is the one you build before OCR builds it for you. "
           },
@@ -4943,6 +5087,12 @@ export const articles: Article[] = [
           ". Highlights added by Hipsana: the $25,000 settlement, the eight-plus months the records were delayed, and that it was one of three dental practices OCR settled with the same day.",
         ],
       },
+      {
+        type: "p",
+        runs: [
+          "This article explains what HIPAA requires for a parent's access to a child's dental records. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
       { type: "h2", text: "Does a parent have the right to their child's dental records?" },
       {
         type: "p",
@@ -5025,6 +5175,12 @@ export const articles: Article[] = [
           { label: "Don't deny based on custody alone", detail: "A parent who is the personal representative gets the records, and a parent usually stays the personal representative after a divorce, whether or not they have primary custody." },
           { label: "Ask for the court order only if access is supposedly limited", detail: "If a parent claims a custody or protective order restricts the other parent's access, ask to see that order and follow what it actually says, rather than guessing." },
           { label: "Don't require the other parent's sign-off", detail: "One parent who is the personal representative is enough. You do not need both parents to approve, and adding that step is the kind of extra barrier OCR's December 2025 letter warns against." },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Your practice's facts can change the answer, so for your specific situation, consult a healthcare attorney or qualified compliance professional.",
         ],
       },
       { type: "h2", text: "When can a dental practice refuse a parent?" },
@@ -5212,6 +5368,12 @@ export const articles: Article[] = [
           ],
         ],
       },
+      {
+        type: "p",
+        runs: [
+          "This article explains what cyber insurance covers for a dental practice and whether it pays a HIPAA penalty. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
       { type: "h2", text: "What cyber insurance actually covers, and what it doesn't" },
       {
         type: "p",
@@ -5289,6 +5451,12 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "Defending an OCR investigation, the legal and response costs of dealing with the government, is usually covered under a policy's regulatory clause. The penalty itself is far less certain. Coverage turns on your state's law and your policy's exact wording. As a general legal principle, penalties that are punitive in nature are often not insurable as a matter of public policy, and some states limit insuring civil penalties at all. Other policies carry a specific sublimit for regulatory fines that is much smaller than the headline coverage amount. Two practices with the same loss can get two different answers.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Your practice's facts can change the answer, so for your specific situation, consult a healthcare attorney or qualified compliance professional.",
         ],
       },
       {
@@ -5526,6 +5694,12 @@ export const articles: Article[] = [
           ],
         ],
       },
+      {
+        type: "p",
+        runs: [
+          "This article explains the HIPAA and TCPA rules for texting dental patients. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
 
       { type: "h2", text: "Does HIPAA let a dental practice text patients?" },
       {
@@ -5607,6 +5781,12 @@ export const articles: Article[] = [
           " as having consented to care-related messages at that number, within the scope of the relationship and absent instructions otherwise. The ",
           { text: "American Dental Association describes the same rule", href: "https://www.ada.org/resources/practice/legal-and-regulatory/follow-the-rules-when-phoning-patients" },
           ". Courts have been re-examining how far that rule reaches, so treat it as the usual starting point rather than a guarantee: a reminder sent to a patient who gave you their number, with no marketing in it, generally clears the consent bar.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Your practice's facts can change the answer, so for your specific situation, consult a healthcare attorney or qualified compliance professional.",
         ],
       },
       {
@@ -5873,6 +6053,12 @@ export const articles: Article[] = [
           ],
         ],
       },
+      {
+        type: "p",
+        runs: [
+          "This article explains when website tracking pixels are HIPAA compliant for a dental practice. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
 
       { type: "h2", text: "When is a tracking pixel actually a HIPAA problem?" },
       {
@@ -5890,6 +6076,12 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "On a page a patient has to log in to reach, like a patient portal, the pixel generally has access to protected health information, so HIPAA applies. On a general marketing page that anyone can read without logging in, like your hours or job postings, it usually does not. The surprise is in the middle: a page that lets someone book an appointment, fill in a contact form, or complete a new-patient intake form without logging in can still expose patient data, because the visitor types in a name and a reason for the visit. OCR treats that as a disclosure too.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Your practice's facts can change the answer, so for your specific situation, consult a healthcare attorney or qualified compliance professional.",
         ],
       },
       {
