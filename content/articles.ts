@@ -2024,7 +2024,7 @@ export const articles: Article[] = [
               text: "OCR's cloud guidance",
               href: "https://www.hhs.gov/hipaa/for-professionals/special-topics/health-information-technology/cloud-computing/index.html",
             },
-            ", a service that receives or transmits patient data is a business associate even if it cannot view a word of it.",
+            ", a service that receives or maintains patient data is a business associate even if it cannot view a word of it.",
           ],
           [
             { strong: "A missing BAA alone has cost a small practice $31,000. " },
@@ -2082,10 +2082,10 @@ export const articles: Article[] = [
         runs: [
           "HHS did not bury the lesson; it titled the announcement \"No Business Associate Agreement? $31K Mistake.\" And the story did not end with the practice. FileFax itself ",
           {
-            text: "later paid $100,000",
+            text: "later agreed to pay $100,000 to settle separate potential Privacy Rule violations",
             href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/filefax/index.html",
           },
-          " over its handling of those same records, after it had already gone out of business. Both sides of one missing contract were penalized.",
+          " over its own mishandling of patient records, a settlement its court-appointed receiver entered after the company had already dissolved, with no admission of liability. One vendor relationship, and OCR reached both ends of it.",
         ],
       },
       {
@@ -2106,7 +2106,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "OCR has not announced an enforcement action involving an AI scribe; its published settlement list contains none as of this writing. Read that as a countdown rather than a comfort. The agency needs no AI precedent, because the failure an unvetted scribe invites is the one OCR has penalized again and again: patient data in a vendor's hands with no BAA behind it. CCDH's vendor held paper charts in storage. A scribe vendor holds a recording of everything said in your operatory. Same rule, richer data.",
+          "OCR has not announced an enforcement action involving an AI scribe; its published settlement list contains none as of this writing. Read that as a countdown rather than a comfort. The agency needs no AI precedent, because the failure an unvetted scribe invites is the one OCR has acted on again and again: patient data in a vendor's hands with no BAA behind it. CCDH's vendor held paper charts in storage. A scribe vendor holds a recording of everything said in your operatory. Same rule, richer data.",
         ],
       },
       {
@@ -2209,7 +2209,7 @@ export const articles: Article[] = [
           {
             label: "Train the team on the line",
             detail:
-              "The scribe becomes the approved channel for AI in the operatory. Patient details still never go into personal chatbot accounts, which is where most accidental disclosures begin.",
+              "The scribe becomes the approved channel for AI in the operatory. Patient details still never go into personal chatbot accounts, an easy place for patient data to slip out.",
           },
         ],
       },
@@ -2263,7 +2263,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "An AI scribe can be used legally in a dental practice, and the practices that do it well share one habit: they treat the contract as part of the product. A signed BAA on the exact tier they bought and five written vendor answers on file, with the tool listed in a dated risk analysis. That is the whole test, and it costs one email to start.",
+          "An AI scribe can be used legally in a dental practice, and the practices that do it well share one habit: they treat the contract as part of the product. A signed BAA on the exact tier they bought and five written vendor answers on file, with the tool listed in a dated risk analysis. That is the core of the test, and it costs one email to start.",
         ],
       },
       {
@@ -2287,7 +2287,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
