@@ -3680,7 +3680,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "In 2020, a small clinic in rural North Carolina learned how this plays out. Metropolitan Community Health Services, which provides medical and dental care to an underserved community as Agape Health Services, reported that the protected health information of 1,263 patients had been disclosed to an unknown email account. The Office for Civil Rights investigated, and found the problem was bigger than one message.",
+          "In 2020, a small clinic in rural North Carolina settled with federal regulators over a breach it had first reported in 2011. Metropolitan Community Health Services, which provides medical and dental care to an underserved community as Agape Health Services, had disclosed the protected health information of 1,263 patients to an unknown email account. The Office for Civil Rights investigated, and found the problem was bigger than one message.",
         ],
       },
       {
