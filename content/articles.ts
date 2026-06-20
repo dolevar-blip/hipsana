@@ -2761,7 +2761,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Industry compliance guides estimate that a typical dental office works with roughly eight to fifteen business associates, though the number varies widely by practice. Here is how the common dental-office vendors usually fall. Treat it as a starting map, not a substitute for checking each contract.",
+          "Industry compliance guides estimate that a typical dental office works with more business associates than most owners expect, often well into the double digits. Here is how the common dental-office vendors usually fall. Treat it as a starting map, not a substitute for checking each contract.",
         ],
       },
       {
@@ -2832,7 +2832,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The risk is ", { text: "not theoretical", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, ", and it is not only historical. In 2025, an attacker reached roughly 1.2 million patient records at Absolute Dental, a Nevada dental group, through a single compromised account belonging to its outside IT vendor. The practice agreed to a ", { text: "$3.3 million class-action settlement", href: "/articles/dental-practice-cyber-insurance" }, ", with a final approval hearing set for July 2026. A BAA would not have stopped that intrusion by itself, but the case is a plain lesson in why the contract matters: your vendor's access to your systems is your attack surface, and the BAA is where you pin down what that vendor must do to protect it.",
+          "The risk is ", { text: "not theoretical", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, ", and it is not only historical. In 2025, an attacker reached the records of roughly 1.2 million patients at Absolute Dental, a Nevada dental group, through a single compromised account belonging to its outside IT vendor. The practice agreed to a ", { text: "$3.3 million class-action settlement", href: "/articles/dental-practice-cyber-insurance" }, ", entered without admitting wrongdoing and still pending a final approval hearing set for July 2026. A BAA would not have stopped that intrusion by itself, but the case is a plain lesson in why the contract matters: your vendor's access to your systems is your attack surface, and the BAA is where you pin down what that vendor must do to protect it.",
         ],
       },
       {
@@ -2978,7 +2978,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
