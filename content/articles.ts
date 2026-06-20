@@ -1637,7 +1637,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Mostly no. ChatGPT's Free, Plus, Pro, Team, and self-serve Business plans are not HIPAA compliant for patient information: OpenAI offers no Business Associate Agreement for them, and HIPAA bars giving patient data to a vendor without one (45 CFR \u00a7 164.502(e)). AI becomes legal in a dental practice through a signed BAA plus a risk analysis listing the tool.",
+          "Mostly no. ChatGPT's Free, Plus, Pro, Team, and self-serve Business plans are not HIPAA compliant for patient information: OpenAI offers no Business Associate Agreement for them, and HIPAA bars giving patient data to a vendor without one (45 CFR \u00a7 164.502(e)). AI use in a dental practice gets onto defensible ground with a signed BAA and a risk analysis that lists the tool: the necessary foundation, not the finish line.",
         ],
       },
       {
@@ -1853,7 +1853,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Two lessons sit in that exhibit. The settlement was $10,000 against 15 million records because OCR weighed the company's financial condition; MMG was effectively gone. The dentists were not. Their patients' data had been exposed for years while the practices, the covered entities in the chain, knew nothing. A vendor's collapse does not transfer the relationship with your patients anywhere; it lands back on you. And the case was the twelfth enforcement action in OCR's Risk Analysis Initiative, the same document-first pattern we described in ",
+          "Two lessons sit in that exhibit. The settlement was $10,000 against the information of roughly 15 million people because OCR weighed the company's financial condition; MMG was effectively gone. The dentists were not. Their patients' data had been exposed for years while the practices, the covered entities in the chain, knew nothing. A vendor's collapse does not transfer the relationship with your patients anywhere; it lands back on you. And the case was the twelfth enforcement action in OCR's Risk Analysis Initiative, the same document-first pattern we described in ",
           {
             text: "what happens when a dental practice fails a HIPAA audit",
             href: "/articles/what-happens-if-dental-practice-fails-hipaa-audit",
@@ -1865,7 +1865,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "An AI tool you adopted this year is exactly the kind of system OCR expects to find listed in that document, and a vendor's badge will not stand in for it. " },
-          "Most solo practices carry two or three HIPAA gaps they cannot see from the inside. The Scorecard checks the areas OCR most commonly cites, then offers a short free risk review and, if you want one, an intro to a specialist. Takes about three minutes. ",
+          "Most independent practices carry gaps they cannot see from the inside. The Scorecard checks the areas OCR most commonly cites, then offers a short free risk review and, if you want one, an intro to a specialist. Takes about three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -1953,7 +1953,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. If a line can't be sourced, it doesn't run. ",
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The regulatory claims here trace to HHS, OCR, and NIST and are checked against their current text before publishing. Figures name their source, and anything that can't be verified to one is labeled as general information rather than stated as fact. ",
           { text: "More about Hipsana \u2192", href: "/about" },
         ],
       },
@@ -1977,7 +1977,7 @@ export const articles: Article[] = [
       { question: "Is ChatGPT Plus or Team HIPAA compliant if I turn off chat history and training?", answer: "No. Privacy toggles change what the vendor does with the data, not your legal position. Without a Business Associate Agreement, sending patient information to the service is an impermissible disclosure under HIPAA, and OpenAI states it does not offer a BAA for these plans." },
       { question: "Does removing the patient's name make the data safe to paste?", answer: "Usually not. HIPAA's de-identification standard requires removing 18 categories of identifiers, most dates and all contact details among them, or obtaining a formal expert determination. A note with the name deleted but the story intact is often still identifiable, and still protected health information." },
       { question: "Are AI scribes a HIPAA violation?", answer: "Not inherently. A scribe with a signed BAA, clear retention and model-training terms, patient awareness of the recording, and a line in your risk analysis can be used compliantly. The same scribe adopted on a free trial with none of that paperwork is an open liability." },
-      { question: "Is there a HIPAA-compliant version of ChatGPT a small practice can actually get?", answer: "The compliant paths today are procurement products aimed at organizations with IT support: OpenAI's API, sales-managed Enterprise and Edu accounts, and ChatGPT for Healthcare. Most solo practices that want generative AI near patient data end up on a healthcare-specific tool that bundles the BAA, or they keep public AI strictly on the no-patient-data side of the line." },
+      { question: "Is there a HIPAA-compliant version of ChatGPT a small practice can actually get?", answer: "The compliant paths today are procurement products aimed at organizations with IT support: OpenAI's API, sales-managed Enterprise and Edu accounts, and ChatGPT for Healthcare. Most independent practices that want generative AI near patient data end up on a healthcare-specific tool that bundles the BAA, or they keep public AI strictly on the no-patient-data side of the line." },
       { question: "What should I do if a team member already put patient details into a public AI tool?", answer: "Stop using that channel for patient content. Note exactly what was entered and when. Then run a documented breach risk assessment to judge the probability the information was compromised. Some incidents are defensibly low risk; others start notification obligations. The worst response is an undocumented shrug, because that is the gap investigators later quote." },
       { question: "Does the Hipsana Scorecard check AI risks?", answer: "It checks the foundations those risks land on: whether you have a current risk analysis, signed BAAs, staff training, and the other items OCR most commonly cites. AI tools enter your practice through exactly those doors. The Scorecard takes about three minutes, and the free review that follows can flag where an AI tool you use still needs paperwork." },
     ],
