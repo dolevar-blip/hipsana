@@ -954,8 +954,8 @@ export const articles: Article[] = [
         type: "ul",
         items: [
           [{ strong: "Contain it first, then assess." }, " Disconnect affected systems without wiping them, get a third-party forensics firm involved, and only then work out whether the incident is a reportable breach."],
-          [{ strong: "You have 60 days to tell patients." }, " Notify each affected individual without unreasonable delay and no later than 60 calendar days after you discover the breach (45 CFR 164.404)."],
-          [{ strong: "HHS gets notified too." }, " If 500 or more people are affected, report to HHS within that same 60 days. If fewer than 500, log it and file by roughly March 1 of the following year (45 CFR 164.408)."],
+          [{ strong: "You have 60 days to tell patients." }, " Notify each affected individual without unreasonable delay and no later than 60 calendar days after you discover the breach (", { text: "45 CFR 164.404", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.404" }, ")."],
+          [{ strong: "HHS gets notified too." }, " If 500 or more people are affected, report to HHS within that same 60 days. If fewer than 500, log it and file by roughly March 1 of the following year (", { text: "45 CFR 164.408", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.408" }, ")."],
           [{ strong: "Encrypted data may be off the hook." }, " The rules apply only to \"unsecured\" patient information. Data ", { text: "encrypted to the federal standard", href: "/articles/is-email-hipaa-compliant-dental-practice" }, " can fall under a safe harbor and may not trigger notice at all."],
           [{ strong: "The report you file is what opens the investigation." }, " When a small New York neurology practice reported a ransomware attack, the first thing OCR asked for was its risk analysis. There wasn't one. It paid $25,000."],
         ],
@@ -1004,13 +1004,13 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Under the Breach Notification Rule (45 CFR 164.402), any impermissible use or disclosure of unsecured protected health information is presumed to be a breach unless you can show a low probability that the information was compromised. You make that call through a documented four-factor risk assessment that weighs the nature of the data involved, who received it, whether it was actually viewed or acquired, and how far the risk has since been contained.",
+          "Under the Breach Notification Rule (", { text: "45 CFR 164.402", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.402" }, "), any impermissible use or disclosure of unsecured protected health information is presumed to be a breach unless you can show a low probability that the information was compromised. You make that call through a documented four-factor risk assessment that weighs the nature of the data involved, who received it, whether it was actually viewed or acquired, and how far the risk has since been contained.",
         ],
       },
       {
         type: "p",
         runs: [
-          "Two words decide whether the rule applies at all. \"Unsecured\" patient information is data that has not been encrypted or destroyed to the standard HHS specifies; if a stolen laptop was properly encrypted, you may fall under the encryption safe harbor and owe no notification, while data sitting in plain text gets no such protection. \"Discovered\" is defined broadly: a breach is treated as discovered on the first day anyone on your team knew about it, or reasonably should have (45 CFR 164.404(a)(2)), so your 60-day clock can start running before you have all the facts.",
+          "Two words decide whether the rule applies at all. \"Unsecured\" patient information is data that has not been encrypted or destroyed to the standard HHS specifies; if a stolen laptop was properly encrypted, you may fall under the encryption safe harbor and owe no notification, while data sitting in plain text gets no such protection. \"Discovered\" is defined broadly: a breach is treated as discovered on the first day anyone on your team knew about it, or reasonably should have (", { text: "45 CFR 164.404(a)(2)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.404" }, "), so your 60-day clock can start running before you have all the facts.",
         ],
       },
       {
@@ -1089,7 +1089,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The fine is rarely the worst part. A ransomware attack can freeze your scheduling, billing, and imaging for days, and a breach notice arriving in your patients' mailboxes can cost trust that took years to build. Those losses are harder to measure than a settlement, and they are why the response you run in the first week matters as much as any check you might eventually write.",
+          "The settlement is rarely the worst part. A ransomware attack can freeze your scheduling, billing, and imaging for days, and a breach notice arriving in your patients' mailboxes can cost trust that took years to build. Those losses are harder to measure than a settlement, and they are why the response you run in the first week matters as much as any check you might eventually write.",
         ],
       },
       {
@@ -1103,7 +1103,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "A breach report triggers a review of your entire security program, not just the incident. Drawing on its own guidance from the Comprehensive case, OCR expects a practice to produce a current risk analysis showing where electronic patient data enters, moves through, and leaves its systems, alongside a risk management plan that actually closes the gaps that analysis found. It looks for audit controls that record and let you review system activity, encryption of patient data in transit and at rest where appropriate, workforce training built around your practice and each person's real job, and evidence that you fed the lessons from any incident back into how you work.",
+          "A breach report can put your entire security program under review, not just the incident. Drawing on its own guidance from the Comprehensive case, OCR expects a practice to produce a current risk analysis showing where electronic patient data enters, moves through, and leaves its systems, alongside a risk management plan that actually closes the gaps that analysis found. It looks for audit controls that record and let you review system activity, encryption of patient data in transit and at rest where appropriate, workforce training built around your practice and each person's real job, and evidence that you fed the lessons from any incident back into how you work.",
         ],
       },
       {
@@ -1134,10 +1134,10 @@ export const articles: Article[] = [
       {
         type: "ul",
         items: [
-          [{ strong: "Run a real risk analysis, then fix what it finds." }, " This is the single most-cited failure in OCR settlements. We break down what one involves in ", { text: "our guide to HIPAA risk assessments for dental practices", href: "/articles/do-dental-practices-need-hipaa-risk-assessment" }, "."],
-          [{ strong: "Encrypt laptops, backups, and any device that touches patient data," }, " so a lost or stolen device falls under the safe harbor."],
+          [{ strong: "Run a real risk analysis, then fix what it finds." }, " This is the most-cited failure in OCR's Security Rule enforcement. We break down what one involves in ", { text: "our guide to HIPAA risk assessments for dental practices", href: "/articles/do-dental-practices-need-hipaa-risk-assessment" }, "."],
+          [{ strong: "Encrypt laptops, backups, and any device that touches patient data," }, " so a lost or stolen device, encrypted to the HHS standard, can fall under the safe harbor."],
           [{ strong: "Sign a " }, { text: "business associate agreement", href: "/articles/does-my-dental-practice-need-a-baa" }, { strong: " with every vendor that handles patient data," }, " and require fast breach reporting inside it."],
-          [{ strong: "Train your team on phishing and basic security," }, " since most breaches start with a click."],
+          [{ strong: "Train your team on phishing and basic security," }, " since phishing is one of the most common ways attackers get in, usually through a single careless click."],
           [{ strong: "Put the free-AI line in writing," }, " so patient details never land in a public chatbot. ", { text: "The staff AI-use policy a small practice needs", href: "/articles/staff-free-ai-tools-patient-data-dental-policy" }, " takes one page."],
           [{ strong: "Keep tested, offline backups," }, " so ransomware can't take your records hostage."],
         ],
@@ -1159,8 +1159,8 @@ export const articles: Article[] = [
         items: [
           [{ strong: "Small breaches still require patient notice." }, " The under-500 rule changes only when you tell HHS, not whether you tell the people affected. They still get notified within 60 days."],
           [{ strong: "\"Discovery\" may be earlier than you think." }, " If a staff member noticed something odd weeks ago, your clock may have started then, not on the day you formally confirmed the breach."],
-          [{ strong: "You carry the burden of proof." }, " If you decide an incident was not a reportable breach, you must document the risk assessment that justifies it (45 CFR 164.414). \"We assumed it was fine\" is not a defense."],
-          [{ strong: "State law often adds rules." }, " Most states have their own breach-notification laws, some with shorter deadlines or different triggers than HIPAA. Check your state's requirements, or have someone check them for you."],
+          [{ strong: "You carry the burden of proof." }, " If you decide an incident was not a reportable breach, you must document the risk assessment that justifies it (", { text: "45 CFR 164.414", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.414" }, "). \"We assumed it was fine\" is not a defense."],
+          [{ strong: "State law often adds rules." }, " Every state has its own breach-notification law, many with shorter deadlines or different triggers than HIPAA. Check your state's requirements, or have someone check them for you."],
         ],
       },
       {
