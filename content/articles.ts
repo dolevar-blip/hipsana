@@ -1221,7 +1221,7 @@ export const articles: Article[] = [
       "A HIPAA risk assessment for a dental practice runs $1,500–$6,000 with a specialist; the free HHS tool is $0. What each path buys, and why cheap can cost more.",
     author: "Dolev Arama",
     datePublished: "2026-06-05",
-    dateModified: "2026-06-17",
+    dateModified: "2026-06-21",
     body: [
       {
         type: "p",
@@ -1304,7 +1304,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "What it is. " },
-          "A downloadable application from the federal government, currently version 3.6, about 166 questions, that walks you through the assessment and produces a report. It runs on your own computer, and the government never sees your answers.",
+          "A downloadable application from the federal government, currently version 3.6, a set of multiple-choice questions, that walks you through the assessment and produces a report. It runs on your own computer, and the government never sees your answers.",
         ],
       },
       {
@@ -1462,7 +1462,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Running the SRA tool feels like completing your risk analysis. It is not the same thing. The tool documents your answers to a set of questions. HIPAA asks for an accurate and thorough assessment plus a risk-management step, meaning you actually reduce the risks you found. A questionnaire with no remediation behind it, no follow-up, and no written policies is a starting point that regulators have, case after case, treated as not enough.",
+          "Running the SRA tool feels like completing your risk analysis. It is not the same thing. The tool documents your answers to a set of questions. HIPAA asks for ", { text: "an accurate and thorough assessment", href: "https://www.hhs.gov/hipaa/for-professionals/security/guidance/guidance-risk-analysis/index.html" }, " plus a risk-management step, meaning you actually reduce the risks you found. A questionnaire with no remediation behind it, no follow-up, and no written policies is a starting point that regulators have, case after case, treated as not enough.",
         ],
       },
       {
@@ -1474,8 +1474,8 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          { strong: "Most solo practices have two or three HIPAA gaps they cannot see. " },
-          "The Scorecard checks the areas OCR most commonly cites, then sends you a short written review of your gaps and an intro to a specialist who can help you close them. About three minutes. ",
+          { strong: "Most independent practices carry gaps they cannot see from the inside. " },
+          "The Scorecard checks the areas OCR most commonly cites, then sends you a short written review of your gaps and an intro to a specialist if you want one. About three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -1489,7 +1489,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "In May 2025, federal regulators settled with Vision Upright MRI, a single-location imaging provider in San Jose. An unauthorized party had reached the server holding its medical images, exposing the records of 21,778 people. When OCR investigated, it found the practice had never conducted a HIPAA risk analysis and had missed the 60-day deadline to notify the affected patients.",
+          "In May 2025, federal regulators settled with Vision Upright MRI, a single-location imaging provider in San Jose. An unauthorized party had reached the server holding its medical images, exposing the records of 21,778 people. When OCR investigated, it found the practice had never conducted a HIPAA risk analysis and had missed ", { text: "the 60-day deadline", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.404" }, " to notify the affected patients.",
         ],
       },
       {
@@ -1516,7 +1516,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "So the \"save money by skipping it\" route cost about the same as the assessment in fines, plus all the work it had avoided, plus two years of oversight. Doing it up front is the cheaper option, not the more expensive one. For what an investigation looks like from the inside, see ",
+          "So the \"save money by skipping it\" route cost about the same as the assessment in the settlement, plus all the work it had avoided, plus two years of oversight. Doing it up front is the cheaper option, not the more expensive one. For what an investigation looks like from the inside, see ",
           { text: "what happens when a dental practice fails a HIPAA audit", href: "/articles/what-happens-if-dental-practice-fails-hipaa-audit" },
           ".",
         ],
@@ -1605,7 +1605,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "A risk analysis is not a one-time purchase. HIPAA expects it to be ongoing, refreshed every year and after meaningful changes to your systems. The first assessment usually costs more than the annual update, so budget for both.",
+          "A risk analysis is not a one-time purchase. HIPAA expects it to be ongoing, updated after meaningful changes to your systems; the rule sets no fixed interval, though many practices review it at least once a year. The first assessment usually costs more than the annual update, so budget for both.",
         ],
       },
       {
@@ -1657,7 +1657,9 @@ export const articles: Article[] = [
           ["HHS Office for Civil Rights, settlement with Vision Upright MRI (May 2025)."],
           ["HHS Office for Civil Rights, Risk Analysis Initiative (announced October 2024)."],
           ["HHS, Security Risk Assessment (SRA) Tool (HealthIT.gov), version 3.6."],
+            ["HHS Office for Civil Rights, Guidance on Risk Analysis Requirements under the HIPAA Security Rule."],
           ["45 CFR § 164.308(a)(1)(ii)(A) (eCFR, current)."],
+            ["45 CFR § 164.404 (Breach Notification Rule) (eCFR, current)."],
           ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025 (RIN 0945-AA22)."],
         ],
       },
@@ -1665,7 +1667,7 @@ export const articles: Article[] = [
     faq: [
       { question: "Is the free HHS SRA tool enough for a dental practice?", answer: "It is a legitimate place to start, and for a very small, simple practice it can carry a lot of the assessment. But by its own disclaimer it does not guarantee compliance, and it stops at a report. The risk-management work that follows, the part where you fix what you found and document it, is what regulators actually weigh, and the tool does not do that for you." },
       { question: "How much does a HIPAA risk assessment cost for a solo dentist?", answer: "As a 2026 estimate: about $1,500 to $6,000 for a specialist-led assessment, $0 for the federal tool, and low hundreds of dollars a year for a software platform that includes one. A full first-year compliance program, with remediation, policies, training, and safeguards on top of the assessment, commonly runs $5,000 to $15,000." },
-      { question: "How often does a dental practice need a risk analysis?", answer: "At least once a year, and again after any material change such as new software, a new location, or a breach. HIPAA treats it as an ongoing process, not a one-time event." },
+      { question: "How often does a dental practice need a risk analysis?", answer: "The Security Rule sets no fixed interval, but it expects an ongoing process, not a one-time event: update the analysis after any material change such as new software, a new location, or a breach, and review it regularly, as many practices do at least once a year." },
       { question: "Does a small practice really need one?", answer: "Yes. The requirement does not scale with size, and federal regulators have settled with single-location providers specifically to make that point. A small practice with patient data carries the same core obligation as a hospital." },
       { question: "Who can perform a HIPAA risk assessment, and can I do it myself?", answer: "You can do it yourself. HIPAA does not require an outside firm, and the free federal tool exists for exactly that. What matters is that the analysis is accurate, thorough, documented, and followed by a plan to fix what it finds. Many small practices run the assessment in-house and bring in help only for the parts they cannot judge alone, such as technical testing or a recent breach. If you want a quick read on which gaps you would be doing it for, the Scorecard shows you in about three minutes." },
       { question: "How long does a HIPAA risk assessment take?", answer: "Anywhere from an afternoon with the free tool for a simple solo practice to a few weeks for a consultant-led review with an onsite visit and a written plan. The larger time cost is usually fixing what the analysis turns up, not running the analysis." },
