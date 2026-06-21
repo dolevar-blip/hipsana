@@ -4883,15 +4883,19 @@ export const articles: Article[] = [
           { text: "Health Fitness Corporation", href: "https://www.hhs.gov/press-room/ocr-settles-hipaa-security-rule-investigation-health-fitness-corporation.html" },
           ", ",
           { text: "Top of the World Ranch", href: "https://www.hhs.gov/press-room/ocr-settles-hipaa-security-rule-investigation-twrtc.html" },
-          ", and ",
+          ", ",
           { text: "PIH Health", href: "https://www.hhs.gov/press-room/ocr-hipaa-racap-pih.html" },
+          ", and the ",
+          { text: "four April 2026 ransomware settlements", href: "https://www.hhs.gov/press-room/ocr-settles-four-ransomware-investigations.html" },
           "."
         ]
       },
       {
         type: "p",
         runs: [
-          "The dollar figures range widely, from the $10,000 paid by the dental software vendor MMG Fusion to the $227,816 paid by a wellness company for a server left exposed for nearly three years, with settlements like Behavioral Health Solution of Deer Oaks at $225,000 and a Syracuse surgery center at $250,000 in between. Across the settlements we reviewed, the breach that triggered the investigation was almost always ransomware, with a few phishing emails, a misconfigured server, and a vendor breach making up the rest, but the violation OCR cited was the same missing risk analysis in every one. The full list is in the appendix below. The check is never the real cost. Every settlement carries a corrective action plan, often monitored for two to three years, that orders the practice to build the program it skipped. By the middle of 2026, OCR had collected more than $1.2 million across six enforcement actions in that year alone. ",
+          "The dollar figures range widely, from the $10,000 paid by the dental software vendor MMG Fusion to the $227,816 paid by a wellness company for a server left exposed for nearly three years, with settlements like Behavioral Health Solution of Deer Oaks at $225,000 and a Syracuse surgery center at $250,000 in between. Across the settlements we reviewed, the breach that triggered the investigation was almost always ransomware, with a few phishing emails, a misconfigured server, and a vendor breach making up the rest, but the violation OCR cited was the same missing risk analysis in every one. The full list is in the appendix below. The check is never the real cost. Every settlement carries a corrective action plan, often monitored for two to three years, that orders the practice to build the program it skipped. By the middle of 2026, OCR had collected more than $1.2 million across ",
+          { text: "six enforcement actions", href: "https://www.hhs.gov/press-room/ocr-settles-four-ransomware-investigations.html" },
+          " in that year alone. ",
           {
             text: "An OCR investigation",
             href: "/articles/what-happens-if-dental-practice-fails-hipaa-audit"
@@ -4995,7 +4999,10 @@ export const articles: Article[] = [
           ["Syracuse surgery center (NY)", "Jul 2025", "$250,000", "Ransomware"],
           ["Top of the World Ranch (IL)", "Feb 2026", "$103,000", "Phishing"],
           ["MMG Fusion (MD)", "Mar 2026", "$10,000", "Vendor breach (unreported)"],
-          ["Assured Imaging (AZ/CA)", "Apr 2026", "$375,000", "Ransomware"]
+          ["Assured Imaging (AZ/CA)", "Apr 2026", "$375,000", "Ransomware"],
+          ["Regional Women's Health Group (Axia) (NJ/PA)", "Apr 2026", "$320,000", "Ransomware"],
+          ["Consociate Health (IL)", "Apr 2026", "$225,000", "Ransomware"],
+          ["Star Group Health Benefits Plan (CT)", "Apr 2026", "$245,000", "Ransomware"]
         ],
         caption: "Selected settlements under OCR's Risk Analysis Initiative, by announcement date. Source: HHS Office for Civil Rights enforcement announcements. The financial penalty is rarely the largest cost; each settlement also carries a corrective action plan, typically monitored for two to three years."
       },
