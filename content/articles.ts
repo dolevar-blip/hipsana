@@ -4797,7 +4797,15 @@ export const articles: Article[] = [
             "Ransomware"
           ]
         ],
-        caption: "Selected dental-sector breaches, with the cause as reported to regulators or in public breach notices, as of June 2026. The MMG Fusion exposure is discussed below; it never appeared on the public portal. Counts are approximate where a final figure is still being confirmed."
+        caption: "Selected dental-sector breaches, with the cause as reported to regulators or in public breach notices, as of June 2026. The MMG Fusion exposure is discussed below; it never appeared on the public portal. Each figure is the count the organization reported as affected or notified; where the HHS portal shows a different number, the note below the table explains why."
+      },
+      {
+        type: "p",
+        runs: [
+          "The portal figure is only as current as the last form an organization filed. HHS tells an entity that is unsure of the total at filing to ",
+          { text: "report an estimate and update it later through an addendum", href: "https://www.hhs.gov/hipaa/for-professionals/breach-notification/breach-reporting/index.html" },
+          ". So a portal entry and a later notification letter can disagree. First Choice Dental's entry still shows 1,000, the interim count filed in 2023, while its own notification letters put the figure far higher. Delta Dental of Virginia went the other way, its entry revised down to 126,953, below the 145,918 in its own notices. The figures above are the count each organization reported as affected or notified."
+        ]
       },
       {
         type: "p",
