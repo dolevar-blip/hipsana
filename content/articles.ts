@@ -2412,12 +2412,17 @@ export const articles: Article[] = [
       "Free AI tools don't sign BAAs, so one pasted patient detail is an impermissible disclosure. The five-part AI use policy a dental practice needs.",
     author: "Dolev Arama",
     datePublished: "2026-06-12",
-    dateModified: "2026-06-12",
+    dateModified: "2026-06-21",
     body: [
       {
         type: "p",
         runs: [
-          "Almost certainly, and the fix is a one-page rule. Most free AI tools will not sign a Business Associate Agreement, so the moment a staff member pastes a patient's details into one, the practice has made an impermissible disclosure under 45 CFR \u00a7 164.502(a). HIPAA already requires the written policy, the training, and the sanctions that prevent it. Here is what that policy needs to say.",
+          "Almost certainly, and the fix is a one-page rule. Most free AI tools will not sign a Business Associate Agreement, so the moment a staff member pastes a patient's details into one, the practice has made an impermissible disclosure under ",
+          {
+            text: "45 CFR \u00a7 164.502(a)",
+            href: "https://www.ecfr.gov/current/title-45/section-164.502",
+          },
+          ". HIPAA already requires the written policy, the training, and the sanctions that prevent it. Here is what that policy needs to say.",
         ],
       },
       {
@@ -2433,7 +2438,7 @@ export const articles: Article[] = [
           [{ strong: "Your staff are probably already doing it. " }, "Netskope's healthcare threat report found 71% of healthcare workers still using personal AI accounts for work, and in a Black Book survey of U.S. health-system staff, 17% of the frontline workers who use generic AI tools said they sometimes or often include identifiable patient information."],
           [{ strong: "A free AI tool cannot legally hold patient data. " }, "OpenAI offers no Business Associate Agreement on ChatGPT's free or consumer paid tiers, and the same is true across consumer chatbots. No BAA means patient information may not go in at all (45 CFR \u00a7 164.502(e))."],
           [{ strong: "One paste is an impermissible disclosure. " }, "The Privacy Rule's baseline (45 CFR \u00a7 164.502(a)) is that patient information goes nowhere unless a rule permits it, and no rule permits a chatbot without an agreement. OCR settled with an Alabama dental practice for $62,500 over patient lists that went to outside parties, and cited the practice's missing written policies by section."],
-          [{ strong: "HIPAA already requires the policy. " }, "Written policies and procedures (\u00a7 164.530(i)), workforce training (\u00a7 164.530(b)), and applied sanctions (\u00a7 164.530(e)) are standing obligations, not new AI red tape. The policy below simply points them at AI."],
+          [{ strong: "HIPAA already requires the policy. " }, "Written policies and procedures (", { text: "\u00a7 164.530(i)", href: "https://www.ecfr.gov/current/title-45/section-164.530" }, "), workforce training (\u00a7 164.530(b)), and applied sanctions (\u00a7 164.530(e)) are standing obligations, not new AI red tape. The policy below simply points them at AI."],
           [{ strong: "Prohibition alone fails, so give a sanctioned lane. " }, "Staff reach for AI to save time. A policy that holds pairs the hard line on patient data with an approved way to keep the time savings without it."],
         ],
       },
@@ -2447,18 +2452,18 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Security teams call it shadow AI: staff using AI tools the practice never approved, usually with good intentions and on personal accounts. The numbers say it is the norm, not the exception. Netskope's research, reported in April 2026, found 71% of healthcare workers still using personal AI accounts for work, down from 87% a year earlier but nowhere near zero. A Black Book survey of 228 U.S. health-system employees found 58% of frontline staff using generic tools like ChatGPT, Gemini, or Copilot at least monthly, and 17% of those users admitting that identifiable patient information sometimes goes in. The warning is coming from inside dentistry too: dental IT providers now publish ",
-          {
-            text: "explicit alarms about staff feeding patient data to free AI tools",
-            href: "https://opendental.blog/ai-threat-free-ai-tools-e-phi/",
-          },
-          ".",
+          "Security teams call it shadow AI: staff using AI tools the practice never approved, usually with good intentions and on personal accounts. The numbers say it is the norm, not the exception. Netskope's research, reported in April 2026, found 71% of healthcare workers still using personal AI accounts for work, down from 87% a year earlier but nowhere near zero. A Black Book survey of 228 U.S. health-system employees found 58% of frontline staff using generic tools like ChatGPT, Gemini, or Copilot at least monthly, and 17% of those users admitting that identifiable patient information sometimes goes in. The warning is coming from inside dentistry too: dental IT providers now publish explicit alarms about staff feeding patient data to free AI tools.",
         ],
       },
       {
         type: "p",
         runs: [
-          "Two facts turn that habit into the owner's problem. First, the violation belongs to the practice, not the employee: a covered entity must ensure compliance by its workforce (45 CFR \u00a7 164.306(a)(4)), so a well-meaning shortcut by your assistant is your disclosure. Second, there is no consumer tier to buy your way out with. OpenAI signs Business Associate Agreements only for sales-managed enterprise and education plans and qualifying API arrangements, never for the free, Plus, or Team tiers, so a staff member's paid personal ChatGPT login is the same consumer product with a credit card attached. ",
+          "Two facts turn that habit into the owner's problem. First, the violation belongs to the practice, not the employee: a covered entity must ensure compliance by its workforce (",
+          {
+            text: "45 CFR \u00a7 164.306(a)(4)",
+            href: "https://www.ecfr.gov/current/title-45/section-164.306",
+          },
+          "), so a well-meaning shortcut by your assistant is your disclosure. Second, there is no consumer tier to buy your way out with. OpenAI signs Business Associate Agreements only for sales-managed enterprise and education plans and qualifying API arrangements, never for the free, Plus, or Team tiers, so a staff member's paid personal ChatGPT login is the same consumer product with a credit card attached. ",
           {
             text: "Whether ChatGPT itself can ever be HIPAA compliant in a dental practice",
             href: "/articles/is-chatgpt-hipaa-compliant-dental-practice",
@@ -2478,7 +2483,7 @@ export const articles: Article[] = [
         items: [
           [{ strong: "A default of no. " }, "45 CFR \u00a7 164.502(a) sets the Privacy Rule's baseline: patient information is not used or disclosed unless a rule permits it. A chatbot with no BAA is not a permitted destination, full stop."],
           [{ strong: "Training, scaled to the job. " }, "\u00a7 164.530(b)(1) requires training every workforce member on your policies, as necessary and appropriate for their role. A documented ten-minute staff meeting on the AI line qualifies."],
-          [{ strong: "Sanctions you actually apply. " }, "\u00a7 164.530(e)(1) requires appropriate sanctions against workforce members who break the rules, with each application documented. The Security Rule repeats the demand for electronic data at \u00a7 164.308(a)(1)(ii)(C)."],
+          [{ strong: "Sanctions you actually apply. " }, "\u00a7 164.530(e)(1) requires appropriate sanctions against workforce members who break the rules, with each application documented. The Security Rule repeats the demand for electronic data at ", { text: "\u00a7 164.308(a)(1)(ii)(C)", href: "https://www.ecfr.gov/current/title-45/section-164.308" }, "."],
           [{ strong: "The policies themselves, in writing. " }, "\u00a7 164.530(i) requires written policies and procedures, kept current. On the security side, \u00a7 164.308(a)(5)(i) adds a security awareness and training program for the whole workforce, management included."],
           [{ strong: "Someone whose job it is. " }, "\u00a7 164.530(a)(1) requires a designated privacy official. In a solo practice that is usually the owner or the office manager; the title matters less than the designation being written down."],
         ],
@@ -2498,7 +2503,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "OCR's resolution agreement lists four findings, and the quiet two should worry a practice owner more than the loud two. The loud findings are the disclosures themselves, both cited under \u00a7 164.502(a). The quiet findings are the paperwork: the practice did not designate a privacy official until late 2017 (\u00a7 164.530(a)) and had no written policies and procedures at all until 2018 (\u00a7 164.530(i)). The missing documents carry their own section numbers in the federal record, right next to the disclosures.",
+          "OCR's resolution agreement lists four pieces of covered conduct, settled without an admission of liability, and the quiet two should worry a practice owner more than the loud two. The loud two are the disclosures themselves, both cited under \u00a7 164.502(a). The quiet two are the paperwork: the practice did not designate a privacy official until late 2017 (\u00a7 164.530(a)) and had no written policies and procedures at all until 2018 (\u00a7 164.530(i)). The missing documents carry their own section numbers in the federal record, right next to the disclosures.",
         ],
       },
       {
@@ -2508,7 +2513,7 @@ export const articles: Article[] = [
         width: 1500,
         height: 962,
         caption: [
-          "The findings that cost $62,500: two impermissible disclosures, no privacy official, and no written policies until 2018. Source: ",
+          "What cost $62,500: two impermissible disclosures, no privacy official, and no written policies until 2018. Source: ",
           {
             text: "HHS / OCR Resolution Agreement, March 2022",
             href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/northcutt/index.html",
@@ -2519,7 +2524,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Northcutt was not an AI case, and it was not a rogue-employee case: the disclosure decision came from the owner himself. That is exactly why it matters here. OCR needed no hacker, no breach report, and no bad intent. It needed patient data going to an outside party no rule permitted, and a practice that could not produce the policy that should have stopped it. Finding B is the sharpest edge for the AI question: the marketing vendor was a company the practice already worked with, and the disclosure was still impermissible because it served purposes outside the service arrangement in place. Swap \"campaign emails through the marketing vendor\" for \"patient list into a free chatbot\" and the legal shape is identical: a familiar tool, fed patient data for a purpose no agreement covers.",
+          "Northcutt was not an AI case, and it was not a rogue-employee case: the disclosure decision came from the owner himself. That is exactly why it matters here. OCR needed no hacker, no breach report, and no bad intent. It needed patient data going to an outside party no rule permitted, and a practice that could not produce the policy that should have stopped it. The marketing-vendor disclosure is the sharpest edge for the AI question: the marketing vendor was a company the practice already worked with, and the disclosure was still impermissible because it served purposes outside the service arrangement in place. Swap \"campaign emails through the marketing vendor\" for \"patient list into a free chatbot\" and the legal shape is identical: a familiar tool, fed patient data for a purpose no agreement covers.",
         ],
       },
       {
@@ -2572,7 +2577,12 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "One honest warning belongs in the policy text: \"I removed the name\" is not de-identification. HIPAA's standard (45 CFR \u00a7 164.514) requires stripping 18 categories of identifiers or a formal expert determination, and a detailed clinical story can identify a patient with no name attached. For day-to-day use, the workable rule is fictional placeholders, never lightly edited real cases.",
+          "One honest warning belongs in the policy text: \"I removed the name\" is not de-identification. HIPAA's standard (",
+          {
+            text: "45 CFR \u00a7 164.514",
+            href: "https://www.ecfr.gov/current/title-45/section-164.514",
+          },
+          ") requires stripping 18 categories of identifiers or a formal expert determination, and a detailed clinical story can identify a patient with no name attached. For day-to-day use, the workable rule is fictional placeholders, never lightly edited real cases.",
         ],
       },
       {
@@ -2614,7 +2624,7 @@ export const articles: Article[] = [
           {
             label: "Name the owner of the rule",
             detail:
-              "Designate your privacy official in writing if you never have: the owner or office manager, one sentence, signed and dated. Northcutt's missing designation was a cited finding on its own. Ten minutes.",
+              "Designate your privacy official in writing if you never have: the owner or office manager, one sentence, signed and dated. Northcutt's missing designation was cited on its own. Ten minutes.",
           },
           {
             label: "Write the one-page policy",
@@ -2668,7 +2678,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Free AI in a dental practice is a people problem before it is a technology problem, and HIPAA solved the people problem decades ago: a written rule, ten minutes of documented training, sanctions with dates on them, and one person whose job it is. Northcutt Dental paid $62,500 in a case where the missing paperwork was cited by section right next to the disclosures. The one-page version costs you an afternoon, and it is the difference between an employee's mistake and a federal finding.",
+          "Free AI in a dental practice is a people problem before it is a technology problem, and HIPAA solved the people problem decades ago: a written rule, ten minutes of documented training, sanctions with dates on them, and one person whose job it is. Northcutt Dental paid $62,500 in a case where the missing paperwork was cited by section right next to the disclosures. The one-page version costs you an afternoon, and it is the difference between an employee's mistake and a federal case.",
         ],
       },
       {
@@ -2735,7 +2745,7 @@ export const articles: Article[] = [
       {
         question: "Does a verbal \"don't put patient stuff in ChatGPT\" count as a policy?",
         answer:
-          "No. HIPAA requires policies and procedures in writing (45 CFR \u00a7 164.530(i)) and documented training on them (\u00a7 164.530(b)). The same instruction, written on one page and signed and dated by your team, is the difference between a rule and a rumor. Northcutt Dental's missing written policies were a federally cited finding in a $62,500 settlement.",
+          "No. HIPAA requires policies and procedures in writing (45 CFR \u00a7 164.530(i)) and documented training on them (\u00a7 164.530(b)). The same instruction, written on one page and signed and dated by your team, is the difference between a rule and a rumor. Northcutt Dental's missing written policies were federally cited in a $62,500 settlement.",
       },
       {
         question: "What if we only use AI with the patient names removed?",
