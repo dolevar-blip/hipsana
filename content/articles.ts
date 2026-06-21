@@ -106,7 +106,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "A solo doctor once reported a data breach to the federal government, and the government fined him $100,000 for one document he didn't have. Here is the document every dental practice is required to keep, why a checklist won't pass for it, and how to tell if you are exposed.",
+          "A solo doctor once reported a data breach to the federal government, and ended up paying $100,000 to settle, for one document he didn't have. Here is the document nearly every dental practice is required to keep, why a checklist won't pass for it, and how to tell if you are exposed.",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -118,7 +118,7 @@ export const articles: Article[] = [
             "The HIPAA Security Rule requires one from every covered dental practice, whether you run ten operatories or a single chair. It is not optional, and not merely \"recommended.\"",
           ],
           [
-            { strong: "It is the most common gap OCR finds. " },
+            { strong: "It is the most common Security Rule gap OCR finds. " },
             "A solo doctor who reported his own vendor's breach paid $100,000 for never having done one.",
           ],
           [
@@ -169,7 +169,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Start with that solo doctor. He was a gastroenterologist in Ogden, Utah, seeing about 3,000 patients a year. Back in 2013 he reported his own records vendor to OCR for locking him out of his patients' data over a billing dispute. OCR opened a review of that complaint, and the review turned back on him: it found he had never conducted a risk analysis, and that he still had not completed one even after the agency walked him through what was required. The $100,000 settlement and two years of federal monitoring followed. (HHS Resolution Agreement, Steven A. Porter, M.D., 2020.)",
+          "Start with that solo doctor. He was a gastroenterologist in Ogden, Utah, seeing more than 3,000 patients a year. Back in 2013 he reported his own records vendor to OCR for locking him out of his patients' data over a billing dispute. OCR opened a review of that complaint, and the review turned back on him: it found he had never conducted a risk analysis, and that he still had not completed one even after the agency walked him through what was required. The $100,000 settlement and two years of federal monitoring followed. (HHS Resolution Agreement, Steven A. Porter, M.D., 2020.)",
         ],
       },
       {
@@ -203,7 +203,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "A dental practice is a HIPAA \"covered entity\" if it transmits health information electronically in connection with a covered transaction: submitting insurance claims, checking eligibility, sending referrals. That captures essentially every modern office that bills insurance or uses practice-management software. The American Dental Association frames it the same way in its HIPAA 20 Questions guidance for member dentists.",
+          "A dental practice is a HIPAA \"", { text: "covered entity", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-160/subpart-A/section-160.103" }, "\" if it transmits health information electronically in connection with a covered transaction: submitting insurance claims, checking eligibility, sending referrals. That captures essentially every modern office that bills insurance or uses practice-management software. The American Dental Association frames it the same way in its HIPAA 20 Questions guidance for member dentists.",
         ],
       },
       { type: "p", runs: ["A few specifics worth nailing down:"] },
@@ -216,7 +216,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "\"I'm solo, so this is for bigger groups.\" " },
-            "A single-location office is held to the same Security Rule standard as a hospital network. A solo dentist is also required to name a HIPAA Privacy Officer and Security Officer, and the only candidate is usually you. Not designating one is itself a documentable violation, with or without a breach.",
+            "A single-location office is held to the same Security Rule standard as a hospital network. A solo dentist is also required to name a HIPAA ", { text: "Privacy Officer", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.530" }, " and Security Officer, and the only candidate is usually you. Not designating one is itself a documentable violation, with or without a breach.",
           ],
         ],
       },
@@ -250,13 +250,13 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Two words in there carry the weight. \"Required\" means it is not in the flexible \"addressable\" category that lets you document an alternative. And \"accurate and thorough\" is the standard OCR measures you against, which is exactly where the Porter practice fell short.",
+          "Two words in there carry the weight. \"Required\" means it is not in the flexible \"", { text: "addressable", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.306" }, "\" category that lets you document an alternative. And \"accurate and thorough\" is the standard OCR measures you against, which is exactly where the Porter practice fell short.",
         ],
       },
       {
         type: "p",
         runs: [
-          "This isn't a dormant rule. OCR has run a standing enforcement initiative around the right of access and around risk analysis, and its investigators consistently report that the absence of a completed risk analysis is the most frequent finding when they open a file. The Porter settlement is one named example of many. So is ", { text: "the broader pattern", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, ": when something goes wrong, the first request is \"show me your risk analysis,\" and a missing or thin one converts an incident into a finding.",
+          "This isn't a dormant rule. OCR has run a standing enforcement initiative around the right of access and around risk analysis, and its investigators consistently report that the absence of a completed risk analysis is the most frequent Security Rule finding when they open a file. The Porter settlement is one named example of many. So is ", { text: "the broader pattern", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, ": when something goes wrong, the first request is \"show me your risk analysis,\" and a missing or thin one converts an incident into a finding.",
         ],
       },
       {
@@ -328,7 +328,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "This is also why a generic checklist fails the test. A checklist tracks whether you have a policy; a risk analysis evaluates whether that policy actually protects the data in your environment. OCR has said as much, and the practices that get cited often have a binder of policies and no real analysis behind them.",
+          "This is also why a generic checklist fails the test. A checklist tracks whether you have a policy; a risk analysis evaluates whether that policy actually protects the data in your environment. ", { text: "OCR has said as much", href: "https://www.hhs.gov/hipaa/for-professionals/security/guidance/guidance-risk-analysis/index.html" }, ", and the practices that get cited often have a binder of policies and no real analysis behind them.",
         ],
       },
       { type: "h2", text: "Your three options for getting it done" },
@@ -434,7 +434,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Documentation is not a side task; it is the deliverable. If OCR asks, \"we did one\" is not an answer. \"Here is the dated analysis, the gaps we identified, the remediation we completed, and the annual reviews since\" is. Keep it for six years.",
+          "Documentation is not a side task; it is the deliverable. If OCR asks, \"we did one\" is not an answer. \"Here is the dated analysis, the gaps we identified, the remediation we completed, and the annual reviews since\" is. ", { text: "Keep it for six years", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.316" }, ".",
         ],
       },
       { type: "h2", text: "What's changing in 2026, and what to do now" },
@@ -481,7 +481,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "Start by finding out where you actually stand. ",
-          { strong: "Most solo practices carry two or three HIPAA gaps they can't see. The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, then sends you a short written review and an introduction to a specialist. It takes about three minutes. " },
+          { strong: "Most independent practices carry gaps they can't see from the inside. The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, then sends you a short written review and an introduction to a specialist. It takes about three minutes. " },
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -507,6 +507,7 @@ export const articles: Article[] = [
           ["HHS Office for Civil Rights, Resolution Agreement and press release, Steven A. Porter, M.D. (2020)."],
           ["HHS Office for Civil Rights, Resolution Agreement, Elite Dental Associates (2019)."],
           ["45 CFR \u00a7 164.308 (eCFR, current)."],
+          ["45 CFR \u00a7\u00a7 160.103, 164.306, 164.316, and 164.530 (eCFR, current)."],
           ["HHS, Guidance on Risk Analysis (referencing NIST SP 800-66)."],
           ["Federal Register, HHS civil monetary penalty inflation adjustment, effective January 28, 2026."],
           ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025."],
@@ -528,7 +529,7 @@ export const articles: Article[] = [
       {
         question: "Does OCR actually fine small dental practices, or just hospitals?",
         answer:
-          "It fines dental practices. In 2019, Elite Dental Associates, a privately owned practice in Dallas, paid $10,000 to OCR and accepted a two-year corrective action plan after disclosing patients' protected health information in replies to Yelp reviews. That was a Privacy Rule case rather than a risk-analysis case, but the point stands: OCR enforces against small dental offices, and it reduced that penalty specifically because of the practice's size and cooperation.",
+          "It does, and not only hospitals. In 2019, Elite Dental Associates, a privately owned practice in Dallas, paid $10,000 to OCR and accepted a two-year corrective action plan after disclosing patients' protected health information in replies to Yelp reviews. That was a Privacy Rule case rather than a risk-analysis case, but the point stands: OCR enforces against small dental offices, and it accepted a reduced settlement amount specifically because of the practice's size and cooperation.",
       },
       {
         question: "Do I need a Business Associate Agreement with my dental lab or IT company?",
@@ -543,7 +544,7 @@ export const articles: Article[] = [
       {
         question: "I'm a one-dentist office. Does this really apply to me?",
         answer:
-          "Yes. Size doesn't change the requirement. A solo practice must conduct the risk analysis, designate Privacy and Security Officers (usually the owner), and keep the documentation. The Porter case was a solo practice, and so was Elite Dental.",
+          "Yes. Size doesn't change the requirement. A solo practice must conduct the risk analysis, designate Privacy and Security Officers (usually the owner), and keep the documentation. The Porter case was a solo practice, and Elite Dental was a small one.",
       },
     ],
   },
