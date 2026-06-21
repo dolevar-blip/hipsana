@@ -606,7 +606,12 @@ export const articles: Article[] = [
         width: 1500,
         height: 760,
         caption: [
-          "OCR's first Risk Analysis Initiative settlement: Bryan County Ambulance Authority paid $90,000 after OCR found it had never conducted a compliant risk analysis. Source: HHS / OCR, October 31, 2024.",
+          "OCR's first Risk Analysis Initiative settlement: Bryan County Ambulance Authority paid $90,000 after OCR found it had never conducted a compliant risk analysis. ",
+          {
+            text: "Source: HHS / OCR, October 31, 2024",
+            href: "https://www.hhs.gov/about/news/2024/10/31/hhs-office-for-civil-rights-settles-hipaa-ransomware-cybersecurity-investigation-for-90000-dollars.html",
+          },
+          ".",
         ],
       },
 
@@ -3935,7 +3940,7 @@ export const articles: Article[] = [
           "Source: U.S. Department of Health and Human Services, Office for Civil Rights. ",
           {
             text: "Civil monetary penalty against Gums Dental Care (October 2024)",
-            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/index.html",
+            href: "https://www.hhs.gov/about/news/2024/10/17/hhs-office-civil-rights-imposes-70000-civil-monetary-penalty-against-gums-dental-care-failure-provide-timely-access-patient-records.html",
           },
           ". Highlights added by Hipsana: the $70,000 penalty, OCR's 50th right-of-access enforcement action, and the roughly three years the records were withheld.",
         ],
@@ -4339,7 +4344,7 @@ export const articles: Article[] = [
         height: 760,
         caption: [
           "Source: U.S. Department of Health and Human Services, Office for Civil Rights. ",
-          { text: "Civil monetary penalty against Igbinadolor D.M.D. and Associates (2022)", href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/index.html" },
+          { text: "Civil monetary penalty against Igbinadolor D.M.D. and Associates (2022)", href: "https://www.hhs.gov/sites/default/files/upi-npd.pdf" },
           ". Highlights added by Hipsana: the $50,000 penalty and the patient information disclosed in the practice's reply to the review.",
         ],
       },
