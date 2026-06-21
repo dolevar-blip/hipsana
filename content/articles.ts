@@ -557,7 +557,7 @@ export const articles: Article[] = [
       "A random HIPAA audit rarely ends in a fine. The real risk is an OCR investigation after a breach or complaint, and what failing costs a small dental practice.",
     author: "Dolev Arama",
     datePublished: "2026-06-04",
-    dateModified: "2026-06-17",
+    dateModified: "2026-06-21",
     body: [
       {
         type: "p",
@@ -576,7 +576,7 @@ export const articles: Article[] = [
             ", and nearly all of them start the same way: a patient complaint, or a breach you have to report yourself.",
           ],
           ["“Failing” usually comes down to one finding. After a breach, the first document OCR asks for is your risk analysis, and most small practices never did a real one."],
-          ["Recent settlements for that single gap have run from about $10,000 to $225,000, plus two to three years of monitored corrective action."],
+          ["Recent settlements for that single gap have run from about $10,000 to over $225,000, plus two to three years of monitored corrective action."],
           [
             "The way to get ahead of it is to know your gaps before OCR does. ",
             { text: "Check your practice with the HIPAA Risk Scorecard.", href: "/scorecard" },
@@ -592,12 +592,12 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "In late 2021, an Oklahoma emergency medical provider was hit by ransomware that locked records for roughly 14,000 patients. The provider, Bryan County Ambulance Authority, reported the breach to OCR, as the law required. OCR opened an investigation and found one decisive thing: it had never conducted a risk analysis, the basic security review HIPAA requires of every covered practice. The matter settled for $90,000 and three years of federal oversight (",
+          "In late 2021, an Oklahoma emergency medical provider was hit by ransomware that locked records for roughly 14,000 patients. The provider, Bryan County Ambulance Authority, reported the breach to OCR, as the law required. OCR opened an investigation and found one decisive thing: it had never conducted a compliant risk analysis, the basic security review HIPAA requires of every covered practice. The matter settled for $90,000 and three years of federal oversight (",
           {
             text: "HHS, October 2024",
             href: "https://www.hhs.gov/about/news/2024/10/31/hhs-office-for-civil-rights-settles-hipaa-ransomware-cybersecurity-investigation-for-90000-dollars.html",
           },
-          "). It is an ambulance service, not a dental office. But the failure OCR cited has nothing to do with ambulances, and everything to do with the most common gap it finds in small practices of every kind.",
+          "). It is an ambulance service, not a dental office. But the failure OCR cited has nothing to do with ambulances, and everything to do with the most common Security Rule gap it finds in small practices of every kind.",
         ],
       },
       {
@@ -628,7 +628,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Here is the part that surprises people. OCR frames the audit program as a way to improve compliance, not to punish. When the HHS Office of Inspector General reviewed the 2016-2017 round in 2024, it found OCR had identified violations but imposed no penalties, and the audits did not even trigger follow-up investigations. The thing most owners fear, failing a surprise audit, has historically carried no fine at all.",
+          "Here is the part that surprises people. OCR frames the audit program as a way to improve compliance, not to punish. When the HHS Office of Inspector General reviewed the 2016-2017 round in 2024, it found OCR had identified violations but imposed no penalties, and the audits rarely led to follow-up reviews. The thing most owners fear, failing a surprise audit, has historically carried no fine at all.",
         ],
       },
       {
@@ -680,7 +680,7 @@ export const articles: Article[] = [
           },
           {
             label: "OCR makes findings",
-            detail: "Here it was blunt: no evidence the provider had ever done one.",
+            detail: "Here it was blunt: no evidence of a compliant one.",
           },
           {
             label: "Resolution",
@@ -738,7 +738,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "One dental-specific point is worth knowing, because it is the other common way a dentist ends up in front of OCR. In 2022, dental practices were a focus of OCR's Right of Access enforcement, the rule that requires giving patients a copy of their records, usually within 30 days. That September, OCR settled three dental cases at once, for $30,000, $80,000, and $25,000, each over a patient who waited months for records they were owed. So the two paths that most often end in a penalty for a dentist are a reported breach, where the risk analysis is the issue, and ",
+          "One dental-specific point is worth knowing, because it is the other common way a dentist ends up in front of OCR. In 2022, dental practices were a focus of OCR's Right of Access enforcement, the rule that requires giving patients a copy of their records, ", { text: "usually within 30 days", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.524" }, ". That September, ", { text: "OCR settled three dental cases at once", href: "https://www.hhs.gov/about/news/2022/09/20/ocr-settles-three-cases-dental-practices-patient-right-access-under-hipaa.html" }, ", for $30,000, $80,000, and $25,000, each over a patient who waited months for records they were owed. So the two paths that most often end in a penalty for a dentist are a reported breach, where the risk analysis is the issue, and ",
           {
             text: "a records request the patient had to chase",
             href: "/articles/how-to-handle-a-patient-records-request-dental-practice",
@@ -757,13 +757,13 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Step back, and the pattern is hard to miss: the expensive failure is almost never exotic. After a breach, the risk analysis is the first thing OCR asks to see, because it shows whether you were watching your own vulnerabilities before something went wrong. A current, honest one does not make you breach-proof, but it changes the conversation, and the factors OCR weighs when setting a penalty include your compliance history and your good-faith effort to fix problems (45 CFR §160.408).",
+          "Step back, and the pattern is hard to miss: the expensive failure is almost never exotic. After a breach, the risk analysis is the first thing OCR asks to see, because it shows whether you were watching your own vulnerabilities before something went wrong. A current, honest one does not make you breach-proof, but it changes the conversation, and the factors OCR weighs when setting a penalty include your compliance history and your good-faith effort to fix problems (", { text: "45 CFR §160.408", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-160/subpart-D/section-160.408" }, ").",
         ],
       },
       {
         type: "p",
         runs: [
-          "This is also where most practices quietly fall short. The risk analysis is required of every covered practice, but it is not a twenty-minute form. HHS offers a free ",
+          "This is also where most practices quietly fall short. The risk analysis is ", { text: "required of every covered practice", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308" }, ", but it is not a twenty-minute form. HHS offers a free ",
           { text: "Security Risk Assessment Tool", href: "https://healthit.gov/privacy-security/security-risk-assessment-tool/" },
           ", a reasonable place to start, but not a finished assessment that would satisfy an investigator: it gives you the questions, not which answers are wrong in your office. If you have never run one, ",
           { text: "our guide to the dental HIPAA risk assessment", href: "/articles/do-dental-practices-need-hipaa-risk-assessment" },
@@ -800,7 +800,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Sign real business associate agreements. " },
-            { text: "Every vendor that touches patient data", href: "/articles/does-my-dental-practice-need-a-baa" }, ", your practice-management software, IT company, billing service, needs one (45 CFR §164.504(e)). Missing BAAs are a recurring finding, and AI tools are the newest place they go missing; here is ",
+            { text: "Every vendor that touches patient data", href: "/articles/does-my-dental-practice-need-a-baa" }, ", your practice-management software, IT company, billing service, needs one (", { text: "45 CFR §164.504(e)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504" }, "). Missing BAAs are a recurring finding, and AI tools are the newest place they go missing; here is ",
             {
               text: "which AI tools will sign a BAA for a dental practice",
               href: "/articles/is-chatgpt-hipaa-compliant-dental-practice",
@@ -818,7 +818,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Train your team, and keep the records. " },
-            "A front-desk mistake is the practice's liability. Documented annual training is both a requirement and a defense.",
+            "A front-desk mistake is the practice's liability. Documented training, kept current, is both a requirement and a defense.",
           ],
           [
             { strong: "Have a breach response plan. " },
@@ -884,6 +884,7 @@ export const articles: Article[] = [
           ["HHS Office for Civil Rights, HIPAA Audit Program."],
           ["HHS Office of Inspector General, review of OCR's HIPAA Audit Program (2024)."],
           ["45 CFR §§ 164.308, 164.400-414, 164.504(e), and 160.404-160.408."],
+          ["45 CFR § 164.524 (individual right of access) (eCFR, current)."],
           ["Federal Register, HHS civil monetary penalty inflation adjustment, effective January 28, 2026."],
           ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025."],
           ["HHS Office for Civil Rights, Right of Access enforcement actions (2022)."],
