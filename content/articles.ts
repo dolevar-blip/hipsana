@@ -1680,7 +1680,7 @@ export const articles: Article[] = [
     title: "Is ChatGPT HIPAA Compliant for a Dental Practice? (2026)",
     metaTitle: "Is ChatGPT HIPAA Compliant for Dentists? (2026)",
     description:
-      "ChatGPT's everyday plans are not HIPAA compliant, by OpenAI's own terms. Which AI tools will sign a BAA for a dental practice, and what OCR most commonly cites.",
+      "ChatGPT's everyday plans are not HIPAA compliant, by OpenAI's own terms. Which AI tools sign a BAA for a dental practice, and what OCR most commonly cites.",
     author: "Dolev Arama",
     datePublished: "2026-06-11",
     dateModified: "2026-06-17",
@@ -5089,7 +5089,7 @@ export const articles: Article[] = [
     status: "published",
     title: "Parental Access to a Child's Dental Records: What HIPAA Requires (2026)",
     metaTitle: "Parental Access to a Child's Dental Records",
-    description: "Under HIPAA, a parent is usually a child's personal representative and can get the dental records, with exceptions. OCR made it an enforcement priority in 2025.",
+    description: "Under HIPAA, a parent is usually a child's personal representative who can get the dental records, with exceptions. OCR made it a 2025 enforcement priority.",
     author: "Dolev Arama",
     datePublished: "2026-06-19",
     dateModified: "2026-06-21",
@@ -6437,8 +6437,8 @@ export const articles: Article[] = [
   {
     slug: "does-hipaa-require-mfa-dental-practice",
     status: "published",
-    title: "Does HIPAA Require MFA for a Dental Practice?",
-    metaTitle: "Does HIPAA Require MFA for a Dental Practice? (2026)",
+    title: "Does HIPAA Require MFA for a Dental Practice? (2026)",
+    metaTitle: "Does HIPAA Require MFA for Dentists? (2026)",
     description:
       "Does HIPAA require MFA for a dental practice? Not by name. Here's what the rule requires now, what the 2026 proposal would change, and what OCR enforces.",
     author: "Dolev Arama",
