@@ -5380,7 +5380,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "In early 2025, a Nevada dental group's network was broken into through an account that belonged to its outside IT vendor. The records of more than 1.2 million patients were exposed, and a proposed $3.3 million settlement was reached to resolve the lawsuits that followed. None of that money came from HIPAA. It was never supposed to.",
+          "In early 2025, a Nevada dental group's network was broken into through an account that belonged to its outside IT vendor. The records of more than 1.2 million patients were exposed, and a proposed $3.3 million settlement was reached, without an admission of wrongdoing, to resolve the lawsuits that followed. None of that money came from HIPAA. It was never supposed to.",
         ],
       },
       {
@@ -5432,7 +5432,7 @@ export const articles: Article[] = [
         caption: [
           "Source: the breach is recorded on the ",
           { text: "HHS OCR breach portal", href: "https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" },
-          "; a proposed $3.3 million class-action settlement (Jordan v. Absolute Dental Group, LLC) in the U.S. District Court for the District of Nevada, with a final approval hearing set for 2026. This is a civil settlement, not an OCR penalty. Highlights added by Hipsana.",
+          "; a proposed $3.3 million class-action settlement (Jordan v. Absolute Dental Group, LLC) in the U.S. District Court for the District of Nevada, with a final approval hearing set for 2026. The company denied wrongdoing. This is a civil settlement, not an OCR penalty. Highlights added by Hipsana.",
         ],
       },
       {
@@ -5506,7 +5506,7 @@ export const articles: Article[] = [
         runs: [
           "The penalties themselves are set in tiers. Under ",
           { text: "45 CFR 160.404", href: "https://www.ecfr.gov/current/title-45/part-160/section-160.404" },
-          ", HIPAA civil money penalties run across four tiers based on culpability, from a violation you did not know about up to willful neglect left uncorrected. As of the amounts that took effect on January 28, 2026, the top of that range reaches $2,190,294 for identical violations in a year. In practice, settlements with small practices land far below the ceiling, usually in the tens to hundreds of thousands of dollars, because OCR weighs your size, your intent, and your cooperation. The ceiling is real. It is not the number a solo office should plan around.",
+          ", HIPAA civil money penalties run across four tiers based on culpability, from a violation you did not know about up to willful neglect left uncorrected. As of the amounts that took effect on January 28, 2026, the top of that range reaches ", { text: "$2,190,294", href: "https://www.federalregister.gov/documents/2026/01/28/2026-01688/annual-civil-monetary-penalties-inflation-adjustment" }, " for identical violations in a year. In practice, settlements with small practices land far below the ceiling, usually in the tens to hundreds of thousands of dollars, because OCR weighs your size, your intent, and your cooperation. The ceiling is real. It is not the number a solo office should plan around.",
         ],
       },
       {
@@ -5552,7 +5552,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "There is also a rule change worth watching, and worth describing accurately, because most write-ups get it wrong. In January 2025, OCR proposed a major update to the HIPAA Security Rule. As of mid-2026 it is still a proposed rule. It was published as a notice of proposed rulemaking in the Federal Register on January 6, 2025, the comment period has closed, and OCR has not issued a final rule. If it is finalized as written, it would remove the long-standing \u201caddressable versus required\u201d distinction in 45 CFR 164.306(d) and make multi-factor authentication and encryption mandatory. It would not require insurance. It would require the same controls insurers already demand.",
+          "There is also a rule change worth watching, and worth describing accurately, because most write-ups get it wrong. In January 2025, OCR proposed a major update to the HIPAA Security Rule. As of mid-2026 it is still a proposed rule. It was published as a notice of proposed rulemaking in the ", { text: "Federal Register on January 6, 2025", href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information" }, ", the comment period has closed, and OCR has not issued a final rule. If it is finalized as written, it would remove the long-standing \u201caddressable versus required\u201d distinction in ", { text: "45 CFR 164.306(d)", href: "https://www.ecfr.gov/current/title-45/part-164/section-164.306" }, " and make multi-factor authentication and encryption mandatory. It would not require insurance. It would require the same controls insurers already demand.",
         ],
       },
       { type: "h2", text: "How much does cyber insurance cost for a dental practice?" },
@@ -5588,7 +5588,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The same short list of controls shows up on nearly every application: multi-factor authentication, endpoint protection, backups that are tested and cannot be silently deleted, a written incident response plan, and a documented risk analysis. None of that is unfamiliar. CISA names the same controls as essential defenses against ransomware, and HIPAA's Security Rule already requires most of them. The work that makes you insurable is, almost line for line, the work that makes you pass an OCR audit.",
+          "The same short list of controls shows up on nearly every application: multi-factor authentication, endpoint protection, backups that are tested and cannot be silently deleted, a written incident response plan, and a documented risk analysis. None of that is unfamiliar. ", { text: "CISA", href: "https://www.cisa.gov/stopransomware/ransomware-guide" }, " names the same controls as essential defenses against ransomware, and HIPAA's Security Rule already requires most of them. The work that makes you insurable is, almost line for line, the work that makes you pass an OCR audit.",
         ],
       },
       {
@@ -5646,7 +5646,7 @@ export const articles: Article[] = [
           ["HHS Office for Civil Rights, Breach Portal report, Absolute Dental Group (2025)."],
           ["45 CFR \u00a7 160.404, civil money penalty amounts (eCFR, current)."],
           ["Federal Register, HHS civil monetary penalty inflation adjustment, effective January 28, 2026 (2026-01688)."],
-          ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025 (90 FR 800)."],
+          ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025 (90 FR 898)."],
           ["45 CFR \u00a7\u00a7 164.306, 164.308, 164.312, Security Rule standards (eCFR, current)."],
           ["U.S. Government Accountability Office, Cyber Insurance: Insurers and Policyholders Face Challenges in an Evolving Market (GAO-21-477, 2021)."],
           ["U.S. Government Accountability Office, Cyber Insurance: Action Needed to Assess Potential Federal Response to Catastrophic Attacks (GAO-22-104256, 2022)."],
