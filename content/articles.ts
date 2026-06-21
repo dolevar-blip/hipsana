@@ -457,7 +457,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "If finalized, the overhaul would, among other things, remove much of the \"addressable\" flexibility and make safeguards like ", { text: "encryption", href: "/articles/is-email-hipaa-compliant-dental-practice" }, " and multi-factor authentication explicitly required, add vulnerability scanning, and compress breach-related timelines. The direction is clearly toward less discretion and more provable, documented controls.",
+          "If finalized, the overhaul would, among other things, remove much of the \"addressable\" flexibility and make safeguards like ", { text: "encryption", href: "/articles/is-email-hipaa-compliant-dental-practice" }, " and ", { text: "multi-factor authentication", href: "/articles/does-hipaa-require-mfa-dental-practice" }, " explicitly required, add vulnerability scanning, and compress breach-related timelines. The direction is clearly toward less discretion and more provable, documented controls.",
         ],
       },
       {
@@ -1547,7 +1547,7 @@ export const articles: Article[] = [
         runs: [
           "HHS published ",
           { text: "the proposal in the Federal Register", href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information" },
-          " on January 6, 2025 (its rulemaking ID is RIN 0945-AA22). If finalized as written, it would turn several safeguards that are currently flexible into hard requirements, among them encryption of patient data, multi-factor authentication, routine vulnerability scanning, and penetration testing. That would raise compliance costs across the board. HHS's own analysis estimated the proposal would cost the healthcare industry roughly $9 billion in its first year, which is part of why more than 100 hospital and provider groups have asked the agency to withdraw it.",
+          " on January 6, 2025 (its rulemaking ID is RIN 0945-AA22). If finalized as written, it would turn several safeguards that are currently flexible into hard requirements, among them encryption of patient data, ", { text: "multi-factor authentication", href: "/articles/does-hipaa-require-mfa-dental-practice" }, ", routine vulnerability scanning, and penetration testing. That would raise compliance costs across the board. HHS's own analysis estimated the proposal would cost the healthcare industry roughly $9 billion in its first year, which is part of why more than 100 hospital and provider groups have asked the agency to withdraw it.",
         ],
       },
       {
@@ -3445,7 +3445,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "One caveat before you lock a number. A proposed overhaul of the Security Rule, published in the ", { text: "Federal Register on January 6, 2025", href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information" }, " (rulemaking ID RIN 0945-AA22), would, if finalized as written, make several now-flexible safeguards mandatory, encryption, multi-factor authentication, and routine vulnerability scanning among them, which would raise the monitoring and scanning line items. As of June 2026 it is not final and has no confirmed date, so do not spend now to meet a rule that does not exist yet. The foundation, a thorough risk analysis, is required either way.",
+          "One caveat before you lock a number. A proposed overhaul of the Security Rule, published in the ", { text: "Federal Register on January 6, 2025", href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information" }, " (rulemaking ID RIN 0945-AA22), would, if finalized as written, make several now-flexible safeguards mandatory, encryption, ", { text: "multi-factor authentication", href: "/articles/does-hipaa-require-mfa-dental-practice" }, ", and routine vulnerability scanning among them, which would raise the monitoring and scanning line items. As of June 2026 it is not final and has no confirmed date, so do not spend now to meet a rule that does not exist yet. The foundation, a thorough risk analysis, is required either way.",
         ],
       },
       { type: "h2", text: "How to budget without overpaying" },
@@ -5406,7 +5406,7 @@ export const articles: Article[] = [
             "Your regular business owner's policy almost certainly excludes data breaches. Cyber is sold as its own coverage.",
           ],
           [
-            "Insurers increasingly require the security controls HIPAA already expects before they will issue a policy: multi-factor authentication, encryption, tested backups, and a documented risk analysis.",
+            "Insurers increasingly require the security controls HIPAA already expects before they will issue a policy: ", { text: "multi-factor authentication", href: "/articles/does-hipaa-require-mfa-dental-practice" }, ", encryption, tested backups, and a documented risk analysis.",
           ],
         ],
       },
@@ -6431,6 +6431,430 @@ export const articles: Article[] = [
         question: "What can I use instead of Google Analytics or the Meta Pixel?",
         answer:
           "Keep marketing pixels only on pages with no patient data. For everything else, use analytics that never send visitor data to a third party, such as server-side logging or privacy-first, cookieless tools. Document the choice in your risk analysis.",
+      },
+    ],
+  },
+  {
+    slug: "does-hipaa-require-mfa-dental-practice",
+    status: "published",
+    title: "Does HIPAA Require MFA for a Dental Practice?",
+    metaTitle: "Does HIPAA Require MFA for a Dental Practice? (2026)",
+    description:
+      "Does HIPAA require MFA for a dental practice? Not by name. Here's what the rule requires now, what the 2026 proposal would change, and what OCR enforces.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-21",
+    dateModified: "2026-06-21",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "Not by name. The HIPAA Security Rule does not name multi-factor authentication, or MFA, as a requirement. What it requires is that you verify anyone reaching patient data is who they claim to be, and it leaves the method to your risk analysis. In practice that makes MFA the reasonable choice, and a proposed 2026 rule would make it explicit. Here is what that means for your practice right now.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "Not required by name today. " },
+            "The Security Rule tells you to verify identity, but it does not name MFA. The method is left to your risk analysis.",
+          ],
+          [
+            { strong: "Unique logins, though, are required. " },
+            "Every staff member needs their own login. A shared front-desk account that three people use does not meet that requirement, with or without MFA.",
+          ],
+          [
+            { strong: "A 2026 rule would make MFA mandatory, but it is not law. " },
+            "A proposed update would require MFA with limited exceptions. As of 2026 it is not finalized, it missed its target date, and it may be withdrawn.",
+          ],
+          [
+            { strong: "OCR enforces the missing risk analysis. " },
+            "Under the current rule there is no MFA requirement to cite, so even when missing MFA causes a breach, what OCR cites is almost always the absent risk analysis.",
+          ],
+          [
+            { strong: "For most practices, turning it on is the reasonable call. " },
+            "MFA is cheap, often free, and the expected safeguard after a breach. The largest health breach on record began on a remote-access portal that had no MFA.",
+          ],
+          [
+            { strong: "Skip text messages where you can. " },
+            "An authenticator app or a hardware key beats a code sent by SMS, which the federal standards body classifies as a restricted method.",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This article explains whether HIPAA requires MFA for a dental practice. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
+
+      { type: "h2", text: "Does HIPAA require MFA for a dental practice?" },
+      {
+        type: "p",
+        runs: [
+          "Not in those words. The control that comes closest is the Security Rule's authentication standard, ",
+          {
+            text: "45 CFR 164.312(d)",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312",
+          },
+          ", which tells a practice to \"implement procedures to verify that a person or entity seeking access\" to patient data \"is the one claimed.\" It does not name a password, a code, or MFA. It names the goal, identity verification, and leaves you to pick a method that is reasonable for your practice. On an office that keeps patient data in the cloud and checks email from home, a single password is hard to defend as reasonable, which is why MFA has become the practical answer even though the words are not in the rule.",
+        ],
+      },
+
+      { type: "h2", text: "What HIPAA actually requires on authentication today" },
+      {
+        type: "p",
+        runs: [
+          "The Security Rule sorts its safeguards into two buckets, and the difference matters. Some are ",
+          {
+            text: "\"required\" and some are \"addressable\"",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.306",
+          },
+          ". Required means you implement it. Addressable does not mean optional: you implement it if it is reasonable and appropriate, or you document why not and put an equivalent measure in its place. Authentication itself is a required standard, so you must verify identity. But the specific method, password versus MFA, sits in that risk-based judgment, not in a named rule, and for most modern practices that judgment lands on MFA.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "There is one authentication-adjacent control the rule does name, and dental offices break it constantly. ",
+          {
+            text: "Unique user identification",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312",
+          },
+          " is a required specification: every person who touches patient data needs their own login. A shared \"frontdesk\" account does not satisfy that required standard, MFA or no MFA. So the honest picture is this: unique logins are required by name, and MFA is not.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Required by name", "Addressable (risk-based)", "Not named at all"],
+        rows: [
+          [
+            "Unique login for each person",
+            "Automatic logoff after inactivity",
+            "Multi-factor authentication (MFA)",
+          ],
+          [
+            "A security risk analysis",
+            "Encryption of patient data",
+            "Any specific password length or rule",
+          ],
+          [
+            "An emergency access procedure",
+            "Password management procedures",
+            "Any named brand, app, or device",
+          ],
+        ],
+        caption:
+          "What the Security Rule names, and what it leaves to your risk analysis. MFA is not in the rule's text today; a unique login and a risk analysis are.",
+      },
+
+      { type: "h2", text: "The proposed 2026 rule: what would change, and why it isn't law yet" },
+      {
+        type: "p",
+        runs: [
+          "In January 2025 the federal government proposed the most significant overhaul of the Security Rule in over two decades. The ",
+          {
+            text: "proposed rule",
+            href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information",
+          },
+          " would do two things that matter here. It would erase the \"addressable\" category, making those safeguards mandatory, and it would name MFA directly, requiring it with limited exceptions. If it becomes law, \"is MFA required?\" gets a one-word answer: yes.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "But it is not law, and it may never be. As of 2026 the rule is still a proposal. The comment window closed in March 2025, the government's own May 2026 target to finalize it came and went with nothing published, and a coalition of more than 100 health care organizations has asked the government to withdraw it, and the ",
+          {
+            text: "American Dental Association",
+            href: "https://adanews.ada.org/ada-news/2025/december/ada-urges-hhs-to-withdraw-proposed-hipaa-cybersecurity-rule/",
+          },
+          " has urged the same. They point to the price: the government's own estimate puts the first-year cost at roughly $9 billion. If a final rule does land, practices would get about 240 days to comply. Until then, anyone telling you the \"2026 rule\" already forces you to use MFA is wrong: it is proposed, not in force.",
+        ],
+      },
+
+      { type: "h2", text: "What OCR actually enforces" },
+      {
+        type: "p",
+        runs: [
+          "Here is the part most articles skip, and it should change how you spend your money. When OCR penalizes a practice after a breach, the charge is almost always the same: the missing ",
+          {
+            text: "risk analysis",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308",
+          },
+          ", not the missing MFA.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Take ",
+          {
+            text: "PIH Health",
+            href: "https://www.hhs.gov/press-room/ocr-hipaa-racap-pih.html",
+          },
+          ", a California network that settled with the HHS Office for Civil Rights for $600,000 in April 2025. A phishing attack had walked into 45 employee email accounts and exposed the records of 189,763 patients, the kind of break-in MFA is built to stop. But when OCR wrote up what PIH did wrong, the violations were the failure to conduct a risk analysis and the failure to report the breach on time. MFA is not in the charges. It appears only in OCR's list of non-binding recommendations afterward.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "It is a pattern, not a one-off. ",
+          {
+            text: "Lafourche Medical Group",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/lafourche-medical-group/index.html",
+          },
+          ", a small Louisiana group whose owner clicked a phishing email, was OCR's first phishing settlement at $480,000 in 2023, and the cited failure was again the missing risk analysis. Even when an employee at New York's ",
+          {
+            text: "Montefiore Medical Center",
+            href: "https://www.hhs.gov/about/news/2024/02/06/hhs-office-civil-rights-settles-malicious-insider-cybersecurity-investigation.html",
+          },
+          " stole records from the inside, OCR charged the risk analysis and the audit controls, not the authentication method. OCR has even built an enforcement program around this single failure, its Risk Analysis Initiative, launched in 2024. The wider pattern of dental and small-practice settlements is tracked in our ", { text: "HIPAA breach and enforcement report", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, ".",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-settlement-pih-health-risk-analysis.webp",
+        alt:
+          "Summary card for the 2025 HHS Office for Civil Rights settlement with PIH Health: a phishing attack on 45 employee email accounts exposed the records of 189,763 patients, and PIH paid a $600,000 settlement. OCR cited the missing risk analysis and the late breach notification, not the absence of multi-factor authentication.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "From the U.S. Department of Health and Human Services, Office for Civil Rights settlement with PIH Health, Inc. (announced April 23, 2025). OCR cited the missing risk analysis, not the missing MFA. ",
+          {
+            text: "Read the HHS announcement \u2192",
+            href: "https://www.hhs.gov/press-room/ocr-hipaa-racap-pih.html",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The clearest case runs the other way. In 2024 OCR imposed a $548,265 penalty on Children's Hospital Colorado and said plainly that the first breach happened because ",
+          {
+            text: "multi-factor authentication was disabled",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/childrens-hospital-colorado-npd/index.html",
+          },
+          " on an email account. Even there, the violations OCR charged were the missing risk analysis and untrained staff, not the missing MFA, because the rule gave it no MFA provision to cite. The disabled MFA explains how the attacker got in. The risk analysis is what OCR could enforce.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "None of this means MFA is optional. The most vivid case in health care makes the opposite point. The largest breach ever reported to the federal government, the 2024 attack on Change Healthcare that exposed records on roughly 190 million people, began on a remote-access portal that had ", { text: "no multi-factor authentication", href: "https://www.finance.senate.gov/imo/media/doc/0501_witty_testimony.pdf" }, ". One stolen password was the whole entry. So MFA matters enormously. It is just not the box OCR checks when it writes the penalty. And the two are not a choice between each other. The risk analysis is the process that finds the exposure and tells you to turn MFA on; skip it, and you do not find the gap until a breach does.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This is the trap in the free check-the-box tools. They will tell you to switch MFA on, and you should. But under the current rule there is no MFA box for OCR to check, so what it cites is the missing risk analysis underneath the breach, the document those tools rarely produce in a form that survives an audit. The free ",
+          { text: "HIPAA Scorecard", href: "/scorecard" },
+          " shows you where your authentication and your risk analysis actually stand, and names your biggest gap in about three minutes. It is a starting point, not a full audit, but it tells you whether you are exposed on the thing OCR actually cites.",
+        ],
+      },
+
+      { type: "h2", text: "Where to turn on MFA in a dental practice" },
+      {
+        type: "p",
+        runs: [
+          "If you decide to add MFA, and you should, the job is to cover every place patient data lives, not just the front-door login. The gaps that get practices in trouble are the ones nobody thought to check: a cloud backup, an imaging portal, the email account a hygienist reads from home. A compliance professional can confirm the list for your specific systems, but here is the map most dental offices need.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Where to switch MFA on", "Why it matters"],
+        rows: [
+          [
+            "Practice-management software (Dentrix, Eaglesoft, Open Dental)",
+            "It holds the full patient chart, and many versions include MFA at no extra cost",
+          ],
+          [
+            "Email and Microsoft 365 or Google Workspace",
+            "The most common break-in point; phishing led to the breaches OCR has settled",
+          ],
+          [
+            "Imaging and X-ray cloud portals",
+            "Patient images are protected health information too",
+          ],
+          [
+            "Remote access and VPN",
+            "A remote-access portal with no MFA is exactly how the Change Healthcare breach started",
+          ],
+          [
+            "Cloud backup and file storage",
+            "A backup of patient data is still patient data",
+          ],
+          [
+            "Administrator and billing accounts",
+            "These reach everything, so they are the highest-value target",
+          ],
+        ],
+        caption:
+          "Switch MFA on everywhere patient data can be reached, not only at the main login.",
+      },
+
+      { type: "h2", text: "Which kind of MFA counts" },
+      {
+        type: "p",
+        runs: [
+          "Not every second factor is equal. A code texted to a phone is better than nothing, but it is the weakest common option, because phone numbers can be hijacked through SIM-swaps and number porting. The federal standards body, ",
+          {
+            text: "NIST, classifies text-message codes as \"restricted\"",
+            href: "https://pages.nist.gov/800-63-3/sp800-63b.html",
+          },
+          ": still allowed, but discouraged and hedged with conditions. The stronger choices are an authenticator app on a phone or a physical security key, both of which resist the phishing that text codes do not.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Cost is rarely the obstacle. Authenticator apps are free, and MFA is already built into many practice-management and email platforms. What a fully compliant year actually costs is its own question, covered in ",
+          {
+            text: "how much HIPAA compliance costs for a dental practice",
+            href: "/articles/how-much-does-hipaa-compliance-cost-for-a-dental-practice",
+          },
+          ".",
+        ],
+      },
+
+      { type: "h2", text: "What to do now" },
+      {
+        type: "p",
+        runs: [
+          "You do not have to wait for the rule to settle. The steps below are the reasonable-and-appropriate baseline today, and every one of them would also put you ahead of the proposed rule if it lands.",
+        ],
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Switch MFA on everywhere patient data lives",
+            detail:
+              "Practice-management software, email, imaging, cloud backup, remote access, and every administrator account. Start with email and remote access, since that is where the settled breaches began.",
+          },
+          {
+            label: "Use an app or a hardware key, not text messages",
+            detail:
+              "An authenticator app or a physical security key resists phishing. Keep SMS codes only as a last-resort backup, since NIST treats them as a restricted method.",
+          },
+          {
+            label: "Kill every shared login",
+            detail:
+              "Give each staff member a unique account. The shared \"frontdesk\" password fails a requirement the rule names explicitly, separate from MFA.",
+          },
+          {
+            label: "Write down and date a security risk analysis",
+            detail:
+              "This is the single document OCR cites most often after a breach. It has to be accurate and thorough, and kept up to date, not a one-time checkbox from three years ago.",
+          },
+          {
+            label: "Get a signed agreement with every vendor that touches patient data",
+            detail:
+              "Your IT company, cloud backup, billing service, and software vendor each need a business associate agreement before they handle patient data.",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Two of these have their own guides: what a risk analysis involves is laid out in the ",
+          {
+            text: "dental HIPAA risk assessment",
+            href: "/articles/do-dental-practices-need-hipaa-risk-assessment",
+          },
+          ", and which vendors need a contract, and what it must say, is covered in ",
+          {
+            text: "does my dental practice need a BAA",
+            href: "/articles/does-my-dental-practice-need-a-baa",
+          },
+          ". The proposed 2026 rule would also require that vendor contract to name MFA and encryption specifically, one more reason to get the agreement in place now.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "If you want a fast read on where you stand, the free ",
+          { text: "HIPAA Scorecard", href: "/scorecard" },
+          " checks your authentication, your risk analysis, your vendor agreements, and six other core controls, then names your biggest gap in about three minutes.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This is general information about HIPAA and a proposed federal rule, not legal advice, and the rule's status can change. Before you rely on any authentication setup to meet HIPAA, have it reviewed by a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          [
+            "U.S. Department of Health and Human Services, Office for Civil Rights, \u201cHIPAA Security Rule To Strengthen the Cybersecurity of Electronic Protected Health Information,\u201d notice of proposed rulemaking, 90 FR 898 (Federal Register, Jan. 6, 2025): proposed, not finalized as of June 2026.",
+          ],
+          [
+            "45 CFR \u00a7 164.312(d) (person or entity authentication) and \u00a7 164.312(a)(2)(i) (unique user identification, Required) (eCFR, current as of June 2026).",
+          ],
+          [
+            "45 CFR \u00a7 164.306(d) (the \u201crequired\u201d versus \u201caddressable\u201d framework) (eCFR, current).",
+          ],
+          [
+            "45 CFR \u00a7 164.308(a)(1)(ii)(A) (risk analysis, Required) (eCFR, current).",
+          ],
+          [
+            "HHS Office for Civil Rights, \u201cSettles Phishing Attack Breach with Health Care Network for $600,000\u201d (PIH Health) (hhs.gov, Apr. 23, 2025): the cited failures were the risk analysis and breach-notification timing; MFA was not charged.",
+          ],
+          [
+            "HHS Office for Civil Rights, settlement with Lafourche Medical Group (hhs.gov, Dec. 7, 2023) and the malicious-insider settlement with Montefiore Medical Center (hhs.gov, Feb. 6, 2024): in each, the cited failure was the risk analysis, not the authentication method.",
+          ],
+          [
+            "NIST Special Publication 800-63B, Digital Identity Guidelines: use of the PSTN (SMS and voice) for out-of-band authentication is \u201crestricted\u201d (pages.nist.gov, accessed June 2026).",
+          ],
+          [
+            "American Dental Association, \u201cADA urges HHS to withdraw proposed HIPAA cybersecurity rule\u201d (ada.org, December 2025): the ADA joined a coalition of more than 100 organizations seeking withdrawal.",
+          ],
+          [
+            "Change Healthcare / UnitedHealth Group: the 2024 ransomware breach, the largest reported to HHS, began on a Citrix remote-access portal with no multi-factor authentication (UnitedHealth Group congressional testimony, 2024); affected individuals reported at roughly 190 million.",
+          ],
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Is 2FA the same as MFA, and is it required for HIPAA?",
+        answer:
+          "Two-factor authentication (2FA) is the most common form of multi-factor authentication, so the terms are used interchangeably. Neither is required by name under the current HIPAA Security Rule. The rule requires you to verify the identity of anyone accessing patient data and to base your method on a risk analysis. Given the way modern attacks work, that makes MFA the reasonable choice even though the words are not in the rule.",
+      },
+      {
+        question: "How much does MFA cost for a small dental practice?",
+        answer:
+          "Often nothing. Authenticator apps are free, and MFA is already included in many practice-management systems and email platforms. The broader question of what full HIPAA compliance costs in a year is covered in our compliance-cost guide for dental practices.",
+      },
+      {
+        question: "Are shared front-desk logins a HIPAA violation?",
+        answer:
+          "Generally yes. Unique user identification is a required specification of the Security Rule, which means every person who accesses patient data must have their own login. A shared front-desk account does not satisfy that requirement, separate from the question of MFA.",
+      },
+      {
+        question: "When would the proposed 2026 MFA rule take effect?",
+        answer:
+          "It has not taken effect, and it may not. The proposal was published in January 2025 and remains proposed; the government's May 2026 target to finalize it passed with nothing published, and more than 100 health care organizations have asked for it to be withdrawn, as has the American Dental Association. If a final rule is published, practices would have roughly 240 days to comply.",
+      },
+      {
+        question: "Is SMS text-message MFA allowed under HIPAA?",
+        answer:
+          "It is allowed, but it is the weakest common option. Text-message codes can be intercepted through SIM-swaps and number porting, and NIST classifies them as a restricted method. An authenticator app or a physical security key is stronger and resists phishing, so use text messages only as a backup.",
+      },
+      {
+        question: "Has any dental practice been fined for not having MFA?",
+        answer:
+          "No. In its breach settlements, the Office for Civil Rights has cited the missing risk analysis as the violation, even in breaches that began with missing or disabled MFA. That is the document worth getting right first. The free HIPAA Scorecard checks your risk analysis and authentication and names your biggest gap in about three minutes.",
       },
     ],
   },
