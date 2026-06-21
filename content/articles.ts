@@ -4321,13 +4321,13 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "A North Carolina dentist replied to a one-star Google review. Naming the patient in that reply cost the practice a $50,000 HIPAA penalty.",
+          "A North Carolina dentist replied to a negative Google review. Naming the patient in that reply cost the practice a $50,000 HIPAA penalty.",
         ],
       },
       {
         type: "p",
         runs: [
-          "HIPAA does not ban dental practices from social media. It draws two lines: you need a patient's written authorization to post their photo or testimonial, and you cannot reveal that someone is your patient when you reply to a review. Get either wrong and a routine marketing task becomes a HIPAA disclosure. Here is what counts, and what OCR has fined.",
+          "HIPAA does not ban dental practices from social media. It draws two lines: you need a patient's written authorization to post their photo or testimonial, and you cannot reveal that someone is your patient when you reply to a review. Get either wrong and a routine marketing task becomes a HIPAA disclosure. Here is what counts, and what OCR has enforced.",
         ],
       },
       {
@@ -4352,8 +4352,8 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Posting before-and-after photos and replying to Google reviews are ordinary marketing for a modern practice. They are also two of the few HIPAA mistakes OCR has fined dental offices for by name, in ",
-          { text: "public resolutions you can read on hhs.gov", href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/index.html" },
+          "Posting before-and-after photos and replying to Google reviews are ordinary marketing for a modern practice. They are also two of the few HIPAA mistakes OCR has taken action against dental offices for by name, in ",
+          { text: "public enforcement records you can read on hhs.gov", href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/index.html" },
           ".",
         ],
       },
@@ -4377,14 +4377,14 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "Rule 2: responding to a review is a disclosure. " },
-          "Under 45 CFR 164.502(a), you may not disclose PHI except as the rule permits. The fact that a named individual is your patient is itself PHI. So when you reply \"Thanks for being a valued patient, please call the office,\" you have confirmed publicly that the reviewer is your patient. Add any detail about their visit and the disclosure gets worse. This is the rule that catches dentists who are only trying to be polite or to defend their reputation.",
+          "Under ", { text: "45 CFR 164.502(a)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502" }, ", you may not disclose PHI except as the rule permits. The fact that a named individual is your patient is itself PHI. So when you reply \"Thanks for being a valued patient, please call the office,\" you have confirmed publicly that the reviewer is your patient. Add any detail about their visit and the disclosure gets worse. This is the rule that catches dentists who are only trying to be polite or to defend their reputation.",
         ],
       },
-      { type: "h2", text: "What OCR has actually fined dental practices for" },
+      { type: "h2", text: "What OCR has actually enforced against dental practices" },
       {
         type: "p",
         runs: [
-          "These are not hypotheticals. Three dental practices have paid OCR penalties for this exact behavior, and ",
+          "These are not hypotheticals. Three dental practices have paid OCR over this exact behavior, and ",
           { text: "OCR has kept enforcing it", href: "/articles/dental-hipaa-breach-and-enforcement-report" },
           ":",
         ],
@@ -4393,7 +4393,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "Igbinadolor D.M.D. and Associates (North Carolina): $50,000 (2022). " },
-          "A patient posted a negative review on the practice's Google page under a pseudonym. The same day, the practice replied and named the patient three times, disclosing their symptoms and the recommended treatment. OCR imposed a $50,000 civil money penalty for an impermissible disclosure under 164.502(a). The practice made its position worse by ignoring OCR's data request and subpoena and not contesting the findings.",
+          "A patient posted a negative review on the practice's Google page under a pseudonym. The same day, the practice replied and named the patient three times, disclosing their symptoms and the recommended treatment. OCR imposed a ", { text: "$50,000 civil money penalty", href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/upi/index.html" }, " for an impermissible disclosure under 164.502(a). The practice made its position worse by ignoring OCR's data request and subpoena and not contesting the findings.",
         ],
       },
       {
@@ -4413,7 +4413,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The pattern is identical across all three: a public reply meant to set the record straight that revealed a patient. OCR has fined this from $10,000 to $50,000, and the statutory penalties run far higher.",
+          "The pattern is identical across all three: a public reply meant to set the record straight that revealed a patient. OCR's actions here have run from a $10,000 settlement to a $50,000 penalty, and the statutory penalties run far higher.",
         ],
       },
       {
@@ -4482,7 +4482,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "For a photo of a child patient, the authorization has to come from the parent or guardian who is the child's personal representative under HIPAA.",
+          "For a photo of a child patient, the authorization has to come from the parent or guardian who is the child's ", { text: "personal representative", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502#p-164.502(g)" }, " under HIPAA.",
         ],
       },
       {
@@ -4518,7 +4518,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "Your social-media manager may be a business associate. " },
-          "If you hand patient information to an outside marketing or social-media agency (to pull a testimonial, say), that vendor is handling PHI on your behalf and generally needs ",
+          "If you hand patient information to an outside marketing or social-media agency (to pull a testimonial, say), that vendor is ", { text: "handling PHI on your behalf", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-160/subpart-A/section-160.103" }, " and generally needs ",
           { text: "a signed business associate agreement", href: "/articles/does-my-dental-practice-need-a-baa" },
           ". Posting non-patient content does not trigger this; handling PHI does.",
         ],
@@ -4534,14 +4534,14 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "Deleting is not undoing. " },
-          "Removing a non-compliant post lowers ongoing exposure, but it does not undo a disclosure that already happened. Under 45 CFR 164.402, any impermissible disclosure of unsecured PHI is presumed to be a reportable breach unless you document a risk assessment showing a low probability that the information was compromised, which is hard to show for something posted in public. A public slip can carry breach-notification duties even after the post is gone.",
+          "Removing a non-compliant post lowers ongoing exposure, but it does not undo a disclosure that already happened. Under ", { text: "45 CFR 164.402", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.402" }, ", any impermissible disclosure of unsecured PHI is presumed to be a reportable breach unless you document a risk assessment showing a low probability that the information was compromised, which is hard to show for something posted in public. A public slip can carry breach-notification duties even after the post is gone.",
         ],
       },
       {
         type: "p",
         runs: [
           { strong: "State law can be stricter. " },
-          "HIPAA is the federal floor. Several states add tighter rules on patient images and dental records. Where your state is stricter, follow the stricter rule.",
+          "HIPAA is ", { text: "the federal floor", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-160/subpart-B/section-160.203" }, ". Several states add tighter rules on patient images and dental records. Where your state is stricter, follow the stricter rule.",
         ],
       },
       { type: "h2", text: "What to do this week" },
@@ -4583,7 +4583,7 @@ export const articles: Article[] = [
           ["HHS Office for Civil Rights, Resolution Agreement and Corrective Action Plan, Elite Dental Associates (2019)."],
           ["HHS Office for Civil Rights, “Guidance Regarding Methods for De-identification of Protected Health Information” (the 18 identifiers and the de-identification standard; accessed June 2026)."],
           ["American Dental Association, sample HIPAA patient authorization forms (HIPAA compliance manual; accessed June 2026)."],
-          ["45 CFR \u00a7 164.508 (uses and disclosures for which an authorization is required, including marketing); \u00a7 164.502(a) (general rules for uses and disclosures); \u00a7 164.514(b) (de-identification); \u00a7 164.402 (breach definition and presumption); \u00a7 160.203 (preemption) (eCFR, current)."],
+          ["45 CFR \u00a7 164.508 (uses and disclosures for which an authorization is required, including marketing); \u00a7 164.502(a) (general rules for uses and disclosures); \u00a7 164.502(g) (personal representatives); \u00a7 164.514(b) (de-identification); \u00a7 164.402 (breach definition and presumption); \u00a7 160.103 (definitions, including business associate); \u00a7 160.203 (preemption) (eCFR, current)."],
         ],
       },
     ],
