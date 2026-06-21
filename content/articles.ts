@@ -5086,7 +5086,7 @@ export const articles: Article[] = [
     description: "Under HIPAA, a parent is usually a child's personal representative and can get the dental records, with exceptions. OCR made it an enforcement priority in 2025.",
     author: "Dolev Arama",
     datePublished: "2026-06-19",
-    dateModified: "2026-06-19",
+    dateModified: "2026-06-21",
     body: [
       {
         type: "p",
@@ -5097,7 +5097,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Under HIPAA, a parent is usually their child's personal representative, which generally gives them the right to see and get a copy of the child's dental records, the same right the patient would have. A handful of situations change that, and state law sets some of the edges. But for routine dental care, the parent of an unemancipated minor can access the child's record, and the mistake that gets practices penalized is almost always the opposite of what you would expect: not handing records to the wrong person, but wrongly refusing a parent who had every right to them.",
+          "Under HIPAA, a parent is usually their child's personal representative, which generally gives them ", { text: "the right to see and get a copy of the child's dental records", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.524" }, ", the same right the patient would have. A handful of situations change that, and state law sets some of the edges. But for routine dental care, the parent of an unemancipated minor can access the child's record, and the mistake that draws an OCR enforcement action is almost always the opposite of what you would expect: not handing records to the wrong person, but wrongly refusing a parent who had every right to them.",
         ],
       },
       {
@@ -5113,7 +5113,7 @@ export const articles: Article[] = [
       {
         type: "image",
         src: "/ocr-hipaa-settlement-paradise-dental-parental-access.webp",
-        alt: "Exhibit from the HHS Office for Civil Rights enforcement action against Paradise Family Dental: OCR found the Las Vegas dental practice failed to give a mother timely access to her own and her minor child's records, and the practice agreed to a $25,000 settlement, one of three dental right-of-access settlements OCR announced that day in September 2022.",
+        alt: "Exhibit from the HHS Office for Civil Rights enforcement action against Paradise Family Dental: the Las Vegas dental practice took more than eight months to give a mother access to her own and her minor child's records, and agreed to a $25,000 settlement, one of three dental right-of-access settlements OCR announced that day in September 2022.",
         width: 1500,
         height: 760,
         caption: [
@@ -5142,7 +5142,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "OCR stated it plainly in its December 2025 letter: in most cases a parent is the personal representative of an unemancipated minor child, and the Privacy Rule generally gives the parent the right to access the child's records, unless one of the limited exceptions applies. For a dental office, the records at issue are the same designated record set any patient can request: the clinical chart, treatment notes, imaging, and the billing used to make decisions about that child. What the parent has a right to is a copy of that information, not the original chart, which the practice keeps. OCR's own fact sheet for parents, ",
+          "OCR stated it plainly in its December 2025 letter: in most cases a parent is the personal representative of an unemancipated minor child, and the Privacy Rule generally gives the parent the right to access the child's records, unless one of the limited exceptions applies. For a dental office, the records at issue are the same ", { text: "designated record set", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.501" }, " any patient can request: the clinical chart, treatment notes, imaging, and the billing used to make decisions about that child. What the parent has a right to is a copy of that information, not the original chart, which the practice keeps. OCR's own fact sheet for parents, ",
           { text: "Am I My Child's \"Personal Representative\" Under HIPAA?", href: "https://www.hhs.gov/sites/default/files/am-i-my-childs.pdf" },
           ", confirms a parent who is the personal representative can get the child's complete record.",
         ],
@@ -5157,7 +5157,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Consent to treatment is largely a matter of state law, and the American Dental Association's practice guidance notes that, as a practical matter, the parent who brings the child in is generally the one who authorizes that visit's care. Access to records is governed by HIPAA, plus any stricter state rule, and here the custody label does most of the damage. A parent who is the child's personal representative generally has access regardless of who brought the child in or who pays the bill. Treating \"the parent who pays\" or \"the parent with primary custody\" as the only one entitled to records is a common, avoidable error.",
+          "Consent to treatment is largely a matter of state law, and the American Dental Association's practice guidance notes that, as a practical matter, the parent who brings the child in is generally the one who authorizes that visit's care. Access to records is governed by HIPAA, plus ", { text: "any stricter state rule", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-160/subpart-B/section-160.203" }, ", and here the custody label does most of the damage. A parent who is the child's personal representative generally has access regardless of who brought the child in or who pays the bill. Treating \"the parent who pays\" or \"the parent with primary custody\" as the only one entitled to records is a common, avoidable error.",
         ],
       },
       { type: "h2", text: "The three times a parent is not the personal representative" },
@@ -5289,7 +5289,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Most solo practices carry two or three HIPAA gaps they can't see, and a written policy for parent and minor record requests is a common one. The free HIPAA Risk Scorecard checks the 10 areas OCR investigates most, then sends a short written review and an introduction to a specialist. It takes about three minutes. ",
+          "Most independent practices carry gaps they can't see from the inside, and a written policy for parent and minor record requests is a common one. The free HIPAA Risk Scorecard checks the 10 areas OCR investigates most, then sends a short written review and an introduction to a specialist. It takes about three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -5310,7 +5310,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The practices that get penalized are rarely acting in bad faith. Paradise, the Las Vegas practice, did send the records in the end; it just took more than eight months, and by then a complaint was already with OCR. The pattern is almost always the same: no written rule, a request that lands on whoever opens the mail, a front-desk staffer who hesitates over a divorce situation, and a deadline that quietly slides past. The fix is not legal expertise. It is a short, owned procedure that tells your team the default answer, the few real exceptions, and the deadline.",
+          "The practices that draw an OCR enforcement action are rarely acting in bad faith. Paradise, the Las Vegas practice, did send the records in the end; it just took more than eight months, and by then a complaint was already with OCR. The pattern is almost always the same: no written rule, a request that lands on whoever opens the mail, a front-desk staffer who hesitates over a divorce situation, and a deadline that quietly slides past. The fix is not legal expertise. It is a short, owned procedure that tells your team the default answer, the few real exceptions, and the deadline.",
         ],
       },
       {
@@ -5344,6 +5344,7 @@ export const articles: Article[] = [
           ["HHS Office for Civil Rights, \"Am I My Child's 'Personal Representative' Under HIPAA?\" fact sheet (accessed June 2026)."],
           ["HHS Office for Civil Rights, \"Personal Representatives\" guidance (accessed June 2026)."],
           ["45 CFR § 164.502(g) (personal representatives, including unemancipated minors and the abuse, neglect, or endangerment provision); § 164.524 (right of access); § 160.203 (preemption) (eCFR, current)."],
+          ["45 CFR § 164.501 (designated record set, the scope of records a patient or representative can access) (eCFR, current)."],
           ["Texas Family Code § 153.073 (rights of a parent at all times, including access to a child's dental records) (Texas Legislature, current)."],
           ["Louisiana Revised Statutes § 9:351 (access to a child's records and a non-custodial parent) (Louisiana State Legislature, current)."],
           ["American Dental Association, \"Custody Arrangements\" (Managing Professional Risks: The Consent Process) (accessed June 2026). Cited only for the dental-practice norm on who consents to a child's treatment, not for any legal rule."],
