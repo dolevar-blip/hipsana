@@ -3554,7 +3554,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Probably not the way you are using it. HIPAA does not ban emailing patient information, but it does require you to secure it, and standard Gmail or Microsoft 365 will not encrypt an outgoing message on its own. After a small clinic sent the records of 1,263 patients to an unknown email account, federal regulators fined it $25,000. Here is what the rules actually require, what is changing in 2026, and how to close the gap before it is your practice.",
+          "Probably not the way you are using it. HIPAA does not ban emailing patient information, but it does require you to secure it, and standard Gmail or Microsoft 365 will not encrypt an outgoing message on its own. After a small clinic sent the records of 1,263 patients to an unknown email account, it paid $25,000 to settle with federal regulators. Here is what the rules actually require, what is changing in 2026, and how to close the gap before it is your practice.",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -3575,7 +3575,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Emailing an x-ray to a lab or specialist is the real exposure. " },
-            "That is provider to provider, where there is no patient consent to fall back on, so the message has to be encrypted.",
+            "That is provider to provider, where there is no patient consent to fall back on, so the message has to be encrypted, or sent through a service that has signed a BAA with you.",
           ],
           [
             { strong: "A patient may still ask for plain email. " },
@@ -3614,7 +3614,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "\"Addressable\" does not mean optional. It means you either encrypt, or you document why encryption is not reasonable for your practice and put an equivalent safeguard in its place. Two myths waste a lot of time here. A confidentiality line at the bottom of the message does not make an unencrypted email compliant. And a password is not encryption: a password keeps someone out of a file, while encryption scrambles the contents so that intercepting the message reveals nothing.",
+          "\"Addressable\" does not mean optional. It means you either encrypt, or you ", { text: "document why encryption is not reasonable for your practice", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.306" }, " and put an equivalent safeguard in its place. Two myths waste a lot of time here. A confidentiality line at the bottom of the message does not make an unencrypted email compliant. And a password is not encryption: a password keeps someone out of a file, while encryption scrambles the contents so that intercepting the message reveals nothing.",
         ],
       },
       {
@@ -3630,7 +3630,7 @@ export const articles: Article[] = [
         runs: [
           "Not in their consumer form. A free @gmail.com or @outlook.com account cannot be made compliant under any setting, because the vendor will not sign a ",
           { text: "business associate agreement", href: "/articles/does-my-dental-practice-need-a-baa" },
-          " covering it. That agreement, or BAA, is the contract that makes a vendor responsible for the patient data it touches. Without one, sending protected health information through that account is a violation the moment it leaves your outbox.",
+          " covering it. That agreement, or BAA, is the contract that makes a vendor responsible for the patient data it touches. Without one, ", { text: "sending protected health information through that account", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502#p-164.502(e)" }, " is a violation the moment it leaves your outbox.",
         ],
       },
       {
@@ -3650,7 +3650,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "This is where most dental practices are exposed. Panoramic films, CBCT scans, intraoral photos, and the referral note that travels with them are all protected health information. Emailing them to a specialist, a lab, or another office is provider-to-provider communication, and the rules here are stricter than they are for a message to a patient.",
+          "This is where most dental practices are exposed. Panoramic films, CBCT scans, intraoral photos, and the referral note that travels with them are all ", { text: "protected health information", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-160/subpart-A/section-160.103" }, ". Emailing them to a specialist, a lab, or another office is provider-to-provider communication, and the rules here are stricter than they are for a message to a patient.",
         ],
       },
       {
@@ -3676,7 +3676,7 @@ export const articles: Article[] = [
         ],
       },
 
-      { type: "h2", text: "What does OCR fine dental practices for?" },
+      { type: "h2", text: "What does OCR actually go after dental practices for?" },
       {
         type: "p",
         runs: [
@@ -3686,7 +3686,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The clinic had never completed a risk analysis, had no written security policies, and had not trained its staff on HIPAA until 2016, despite operating since the late 1990s. It paid $25,000 and accepted two years of federal monitoring, and OCR noted it had reduced the figure because of the clinic's size and mission. The lesson is not the dollar amount. It is that an email mistake opens the door, and the investigation then examines everything behind it.",
+          "The clinic had never completed a risk analysis, had no written security policies, and had not trained its staff on HIPAA until 2016, despite operating since the late 1990s. It agreed to pay $25,000 and accept two years of federal monitoring to settle potential violations of the Security Rule without admitting liability, and OCR noted it had reduced the figure because of the clinic's size and mission. The lesson is not the dollar amount. It is that an email mistake opens the door, and the investigation then examines everything behind it.",
         ],
       },
       {
@@ -3725,7 +3725,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Encryption does more than reduce risk. It can keep an accident from becoming a reportable breach at all. The Breach Notification Rule applies only to \"unsecured\" patient information. If a message was encrypted to the federal standard that ",
+          "Encryption does more than reduce risk. It can keep an accident from becoming a reportable breach at all. The Breach Notification Rule applies only to \"", { text: "unsecured", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.402" }, "\" patient information. If a message was encrypted to the federal standard that ",
           { text: "HHS specifies", href: "https://www.hhs.gov/hipaa/for-professionals/breach-notification/guidance/index.html" },
           ", which points to encryption methods tested by NIST, then a message that goes to the wrong place is generally not a breach you have to report. Send the same records unencrypted and a single wrong address can become a ",
           { text: "60-day notification clock and an OCR investigation", href: "/articles/dental-data-breach-response" },
@@ -3751,7 +3751,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The practical answer does not wait on the outcome. The current rule already expects you to assess transmission security and to either encrypt or document why not, and OCR already fines unencrypted patient email today. Whatever happens to the proposal, the email safeguards below are what a current ",
+          "The practical answer does not wait on the outcome. The current rule already expects you to assess transmission security and to either encrypt or document why not, and OCR already takes action on unencrypted patient email today. Whatever happens to the proposal, the email safeguards below are what a current ",
           { text: "risk analysis", href: "/articles/do-dental-practices-need-hipaa-risk-assessment" },
           " points to.",
         ],
@@ -3857,6 +3857,7 @@ export const articles: Article[] = [
           ["HHS Office for Civil Rights, guidance on rendering unsecured protected health information unusable, unreadable, or indecipherable (the breach-notification encryption safe harbor; accessed June 2026)."],
           ["HHS Office for Civil Rights, individuals’ right of access under HIPAA guidance (accessed June 2026)."],
           ["45 CFR \u00a7 164.312 (technical safeguards, including encryption); \u00a7 164.402 (breach definition and the unsecured-PHI safe harbor) (eCFR, current)."],
+          ["45 CFR \u00a7 160.103 (definitions, including protected health information and business associate); \u00a7 164.306(d) (addressable implementation specifications); \u00a7 164.502(e) (disclosures to business associates) (eCFR, current)."],
           ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025 (RIN 0945-AA22)."],
         ],
       },
