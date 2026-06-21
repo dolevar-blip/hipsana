@@ -5756,7 +5756,9 @@ export const articles: Article[] = [
         runs: [
           "One more HIPAA point sits behind the scenes: the service that sends the texts. Most reminder and texting platforms store your patient list and the messages, so they ",
           { text: "create, receive, or maintain protected health information on your behalf", href: "https://www.hhs.gov/hipaa/for-professionals/special-topics/cloud-computing/index.html" },
-          ", which makes them a business associate that needs a signed agreement. A pure phone carrier that only passes a message along, without storing it, is the narrow conduit exception. If you are not sure which one your vendor is, treat it as a business associate and get the agreement.",
+          ", which makes them a business associate that ",
+          { text: "needs a signed agreement", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502" },
+          ". A pure phone carrier that only passes a message along, without storing it, is the narrow conduit exception. If you are not sure which one your vendor is, treat it as a business associate and get the agreement.",
         ],
       },
 
@@ -5795,7 +5797,9 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Not by itself. The TCPA, the Telephone Consumer Protection Act, treats a text as a phone call, and it runs on the FCC's rulebook, not HIPAA's. The question it asks is narrow: did you have the patient's consent to send an automated text to that number, and is the message about their care rather than a promotion?",
+          "Not by itself. The TCPA, the Telephone Consumer Protection Act, treats a text as a phone call, and it runs on ",
+          { text: "the FCC's rulebook", href: "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200" },
+          ", not HIPAA's. The question it asks is narrow: did you have the patient's consent to send an automated text to that number, and is the message about their care rather than a promotion?",
         ],
       },
       {
@@ -5863,7 +5867,9 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The opt-out rules got stricter in 2025. Since April 11, 2025, a patient can revoke consent using any reasonable method, not just a keyword you chose for them. A reply of STOP counts, and so does any clear wording to the same effect. Once it arrives, you have to stop.",
+          "The opt-out rules got stricter in 2025. Since April 11, 2025, a patient can revoke consent using ",
+          { text: "any reasonable method", href: "https://docs.fcc.gov/public/attachments/FCC-24-24A1.pdf" },
+          ", not just a keyword you chose for them. A reply of STOP counts, and so does any clear wording to the same effect. Once it arrives, you have to stop.",
         ],
       },
       {
@@ -5891,7 +5897,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The company denied any wrongdoing, but agreed to pay about $1 million to settle. The deal covered roughly 10,000 people, which works out to a small check each. The lesson for a solo practice is not the headline number. It is that the texts were not exotic. They were ordinary marketing texts that ignored opt-outs, and the per-message math did the rest.",
+          "The company denied any wrongdoing, but agreed to pay about $1 million to settle. The deal covered roughly 10,000 people, which works out to a small check each. The lesson for an independent practice is not the headline number. It is that the texts were not exotic. They were ordinary marketing texts that ignored opt-outs, and the per-message math did the rest.",
         ],
       },
       {
@@ -5925,7 +5931,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "None of this requires a lawyer. Five habits keep a dental practice on the right side of both laws.",
+          "None of this requires a lawyer. Five habits go a long way toward keeping a dental practice on the right side of both laws.",
         ],
       },
       {
@@ -5986,11 +5992,13 @@ export const articles: Article[] = [
         items: [
           ["HHS Office for Civil Rights, FAQ 286, “Are appointment reminders allowed under the HIPAA Privacy Rule without authorizations?” (accessed June 2026)."],
           ["45 CFR \u00a7 164.522(b) (confidential communications) and \u00a7 164.502(b) (minimum necessary, including uses and disclosures to the individual) (eCFR, current)."],
+          ["45 CFR \u00a7 164.502(e) (disclosures to business associates; the business associate agreement requirement) (eCFR, current)."],
           ["45 CFR \u00a7 164.312(e) (transmission security, an addressable specification) (eCFR, current)."],
           ["45 CFR \u00a7 160.103 (definition of \u201cbusiness associate\u201d); HHS, Modifications to the HIPAA Rules (Omnibus Rule), 78 FR 5566 (Jan. 25, 2013); and HHS guidance on cloud computing and the conduit exception (hhs.gov, accessed June 2026)."],
           ["Federal Communications Commission, 2015 TCPA Omnibus Declaratory Ruling and Order, FCC 15-72, 30 FCC Rcd 7961 (July 10, 2015) (health care message exemption; prior express consent)."],
           ["Federal Communications Commission, 1992 TCPA Order, 7 FCC Rcd 8752 (1992) (providing a telephone number constitutes prior express consent to be called at that number, absent instructions to the contrary)."],
           ["47 CFR \u00a7 64.1200 (FCC rules implementing the TCPA: consent, revocation of consent, and the National Do Not Call Registry) (eCFR, current)."],
+          ["Federal Communications Commission, In re Rules and Regulations Implementing the Telephone Consumer Protection Act of 1991, Report and Order, FCC 24-24 (rel. Feb. 16, 2024) (a consumer may revoke consent by any reasonable means; effective April 11, 2025)."],
           ["Federal Communications Commission, Consumer and Governmental Affairs Bureau, Order DA-26-12A1 (Jan. 6, 2026) (extending the “revoke-all” provision of \u00a7 64.1200(a)(10) to January 31, 2027)."],
           ["47 U.S.C. \u00a7 227(b)(3), (c)(5) (TCPA private right of action; statutory damages of $500 per violation, up to $1,500 for willful or knowing violations)."],
           ["American Dental Association, “Follow the Rules When Phoning Patients” (TCPA health care message guidance; accessed June 2026)."],
