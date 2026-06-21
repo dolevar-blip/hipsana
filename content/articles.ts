@@ -6053,7 +6053,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The honest answer is that it depends which page the pixel sits on. On a homepage that only shows information, a Facebook or Google tracking pixel is usually fine. On your online booking page, the same pixel can quietly hand a patient's information to a third party, and that is the version that has drawn regulatory attention and lawsuits. In 2025, the dental chain Aspen Dental agreed to a settlement fund of more than $18 million in a case built on that scenario. Here is where the line actually falls, what a 2024 court ruling did and did not change, and how to tell if your own site is on the wrong side of it.",
+          "The honest answer is that it depends which page the pixel sits on. On a homepage that only shows information, a Facebook or Google tracking pixel is usually fine. On your online booking page, the same pixel can quietly hand a patient's information to a third party, and that is the version that has drawn regulatory attention and lawsuits. In 2025, the dental chain Aspen Dental agreed to a settlement fund of more than $18 million over allegations built on that scenario. Here is where the line actually falls, what a 2024 court ruling did and did not change, and how to tell if your own site is on the wrong side of it.",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -6108,7 +6108,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "On a page a patient has to log in to reach, like a patient portal, the pixel generally has access to protected health information, so HIPAA applies. On a general marketing page that anyone can read without logging in, like your hours or job postings, it usually does not. The surprise is in the middle: a page that lets someone book an appointment, fill in a contact form, or complete a new-patient intake form without logging in can still expose patient data, because the visitor types in a name and a reason for the visit. OCR treats that as a disclosure too.",
+          "On a page a patient has to log in to reach, like a patient portal, the pixel generally has access to ", { text: "protected health information", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-160/subpart-A/section-160.103" }, ", so HIPAA applies. On a general marketing page that anyone can read without logging in, like your hours or job postings, it usually does not. The surprise is in the middle: a page that lets someone book an appointment, fill in a contact form, or complete a new-patient intake form without logging in can still expose patient data, because the visitor types in a name and a reason for the visit. OCR treats that as a disclosure too.",
         ],
       },
       {
@@ -6167,7 +6167,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Here is the catch for pixels. Google states plainly that it makes no representations that Analytics meets HIPAA and does not offer business associate agreements for the service. As of 2026, there is no such agreement on offer for the Meta Pixel either. So on a page that handles patient data, the contract that would make the pixel compliant does not exist. The only route the rules leave open is a signed HIPAA authorization from each visitor before any tracking happens, which is not practical for a marketing website.",
+          "Here is the catch for pixels. Google states plainly that it makes no representations that Analytics meets HIPAA and does not offer business associate agreements for the service. As of 2026, there is no such agreement on offer for the Meta Pixel either. So on a page that handles patient data, the contract that would make the pixel compliant does not exist. The only route the rules leave open is ", { text: "a signed HIPAA authorization", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.508" }, " from each visitor before any tracking happens, which is not practical for a marketing website.",
         ],
       },
       {
@@ -6197,7 +6197,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "But that is the only part that fell. The rest of the guidance still applies: patient portals and logged-in pages, booking pages and intake forms that collect patient data, the business associate requirement, the duty to address tracking in your risk analysis, and breach notification when patient data leaks. The ruling is about the limits of HIPAA, and it does not touch the other ways a pixel can create legal exposure for a practice, the FTC and private lawsuits, which run on different laws entirely. The accurate read is narrow: pixels are not banned, and the ruling did not make the issue disappear.",
+          "But that is the only part that fell. The rest of the guidance still applies: patient portals and logged-in pages, booking pages and intake forms that collect patient data, the business associate requirement, ", { text: "the duty to address tracking in your risk analysis", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308" }, ", and breach notification when patient data leaks. The ruling is about the limits of HIPAA, and it does not touch the other ways a pixel can create legal exposure for a practice, the FTC and private lawsuits, which run on different laws entirely. The accurate read is narrow: pixels are not banned, and the ruling did not make the issue disappear.",
         ],
       },
 
