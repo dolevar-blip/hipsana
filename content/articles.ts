@@ -4654,7 +4654,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The largest known exposure of dental patients' data, an estimated 15 million records, never appeared on the public breach list at all. It surfaced only in 2026, when federal regulators settled with the dental-software vendor that lost the data in 2020 and never reported the loss. The largest breach a dental provider actually reported is smaller and better known: the 2023 ransomware attack on MCNA Dental, which exposed 8.9 million people. Both numbers point the same way. Dental data rarely leaks because a master hacker beat a hardened wall. It leaks through an ordinary failure, a compromised login, a compromised vendor, or ransomware behind one of them, and the failure regulators punish afterward is rarely the breach itself. It is the one document underneath it that most independent practices begin and never finish. We read the public HHS data so you can see both patterns plainly, and what they mean for a practice your size."
+          "The largest known exposure of dental patients' data, an estimated 15 million people, never appeared on the public breach list at all. It surfaced only in 2026, when federal regulators settled with the dental-software vendor that lost the data in 2020 and never reported the loss. The largest breach a dental provider actually reported is smaller and better known: the 2023 ransomware attack on MCNA Dental, which exposed 8.9 million people. Both numbers point the same way. Dental data rarely leaks because a master hacker beat a hardened wall. It leaks through an ordinary failure, a compromised login, a compromised vendor, or ransomware behind one of them, and the failure regulators punish afterward is rarely the breach itself. It is the one document underneath it that most independent practices begin and never finish. We read the public HHS data so you can see both patterns plainly, and what they mean for a practice your size."
         ]
       },
       {
@@ -4668,7 +4668,7 @@ export const articles: Article[] = [
             {
               strong: "The public data is clear, and we did the reading. "
             },
-            "Every figure here comes from HHS's own breach portal, its annual reports to Congress, and its published settlements. We do not sell compliance services, so this is a read of the record, not a sales pitch."
+            "The figures here come from HHS's own breach portal and annual reports to Congress, its published settlements, and, where HHS had not yet posted a case, the organizations' own breach notices. We do not sell compliance services, so this is a read of the record, not a sales pitch."
           ],
           [
             {
@@ -4923,8 +4923,8 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The dollar figures range widely, from the $10,000 paid by the dental software vendor MMG Fusion to the $227,816 paid by a wellness company for a server left exposed for nearly three years, with settlements like Behavioral Health Solution of Deer Oaks at $225,000 and a Syracuse surgery center at $250,000 in between. Across the settlements we reviewed, the breach that triggered the investigation was almost always ransomware, with a few phishing emails, a misconfigured server, and a vendor breach making up the rest, but the violation OCR cited was the same missing risk analysis in every one. The full list is in the appendix below. The check is never the real cost. Every settlement carries a corrective action plan, often monitored for two to three years, that orders the practice to build the program it skipped. By the middle of 2026, OCR had collected more than $1.2 million across ",
-          { text: "six enforcement actions", href: "https://www.hhs.gov/press-room/ocr-settles-four-ransomware-investigations.html" },
+          "The dollar figures range widely, from the $10,000 paid by the dental software vendor MMG Fusion to the $227,816 paid by a wellness company for a server left exposed for nearly three years, with settlements like Deer Oaks – The Behavioral Health Solution at $225,000 and a Syracuse surgery center at $250,000 in between. Across the settlements we reviewed, the breach that triggered the investigation was almost always ransomware, with a few phishing emails, a misconfigured server, and a vendor breach making up the rest, but the violation OCR cited was the same missing risk analysis in every one. The full list is in the appendix below. The check is never the real cost. Every settlement carries a corrective action plan, often monitored for two to three years, that orders the practice to build the program it skipped. By the middle of 2026, OCR had collected more than $1.7 million across ",
+          { text: "seven enforcement actions", href: "https://www.hhs.gov/press-room/ocr-settles-four-ransomware-investigations.html" },
           " in that year alone. ",
           {
             text: "An OCR investigation",
@@ -4936,7 +4936,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Note who turns up on that list. MMG Fusion is a dental software vendor, and OCR fined it not only for failing to run a risk analysis but for failing to tell the dental practices it served that their patients' data had been exposed. The initiative is not aimed at dentistry. Dentistry is not exempt from it."
+          "Note who turns up on that list. MMG Fusion is a dental software vendor, and OCR's settlement with it cited not just a missing risk analysis but ", { text: "a failure to tell the dental practices it served", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.410" }, " that their patients' data had been exposed. The initiative is not aimed at dentistry. Dentistry is not exempt from it."
         ]
       },
       {
@@ -5007,7 +5007,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "These are the settlements under OCR's Risk Analysis Initiative for which we could confirm the breach that triggered the investigation, listed by announcement date. In each, OCR's cited violation was the same: a failure to conduct an accurate, thorough risk analysis under 45 CFR 164.308(a)(1)(ii)(A). OCR has announced others we have not detailed here, including Behavioral Health Solution of Deer Oaks ($225,000) and Concentra ($112,500)."
+          "These are the settlements under OCR's Risk Analysis Initiative for which we could confirm the breach that triggered the investigation, listed by announcement date. In each, OCR's cited violation was the same: a failure to conduct an accurate, thorough risk analysis under 45 CFR 164.308(a)(1)(ii)(A). OCR has announced other risk-analysis settlements we have not detailed here, including Deer Oaks – The Behavioral Health Solution ($225,000). Concentra's $112,500 settlement that year came under OCR's separate Right of Access Initiative, not the risk-analysis push."
         ]
       },
       {
@@ -5060,7 +5060,7 @@ export const articles: Article[] = [
       },
       {
         question: "What is the largest dental data breach?",
-        answer: "The largest a dental provider has reported is the 2023 ransomware attack on MCNA Dental, which exposed the records of roughly 8.9 million people after the LockBit group copied hundreds of gigabytes of data and published it when MCNA refused to pay. The second largest reported was Delta Dental of California, with about 6.9 million people affected through the MOVEit supply-chain attack the same year. A larger exposure, an estimated 15 million records held by the dental-software vendor MMG Fusion, never appeared on the public breach list; it surfaced only when OCR settled with the vendor in 2026 over a 2020 breach it had never reported."
+        answer: "The largest a dental provider has reported is the 2023 ransomware attack on MCNA Dental, which exposed the records of roughly 8.9 million people after the LockBit group copied hundreds of gigabytes of data and published it when MCNA refused to pay. The second largest reported was Delta Dental of California, with about 6.9 million people affected through the MOVEit supply-chain attack the same year. A larger exposure, the records of an estimated 15 million people held by the dental-software vendor MMG Fusion, never appeared on the public breach list; it surfaced only when OCR settled with the vendor in 2026 over a 2020 breach it had never reported."
       },
       {
         question: "What does OCR actually fine dental and medical practices for?",
