@@ -3156,12 +3156,12 @@ export const articles: Article[] = [
       "HIPAA compliance costs a dental practice about $1,500\u2013$12,000 a year, less if you run it yourself, more if you hand it off. Where the money goes.",
     author: "Dolev Arama",
     datePublished: "2026-06-17",
-    dateModified: "2026-06-17",
+    dateModified: "2026-06-21",
     body: [
       {
         type: "p",
         runs: [
-          "For a solo or small dental practice, HIPAA compliance runs roughly $1,500 to $12,000 a year, and the spread between those two numbers is the whole story. Run it yourself with software and you sit near the bottom; hand it to a firm and you sit near the top. What actually decides your bill is not which tool you buy, but whether you run the ongoing program the law requires or skip it, the way a small treatment center recently did before regulators billed it $103,000 and made it build the program anyway. Done on purpose, the program costs a fraction of that. Here is what it runs, and where the money goes.",
+          "For a solo or small dental practice, HIPAA compliance runs roughly $1,500 to $12,000 a year, and the spread between those two numbers is the whole story. Run it yourself with software and you sit near the bottom; hand it to a firm and you sit near the top. What actually decides your bill is not which tool you buy, but whether you run the ongoing program the law requires or skip it, the way a small treatment center recently did before it paid $103,000 to settle and had to build the program anyway. Done on purpose, the program costs a fraction of that. Here is what it runs, and where the money goes.",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -3182,7 +3182,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Skipping the program is the expensive path. " },
-            "One small treatment center that never built one paid $103,000 and spent two years rebuilding it under federal supervision.",
+            "One small treatment center that never built a proper one paid $103,000 and spent two years rebuilding it under federal supervision.",
           ],
           [
             { strong: "Not sure which line items you are missing? " },
@@ -3214,7 +3214,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The foundation is the risk analysis the Security Rule requires at 45 CFR \u00a7 164.308(a)(1)(ii)(A), the same accurate-and-thorough assessment every covered practice must run. The rest of the program sits on top of it: written policies, workforce training, a signed agreement with every vendor that touches patient data, secure email and encryption, reliable backups, and ongoing monitoring. The risk analysis anchors the budget because everything else depends on first knowing where your data lives and what threatens it.",
+          "The foundation is the risk analysis the Security Rule requires at 45 CFR \u00a7 164.308(a)(1)(ii)(A), the same ", { text: "accurate-and-thorough assessment", href: "https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/securityrule/rafinalguidancepdf.pdf" }, " every covered practice must run. The rest of the program sits on top of it: written policies, workforce training, a signed agreement with every vendor that touches patient data, secure email and encryption, reliable backups, and ongoing monitoring. The risk analysis anchors the budget because everything else depends on first knowing where your data lives and what threatens it.",
         ],
       },
       { type: "h2", text: "Two ways to run it: do it yourself, or hand it off" },
@@ -3356,7 +3356,7 @@ export const articles: Article[] = [
         items: [
           [
             { strong: "The risk analysis (required). " },
-            "The accurate, thorough assessment HIPAA mandates, refreshed every year. A specialist runs $1,500 to $6,000; the free federal tool is $0; software bundles it for low hundreds a year. ",
+            "The accurate, thorough assessment HIPAA mandates, kept current as your practice changes (many review it at least once a year). A specialist runs $1,500 to $6,000; the free federal tool is $0; software bundles it for low hundreds a year. ",
             { text: "What a HIPAA risk assessment actually costs", href: "/articles/how-much-does-a-hipaa-risk-assessment-cost-for-a-dental-practice" },
             " breaks this line down on its own.",
           ],
@@ -3407,7 +3407,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Top of the World Ranch Treatment Center is a small addiction-treatment provider in Illinois, not a dental practice, but ", { text: "the failure OCR fined it for", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, " is the one any small practice can have. In 2023 it reported that a phishing email had let an attacker into a staff inbox, exposing the records of 1,980 patients, the same click a dental front desk faces every day. OCR's finding was not about the breach. It was that the practice had not conducted an accurate and thorough risk analysis, the foundation the whole program sits on.",
+          "Top of the World Ranch Treatment Center is a small addiction-treatment provider in Illinois, not a dental practice, but ", { text: "the failure behind its settlement", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, " is the one any small practice can have. In 2023 it reported that a phishing email had let an attacker into a staff inbox, exposing the records of 1,980 patients, the same click a dental front desk faces every day. OCR's finding was not about the breach. It was that the practice had not conducted an accurate and thorough risk analysis, the foundation the whole program sits on.",
         ],
       },
       {
@@ -3428,7 +3428,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "In February 2026 the center paid $103,000 and signed a two-year corrective action plan that ordered it to do the very things it had skipped: run the risk analysis, build a plan to fix what it finds, write and maintain policies, and train staff every year, all under federal monitoring. In other words, OCR made it build the program anyway, at a multiple of what the program would have cost. The center had fewer than 2,000 patients; size has never been a defense, and ",
+          "In February 2026 the center paid $103,000 and signed a two-year corrective action plan that ordered it to do the very things a compliant program requires: run an accurate and thorough risk analysis, build a plan to fix what it finds, write and maintain policies, and train staff every year, all under federal monitoring. In other words, OCR made it build the program anyway, at a multiple of what the program would have cost. The center had fewer than 2,000 patients; size has never been a defense, and ",
           { text: "an OCR investigation", href: "/articles/what-happens-if-dental-practice-fails-hipaa-audit" },
           " is an expensive way to learn that.",
         ],
@@ -3445,7 +3445,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "One caveat before you lock a number. A proposed overhaul of the Security Rule, published in the Federal Register on January 6, 2025 (rulemaking ID RIN 0945-AA22), would, if finalized as written, make several now-flexible safeguards mandatory, encryption, multi-factor authentication, and routine vulnerability scanning among them, which would raise the monitoring and scanning line items. As of June 2026 it is not final and has no confirmed date, so do not spend now to meet a rule that does not exist yet. The foundation, a thorough risk analysis, is required either way.",
+          "One caveat before you lock a number. A proposed overhaul of the Security Rule, published in the ", { text: "Federal Register on January 6, 2025", href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information" }, " (rulemaking ID RIN 0945-AA22), would, if finalized as written, make several now-flexible safeguards mandatory, encryption, multi-factor authentication, and routine vulnerability scanning among them, which would raise the monitoring and scanning line items. As of June 2026 it is not final and has no confirmed date, so do not spend now to meet a rule that does not exist yet. The foundation, a thorough risk analysis, is required either way.",
         ],
       },
       { type: "h2", text: "How to budget without overpaying" },
@@ -3540,6 +3540,8 @@ export const articles: Article[] = [
           ["HHS Office for Civil Rights, settlement with Top of the World Ranch Treatment Center (February 2026)."],
           ["HHS Office for Civil Rights, Risk Analysis Initiative (announced October 2024)."],
           ["45 CFR \u00a7 164.308(a)(1)(ii)(A) (eCFR, current)."],
+          ["45 CFR \u00a7 164.306(d) (eCFR, current)."],
+          ["HHS Office for Civil Rights, Guidance on Risk Analysis Requirements under the HIPAA Security Rule (July 2010)."],
           ["Federal Register, HIPAA Security Rule NPRM, January 6, 2025 (RIN 0945-AA22)."],
           ["Cost ranges are 2026 market estimates, synthesized from publicly available pricing published by HIPAA compliance vendors, healthcare IT and managed-compliance providers, and training vendors serving small practices; figures are rounded and your number will vary with your setup."],
         ],
