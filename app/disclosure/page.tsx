@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Disclosure",
   description:
-    "How Hipsana makes money: referral fees from specialists, a smaller affiliate line, and our rule that neither ever changes what your review says.",
+    "How Hipsana makes money: a referral fee from the specialist we connect you with, and our rule that it never changes what your review says.",
   alternates: { canonical: "/disclosure" },
   openGraph: {
     title: "Disclosure · Hipsana",
     description:
-      "How Hipsana makes money: referral fees from specialists, a smaller affiliate line, and our rule that neither ever changes what your review says.",
+      "How Hipsana makes money: a referral fee from the specialist we connect you with, and our rule that it never changes what your review says.",
     url: "https://hipsana.com/disclosure",
     type: "website",
     images: [
@@ -33,8 +33,7 @@ export default function DisclosurePage() {
 
         <p className="mt-8 text-lg leading-relaxed text-muted">
           The short version: when we connect you with a specialist and you hire
-          them, we get paid. When you click certain product links, we may earn a
-          small commission. Neither one changes what your Scorecard or review
+          them, we get paid. That never changes what your Scorecard or review
           tells you. Here are the details.
         </p>
 
@@ -56,24 +55,22 @@ export default function DisclosurePage() {
           We do not hand you to whoever pays the most. A specialist has to clear
           a real bar before we introduce you to them:
         </p>
-        <ul>
-          <li>
-            <strong>Coverage where you are.</strong> They can serve a practice
-            in your area, not just one distant region.
-          </li>
-          <li>
-            <strong>Built for small practices.</strong> A one-to-ten-person
-            office, not a hospital system with its own compliance team.
-          </li>
-          <li>
-            <strong>Clear, upfront pricing.</strong> A written quote before you
-            commit.
-          </li>
-          <li>
-            <strong>A clean reputation.</strong> No pattern of complaints or
-            bad-faith dealing.
-          </li>
-        </ul>
+        <p>
+          <strong>Coverage where you are.</strong> They can serve a practice in
+          your area, not just one distant region.
+        </p>
+        <p>
+          <strong>Built for small practices.</strong> A one-to-ten-person
+          office, not a hospital system with its own compliance team.
+        </p>
+        <p>
+          <strong>Clear, upfront pricing.</strong> A written quote before you
+          commit.
+        </p>
+        <p>
+          <strong>A clean reputation.</strong> No pattern of complaints or
+          bad-faith dealing.
+        </p>
         <p>
           The introduction is ours to make; the decision is yours. Do your own
           due diligence before hiring anyone. We do not control how a specialist
@@ -89,15 +86,6 @@ export default function DisclosurePage() {
           out on our <a href="/privacy">Privacy page</a>.
         </p>
 
-        <h2>Affiliate links (a smaller, secondary part)</h2>
-        <p>
-          Some pages mention specific tools, and a few of those are affiliate
-          links. If you sign up through one, we may earn a commission at no
-          extra cost to you. We label these where they appear. A commission is
-          never the reason we mention a tool, and when a free option does the
-          job, we say so.
-        </p>
-
         <h2>How we decide what to tell you</h2>
         <p>
           Whether we are scoring your practice or writing about a tool, we use
@@ -106,8 +94,8 @@ export default function DisclosurePage() {
           how much day-to-day friction it adds.
         </p>
         <p>
-          Commission rate and referral fee are not on that list. When the right
-          answer earns us nothing, that is still the answer we give.
+          The referral fee is not on that list. When the right answer earns us
+          nothing, that is still the answer we give.
         </p>
 
         <h2>What we will not do</h2>
