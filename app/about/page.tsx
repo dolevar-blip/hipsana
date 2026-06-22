@@ -21,6 +21,13 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "About · Hipsana",
+    description:
+      "A free HIPAA Security Scorecard and written risk review for independent dental, medical, and therapy practices, plus an intro to a specialist.",
+    images: ["/og-default.png"],
+  },
 };
 
 const personJsonLd = {
