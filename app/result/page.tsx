@@ -38,7 +38,7 @@ const CONTROLS: Control[] = [
     tier: "top",
     shortLabel: "signed BAAs",
     leadBody:
-      "your vendor agreements: we couldn't confirm you have signed BAAs with every vendor that touches patient data. They're required, and one of the first things OCR asks for after a breach.",
+      "your vendor agreements: we couldn't confirm you have signed BAAs with every vendor that stores or handles patient data on your behalf. They're required, and OCR routinely asks for them when it investigates a breach.",
   },
   {
     key: "c_mfa",
