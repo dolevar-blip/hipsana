@@ -99,11 +99,10 @@ export default function TermsPage() {
 
         <h2>Other sites and tools we link to</h2>
         <p>
-          We sometimes link to other websites and tools, including some
-          affiliate links that we label. We do not control those third parties
-          and are not responsible for their content, products, or practices.
-          Visiting them is at your own discretion and subject to their own
-          terms.
+          We sometimes link to other websites and tools. We do not control those
+          third parties and are not responsible for their content, products, or
+          practices. Visiting them is at your own discretion and subject to
+          their own terms.
         </p>
 
         <h2>No warranties</h2>
