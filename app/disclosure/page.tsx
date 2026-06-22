@@ -40,8 +40,8 @@ export default function DisclosurePage() {
         <h2>How the free review is paid for</h2>
         <p>
           The Scorecard and the written review are free to you. If your review
-          surfaces gaps you want help with, we introduce you to a
-          compliance specialist who does that work. If you choose to hire them,
+          surfaces gaps you want help with, we may introduce you to a
+          compliance specialist who does that work, when there&rsquo;s a fit. If you choose to hire them,
           their firm pays us a referral fee.
         </p>
         <p>
@@ -130,4 +130,3 @@ export default function DisclosurePage() {
     </section>
   );
 }
-
