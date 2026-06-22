@@ -51,6 +51,36 @@ export default function DisclosurePage() {
           what we tell you, referral or not.
         </p>
 
+        <h2>How we choose a specialist</h2>
+        <p>
+          We do not hand you to whoever pays the most. A specialist has to clear
+          a real bar before we introduce you to them:
+        </p>
+        <ul>
+          <li>
+            <strong>Coverage where you are.</strong> They can serve a practice
+            in your area, not just one distant region.
+          </li>
+          <li>
+            <strong>Built for small practices.</strong> A one-to-ten-person
+            office, not a hospital system with its own compliance team.
+          </li>
+          <li>
+            <strong>Clear, upfront pricing.</strong> A written quote before you
+            commit.
+          </li>
+          <li>
+            <strong>A clean reputation.</strong> No pattern of complaints or
+            bad-faith dealing.
+          </li>
+        </ul>
+        <p>
+          The introduction is ours to make; the decision is yours. Do your own
+          due diligence before hiring anyone. We do not control how a specialist
+          runs their business, and we do not warrant their work, their conduct,
+          or any result.
+        </p>
+
         <h2>How we handle your information</h2>
         <p>
           To deliver the review, we share your details with that one specialist
