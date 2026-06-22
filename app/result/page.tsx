@@ -186,11 +186,11 @@ export default function ResultPage({ searchParams }: { searchParams: SP }) {
 
   const cta =
     band === "high"
-      ? "The free 15-minute review walks through what your answers flag and what each gap tends to mean for a practice your size, in plain English. If you want help closing them, we'll point you to a specialist. Most of it is more fixable than it looks. It's run by us, not a salesperson, and there's nothing to buy."
+      ? "The free 15-minute review walks through what your answers flag and what each gap tends to mean for a practice your size, in plain English. If you want help closing them, we may point you to a specialist. Most of it is more fixable than it looks. It's run by us, not a salesperson, and there's nothing to buy."
       : band === "gaps"
-      ? "The free 15-minute review walks through what your answers flag and what each gap tends to mean for a practice your size, in plain English. If you want help closing them, we'll point you to a specialist. It's run by us, not a salesperson, and there's nothing to buy."
+      ? "The free 15-minute review walks through what your answers flag and what each gap tends to mean for a practice your size, in plain English. If you want help closing them, we may point you to a specialist. It's run by us, not a salesperson, and there's nothing to buy."
       : band === "strong"
-      ? `The free 15-minute review confirms what's solid and walks you through ${
+      ? `The free 15-minute review goes over what's solid and walks you through ${
           failed.length === 1 ? "that point" : "those points"
         }. No pitch, nothing to buy.`
       : "If you'd like us to take that look, the free 15-minute review is yours. There's nothing to buy.";
