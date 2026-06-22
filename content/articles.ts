@@ -6568,7 +6568,12 @@ export const articles: Article[] = [
             text: "American Dental Association",
             href: "https://adanews.ada.org/ada-news/2025/december/ada-urges-hhs-to-withdraw-proposed-hipaa-cybersecurity-rule/",
           },
-          " has urged the same. They point to the price: the government's own estimate puts the first-year cost at roughly $9 billion. If a final rule does land, practices would get about 240 days to comply. Until then, anyone telling you the \"2026 rule\" already forces you to use MFA is wrong: it is proposed, not in force.",
+          " has urged the same. They point to the price: the government's own estimate puts the first-year cost at roughly ",
+          {
+            text: "$9 billion",
+            href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information",
+          },
+          ". If a final rule does land, practices would get about 240 days to comply. Until then, anyone telling you the \"2026 rule\" already forces you to use MFA is wrong: it is proposed, not in force.",
         ],
       },
 
@@ -6592,7 +6597,7 @@ export const articles: Article[] = [
             text: "PIH Health",
             href: "https://www.hhs.gov/press-room/ocr-hipaa-racap-pih.html",
           },
-          ", a California network that settled with the HHS Office for Civil Rights for $600,000 in April 2025. A phishing attack had walked into 45 employee email accounts and exposed the records of 189,763 patients, the kind of break-in MFA is built to stop. But when OCR wrote up what PIH did wrong, the violations were the failure to conduct a risk analysis and the failure to report the breach on time. MFA is not in the charges. It appears only in OCR's list of non-binding recommendations afterward.",
+          ", a California network that settled with the HHS Office for Civil Rights for $600,000 in April 2025. A phishing attack had walked into 45 employee email accounts and exposed the records of 189,763 patients, the kind of break-in MFA is built to stop. But when OCR wrote up what PIH did wrong, the violations included the failure to conduct a risk analysis and the failure to report the breach on time. MFA is not in the charges. It appears only in OCR's list of non-binding recommendations afterward.",
         ],
       },
       {
@@ -6608,7 +6613,12 @@ export const articles: Article[] = [
             text: "Montefiore Medical Center",
             href: "https://www.hhs.gov/about/news/2024/02/06/hhs-office-civil-rights-settles-malicious-insider-cybersecurity-investigation.html",
           },
-          " stole records from the inside, OCR charged the risk analysis and the audit controls, not the authentication method. OCR has even built an enforcement program around this single failure, its Risk Analysis Initiative, launched in 2024. The wider pattern of dental and small-practice settlements is tracked in our ", { text: "HIPAA breach and enforcement report", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, ".",
+          " stole records from the inside, OCR charged the risk analysis and the audit controls, not the authentication method. OCR has even built an enforcement program around this single failure, its ",
+          {
+            text: "Risk Analysis Initiative",
+            href: "https://www.hhs.gov/about/news/2024/10/31/hhs-office-for-civil-rights-settles-hipaa-ransomware-cybersecurity-investigation-for-90000-dollars.html",
+          },
+          ", launched in 2024. The wider pattern of dental and small-practice settlements is tracked in our ", { text: "HIPAA breach and enforcement report", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, ".",
         ],
       },
       {
@@ -6699,7 +6709,7 @@ export const articles: Article[] = [
           "Not every second factor is equal. A code texted to a phone is better than nothing, but it is the weakest common option, because phone numbers can be hijacked through SIM-swaps and number porting. The federal standards body, ",
           {
             text: "NIST, classifies text-message codes as \"restricted\"",
-            href: "https://pages.nist.gov/800-63-3/sp800-63b.html",
+            href: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.pdf",
           },
           ": still allowed, but discouraged and hedged with conditions. The stronger choices are an authenticator app on a phone or a physical security key, both of which resist the phishing that text codes do not.",
         ],
@@ -6814,7 +6824,10 @@ export const articles: Article[] = [
             "HHS Office for Civil Rights, settlement with Lafourche Medical Group (hhs.gov, Dec. 7, 2023) and the malicious-insider settlement with Montefiore Medical Center (hhs.gov, Feb. 6, 2024): in each, the cited failure was the risk analysis, not the authentication method.",
           ],
           [
-            "NIST Special Publication 800-63B, Digital Identity Guidelines: use of the PSTN (SMS and voice) for out-of-band authentication is \u201crestricted\u201d (pages.nist.gov, accessed June 2026).",
+            "HHS Office for Civil Rights, \u201cSettles HIPAA Ransomware Cybersecurity Investigation for $90,000\u201d (Bryan County Ambulance Authority) (hhs.gov, Oct. 31, 2024): the first enforcement action in OCR\u2019s Risk Analysis Initiative; the cited failure was the risk analysis.",
+          ],
+          [
+            "NIST Special Publication 800-63B-4, Digital Identity Guidelines (2025, superseding the 2017 edition): use of the PSTN (SMS and voice) for out-of-band authentication is \u201crestricted\u201d (nvlpubs.nist.gov, accessed June 2026).",
           ],
           [
             "American Dental Association, \u201cADA urges HHS to withdraw proposed HIPAA cybersecurity rule\u201d (ada.org, December 2025): the ADA joined a coalition of more than 100 organizations seeking withdrawal.",
