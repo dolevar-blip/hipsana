@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   description:
-    "A free HIPAA Security Scorecard for independent dental, medical, and therapy practices. Find your gaps in minutes, plus a written review and specialist intro.",
+    "A free HIPAA Security Scorecard for independent dental, medical, and therapy practices. Find your gaps, plus a written review and an optional specialist intro.",
   alternates: { canonical: "/" },
 };
 
