@@ -23,6 +23,13 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free HIPAA Security Scorecard · Hipsana",
+    description:
+      "Check 10 core HIPAA Security Rule controls and get your practice's score out of 100, plus a written review.",
+    images: ["/og-scorecard.png"],
+  },
 };
 
 export default function ScorecardPage() {
