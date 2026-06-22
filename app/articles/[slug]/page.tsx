@@ -61,6 +61,9 @@ export function generateMetadata({
       description: article.description,
       url: `${SITE_URL}/articles/${article.slug}`,
       type: "article",
+      publishedTime: article.datePublished,
+      modifiedTime: article.dateModified,
+      authors: [`${SITE_URL}/about`],
       ...(image
         ? {
             images: [
@@ -73,6 +76,12 @@ export function generateMetadata({
             ],
           }
         : {}),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.description,
+      ...(image ? { images: [`${SITE_URL}${image.src}`] } : {}),
     },
     ...(article.status === "draft"
       ? { robots: { index: false, follow: false } }
