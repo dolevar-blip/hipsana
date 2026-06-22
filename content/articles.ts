@@ -269,7 +269,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "The hard part isn't running the analysis. It's knowing which gaps you have before OCR does. " },
-          "The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, then you get a short written review and an introduction to a specialist. Three minutes. ",
+          "The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, then you get a short written review and an introduction to a specialist if a referral makes sense. Three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -481,7 +481,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "Start by finding out where you actually stand. ",
-          { strong: "Most independent practices carry gaps they can't see from the inside. The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, then sends you a short written review and an introduction to a specialist. It takes about three minutes. " },
+          { strong: "Most independent practices carry gaps they can't see from the inside. The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, then sends you a short written review and an introduction to a specialist if a referral makes sense. It takes about three minutes. " },
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -775,7 +775,7 @@ export const articles: Article[] = [
         runs: [
           "That is the gap the ",
           { text: "HIPAA Risk Scorecard", href: "/scorecard" },
-          " is built to surface. It checks the controls OCR most commonly cites, scores your practice, and follows with a short review and an intro to a specialist if you want help. A few minutes, and you see where you stand before a breach or a complaint forces the question. ",
+          " is built to surface. It checks the controls OCR most commonly cites, scores your practice, and follows with a short review and an intro to a specialist if a referral makes sense. A few minutes, and you see where you stand before a breach or a complaint forces the question. ",
           { text: "Check your practice now.", href: "/scorecard" },
         ],
       },
@@ -800,7 +800,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Sign real business associate agreements. " },
-            { text: "Every vendor that touches patient data", href: "/articles/does-my-dental-practice-need-a-baa" }, ", your practice-management software, IT company, billing service, needs one (", { text: "45 CFR §164.504(e)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504" }, "). Missing BAAs are a recurring finding, and AI tools are the newest place they go missing; here is ",
+            { text: "Every vendor that stores or handles patient data on your behalf", href: "/articles/does-my-dental-practice-need-a-baa" }, ", your practice-management software, IT company, billing service, needs one (", { text: "45 CFR §164.504(e)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504" }, "). Missing BAAs are a recurring finding, and AI tools are the newest place they go missing; here is ",
             {
               text: "which AI tools will sign a BAA for a dental practice",
               href: "/articles/is-chatgpt-hipaa-compliant-dental-practice",
@@ -1102,7 +1102,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The hard part of a breach isn't fixing the gaps. It's knowing which ones you have before OCR does. The HIPAA Risk Scorecard checks the areas OCR most commonly cites, then gives you a short risk review and an intro to a specialist. It takes about 3 minutes. ",
+          "The hard part of a breach isn't fixing the gaps. It's knowing which ones you have before OCR does. The HIPAA Risk Scorecard checks the areas OCR most commonly cites, then gives you a short risk review and an intro to a specialist if a referral makes sense. It takes about 3 minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -1143,7 +1143,7 @@ export const articles: Article[] = [
         items: [
           [{ strong: "Run a real risk analysis, then fix what it finds." }, " This is the most-cited failure in OCR's Security Rule enforcement. We break down what one involves in ", { text: "our guide to HIPAA risk assessments for dental practices", href: "/articles/do-dental-practices-need-hipaa-risk-assessment" }, "."],
           [{ strong: "Encrypt laptops, backups, and any device that touches patient data," }, " so a lost or stolen device, encrypted to the HHS standard, can fall under the safe harbor."],
-          [{ strong: "Sign a " }, { text: "business associate agreement", href: "/articles/does-my-dental-practice-need-a-baa" }, { strong: " with every vendor that handles patient data," }, " and require fast breach reporting inside it."],
+          [{ strong: "Sign a " }, { text: "business associate agreement", href: "/articles/does-my-dental-practice-need-a-baa" }, { strong: " with every vendor that stores or handles patient data on your behalf," }, " and require fast breach reporting inside it."],
           [{ strong: "Train your team on phishing and basic security," }, " since phishing is one of the most common ways attackers get in, usually through a single careless click."],
           [{ strong: "Put the free-AI line in writing," }, " so patient details never land in a public chatbot. ", { text: "The staff AI-use policy a small practice needs", href: "/articles/staff-free-ai-tools-patient-data-dental-policy" }, " takes one page."],
           [{ strong: "Keep tested, offline backups," }, " so ransomware can't take your records hostage."],
@@ -1475,7 +1475,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "Most independent practices carry gaps they cannot see from the inside. " },
-          "The Scorecard checks the areas OCR most commonly cites, then sends you a short written review of your gaps and an intro to a specialist if you want one. About three minutes. ",
+          "The Scorecard checks the areas OCR most commonly cites, then sends you a short written review of your gaps and an intro to a specialist if a referral makes sense. About three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -1671,7 +1671,7 @@ export const articles: Article[] = [
       { question: "Does a small practice really need one?", answer: "Yes. The requirement does not scale with size, and federal regulators have settled with single-location providers specifically to make that point. A small practice with patient data carries the same core obligation as a hospital." },
       { question: "Who can perform a HIPAA risk assessment, and can I do it myself?", answer: "You can do it yourself. HIPAA does not require an outside firm, and the free federal tool exists for exactly that. What matters is that the analysis is accurate, thorough, documented, and followed by a plan to fix what it finds. Many small practices run the assessment in-house and bring in help only for the parts they cannot judge alone, such as technical testing or a recent breach. If you want a quick read on which gaps you would be doing it for, the Scorecard shows you in about three minutes." },
       { question: "How long does a HIPAA risk assessment take?", answer: "Anywhere from an afternoon with the free tool for a simple solo practice to a few weeks for a consultant-led review with an onsite visit and a written plan. The larger time cost is usually fixing what the analysis turns up, not running the analysis." },
-      { question: "Does the Hipsana Scorecard replace a risk analysis?", answer: "No, and we would not claim it does. The Scorecard is a fast self-check of the gaps OCR most commonly cites. A formal risk analysis is the documented, thorough assessment the law requires. The Scorecard shows you where you likely stand so you can decide what to do next, including a short free review and an intro to a specialist." },
+      { question: "Does the Hipsana Scorecard replace a risk analysis?", answer: "No, and we would not claim it does. The Scorecard is a fast self-check of the gaps OCR most commonly cites. A formal risk analysis is the documented, thorough assessment the law requires. The Scorecard shows you where you likely stand so you can decide what to do next, including a short free review and an intro to a specialist if a referral makes sense." },
     ],
   },
   {
@@ -1712,7 +1712,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "HIPAA does not ban AI. " },
-            "It treats an AI vendor the way it treats ", { text: "any vendor that touches patient data", href: "/articles/does-my-dental-practice-need-a-baa" }, ": as a business associate that needs a signed BAA before the first patient detail flows.",
+            "It treats an AI vendor the way it treats ", { text: "any vendor that stores or handles patient data on your behalf", href: "/articles/does-my-dental-practice-need-a-baa" }, ": as a business associate that needs a signed BAA before the first patient detail flows.",
           ],
           [
             { strong: "Two documents decide your exposure: " },
@@ -1928,7 +1928,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "An AI tool you adopted this year is exactly the kind of system OCR expects to find listed in that document, and a vendor's badge will not stand in for it. " },
-          "Most independent practices carry gaps they cannot see from the inside. The Scorecard checks the areas OCR most commonly cites, then offers a short free risk review and, if you want one, an intro to a specialist. Takes about three minutes. ",
+          "Most independent practices carry gaps they cannot see from the inside. The Scorecard checks the areas OCR most commonly cites, then offers a short free risk review and an intro to a specialist if a referral makes sense. Takes about three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -2074,7 +2074,7 @@ export const articles: Article[] = [
         items: [
           [
             { strong: "It depends on the contract, not the technology. " },
-            "HIPAA treats an AI scribe vendor like ", { text: "any other vendor that touches patient data", href: "/articles/does-my-dental-practice-need-a-baa" }, ": a business associate (45 CFR \u00a7 160.103) that needs a signed BAA before the first patient detail reaches it.",
+            "HIPAA treats an AI scribe vendor like ", { text: "any other vendor that stores or handles patient data on your behalf", href: "/articles/does-my-dental-practice-need-a-baa" }, ": a business associate (45 CFR \u00a7 160.103) that needs a signed BAA before the first patient detail reaches it.",
           ],
           [
             { strong: "A scribe handles patient data by design. " },
@@ -2183,7 +2183,7 @@ export const articles: Article[] = [
         runs: [
           "A vendor contract you cannot produce is the kind of gap a practice never notices until someone asks. ",
           {
-            strong: "The free HIPAA Risk Scorecard checks the areas OCR most commonly cites, missing BAAs included, then sends a short written review of your top gaps and an intro to a specialist if you want one. About three minutes. ",
+            strong: "The free HIPAA Risk Scorecard checks the areas OCR most commonly cites, missing BAAs included, then sends a short written review of your top gaps and an intro to a specialist if a referral makes sense. About three minutes. ",
           },
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
@@ -2542,7 +2542,7 @@ export const articles: Article[] = [
         runs: [
           "Most owners cannot say today which of those documents their practice could actually produce. ",
           {
-            strong: "The free HIPAA Risk Scorecard checks the areas OCR most commonly cites, written policies and staff training included, then sends a short written review of your top gaps and an intro to a specialist if you want one. About three minutes. ",
+            strong: "The free HIPAA Risk Scorecard checks the areas OCR most commonly cites, written policies and staff training included, then sends a short written review of your top gaps and an intro to a specialist if a referral makes sense. About three minutes. ",
           },
           {
             text: "Check my practice \u2192",
@@ -2769,7 +2769,7 @@ export const articles: Article[] = [
     title: "Does Your Dental Practice Need a BAA, and With Which Vendors? (2026)",
     metaTitle: "Does Your Dental Practice Need a BAA? (2026)",
     description:
-      "Does your dental practice need a BAA? Yes, if a vendor handles patient data. Which vendors, how to get one, and what one missing agreement can cost.",
+      "Does your dental practice need a BAA? Yes, if a vendor handles patient data on your behalf. Which vendors, how to get one, what a missing agreement can cost.",
     author: "Dolev Arama",
     datePublished: "2026-06-17",
     dateModified: "2026-06-17",
@@ -2807,7 +2807,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "The fix is a signed agreement and a current list. " },
-            "Inventory every vendor that touches patient data, get a BAA from each, and review the list when vendors change. The Scorecard checks whether you have one with every vendor that touches patient data.",
+            "Inventory every vendor that stores or handles patient data on your behalf, get a BAA from each, and review the list when vendors change. The Scorecard checks whether you have one with every vendor that stores or handles patient data on your behalf.",
           ],
         ],
       },
@@ -3214,7 +3214,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The foundation is the risk analysis the Security Rule requires at 45 CFR \u00a7 164.308(a)(1)(ii)(A), the same ", { text: "accurate-and-thorough assessment", href: "https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/securityrule/rafinalguidancepdf.pdf" }, " every covered practice must run. The rest of the program sits on top of it: written policies, workforce training, a signed agreement with every vendor that touches patient data, secure email and encryption, reliable backups, and ongoing monitoring. The risk analysis anchors the budget because everything else depends on first knowing where your data lives and what threatens it.",
+          "The foundation is the risk analysis the Security Rule requires at 45 CFR \u00a7 164.308(a)(1)(ii)(A), the same ", { text: "accurate-and-thorough assessment", href: "https://www.hhs.gov/sites/default/files/ocr/privacy/hipaa/administrative/securityrule/rafinalguidancepdf.pdf" }, " every covered practice must run. The rest of the program sits on top of it: written policies, workforce training, a signed agreement with every vendor that stores or handles patient data on your behalf, secure email and encryption, reliable backups, and ongoing monitoring. The risk analysis anchors the budget because everything else depends on first knowing where your data lives and what threatens it.",
         ],
       },
       { type: "h2", text: "Two ways to run it: do it yourself, or hand it off" },
@@ -3370,7 +3370,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Business associate agreements. " },
-            "A signed BAA with every vendor that handles patient data: your practice-management software, imaging, email, IT, billing. Most practices do not pay for the agreement itself; the cost, and the gap OCR keeps finding, is identifying every vendor that needs one and keeping the records current. ",
+            "A signed BAA with every vendor that stores or handles patient data on your behalf: your practice-management software, imaging, email, IT, billing. Most practices do not pay for the agreement itself; the cost, and the gap OCR keeps finding, is identifying every vendor that needs one and keeping the records current. ",
             { text: "Which vendors need a BAA", href: "/articles/does-my-dental-practice-need-a-baa" },
             " covers who counts.",
           ],
@@ -3394,7 +3394,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Year one carries the setup, the initial risk analysis, fixing what it turns up, writing your policies from scratch, getting every vendor under a BAA. For a small practice that brings in help, that first year commonly lands around $5,000 to $15,000, less if you do more of it yourself. After that you drop to the recurring figure: the annual assessment refresh, training, renewals, and monitoring, which is why the ongoing number is lower. Budget for both, and do not let the larger first-year figure scare you off. Skipping it costs far more, as the next section shows.",
+          "Year one carries the setup, the initial risk analysis, fixing what it turns up, writing your policies from scratch, getting every vendor that stores or handles patient data on your behalf under a BAA. For a small practice that brings in help, that first year commonly lands around $5,000 to $15,000, less if you do more of it yourself. After that you drop to the recurring figure: the annual assessment refresh, training, renewals, and monitoring, which is why the ongoing number is lower. Budget for both, and do not let the larger first-year figure scare you off. Skipping it costs far more, as the next section shows.",
         ],
       },
       { type: "h2", text: "What it cost the practice that skipped it" },
@@ -3553,9 +3553,9 @@ export const articles: Article[] = [
       { question: "Is compliance software enough on its own?", answer: "For a simple solo practice, a good platform can run most of the program: the risk analysis, policies, training, and vendor tracking. What it cannot do is judge your physical setup, configure your network, or do the work for you. A subscription you do not fully complete leaves the same gap a regulator looks for." },
       { question: "Can a dental practice stay HIPAA compliant without hiring anyone?", answer: "Yes. HIPAA does not require you to hire a compliance officer or an outside firm. A solo or small practice can run the program itself with a compliance platform that handles the risk analysis, policies, training, and vendor tracking, plus a few hours of your time a year. The catch is discipline: the do-it-yourself path only works if you keep the documentation current and act on what the risk analysis finds." },
       { question: "Is it cheaper to do HIPAA compliance myself or hire an MSP?", answer: "Doing it yourself with software is cheaper in dollars, about $1,500 to $4,000 a year for a small practice, but it costs your time and discipline. An MSP or compliance firm runs about $6,000 to $12,000 a year and handles it for you. The right choice depends on your complexity and how much your hours are worth." },
-      { question: "Why does the first year cost more?", answer: "Year one carries the setup: the initial risk analysis, fixing what it finds, writing policies from scratch, and getting every vendor under a business associate agreement. A small practice that brings in help commonly spends $5,000 to $15,000 in year one, then drops to a lower recurring figure for annual refreshes, training, and monitoring." },
+      { question: "Why does the first year cost more?", answer: "Year one carries the setup: the initial risk analysis, fixing what it finds, writing policies from scratch, and getting every vendor that stores or handles patient data on your behalf under a business associate agreement. A small practice that brings in help commonly spends $5,000 to $15,000 in year one, then drops to a lower recurring figure for annual refreshes, training, and monitoring." },
       { question: "Is HIPAA compliance a tax-deductible business expense?", answer: "Generally, yes. Compliance software, training, and professional services are ordinary and necessary business expenses, and HIPAA being legally required strengthens that case, so they are typically deductible. Larger one-time purchases, such as new equipment, may need to be depreciated rather than deducted in full the first year. This is general information, not tax advice; confirm the specifics with your accountant." },
-      { question: "What is the cheapest way for a solo practice to stay HIPAA compliant?", answer: "Run the free federal risk-assessment tool, add a low-cost compliance platform for policies and training, put a BAA in place with every vendor, and keep the documentation current yourself. That can hold annual costs to a couple thousand dollars, but only if you genuinely do the work and keep the proof. The savings disappear if the result is a checkbox exercise." },
+      { question: "What is the cheapest way for a solo practice to stay HIPAA compliant?", answer: "Run the free federal risk-assessment tool, add a low-cost compliance platform for policies and training, put a BAA in place with every vendor that stores or handles patient data on your behalf, and keep the documentation current yourself. That can hold annual costs to a couple thousand dollars, but only if you genuinely do the work and keep the proof. The savings disappear if the result is a checkbox exercise." },
       { question: "Does a solo dental practice really need all of this?", answer: "Yes. The HIPAA Security Rule does not scale its core obligations to your size, and federal regulators have settled with single-location providers, and practices with fewer than 2,000 patients, specifically to make that point. A small practice with patient data carries the same foundational duties as a hospital." },
       { question: "Can the Hipsana Scorecard tell me what I will need to budget for?", answer: "It points you at the gaps. The Scorecard checks the areas OCR most commonly cites and sends you a short written review of where your practice stands, which is the fastest way to see which line items you are actually missing before you spend. It is not a formal risk analysis, and we would not claim it is." },
     ],
@@ -4004,7 +4004,7 @@ export const articles: Article[] = [
         runs: [
           {
             strong:
-              "Most independent practices carry gaps they can't see from the inside. The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, including whether your records-request process would hold up, then sends you a short written review and an introduction to a specialist. It takes about three minutes. ",
+              "Most independent practices carry gaps they can't see from the inside. The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, including whether your records-request process would hold up, then sends you a short written review and an introduction to a specialist if a referral makes sense. It takes about three minutes. ",
           },
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
@@ -5088,7 +5088,7 @@ export const articles: Article[] = [
     slug: "parental-access-to-a-childs-dental-records",
     status: "published",
     title: "Parental Access to a Child's Dental Records: What HIPAA Requires (2026)",
-    metaTitle: "Parental Access to a Child's Dental Records",
+    metaTitle: "Parental Access to a Child's Dental Records (2026)",
     description: "Under HIPAA, a parent is usually a child's personal representative who can get the dental records, with exceptions. OCR made it a 2025 enforcement priority.",
     author: "Dolev Arama",
     datePublished: "2026-06-19",
@@ -5295,7 +5295,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Most independent practices carry gaps they can't see from the inside, and a written policy for parent and minor record requests is a common one. The free HIPAA Risk Scorecard checks the 10 areas OCR investigates most, then sends a short written review and an introduction to a specialist. It takes about three minutes. ",
+          "Most independent practices carry gaps they can't see from the inside, and a written policy for parent and minor record requests is a common one. The free HIPAA Risk Scorecard checks the 10 areas OCR investigates most, then sends a short written review and an introduction to a specialist if a referral makes sense. It takes about three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -5693,7 +5693,7 @@ export const articles: Article[] = [
     slug: "hipaa-text-messaging-dental-practice",
     status: "published",
     title: "Is Texting Patients HIPAA Compliant? A Dentist's Guide (2026)",
-    metaTitle: "Texting Patients: HIPAA + TCPA Rules (Dental)",
+    metaTitle: "Is Texting Patients HIPAA Compliant? (2026)",
     description:
       "Is texting patients HIPAA compliant for a dental practice? Yes, but a second law, the TCPA, controls consent and opt-outs. Here is the full 2026 picture.",
     author: "Dolev Arama",
@@ -6060,7 +6060,7 @@ export const articles: Article[] = [
     slug: "are-tracking-pixels-hipaa-compliant-dental-practice",
     status: "published",
     title: "Are Tracking Pixels HIPAA Compliant? A Dentist's Guide (2026)",
-    metaTitle: "Are Tracking Pixels HIPAA Compliant? (Dental)",
+    metaTitle: "Are Tracking Pixels HIPAA Compliant? (2026)",
     description:
       "Are tracking pixels HIPAA compliant for a dental practice? It depends on the page. Here is what OCR, Google, the FTC, and the courts actually say in 2026.",
     author: "Dolev Arama",
@@ -6757,7 +6757,7 @@ export const articles: Article[] = [
               "This is the single document OCR cites most often after a breach. It has to be accurate and thorough, and kept up to date, not a one-time checkbox from three years ago.",
           },
           {
-            label: "Get a signed agreement with every vendor that touches patient data",
+            label: "Get a signed agreement with every vendor that stores or handles patient data on your behalf",
             detail:
               "Your IT company, cloud backup, billing service, and software vendor each need a business associate agreement before they handle patient data.",
           },
