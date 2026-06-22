@@ -43,6 +43,13 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hipsana — HIPAA & cybersecurity for independent practices",
+    description:
+      "Practical HIPAA compliance and cybersecurity guidance for independent dental, medical, and therapy practices.",
+    images: ["/og-default.png"],
+  },
   robots: {
     index: true,
     follow: true,
@@ -85,7 +92,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${lexend.variable} ${ibmPlexSans.variable}`}>
       <body className="min-h-screen flex flex-col">
-        <a
+        
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-teal focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-paper"
         >
