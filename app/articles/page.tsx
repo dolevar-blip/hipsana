@@ -38,6 +38,13 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "HIPAA Compliance Guides for Independent Practices · Hipsana",
+    description:
+      "Plain-language HIPAA and cybersecurity guidance for independent dental, medical, and therapy practices.",
+    images: ["/og-default.png"],
+  },
 };
 
 export default function ArticlesIndexPage() {
