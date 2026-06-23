@@ -3974,7 +3974,12 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The right of access has become OCR's most active enforcement priority under the Privacy Rule. Since the agency launched its Right of Access Initiative in 2019, it has brought more than 50 enforcement actions under it, reaching its 54th by the end of 2025. Dental practices keep showing up on that list. On a single day, ",
+          "The right of access has become OCR's most active enforcement priority under the Privacy Rule. Since the agency launched its Right of Access Initiative in 2019, it has brought more than 50 enforcement actions under it, ",
+          {
+            text: "reaching its 54th by the end of 2025",
+            href: "https://www.hhs.gov/press-room/ocr-settles-with-concentra.html",
+          },
+          ". Dental practices keep showing up on that list. On a single day, ",
           {
             text: "in September 2022, OCR settled three separate cases against dental practices",
             href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/september-2022-right-of-access-initiative/index.html",
@@ -4257,7 +4262,12 @@ export const articles: Article[] = [
             text: "proposed rule",
             href: "https://www.federalregister.gov/documents/2021/01/21/2020-27157/proposed-modifications-to-the-hipaa-privacy-rule-to-support-and-remove-barriers-to-coordinated-care",
           },
-          ", still in proposed form as of 2026 with a federal consultation step held in February 2026, that would shorten the standard response time from 30 days to 15. It is not final, and the 30-day rule remains the federal law today. But the direction is toward less time, not more, and in several states the deadline is already shorter, which is one more reason to fix the process now rather than rely on the back half of a 30-day window.",
+          ", still in proposed form as of 2026, with a ",
+          {
+            text: "Tribal consultation step in February 2026",
+            href: "https://www.federalregister.gov/documents/2026/01/14/2026-00561/tribal-consultation-on-proposed-modifications-to-the-hipaa-privacy-rule",
+          },
+          ", that would shorten the standard response time from 30 days to 15. It is not final, and the 30-day rule remains the federal law today. But the direction is toward less time, not more, and in several states the deadline is already shorter, which is one more reason to fix the process now rather than rely on the back half of a 30-day window.",
         ],
       },
       {
@@ -4292,6 +4302,8 @@ export const articles: Article[] = [
           ["Ciox Health, LLC v. Azar (D.D.C. 2020) (fee limits on patient-directed transmissions to third parties)."],
           ["45 CFR \u00a7 164.524 (right of access, including fees and the grounds for denial); \u00a7 160.203 (preemption) (eCFR, current)."],
           ["Federal Register, proposed modifications to the HIPAA Privacy Rule to support and remove barriers to coordinated care, January 21, 2021."],
+          ["HHS Office for Civil Rights, settlement with Concentra, Inc., the 54th enforcement action in OCR's Right of Access Initiative (hhs.gov, December 16, 2025)."],
+          ["Federal Register, notification of Tribal consultation on the proposed HIPAA Privacy Rule modifications; consultation held February 6, 2026 (federalregister.gov, January 14, 2026)."],
         ],
       },
     ],
@@ -4668,7 +4680,7 @@ export const articles: Article[] = [
             {
               strong: "The public data is clear, and we did the reading. "
             },
-            "The figures here come from HHS's own breach portal and annual reports to Congress, its published settlements, and, where HHS had not yet posted a case, the organizations' own breach notices. We do not sell compliance services, so this is a read of the record, not a sales pitch."
+            "The figures here come from HHS's own breach portal and annual reports to Congress, its published settlements, and, where HHS had not yet posted a case, the organizations' own breach notices. Hipsana is a publisher and referral service, not a law firm, insurer, compliance vendor, or healthcare provider. This section is meant to read the public record carefully, not replace legal or compliance advice."
           ],
           [
             {
@@ -6087,7 +6099,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "No BAA is available for them. " },
-            "Google does not offer a business associate agreement for Google Analytics, and as of 2026 none is available for the Meta Pixel either, so on a page that handles patient data there is no agreement that would make them compliant.",
+            "Google does not offer a business associate agreement for Google Analytics. We are not aware of any BAA for the Meta Pixel as of 2026. Without a signed BAA, a tracking vendor cannot receive protected health information from a HIPAA-covered entity.",
           ],
           [
             { strong: "A cookie banner does not fix it. " },
@@ -6410,7 +6422,7 @@ export const articles: Article[] = [
       {
         question: "Is the Facebook (Meta) pixel allowed on a dental website?",
         answer:
-          "In practice, keep it off any page that handles patient data. There is no business associate agreement available for the Meta Pixel, so on a booking page, a patient portal, or an intake form it can create an impermissible disclosure of protected health information. On a marketing page with no patient data, it is generally fine.",
+          "In practice, keep it off any page that handles patient data. We are not aware of any business associate agreement available for the Meta Pixel as of 2026, so on a booking page, a patient portal, or an intake form it can create an impermissible disclosure of protected health information. On a marketing page with no patient data, it is generally fine, but confirm the current terms with Meta or qualified counsel.",
       },
       {
         question: "Didn't a 2024 court ruling say tracking pixels are fine now?",
