@@ -269,7 +269,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           { strong: "The hard part isn't running the analysis. It's knowing which gaps you have before OCR does. " },
-          "The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, then you get a short written review and an introduction to a specialist if a referral makes sense. Three minutes. ",
+          "The free HIPAA Risk Scorecard checks the areas OCR most commonly cites, like risk analysis and BAAs, then you get a short written review and an introduction to a specialist if a referral makes sense. Three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -481,7 +481,7 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "Start by finding out where you actually stand. ",
-          { strong: "Most independent practices carry gaps they can't see from the inside. The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, then sends you a short written review and an introduction to a specialist if a referral makes sense. It takes about three minutes. " },
+          { strong: "Most independent practices carry gaps they can't see from the inside. The free HIPAA Risk Scorecard checks the areas OCR most commonly cites, like risk analysis, vendor agreements, and staff training, then sends you a short written review and an introduction to a specialist if a referral makes sense. It takes about three minutes. " },
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -4009,7 +4009,7 @@ export const articles: Article[] = [
         runs: [
           {
             strong:
-              "Most independent practices carry gaps they can't see from the inside. The free HIPAA Risk Scorecard checks the 10 areas that come up most often in OCR investigations, including whether your records-request process would hold up, then sends you a short written review and an introduction to a specialist if a referral makes sense. It takes about three minutes. ",
+              "Most independent practices carry gaps they can't see from the inside. The free HIPAA Risk Scorecard checks the areas OCR most commonly cites, including whether your records-request process would hold up, then sends you a short written review and an introduction to a specialist if a referral makes sense. It takes about three minutes. ",
           },
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
@@ -5307,7 +5307,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Most independent practices carry gaps they can't see from the inside, and a written policy for parent and minor record requests is a common one. The free HIPAA Risk Scorecard checks the 10 areas OCR investigates most, then sends a short written review and an introduction to a specialist if a referral makes sense. It takes about three minutes. ",
+          "Most independent practices carry gaps they can't see from the inside, and a written policy for parent and minor record requests is a common one. The free HIPAA Risk Scorecard checks the areas OCR most commonly cites, like risk analysis and BAAs, then sends a short written review and an introduction to a specialist if a referral makes sense. It takes about three minutes. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
