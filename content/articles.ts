@@ -100,8 +100,8 @@ export const articles: Article[] = [
     description:
       "Yes. The HIPAA Security Rule requires a risk analysis from every dental practice, solo or group. Here's what OCR actually checks, and how to get it done.",
     author: "Dolev Arama",
-    datePublished: "2026-06-03",
-    dateModified: "2026-06-12",
+    datePublished: "2026-06-03T23:36:18+03:00",
+    dateModified: "2026-06-24T02:16:08+03:00",
     body: [
       {
         type: "p",
@@ -556,8 +556,8 @@ export const articles: Article[] = [
     description:
       "A random HIPAA audit rarely ends in a fine. The real risk is an OCR investigation after a breach or complaint, and what failing costs a small dental practice.",
     author: "Dolev Arama",
-    datePublished: "2026-06-04",
-    dateModified: "2026-06-21",
+    datePublished: "2026-06-04T14:18:38+03:00",
+    dateModified: "2026-06-23T02:31:25+03:00",
     body: [
       {
         type: "p",
@@ -947,8 +947,8 @@ export const articles: Article[] = [
     description:
       "A dental data breach starts a 60-day HIPAA clock. The exact steps to take, who to notify, and what OCR most commonly cites, anchored to a real OCR settlement.",
     author: "Dolev Arama",
-    datePublished: "2026-06-05",
-    dateModified: "2026-06-17",
+    datePublished: "2026-06-05T03:27:57+03:00",
+    dateModified: "2026-06-23T02:31:25+03:00",
     body: [
       {
         type: "p",
@@ -1220,8 +1220,8 @@ export const articles: Article[] = [
     description:
       "A HIPAA risk assessment for a dental practice runs $1,500–$6,000 with a specialist; the free HHS tool is $0. What each path buys, and why cheap can cost more.",
     author: "Dolev Arama",
-    datePublished: "2026-06-05",
-    dateModified: "2026-06-21",
+    datePublished: "2026-06-05T13:43:24+03:00",
+    dateModified: "2026-06-23T02:31:25+03:00",
     body: [
       {
         type: "p",
@@ -1682,8 +1682,8 @@ export const articles: Article[] = [
     description:
       "ChatGPT's everyday plans are not HIPAA compliant, by OpenAI's own terms. Which AI tools sign a BAA for a dental practice, and what OCR most commonly cites.",
     author: "Dolev Arama",
-    datePublished: "2026-06-11",
-    dateModified: "2026-06-17",
+    datePublished: "2026-06-11T11:13:18+03:00",
+    dateModified: "2026-06-23T02:31:25+03:00",
     body: [
       {
         type: "p",
@@ -2053,8 +2053,8 @@ export const articles: Article[] = [
     description:
       "AI scribes are HIPAA compliant only when the vendor signs a BAA and your risk analysis lists the tool. The five-question test to run before you sign up.",
     author: "Dolev Arama",
-    datePublished: "2026-06-12",
-    dateModified: "2026-06-17",
+    datePublished: "2026-06-12T11:26:14+03:00",
+    dateModified: "2026-06-23T02:31:25+03:00",
     body: [
       {
         type: "p",
@@ -2415,8 +2415,8 @@ export const articles: Article[] = [
     description:
       "Free AI tools don't sign BAAs, so one pasted patient detail is an impermissible disclosure. The five-part AI use policy a dental practice needs.",
     author: "Dolev Arama",
-    datePublished: "2026-06-12",
-    dateModified: "2026-06-21",
+    datePublished: "2026-06-12T14:54:15+03:00",
+    dateModified: "2026-06-23T02:31:25+03:00",
     body: [
       {
         type: "p",
@@ -2771,8 +2771,8 @@ export const articles: Article[] = [
     description:
       "Does your dental practice need a BAA? Yes, if a vendor handles patient data on your behalf. Which vendors, how to get one, what a missing agreement can cost.",
     author: "Dolev Arama",
-    datePublished: "2026-06-17",
-    dateModified: "2026-06-17",
+    datePublished: "2026-06-17T02:56:36+03:00",
+    dateModified: "2026-06-23T02:31:25+03:00",
     body: [
       {
         type: "p",
@@ -3155,8 +3155,8 @@ export const articles: Article[] = [
     description:
       "HIPAA compliance costs a dental practice about $1,500\u2013$12,000 a year, less if you run it yourself, more if you hand it off. Where the money goes.",
     author: "Dolev Arama",
-    datePublished: "2026-06-17",
-    dateModified: "2026-06-21",
+    datePublished: "2026-06-17T07:14:55+03:00",
+    dateModified: "2026-06-23T02:31:25+03:00",
     body: [
       {
         type: "p",
@@ -3569,8 +3569,8 @@ export const articles: Article[] = [
     description:
       "Is your dental practice's email HIPAA compliant? Standard Gmail and Microsoft 365 don't encrypt patient records by default. Here's how to fix it.",
     author: "Dolev Arama",
-    datePublished: "2026-06-18",
-    dateModified: "2026-06-18",
+    datePublished: "2026-06-18T00:33:47+03:00",
+    dateModified: "2026-06-21T05:46:11+03:00",
     body: [
       {
         type: "p",
@@ -3925,8 +3925,8 @@ export const articles: Article[] = [
     description:
       "A patient asks for their dental records. HIPAA gives you 30 days, strict limits on fees, and few ways to say no. Get it wrong and one practice paid $70,000.",
     author: "Dolev Arama",
-    datePublished: "2026-06-19",
-    dateModified: "2026-06-19",
+    datePublished: "2026-06-19T01:05:42+03:00",
+    dateModified: "2026-06-24T02:16:08+03:00",
     body: [
       {
         type: "p",
@@ -4349,8 +4349,8 @@ export const articles: Article[] = [
     metaTitle: "HIPAA Social Media Rules for Dentists (2026)",
     description: "Patient photos need written HIPAA authorization, and review replies can break the law. The named OCR dental cases, two rules, and a safe review template.",
     author: "Dolev Arama",
-    datePublished: "2026-06-19",
-    dateModified: "2026-06-19",
+    datePublished: "2026-06-19T05:06:18+03:00",
+    dateModified: "2026-06-21T05:55:09+03:00",
     body: [
       {
         type: "p",
@@ -4660,8 +4660,8 @@ export const articles: Article[] = [
     metaTitle: "Dental HIPAA Breaches & Fines: 2026 Data",
     description: "We read the public HHS data so you don't have to: how dental practices actually get breached, and the one failure OCR keeps fining them for in 2026.",
     author: "Dolev Arama",
-    datePublished: "2026-06-17",
-    dateModified: "2026-06-18",
+    datePublished: "2026-06-17T21:26:24+03:00",
+    dateModified: "2026-06-24T00:41:30+03:00",
     body: [
       {
         type: "p",
@@ -5103,8 +5103,8 @@ export const articles: Article[] = [
     metaTitle: "Parental Access to a Child's Dental Records (2026)",
     description: "Under HIPAA, a parent is usually a child's personal representative who can get the dental records, with exceptions. OCR made it a 2025 enforcement priority.",
     author: "Dolev Arama",
-    datePublished: "2026-06-19",
-    dateModified: "2026-06-21",
+    datePublished: "2026-06-19T15:45:16+03:00",
+    dateModified: "2026-06-24T02:16:08+03:00",
     body: [
       {
         type: "p",
@@ -5386,8 +5386,8 @@ export const articles: Article[] = [
     description:
       "What cyber insurance covers for a dental practice, what it costs, and whether it actually pays a HIPAA penalty. A plain, primary-sourced guide, no sales pitch.",
     author: "Dolev Arama",
-    datePublished: "2026-06-19",
-    dateModified: "2026-06-19",
+    datePublished: "2026-06-19T18:33:19+03:00",
+    dateModified: "2026-06-22T01:31:01+03:00",
     body: [
       {
         type: "p",
@@ -5709,8 +5709,8 @@ export const articles: Article[] = [
     description:
       "Is texting patients HIPAA compliant for a dental practice? Yes, but a second law, the TCPA, controls consent and opt-outs. Here is the full 2026 picture.",
     author: "Dolev Arama",
-    datePublished: "2026-06-19",
-    dateModified: "2026-06-19",
+    datePublished: "2026-06-19T21:22:51+03:00",
+    dateModified: "2026-06-23T02:31:25+03:00",
     body: [
       {
         type: "p",
@@ -6076,8 +6076,8 @@ export const articles: Article[] = [
     description:
       "Are tracking pixels HIPAA compliant for a dental practice? It depends on the page. Here is what OCR, Google, the FTC, and the courts actually say in 2026.",
     author: "Dolev Arama",
-    datePublished: "2026-06-19",
-    dateModified: "2026-06-19",
+    datePublished: "2026-06-19T23:59:07+03:00",
+    dateModified: "2026-06-24T00:41:30+03:00",
     body: [
       {
         type: "p",
@@ -6454,8 +6454,8 @@ export const articles: Article[] = [
     description:
       "Does HIPAA require MFA for a dental practice? Not by name. Here's what the rule requires now, what the 2026 proposal would change, and what OCR enforces.",
     author: "Dolev Arama",
-    datePublished: "2026-06-21",
-    dateModified: "2026-06-21",
+    datePublished: "2026-06-22T01:31:01+03:00",
+    dateModified: "2026-06-23T02:31:25+03:00",
     body: [
       {
         type: "p",
