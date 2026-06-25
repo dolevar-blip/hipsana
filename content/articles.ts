@@ -1017,7 +1017,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Two words decide whether the rule applies at all. \"Unsecured\" patient information is data that has not been encrypted or destroyed to the standard HHS specifies; if a stolen laptop was properly encrypted, you may fall under the encryption safe harbor and owe no notification, while data sitting in plain text gets no such protection. \"Discovered\" is defined broadly: a breach is treated as discovered on the first day anyone on your team knew about it, or reasonably should have (", { text: "45 CFR 164.404(a)(2)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.404" }, "), so your 60-day clock can start running before you have all the facts.",
+          "Two words decide whether the rule applies at all. \"Unsecured\" patient information is data that has not been encrypted or ", { text: "destroyed to the standard HHS specifies", href: "/articles/how-long-to-keep-dental-records" }, "; if a stolen laptop was properly encrypted, you may fall under the encryption safe harbor and owe no notification, while data sitting in plain text gets no such protection. \"Discovered\" is defined broadly: a breach is treated as discovered on the first day anyone on your team knew about it, or reasonably should have (", { text: "45 CFR 164.404(a)(2)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.404" }, "), so your 60-day clock can start running before you have all the facts.",
         ],
       },
       {
@@ -2892,7 +2892,7 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Records, film, and hard-drive disposal (shredding and e-waste): " },
-            "Yes, when the vendor handles media that still contains patient data. Raleigh's vendor was, in effect, a film-recycling service.",
+            "Yes, when the vendor handles media that still contains patient data. Raleigh's vendor was, in effect, a film-recycling service. When and how to dispose of those records is its own question, covered in ", { text: "how long to keep dental records and how to destroy them", href: "/articles/how-long-to-keep-dental-records" }, ".",
           ],
           [
             { strong: "Answering service, virtual reception, and scheduling: " },
@@ -6880,6 +6880,440 @@ export const articles: Article[] = [
         question: "Has any dental practice been fined for not having MFA?",
         answer:
           "No. In its breach settlements, the Office for Civil Rights has cited the missing risk analysis as the violation, even in breaches that began with missing or disabled MFA. That is the document worth getting right first. The free HIPAA Scorecard checks your risk analysis and authentication and names your biggest gap in about three minutes.",
+      },
+    ],
+  },
+  {
+    slug: "how-long-to-keep-dental-records",
+    status: "published",
+    title: "How Long to Keep Dental Records and How to Destroy Them (2026)",
+    metaTitle: "How Long to Keep Dental Records (HIPAA, 2026)",
+    description:
+      "How long a dental practice must keep patient records, and how to destroy them without a HIPAA breach: state rules, X-rays, old drives, and vendor liability.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-25T00:00:00+03:00",
+    dateModified: "2026-06-25T00:00:00+03:00",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "HIPAA does not tell you how long to keep dental records. Your state does, and the answer usually runs five to ten years, longer for children. What HIPAA does tell you is how to destroy those records once the clock runs out, and getting that part wrong is its own violation. One dermatology practice put labeled specimen containers in a parking-lot dumpster for years and paid the government $300,640. A Kokomo dentist paid a company to shred 63 boxes of old charts; the boxes turned up in a church dumpster instead, and he was the one the state fined. Here is what the rules actually require, where the traps are, and how to clear out old records without creating a breach.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "HIPAA sets no deadline for keeping clinical records. " },
+            "State law does. The six-year figure people quote is HIPAA's rule for your compliance paperwork, not for the patient chart.",
+          ],
+          [
+            { strong: "The common range is five to ten years, and longer for minors. " },
+            "Many states tie a child's record to their 18th or 21st birthday. Your malpractice carrier may want longer than the state minimum.",
+          ],
+          [
+            { strong: "You can destroy records, but the standard is a result, not a method. " },
+            "Paper and film have to end up unreadable and impossible to reconstruct. Shredding, burning, and pulverizing all qualify.",
+          ],
+          [
+            { strong: "Deleting a file is not destroying it. " },
+            "A wiped or reformatted drive can usually be recovered. Old computers and backups have to be purged or physically destroyed.",
+          ],
+          [
+            { strong: "Your shredding company is a vendor that touches patient data. " },
+            "You need a signed agreement with them, and you are on the hook if they mishandle the records.",
+          ],
+          [
+            { strong: "Dumping records in the open is a reportable breach. " },
+            "Improper disposal is one of the failures OCR has settled, and it triggers the same breach-notification duties as a hack.",
+          ],
+          [
+            { strong: "Never destroy on a deadline you are unsure of, or under a legal hold. " },
+            "Throwing out a record too early, or while a claim or audit is live, is its own problem.",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This article explains how long a dental practice has to keep records and how to destroy them. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
+
+      { type: "h2", text: "How long do you actually have to keep dental records?" },
+      {
+        type: "p",
+        runs: [
+          "HIPAA does not set a retention period for patient records at all. The Privacy Rule requires you to keep your HIPAA compliance documentation, your policies, your risk analysis, your training logs, for ",
+          {
+            text: "at least six years",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.530",
+          },
+          ", and the Security Rule says the same for its paperwork in ",
+          {
+            text: "45 CFR 164.316(b)",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.316",
+          },
+          ". But that six-year rule is about the file that proves you follow HIPAA, not about the patient chart. For the chart itself, ",
+          {
+            text: "HHS is explicit",
+            href: "https://www.hhs.gov/sites/default/files/disposalfaqs.pdf",
+          },
+          ": the Privacy Rule includes no medical-record retention period, and state law decides how long you keep it.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "So the real question is your state's rule, and that is where the published guides get unreliable. We checked one widely shared state-by-state table that lists Texas at ten years; the actual Texas Dental Board rule, 22 TAC 108.8, says five. Numbers like these change, they vary by record type, and the online tables disagree with each other, so treat any chart you see, including this one, as a starting point and confirm your own state with your dental board or your attorney.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["What", "How long to keep it", "Where the rule comes from"],
+        rows: [
+          [
+            "HIPAA compliance paperwork (policies, risk analysis, training logs)",
+            "At least 6 years",
+            "Federal: 45 CFR 164.530(j) and 164.316(b)",
+          ],
+          [
+            "Patient clinical records, Texas",
+            "At least 5 years; a minor's record until age 21 or 5 years, whichever is longer",
+            "State: Texas Dental Board rule, 22 TAC 108.8",
+          ],
+          [
+            "Patient clinical records, New York",
+            "At least 6 years; a minor's record at least 6 years and until 1 year past age 21",
+            "State: NY Board of Regents rule, 8 NYCRR 29.2",
+          ],
+        ],
+        caption:
+          "HIPAA's six-year rule covers your compliance file, not the patient chart. The chart is governed by state law, and states differ. Examples as of 2026; confirm your state with your dental board or counsel before destroying anything.",
+      },
+      {
+        type: "p",
+        runs: [
+          "A few things stretch this out in practice. Minors are the big one: many states keep a child's record running until they turn 18 or 21, so a chart you opened for a seven-year-old may need to live for well over a decade. Malpractice carriers commonly recommend ten years for adults regardless of the state minimum, because that is the window a lawsuit can surface in. And if you bill Medicare or Medicaid, separate federal program rules can require you to keep certain cost and claims records longer still. The practical rule most advisors land on: default to ten years for adults, treat minor records as a separate long-tail, and never let a short state minimum talk you into destroying something a lawsuit or an audit might still need.",
+        ],
+      },
+
+      { type: "h2", text: "What HIPAA requires when you destroy records" },
+      {
+        type: "p",
+        runs: [
+          "Once a record is past every retention clock, HIPAA does not dictate which method you use to destroy it. It sets the outcome you have to reach. The standard, from ",
+          {
+            text: "HHS's own disposal guidance",
+            href: "https://www.hhs.gov/sites/default/files/disposalfaqs.pdf",
+          },
+          ", is that the protected health information has to be rendered unreadable, indecipherable, and impossible to reconstruct before it leaves your control. How you get there is up to you, within reason.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "For paper and film, HHS lists shredding, burning, pulping, and pulverizing as acceptable. For electronic records, the ",
+          {
+            text: "Security Rule",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.310",
+          },
+          " requires you to address the final disposition of the data and the device, and HHS points to clearing, purging, or physically destroying the media, following the federal standard for media sanitization, ",
+          {
+            text: "NIST Special Publication 800-88",
+            href: "https://csrc.nist.gov/pubs/sp/800/88/r2/final",
+          },
+          ". The one thing HHS rules out by name is the easy thing: you may not drop PHI, in any form, into a ",
+          {
+            text: "dumpster, recycling bin, or trash can",
+            href: "https://www.hhs.gov/sites/default/files/disposalfaqs.pdf",
+          },
+          " that the public or anyone unauthorized can reach. A locked, access-controlled container is fine; the open bin behind the building is the exact move that produced the settlements in this article.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Record type", "Accepted destruction", "What does not count"],
+        rows: [
+          [
+            "Paper charts",
+            "Cross-cut shredding, burning, pulping, or pulverizing",
+            "Tossing intact in the trash or recycling; a single-strip shredder",
+          ],
+          [
+            "X-ray film",
+            "Shredding, pulverizing, or incineration by a service that handles film",
+            "An office paper shredder; the regular trash (also an environmental issue, below)",
+          ],
+          [
+            "Computers, drives, backups",
+            "Purge (cryptographic erase or degauss) or physically destroy the drive",
+            "Deleting files or reformatting; recycling the computer as it is",
+          ],
+          [
+            "Phones, tablets, USB drives",
+            "Full encrypted factory wipe, or physical destruction",
+            "Handing the device down with the data still on it",
+          ],
+        ],
+        caption:
+          "HHS requires a result, unreadable and unrecoverable, not a specific machine. These are accepted methods as of 2026.",
+      },
+
+      { type: "h2", text: "The parts dentists get wrong" },
+      {
+        type: "p",
+        runs: [
+          "Three things trip up dental offices specifically. The first is X-ray film. Old film is still a patient record, so it has to be destroyed in a way that leaves the image and any label unreadable, and a standard office shredder will not do it. There is a second, separate reason to hand film to a specialist: traditional film carries silver, a regulated metal, and very old film can be flammable. ",
+          {
+            text: "Washington State's health department",
+            href: "https://doh.wa.gov/community-and-environment/radiation/x-ray/disposal-x-ray-equipment",
+          },
+          ", for example, says plainly that you cannot just throw old X-rays in the trash, both because they are private records under HIPAA and because of the silver. That is two different rule books, HIPAA and environmental law, pointing at the same answer: use a service that destroys the film and recovers the silver, and get a certificate of destruction.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The second is the computer nobody thinks about. When you replace a front-desk PC, a server, or an imaging workstation, the patient data does not leave when you delete the files. A deleted or reformatted drive can usually be recovered with free tools, which is why HHS treats wiping and purging as different things. The retired computer, the old server, the backup drive in the closet, even a staff member's phone that synced the office email, all hold patient data until that data is purged or the drive is physically destroyed. Donating or recycling the machine as it is hands the next owner everything on it.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The third is the one that bites hardest, because it feels like you did the right thing. You can hire a company to destroy your records and still be the one who pays when they fail. That is what happened to a Kokomo, Indiana dentist. He paid an outside company to retrieve and destroy roughly 63 boxes of old Comfort Dental charts. The boxes ended up in a church recycling dumpster instead, an investigative news crew found them, and in 2015 the dentist agreed to a $12,000 consent judgment with the Indiana Attorney General, the state's first HIPAA enforcement action. The vendor did the dumping; the dentist carried the liability. The lesson is the one HIPAA draws everywhere else: a company that handles patient data on your behalf is a business associate, you need a signed ",
+          {
+            text: "business associate agreement",
+            href: "/articles/does-my-dental-practice-need-a-baa",
+          },
+          " with them, and that contract plus a certificate of destruction is how you show the records were handled properly.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "There is a sharper reason to get this right: putting PHI where it should not go is a ",
+          {
+            text: "reportable breach",
+            href: "https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html",
+          },
+          ", not just a bad look. It triggers the same ",
+          {
+            text: "breach-notification duties",
+            href: "/articles/dental-data-breach-response",
+          },
+          " as a ransomware attack, and it is something OCR has actually penalized. In 2022, a dermatology practice in Massachusetts, ",
+          {
+            text: "New England Dermatology",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/nedlc/index.html",
+          },
+          ", settled with OCR for $300,640 after spending years, from 2011 to 2021, discarding empty specimen containers whose labels carried patient names, dates of birth, and other details into a dumpster in its parking lot. The practice reported the breach to HHS as affecting 58,106 patients. A security guard found one of the containers; OCR cited the failure to safeguard the information and the impermissible disclosure. The acting OCR director put the principle in one line: \"Improper disposal of protected health information creates an unnecessary risk to patient privacy.\"",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-settlement-new-england-dermatology-improper-disposal.webp",
+        alt:
+          "Summary card for the 2022 HHS Office for Civil Rights settlement with New England Dermatology, P.C.: for roughly a decade the practice discarded specimen containers labeled with patient names and dates of birth into a parking-lot dumpster, and it paid a $300,640 settlement with a two-year corrective action plan. OCR cited the failure to safeguard protected health information and the impermissible disclosure under the Privacy Rule.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "From the U.S. Department of Health and Human Services, Office for Civil Rights settlement with New England Dermatology, P.C., d/b/a New England Dermatology and Laser Center (announced August 23, 2022). The practice discarded labeled specimen containers in a parking-lot dumpster from 2011 to 2021. Prepared by Hipsana from the HHS resolution agreement. ",
+          {
+            text: "Read the HHS announcement \u2192",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/nedlc/index.html",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "If reading this made you wonder whether your own disposal is actually covered, that instinct is worth following. The two gaps that show up most often are a missing agreement with whoever shreds your records and a fuzzy sense of what happens to old drives, and both are on the list the free ",
+          { text: "HIPAA Scorecard", href: "/scorecard" },
+          " checks. It walks through your vendor agreements, your safeguards, and eight other core controls, then names your biggest gap in about three minutes. It is a starting point, not a full audit, but it tells you where you actually stand.",
+        ],
+      },
+
+      { type: "h2", text: "Closing or selling your practice" },
+      {
+        type: "p",
+        runs: [
+          "Retirement and practice sales are where disposal questions get expensive, because two natural instincts are both wrong. The first is that closing the practice ends your obligations. It does not. Your duty to keep and produce records, and your state's retention clock, do not reset when you sell or retire, and they do not transfer cleanly just because the new owner took the keys. The selling dentist stays the legal custodian until the records are properly transferred.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The second runs the other way, and you will see it stated confidently online: that HIPAA forbids handing patient records to the buyer without each patient's written authorization. For the ordinary case, that is not what the rule says. HIPAA treats the ",
+          {
+            text: "sale, transfer, or merger of a practice",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.501",
+          },
+          " with another covered entity as \"health care operations,\" a category a covered entity is ",
+          {
+            text: "permitted to disclose PHI for",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.506",
+          },
+          " without separate patient authorization. If you sell your practice to another dentist or a group that is itself bound by HIPAA, you can generally transfer the records as part of the deal. Where that breaks is the edge cases, and they matter. If the buyer is not, and will not become, a covered entity, you do need ",
+          {
+            text: "authorization",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.508",
+          },
+          ". And selling the records themselves for their own value, rather than transferring them as part of selling the practice, is a separate, restricted \"sale of PHI\" that also requires authorization. Structure the deal as the sale of a practice, not the sale of a patient list.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Then there is state law, which usually adds a layer HIPAA does not. Many state dental boards expect you to notify patients of the change and give them a chance to ",
+          {
+            text: "request their records",
+            href: "/articles/how-to-handle-a-patient-records-request-dental-practice",
+          },
+          " or move to another provider, often 30 to 60 days ahead. Texas, for instance, requires a departing dentist under 22 TAC 108.8 to either keep the records, formally transfer them to the successor, or sign a records-maintenance agreement, and to tell the dental board within fifteen days. The clean structure that satisfies both HIPAA and most state rules is a written records-custody agreement plus a business associate agreement with whoever ends up holding the charts, patient notification before the close, and a clear record of what was transferred and what was kept. This is a transaction worth running past a lawyer; the cost of getting it wrong lands on both the buyer and the seller.",
+        ],
+      },
+
+      { type: "h2", text: "A clean disposal process" },
+      {
+        type: "p",
+        runs: [
+          "When a batch of records is genuinely ready to go, the process is short, and worth doing the same way every time so you can prove it later.",
+        ],
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Confirm every retention clock has actually run out",
+            detail:
+              "Check your state's minimum, the minor's age if it is a child's chart, your malpractice carrier's recommendation, and any Medicare or Medicaid rule. When in doubt, keep it longer.",
+          },
+          {
+            label: "Check for any legal hold",
+            detail:
+              "If there is an open or threatened claim, a board complaint, an audit, or an investigation touching that record, stop. Destroying it now is its own violation. Hold until the matter closes.",
+          },
+          {
+            label: "Match the method to the media",
+            detail:
+              "Shred, burn, or pulverize paper and film so it cannot be read. Purge or physically destroy drives, computers, and backups. A standard office shredder does not handle film or hard drives.",
+          },
+          {
+            label: "Use a vendor with a signed agreement",
+            detail:
+              "If a service does the destruction, sign a business associate agreement first. For X-ray film, use one that also handles the silver and the environmental side.",
+          },
+          {
+            label: "Get a certificate of destruction",
+            detail:
+              "The certificate should list the date, what was destroyed, the method, and who did it. This is your proof that the records were disposed of properly.",
+          },
+          {
+            label: "Keep the destruction log",
+            detail:
+              "Record what you destroyed and when, and keep that log. If a patient or a regulator later asks about a record you no longer have, the log shows it was retained for the required period and then destroyed correctly.",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "You do not need a consultant to start. The free ",
+          { text: "HIPAA Scorecard", href: "/scorecard" },
+          " checks the two things this article keeps circling back to, your agreements with the vendors who handle patient data and the state of your safeguards, along with eight other core controls, and names your biggest gap in about three minutes. It is a quick read on where you stand, not a full audit, and it is a sensible first step before you clear out a storage room or hand a buyer the keys.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This is general information about HIPAA and state recordkeeping rules, not legal advice, and retention periods and disposal rules vary by state and change over time. Before you destroy records or transfer them in a sale, confirm your current state requirements and, for anything beyond routine, check with a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          [
+            "U.S. Department of Health and Human Services, Office for Civil Rights, \"Frequently Asked Questions About the Disposal of Protected Health Information\" (disposalfaqs.pdf, hhs.gov): the Privacy Rule sets no medical-record retention period (state law governs), and PHI may not be placed in trash or recycling that the public or unauthorized persons can access. Accessed June 2026.",
+          ],
+          [
+            "45 CFR \u00a7 164.530(j) (Privacy Rule) and \u00a7 164.316(b) (Security Rule): a covered entity must retain required documentation for six years from creation or the date it was last in effect, whichever is later (eCFR, current as of June 2026). This applies to compliance documentation, not patient clinical records.",
+          ],
+          [
+            "45 CFR \u00a7 164.310(d)(2) (final disposition and reuse of electronic media) (eCFR, current as of June 2026).",
+          ],
+          [
+            "NIST Special Publication 800-88, Revision 2, Guidelines for Media Sanitization (the current federal media-sanitization standard, finalized September 2025, superseding Revision 1) (csrc.nist.gov, accessed June 2026).",
+          ],
+          [
+            "45 CFR \u00a7 164.501 (definition of \"health care operations,\" including the sale, transfer, merger, or consolidation of a covered entity with another covered entity), \u00a7 164.506(c) (permitted uses and disclosures for treatment, payment, and health care operations), and \u00a7 164.508(a)(4) (authorization required for a sale of PHI) (eCFR, current as of June 2026).",
+          ],
+          [
+            "HHS Office for Civil Rights, Breach Notification Rule (hhs.gov), with the definition of breach at 45 CFR § 164.402 and the notification requirements at 45 CFR §§ 164.400 through 164.414: an impermissible disclosure of unsecured protected health information is presumed to be a reportable breach, and properly destroyed records are not treated as unsecured (hhs.gov and eCFR, current as of June 2026).",
+          ],
+          [
+            "HHS Office for Civil Rights, \"OCR Settles Case Concerning Improper Disposal of Protected Health Information\" (New England Dermatology, P.C.) (hhs.gov, Aug. 23, 2022), with the resolution agreement and corrective action plan: a $300,640 settlement and two-year corrective action plan over specimen containers discarded in a parking-lot dumpster from 2011 to 2021; OCR cited 45 CFR \u00a7 164.530(c) and \u00a7 164.502(a). The 58,106 figure is from the breach NEDLC reported to HHS, not from the resolution agreement.",
+          ],
+          [
+            "Indiana Attorney General and Marion County (Indiana) Superior Court, consent judgment with Joseph Beck (Comfort Dental), Jan. 5, 2015: a $12,000 penalty over roughly 63 boxes of patient records found in a recycling dumpster in 2013; Indiana's first HIPAA enforcement action (National Law Review and contemporaneous reporting, accessed June 2026). Beck's dental license had been revoked separately in 2011 for billing and negligence issues, before the 2013 disposal.",
+          ],
+          [
+            "22 Tex. Admin. Code \u00a7 108.8 (Texas State Board of Dental Examiners): dental records kept at least five years from last treatment, and for a minor until age 21 or five years, whichever is longer; a departing dentist must retain, transfer, or arrange maintenance of records and notify the Board within fifteen days (Texas Administrative Code, accessed June 2026).",
+          ],
+          [
+            "New York State Education Department, Rules of the Board of Regents, 8 NYCRR \u00a7 29.2: patient records retained at least six years, and for a minor at least six years and until one year past age 21 (accessed June 2026).",
+          ],
+          [
+            "Washington State Department of Health, \"Disposal of X-Ray Equipment, Film, Machines\": old X-ray film may not be placed in the regular trash because it is both a protected health record under HIPAA and silver-bearing material regulated under environmental law (doh.wa.gov, accessed June 2026).",
+          ],
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Does HIPAA require shredding dental records?",
+        answer:
+          "HIPAA does not require shredding specifically. It requires that protected health information be rendered unreadable, indecipherable, and impossible to reconstruct before disposal. Shredding meets that standard for paper, and so do burning, pulping, and pulverizing. The one thing HHS rules out by name is putting records in trash or recycling that the public or anyone unauthorized can reach.",
+      },
+      {
+        question: "How long does HIPAA require keeping dental records?",
+        answer:
+          "HIPAA sets no retention period for patient clinical records; that is governed by state law, which commonly ranges from five to ten years and longer for minors. HIPAA's six-year retention rule applies to your compliance documentation, such as policies, your risk analysis, and training logs, not to the patient chart itself.",
+      },
+      {
+        question: "Can I throw old dental records in the dumpster?",
+        answer:
+          "Not in a dumpster, recycling bin, or trash can that the public or anyone unauthorized can reach. HHS prohibits that for protected health information in any form. You can use a locked, access-controlled container that only authorized people or a disposal vendor can open, or hold the records securely until a vendor destroys them.",
+      },
+      {
+        question: "Do I need a BAA with my shredding company?",
+        answer:
+          "Yes. A company that destroys records containing patient data is handling protected health information on your behalf, which makes it a business associate. You need a signed business associate agreement with the vendor, and you remain liable if it mishandles the records, so a certificate of destruction is worth keeping as proof.",
+      },
+      {
+        question: "Is deleting or wiping a hard drive enough to meet HIPAA?",
+        answer:
+          "Usually not. Deleted or reformatted files can often be recovered with free tools, so HHS treats wiping as different from secure destruction. To dispose of a computer, server, or backup drive that held patient data, purge it (for example, a cryptographic erase or degaussing) or physically destroy the drive, following the NIST 800-88 media-sanitization standard.",
+      },
+      {
+        question: "Can I give my records to the dentist buying my practice?",
+        answer:
+          "Usually yes, if the buyer is also a covered entity. HIPAA treats the sale or transfer of a practice to another covered entity as health care operations, which does not require each patient's authorization. If the buyer is not a covered entity, or you are selling the patient data itself rather than transferring it as part of the practice, you do need authorization. State law often adds patient-notification duties, so confirm your state's rule and consider counsel for the transaction.",
+      },
+      {
+        question: "How long do I keep dental X-rays and records for minors?",
+        answer:
+          "X-rays are part of the dental record and follow the same state retention rule as the rest of the chart. For minors, many states extend the clock to the patient's 18th or 21st birthday, sometimes plus additional years, so a child's record often has to be kept well over a decade. Confirm the exact period with your state dental board.",
       },
     ],
   },
