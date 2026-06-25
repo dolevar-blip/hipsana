@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ReviewBookingEmbed from "@/components/ReviewBookingEmbed";
+import ScanReveal from "@/components/ScanReveal";
 
 export const metadata: Metadata = {
   title: "Your HIPAA Security Scorecard result",
@@ -123,6 +124,49 @@ function joinLabels(labels: string[]): string {
   return `${labels.slice(0, -1).join(", ")}, and ${labels[labels.length - 1]}`;
 }
 
+const BAND_META: Record<
+  "high" | "gaps" | "strong" | "clear",
+  { label: string; color: string }
+> = {
+  high: { label: "Significant gaps", color: "#DC2626" },
+  gaps: { label: "Some gaps", color: "#D97706" },
+  strong: { label: "Strong", color: "#1D4ED8" },
+  clear: { label: "All clear", color: "#059669" },
+};
+
+function RiskMeter({
+  band,
+  score,
+}: {
+  band: "high" | "gaps" | "strong" | "clear";
+  score: number;
+}) {
+  const meta = BAND_META[band];
+  const pct = Math.max(0, Math.min(100, Number.isFinite(score) ? score : 0));
+  return (
+    <div className="mt-6 max-w-prose">
+      <div className="flex items-center justify-between text-sm font-medium">
+        <span className="text-muted">Risk level</span>
+        <span style={{ color: meta.color }}>{meta.label}</span>
+      </div>
+      <div
+        className="mt-2 h-3 w-full overflow-hidden rounded-full bg-muted-border"
+        role="img"
+        aria-label={`Score ${pct} out of 100: ${meta.label}`}
+      >
+        <div
+          className="h-full rounded-full"
+          style={{ width: `${pct}%`, backgroundColor: meta.color }}
+        />
+      </div>
+      <div className="mt-1 flex justify-between text-xs text-muted-light">
+        <span>0</span>
+        <span>100</span>
+      </div>
+    </div>
+  );
+}
+
 export default function ResultPage({ searchParams }: { searchParams: SP }) {
   const scoreRaw = param(searchParams, "score");
   const bemail = param(searchParams, "bemail");
@@ -202,11 +246,14 @@ export default function ResultPage({ searchParams }: { searchParams: SP }) {
 
   return (
     <div className="container-page pt-8 pb-16 md:pt-12 md:pb-24">
+      <ScanReveal>
       <div className="max-w-prose">
         <p className="eyebrow">Your HIPAA Security Scorecard</p>
         <h1 className="mt-3 text-3xl font-semibold md:text-5xl">
           Your practice scored {Number.isFinite(score) ? score : scoreRaw}/100.
         </h1>
+
+        <RiskMeter band={band} score={score} />
 
         <p className="prose-hipsana mt-3 text-sm">
           This is an educational self-assessment based only on your answers, not
@@ -248,10 +295,12 @@ export default function ResultPage({ searchParams }: { searchParams: SP }) {
 
       <p className="mt-6 max-w-prose text-sm italic text-muted">
         By booking, you agree we may share your details with a specialist
-        if a referral makes sense.
+        if a referral makes sense. If we introduce you to one, we may be
+        compensated for the referral.
       </p>
 
       <p className="mt-3 max-w-prose text-sm text-muted">{emailLine}</p>
+      </ScanReveal>
     </div>
   );
 }
