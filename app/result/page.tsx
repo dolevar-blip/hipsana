@@ -119,11 +119,6 @@ function isConfirmed(v: string | undefined): boolean {
   return typeof v === "string" && v.trim().toLowerCase() === "yes";
 }
 
-function joinLabels(labels: string[]): string {
-  if (labels.length === 1) return labels[0];
-  return `${labels.slice(0, -1).join(", ")}, and ${labels[labels.length - 1]}`;
-}
-
 const BAND_META: Record<
   "high" | "gaps" | "strong" | "clear",
   { label: string; color: string }
@@ -205,6 +200,8 @@ export default function ResultPage({ searchParams }: { searchParams: SP }) {
   else if (score >= 50) band = "gaps";
   else band = "high";
 
+  const meta = BAND_META[band];
+
   const lead = failed[0];
   const rest = failed.slice(1);
 
@@ -220,13 +217,6 @@ export default function ResultPage({ searchParams }: { searchParams: SP }) {
       : "That's a strong result, and every control we asked about is in place. Practices that score here usually still benefit from a second pair of eyes, since a scorecard can't catch everything.";
 
   const connector = band === "strong" ? "The one to confirm is" : "Your biggest exposure is";
-
-  const restLine =
-    rest.length === 0
-      ? null
-      : `We also couldn't confirm${rest.length === 1 ? " " : ": "}${joinLabels(
-          rest.map((c) => c.shortLabel)
-        )}.`;
 
   const cta =
     band === "high"
@@ -264,12 +254,41 @@ export default function ResultPage({ searchParams }: { searchParams: SP }) {
         <p className="prose-hipsana mt-6">{intro}</p>
 
         {band !== "clear" && lead ? (
-          <p className="prose-hipsana mt-6">
-            {connector} {lead.leadBody}
-          </p>
+          <div
+            className="mt-6 max-w-prose rounded-r-md bg-muted-bg py-4 pl-4 pr-5"
+            style={{ borderLeft: `3px solid ${meta.color}` }}
+          >
+            <p
+              className="text-xs font-semibold uppercase tracking-wide"
+              style={{ color: meta.color }}
+            >
+              {band === "strong" ? "Worth confirming" : "Start here"}
+            </p>
+            <p className="prose-hipsana mt-2">
+              {connector} {lead.leadBody}
+            </p>
+          </div>
         ) : null}
 
-        {restLine ? <p className="prose-hipsana mt-6">{restLine}</p> : null}
+        {rest.length > 0 ? (
+          <div className="mt-6 max-w-prose">
+            <p className="prose-hipsana">We also couldn&rsquo;t confirm:</p>
+            <ul className="mt-3 space-y-2">
+              {rest.map((c) => (
+                <li
+                  key={c.key}
+                  className="flex items-start gap-2.5 text-muted"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-muted-light"
+                  />
+                  <span>{c.shortLabel}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
 
         <p className="prose-hipsana mt-6">{cta}</p>
       </div>
