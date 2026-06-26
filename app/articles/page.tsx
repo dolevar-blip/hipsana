@@ -19,14 +19,14 @@ function formatDate(iso: string): string {
 }
 
 export const metadata: Metadata = {
-  title: "HIPAA Compliance Guides for Independent Practices",
+  title: "HIPAA Compliance Guides for Dental Practices",
   description:
-    "Plain-language HIPAA and cybersecurity guidance for independent dental, medical, and therapy practices. Regulatory claims checked against HHS, OCR, or NIST.",
+    "Plain-language HIPAA and cybersecurity guidance for independent dental practices. Regulatory claims checked against HHS, OCR, or NIST.",
   alternates: { canonical: "/articles" },
   openGraph: {
-    title: "HIPAA Compliance Guides for Independent Practices · Hipsana",
+    title: "HIPAA Compliance Guides for Dental Practices · Hipsana",
     description:
-      "Plain-language HIPAA and cybersecurity guidance for independent dental, medical, and therapy practices.",
+      "Plain-language HIPAA and cybersecurity guidance for independent dental practices.",
     url: `${SITE_URL}/articles`,
     type: "website",
     images: [
@@ -34,15 +34,15 @@ export const metadata: Metadata = {
         url: "/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Hipsana — HIPAA & cybersecurity for independent dental, medical, and therapy practices.",
+        alt: "Hipsana — HIPAA & cybersecurity for independent dental practices.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HIPAA Compliance Guides for Independent Practices · Hipsana",
+    title: "HIPAA Compliance Guides for Dental Practices · Hipsana",
     description:
-      "Plain-language HIPAA and cybersecurity guidance for independent dental, medical, and therapy practices.",
+      "Plain-language HIPAA and cybersecurity guidance for independent dental practices.",
     images: ["/og-default.png"],
   },
 };
@@ -63,7 +63,7 @@ export default function ArticlesIndexPage() {
           HIPAA, in plain language.
         </h1>
         <p className="mt-5 text-lg leading-relaxed text-muted">
-          Practical guidance for independent dental, medical, and therapy practices.
+          Practical guidance for independent dental practices.
           Every regulatory claim is checked against HHS, OCR, or NIST before it
           goes live.
         </p>
