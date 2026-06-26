@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   description:
-    "A free HIPAA Security Scorecard for independent dental, medical, and therapy practices. Find your gaps, plus a written review and an optional specialist intro.",
+    "A free HIPAA Security Scorecard for independent dental practices. Find your gaps, plus a written review and an optional specialist intro.",
   alternates: { canonical: "/" },
 };
 
@@ -31,7 +31,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="container-page pt-12 pb-20 md:pt-16 md:pb-28">
         <div className="max-w-3xl">
-          <p className="eyebrow mb-5">For independent dental, medical, and therapy practices</p>
+          <p className="eyebrow mb-5">For independent dental practices</p>
           <h1 className="font-display text-[2.75rem] leading-[1.05] tracking-tight md:text-[3.75rem]">
             HIPAA shouldn&rsquo;t require a compliance officer you can&rsquo;t afford.
           </h1>
