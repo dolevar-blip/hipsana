@@ -4,12 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "A free HIPAA Security Scorecard and written risk review for independent dental, medical, and therapy practices, plus an optional intro to a specialist.",
+    "A free HIPAA Security Scorecard and written risk review for independent dental practices, plus an optional intro to a specialist.",
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About · Hipsana",
     description:
-      "A free HIPAA Security Scorecard and written risk review for independent dental, medical, and therapy practices, plus an optional intro to a specialist.",
+      "A free HIPAA Security Scorecard and written risk review for independent dental practices, plus an optional intro to a specialist.",
     url: "https://hipsana.com/about",
     type: "website",
     images: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         url: "/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Hipsana: HIPAA & cybersecurity for independent healthcare practices.",
+        alt: "Hipsana: HIPAA & cybersecurity for independent dental practices.",
       },
     ],
   },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About · Hipsana",
     description:
-      "A free HIPAA Security Scorecard and written risk review for independent dental, medical, and therapy practices, plus an optional intro to a specialist.",
+      "A free HIPAA Security Scorecard and written risk review for independent dental practices, plus an optional intro to a specialist.",
     images: ["/og-default.png"],
   },
 };
@@ -56,8 +56,7 @@ export default function AboutPage() {
         </h1>
 
         <p className="mt-8 text-lg leading-relaxed text-muted">
-          Hipsana is built for a specific person: the dentist, physician, or
-          therapist who owns a small practice, knows HIPAA is serious, and
+          Hipsana is built for a specific person: the dentist who owns a small practice, knows HIPAA is serious, and
           doesn&rsquo;t have time to read hundreds of pages of federal
           regulations to find out where they stand.
         </p>
