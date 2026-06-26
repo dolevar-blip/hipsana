@@ -4198,6 +4198,8 @@ export const articles: Article[] = [
           { text: "a personal representative", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502" },
           " steps into the patient's shoes. For an adult, that is usually someone with legal authority such as a healthcare power of attorney. For a child, a parent or guardian is generally the personal representative, though state law carves out exceptions that matter in practice. Requests involving minors and parents raise enough of their own questions that they deserve separate treatment, ",
           { text: "which we cover on its own", href: "/articles/parental-access-to-a-childs-dental-records" },
+          ". When the patient has died, the personal representative is usually the executor or administrator of the estate, a situation ",
+          { text: "explained in its own article", href: "/articles/deceased-patient-dental-records-hipaa" },
           ".",
         ],
       },
@@ -5168,7 +5170,9 @@ export const articles: Article[] = [
           { text: "45 CFR 164.502(g)", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502" },
           ", a covered entity must treat a person who has authority under applicable law to make health care decisions for an unemancipated minor as that child's personal representative. A personal representative stands in the patient's shoes, exercising the patient's rights, including the ",
           { text: "right of access", href: "/articles/how-to-handle-a-patient-records-request-dental-practice" },
-          " to the record. Because a parent usually has the authority to make health decisions for their child, the parent is usually the child's personal representative, and the practice owes them the same access the patient would get.",
+          " to the record. That same provision treats the executor or administrator of a deceased patient's estate as the personal representative, which ",
+          { text: "we cover separately", href: "/articles/deceased-patient-dental-records-hipaa" },
+          ". Because a parent usually has the authority to make health decisions for their child, the parent is usually the child's personal representative, and the practice owes them the same access the patient would get.",
         ],
       },
       {
@@ -8116,7 +8120,7 @@ export const articles: Article[] = [
             "Someone who could make health decisions for the patient in life is not automatically the personal representative once the patient dies.",
           ],
           [
-            { strong: "Verify with the court document. " },
+            { strong: "Verify their authority. " },
             "Ask the personal representative for Letters Testamentary, Letters of Administration, or comparable proof of authority under your state's law.",
           ],
           [
