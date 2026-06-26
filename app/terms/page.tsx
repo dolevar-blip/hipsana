@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         url: "/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Hipsana: HIPAA & cybersecurity for independent healthcare practices.",
+        alt: "Hipsana: HIPAA & cybersecurity for independent dental practices.",
       },
     ],
   },
