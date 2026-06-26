@@ -441,7 +441,9 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "You have probably seen headlines about a \"2026 HIPAA Security Rule.\" Here is the accurate status, because a lot of vendor content overstates it.",
+          "You have probably seen headlines about a \"",
+          { text: "2026 HIPAA Security Rule", href: "/articles/2026-hipaa-security-rule-update-dental-practice" },
+          ".\" Here is the accurate status, because a lot of vendor content overstates it.",
         ],
       },
       {
@@ -3450,7 +3452,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "One caveat before you lock a number. A proposed overhaul of the Security Rule, published in the ", { text: "Federal Register on January 6, 2025", href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information" }, " (rulemaking ID RIN 0945-AA22), would, if finalized as written, make several now-flexible safeguards mandatory, encryption, ", { text: "multi-factor authentication", href: "/articles/does-hipaa-require-mfa-dental-practice" }, ", and routine vulnerability scanning among them, which would raise the monitoring and scanning line items. As of June 2026 it is not final and has no confirmed date, so do not spend now to meet a rule that does not exist yet. The foundation, a thorough risk analysis, is required either way.",
+          "One caveat before you lock a number. ", { text: "A proposed overhaul of the Security Rule", href: "/articles/2026-hipaa-security-rule-update-dental-practice" }, ", published in the ", { text: "Federal Register on January 6, 2025", href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information" }, " (rulemaking ID RIN 0945-AA22), would, if finalized as written, make several now-flexible safeguards mandatory, encryption, ", { text: "multi-factor authentication", href: "/articles/does-hipaa-require-mfa-dental-practice" }, ", and routine vulnerability scanning among them, which would raise the monitoring and scanning line items. As of June 2026 it is not final and has no confirmed date, so do not spend now to meet a rule that does not exist yet. The foundation, a thorough risk analysis, is required either way.",
         ],
       },
       { type: "h2", text: "How to budget without overpaying" },
@@ -3769,7 +3771,9 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "You have probably seen headlines that HIPAA now requires encryption. It does not, yet. A proposed overhaul of the Security Rule was ",
+          "You have probably seen headlines that HIPAA now requires encryption. It does not, yet. ",
+          { text: "A proposed overhaul of the Security Rule", href: "/articles/2026-hipaa-security-rule-update-dental-practice" },
+          " was ",
           { text: "published in the Federal Register on January 6, 2025", href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information" },
           ". It would remove much of the \"addressable\" flexibility and make encryption mandatory at rest and in transit. As of mid-2026 it is still a proposal: the comment period closed in March 2025, the target date for a final rule passed with nothing published, and a coalition of industry groups has asked HHS to withdraw it. It could be finalized, changed, delayed, or dropped.",
         ],
@@ -6798,7 +6802,9 @@ export const articles: Article[] = [
             text: "does my dental practice need a BAA",
             href: "/articles/does-my-dental-practice-need-a-baa",
           },
-          ". The proposed 2026 rule would also require that vendor contract to name MFA and encryption specifically, one more reason to get the agreement in place now.",
+          ". ",
+          { text: "The proposed 2026 rule", href: "/articles/2026-hipaa-security-rule-update-dental-practice" },
+          " would also require that vendor contract to name MFA and encryption specifically, one more reason to get the agreement in place now.",
         ],
       },
       {
@@ -7684,6 +7690,390 @@ export const articles: Article[] = [
         question: "Does my state law change any of this?",
         answer:
           "It can. HIPAA is a floor, not a ceiling. If your state requires a court order where HIPAA would accept a notified subpoena, or gives certain sensitive records extra protection, the stricter rule applies. Confirm your state's rule with your dental board or a healthcare attorney before you respond.",
+      },
+    ],
+  },
+  {
+    slug: "2026-hipaa-security-rule-update-dental-practice",
+    status: "published",
+    title:
+      "The 2026 HIPAA Security Rule Update for Dental Practices: What's Proposed and Where It Stands",
+    metaTitle: "Proposed 2026 HIPAA Security Rule (Dental)",
+    description:
+      "The 2026 HIPAA Security Rule update is still a proposed rule, not law. Here's what it would change for a dental practice, and what's worth doing now.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-26T00:00:00+03:00",
+    dateModified: "2026-06-26T00:00:00+03:00",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "No, it is not the law yet. The 2026 HIPAA Security Rule is a proposed rule, published for comment in January 2025 and still unfinished. If it is finalized, it would be the most significant change to HIPAA's security rules since 2013, and it would apply to your dental practice with no exemption for small offices. But a proposed rule binds no one, this one missed its own target date, and more than a hundred health care groups, the American Dental Association among them, have asked the government to withdraw it. Here is what it would change, where it actually stands, and what is worth doing now.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "It is proposed, not law. " },
+            "The rule was published in the Federal Register on January 6, 2025, and the comment period closed that March. As of mid-2026 there is no final rule, and the current Security Rule still applies.",
+          ],
+          [
+            { strong: "No exemption for small practices. " },
+            "If finalized, it would apply to every covered entity and business associate, regardless of size. A solo dental office and a hospital system would face the same requirements.",
+          ],
+          [
+            { strong: "The big structural change: \"addressable\" goes away. " },
+            "Today some safeguards are flexible. The proposal would make almost all of them required, with limited exceptions.",
+          ],
+          [
+            { strong: "Encryption, MFA, scans, and more would be mandatory. " },
+            "Encryption of patient data, multi-factor authentication, vulnerability scans, penetration tests, network segmentation, and yearly compliance audits would all become explicit requirements.",
+          ],
+          [
+            { strong: "It missed its target date and may still change. " },
+            "The government's own May 2026 target to finalize it passed with nothing published. It could still be finalized, narrowed, delayed, or withdrawn.",
+          ],
+          [
+            { strong: "What to do now is low-regret. " },
+            "You do not have to act on a rule that is not final. But the direction matches what a proper risk analysis already calls for, so getting your foundation in order now is useful either way.",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This article explains the proposed 2026 HIPAA Security Rule and what it would mean for a dental practice. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
+
+      { type: "h2", text: "Is the 2026 Security Rule in effect? Not yet" },
+      {
+        type: "p",
+        runs: [
+          "It is not. The Office for Civil Rights, the part of HHS that enforces HIPAA, published the proposed rule in the ",
+          {
+            text: "Federal Register on January 6, 2025",
+            href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information",
+          },
+          ", under the title HIPAA Security Rule To Strengthen the Cybersecurity of Electronic Protected Health Information. The public comment period closed on March 7, 2025. Since then the rule has sat in review, and no final version has been issued. Until one is, the ",
+          {
+            text: "current Security Rule",
+            href: "https://www.hhs.gov/hipaa/for-professionals/security/hipaa-security-rule-nprm/index.html",
+          },
+          " is what applies to your practice, and it is what the Office for Civil Rights continues to enforce.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "A proposed rule is a draft. It is published so the public can comment, and it binds no one while it is in that stage. The government's own regulatory agenda had pencilled in May 2026 to finalize this one, but that month came and went with nothing published, and there is no confirmed timeline for when, or whether, a final rule will appear.",
+        ],
+      },
+
+      { type: "h2", text: "What the proposal would change" },
+      {
+        type: "p",
+        runs: [
+          "The clearest way to see the proposal is side by side with the rule as it stands today. All of it concerns the same thing the Security Rule has always protected: electronic patient data, what the law calls electronic protected health information, or ePHI. Paper records sit under other HIPAA rules, not this one. Most of these changes are not brand-new ideas. They are existing expectations that the proposal would turn from flexible or unstated into written requirements with specific deadlines.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Safeguard", "The Security Rule today", "Under the 2025 proposal"],
+        rows: [
+          [
+            "The \"addressable\" option",
+            "Some specifications are addressable: you assess whether they fit, and may document why you skipped one (45 CFR 164.306(d)).",
+            "Removed. Almost all specifications become required, with limited exceptions.",
+          ],
+          [
+            "Encryption of patient data",
+            "Addressable (45 CFR 164.312(a)(2)(iv) and (e)(2)(ii)): assess and implement, or document why not.",
+            "Required at rest and in transit, with limited exceptions.",
+          ],
+          [
+            "Multi-factor authentication",
+            "Not named; your risk analysis decides the method.",
+            "Required for access to systems holding patient data, with limited exceptions.",
+          ],
+          [
+            "Vulnerability scanning",
+            "Not specified.",
+            "Required at least every six months.",
+          ],
+          [
+            "Penetration testing",
+            "Not specified.",
+            "Required at least once every 12 months.",
+          ],
+          [
+            "Technology asset inventory and network map",
+            "Not an explicit requirement.",
+            "Required, reviewed at least every 12 months and after relevant changes.",
+          ],
+          [
+            "Network segmentation",
+            "Not specified.",
+            "Required.",
+          ],
+          [
+            "Backup and recovery",
+            "Contingency plan required (45 CFR 164.308(a)(7)), with no fixed timing.",
+            "Keep retrievable copies no more than 48 hours old, and restore critical systems within 72 hours.",
+          ],
+          [
+            "Compliance audit",
+            "No express annual-audit requirement.",
+            "Required at least once every 12 months.",
+          ],
+          [
+            "Vendor (business associate) checks",
+            "Have a signed agreement in place.",
+            "Verify in writing that each business associate has implemented the required technical safeguards, at least every 12 months.",
+          ],
+        ],
+        caption:
+          "How the proposed 2025 rule compares with the HIPAA Security Rule in effect today. Current-rule citations are to the eCFR; the proposed changes are from the HHS Office for Civil Rights fact sheet and the proposed rule.",
+      },
+      {
+        type: "p",
+        runs: [
+          "Start with the change underneath all the others. Since 2003, some of the rule's safeguards have been labeled ",
+          {
+            text: "addressable",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.306",
+          },
+          ". Addressable has never meant optional. It means you either implement the safeguard, adopt an equal alternative, or document why neither is reasonable for you. In practice, many practices treated it as a way to opt out, and encryption is the classic example. Encryption of patient data is ",
+          {
+            text: "addressable today",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312",
+          },
+          ". The proposal would make it required, both for data sitting on your systems and data moving across the internet, with only narrow exceptions. The same logic runs through the rest of the rule: it removes the addressable category and writes the expectations down.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "On top of that, the ",
+          {
+            text: "HHS fact sheet",
+            href: "https://www.hhs.gov/hipaa/for-professionals/security/hipaa-security-rule-nprm/factsheet/index.html",
+          },
+          " lists a set of controls that would become explicit requirements. Multi-factor authentication, the second step beyond a password, would be required for access to systems that hold patient data; we cover that one control on its own in ",
+          {
+            text: "does HIPAA require MFA for a dental practice",
+            href: "/articles/does-hipaa-require-mfa-dental-practice",
+          },
+          ". Automated vulnerability scans would be required at least every six months, and a deeper penetration test, where someone tries to break in the way an attacker would, at least once a year. Network segmentation, which keeps a breach in one part of your network from spreading to the rest, would be required as well.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Two more would change everyday paperwork. You would have to keep a written inventory of your technology and a map of how patient data moves through it, updated at least once a year and whenever something changes. Your backups would have to meet a clock: retrievable copies no more than 48 hours old, with critical systems restored within 72 hours of an outage. A yearly compliance audit, and a written check that each of your vendors has actually put the required safeguards in place, round out the list.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Underneath every one of these is the same document the rule has always centered on: an accurate, current ",
+          {
+            text: "risk analysis",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308",
+          },
+          ". The proposal does not replace it. It sharpens it, and asks you to base it on that asset inventory and network map. If your risk analysis is solid today, you have a head start on almost everything the proposal would add.",
+        ],
+      },
+
+      { type: "h2", text: "Does this apply to a small dental practice? Yes" },
+      {
+        type: "p",
+        runs: [
+          "This is the part that surprises owners of small practices. There is no carve-out for size. The proposal would apply to every covered entity and business associate. In plain terms, that means any dental practice that bills insurance or files claims electronically, no matter how small. HHS addressed the small-practice burden directly ",
+          {
+            text: "in its regulatory impact analysis",
+            href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information",
+          },
+          " and declined to create a size-based exemption. A one-dentist office and a five-hundred-bed hospital would face the same list of requirements. What differs is resources. The hospital has a security team and a budget for this, and most independent practices have neither, which is exactly why the rule would land hardest on the smallest offices.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "That is also the heart of the objection from organized dentistry. The ",
+          {
+            text: "American Dental Association",
+            href: "https://www.ada.org/advocacy/regulatory-reform",
+          },
+          " has argued that dental practices tend to be small, single-site operations with limited IT support, and that requirements designed around large hospital systems would shift cost and time away from patient care without a dental-specific path to comply. The ADA supports strong cybersecurity. Its position is that this particular proposal is the wrong way to get there.",
+        ],
+      },
+
+      { type: "h2", text: "Where the rule stands, and why it has stalled" },
+      {
+        type: "p",
+        runs: [
+          "The proposal landed at an awkward moment. It was one of the last acts of the prior administration's civil rights office, published days before a change in administration that has prioritized cutting regulations rather than adding them. The coalition seeking withdrawal has leaned on exactly that, arguing the rule runs counter to the current deregulatory agenda. More than a hundred organizations, the American Dental Association included, have asked HHS to pull it back.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "At the same time, the Office for Civil Rights is still working through the thousands of public comments it received, and has defended the core of the proposal as basic security practice. So the honest answer about its future is that nobody outside the agency knows. A final rule could appear roughly as proposed, appear in a narrower form after the comments are weighed, be delayed again, or be withdrawn altogether. Planning that bets everything on one of those outcomes is planning to be wrong.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/hipaa-security-rule-2026-proposed-status-card.webp",
+        alt: "Summary card titled The 2026 HIPAA Security Rule. It is labeled a proposed rule from the HHS Office for Civil Rights, published in the Federal Register on January 6, 2025 as 90 FR 898, with the public comment period closed on March 7, 2025. It states the rule is proposed, not final, and not yet enforceable, that the current HIPAA Security Rule at 45 CFR Part 164 Subpart C remains in effect, and that if finalized it would end the addressable option and require safeguards such as encryption and multi-factor authentication, with limited exceptions.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "Sources: the Federal Register and the HHS Office for Civil Rights. Card prepared by Hipsana. ",
+          {
+            text: "Read the proposed rule",
+            href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information",
+          },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "If you want a fast read on where your foundation stands today, the free ",
+          { text: "HIPAA Scorecard", href: "/scorecard" },
+          " checks ten core Security Rule controls that line up with the issues OCR raises most in enforcement, like your ",
+          {
+            text: "risk analysis",
+            href: "/articles/do-dental-practices-need-hipaa-risk-assessment",
+          },
+          " and your ",
+          {
+            text: "vendor agreements",
+            href: "/articles/does-my-dental-practice-need-a-baa",
+          },
+          ", then scores your practice and names your biggest gap in about three minutes. It checks the rule as it stands now, not the proposal, but those are the same controls the proposal would build on.",
+        ],
+      },
+
+      { type: "h2", text: "What a dental practice should do now" },
+      {
+        type: "p",
+        runs: [
+          "Here is the practical way to hold both facts at once. You are not required to comply with a rule that is not final, and you should not spend money chasing requirements that may change. At the same time, almost everything the proposal would require is already either required today or simply good security, so the low-regret move is to get your foundation in order. None of the steps below is wasted effort if the rule is narrowed or never finalized.",
+        ],
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Get your risk analysis current",
+            detail:
+              "This is the document the Office for Civil Rights cites most often after a breach, and it is the base the proposal builds on. If yours is missing or years old, that is the first gap to close.",
+          },
+          {
+            label: "Turn on multi-factor authentication",
+            detail:
+              "It is usually already built into the email and practice-management systems you use, often at no extra cost, and the safeguard most expected after a breach. The largest health care breach ever reported to HHS, the 2024 Change Healthcare attack that affected about 192.7 million people, began on a remote-access portal that had no multi-factor authentication.",
+          },
+          {
+            label: "Encrypt patient data",
+            detail:
+              "Encryption is built into most modern computers, phones, and software; it usually just needs to be switched on and documented. Turning it on for the devices and email that hold patient data closes one of the most common findings.",
+          },
+          {
+            label: "Get a signed agreement with every vendor that handles patient data",
+            detail:
+              "Your IT company, cloud backup, billing service, and software vendors each need a business associate agreement. The proposal would also require you to verify they have the safeguards in place, so the agreement is the starting point.",
+          },
+          {
+            label: "Write down what you have and how data flows",
+            detail:
+              "A short inventory of your devices and software, plus a simple note of where patient data lives and moves, is the asset inventory and network map the proposal would ask for, and it makes your risk analysis better today.",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This is general information about HIPAA and a proposed federal rule, not legal advice, and the rule's status can change. Before you make compliance decisions based on the proposal, confirm its current status and check with a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
+
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          [
+            "U.S. Department of Health and Human Services, Office for Civil Rights, \u201cHIPAA Security Rule To Strengthen the Cybersecurity of Electronic Protected Health Information,\u201d notice of proposed rulemaking, 90 FR 898 (Federal Register, Jan. 6, 2025): published for public comment, comment period closed March 7, 2025, and not finalized as of June 2026.",
+          ],
+          [
+            "HHS Office for Civil Rights, HIPAA Security Rule NPRM fact sheet: the proposed requirements, including removing the \u201caddressable\u201d category, encryption of ePHI, multi-factor authentication, vulnerability scanning at least every six months, penetration testing at least once every 12 months, network segmentation, a technology asset inventory and network map, a 12-month compliance audit, and business associate verification (hhs.gov, accessed June 2026).",
+          ],
+          [
+            "45 CFR \u00a7 164.306 (security standards: general rules, including the \u201crequired\u201d versus \u201caddressable\u201d framework at \u00a7 164.306(d)) (eCFR, current as of June 2026).",
+          ],
+          [
+            "45 CFR \u00a7 164.312 (technical safeguards, including encryption as an addressable specification at \u00a7 164.312(a)(2)(iv) for stored ePHI and \u00a7 164.312(e)(2)(ii) for transmitted ePHI) (eCFR, current as of June 2026).",
+          ],
+          [
+            "45 CFR \u00a7 164.308 (administrative safeguards, including the risk analysis requirement at \u00a7 164.308(a)(1)(ii)(A) and the contingency plan standard at \u00a7 164.308(a)(7)) (eCFR, current as of June 2026).",
+          ],
+          [
+            "45 CFR \u00a7 160.105 (compliance dates: regulated entities have at least 180 days after the effective date of a new or modified standard) (eCFR, current as of June 2026).",
+          ],
+          [
+            "American Dental Association, \u201cADA urges HHS to withdraw proposed HIPAA cybersecurity rule\u201d and ADA Regulatory Reform comments (ada.org, December 2025): the ADA joined a coalition of more than 100 organizations seeking withdrawal, citing the burden on small, single-site dental practices.",
+          ],
+          [
+            "Executive Order 14192, \u201cUnleashing Prosperity Through Deregulation\u201d (2025), and the federal Unified Agenda entry for this rulemaking (reginfo.gov, RIN 0945-AA22): the rule is designated \u201cRegulatory\u201d under the administration's deregulatory order, its Unified Agenda timetable lists a May 2026 target for final action, and its legal deadline is listed as \u201cNone\u201d (accessed June 2026).",
+          ],
+          [
+            "Change Healthcare / UnitedHealth Group: the 2024 ransomware breach, the largest reported to HHS; Change Healthcare notified OCR on July 31, 2025 that approximately 192.7 million individuals were affected, and the intrusion began on a remote-access portal that had no multi-factor authentication (HHS Change Healthcare FAQ and OCR breach portal, plus UnitedHealth Group congressional testimony, accessed June 2026).",
+          ],
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Is the 2026 HIPAA Security Rule in effect?",
+        answer:
+          "No. It is a proposed rule, published in the Federal Register on January 6, 2025, with the comment period closing that March. As of 2026 there is no final rule, and the current HIPAA Security Rule still applies. The government's May 2026 target to finalize it passed with nothing published, and more than 100 health care organizations, including the American Dental Association, have asked for it to be withdrawn.",
+      },
+      {
+        question: "Would the proposed rule apply to a small or solo dental practice?",
+        answer:
+          "Yes, if it is finalized. There is no exemption for size. The proposal would apply to every covered entity and business associate, and HHS specifically declined to create a small-practice carve-out. A solo dentist would face the same requirements as a hospital system, which is why the proposal would be hardest on small offices with limited IT support.",
+      },
+      {
+        question: "What are the main changes the proposal would make?",
+        answer:
+          "It would remove the \"addressable\" option and make almost all safeguards required. Encryption of patient data and multi-factor authentication would become mandatory. It would add vulnerability scans at least every six months, penetration testing at least once a year, network segmentation, a written technology inventory and network map, faster backup and recovery targets, a yearly compliance audit, and a written check that vendors have the required safeguards in place.",
+      },
+      {
+        question: "When would a dental practice have to comply?",
+        answer:
+          "Only after a final rule is published, and that has not happened. If one is issued, the proposal sets the effective date at 60 days after publication, with compliance required 180 days after that, for roughly 240 days in total, plus extra time to update vendor agreements. That timeline assumes the rule is finalized as written, which is not guaranteed.",
+      },
+      {
+        question: "Should I start preparing now even though it is not final?",
+        answer:
+          "Preparing the foundation is low-regret. You should not spend money chasing requirements that may change, but most of what the proposal would require, like a current risk analysis, multi-factor authentication, encryption, and vendor agreements, is already required today or simply good security. Getting those in order helps you now and would put you ahead if the rule is finalized. The free HIPAA Scorecard checks those core controls and names your biggest gap in about three minutes.",
+      },
+      {
+        question: "Could the rule be changed or dropped before it is final?",
+        answer:
+          "Yes. The Office for Civil Rights is still reviewing thousands of public comments, and the current administration has prioritized reducing regulation. A final rule could appear roughly as proposed, appear in a narrower form, be delayed, or be withdrawn. Until the agency acts, the current Security Rule is the one that applies.",
       },
     ],
   },
