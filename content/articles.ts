@@ -2935,7 +2935,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "A few relationships do not need a BAA, and they trip people up. You do not sign one with another healthcare provider you share records with for a patient's treatment. That is why a dental lab you send impressions or images to for a case does not need one: under HIPAA's treatment exception, HHS and the ADA treat the lab as another health care provider, not your business associate. You also do not sign one with your own staff, who are workforce members rather than vendors. The treatment exception is narrow, though: if that lab or another provider does a non-treatment job for you, such as billing or records review, the BAA requirement comes back.",
+          "A few relationships do not need a BAA, and they trip people up. You do not sign one with another healthcare provider you share records with for a patient's treatment. That is why a dental lab you send impressions or images to for a case does not need one: under HIPAA's treatment exception, HHS and the ADA treat the lab as another health care provider, not your business associate. You also do not sign one with ", { text: "your own staff", href: "/articles/hipaa-staff-access-offboarding-dental-practice" }, ", who are workforce members rather than vendors. The treatment exception is narrow, though: if that lab or another provider does a non-treatment job for you, such as billing or records review, the BAA requirement comes back.",
         ],
       },
       {
@@ -6551,7 +6551,7 @@ export const articles: Article[] = [
             text: "Unique user identification",
             href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312",
           },
-          " is a required specification: every person who touches patient data needs their own login. A shared \"frontdesk\" account does not satisfy that required standard, MFA or no MFA. So the honest picture is this: unique logins are required by name, and MFA is not.",
+          " is a required specification: every person who touches patient data needs ", { text: "their own login", href: "/articles/hipaa-staff-access-offboarding-dental-practice" }, ". A shared \"frontdesk\" account does not satisfy that required standard, MFA or no MFA. So the honest picture is this: unique logins are required by name, and MFA is not.",
         ],
       },
       {
