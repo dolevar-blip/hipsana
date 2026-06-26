@@ -8077,6 +8077,381 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "deceased-patient-dental-records-hipaa",
+    status: "published",
+    title:
+      "A Deceased Patient's Dental Records: Who Can Get Them Under HIPAA (2026)",
+    metaTitle: "Deceased Patient's Dental Records & HIPAA",
+    description:
+      "When a family asks for a deceased patient's dental records, who is entitled depends on who is asking. The three HIPAA routes, and how to verify each.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-26T00:00:00+03:00",
+    dateModified: "2026-06-26T00:00:00+03:00",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "When a family member asks a dental practice for the records of a patient who has died, HIPAA gives three different answers, and which one applies depends on who is asking. The personal representative of the estate, usually the executor or administrator, is treated as the patient and can get the records relevant to settling the estate. A family member who was involved in the patient's care can receive the information relevant to that involvement, unless the patient had objected. Someone who only held a health-care power of attorney during the patient's life is not automatically entitled to anything after death. Here is how to tell them apart, and what to ask for first.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "Death does not end HIPAA. " },
+            "A patient's records stay protected for 50 years after they die, so you cannot hand them over to whoever asks just because the patient has passed.",
+          ],
+          [
+            { strong: "The estate's personal representative is treated as the patient. " },
+            "The executor or administrator of the estate can get the records relevant to settling it, the same way the patient could have.",
+          ],
+          [
+            { strong: "An involved family member may get relevant information. " },
+            "If a family member was part of the patient's care or paid for it, you may share what relates to that involvement, unless the patient had said otherwise.",
+          ],
+          [
+            { strong: "A medical power of attorney ends at death. " },
+            "Someone who could make health decisions for the patient in life is not automatically the personal representative once the patient dies.",
+          ],
+          [
+            { strong: "Verify with the court document. " },
+            "Ask the personal representative for Letters Testamentary, Letters of Administration, or comparable proof of authority under your state's law.",
+          ],
+          [
+            { strong: "OCR enforces this. " },
+            "A lab paid $16,500 and a primary care practice paid $20,000 to settle cases over making a daughter wait months for her late father's records, neither admitting wrongdoing.",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This article explains who can obtain a deceased patient's records under HIPAA. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
+
+      { type: "h2", text: "Does HIPAA still protect a patient's records after they die?" },
+      {
+        type: "p",
+        runs: [
+          "It does, for 50 years. The Privacy Rule requires you to protect a deceased patient's records for fifty years following the ",
+          {
+            text: "date of death",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502",
+          },
+          ". Only after that long does the information stop being what HIPAA calls protected health information, the patient data the ",
+          {
+            text: "Privacy Rule guards",
+            href: "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/health-information-of-deceased-individuals/index.html",
+          },
+          ". In plain terms, a patient passing away does not free you to release the chart to anyone who asks. The same care you owe a living patient's records, you owe a deceased one's, for the rest of most people's working lives and beyond.",
+        ],
+      },
+
+      { type: "h2", text: "Who is the personal representative of a deceased patient?" },
+      {
+        type: "p",
+        runs: [
+          "The personal representative of someone who has died is the person your state's law puts in charge of their estate. Usually that is the executor named in the patient's will, or, if there was no will, the administrator the probate court appoints. In some states, another person authorized under state law, such as a surviving spouse or next of kin, may have that authority instead. HIPAA ",
+          {
+            text: "treats that person as the patient",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502",
+          },
+          ". They stand in the patient's shoes and can get the records relevant to carrying out their duties, which in practice covers what they need to ",
+          {
+            text: "settle the estate",
+            href: "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/personal-representatives/index.html",
+          },
+          ". Their authority comes from the estate, not from any medical role, so it does not matter whether they ever helped the patient with health decisions.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Because the authority comes from a court, you can ask to see the court's paperwork. For an estate with a will, that document is called Letters Testamentary. For one without a will, it is Letters of Administration. Either one names the person the court has authorized to act for the estate. In ",
+          {
+            text: "one OCR case",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/health-specialists-ra-cap/index.html",
+          },
+          ", the daughter requesting her late father's records sent the practice a copy of her Letters of Administration along with the request. You are allowed to ask for that proof, or for comparable proof of authority under your state's law, before you release anything.",
+        ],
+      },
+
+      { type: "h2", text: "What about a spouse, a child, or someone with power of attorney?" },
+      {
+        type: "p",
+        runs: [
+          "This is where practices slip. A ",
+          {
+            text: "health-care power of attorney",
+            href: "https://www.hhs.gov/hipaa/for-professionals/faq/3000/does-having-health-care-power-attorney-allow-access-patients-medical-mental-health-records-under-hipaa/index.html",
+          },
+          " lets someone make medical decisions for a patient while the patient is alive, and during that time it makes them the patient's personal representative for health information. It ends at death. After death, a health-care power of attorney does not by itself prove authority, and HIPAA looks to state law for who may act for the deceased person or the estate, usually an executor or administrator, and sometimes another authorized person. A former power-of-attorney agent holds no special status unless they are also that person. The same is true of being a spouse or an adult child. Relationship alone does not make someone the personal representative. A surviving spouse who is the named executor qualifies, and a surviving spouse who is not may still qualify if state law gives that spouse authority to act for the estate. If not, the spouse may still get records through the involved-family route below. That covers an adult who has died. For a living minor child, a parent is usually the personal representative under a different part of the same rule, which we ",
+          {
+            text: "cover separately",
+            href: "/articles/parental-access-to-a-childs-dental-records",
+          },
+          ".",
+        ],
+      },
+
+      { type: "h2", text: "Can a family member who was involved in the patient's care get records?" },
+      {
+        type: "p",
+        runs: [
+          "Yes, within limits. Separate from the personal-representative rule, HIPAA lets you ",
+          {
+            text: "share a deceased patient's information",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.510",
+          },
+          " with a family member, relative, or close friend who was involved in the patient's care or payment for that care before death. Two conditions come with it. You share only the information relevant to that person's involvement, not the whole chart, and you do not share at all if it would go against something the ",
+          {
+            text: "patient had told you they wanted",
+            href: "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/health-information-of-deceased-individuals/index.html",
+          },
+          ". This route is permission, not a requirement, and it is narrower than what the personal representative gets.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "In practice this covers ordinary, humane situations. A sibling asking what happened can be told the circumstances around the death. A family member closing out the estate can be given the billing records they need. What it does not cover is an open-ended request for the entire file from a relative who simply wants to see it.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "There is also a quieter path that has nothing to do with the family asking directly. If another dentist or physician is treating a surviving relative and needs the deceased patient's records for that relative's care, say to understand an inherited condition, you can ",
+          {
+            text: "release the relevant records to that provider",
+            href: "https://www.hhs.gov/hipaa/for-professionals/faq/222/how-can-i-obtain-a-deceased-relative-medical-record/index.html",
+          },
+          " without an authorization, because disclosures for treatment do not require one. The request comes from the treating provider, and you limit it to what is relevant to the living patient's care.",
+        ],
+      },
+
+      { type: "h2", text: "Who can get a deceased patient's dental records, at a glance" },
+      {
+        type: "p",
+        runs: [
+          "Here is the same logic in one place. When someone asks for a deceased patient's records, the first question to answer is which of these they are.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Who is asking", "What HIPAA allows", "What to verify"],
+        rows: [
+          [
+            "The executor or administrator of the estate (the personal representative)",
+            "Treated as the patient. Broad access to the records relevant to settling the estate (45 CFR 164.502(g)(4)).",
+            "Letters Testamentary, Letters of Administration, or comparable state-law proof of authority.",
+          ],
+          [
+            "A family member or close friend who was involved in the patient's care or payment",
+            "May receive the information relevant to that involvement, unless it goes against the patient's known wishes (45 CFR 164.510(b)(5)).",
+            "A reasonable basis that they were involved, and whether the patient ever objected.",
+          ],
+          [
+            "Someone who only held a health-care power of attorney during the patient's life",
+            "Not automatically entitled. The power of attorney ended at death.",
+            "Estate authority (Letters or comparable proof), or whether they were involved in the patient's care.",
+          ],
+          [
+            "A relative or other person with no estate authority and no involvement in care",
+            "No general right to the records.",
+            "Estate authority, a valid authorization (from the personal representative, or signed by the patient before death), or another HIPAA basis.",
+          ],
+        ],
+      },
+
+      { type: "h2", text: "What OCR has actually done about this" },
+      {
+        type: "p",
+        runs: [
+          "This is not a hypothetical risk. The Office for Civil Rights, the part of HHS that enforces HIPAA, has settled cases over exactly this scenario, and both involved a daughter trying to get her deceased father's records. In one, a diagnostic lab in Georgia, ",
+          {
+            text: "Life Hope Labs",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/life-hopes-ra-cap/index.html",
+          },
+          ", took 225 days to send a personal representative the records she had asked for. OCR settled the matter for $16,500, the forty-third action in its initiative on timely records access.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "In the other, a Florida primary care practice, ",
+          {
+            text: "Health Specialists of Central Florida",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/health-specialists-ra-cap/index.html",
+          },
+          ", did the same thing to another daughter, who had even sent in her Letters of Administration with the request. That one settled for $20,000. Neither practice admitted wrongdoing, and neither failure was exotic. The lesson is plain. Once you have confirmed that the person is the personal representative, their request runs on the same clock as any records request, and being busy or unsure is not a defense. The fulfillment rules, including the thirty-day deadline, are the same ones that apply to a ",
+          {
+            text: "living patient's request",
+            href: "/articles/how-to-handle-a-patient-records-request-dental-practice",
+          },
+          ".",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-settlement-life-hope-labs-deceased-records.webp",
+        alt:
+          "Summary card for the 2023 HHS Office for Civil Rights settlement with Life Hope Labs, LLC, a diagnostic laboratory in Sandy Springs, Georgia. A daughter, acting as the personal representative of her deceased father's estate, requested his records in July 2021 and did not receive them until February 2022, 225 days later. OCR cited a failure to provide timely access to the records under the HIPAA right of access, the practice paid a $16,500 settlement with a two-year corrective action plan, and it was the forty-third action in OCR's Right of Access Initiative. The settlement is not an admission of liability.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "From the U.S. Department of Health and Human Services, Office for Civil Rights settlement with Life Hope Labs, LLC, a diagnostic laboratory in Sandy Springs, Georgia (announced January 2023). A daughter, acting as the personal representative of her deceased father's estate, waited 225 days for his records. Prepared by Hipsana from the HHS resolution agreement. ",
+          {
+            text: "Read the HHS announcement \u2192",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/life-hopes-ra-cap/index.html",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Handling a request like this correctly is one piece of a front desk that holds up under scrutiny, and the practices that get tripped up are usually the ones whose baseline was shaky to begin with. The free ",
+          { text: "HIPAA Scorecard", href: "/scorecard" },
+          " checks ten core Security Rule controls that line up with the issues OCR raises most, like your ",
+          {
+            text: "risk analysis",
+            href: "/articles/do-dental-practices-need-hipaa-risk-assessment",
+          },
+          " and your ",
+          {
+            text: "vendor agreements",
+            href: "/articles/does-my-dental-practice-need-a-baa",
+          },
+          ", then scores your practice and names your biggest gap in about three minutes. It does not check how you handle a deceased patient's records, but it shows whether your broader HIPAA foundation is in order.",
+        ],
+      },
+
+      { type: "h2", text: "What a dental practice should do" },
+      {
+        type: "p",
+        runs: [
+          "Most routine requests do not require a lawyer on call. They require a short routine the front desk can follow, plus a clear escalation point for when the proof of authority is not obvious.",
+        ],
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Slow down before releasing anything",
+            detail:
+              "A patient's death does not lift HIPAA. Treat the request with the same care you would a living patient's, because the records are still protected.",
+          },
+          {
+            label: "Figure out who is asking, and on what basis",
+            detail:
+              "Personal representative of the estate, an involved family member, or someone with neither claim. The rest of the steps follow from this one answer.",
+          },
+          {
+            label: "For a personal representative, ask for proof of authority",
+            detail:
+              "Letters Testamentary, Letters of Administration, or comparable proof of authority under your state's law. It names the person authorized to act for the estate.",
+          },
+          {
+            label: "For an involved family member, confirm the basis and check for any objection",
+            detail:
+              "Share only what relates to their involvement in the patient's care or payment, and not at all if the patient had asked you to keep it from them.",
+          },
+          {
+            label: "Run a verified request on the normal clock",
+            detail:
+              "Once you confirm a personal representative, the timely-access rules apply, including the thirty-day deadline. Do not let the request sit.",
+          },
+          {
+            label: "Write down what you released, to whom, and why",
+            detail:
+              "A short note of the basis for the disclosure protects you if anyone questions the release later.",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This is general information about HIPAA, and a deceased patient's records are an area where your state's law also has a say in who counts as the personal representative. Before you release records, confirm who is authorized under your state's law, and when you are not sure, check with a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
+
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          [
+            "45 CFR \u00a7 164.502(g) (personal representatives), including \u00a7 164.502(g)(1) (a covered entity must treat a personal representative as the individual) and \u00a7 164.502(g)(4) (an executor, administrator, or other person with authority over a deceased individual or the estate is treated as the personal representative for protected health information relevant to that representation) (eCFR, current as of June 2026).",
+          ],
+          [
+            "45 CFR \u00a7 164.502(f) (a covered entity must protect a deceased individual's protected health information for 50 years following death), with the definition of \u201cprotected health information\u201d at 45 CFR \u00a7 160.103, which excludes information about a person deceased more than 50 years (eCFR, current as of June 2026).",
+          ],
+          [
+            "45 CFR \u00a7 164.510(b)(1) and \u00a7 164.510(b)(5) (a covered entity may disclose a deceased individual's relevant protected health information to a family member or other person who was involved in the individual's care or payment for care, unless inconsistent with the individual's prior expressed preference) (eCFR, current as of June 2026). Paragraph (b)(5) was added by the 2013 HIPAA Omnibus Rule, 78 FR 5566.",
+          ],
+          [
+            "45 CFR \u00a7 164.506 (treatment, payment, and health care operations may be disclosed without authorization), the basis on which a deceased patient's records may be provided to a provider treating a surviving relative (eCFR, current as of June 2026).",
+          ],
+          [
+            "U.S. Department of Health and Human Services, Office for Civil Rights, \u201cHealth Information of Deceased Individuals\u201d and \u201cPersonal Representatives\u201d guidance (hhs.gov, accessed June 2026): the personal representative of a decedent is the executor, administrator, or other person authorized under state law to act for the decedent or the estate, and stands in the individual's shoes; involved family members who are not personal representatives may receive relevant information under \u00a7 164.510(b).",
+          ],
+          [
+            "HHS Office for Civil Rights, FAQ on whether a health-care power of attorney allows access to a patient's records (hhs.gov, accessed June 2026): a health-care power of attorney makes a person the patient's personal representative for health information while the patient is alive.",
+          ],
+          [
+            "HHS Office for Civil Rights, FAQ on how a deceased individual's family can obtain records relevant to their own health care (hhs.gov, accessed June 2026).",
+          ],
+          [
+            "HHS Office for Civil Rights, \u201cLab Pays $16,500 Settlement to HHS, Resolving Potential HIPAA Violation over Medical Records Request\u201d (Life Hope Labs, LLC), with the resolution agreement and corrective action plan (hhs.gov, January 2023): the personal representative of a deceased patient's estate waited 225 days for the records; OCR cited a failure to provide timely access under 45 CFR \u00a7 164.524; the settlement is not an admission of liability.",
+          ],
+          [
+            "HHS Office for Civil Rights, \u201cHHS Civil Rights Office Resolves HIPAA Right of Access Investigation with $20,000 Settlement\u201d (Health Specialists of Central Florida, Inc.), with the resolution agreement and corrective action plan (hhs.gov, December 2022): a daughter acting as personal representative of her deceased father, who submitted Letters of Administration, waited about five months for the records.",
+          ],
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Can a family member get a deceased patient's dental records?",
+        answer:
+          "It depends on who they are. The executor or administrator of the estate is treated as the patient and can get the records relevant to settling the estate. A family member who was involved in the patient's care can receive the information relevant to that involvement, unless the patient had objected. A relative with neither claim has no general right to the records without a valid authorization or another HIPAA basis.",
+      },
+      {
+        question: "Does a power of attorney let someone access a deceased patient's records?",
+        answer:
+          "Not on its own, once the patient has died. A health-care power of attorney lets someone make decisions while the patient is alive, and it ends at death. After death, who can act is determined by state law, usually the executor or administrator of the estate, and sometimes another authorized person. A former power-of-attorney agent has no special right to the records unless they are also the estate's personal representative or were involved in the patient's care.",
+      },
+      {
+        question: "Who is the personal representative of a deceased patient?",
+        answer:
+          "It is the person your state's law authorizes to act for the estate, usually the executor named in the will or, if there was no will, the administrator appointed by the probate court, and in some states another authorized person such as a surviving spouse. HIPAA treats that person as the patient for the records relevant to their duties. You can ask to see their Letters Testamentary, Letters of Administration, or comparable proof of their authority.",
+      },
+      {
+        question: "How long does HIPAA protect a deceased patient's records?",
+        answer:
+          "Fifty years from the date of death. During that time you must protect the records the same way you would a living patient's. After fifty years, the information is no longer protected health information under HIPAA, though state retention rules and good practice may still apply.",
+      },
+      {
+        question: "Do we have to verify that someone is really the executor?",
+        answer:
+          "You are allowed to ask for proof before releasing records, and it is wise to. The usual proof is Letters Testamentary or Letters of Administration from the probate court, or comparable proof of authority where state law authorizes someone else, naming the person authorized to act for the estate. HIPAA does not force you to demand it in every case, but verifying protects you from releasing records to the wrong person.",
+      },
+      {
+        question: "A relative just wants to know how their loved one died. Can we tell them?",
+        answer:
+          "Often yes. If the person was involved in the patient's care or payment for care, you may share the information relevant to that involvement, which can include the circumstances around the death, unless the patient had asked you not to. Keep it to what relates to their involvement rather than opening the entire chart.",
+      },
+    ],
+  },
 ];
 
 export function getAllArticles(): Article[] {
