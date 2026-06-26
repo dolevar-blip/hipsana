@@ -1005,6 +1005,11 @@ export const articles: Article[] = [
             text: "the AI scribe vendor that records your visits",
             href: "/articles/are-ai-scribes-hipaa-compliant-dental-practice",
           },
+          ", or ",
+          {
+            text: "records released to the wrong party in response to a subpoena",
+            href: "/articles/dental-practice-subpoena-for-patient-records-hipaa",
+          },
           ". Whatever the cause, the same test applies.",
         ],
       },
@@ -4200,7 +4205,12 @@ export const articles: Article[] = [
             text: "Ciox Health v. Azar",
             href: "https://www.hhs.gov/hipaa/court-order-right-of-access/index.html",
           },
-          ", narrowed this. In plain terms: when a patient gets their own copy, the cost-based fee limit still applies; when they direct records to a third party, that specific fee cap no longer governs. Verify a third-party request the same way you would any other, and make sure the instruction to send is clear and in writing.",
+          ", narrowed this. In plain terms: when a patient gets their own copy, the cost-based fee limit still applies; when they direct records to a third party, that specific fee cap no longer governs. Verify a third-party request the same way you would any other, and make sure the instruction to send is clear and in writing. This is the patient directing their own records; when an outside party demands them instead, such as a ",
+          {
+            text: "lawyer's subpoena or a court order",
+            href: "/articles/dental-practice-subpoena-for-patient-records-hipaa",
+          },
+          ", a separate set of rules applies.",
         ],
       },
       {
@@ -7314,6 +7324,366 @@ export const articles: Article[] = [
         question: "How long do I keep dental X-rays and records for minors?",
         answer:
           "X-rays are part of the dental record and follow the same state retention rule as the rest of the chart. For minors, many states extend the clock to the patient's 18th or 21st birthday, sometimes plus additional years, so a child's record often has to be kept well over a decade. Confirm the exact period with your state dental board.",
+      },
+    ],
+  },
+  {
+    slug: "dental-practice-subpoena-for-patient-records-hipaa",
+    status: "published",
+    title:
+      "Subpoenas and Court Orders for Dental Records: What HIPAA Requires (2026)",
+    metaTitle: "Subpoena for Dental Records (HIPAA, 2026)",
+    description:
+      "A subpoena arrives for a patient's dental records. HIPAA says when you must comply, when you can't, and how one practice's mistake cost $853,000.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-26T00:00:00+03:00",
+    dateModified: "2026-06-26T00:00:00+03:00",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "A subpoena is a written demand for records or testimony. A court order is a command signed by a judge. They can arrive in similar envelopes, they are not the same thing under HIPAA, and treating the first like the second is how a dental practice ends up on the wrong side of a privacy lawsuit.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Here is the rule in one line. If a judge signed it, you generally comply and you release only what it names. If a lawyer signed it and no court order is attached, the subpoena by itself is not permission to open a patient's chart. You can release the records only if the patient was given notice and a chance to object, or a protective order is in place or being sought. A request from the police follows its own separate track.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Getting this wrong is not a paperwork foot-fault. A Connecticut OB-GYN practice once received a subpoena from a lawyer in a paternity case, with no court order, asking for a patient's records. The patient had told the practice not to release anything to her former boyfriend. The practice mailed the chart to the court anyway, without telling her. He read it, and a jury later found the practice liable for the harm that followed. Dental records get subpoenaed all the time, in custody fights, injury claims, and insurance disputes, and the rule that tripped up that practice is the same one that applies to you.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/court-case-byrne-avery-subpoena-disclosure.webp",
+        alt: "Summary card for Byrne v. Avery Center for Obstetrics & Gynecology, P.C., a Connecticut Supreme Court case. A medical practice released a patient's records in response to a lawyer's subpoena that had no court order, and did not notify her first. A jury awarded the patient $853,000, and the case turned on the fact that zero court orders accompanied the subpoena. The 2018 Connecticut Supreme Court ruling held that HIPAA has no private right of action but does not block a state negligence claim, with HIPAA's subpoena rules informing the standard of care.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "Source: Connecticut Judicial Branch. ",
+          {
+            text: "Byrne v. Avery Center for Obstetrics & Gynecology, P.C. (Connecticut Supreme Court, 2018)",
+            href: "https://jud.ct.gov/external/supapp/Cases/AROcr/CR327/327CR110.pdf",
+          },
+          ". The 2018 decision allowed the patient's state negligence claim and held that HIPAA's subpoena rules can inform the standard of care. On remand, a jury awarded $853,000, affirmed by the Connecticut Appellate Court in 2022 (AC 43413). Card prepared by Hipsana from the court record.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This article explains how a dental practice should handle a subpoena, a court order, or a law-enforcement request for a patient's records. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
+
+      { type: "h2", text: "The one question that decides everything: who signed it" },
+      {
+        type: "p",
+        runs: [
+          "Almost every records demand a dental office sees falls into one of a few buckets, and the right move depends entirely on which bucket it is. Read the document before you do anything else, and look first for a judge's signature or an attached court order. That single fact changes your obligations.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["What you received", "What HIPAA requires", "What you may release"],
+        rows: [
+          [
+            "A court order, a court-ordered warrant, or a subpoena or summons signed by a judge or issued by a grand jury",
+            "You may disclose without separate patient permission, and the order itself carries legal force you cannot ignore.",
+            "Only the records the order names, and nothing beyond them.",
+          ],
+          [
+            "The patient's own signed HIPAA authorization",
+            "You may disclose what the signed form covers.",
+            "Only what the authorization allows.",
+          ],
+          [
+            "A subpoena or discovery request signed by a lawyer, with no court order attached",
+            "Not permission on its own. You first need satisfactory assurances: proof the patient was notified and the time to object has passed, or that a qualified protective order is in place or has been requested.",
+            "Nothing until one of those conditions is met. If it never is, you can object or ask for a court order.",
+          ],
+          [
+            "A written request from a government agency (an administrative subpoena, summons, or investigative demand)",
+            "Allowed only if a response is required by law and the request is relevant and material, limited in scope, and de-identified data would not serve the purpose.",
+            "Only what the request specifies, once it meets those tests.",
+          ],
+          [
+            "A police request to help identify or locate a suspect, fugitive, witness, or missing person",
+            "Allowed for a fixed, narrow set of identifying details only.",
+            "Items such as name, address, and date of birth. Not dental records, DNA, or body-fluid analysis under this provision.",
+          ],
+        ],
+        caption:
+          "How HIPAA treats the common ways a request for records reaches a dental practice. The signature on the document, and whether a court was involved, is what determines your duty.",
+      },
+
+      { type: "h2", text: "A lawyer's subpoena, by itself, is not a green light" },
+      {
+        type: "p",
+        runs: [
+          "This is the part practices get wrong most often. A subpoena that a lawyer issued in a lawsuit feels official, and it is, but under ",
+          {
+            text: "45 CFR 164.512(e)",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.512",
+          },
+          " it does not, on its own, let you hand over a patient's chart. When the subpoena is not signed by a judge and no court order comes with it, you may disclose only after you receive what the rule calls satisfactory assurances.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Satisfactory assurance means one of two things in writing. Either the party who wants the records shows you that the patient was given notice of the request and enough time to object, and that the time has passed with no objection left unresolved. Or it shows you that a qualified protective order is in place or has been asked for, meaning an order that bars anyone from using the records outside the case and requires them to be returned or destroyed when the case ends. ",
+          {
+            text: "HHS spells this out",
+            href: "https://www.hhs.gov/hipaa/for-professionals/faq/706/what-satisfactory-assurances-must-a-covered-entity-receive-before-it-responds-to-a-subpoena/index.html",
+          },
+          ": without a court order, you need one of those two things before the records leave your office. Sometimes the subpoena itself shows this on its face, that the patient was notified and the time to object has passed with none filed, and when it clearly does, no separate paperwork is needed.",
+        ],
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Look for a judge's signature or a court order",
+            detail:
+              "If a judge signed the subpoena, or a court order or qualified protective order is attached, you are on the disclosure track and release only what it names. If only a lawyer signed it, keep going.",
+          },
+          {
+            label: "Look for the patient's signed authorization",
+            detail:
+              "If a valid, signed HIPAA authorization from the patient or their personal representative is included, you can release what it covers. What matters is that the authorization meets HIPAA's requirements, not who drafted it, so check it against those rules and ask for one on your own form if anything looks off.",
+          },
+          {
+            label: "Confirm the patient was notified",
+            detail:
+              "With no court order and no authorization, you may disclose only if you have written assurance that the patient got notice and a chance to object, and that the time to object has passed with nothing unresolved.",
+          },
+          {
+            label: "Or confirm a qualified protective order",
+            detail:
+              "The alternative is a protective order limiting the records to the case and requiring their return or destruction at the end. The requester can show one is agreed or has been requested.",
+          },
+          {
+            label: "If neither is in place, do not send the records",
+            detail:
+              "Object in writing, ask the requesting lawyer for an authorization or a court order, notify the patient yourself, or ask the court for a protective order. When the deadline is tight or anything is unclear, call your own attorney.",
+          },
+          {
+            label: "Release only what is asked, and log it",
+            detail:
+              "Send only the records named, not the entire chart, and log what you sent and why, so you have a clear record of the disclosure.",
+          },
+        ],
+      },
+
+      { type: "h2", text: "What the Connecticut case actually cost" },
+      {
+        type: "p",
+        runs: [
+          "The practice in the story above is the defendant in ",
+          {
+            text: "Byrne v. Avery Center",
+            href: "https://jud.ct.gov/external/supapp/Cases/AROcr/CR327/327CR110.pdf",
+          },
+          ", and the numbers are worth sitting with. After the practice mailed the records to the court without notifying the patient, and her ex-boyfriend read them in the public file, she sued. A jury awarded her $853,000, and the Connecticut Appellate Court upheld that award in 2022 (AC 43413). The court also made a point that matters for every practice: the fact that the court clerk mishandled the records after they arrived did not let the practice off the hook. The practice was liable for sending them in the first place.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "There is a twist here that surprises people. HIPAA gives patients no right to sue you directly; that is true everywhere, and the practice argued exactly that. It did not save them. The Connecticut Supreme Court held that state law can still give a patient a negligence claim, and that HIPAA's rules for responding to a subpoena can help define the standard of care a careful practice owes. Not every state has recognized that kind of claim the way Connecticut did, so your exposure depends on your state's law. But Byrne is the warning: where such a claim exists, the patient whose records you mishandled can come after you directly, and it can cost far more than a typical federal penalty.",
+        ],
+      },
+
+      { type: "h2", text: "When the police or a government agency asks" },
+      {
+        type: "p",
+        runs: [
+          "Law enforcement runs on a different set of rules, in ",
+          {
+            text: "45 CFR 164.512(f)",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.512",
+          },
+          ". A court order, a court-ordered warrant, a subpoena or summons signed by a judge, or a grand jury subpoena all let you disclose what they name. A written administrative request from an agency is narrower: it has to be relevant and material to a real investigation, limited in scope, and used only where de-identified data would not do.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "One rule is worth memorizing because it is specific to your office. When the police ask for help to identify or locate someone, the law lets you share only a short list of basic facts, and it ",
+          {
+            text: "specifically excludes dental records",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.512",
+          },
+          ", along with DNA and body-fluid analysis, from what you can hand over under that provision. Under that provision, dental records sit on the other side of the line: the rule keeps them out of the quick identify-or-locate request and pushes them back to a court order, a warrant, or a formal written demand.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "If officers show up in person with no court order, warrant, or other process, you generally do not have to hand over a patient's chart on the spot, and you should not pretend a record does not exist or destroy anything. A few narrow exceptions exist, such as a crime committed on your premises or a genuine emergency, but those are exactly the situations to slow down for, not to rush. A calm script works: tell them you take it seriously and are contacting your attorney, and let your lawyer sort out what the law actually requires.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "One footnote on a rule you may have read about. A 2024 federal rule briefly added an extra attestation step for requests tied to reproductive health care. A federal court ",
+          {
+            text: "vacated most of that rule, including the attestation step, in June 2025",
+            href: "https://www.hhs.gov/hipaa/for-professionals/special-topics/reproductive-health/final-rule-fact-sheet/index.html",
+          },
+          ", the government did not appeal, and the remaining appeal was dismissed that September, so the attestation step does not apply today. You may still see it referenced in older guidance and in the regulation text.",
+        ],
+      },
+
+      { type: "h2", text: "Your state can require more, and some records get extra shields" },
+      {
+        type: "p",
+        runs: [
+          "HIPAA is a floor, not a ceiling. Under ",
+          {
+            text: "45 CFR 160.203",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-160/subpart-B/section-160.203",
+          },
+          ", a state law that protects patient privacy more strictly than HIPAA is not overridden; the stricter rule wins. Depending on where you practice, your state may require a court order where HIPAA would accept a notified subpoena, or give certain sensitive records extra protection a standard subpoena cannot reach. These rules vary from state to state, so confirm your own state's requirements with your dental board or a healthcare attorney rather than assuming the federal floor is the whole story.",
+        ],
+      },
+
+      { type: "h2", text: "What a dental practice should actually have ready" },
+      {
+        type: "p",
+        runs: [
+          "None of this requires a law degree. It requires a short, written routine that the front desk can follow on the day a subpoena lands, so the decision is not made under pressure by whoever opened the mail. The same routine keeps you out of the Byrne trap.",
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "Read it and route it. " },
+            "Note what kind of legal demand it is, write down the date it arrived and the response deadline, and hand it to whoever owns compliance decisions, the owner or your privacy point person. The front desk catches it and passes it up; it does not decide what to release.",
+          ],
+          [
+            { strong: "Verify who is asking. " },
+            "Confirm the requester's identity before you discuss or send anything, so you are not handing records to someone posing as a party.",
+          ],
+          [
+            { strong: "Release the minimum. " },
+            "Send only the records the request names, never the full chart by default.",
+          ],
+          [
+            { strong: "Write it down. " },
+            "Keep a record of what you disclose, to whom, and why. A subpoena response is generally something a patient can later ask you to account for, so the log matters.",
+          ],
+          [
+            { strong: "Know when to call counsel. " },
+            "A bare subpoena with no court order, a police request with no process, or anything touching records your state protects more tightly is a moment to pause and ask your attorney.",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Handling a subpoena well is one piece of HIPAA compliance, and the gaps that draw OCR's largest fines usually sit elsewhere, in the security controls underneath. The free ",
+          { text: "HIPAA Scorecard", href: "/scorecard" },
+          " checks the ten core Security Rule controls OCR cites most, like your risk analysis, your vendor agreements, and your breach-response plan, then scores your practice and names your biggest gap in about three minutes. It is a starting point, not a full audit, but it is the fastest way to see whether the rest of your compliance is on solid ground. If you want the broader picture, the related guide on ",
+          {
+            text: "handling a patient's own records request",
+            href: "/articles/how-to-handle-a-patient-records-request-dental-practice",
+          },
+          " covers the other side of this, where the patient is the one asking for their chart, and the guide on ",
+          {
+            text: "responding to a data breach",
+            href: "/articles/dental-data-breach-response",
+          },
+          " covers what happens if records go out that should not have.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This is general information about HIPAA and is not legal advice, and the rules for subpoenas, court orders, and law-enforcement requests interact with state law and court procedure that vary by state and change over time. Before you release records in response to any legal demand, confirm your current state requirements and, for anything beyond a routine notified subpoena, check with a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
+
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          [
+            "45 CFR \u00a7 164.512(e) (disclosures for judicial and administrative proceedings): a covered entity may disclose in response to a court order (only what the order authorizes), or in response to a subpoena or other lawful process without a court order only with satisfactory assurances of notice to the individual or a qualified protective order, defined at \u00a7 164.512(e)(1)(iii) through (v) (eCFR, current as of June 2026).",
+          ],
+          [
+            "45 CFR \u00a7 164.512(f) (disclosures for law enforcement purposes), including the limited identification-and-location data at \u00a7 164.512(f)(2) and its exclusion of dental records, DNA, and body-fluid analysis from what may be disclosed under that provision (eCFR, current as of June 2026).",
+          ],
+          [
+            "45 CFR \u00a7 164.508 (authorization), \u00a7 164.502(b) and \u00a7 164.514(d) (minimum necessary), and \u00a7 164.528 (accounting of disclosures) (eCFR, current as of June 2026).",
+          ],
+          [
+            "45 CFR \u00a7 160.203 (preemption): a provision of State law that is more stringent than HIPAA regarding the privacy of health information is not preempted (eCFR, current as of June 2026).",
+          ],
+          [
+            "HHS Office for Civil Rights, \"When does the Privacy Rule allow covered entities to disclose protected health information to law enforcement officials?\" (FAQ 505), \"What satisfactory assurances must a covered entity receive before it responds to a subpoena without a court order?\" (FAQ 706), and \"For disclosures for judicial proceedings, when is a copy of the subpoena sufficient?\" (FAQ 708): a subpoena can satisfy the assurances when its face shows the individual was notified and the time to object has passed (hhs.gov, accessed June 2026).",
+          ],
+          [
+            "HHS Office for Civil Rights, \"When must a covered entity account for disclosures of protected health information made during the course of litigation?\" (FAQ 710): disclosures in response to a subpoena or other lawful process under \u00a7 164.512(e) are subject to the accounting-of-disclosures requirement (hhs.gov, accessed June 2026).",
+          ],
+          [
+            "HHS Office for Civil Rights, HIPAA Privacy Rule and reproductive-health disclosures, and the Reproductive Health Rule fact sheet: most of the 2024 rule, including the attestation requirement, was declared unlawful and vacated nationwide in Carmen Purl v. U.S. Department of Health and Human Services, No. 2:24-cv-00228-Z (N.D. Tex. June 18, 2025); HHS did not appeal, and the Fifth Circuit dismissed the remaining appeal on September 10, 2025, so the attestation step is not in force (hhs.gov, accessed June 2026).",
+          ],
+          [
+            "Byrne v. Avery Center for Obstetrics & Gynecology, P.C., 327 Conn. 540 (Connecticut Supreme Court, 2018): HIPAA has no private right of action but does not preempt a state negligence claim, and its regulations may inform the standard of care for disclosing records in response to a subpoena; the opinion cites 45 CFR 164.512(e)(1)(iv) and the practice's admitted noncompliance (Connecticut Judicial Branch, jud.ct.gov, accessed June 2026).",
+          ],
+          [
+            "Byrne v. Avery Center for Obstetrics & Gynecology, P.C., 212 Conn. App. 339, AC 43413 (officially released May 10, 2022): affirming the jury's $853,000 noneconomic-damages award and holding the practice liable even though the court clerk later placed the records in a public file (Connecticut Judicial Branch, accessed June 2026).",
+          ],
+          [
+            "American Dental Association, \"How HIPAA Can Apply to You and How to Comply if it Does\" and \"HIPAA: 20 Questions for Dentists\": a subpoena not accompanied by a court order is not, by itself, a valid basis to disclose records, unless it has the force of a court order under state law (ada.org, accessed June 2026).",
+          ],
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Do I have to release dental records if I get a subpoena?",
+        answer:
+          "Not automatically. If the subpoena was signed by a judge, or comes with a court order, you generally must comply and release only what it names. If it was signed by a lawyer with no court order attached, the subpoena alone is not permission. You may release the records only after you have satisfactory assurances that the patient was notified and given a chance to object, or that a qualified protective order is in place or being sought. If neither applies, you can object or ask for a court order.",
+      },
+      {
+        question: "What is the difference between a subpoena and a court order?",
+        answer:
+          "A subpoena is a written demand for records or testimony, and it can be issued by a lawyer in a case. A court order is a command signed by a judge. Under HIPAA, a court order lets you disclose the records it names without separate patient permission. A lawyer's subpoena with no court order does not, on its own, meet HIPAA's conditions for releasing a patient's chart.",
+      },
+      {
+        question: "Can the police get a patient's dental records without permission?",
+        answer:
+          "Sometimes, and it depends on what they bring. A court order, a court-ordered warrant, or a grand jury subpoena lets you disclose what it specifies. A simple request to help identify or locate someone is limited to a short list of basic details and specifically may not include dental records under that provision. If officers arrive with no legal process at all, you can tell them you are contacting your attorney, and you should not destroy or hide any records.",
+      },
+      {
+        question: "What happens if I release records I should not have?",
+        answer:
+          "HIPAA itself does not let a patient sue you directly, but an improper disclosure can still cost you. The federal Office for Civil Rights can investigate a complaint, and depending on your state, a patient may be able to sue under state law, using HIPAA's rules to help define the standard of care. In one Connecticut case, a jury awarded a patient $853,000 after a practice released her records in response to a lawyer's subpoena without notifying her first.",
+      },
+      {
+        question: "Do I have to notify the patient when I get a subpoena for their records?",
+        answer:
+          "Not always. With no court order and no signed authorization, HIPAA gives you two routes: the patient is notified and given time to object, or a qualified protective order is put in place or sought. Notice is only required on the first route. The requesting party can show that notice was given, you can notify the patient yourself, or the matter can proceed under a protective order instead.",
+      },
+      {
+        question: "Does my state law change any of this?",
+        answer:
+          "It can. HIPAA is a floor, not a ceiling. If your state requires a court order where HIPAA would accept a notified subpoena, or gives certain sensitive records extra protection, the stricter rule applies. Confirm your state's rule with your dental board or a healthcare attorney before you respond.",
       },
     ],
   },
