@@ -6922,10 +6922,10 @@ export const articles: Article[] = [
           ],
           [
             { strong: "Your shredding company is a vendor that touches patient data. " },
-            "You need a signed agreement with them, and you are on the hook if they mishandle the records.",
+            "You need a signed agreement with them, and you can still be the one held responsible if they mishandle the records.",
           ],
           [
-            { strong: "Dumping records in the open is a reportable breach. " },
+            { strong: "Dumping records in the open is almost always a reportable breach. " },
             "Improper disposal is one of the failures OCR has settled, and it triggers the same breach-notification duties as a hack.",
           ],
           [
@@ -7008,7 +7008,7 @@ export const articles: Article[] = [
             text: "HHS's own disposal guidance",
             href: "https://www.hhs.gov/sites/default/files/disposalfaqs.pdf",
           },
-          ", is that the protected health information has to be rendered unreadable, indecipherable, and impossible to reconstruct before it leaves your control. How you get there is up to you, within reason.",
+          ", is that the protected health information has to be rendered unreadable, indecipherable, and impossible to reconstruct before it is thrown out somewhere the public or anyone unauthorized could reach it. You can destroy it yourself, or hand the records over intact to a disposal vendor under a signed agreement and have them destroy it off-site. How you get there is up to you, within reason.",
         ],
       },
       {
@@ -7093,7 +7093,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "There is a sharper reason to get this right: putting PHI where it should not go is a ",
+          "There is a sharper reason to get this right: putting PHI where it should not go is almost always a ",
           {
             text: "reportable breach",
             href: "https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html",
@@ -7171,7 +7171,7 @@ export const articles: Article[] = [
             text: "request their records",
             href: "/articles/how-to-handle-a-patient-records-request-dental-practice",
           },
-          " or move to another provider, often 30 to 60 days ahead. Texas, for instance, requires a departing dentist under 22 TAC 108.8 to either keep the records, formally transfer them to the successor, or sign a records-maintenance agreement, and to tell the dental board within fifteen days. The clean structure that satisfies both HIPAA and most state rules is a written records-custody agreement plus a business associate agreement with whoever ends up holding the charts, patient notification before the close, and a clear record of what was transferred and what was kept. This is a transaction worth running past a lawyer; the cost of getting it wrong lands on both the buyer and the seller.",
+          " or move to another provider, often 30 to 60 days ahead. Texas, for instance, requires a departing dentist under 22 TAC 108.8 to either keep the records, formally transfer them to the successor, or sign a records-maintenance agreement, and to tell the dental board within fifteen days. The clean structure that satisfies both HIPAA and most state rules is a written records-custody agreement plus a business associate agreement if the records will sit with a storage company or other business associate (a buyer who is itself a covered entity does not need one), patient notification before the close, and a clear record of what was transferred and what was kept. This is a transaction worth running past a lawyer; the cost of getting it wrong lands on both the buyer and the seller.",
         ],
       },
 
@@ -7193,7 +7193,7 @@ export const articles: Article[] = [
           {
             label: "Check for any legal hold",
             detail:
-              "If there is an open or threatened claim, a board complaint, an audit, or an investigation touching that record, stop. Destroying it now is its own violation. Hold until the matter closes.",
+              "If there is an open or threatened claim, a board complaint, an audit, or an investigation touching that record, stop. Destroying it then can be a serious legal problem in its own right. Hold until the matter closes.",
           },
           {
             label: "Match the method to the media",
@@ -7298,12 +7298,12 @@ export const articles: Article[] = [
       {
         question: "Do I need a BAA with my shredding company?",
         answer:
-          "Yes. A company that destroys records containing patient data is handling protected health information on your behalf, which makes it a business associate. You need a signed business associate agreement with the vendor, and you remain liable if it mishandles the records, so a certificate of destruction is worth keeping as proof.",
+          "Yes. A company that destroys records containing patient data is handling protected health information on your behalf, which makes it a business associate. You need a signed business associate agreement with the vendor, and you can still be held responsible if it mishandles the records, so a certificate of destruction is worth keeping as proof.",
       },
       {
         question: "Is deleting or wiping a hard drive enough to meet HIPAA?",
         answer:
-          "Usually not. Deleted or reformatted files can often be recovered with free tools, so HHS treats wiping as different from secure destruction. To dispose of a computer, server, or backup drive that held patient data, purge it (for example, a cryptographic erase or degaussing) or physically destroy the drive, following the NIST 800-88 media-sanitization standard.",
+          "Usually not. Deleted or reformatted files can often be recovered with free tools, so HHS treats wiping as different from secure destruction. To dispose of a computer, server, or backup drive that held patient data, purge it (a cryptographic erase works for solid-state drives, degaussing for magnetic media) or physically destroy the drive, following the NIST 800-88 media-sanitization standard.",
       },
       {
         question: "Can I give my records to the dentist buying my practice?",
