@@ -1103,7 +1103,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The settlement is rarely the worst part. A ransomware attack can freeze your scheduling, billing, and imaging for days, and a breach notice arriving in your patients' mailboxes can cost trust that took years to build. Those losses are harder to measure than a settlement, and they are why the response you run in the first week matters as much as any check you might eventually write.",
+          "The settlement is rarely the worst part. ", { text: "A ransomware attack", href: "/articles/dental-practice-ransomware-attack-hipaa" }, " can freeze your scheduling, billing, and imaging for days, and a breach notice arriving in your patients' mailboxes can cost trust that took years to build. Those losses are harder to measure than a settlement, and they are why the response you run in the first week matters as much as any check you might eventually write.",
         ],
       },
       {
@@ -5618,7 +5618,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The same short list of controls shows up on nearly every application: multi-factor authentication, endpoint protection, backups that are tested and cannot be silently deleted, a written incident response plan, and a documented risk analysis. None of that is unfamiliar. ", { text: "CISA", href: "https://www.cisa.gov/stopransomware/ransomware-guide" }, " names the same controls as essential defenses against ransomware, and HIPAA's Security Rule already requires most of them. The work that makes you insurable is, almost line for line, the work that makes you pass an OCR audit.",
+          "The same short list of controls shows up on nearly every application: multi-factor authentication, endpoint protection, backups that are tested and cannot be silently deleted, a written incident response plan, and a documented risk analysis. None of that is unfamiliar. ", { text: "CISA", href: "https://www.cisa.gov/stopransomware/ransomware-guide" }, " names the same controls as essential defenses against ", { text: "ransomware", href: "/articles/dental-practice-ransomware-attack-hipaa" }, ", and HIPAA's Security Rule already requires most of them. The work that makes you insurable is, almost line for line, the work that makes you pass an OCR audit.",
         ],
       },
       {
@@ -8453,6 +8453,413 @@ export const articles: Article[] = [
         question: "A relative just wants to know how their loved one died. Can we tell them?",
         answer:
           "Often yes. If the person was involved in the patient's care or payment for care, you may share the information relevant to that involvement, which can include the circumstances around the death, unless the patient had asked you not to. Keep it to what relates to their involvement rather than opening the entire chart.",
+      },
+    ],
+  },
+  {
+    slug: "dental-practice-ransomware-attack-hipaa",
+    status: "published",
+    title:
+      "Ransomware at a Dental Practice: What HIPAA Requires and What to Do First (2026)",
+    metaTitle: "Ransomware at a Dental Practice & HIPAA",
+    description:
+      "A ransomware attack on a dental practice is presumed a reportable HIPAA breach. What to do in the first hours, who to notify, and how to be ready.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-26T00:00:00+03:00",
+    dateModified: "2026-06-26T00:00:00+03:00",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "When ransomware hits a dental practice, two problems arrive at the same moment. The office cannot see patients because the schedule, the charts, and the imaging are locked, and underneath that, HIPAA very likely treats the attack as a reportable breach that is already on a clock. The tempting move, restoring from a backup and saying nothing, is the one that turns a bad week into an enforcement file. Here is what to do in the first hours, how the notification rules work, and how to set things up now so an attack stays an IT problem instead of becoming a HIPAA problem on top of it.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "A ransomware attack is presumed to be a reportable breach. " },
+            "Restoring from backup does not end the duty to report unless you can document a low probability that the data was compromised.",
+          ],
+          [
+            { strong: "Contain the spread first, then call your cyber insurer or breach coach before hiring your own vendor. " },
+            "Most policies require their approved forensics and legal vendors, and going outside that can leave the cost uncovered.",
+          ],
+          [
+            { strong: "Disconnect the infected machines from the network, and do not wipe them. " },
+            "Power one down only if you truly cannot disconnect it.",
+          ],
+          [
+            { strong: "Your offline backup is what saves you. " },
+            "Modern ransomware searches for and encrypts the backups it can reach, so at least one copy has to be offline or unchangeable.",
+          ],
+          [
+            { strong: "The clock starts when you discover the breach, not when the investigation ends. " },
+            "You have at most 60 days to notify, and a large attack can also require telling the media and HHS.",
+          ],
+          [
+            { strong: "OCR penalizes the missing risk analysis, not the attack itself. " },
+            "In 2026 alone it settled four ransomware cases for a combined $1,165,000, each over the same missing assessment.",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "This article explains what HIPAA requires of a dental practice facing a ransomware attack. It is general information, not legal advice for your specific situation. For that, consult a healthcare attorney or a qualified HIPAA compliance professional.",
+        ],
+      },
+
+      { type: "h2", text: "If a ransomware attack is happening right now" },
+      {
+        type: "p",
+        runs: [
+          "The first hour sets up everything that follows, and most of it is about not making the situation worse. The steps below come from federal ",
+          {
+            text: "cyber-defense guidance",
+            href: "https://www.cisa.gov/stopransomware/ive-been-hit-ransomware",
+          },
+          " and from how ",
+          {
+            text: "cyber insurers",
+            href: "/articles/dental-practice-cyber-insurance",
+          },
+          " run a claim. They are practice, not a HIPAA rule, but they are how a small office keeps an incident from turning into a second crisis.",
+        ],
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Isolate the infected machines, do not turn them off",
+            detail:
+              "Unplug the network cable and disable Wi-Fi on anything affected. If several computers are hit, have someone take the network offline at the switch. Federal guidance says to power a device down only if you cannot disconnect it any other way, because powering off can erase evidence stored in memory.",
+          },
+          {
+            label: "Call your cyber insurer or breach coach before retaining outside vendors",
+            detail:
+              "Do this after the containment step above, not before it. Most cyber policies require you to use their approved forensics and legal vendors, and hiring your own first can mean those costs are not covered. The insurer's breach coach, usually a lawyer, then coordinates the forensics, the law-enforcement reporting, and the notification clock.",
+          },
+          {
+            label: "Communicate off the affected network",
+            detail:
+              "Use a phone or an email account that is not on the compromised system. An attacker who is still inside may be reading your email, and quiet coordination keeps them from spreading the damage before you can contain it.",
+          },
+          {
+            label: "Leave the backups alone for now",
+            detail:
+              "Do not delete, overwrite, or restore them onto live systems yet. They are both your way back and your evidence, and a rushed restore can reinfect a network that is not yet clean.",
+          },
+          {
+            label: "Write everything down on paper",
+            detail:
+              "Note what you saw on screen and who you contacted, along with the times. Your systems may be down, and this paper record becomes your proof that you responded quickly and in good faith.",
+          },
+          {
+            label: "Report it to the FBI",
+            detail:
+              "File through the FBI's Internet Crime Complaint Center at ic3.gov or call a local field office. CISA also accepts reports, and law enforcement sometimes holds a decryption key for a known ransomware strain.",
+          },
+        ],
+      },
+
+      { type: "h2", text: "Is a ransomware attack a reportable breach?" },
+      {
+        type: "p",
+        runs: [
+          "In most cases, yes. The Office for Civil Rights, the part of HHS that enforces HIPAA, takes the position that when ransomware encrypts patient data, the data has been acquired by someone who was not allowed to have it, which makes the attack a disclosure that was not permitted. From there, the ",
+          {
+            text: "Breach Notification Rule",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.402",
+          },
+          " presumes a reportable breach unless you can show, with a documented risk assessment, a low probability that the information was compromised. OCR's ",
+          {
+            text: "Ransomware Fact Sheet",
+            href: "https://www.hhs.gov/hipaa/for-professionals/security/guidance/cybersecurity/ransomware-fact-sheet/index.html",
+          },
+          " says the same thing in plain terms.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "To overcome that presumption, the rule requires you to weigh four specific factors and document the result:",
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          ["What information was involved, including how identifiable it is."],
+          ["Who the unauthorized person was, or who received the data."],
+          ["Whether the data was actually viewed or taken, not just exposed."],
+          ["How well the risk has since been reduced."],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "If that assessment does not land on a low probability of compromise, the attack is a reportable breach and the clock is running (45 CFR 164.402). There is one real exception. If the data was already encrypted to the standard ",
+          {
+            text: "HHS specifies",
+            href: "https://www.hhs.gov/hipaa/for-professionals/security/guidance/cybersecurity/ransomware-fact-sheet/index.html",
+          },
+          ", so that it was unreadable to the attacker, it may not count as unsecured information and the duty to notify may not apply. The catch is that the data has to have been unreadable at the moment of the attack. A laptop that was already powered on and logged in has its files decrypted and available, so its encryption does not help. Confirm what was actually protected before you rely on it.",
+        ],
+      },
+      { type: "h2", text: "Is this ransomware a reportable breach, at a glance" },
+      {
+        type: "table",
+        headers: ["The situation", "What HIPAA presumes", "What it means for you"],
+        rows: [
+          [
+            "Ransomware encrypted patient data that was not already secured (the usual case)",
+            "A reportable breach, presumed.",
+            "Run and document the four-factor assessment. If it does not show a low probability of compromise, notify.",
+          ],
+          [
+            "You restored everything from backup and believe nothing was lost",
+            "Still a reportable breach, presumed.",
+            "Recovery does not remove the presumption. The attacker still took control of the data.",
+          ],
+          [
+            "The data was encrypted to the HHS standard and stayed unreadable to the attacker",
+            "The encryption safe harbor may apply.",
+            "Confirm the data was actually unreadable at the moment of attack, and document why.",
+          ],
+          [
+            "The attacker also copied data out before encrypting it",
+            "A reportable breach, and a wider one.",
+            "Treat it as a breach. Stolen data weighs heavily toward notifying.",
+          ],
+        ],
+      },
+
+      { type: "h2", text: "How fast do you have to act, and who do you have to tell?" },
+      {
+        type: "p",
+        runs: [
+          "The deadline is tied to a date most practices get wrong. The 60-day window to notify does not start when your investigation wraps up. It starts on the day the breach is discovered, which the rule defines as the first day anyone on your staff knew about it, or reasonably should have (",
+          {
+            text: "45 CFR 164.404",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.404",
+          },
+          "). Waiting for a final forensic report before you start the notification work is how practices miss the deadline.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Who you have to notify depends on size. Every affected patient must be told, in writing and without unreasonable delay, no later than 60 days after discovery. If the attack affects more than 500 residents of your state, you also have to notify prominent local ",
+          {
+            text: "media outlets",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.406",
+          },
+          ", which for a busy practice is an uncomfortably low bar to cross. And you must notify ",
+          {
+            text: "HHS",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.408",
+          },
+          ": at the same time as patients if 500 or more people are affected, or on an annual log for smaller breaches. The exact contents of each notice, and the steps to send them, are covered in our guide to ",
+          {
+            text: "responding to a dental data breach",
+            href: "/articles/dental-data-breach-response",
+          },
+          ".",
+        ],
+      },
+
+      { type: "h2", text: "What OCR has actually done about this" },
+      {
+        type: "p",
+        runs: [
+          "This is not a theoretical risk for small practices. In April 2026, OCR announced ",
+          {
+            text: "four settlements at once",
+            href: "https://www.hhs.gov/press-room/ocr-settles-four-ransomware-investigations.html",
+          },
+          ", all following ransomware attacks, for a combined $1,165,000 covering more than 427,000 people. The organizations were different sizes and types, but the finding underneath every one was the same: none had done an accurate and thorough ",
+          {
+            text: "risk analysis",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308",
+          },
+          ", the assessment the Security Rule requires. OCR did not act against them for being attacked. It acted because the groundwork underneath was missing, above all the risk analysis that was never done.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The largest of the four shows how the pieces fit. ",
+          {
+            text: "Assured Imaging",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/ra-cap-with-assured-imaging/index.html",
+          },
+          ", a medical imaging provider in Arizona and California, had ransomware encrypt its electronic medical records in May 2020, exposing the data of 244,813 people. OCR found three problems: the practice could not show it had ever done a compliant risk analysis, it had impermissibly disclosed patient data, and it had not notified the affected people in time. It paid $375,000 and accepted two years of federal monitoring. The ransomware was the event. The missing groundwork was the violation.",
+        ],
+      },
+      {
+        type: "image",
+        src: "/ocr-hipaa-settlement-assured-imaging-ransomware.webp",
+        alt:
+          "Summary card for the 2026 HHS Office for Civil Rights settlement with Assured Imaging Affiliated Covered Entities, a medical imaging and screening provider in Arizona and California. Ransomware encrypted the company's electronic medical records in May 2020, affecting 244,813 individuals. OCR cited a missing risk analysis, an impermissible disclosure of protected health information, and untimely breach notification. Assured Imaging paid a $375,000 settlement with a two-year corrective action plan.",
+        width: 1500,
+        height: 760,
+        caption: [
+          "From the U.S. Department of Health and Human Services, Office for Civil Rights settlement with Assured Imaging Affiliated Covered Entities (announced April 23, 2026). Ransomware encrypted the practice's electronic medical records in May 2020, affecting 244,813 individuals. Prepared by Hipsana from the HHS resolution agreement. ",
+          {
+            text: "Read the HHS announcement \u2192",
+            href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/ra-cap-with-assured-imaging/index.html",
+          },
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "A ransomware attack tests the groundwork you laid long before it, and the practices that get hit hardest are usually the ones whose foundation was thin to begin with. The free ",
+          { text: "HIPAA Scorecard", href: "/scorecard" },
+          " checks ten core Security Rule controls that line up with what OCR pointed to in these cases, including the ",
+          {
+            text: "risk analysis",
+            href: "/articles/do-dental-practices-need-hipaa-risk-assessment",
+          },
+          " every one of these settlements turned on and whether you keep usable backups, then names your biggest gap in about three minutes. It does not run a ransomware drill, but it shows whether the foundation an attack would test is actually in place.",
+        ],
+      },
+
+      { type: "h2", text: "How to be ready before it happens" },
+      {
+        type: "p",
+        runs: [
+          "Readiness for ransomware is mostly readiness for two questions an investigator will ask: could you recover without the attacker, and had you done the work to see the risk coming. Both are things you set up on a quiet day, not during an incident.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The first is backups, and the detail that matters is where they live. A backup that is always connected to your network is a backup the ransomware can encrypt along with everything else, which is exactly what happened to hundreds of dental offices in 2019 when attackers reached the cloud service their records were backed up to. The common standard in the industry is called 3-2-1-1-0:",
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          ["Three copies of your data."],
+          ["On two different kinds of media."],
+          ["With one copy stored off-site."],
+          ["One copy kept offline or unchangeable, where ransomware cannot reach it."],
+          ["Tested until a restore comes back with zero errors."],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "That is an industry practice, not a HIPAA rule. What HIPAA requires is narrower but related: a data backup plan, a disaster recovery plan, and an emergency mode operation plan, all of which are ",
+          {
+            text: "required",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308",
+          },
+          ", not optional, parts of the Security Rule's contingency standard.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The second is the groundwork OCR keeps citing. A documented ",
+          {
+            text: "risk analysis",
+            href: "/articles/do-dental-practices-need-hipaa-risk-assessment",
+          },
+          " finds the gaps before an attacker does, and turning on ",
+          {
+            text: "multi-factor authentication",
+            href: "/articles/does-hipaa-require-mfa-dental-practice",
+          },
+          " closes the most common way ransomware gets in. There is one more reason to do this work in advance. If you ever face the question of whether to pay a ransom, the Treasury Department's sanctions office treats strong backups, an incident response plan, and prompt reporting to law enforcement as ",
+          {
+            text: "factors that count in your favor",
+            href: "https://ofac.treasury.gov/recent-actions/20210921",
+          },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Whether to pay is not a decision to make alone or in the moment. The government strongly discourages it, and paying a ransom can violate U.S. sanctions law if the money reaches a sanctioned group, a risk that applies even if you did not know who was behind the attack. Paying also does not remove your duty to notify patients and HHS. Leave that decision to your breach counsel, your insurer, and law enforcement, who can check the payment against the sanctions list and weigh whether it makes sense at all.",
+        ],
+      },
+
+      { type: "h2", text: "About the author" },
+      {
+        type: "p",
+        runs: [
+          "Dolev Arama is Hipsana's founder. He's the one behind the Scorecard and the short risk reviews it produces. He is not an attorney, and Hipsana is a publisher and referral service, not a law firm or a healthcare provider. The writing here starts where the rules actually live, at HHS, OCR, and NIST, and gets checked against their current text before it goes up. Regulatory claims trace back to those sources, and figures name where they come from; anything that can't be verified is labeled rather than asserted. ",
+          { text: "More about Hipsana \u2192", href: "/about" },
+        ],
+      },
+      { type: "h2", text: "Sources" },
+      {
+        type: "ul",
+        items: [
+          [
+            "U.S. Department of Health and Human Services, Office for Civil Rights, \u201cFact Sheet: Ransomware and HIPAA\u201d (hhs.gov, accessed June 2026): when ransomware encrypts electronic protected health information, the data is considered acquired and the incident is presumed to be a reportable breach unless a four-factor risk assessment shows a low probability of compromise.",
+          ],
+          [
+            "45 CFR \u00a7 164.402 (definition of breach and the four-factor risk assessment) and 45 CFR \u00a7 164.414(b) (the covered entity or business associate bears the burden of proof) (eCFR, current as of June 2026).",
+          ],
+          [
+            "45 CFR \u00a7 164.404 (notify affected individuals without unreasonable delay and no later than 60 days after discovery), \u00a7 164.406 (notify prominent media for a breach affecting more than 500 residents of a State or jurisdiction), and \u00a7 164.408 (notify the Secretary, contemporaneously for 500 or more individuals and on an annual log for smaller breaches) (eCFR, current as of June 2026).",
+          ],
+          [
+            "45 CFR \u00a7 164.308(a)(1)(ii)(A) (risk analysis, a required implementation specification), \u00a7 164.308(a)(6) (security incident procedures, required), and \u00a7 164.308(a)(7) (contingency plan, under which the data backup plan, disaster recovery plan, and emergency mode operation plan are each required) (eCFR, current as of June 2026).",
+          ],
+          [
+            "U.S. Department of Health and Human Services, Office for Civil Rights, \u201cHHS\u2019 Office for Civil Rights Settles Four HIPAA Security Rule Ransomware Investigations\u201d (hhs.gov, April 23, 2026): four settlements totaling $1,165,000 over ransomware breaches affecting more than 427,000 individuals, each citing a failure to conduct an accurate and thorough risk analysis.",
+          ],
+          [
+            "U.S. Department of Health and Human Services, Office for Civil Rights, Assured Imaging Resolution Agreement and Corrective Action Plan (hhs.gov, April 2026): ransomware encrypted the practice\u2019s electronic medical records in May 2020, affecting 244,813 individuals; OCR cited a missing risk analysis, an impermissible disclosure of protected health information, and untimely breach notification; the practice paid $375,000 and accepted a two-year corrective action plan; the settlement is not an admission of liability.",
+          ],
+          [
+            "Cybersecurity and Infrastructure Security Agency, #StopRansomware response guidance (cisa.gov, accessed June 2026): isolate affected systems rather than powering them down, use out-of-band communication during an incident, keep backups offline, and report incidents to the FBI.",
+          ],
+          [
+            "U.S. Department of the Treasury, Office of Foreign Assets Control, \u201cUpdated Advisory on Potential Sanctions Risks for Facilitating Ransomware Payments\u201d (treasury.gov, September 21, 2021): the U.S. government discourages ransom payments, which can carry sanctions risk on a strict-liability basis, and lists strong cybersecurity practices and prompt reporting to law enforcement as mitigating factors.",
+          ],
+          [
+            "Reporting on the 2019 ransomware incidents at PerCSoft / Digital Dental Record (DDS Safe) and Complete Technology Solutions, which encrypted records at hundreds of U.S. dental practices through their shared IT and backup providers (Krebs on Security and the Wisconsin Dental Association, 2019), used here as industry illustration rather than as a regulatory source.",
+          ],
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "We restored everything from backup after a ransomware attack. Do we still have to report it?",
+        answer:
+          "Almost always, yes. HIPAA presumes that when ransomware encrypts patient data, the data was acquired by the attacker, which makes the attack a reportable breach. Recovering your files does not undo that. The only way out is to document, through a four-factor risk assessment, that there was a low probability the information was actually compromised, and that is a high bar once an attacker has encrypted the data (45 CFR 164.402).",
+      },
+      {
+        question: "Who should we call first after a ransomware attack?",
+        answer:
+          "Your cyber insurance carrier or the breach coach your policy assigns, before you bring in your own IT company. Most policies require you to use their approved forensics and legal vendors, and hiring your own first can leave those costs uncovered. The breach coach, usually an attorney, then coordinates the rest of the response, including law enforcement and the notification deadlines.",
+      },
+      {
+        question: "What is a 3-2-1-1-0 backup, and does HIPAA require it?",
+        answer:
+          "It is an industry standard for resilient backups: three copies of your data, on two types of media, with one copy off-site, one copy kept offline or unchangeable, and zero errors when you test a restore. HIPAA does not require that exact formula. It requires a data backup plan that keeps retrievable, exact copies of your records (45 CFR 164.308(a)(7)). The part that matters most against ransomware is the offline copy, because modern attacks encrypt the backups they can reach.",
+      },
+      {
+        question: "How quickly do we have to notify after a ransomware breach?",
+        answer:
+          "Without unreasonable delay, and no later than 60 days after you discover the breach. The clock starts when anyone on your staff first knew, or reasonably should have known, about it, not when your investigation finishes (45 CFR 164.404). If the breach affects more than 500 residents of your state, you also have to notify local media, and HHS must be told at the same time as patients for breaches of 500 or more people.",
+      },
+      {
+        question: "Should we pay the ransom?",
+        answer:
+          "That is a legal and business decision for your breach counsel, your insurer, and law enforcement, not a quick call in the moment. The U.S. Treasury's sanctions office warns that paying can violate sanctions law if the money reaches a sanctioned group, a risk that can apply even if you did not know who was behind the attack. Paying also does not remove your duty to notify patients and HHS. This is general information, not legal advice.",
+      },
+      {
+        question: "Does HIPAA actually require us to keep backups?",
+        answer:
+          "Yes. The Security Rule's contingency standard requires a data backup plan, a disaster recovery plan, and an emergency mode operation plan, and all three are required rather than optional (45 CFR 164.308(a)(7)). The goal is that you can keep operating and recover your records even if an attack or a disaster takes your systems down.",
       },
     ],
   },
