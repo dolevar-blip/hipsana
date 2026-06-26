@@ -13,7 +13,7 @@ export default function Footer() {
               Hipsana
             </div>
             <p className="mt-2 text-sm text-muted">
-              HIPAA &amp; cybersecurity for independent practices.
+              HIPAA &amp; cybersecurity for dental practices.
             </p>
           </div>
 
