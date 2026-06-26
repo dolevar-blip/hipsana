@@ -22,15 +22,15 @@ const ibmPlexSans = IBM_Plex_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://hipsana.com"),
   title: {
-    default: "Hipsana — HIPAA & cybersecurity for independent practices",
+    default: "Hipsana — HIPAA & cybersecurity for dental practices",
     template: "%s · Hipsana",
   },
   description:
-    "Practical HIPAA compliance and cybersecurity guidance for independent dental, medical, and therapy practices. Plain-language risk reviews from primary sources.",
+    "Practical HIPAA compliance and cybersecurity guidance for independent dental practices. Plain-language risk reviews from primary sources.",
   openGraph: {
-    title: "Hipsana — HIPAA & cybersecurity for independent practices",
+    title: "Hipsana — HIPAA & cybersecurity for dental practices",
     description:
-      "Practical HIPAA compliance and cybersecurity guidance for independent dental, medical, and therapy practices.",
+      "Practical HIPAA compliance and cybersecurity guidance for independent dental practices.",
     url: "https://hipsana.com",
     siteName: "Hipsana",
     type: "website",
@@ -39,15 +39,15 @@ export const metadata: Metadata = {
         url: "/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Hipsana — HIPAA & cybersecurity for independent dental, medical, and therapy practices.",
+        alt: "Hipsana — HIPAA & cybersecurity for independent dental practices.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hipsana — HIPAA & cybersecurity for independent practices",
+    title: "Hipsana — HIPAA & cybersecurity for dental practices",
     description:
-      "Practical HIPAA compliance and cybersecurity guidance for independent dental, medical, and therapy practices.",
+      "Practical HIPAA compliance and cybersecurity guidance for independent dental practices.",
     images: ["/og-default.png"],
   },
   robots: {
@@ -66,7 +66,7 @@ const siteJsonLd = {
       url: "https://hipsana.com",
       logo: "https://hipsana.com/logo.png",
       description:
-        "HIPAA guidance and a free Security Scorecard for independent dental, medical, and therapy practices. Regulatory claims trace to primary sources, and every source is named.",
+        "HIPAA guidance and a free Security Scorecard for independent dental practices. Regulatory claims trace to primary sources, and every source is named.",
       founder: { "@type": "Person", name: "Dolev Arama" },
       email: "hello@hipsana.com",
       publishingPrinciples: "https://hipsana.com/editorial-standards",
@@ -77,7 +77,7 @@ const siteJsonLd = {
       url: "https://hipsana.com",
       name: "Hipsana",
       description:
-        "Practical HIPAA compliance and cybersecurity guidance for independent dental, medical, and therapy practices.",
+        "Practical HIPAA compliance and cybersecurity guidance for independent dental practices.",
       publisher: { "@id": "https://hipsana.com/#organization" },
       inLanguage: "en-US",
     },
