@@ -7490,7 +7490,7 @@ export const articles: Article[] = [
       "A subpoena arrives for a patient's dental records. HIPAA says when you must comply, when you can't, and how one practice's mistake cost $853,000.",
     author: "Dolev Arama",
     datePublished: "2026-06-26T00:00:00+03:00",
-    dateModified: "2026-06-26T00:00:00+03:00",
+    dateModified: "2026-06-27T00:00:00+03:00",
     body: [
       {
         type: "p",
@@ -7498,10 +7498,34 @@ export const articles: Article[] = [
           "A subpoena is a written demand for records or testimony. A court order is a command signed by a judge. They can arrive in similar envelopes, they are not the same thing under HIPAA, and treating the first like the second is how a dental practice ends up on the wrong side of a privacy lawsuit.",
         ],
       },
+      { type: "h2", text: "The short version" },
       {
-        type: "p",
-        runs: [
-          "Here is the rule in one line. If a judge signed it, you generally comply and you release only what it names. If a lawyer signed it and no court order is attached, the subpoena by itself is not permission to open a patient's chart. You can release the records only if the patient was given notice and a chance to object, or a protective order is in place or being sought. A request from the police follows its own separate track.",
+        type: "ul",
+        items: [
+          [
+            { strong: "Who signed it decides everything. " },
+            "A court order, or a subpoena signed by a judge or issued by a grand jury, puts you on the disclosure track. A subpoena a lawyer signed, with no court order attached, does not.",
+          ],
+          [
+            { strong: "A judge-signed order is binding, but narrow. " },
+            "You disclose only the records it names, never the full chart.",
+          ],
+          [
+            { strong: "A lawyer's subpoena alone is not permission. " },
+            "You may release records only after satisfactory assurances in writing: proof the patient was notified and the time to object has passed, or that a qualified protective order is in place or has been requested (45 CFR 164.512(e)).",
+          ],
+          [
+            { strong: "The police run on a separate track. " },
+            "Dental records are specifically excluded from the quick \"identify or locate\" request, which pushes them back to a court order, a warrant, or a formal written demand (45 CFR 164.512(f)).",
+          ],
+          [
+            { strong: "Release the minimum, and log it. " },
+            "Send only the records the request names, and keep a record of what went out, to whom, and why. A subpoena response is something the patient can later ask you to account for.",
+          ],
+          [
+            { strong: "Your state can demand more, and the cost of a mistake is real. " },
+            "A Connecticut practice that mailed a patient's records on a lawyer's subpoena, without telling her, lost an $853,000 jury verdict (Byrne v. Avery Center). HIPAA gives patients no way to sue you, but in some states their own negligence law does.",
+          ],
         ],
       },
       {
@@ -7571,6 +7595,32 @@ export const articles: Article[] = [
         ],
         caption:
           "How HIPAA treats the common ways a request for records reaches a dental practice. The signature on the document, and whether a court was involved, is what determines your duty.",
+      },
+      {
+        type: "p",
+        runs: [
+          "Each row traces to the official rule text. Court orders and judge-signed subpoenas, and the satisfactory-assurances test that applies to a lawyer's subpoena, are set out in ",
+          {
+            text: "45 CFR 164.512(e)",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.512",
+          },
+          "; a patient's own signed authorization is governed by ",
+          {
+            text: "45 CFR 164.508",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.508",
+          },
+          "; and law-enforcement requests, including the identify-or-locate limits that exclude dental records, are in ",
+          {
+            text: "45 CFR 164.512(f)",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.512",
+          },
+          ", which HHS summarizes in its ",
+          {
+            text: "guidance on disclosures to law enforcement",
+            href: "https://www.hhs.gov/hipaa/for-professionals/faq/505/what-does-the-privacy-rule-allow-covered-entities-to-disclose-to-law-enforcement-officials/index.html",
+          },
+          ".",
+        ],
       },
 
       { type: "h2", text: "A lawyer's subpoena, by itself, is not a green light" },
@@ -7850,7 +7900,7 @@ export const articles: Article[] = [
       "The 2026 HIPAA Security Rule update is still a proposed rule, not law. Here's what it would change for a dental practice, and what's worth doing now.",
     author: "Dolev Arama",
     datePublished: "2026-06-26T00:00:00+03:00",
-    dateModified: "2026-06-26T00:00:00+03:00",
+    dateModified: "2026-06-27T00:00:00+03:00",
     body: [
       {
         type: "p",
@@ -7982,7 +8032,38 @@ export const articles: Article[] = [
           ],
         ],
         caption:
-          "How the proposed 2025 rule compares with the HIPAA Security Rule in effect today. Current-rule citations are to the eCFR; the proposed changes are from the HHS Office for Civil Rights fact sheet and the proposed rule.",
+          "How the proposed 2025 rule compares with the HIPAA Security Rule in effect today.",
+      },
+      {
+        type: "p",
+        runs: [
+          "Where this comparison comes from. The current-rule column tracks the eCFR: the addressable framework in ",
+          {
+            text: "45 CFR 164.306",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.306",
+          },
+          ", the technical safeguards including encryption in ",
+          {
+            text: "45 CFR 164.312",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312",
+          },
+          ", and the contingency-plan standard in ",
+          {
+            text: "45 CFR 164.308",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.308",
+          },
+          ". The proposed column is drawn from the HHS Office for Civil Rights ",
+          {
+            text: "NPRM fact sheet",
+            href: "https://www.hhs.gov/hipaa/for-professionals/security/hipaa-security-rule-nprm/factsheet/index.html",
+          },
+          " and the ",
+          {
+            text: "proposed rule itself",
+            href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information",
+          },
+          " in the Federal Register.",
+        ],
       },
       {
         type: "p",
@@ -8234,7 +8315,7 @@ export const articles: Article[] = [
       "When a family asks for a deceased patient's dental records, who is entitled depends on who is asking. The three HIPAA routes, and how to verify each.",
     author: "Dolev Arama",
     datePublished: "2026-06-26T00:00:00+03:00",
-    dateModified: "2026-06-26T00:00:00+03:00",
+    dateModified: "2026-06-27T00:00:00+03:00",
     body: [
       {
         type: "p",
@@ -8410,6 +8491,27 @@ export const articles: Article[] = [
             "No general right to the records.",
             "Estate authority, a valid authorization (from the personal representative, or signed by the patient before death), or another HIPAA basis.",
           ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Where each row comes from. A personal representative's authority is set by ",
+          {
+            text: "45 CFR 164.502(g)(4)",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502",
+          },
+          ", the involved-family route by ",
+          {
+            text: "45 CFR 164.510(b)",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.510",
+          },
+          ", and the whole framework is laid out in the HHS Office for Civil Rights ",
+          {
+            text: "guidance on a deceased individual's health information",
+            href: "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/health-information-of-deceased-individuals/index.html",
+          },
+          ".",
         ],
       },
 
@@ -8609,7 +8711,7 @@ export const articles: Article[] = [
       "A ransomware attack on a dental practice is presumed a reportable HIPAA breach. What to do in the first hours, who to notify, and how to be ready.",
     author: "Dolev Arama",
     datePublished: "2026-06-26T00:00:00+03:00",
-    dateModified: "2026-06-26T00:00:00+03:00",
+    dateModified: "2026-06-27T00:00:00+03:00",
     body: [
       {
         type: "p",
@@ -8775,6 +8877,27 @@ export const articles: Article[] = [
             "A reportable breach, and a wider one.",
             "Treat it as a breach. Stolen data weighs heavily toward notifying.",
           ],
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Where this table comes from. The breach presumption and the four-factor assessment are set by ",
+          {
+            text: "45 CFR 164.402",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.402",
+          },
+          ", the burden to prove a low probability of compromise rests on the practice under ",
+          {
+            text: "45 CFR 164.414(b)",
+            href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-D/section-164.414",
+          },
+          ", and OCR applies both to ransomware in its ",
+          {
+            text: "Ransomware Fact Sheet",
+            href: "https://www.hhs.gov/hipaa/for-professionals/security/guidance/cybersecurity/ransomware-fact-sheet/index.html",
+          },
+          ".",
         ],
       },
 
@@ -9016,7 +9139,7 @@ export const articles: Article[] = [
       "Who should see patient records at a dental practice, how to spot a staff member snooping, and how to cut off access the day someone leaves, under HIPAA.",
     author: "Dolev Arama",
     datePublished: "2026-06-26T00:00:00+03:00",
-    dateModified: "2026-06-26T00:00:00+03:00",
+    dateModified: "2026-06-27T00:00:00+03:00",
     body: [
       {
         type: "p",
@@ -9211,7 +9334,7 @@ export const articles: Article[] = [
             text: "42 USC 1320d-6",
             href: "https://uscode.house.gov/view.xhtml?req=(title:42%20section:1320d-6%20edition:prelim)",
           },
-          ", and it reaches an individual employee, not just the practice. The base level carries a fine of up to $50,000 and up to a year in prison. If the person acted under false pretenses, it rises to five years, and if they did it to sell the data or for personal gain, it rises to a fine of up to $250,000 and up to ten years. The Justice Department, which ",
+          ", and it reaches an individual employee, not just the practice. The base level carries a fine of up to $50,000 and up to a year in prison. If the person acted under false pretenses, it rises to a fine of up to $100,000 and up to five years, and if they did it to sell the data or for personal gain, it rises to a fine of up to $250,000 and up to ten years. The Justice Department, which ",
           {
             text: "prosecutes these cases",
             href: "https://www.justice.gov/sites/default/files/olc/opinions/attachments/2014/11/17/hipaa_final.htm",
