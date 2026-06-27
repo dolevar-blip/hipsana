@@ -5869,7 +5869,7 @@ export const articles: Article[] = [
       "Is texting patients HIPAA compliant for a dental practice? Yes, but a second law, the TCPA, controls consent and opt-outs. Here is the full 2026 picture.",
     author: "Dolev Arama",
     datePublished: "2026-06-19T21:22:51+03:00",
-    dateModified: "2026-06-23T02:31:25+03:00",
+    dateModified: "2026-06-27T09:36:56+03:00",
     body: [
       {
         type: "p",
@@ -5903,7 +5903,9 @@ export const articles: Article[] = [
           ],
           [
             { strong: "The math is per message. " },
-            "TCPA damages run $500 to $1,500 for each text. Across a patient list that adds up fast, which is how a Texas dental group ended up settling for about $1 million.",
+            "TCPA damages run ",
+            { text: "$500 to $1,500 for each text", href: "https://uscode.house.gov/view.xhtml?req=(title:47%20section:227%20edition:prelim)" },
+            ". Across a patient list that adds up fast, which is how a Texas dental group ended up settling for about $1 million.",
           ],
         ],
       },
@@ -6236,7 +6238,7 @@ export const articles: Article[] = [
       "Are tracking pixels HIPAA compliant for a dental practice? It depends on the page. Here is what OCR, Google, the FTC, and the courts actually say in 2026.",
     author: "Dolev Arama",
     datePublished: "2026-06-19T23:59:07+03:00",
-    dateModified: "2026-06-24T00:41:30+03:00",
+    dateModified: "2026-06-27T09:36:56+03:00",
     body: [
       {
         type: "p",
@@ -6374,7 +6376,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Partly, and a lot of online advice gets this wrong in both directions. In June 2024, a federal court in American Hospital Association v. Becerra struck down one specific piece of OCR's guidance: the claim that an IP address combined with a visit to a public, no-login page about a health condition is automatically protected information. That theory is gone, nationwide. ",
+          "Partly, and a lot of online advice gets this wrong in both directions. In June 2024, a federal court in American Hospital Association v. Becerra struck down one specific piece of OCR's guidance: the claim that an IP address combined with a visit to a public, no-login page about a health condition is automatically protected information. That theory is gone, nationwide. HHS appealed the ruling and then dropped the appeal, so the vacatur is final. ",
           {
             text: "OCR notes the ruling at the top of its own bulletin",
             href: "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/hipaa-online-tracking/index.html",
@@ -6546,7 +6548,7 @@ export const articles: Article[] = [
         type: "ul",
         items: [
           [
-            "HHS Office for Civil Rights, \u201cUse of Online Tracking Technologies by HIPAA Covered Entities and Business Associates\u201d (hhs.gov, accessed June 2026), including the June 20, 2024 vacatur note for Am. Hosp. Ass\u2019n v. Becerra, No. 4:23-cv-1110 (N.D. Tex.).",
+            "HHS Office for Civil Rights, \u201cUse of Online Tracking Technologies by HIPAA Covered Entities and Business Associates\u201d (hhs.gov, accessed June 2026), including the June 20, 2024 vacatur note for Am. Hosp. Ass\u2019n v. Becerra, No. 4:23-cv-1110 (N.D. Tex.); HHS filed and then withdrew its appeal of that ruling in August 2024, leaving the vacatur final.",
           ],
           [
             "45 CFR \u00a7 164.502(a) (permitted uses and disclosures of PHI) and \u00a7 164.508(a)(3) (authorization required for marketing) (eCFR, current).",
@@ -6614,7 +6616,7 @@ export const articles: Article[] = [
       "Does HIPAA require MFA for a dental practice? Not by name. Here's what the rule requires now, what the 2026 proposal would change, and what OCR enforces.",
     author: "Dolev Arama",
     datePublished: "2026-06-22T01:31:01+03:00",
-    dateModified: "2026-06-23T02:31:25+03:00",
+    dateModified: "2026-06-27T09:36:56+03:00",
     body: [
       {
         type: "p",
@@ -6821,7 +6823,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "None of this means MFA is optional. The most vivid case in health care makes the opposite point. The largest breach ever reported to the federal government, the 2024 attack on Change Healthcare that exposed records on roughly 190 million people, began on a remote-access portal that had ", { text: "no multi-factor authentication", href: "https://www.finance.senate.gov/imo/media/doc/0501_witty_testimony.pdf" }, ". One stolen password was the whole entry. So MFA matters enormously. It is just not the box OCR checks when it writes the penalty. And the two are not a choice between each other. The risk analysis is the process that finds the exposure and tells you to turn MFA on; skip it, and you do not find the gap until a breach does.",
+          "None of this means MFA is optional. The most vivid case in health care makes the opposite point. The largest breach ever reported to the federal government, the 2024 attack on Change Healthcare that exposed records on about 192.7 million people, began on a remote-access portal that had ", { text: "no multi-factor authentication", href: "https://www.finance.senate.gov/imo/media/doc/0501_witty_testimony.pdf" }, ". One stolen password was the whole entry. So MFA matters enormously. It is just not the box OCR checks when it writes the penalty. And the two are not a choice between each other. The risk analysis is the process that finds the exposure and tells you to turn MFA on; skip it, and you do not find the gap until a breach does.",
         ],
       },
       {
@@ -7006,7 +7008,7 @@ export const articles: Article[] = [
             "American Dental Association, \u201cADA urges HHS to withdraw proposed HIPAA cybersecurity rule\u201d (ada.org, December 2025): the ADA joined a coalition of more than 100 organizations seeking withdrawal.",
           ],
           [
-            "Change Healthcare / UnitedHealth Group: the 2024 ransomware breach, the largest reported to HHS, began on a Citrix remote-access portal with no multi-factor authentication (UnitedHealth Group congressional testimony, 2024); affected individuals reported at roughly 190 million.",
+            "Change Healthcare / UnitedHealth Group: the 2024 ransomware breach, the largest reported to HHS, began on a Citrix remote-access portal with no multi-factor authentication (UnitedHealth Group congressional testimony, 2024); UnitedHealth Group's final count, reported to OCR in 2025, was approximately 192.7 million affected individuals.",
           ],
         ],
       },
