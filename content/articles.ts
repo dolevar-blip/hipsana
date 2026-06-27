@@ -101,7 +101,7 @@ export const articles: Article[] = [
       "Yes. The HIPAA Security Rule requires a risk analysis from every dental practice, solo or group. Here's what OCR actually checks, and how to get it done.",
     author: "Dolev Arama",
     datePublished: "2026-06-03T23:36:18+03:00",
-    dateModified: "2026-06-24T02:16:08+03:00",
+    dateModified: "2026-06-27T04:59:17+03:00",
     body: [
       {
         type: "p",
@@ -453,7 +453,7 @@ export const articles: Article[] = [
           { text: "a Notice of Proposed Rulemaking in the Federal Register", href: "https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information" },
           " on January 6, 2025, proposing the first major overhaul of the Security Rule in over two decades. The comment period closed in March 2025. As of this writing, ",
           { strong: "OCR has not published a final rule" },
-          ", and industry analysts now expect finalization in late 2026 or early 2027. So the changes below are proposed, not yet law.",
+          ", and the May 2026 finalization target on its regulatory agenda has now passed without one. OCR is still reviewing the more than 4,700 comments it received, and a coalition of over 100 healthcare organizations has asked HHS to withdraw the proposal. The rule could still be finalized, narrowed, delayed, or withdrawn, so the changes below are proposed, not yet law.",
         ],
       },
       {
@@ -559,7 +559,7 @@ export const articles: Article[] = [
       "A random HIPAA audit rarely ends in a fine. The real risk is an OCR investigation after a breach or complaint, and what failing costs a small dental practice.",
     author: "Dolev Arama",
     datePublished: "2026-06-04T14:18:38+03:00",
-    dateModified: "2026-06-23T02:31:25+03:00",
+    dateModified: "2026-06-27T04:59:17+03:00",
     body: [
       {
         type: "p",
@@ -702,16 +702,32 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The honest numbers are smaller than the headlines and larger than most owners assume. In October 2024, OCR launched a Risk Analysis Initiative to focus investigations on this one requirement, and in its first year it announced ", { text: "more than a dozen settlements", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, ", from small physician groups to hospital systems. Nearly all shared Bryan County's gap: no accurate, thorough risk analysis. A few published outcomes for that single failure:",
+          "The honest numbers are smaller than the headlines and larger than most owners assume. In October 2024, OCR launched a Risk Analysis Initiative to focus investigations on this one requirement, and in its first year it announced ", { text: "more than a dozen settlements", href: "/articles/dental-hipaa-breach-and-enforcement-report" }, ", from small physician groups to hospital systems. Nearly all shared Bryan County's gap: no accurate, thorough risk analysis. Four examples:",
         ],
       },
       {
-        type: "ul",
-        items: [
-          ["A behavioral health provider: $225,000, plus a two-year corrective action plan, after ransomware."],
-          ["Another small provider: $10,000."],
-          ["Bryan County's emergency service: $90,000."],
-          ["A wellness-plan vendor: about $228,000."],
+        type: "table",
+        headers: ["Provider", "Settlement", "What OCR found"],
+        rows: [
+          ["Health Fitness Corporation, an employee-wellness vendor", "$227,816", "A misconfigured server left records exposed online for about three years; no risk analysis"],
+          ["Deer Oaks, a behavioral health provider", "$225,000", "Ransomware, plus an earlier online exposure of records; no risk analysis"],
+          ["Bryan County Ambulance Authority", "$90,000", "Ransomware encrypting records for about 14,000 patients; no risk analysis"],
+          ["A Michigan surgical group", "$10,000", "Ransomware that encrypted and stole records for about 15,000 patients; no risk analysis"],
+        ],
+        caption: "Recent OCR settlements, every one for the same gap: no accurate, thorough risk analysis. Each also carried a corrective action plan OCR monitors for two to three years. Figures from HHS and OCR announcements.",
+      },
+      {
+        type: "p",
+        runs: [
+          "Each settlement above is documented on HHS.gov: ",
+          { text: "Health Fitness Corporation", href: "https://www.hhs.gov/press-room/ocr-settles-hipaa-security-rule-investigation-health-fitness-corporation.html" },
+          ", ",
+          { text: "Deer Oaks", href: "https://www.hhs.gov/press-room/ocr-hipaa-racap-deer-oaks.html" },
+          ", ",
+          { text: "Bryan County Ambulance Authority", href: "https://www.hhs.gov/about/news/2024/10/31/hhs-office-for-civil-rights-settles-hipaa-ransomware-cybersecurity-investigation-for-90000-dollars.html" },
+          ", and ",
+          { text: "Northeast Surgical Group", href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/northeast-surgical-group-ra-cap/index.html" },
+          ".",
         ],
       },
       {
@@ -883,6 +899,9 @@ export const articles: Article[] = [
         type: "ul",
         items: [
           ["HHS Office for Civil Rights, settlement with Bryan County Ambulance Authority (October 2024)."],
+          ["HHS Office for Civil Rights, settlement with Deer Oaks, a behavioral health provider (July 2025)."],
+          ["HHS Office for Civil Rights, settlement with Health Fitness Corporation (March 2025)."],
+          ["HHS Office for Civil Rights, Risk Analysis Initiative settlement with a Michigan surgical group ($10,000, January 2025)."],
           ["HHS Office for Civil Rights, HIPAA Audit Program."],
           ["HHS Office of Inspector General, review of OCR's HIPAA Audit Program (2024)."],
           ["45 CFR §§ 164.308, 164.400-414, 164.504(e), and 160.404-160.408."],
@@ -1228,7 +1247,7 @@ export const articles: Article[] = [
       "A HIPAA risk assessment for a dental practice runs $1,500–$6,000 with a specialist; the free HHS tool is $0. What each path buys, and why cheap can cost more.",
     author: "Dolev Arama",
     datePublished: "2026-06-05T13:43:24+03:00",
-    dateModified: "2026-06-23T02:31:25+03:00",
+    dateModified: "2026-06-27T04:59:17+03:00",
     body: [
       {
         type: "p",
@@ -1306,12 +1325,23 @@ export const articles: Article[] = [
           "There is no single price because there is no single product. Here are the four paths a small practice actually chooses between, cheapest first.",
         ],
       },
+      {
+        type: "table",
+        headers: ["Path", "Typical 2026 cost", "Best for"],
+        rows: [
+          ["Free HHS SRA tool", "$0", "A very small, low-complexity practice with time to do it carefully"],
+          ["DIY spreadsheet or template", "Near $0", "Almost no one"],
+          ["Compliance platform or software", "About $500 to $2,000+ a year", "A practice wanting structure and ongoing documentation without consultant prices"],
+          ["Consultant or specialist", "About $1,500 to $6,000 for the assessment", "Complexity, multiple locations, or a defensible expert-reviewed analysis"],
+        ],
+        caption: "What a dental HIPAA risk assessment costs in 2026, by path. These are market estimates; your number depends on your complexity and how much you keep in-house.",
+      },
       { type: "h3", text: "1. The free HHS SRA tool: $0" },
       {
         type: "p",
         runs: [
           { strong: "What it is. " },
-          "A downloadable application from the federal government, currently version 3.6, a set of multiple-choice questions, that walks you through the assessment and produces a report. It runs on your own computer, and the government never sees your answers.",
+          "A downloadable application from the federal government, currently version 3.6.1, a set of multiple-choice questions, that walks you through the assessment and produces a report. It runs on your own computer, and the government never sees your answers.",
         ],
       },
       {
@@ -1663,7 +1693,7 @@ export const articles: Article[] = [
         items: [
           ["HHS Office for Civil Rights, settlement with Vision Upright MRI (May 2025)."],
           ["HHS Office for Civil Rights, Risk Analysis Initiative (announced October 2024)."],
-          ["HHS, Security Risk Assessment (SRA) Tool (HealthIT.gov), version 3.6."],
+          ["HHS, Security Risk Assessment (SRA) Tool (HealthIT.gov), version 3.6.1."],
             ["HHS Office for Civil Rights, Guidance on Risk Analysis Requirements under the HIPAA Security Rule."],
           ["45 CFR § 164.308(a)(1)(ii)(A) (eCFR, current)."],
             ["45 CFR § 164.404 (Breach Notification Rule) (eCFR, current)."],
