@@ -2935,7 +2935,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "A few relationships do not need a BAA, and they trip people up. You do not sign one with another healthcare provider you share records with for a patient's treatment. That is why a dental lab you send impressions or images to for a case does not need one: under HIPAA's treatment exception, HHS and the ADA treat the lab as another health care provider, not your business associate. You also do not sign one with ", { text: "your own staff", href: "/articles/hipaa-staff-access-offboarding-dental-practice" }, ", who are workforce members rather than vendors. The treatment exception is narrow, though: if that lab or another provider does a non-treatment job for you, such as billing or records review, the BAA requirement comes back.",
+          "A few relationships do not need a BAA, and they trip people up. You do not sign one with another healthcare provider you share records with for a patient's treatment. That is why a dental lab you send impressions or images to for a case does not need one: under HIPAA's ", { text: "treatment exception", href: "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html" }, ", HHS and the ADA treat the lab as another health care provider, not your business associate. You also do not sign one with ", { text: "your own staff", href: "/articles/hipaa-staff-access-offboarding-dental-practice" }, ", who are workforce members rather than vendors. The treatment exception is narrow, though: if that lab or another provider does a non-treatment job for you, such as billing or records review, the BAA requirement comes back.",
         ],
       },
       {
