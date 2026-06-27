@@ -3986,7 +3986,7 @@ export const articles: Article[] = [
       "A patient asks for their dental records. HIPAA gives you 30 days, strict limits on fees, and few ways to say no. Get it wrong and one practice paid $70,000.",
     author: "Dolev Arama",
     datePublished: "2026-06-19T01:05:42+03:00",
-    dateModified: "2026-06-24T02:16:08+03:00",
+    dateModified: "2026-06-27T07:58:22+03:00",
     body: [
       {
         type: "p",
@@ -4019,6 +4019,36 @@ export const articles: Article[] = [
             href: "https://www.hhs.gov/about/news/2024/10/17/hhs-office-civil-rights-imposes-70000-civil-monetary-penalty-against-gums-dental-care-failure-provide-timely-access-patient-records.html",
           },
           ". Highlights added by Hipsana: the $70,000 penalty, OCR's 50th right-of-access enforcement action, and the roughly three years the records were withheld.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "The patient owns the right. " },
+            "A patient has a legal right to a copy of their own dental records -- the clinical chart, all imaging, and billing -- under 45 CFR 164.524.",
+          ],
+          [
+            { strong: "You have 30 days, and one extension. " },
+            "Thirty calendar days from the request, plus a single 30-day extension, and only if you send the patient written notice of the delay, with a completion date, before day 30.",
+          ],
+          [
+            { strong: "The fee rules are narrow. " },
+            "You may charge a reasonable, cost-based copying fee, but nothing for a copy delivered through a patient portal, and you can never hold records back over an unpaid bill.",
+          ],
+          [
+            { strong: "You usually cannot say no. " },
+            "The grounds for denying a request are short and specific. Suspecting the patient will misuse the records, or an unpaid balance, is not on the list.",
+          ],
+          [
+            { strong: "Getting it wrong is expensive. " },
+            "Gums Dental Care, a solo Maryland office, paid a $70,000 penalty -- OCR's 50th right-of-access action -- after refusing a patient's records for nearly three years.",
+          ],
+          [
+            { strong: "The trend is less time, not more. " },
+            "A proposed federal rule, not law today, would cut the 30 days to 15, and several states are already shorter, so follow whichever rule is stricter.",
+          ],
         ],
       },
       {
@@ -4417,7 +4447,7 @@ export const articles: Article[] = [
     description: "Patient photos need written HIPAA authorization, and review replies can break the law. The named OCR dental cases, two rules, and a safe review template.",
     author: "Dolev Arama",
     datePublished: "2026-06-19T05:06:18+03:00",
-    dateModified: "2026-06-21T05:55:09+03:00",
+    dateModified: "2026-06-27T08:23:52+03:00",
     body: [
       {
         type: "p",
@@ -4441,6 +4471,36 @@ export const articles: Article[] = [
           "Source: U.S. Department of Health and Human Services, Office for Civil Rights. ",
           { text: "Civil monetary penalty against Igbinadolor D.M.D. and Associates (2022)", href: "https://www.hhs.gov/sites/default/files/upi-npd.pdf" },
           ". Highlights added by Hipsana: the $50,000 penalty and the patient information disclosed in the practice's reply to the review.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "HIPAA does not ban social media. " },
+            "It draws two lines, and the second is the one most practices miss.",
+          ],
+          [
+            { strong: "Rule 1: posting a patient's photo or testimonial is marketing. " },
+            "A before-and-after image or a named testimonial used to promote your practice needs the patient's signed, written authorization first, under 45 CFR 164.508. A verbal yes does not count.",
+          ],
+          [
+            { strong: "Rule 2: a review reply can be a disclosure. " },
+            "The fact that a named person is your patient is itself protected health information, so confirming it publicly is a disclosure governed by 45 CFR 164.502(a), even when you share no clinical detail. This is the rule that catches polite, defensive replies.",
+          ],
+          [
+            { strong: "The safe reply stays generic and moves offline. " },
+            "Never confirm the person is a patient or mention their care, and not replying at all is always safe under HIPAA.",
+          ],
+          [
+            { strong: "Getting it wrong is expensive. " },
+            "A North Carolina practice, Igbinadolor, paid a $50,000 penalty for naming a patient in a Google-review reply; New Vision Dental paid $23,000 and Elite Dental $10,000 for the same move.",
+          ],
+          [
+            { strong: "Background details count too. " },
+            "A patient's chart left readable in a team photo, or a staff member's personal post that reveals a patient, is your disclosure just the same, and deleting the post does not undo a disclosure that has already happened.",
+          ],
         ],
       },
       {
@@ -4728,7 +4788,7 @@ export const articles: Article[] = [
     description: "We read the public HHS data so you don't have to: how dental practices actually get breached, and the one failure OCR keeps fining them for in 2026.",
     author: "Dolev Arama",
     datePublished: "2026-06-17T21:26:24+03:00",
-    dateModified: "2026-06-24T00:41:30+03:00",
+    dateModified: "2026-06-27T08:44:19+03:00",
     body: [
       {
         type: "p",
@@ -5002,8 +5062,8 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "The dollar figures range widely, from the $10,000 paid by the dental software vendor MMG Fusion to the $227,816 paid by a wellness company for a server left exposed for nearly three years, with settlements like Deer Oaks – The Behavioral Health Solution at $225,000 and a Syracuse surgery center at $250,000 in between. Across the settlements we reviewed, the breach that triggered the investigation was almost always ransomware, with a few phishing emails, a misconfigured server, and a vendor breach making up the rest, but the violation OCR cited was the same missing risk analysis in every one. The full list is in the appendix below. The check is never the real cost. Every settlement carries a corrective action plan, often monitored for two to three years, that orders the practice to build the program it skipped. By the middle of 2026, OCR had collected more than $1.7 million across ",
-          { text: "seven enforcement actions", href: "https://www.hhs.gov/press-room/ocr-settles-four-ransomware-investigations.html" },
+          "The dollar figures range widely, from the $10,000 paid by the dental software vendor MMG Fusion to the $227,816 paid by a wellness company for a server left exposed for nearly three years, with settlements like Deer Oaks – The Behavioral Health Solution at $225,000 and a Syracuse surgery center at $250,000 in between. Across the settlements we reviewed, the breach that triggered the investigation was almost always ransomware, with a few phishing emails, a misconfigured server, and a vendor breach making up the rest, but the violation OCR cited was the same missing risk analysis in every one. The full list is in the appendix below. The check is never the real cost. Every settlement carries a corrective action plan, often monitored for two to three years, that orders the practice to build the program it skipped. By the middle of 2026, OCR had collected $1,278,000 across ",
+          { text: "six enforcement actions", href: "https://www.hhs.gov/press-room/ocr-settles-four-ransomware-investigations.html" },
           " in that year alone. ",
           {
             text: "An OCR investigation",
@@ -5171,7 +5231,7 @@ export const articles: Article[] = [
     description: "Under HIPAA, a parent is usually a child's personal representative who can get the dental records, with exceptions. OCR made it a 2025 enforcement priority.",
     author: "Dolev Arama",
     datePublished: "2026-06-19T15:45:16+03:00",
-    dateModified: "2026-06-24T02:16:08+03:00",
+    dateModified: "2026-06-27T08:30:21+03:00",
     body: [
       {
         type: "p",
@@ -5205,6 +5265,36 @@ export const articles: Article[] = [
           "Source: U.S. Department of Health and Human Services, Office for Civil Rights. ",
           { text: "Resolution agreement with Paradise Family Dental (September 2022)", href: "https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/paradise/index.html" },
           ". Highlights added by Hipsana: the $25,000 settlement, the eight-plus months the records were delayed, and that it was one of three dental practices OCR settled with the same day.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "A parent is usually the child's personal representative. " },
+            "Under 45 CFR 164.502(g), a parent with authority to make a child's health decisions stands in the child's shoes and has the same right of access to the dental records that the patient would have.",
+          ],
+          [
+            { strong: "The exceptions are narrow, and routine dental care rarely hits them. " },
+            "A parent is not the personal representative for care the child lawfully consented to alone, care a court directed, or care the parent agreed to keep confidential (45 CFR 164.502(g)(3)), and even then the parent still gets the rest of the record.",
+          ],
+          [
+            { strong: "Custody does not decide access. " },
+            "HIPAA does not distinguish a custodial from a non-custodial parent. A parent who is the personal representative keeps access after a divorce unless a court order or state law removes it, and you cannot require both parents to sign off.",
+          ],
+          [
+            { strong: "You can refuse only on a specific basis. " },
+            "An emancipated minor, a record tied to care the minor consented to alone, a court order limiting access, or a professional judgment that access could endanger the child under 45 CFR 164.502(g)(5). Never an invented reason or a blanket rule.",
+          ],
+          [
+            { strong: "This is a live enforcement priority. " },
+            "On December 3, 2025, OCR warned it will use civil money penalties to enforce parental access, and that wrongly making a child authorize it can itself violate the rule. Paradise Family Dental, a Las Vegas office, settled for $25,000 after taking more than eight months to give a mother her own and her child's records.",
+          ],
+          [
+            { strong: "A portal that locks a child's account can be the trap. " },
+            "If a default setting, often at age 13, blocks a parent who is the personal representative, that is the practice's problem to fix with its portal vendor, not a reason the parent loses access.",
+          ],
         ],
       },
       {
