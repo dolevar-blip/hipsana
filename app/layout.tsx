@@ -54,6 +54,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: "DxednasvDpZShZFD7yvSyP9yDrYe1b6whSCgrtqQh8E",
+  },
 };
 
 const siteJsonLd = {
@@ -92,7 +95,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${lexend.variable} ${ibmPlexSans.variable}`}>
       <body className="min-h-screen flex flex-col">
-        <a
+        
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-teal focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-paper"
         >
