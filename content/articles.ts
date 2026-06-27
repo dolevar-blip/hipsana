@@ -2091,7 +2091,7 @@ export const articles: Article[] = [
       "AI scribes are HIPAA compliant only when the vendor signs a BAA and your risk analysis lists the tool. The five-question test to run before you sign up.",
     author: "Dolev Arama",
     datePublished: "2026-06-12T11:26:14+03:00",
-    dateModified: "2026-06-23T02:31:25+03:00",
+    dateModified: "2026-06-27T06:36:32+03:00",
     body: [
       {
         type: "p",
@@ -2231,6 +2231,18 @@ export const articles: Article[] = [
         runs: [
           "Send these in writing before any pilot begins, and keep the replies with the contract. A vendor that lives comfortably with HIPAA answers all five inside a day. Evasion on any one of them is itself an answer.",
         ],
+      },
+      {
+        type: "table",
+        headers: ["The question to send in writing", "The red-flag answer to watch for"],
+        rows: [
+          ["1. Will you sign a BAA for the exact plan I'm buying?", "A \"fully compliant\" claim or badge, no signed BAA on your tier"],
+          ["2. Where does the recording go, and what does the BAA say about keeping it?", "Storage and deletion answered on a marketing page, not in the BAA"],
+          ["3. Do you train your AI on my patients' data, and is the answer in the contract?", "\"We anonymize everything,\" with no named method"],
+          ["4. Who else touches the data, and are they under BAAs too?", "Cannot confirm in writing that its subcontractors are under BAAs"],
+          ["5. If you have a breach, what do I get, and when?", "\"That has never happened,\" with no written notice clause or day count"],
+        ],
+        caption: "The five questions to send any AI scribe vendor before a pilot, with the answer that should stop you. Each is explained in detail below.",
       },
       { type: "h3", text: "1. Will you sign a BAA for the exact plan I'm buying?" },
       {
@@ -2453,7 +2465,7 @@ export const articles: Article[] = [
       "Free AI tools don't sign BAAs, so one pasted patient detail is an impermissible disclosure. The five-part AI use policy a dental practice needs.",
     author: "Dolev Arama",
     datePublished: "2026-06-12T14:54:15+03:00",
-    dateModified: "2026-06-23T02:31:25+03:00",
+    dateModified: "2026-06-27T06:36:32+03:00",
     body: [
       {
         type: "p",
@@ -2607,7 +2619,25 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "A policy that only says no will lose to the time pressure that sent staff to AI in the first place; the survey data shows people reach for these tools to work faster, not to misbehave. So give the lane. AI is fine for work with zero patient information in it: blank consent templates, job postings, a recall letter with placeholder fields, supplier emails, patient-education drafts about procedures in general. And if the practice adopts a tool that is allowed to touch patient data, name it in the policy as the approved channel. An ambient scribe with a signed BAA is the usual first case, and ",
+          "A policy that only says no will lose to the time pressure that sent staff to AI in the first place; the survey data shows people reach for these tools to work faster, not to misbehave. So give the lane, and draw it precisely: the test is whether patient information is in the prompt, not which task it is.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Fine to draft with a free AI tool", "Off-limits without a signed BAA"],
+        rows: [
+          ["Blank consent, intake, and recall templates", "Patient names, contact lists, or appointment schedules"],
+          ["Job postings and internal staff documents", "Photos, x-rays, or any clinical image"],
+          ["General patient-education drafts about a procedure", "Chart notes, treatment details, or insurance information"],
+          ["Supplier and vendor emails", "Voicemail or phone-message contents"],
+          ["A recall letter written with placeholder fields", "Any case story specific enough to identify a patient even with the name removed"],
+        ],
+        caption: "The line a staff AI-use policy draws. Everything in the right column is patient information, so it needs a tool with a signed Business Associate Agreement, never a free or consumer one.",
+      },
+      {
+        type: "p",
+        runs: [
+          "If the practice adopts a tool that is allowed to touch patient data, name it in the policy as the approved channel. An ambient scribe with a signed BAA is the usual first case, and ",
           {
             text: "how to vet an AI scribe before it hears a patient",
             href: "/articles/are-ai-scribes-hipaa-compliant-dental-practice",
@@ -2809,7 +2839,7 @@ export const articles: Article[] = [
       "Does your dental practice need a BAA? Yes, if a vendor handles patient data on your behalf. Which vendors, how to get one, what a missing agreement can cost.",
     author: "Dolev Arama",
     datePublished: "2026-06-17T02:56:36+03:00",
-    dateModified: "2026-06-23T02:31:25+03:00",
+    dateModified: "2026-06-27T06:36:32+03:00",
     body: [
       {
         type: "p",
@@ -2905,50 +2935,32 @@ export const articles: Article[] = [
         ],
       },
       {
-        type: "ul",
-        items: [
-          [
-            { strong: "Practice-management and imaging software (PMS, EHR, the cloud platform behind your charts and x-rays): " },
-            "Yes. It stores your entire patient database. Cloud-based vendors almost always have a BAA ready on request.",
-          ],
-          [
-            { strong: "Billing service or claims clearinghouse: " },
-            "Yes. It transmits claims containing patient data to payers on your behalf.",
-          ],
-          [
-            { strong: "IT support or managed-services provider (MSP): " },
-            "Almost always yes. If the company can reach the systems that hold patient data, even only to fix them, it is a business associate. It is one of the most commonly overlooked.",
-          ],
-          [
-            { strong: "Cloud storage and backup: " },
-            "Yes. A service that stores electronic patient data is a business associate even when the data is encrypted and the vendor never views it.",
-          ],
-          [
-            { strong: "Email, secure messaging, and file-sharing: " },
-            "It depends. If the service stores or routes patient data through its own systems, such as ", { text: "emailing an x-ray to a specialist", href: "/articles/is-email-hipaa-compliant-dental-practice" }, ", the provider needs a BAA. A pure transmission line, like your phone carrier or internet provider, does not.",
-          ],
-          [
-            { strong: "Records, film, and hard-drive disposal (shredding and e-waste): " },
-            "Yes, when the vendor handles media that still contains patient data. Raleigh's vendor was, in effect, a film-recycling service. When and how to dispose of those records is its own question, covered in ", { text: "how long to keep dental records and how to destroy them", href: "/articles/how-long-to-keep-dental-records" }, ".",
-          ],
-          [
-            { strong: "Answering service, virtual reception, and scheduling: " },
-            "Yes, if the staff or software can see patient names, numbers, or appointment details.",
-          ],
-          [
-            { strong: "AI tools (scribes, chatbots, imaging assistants): " },
-            "Yes, on the same terms as any other vendor. Whether ",
-            {
-              text: "ChatGPT is HIPAA compliant in a dental practice",
-              href: "/articles/is-chatgpt-hipaa-compliant-dental-practice",
-            },
-            ", and how to run ",
-            {
-              text: "the five-question BAA test on an AI scribe",
-              href: "/articles/are-ai-scribes-hipaa-compliant-dental-practice",
-            },
-            ", are their own questions.",
-          ],
+        type: "table",
+        headers: ["Vendor or service", "Needs a BAA?", "Why"],
+        rows: [
+          ["Practice-management or imaging software (PMS, EHR)", "Yes", "Holds your whole patient database"],
+          ["Billing service or claims clearinghouse", "Yes", "Transmits patient data to payers"],
+          ["IT or managed-services provider (MSP)", "Almost always", "Can reach the systems holding patient data, even just to fix them"],
+          ["Cloud storage and backup", "Yes", "Stores patient data, even encrypted and unread"],
+          ["Email, messaging, or file-sharing", "It depends", "Yes if it stores patient data; not a pure conduit"],
+          ["Records, film, or drive disposal", "Yes", "Handles media that still holds patient data"],
+          ["Answering service or virtual reception", "Yes", "Can see names, numbers, appointments"],
+          ["AI scribes, chatbots, imaging tools", "Yes", "Same terms as any data vendor"],
+        ],
+        caption: "How common dental-office vendors fall under HIPAA's business-associate rule. A starting map; check each contract.",
+      },
+      {
+        type: "p",
+        runs: [
+          "Four of these have their own deep-dives: ",
+          { text: "emailing patient data to a specialist", href: "/articles/is-email-hipaa-compliant-dental-practice" },
+          ", ",
+          { text: "disposing of records that still hold patient data", href: "/articles/how-long-to-keep-dental-records" },
+          ", ",
+          { text: "whether ChatGPT can ever be a compliant vendor", href: "/articles/is-chatgpt-hipaa-compliant-dental-practice" },
+          ", and ",
+          { text: "the five-question BAA test for an AI scribe", href: "/articles/are-ai-scribes-hipaa-compliant-dental-practice" },
+          ".",
         ],
       },
       {
@@ -3349,7 +3361,7 @@ export const articles: Article[] = [
         headers: ["Your practice", "Likely path"],
         rows: [
           ["Solo owner, one office", "Run it yourself with software"],
-          ["Two to five providers, one office", "Either \u2014 your time decides"],
+          ["Two to five providers, one office", "Either -- your time decides"],
           ["Multiple locations", "Hand it to an MSP"],
           ["Heavy imaging or teledentistry", "Hand it to an MSP"],
           ["A recent breach, or no spare hours", "Hand it to an MSP"],
@@ -3607,7 +3619,7 @@ export const articles: Article[] = [
       "Is your dental practice's email HIPAA compliant? Standard Gmail and Microsoft 365 don't encrypt patient records by default. Here's how to fix it.",
     author: "Dolev Arama",
     datePublished: "2026-06-18T00:33:47+03:00",
-    dateModified: "2026-06-21T05:46:11+03:00",
+    dateModified: "2026-06-27T06:36:32+03:00",
     body: [
       {
         type: "p",
@@ -3710,6 +3722,15 @@ export const articles: Article[] = [
         runs: [
           "This is where most dental practices are exposed. Panoramic films, CBCT scans, intraoral photos, and the referral note that travels with them are all ", { text: "protected health information", href: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-160/subpart-A/section-160.103" }, ". Emailing them to a specialist, a lab, or another office is provider-to-provider communication, and the rules here are stricter than they are for a message to a patient.",
         ],
+      },
+      {
+        type: "table",
+        headers: ["Emailing patient data to...", "Consent to fall back on?", "Must it be encrypted?"],
+        rows: [
+          ["The patient, for their own records", "Yes, after a plain-language warning", "No, if the patient asks for plain email"],
+          ["A specialist, lab, or another office", "No, none is available", "Yes, or send through a BAA-covered service"],
+        ],
+        caption: "The line HIPAA draws by recipient. A patient may accept plain email for their own records after a warning; provider-to-provider email of an x-ray or referral has no such fallback and must be secured.",
       },
       {
         type: "p",
