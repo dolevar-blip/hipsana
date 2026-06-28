@@ -59,8 +59,8 @@ export default function ScorecardPage() {
             see on its own.
           </p>
           <p className="prose-hipsana mt-6">
-            This free Scorecard checks the 10 HIPAA controls that matter most for a
-            solo practice.
+            This free Scorecard checks the 10 HIPAA controls that matter most for an
+            independent practice.
           </p>
           <p className="prose-hipsana mt-6">
             In about three minutes you get a score out of 100 and a written review
