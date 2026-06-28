@@ -107,6 +107,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "A solo doctor once reported a data breach to the federal government, and ended up paying $100,000 to settle, for one document he didn't have. Here is the document nearly every dental practice is required to keep, why a checklist won't pass for it, and how to tell if you are exposed.",
+          " That one document is also the groundwork the rest of HIPAA builds on, so ",
+          { text: "what HIPAA actually requires of a dental practice", href: "/articles/hipaa-compliance-for-dental-practices" },
+          " is the place to see the whole structure.",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -565,6 +568,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "A surprise HIPAA audit almost never ends in a fine. What actually costs a dental practice five or six figures is the OCR investigation that follows a breach or a complaint, and it usually comes down to one document most practices never finished: the risk analysis. Here is what that process really looks like, what it costs, and how to get ahead of it.",
+          " An OCR investigation weighs your whole program, not a single form, so it helps to first see ",
+          { text: "the full set of HIPAA rules a dental practice follows", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -975,6 +981,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "Someone in your office clicks the wrong link, or your practice-management software (Dentrix, Eaglesoft, or Open Dental) stops opening and a ransom note appears on the screen. Maybe a laptop full of patient records walks out the door. The moment you realize patient data may be exposed, a legal clock starts. Under HIPAA you have a fixed number of days to tell the people affected, and federal regulators pay attention to what you do next. Here is the order to do things in, the deadlines that actually bind you, and the one mistake that turns a bad week into a federal investigation.",
+          " A breach also puts the rest of your HIPAA program under review, so it is worth knowing ",
+          { text: "how the four HIPAA rules fit together", href: "/articles/hipaa-compliance-for-dental-practices" },
+          " before that day arrives.",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -1253,6 +1262,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "Ask three vendors what a HIPAA risk assessment costs and you will get three numbers, anywhere from $0 to $15,000. Each one can be defended, which is why the price tag means little until you separate what you are actually buying. For a solo dental office, the assessment itself is usually a few thousand dollars. The expensive mistake is treating the cheapest version as the whole job, then learning during an investigation that it was not.",
+          " The assessment is a single line item, not the whole bill, and ",
+          { text: "your practice's wider HIPAA obligations", href: "/articles/hipaa-compliance-for-dental-practices" },
+          " is where the rest of the spending lives.",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -1732,6 +1744,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "The question usually arrives the practical way: somewhere in the past month, there is a fair chance someone in your office pasted a patient email into ChatGPT to draft a reply. It is fast, it writes well, and it is free. That one paste is where most practices meet this question without realizing they asked it.",
+          " Whether a given tool is safe is easier to judge against ",
+          { text: "the complete picture of HIPAA for a dental practice", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -2103,6 +2118,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "The pitch has probably reached you already: an AI scribe listens to the exam-room conversation, writes the clinical note while you work, and gives you your evenings back. The demos are genuinely impressive. But the demo is not where compliance lives. Compliance lives in one contract the salesperson rarely opens first, and a small Illinois practice once paid $31,000 for not having it.",
+          " A scribe is simpler to weigh once you can see ",
+          { text: "how HIPAA as a whole applies to a dental office", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -2482,6 +2500,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "Picture the quiet version of a data breach. Your front-desk coordinator is behind on recall letters, so she pastes a list of patient names into a free chatbot and asks it to draft the wording. No hacker, no ransom note, nothing on the news. Under HIPAA, the upload itself is the disclosure: patient information just left your practice for a company that owes your patients nothing. In survey after survey, most healthcare workers admit to using exactly these tools for work.",
+          " This policy is one of the written safeguards inside ",
+          { text: "the rest of what HIPAA requires of your office", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -2845,6 +2866,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "A North Carolina clinic gave a vendor the X-ray films of 17,300 patients to recycle for the silver. No contract, just a phone call. That missing piece of paper cost it $750,000. The problem was not the recycling; it was handing patient records to a vendor without a business associate agreement (BAA), the contract HIPAA requires first. If a company creates, receives, stores, or transmits your patients' data, you need a signed BAA. Here is which vendors qualify, how to get one, and what skipping it costs.",
+          " Vendor agreements are one layer of ",
+          { text: "the four federal rules a dental practice answers to", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -3258,6 +3282,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "HIPAA compliance is not a product you buy once. The law treats it as an ongoing program: find your risks, fix them, document everything, train your people, and prove it year after year. That is why a single price never fits. You are funding a set of moving parts that renew annually, not a one-time invoice.",
+          " That program is ",
+          { text: "your full HIPAA obligations as a dental practice", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ", and seeing all of it in one place keeps the budgeting honest.",
         ],
       },
       {
@@ -3625,6 +3652,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "Probably not the way you are using it. HIPAA does not ban emailing patient information, but it does require you to secure it, and standard Gmail or Microsoft 365 will not encrypt an outgoing message on its own. After a small clinic sent the records of 1,263 patients to an unknown email account, it paid $25,000 to settle with federal regulators. Here is what the rules actually require, what is changing in 2026, and how to close the gap before it is your practice.",
+          " The same Security Rule logic runs through ",
+          { text: "the broader HIPAA framework a dental practice works within", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -3998,6 +4028,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "When a patient asks for their records, you generally have 30 calendar days to provide them, plus one 30-day extension if you send written notice first. You can charge a reasonable, cost-based fee for copies, but not when a bill is unpaid, and not for records sent through a patient portal.",
+          " For the other rights and duties around patient records, start with ",
+          { text: "the complete HIPAA picture for an independent dental practice", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       {
@@ -4459,6 +4492,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "HIPAA does not ban dental practices from social media. It draws two lines: you need a patient's written authorization to post their photo or testimonial, and you cannot reveal that someone is your patient when you reply to a review. Get either wrong and a routine marketing task becomes a HIPAA disclosure. Here is what counts, and what OCR has enforced.",
+          " For the other places HIPAA's lines fall, begin with ",
+          { text: "what HIPAA expects of a dental practice overall", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       {
@@ -5237,6 +5273,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "In 2022, a Las Vegas dental practice paid $25,000 to settle a federal HIPAA case. The trigger was not a breach or a hacker. A mother had asked for copies of her own and her child's dental records, and the practice spent more than eight months not handing them over.",
+          " Who may receive a child's records is one narrow question within ",
+          { text: "the full HIPAA picture for a dental practice", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       {
@@ -5558,6 +5597,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "Cyber insurance is the thing that pays when a breach turns into a bill. This page explains what it covers, what it leaves out, what it tends to cost a small practice, and the one question owners get wrong more than any other: does it actually cover a HIPAA penalty? We do not sell insurance, so nothing here is a pitch. It is what the primary sources and the policies themselves say.",
+          " Insurance sits alongside compliance rather than replacing it, and the compliance side is ",
+          { text: "your dental practice's broader HIPAA compliance", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -5875,6 +5917,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "Yes, and that is only half of the answer. HIPAA lets a dental practice text appointment reminders without special permission, as long as the message stays minimal. But a second federal law decides whether you were allowed to text in the first place, and whether you stopped when a patient asked you to. That law is the TCPA, and a different agency enforces it. In 2024, a Texas dental group agreed to pay about $1 million to settle a class-action texting lawsuit that covered thousands of people over several years. Here is what each law actually requires, what changed in 2026, and how to satisfy both.",
+          " To see where texting fits the rest, start from ",
+          { text: "what else HIPAA asks of a dental practice", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -6244,6 +6289,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "The honest answer is that it depends which page the pixel sits on. On a homepage that only shows information, a Facebook or Google tracking pixel is usually fine. On your online booking page, the same pixel can quietly hand a patient's information to a third party, and that is the version that has drawn regulatory attention and lawsuits. In 2025, the dental chain Aspen Dental agreed to a settlement fund of more than $18 million over allegations built on that scenario. Here is where the line actually falls, what a 2024 court ruling did and did not change, and how to tell if your own site is on the wrong side of it.",
+          " Your website is just one surface HIPAA reaches, among those mapped in ",
+          { text: "the bigger HIPAA compliance picture", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -6622,6 +6670,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "Not by name. The HIPAA Security Rule does not name multi-factor authentication, or MFA, as a requirement. What it requires is that you verify anyone reaching patient data is who they claim to be, and it leaves the method to your risk analysis. In practice that makes MFA the reasonable choice, and a proposed 2026 rule would make it explicit. Here is what that means for your practice right now.",
+          " MFA is one technical control, and ",
+          { text: "where this sits in your overall HIPAA duties", href: "/articles/hipaa-compliance-for-dental-practices" },
+          " is the wider view.",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -7061,6 +7112,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "HIPAA does not tell you how long to keep dental records. Your state does, and the answer usually runs five to ten years, longer for children. What HIPAA does tell you is how to destroy those records once the clock runs out, and getting that part wrong is its own violation. One dermatology practice put labeled specimen containers in a parking-lot dumpster for years and paid the government $300,640. A Kokomo dentist paid a company to shred 63 boxes of old charts; the boxes turned up in a church dumpster instead, and he was the one the state fined. Here is what the rules actually require, where the traps are, and how to clear out old records without creating a breach.",
+          " Retention and disposal are one corner of ",
+          { text: "the other HIPAA rules that apply to your practice", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -7496,6 +7550,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "A subpoena is a written demand for records or testimony. A court order is a command signed by a judge. They can arrive in similar envelopes, they are not the same thing under HIPAA, and treating the first like the second is how a dental practice ends up on the wrong side of a privacy lawsuit.",
+          " A mishandled subpoena draws the same regulatory scrutiny as any other misstep, so it helps to see ",
+          { text: "the wider set of HIPAA duties a practice carries", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -7906,6 +7963,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "No, it is not the law yet. The 2026 HIPAA Security Rule is a proposed rule, published for comment in January 2025 and still unfinished. If it is finalized, it would be the most significant change to HIPAA's security rules since 2013, and it would apply to your dental practice with no exemption for small offices. But a proposed rule binds no one, this one missed its own target date, and more than a hundred health care groups, the American Dental Association among them, have asked the government to withdraw it. Here is what it would change, where it actually stands, and what is worth doing now.",
+          " The proposal touches the Security Rule specifically, while ",
+          { text: "how all of HIPAA fits a dental practice", href: "/articles/hipaa-compliance-for-dental-practices" },
+          " covers the rules in force today.",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -8321,6 +8381,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "When a family member asks a dental practice for the records of a patient who has died, HIPAA gives three different answers, and which one applies depends on who is asking. The personal representative of the estate, usually the executor or administrator, is treated as the patient and can get the records relevant to settling the estate. A family member who was involved in the patient's care can receive the information relevant to that involvement, unless the patient had objected. Someone who only held a health-care power of attorney during the patient's life is not automatically entitled to anything after death. Here is how to tell them apart, and what to ask for first.",
+          " Records after a death are one situation among many in ",
+          { text: "the broader HIPAA duties your practice carries every day", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -8717,6 +8780,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "When ransomware hits a dental practice, two problems arrive at the same moment. The office cannot see patients because the schedule, the charts, and the imaging are locked, and underneath that, HIPAA very likely treats the attack as a reportable breach that is already on a clock. The tempting move, restoring from a backup and saying nothing, is the one that turns a bad week into an enforcement file. Here is what to do in the first hours, how the notification rules work, and how to set things up now so an attack stays an IT problem instead of becoming a HIPAA problem on top of it.",
+          " An attack tests your security and your breach response at once, two of ",
+          { text: "the four HIPAA rules a dental practice works under", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       { type: "h2", text: "The short version" },
@@ -9145,6 +9211,9 @@ export const articles: Article[] = [
         type: "p",
         runs: [
           "Two things decide whether your practice controls its patient records: who you let see them, and how fast you take that access away. HIPAA does not ask you to lock the front desk out of the schedule, but it does ask you to give each person only the access their job needs, to be able to tell when someone opens a record they had no business opening, and to cut off a departing employee before they walk out the door. Get those right and an insider problem stays small. Get them wrong and a single login you forgot to turn off becomes an enforcement file. Here is what HIPAA actually requires, and what to do about it.",
+          " Access control is one layer; for the full layout, start with ",
+          { text: "HIPAA compliance for a dental practice", href: "/articles/hipaa-compliance-for-dental-practices" },
+          ".",
         ],
       },
       { type: "h2", text: "The short version" },
