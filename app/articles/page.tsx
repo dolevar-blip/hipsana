@@ -19,12 +19,12 @@ function formatDate(iso: string): string {
 }
 
 export const metadata: Metadata = {
-  title: "HIPAA Compliance Guides for Dental Practices",
+  title: "Dental HIPAA Guides for Independent Practices",
   description:
     "Plain-language HIPAA and cybersecurity guidance for independent dental practices. Regulatory claims checked against HHS, OCR, or NIST.",
   alternates: { canonical: "/articles" },
   openGraph: {
-    title: "HIPAA Compliance Guides for Dental Practices · Hipsana",
+    title: "Dental HIPAA Guides for Independent Practices · Hipsana",
     description:
       "Plain-language HIPAA and cybersecurity guidance for independent dental practices.",
     url: `${SITE_URL}/articles`,
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "HIPAA Compliance Guides for Dental Practices · Hipsana",
+    title: "Dental HIPAA Guides for Independent Practices · Hipsana",
     description:
       "Plain-language HIPAA and cybersecurity guidance for independent dental practices.",
     images: ["/og-default.png"],
