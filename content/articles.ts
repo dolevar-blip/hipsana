@@ -11,7 +11,7 @@ export type InlineRun =
 
 export type Block =
   | { type: "p"; runs: InlineRun[] }
-  | { type: "h2"; text: string }
+  | { type: "h2"; text: string; id?: string }
   | { type: "h3"; text: string }
   | { type: "ul"; items: InlineRun[][] }
   | { type: "quote"; runs: InlineRun[] }
@@ -41,7 +41,7 @@ export type Article = {
   status: "published" | "draft";
   title: string; // <h1> and <title>
   metaTitle?: string; // optional shorter SERP <title>; overrides title for the tab/SERP
-  kind?: "report"; // optional content-type label; drives the "Report" eyebrow and the index/home prominence. Absent = standard guide.
+  kind?: "report" | "pillar"; // optional content-type label; drives the "Report" eyebrow and the index/home prominence. Absent = standard guide.
   description: string; // meta description and on-page intro
   author: string;
   datePublished: string; // ISO date, e.g. "2026-06-02"
@@ -9554,6 +9554,508 @@ export const articles: Article[] = [
         question: "We use one shared computer at the front desk. Is that a problem?",
         answer:
           "The shared computer is not the problem; the shared account is. As long as each person signs in under their own login and the workstation locks itself after a short period of inactivity, a single physical computer is fine. What HIPAA does not want is several people working under one username, because that erases the trail of who accessed what.",
+      },
+    ],
+  },
+  {
+    slug: "hipaa-compliance-for-dental-practices",
+    status: "published",
+    title: "HIPAA Compliance for Dental Practices: What's Actually Required",
+    metaTitle: "HIPAA Compliance for Dental Practices (2026)",
+    kind: "pillar",
+    description:
+      "What HIPAA requires of a dental practice: the four rules in plain language, plus a map from your situation to the guide that covers it. Primary-source cited.",
+    author: "Dolev Arama",
+    datePublished: "2026-06-28T12:00:00+03:00",
+    dateModified: "2026-06-28T12:00:00+03:00",
+    body: [
+      {
+        type: "p",
+        runs: [
+          "HIPAA compliance for a dental practice means meeting four federal rules that protect patient information: the Privacy Rule, the Security Rule, the Breach Notification Rule, and the Enforcement Rule. Almost every dental office is bound by them. The information they protect is called PHI, or protected health information: a patient's name tied to their treatment, an X-ray, an insurance ID, or anything that links a person to their care. In electronic form it is ePHI. This page is the map. It covers what each rule asks of you in plain language, helps you find the answer to your specific situation, and points to the deep-dive guide for it.",
+        ],
+      },
+      { type: "h2", text: "The short version" },
+      {
+        type: "ul",
+        items: [
+          [
+            "HIPAA rests on four rules: ",
+            { strong: "Privacy" },
+            " (how patient information is used and shared), ",
+            { strong: "Security" },
+            " (how the electronic form is protected), ",
+            { strong: "Breach Notification" },
+            " (what you do after an exposure), and ",
+            { strong: "Enforcement" },
+            " (how the government investigates and penalizes).",
+          ],
+          [
+            { strong: "There is no size exemption." },
+            " A solo dentist and a large group answer to the same rules. The trigger is billing or checking eligibility electronically, not the size of the practice.",
+          ],
+          [
+            { strong: "The single most-cited failure in OCR enforcement is the missing or inadequate risk analysis." },
+            " It is also the gap most practices can fix first.",
+          ],
+          [
+            "A ",
+            { strong: "Notice of Privacy Practices" },
+            ", a ",
+            { strong: "written risk analysis" },
+            ", ",
+            { strong: "workforce training" },
+            ", and a named ",
+            { strong: "Privacy Officer and Security Officer" },
+            " are baseline obligations, not optional extras.",
+          ],
+          [
+            "The ",
+            { strong: "2026 Security Rule overhaul is a proposed rule, not law." },
+            " Today's rule still governs.",
+          ],
+        ],
+      },
+      {
+        type: "image",
+        src: "/hipaa-four-rules-dental-practice.webp",
+        alt: "Diagram of the four HIPAA rules a dental practice follows: the Privacy Rule, the Security Rule, the Breach Notification Rule, and the Enforcement Rule, around the patient information (PHI and ePHI) they protect.",
+        width: 1500,
+        height: 760,
+        caption: [
+          { strong: "The four HIPAA rules a dental practice must meet." },
+          " Prepared by Hipsana.",
+        ],
+      },
+      { type: "p", runs: [{ strong: "On this page" }] },
+      {
+        type: "ul",
+        items: [
+          [{ text: "What HIPAA actually requires", href: "#what-hipaa-requires" }],
+          [{ text: "Find your situation: which rule applies", href: "#find-your-situation" }],
+          [{ text: "Your patients' rights and the Privacy Rule", href: "#privacy-rule" }],
+          [{ text: "Keeping patient data secure: the Security Rule", href: "#security-rule" }],
+          [{ text: "When something goes wrong: breach and enforcement", href: "#breach-and-enforcement" }],
+          [{ text: "What HIPAA compliance costs", href: "#what-it-costs" }],
+          [{ text: "Frequently asked questions", href: "#faq" }],
+        ],
+      },
+      {
+        type: "h2",
+        text: "What does HIPAA actually require of a dental practice?",
+        id: "what-hipaa-requires",
+      },
+      {
+        type: "p",
+        runs: [
+          "HIPAA requires a covered dental practice to protect patient information across four rules that interlock rather than stand alone. The Privacy Rule governs how that information is used and disclosed. The Security Rule governs how its electronic form is safeguarded. The Breach Notification Rule sets what happens after an exposure. The Enforcement Rule defines how the HHS Office for Civil Rights, known as OCR, investigates and sets penalties.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "You are almost certainly covered. " },
+          "A dental practice becomes a HIPAA \"covered entity\" the moment it sends a standard electronic transaction: an insurance claim, an eligibility check, a claim-status inquiry. Nearly every practice that bills insurance electronically meets that test. The trigger is the electronic transaction, not the dentistry and not the number of chairs. When HHS proposed the 2026 Security Rule overhaul, it weighed the burden on small and rural providers and declined to carve them out.",
+        ],
+      },
+      { type: "p", runs: ["Here is what each rule does."] },
+      {
+        type: "p",
+        runs: [
+          { strong: "The Privacy Rule" },
+          " (45 CFR Part 160 and Part 164, Subparts A and E) sets the floor for how you may use and share PHI. It carries the minimum-necessary principle, the Notice of Privacy Practices, and patient rights such as access to records. It applies to PHI in any form: paper, spoken, or electronic.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "The Security Rule" },
+          " (45 CFR Part 160 and Part 164, Subparts A and C) covers ePHI specifically. It asks for three kinds of safeguards (administrative, physical, and technical), all anchored by a written risk analysis. It is built to be flexible: you choose reasonable, appropriate measures for your size and setup, then document them.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "The Breach Notification Rule" },
+          " (Subpart D, sections 164.400 to 164.414) sets what you must do after an impermissible exposure of unsecured PHI. You notify affected patients, notify HHS, and in larger breaches notify the media, each on a defined clock.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "The Enforcement Rule" },
+          " (Part 160, Subparts C, D, and E) is how OCR runs investigations and sets civil penalties. A breach is the point where these rules meet. It is an impermissible Privacy-Rule disclosure of unsecured PHI, which starts the Breach Notification clock and can draw an Enforcement-Rule penalty when the underlying Security-Rule safeguards were missing.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "One more piece sits on the horizon. HHS has proposed a major Security Rule overhaul that would tighten almost every technical safeguard. It is a proposed rule, not law. We cover where it stands and what it would change in the ",
+          { text: "2026 Security Rule guide", href: "/articles/2026-hipaa-security-rule-update-dental-practice" },
+          ".",
+        ],
+      },
+      { type: "h2", text: "Find your situation", id: "find-your-situation" },
+      {
+        type: "p",
+        runs: [
+          "Most HIPAA questions are really one question: which rule covers this, and what do I do about it? Find the situation closest to yours below, then open the guide that goes deep on it. Each guide is anchored to a real OCR case, so you can see how the rule plays out, not only what it says.",
+        ],
+      },
+      { type: "h3", text: "Your security setup and risk" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "Do I need a security risk assessment? " },
+            "The foundation of the Security Rule. ",
+            { text: "Read the dental risk-assessment guide", href: "/articles/do-dental-practices-need-hipaa-risk-assessment" },
+          ],
+          [
+            { strong: "What does a risk assessment cost? " },
+            "Security Rule, budget side. ",
+            { text: "See what a risk assessment costs", href: "/articles/how-much-does-a-hipaa-risk-assessment-cost-for-a-dental-practice" },
+          ],
+          [
+            { strong: "Is my email compliant and encrypted? " },
+            "Security Rule, transmission. ",
+            { text: "How HIPAA treats email", href: "/articles/is-email-hipaa-compliant-dental-practice" },
+          ],
+          [
+            { strong: "Does HIPAA require multi-factor authentication? " },
+            "Security Rule, authentication. ",
+            { text: "The MFA explainer", href: "/articles/does-hipaa-require-mfa-dental-practice" },
+          ],
+          [
+            { strong: "Is the 2026 Security Rule in effect, and does HIPAA require encryption? " },
+            "Security Rule, proposed. ",
+            { text: "Where the 2026 rule stands", href: "/articles/2026-hipaa-security-rule-update-dental-practice" },
+          ],
+        ],
+      },
+      { type: "h3", text: "Vendors, AI, and the tools you use" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "Do I need a BAA with my software or IT vendor? " },
+            "Privacy and Security Rules. ",
+            { text: "The BAA guide", href: "/articles/does-my-dental-practice-need-a-baa" },
+          ],
+          [
+            { strong: "Can I use ChatGPT with patient information? " },
+            "Privacy and Security. ",
+            { text: "ChatGPT and patient data", href: "/articles/is-chatgpt-hipaa-compliant-dental-practice" },
+          ],
+          [
+            { strong: "Are AI scribes and note-takers compliant? " },
+            "Privacy and Security. ",
+            { text: "AI scribes and HIPAA", href: "/articles/are-ai-scribes-hipaa-compliant-dental-practice" },
+          ],
+          [
+            { strong: "Are my staff pasting patient data into free AI tools? " },
+            "Workforce policy. ",
+            { text: "Free AI tools: the staff policy", href: "/articles/staff-free-ai-tools-patient-data-dental-policy" },
+          ],
+          [
+            { strong: "Is the Meta Pixel or Google Analytics on my site a problem? " },
+            "Privacy Rule, online tracking. ",
+            { text: "Tracking pixels on your site", href: "/articles/are-tracking-pixels-hipaa-compliant-dental-practice" },
+          ],
+        ],
+      },
+      { type: "h3", text: "Patient requests and their records" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "A patient asked for their records. " },
+            "Privacy Rule, the Right of Access. ",
+            { text: "Handling a records request", href: "/articles/how-to-handle-a-patient-records-request-dental-practice" },
+          ],
+          [
+            { strong: "Can a parent get their child's records? " },
+            "Privacy Rule, personal representatives. ",
+            { text: "Parental access to a child's records", href: "/articles/parental-access-to-a-childs-dental-records" },
+          ],
+          [
+            { strong: "Who can get a deceased patient's records? " },
+            "Privacy Rule. ",
+            { text: "A deceased patient's records", href: "/articles/deceased-patient-dental-records-hipaa" },
+          ],
+          [
+            { strong: "Can I post patient photos or reply to a review? " },
+            "Privacy Rule. ",
+            { text: "Social media and patient photos", href: "/articles/hipaa-social-media-rules-dental-practice" },
+          ],
+          [
+            { strong: "Can I text appointment reminders? " },
+            "Privacy Rule plus a separate law, the TCPA. ",
+            { text: "Texting patients", href: "/articles/hipaa-text-messaging-dental-practice" },
+          ],
+          [
+            { strong: "How long do I keep records, and how do I dispose of them? " },
+            "Privacy and Security Rules. ",
+            { text: "Keeping and disposing of records", href: "/articles/how-long-to-keep-dental-records" },
+          ],
+          [
+            { strong: "I got a subpoena or a court order for records. " },
+            "Privacy Rule. ",
+            { text: "Subpoenas and court orders", href: "/articles/dental-practice-subpoena-for-patient-records-hipaa" },
+          ],
+        ],
+      },
+      { type: "h3", text: "When something goes wrong" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "We had a data breach. What now? " },
+            "Breach Notification Rule. ",
+            { text: "Breach response, step by step", href: "/articles/dental-data-breach-response" },
+          ],
+          [
+            { strong: "We got hit by ransomware. Is it a breach? " },
+            "Breach and Security Rules. ",
+            { text: "Ransomware response", href: "/articles/dental-practice-ransomware-attack-hipaa" },
+          ],
+          [
+            { strong: "What happens in an OCR investigation or a failed audit? " },
+            "Enforcement Rule. ",
+            { text: "Inside an OCR investigation", href: "/articles/what-happens-if-dental-practice-fails-hipaa-audit" },
+          ],
+          [
+            { strong: "Do I need cyber insurance? " },
+            "Risk transfer. ",
+            { text: "Cyber insurance for a dental practice", href: "/articles/dental-practice-cyber-insurance" },
+          ],
+        ],
+      },
+      { type: "h3", text: "Staff access and cost" },
+      {
+        type: "ul",
+        items: [
+          [
+            { strong: "Who should have access, how do I offboard staff, and can staff get in trouble for snooping? " },
+            "Privacy and Security Rules. ",
+            { text: "Staff access and offboarding", href: "/articles/hipaa-staff-access-offboarding-dental-practice" },
+          ],
+          [
+            { strong: "What does full HIPAA compliance cost? " },
+            "Program cost. ",
+            { text: "The full cost breakdown", href: "/articles/how-much-does-hipaa-compliance-cost-for-a-dental-practice" },
+          ],
+        ],
+      },
+      {
+        type: "h2",
+        text: "What are your patients' rights under the Privacy Rule?",
+        id: "privacy-rule",
+      },
+      {
+        type: "p",
+        runs: [
+          "The Privacy Rule governs how a dental practice may use and disclose PHI, and what patients can demand. Two ideas run through it. Share only the minimum necessary for the task at hand, and give patients defined rights over their own records. It applies to PHI in every form, not only the electronic kind.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Every covered dental practice must have a Notice of Privacy Practices" },
+          " (45 CFR 164.520). This is the plain-language document that tells patients how you use their information and what rights they have. You give it to each patient at the first visit, make a good-faith effort to get a written acknowledgment, and post it where patients can see it, including on your website if you have one. It is a baseline obligation, not a formality you can skip.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "The minimum-necessary standard" },
+          " (45 CFR 164.502(b)) means you limit PHI to what the specific job requires. The front desk does not need a patient's full clinical history to confirm an appointment. Note the word \"necessary.\" Treatment is a recognized exception, so a dentist pulling a chart to treat the patient is not barred. The principle is about restraint, not about locking clinicians out of records they need.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Patients also have rights you must honor on a clock. The biggest is the ",
+          { strong: "right of access" },
+          ": a patient can ask for a copy of their records, and you generally have 30 days to provide it, with one 30-day extension allowed if you notify the patient in writing. It is also the focus of OCR's Right of Access Initiative, the highest-volume category of HIPAA enforcement, so it is worth getting right. The steps are in the ",
+          { text: "records-request guide", href: "/articles/how-to-handle-a-patient-records-request-dental-practice" },
+          ". Patients can also ask you to amend a record they believe is wrong and request an accounting of certain disclosures. Specific situations carry their own rules: a parent asking for a child's file, a review reply that names a patient, a subpoena, a deceased patient's records. The map above points you to the right guide for each one.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "How do you keep patient data secure under the Security Rule?",
+        id: "security-rule",
+      },
+      {
+        type: "p",
+        runs: [
+          "The Security Rule protects ePHI through three kinds of safeguards: administrative, physical, and technical. Underneath all of them sits one requirement that everything else depends on, an accurate and thorough written risk analysis. The rule is deliberately flexible, but flexible does not mean optional. You assess your risks, then put reasonable, appropriate controls in place and document them.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "The three safeguard types. " },
+          "Administrative safeguards (45 CFR 164.308) are the policies, the risk analysis, the training, and the assignment of responsibility. Physical safeguards (164.310) cover the building and the hardware: who can walk up to a workstation, how devices and media are handled, how old equipment is destroyed. Technical safeguards (164.312) are the controls inside the software: access limits, audit logs, and authentication.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "The risk analysis is the foundation, and by a wide margin the most-cited failure in enforcement. " },
+          "It is a Required specification (164.308(a)(1)(ii)(A)), which means you must do it. There is no \"document why not\" escape for this one. It is an honest inventory of where ePHI lives and what could go wrong, refreshed as your practice changes. If you do one thing this quarter, do this. The ",
+          { text: "risk-assessment guide", href: "/articles/do-dental-practices-need-hipaa-risk-assessment" },
+          " walks through what it involves.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Train your team. " },
+          "Both the Privacy Rule (164.530(b)) and the Security Rule (164.308(a)(5)) require workforce training, and OCR expects it to be real and periodic, not a binder nobody opens.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Name your officers. " },
+          "You must designate a Privacy Official (164.530(a)) and assign responsibility for security (164.308(a)(2)). In a solo practice this is often one person, sometimes the owner. The point is accountability: a named person owns each side.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          { strong: "Lock down the physical layer. " },
+          "Turn screens away from the waiting room, log off shared workstations, control who holds keys and badges, and dispose of old records and devices so PHI cannot be recovered. Improper disposal is its own violation. How long to keep records and how to destroy them is its own topic, mapped above.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Here is the part practices get confused by, and the part AI assistants get wrong. The Security Rule labels each implementation specification ",
+          { strong: "Required" },
+          " or ",
+          { strong: "Addressable" },
+          " (164.306(d)). Required means do it. Addressable does not mean optional. It means assess it, implement it if it is reasonable and appropriate, or document why not and put an equivalent measure in place. Two specifics matter because they are so often misstated. ",
+          { strong: "Encryption of ePHI is Addressable today" },
+          " (164.312(a)(2)(iv) and (e)(2)(ii)). ",
+          { strong: "Multi-factor authentication is not named at all." },
+          " The rule sets an authentication goal (164.312(d): verify that a person seeking access is who they claim) and your risk analysis picks the method. The ",
+          { text: "MFA guide", href: "/articles/does-hipaa-require-mfa-dental-practice" },
+          " explains why \"not required by name\" is not the same as \"safe to skip.\"",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Control", "Status under today's Security Rule", "Where it lives"],
+        rows: [
+          ["Risk analysis", "Required", "164.308(a)(1)(ii)(A)"],
+          ["Unique user ID per person", "Required", "164.312(a)(2)(i)"],
+          ["Encryption of ePHI (at rest and in transit)", "Addressable", "164.312(a)(2)(iv), (e)(2)(ii)"],
+          ["Multi-factor authentication", "Not named (an authentication goal is set)", "164.312(d)"],
+          ["Automatic logoff", "Addressable", "164.312(a)(2)(iii)"],
+        ],
+        caption:
+          "How today's Security Rule treats five controls dentists ask about most. \"Addressable\" means assess-and-justify, not optional.",
+      },
+      {
+        type: "p",
+        runs: [
+          "The proposed 2026 rule would change much of this. It would make encryption a standalone requirement, mandate MFA, and remove the Required-versus-Addressable distinction. It is proposed, not law. The detail is in the ",
+          { text: "2026 Security Rule guide", href: "/articles/2026-hipaa-security-rule-update-dental-practice" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "If you want a fast read on where your own practice stands, our free Scorecard checks the ten core Security Rule controls OCR cites most and shows whether the broader HIPAA foundation is in order. ",
+          { text: "Check my practice", href: "/scorecard" },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What happens when something goes wrong?",
+        id: "breach-and-enforcement",
+      },
+      {
+        type: "p",
+        runs: [
+          "When unsecured PHI is exposed in a way the rules do not permit, it is presumed to be a breach. You can rebut that presumption only with a documented four-factor assessment (164.402) showing a low probability that the information was compromised. Ransomware that encrypts ePHI is treated as a presumed breach. Encryption acts as a safe harbor only if the data was already unreadable when the incident happened.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "The four factors are the nature and extent of the PHI involved, who the unauthorized person was, whether the information was actually acquired or viewed, and how far the risk has been mitigated. The instinct after an incident is to restore from backup and move on, but restoring data does not end the duty to assess and, where required, to notify. Breach response, ransomware specifics, and whether cyber insurance fits your practice each have a dedicated guide in the map above.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "Step back from any single rule and a pattern shows up in the enforcement record. Across OCR's enforcement actions, one failure is cited more than any other: the missing or inadequate risk analysis. That is also OCR's own emphasis. It runs a Risk Analysis Initiative built around exactly this gap, and independent reviews of OCR's recent Security Rule settlements reach the same conclusion. (An analysis by the law firm Shook, Hardy & Bacon of OCR's enforcement set found inadequate risk analysis in 13 of the 20 matters it examined.) A second pattern is about volume rather than theme. OCR's Right of Access Initiative, which targets practices that do not give patients their own records on time, is the highest-volume enforcement initiative, with more than 45 enforcement actions to date. We document these cases in depth, each anchored to its own OCR settlement, and the ",
+          { text: "records-request guide", href: "/articles/how-to-handle-a-patient-records-request-dental-practice" },
+          " covers the access rules. Both patterns are real, and neither means OCR cares about only one thing. They point to the same lesson: the unglamorous groundwork, done and documented, is what enforcement rewards.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "For the underlying numbers, which dental and healthcare breaches happened, what they cost, and what the settlements actually said, see our ",
+          { text: "Dental HIPAA Breach and Enforcement Report", href: "/articles/dental-hipaa-breach-and-enforcement-report" },
+          ", built from HHS and OCR public data.",
+        ],
+      },
+      { type: "h2", text: "What does HIPAA compliance cost?", id: "what-it-costs" },
+      {
+        type: "p",
+        runs: [
+          "There are two costs, and mixing them up leads to bad budgeting. The first is the risk analysis, a one-time or periodic assessment of where you stand. The second is the ongoing program: the training, the tools, the policies, and the periodic re-assessment that keep you compliant year to year. They are priced differently and bought at different times.",
+        ],
+      },
+      {
+        type: "p",
+        runs: [
+          "We keep the actual dollar ranges in the guides that focus on them, because the numbers move with your size and setup. For what a risk assessment runs, see the ",
+          { text: "risk-assessment cost guide", href: "/articles/how-much-does-a-hipaa-risk-assessment-cost-for-a-dental-practice" },
+          ". For what a full compliance program costs across a year, see the ",
+          { text: "full cost breakdown", href: "/articles/how-much-does-hipaa-compliance-cost-for-a-dental-practice" },
+          ".",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Is a dental practice a covered entity under HIPAA?",
+        answer:
+          "Almost always, yes. A dental practice becomes a covered entity once it transmits health information electronically for a standard transaction, such as filing an insurance claim or checking a patient's eligibility. Nearly every practice that bills insurance electronically meets that test.",
+      },
+      {
+        question: "Do small or solo dental practices have to comply with HIPAA?",
+        answer:
+          "Yes. There is no size exemption. A one-dentist office and a large group practice answer to the same rules. When HHS proposed the 2026 Security Rule overhaul, it considered the burden on small and rural providers and declined to exempt them.",
+      },
+      {
+        question: "What is the most common HIPAA violation in a dental office?",
+        answer:
+          "By theme, the most-cited failure in OCR enforcement is the missing or inadequate risk analysis, which is also the gap OCR's Risk Analysis Initiative targets. By volume, the most frequent enforcement category is the Right of Access: OCR's Right of Access Initiative has brought more than 45 enforcement actions, almost all over a practice not giving patients their own records on time.",
+      },
+      {
+        question: "Is the 2026 HIPAA Security Rule in effect?",
+        answer:
+          "No. As of mid-2026, the 2026 Security Rule overhaul is a proposed rule, not final law. HHS published the proposal in the Federal Register in January 2025 (90 FR 898), the comment period closed in March 2025, and a spring-2026 target passed with no final rule issued. Today's Security Rule still governs. We track it in the 2026 Security Rule guide.",
+      },
+      {
+        question: "Does my dental practice need a Notice of Privacy Practices?",
+        answer:
+          "Yes. Every covered dental practice must maintain a Notice of Privacy Practices (45 CFR 164.520), give it to patients at the first visit, and post it. It explains how you use patient information and what rights patients have.",
+      },
+      {
+        question: "How do I find out where my own practice stands?",
+        answer:
+          "The fastest read is our free HIPAA Scorecard. It checks the ten core Security Rule controls OCR cites most and shows whether the broader HIPAA foundation is in order. It does not replace a full risk analysis, but it surfaces the obvious gaps in a few minutes. Check my practice.",
       },
     ],
   },
