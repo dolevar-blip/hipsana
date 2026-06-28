@@ -10064,7 +10064,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "Step back from any single rule and a pattern shows up in the enforcement record. Across OCR's enforcement actions, one failure is cited more than any other: the missing or inadequate risk analysis. That is also OCR's own emphasis. It runs a Risk Analysis Initiative built around exactly this gap, and independent reviews of OCR's recent Security Rule settlements reach the same conclusion. (An analysis by the law firm Shook, Hardy & Bacon of OCR's enforcement set found inadequate risk analysis in 13 of the 20 matters it examined.) A second pattern is about volume rather than theme. OCR's Right of Access Initiative, which targets practices that do not give patients their own records on time, is the highest-volume enforcement initiative, with more than 45 enforcement actions to date. We document these cases in depth, each anchored to its own OCR settlement, and the ",
+          "Step back from any single rule and a pattern shows up in the enforcement record. Across OCR's enforcement actions, one failure is cited more than any other: the missing or inadequate risk analysis. That is also OCR's own emphasis. It runs a Risk Analysis Initiative built around exactly this gap, and independent reviews of OCR's recent Security Rule settlements reach the same conclusion. (An analysis by the law firm Shook, Hardy & Bacon of OCR's enforcement set found inadequate risk analysis in 13 of the 20 matters it examined.) A second pattern is about volume rather than theme. OCR's Right of Access Initiative, which targets practices that do not give patients their own records on time, is the highest-volume enforcement initiative, with more than 50 enforcement actions to date. We document these cases in depth, each anchored to its own OCR settlement, and the ",
           { text: "records-request guide", href: "/articles/how-to-handle-a-patient-records-request-dental-practice" },
           " covers the access rules. Both patterns are real, and neither means OCR cares about only one thing. They point to the same lesson: the unglamorous groundwork, done and documented, is what enforcement rewards.",
         ],
@@ -10109,7 +10109,7 @@ export const articles: Article[] = [
       {
         question: "What is the most common HIPAA violation in a dental office?",
         answer:
-          "By theme, the most-cited failure in OCR enforcement is the missing or inadequate risk analysis, which is also the gap OCR's Risk Analysis Initiative targets. By volume, the most frequent enforcement category is the Right of Access: OCR's Right of Access Initiative has brought more than 45 enforcement actions, almost all over a practice not giving patients their own records on time.",
+          "By theme, the most-cited failure in OCR enforcement is the missing or inadequate risk analysis, which is also the gap OCR's Risk Analysis Initiative targets. By volume, the most frequent enforcement category is the Right of Access: OCR's Right of Access Initiative has brought more than 50 enforcement actions, almost all over a practice not giving patients their own records on time.",
       },
       {
         question: "Is the 2026 HIPAA Security Rule in effect?",
