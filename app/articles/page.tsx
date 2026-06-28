@@ -49,10 +49,11 @@ export const metadata: Metadata = {
 
 export default function ArticlesIndexPage() {
   const articles = getPublishedArticles();
-  // Pin reports to the top of the index; every other article keeps its existing order.
+  // Pin the pillar first, then the report, then every other article in its existing order.
   const ordered = [
+    ...articles.filter((a) => a.kind === "pillar"),
     ...articles.filter((a) => a.kind === "report"),
-    ...articles.filter((a) => a.kind !== "report"),
+    ...articles.filter((a) => a.kind !== "report" && a.kind !== "pillar"),
   ];
 
   return (
@@ -80,6 +81,11 @@ export default function ArticlesIndexPage() {
                   href={`/articles/${article.slug}`}
                   className="group block py-7"
                 >
+                  {article.kind === "pillar" && (
+                    <span className="mb-2 inline-block rounded bg-teal-subtle px-2 py-0.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-teal">
+                      Start here
+                    </span>
+                  )}
                   {article.kind === "report" && (
                     <span className="mb-2 inline-block rounded bg-teal-subtle px-2 py-0.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-teal">
                       Report
