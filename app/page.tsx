@@ -93,6 +93,16 @@ export default function HomePage() {
               built on a real OCR case sourced to HHS or NIST.
             </p>
 
+            <p className="mt-6 text-[17px] leading-relaxed text-muted">
+              New here? Start with our{" "}
+              <Link
+                href="/articles/hipaa-compliance-for-dental-practices"
+                className="text-teal underline decoration-teal/30 underline-offset-2 hover:decoration-teal"
+              >
+                complete guide to dental HIPAA compliance &rarr;
+              </Link>
+            </p>
+
             <ul className="mt-10 space-y-6">
               <li>
                 <Link
