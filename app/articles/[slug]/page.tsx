@@ -104,7 +104,7 @@ function renderRuns(runs: InlineRun[]) {
 function renderBlock(block: Block, i: number) {
   switch (block.type) {
     case "h2":
-      return <h2 key={i}>{block.text}</h2>;
+      return <h2 key={i} id={block.id}>{block.text}</h2>;
     case "h3":
       return <h3 key={i}>{block.text}</h3>;
     case "p":
@@ -231,7 +231,7 @@ function articleJsonLd(article: Article) {
   const image = getArticleImage(article);
   return {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": article.kind === "pillar" ? "Article" : "BlogPosting",
     headline: article.title,
     description: article.description,
     ...(image ? { image: [`${SITE_URL}${image.src}`] } : {}),
@@ -395,7 +395,7 @@ export default function ArticlePage({
 
         {hasFaq && (
           <section className="mt-16">
-            <h2 className="font-display text-2xl tracking-tight md:text-3xl">
+            <h2 id="faq" className="font-display text-2xl tracking-tight md:text-3xl">
               Frequently asked questions
             </h2>
             <div className="mt-8">
