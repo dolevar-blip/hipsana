@@ -66,6 +66,11 @@ export default function ScorecardPage() {
             In about three minutes you get a score out of 100 and a written review
             of what to fix.
           </p>
+          <p className="mt-6 text-sm text-muted">
+            This is an educational self-assessment based only on your answers, not
+            an audit or legal advice, and a high score doesn&rsquo;t mean your
+            practice is compliant.
+          </p>
         </div>
 
         <div className="mt-12 max-w-prose">
