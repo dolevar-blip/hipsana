@@ -33,7 +33,7 @@ export default function PrivacyPage() {
           What we collect, and who we share it with.
         </h1>
 
-        <p className="mt-6 text-sm text-muted">Last updated: June 19, 2026</p>
+        <p className="mt-6 text-sm text-muted">Last updated: June 29, 2026</p>
 
         <p className="mt-6 text-lg leading-relaxed text-muted">
           Hipsana (&ldquo;we,&rdquo; &ldquo;us&rdquo;) publishes educational
