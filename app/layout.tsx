@@ -67,7 +67,12 @@ const siteJsonLd = {
       "@id": "https://hipsana.com/#organization",
       name: "Hipsana",
       url: "https://hipsana.com",
-      logo: "https://hipsana.com/logo.png",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://hipsana.com/logo.png",
+        width: 1024,
+        height: 1024,
+      },
       description:
         "HIPAA guidance and a free Security Scorecard for independent dental practices. Regulatory claims trace to primary sources, and every source is named.",
       founder: { "@type": "Person", name: "Dolev Arama" },
