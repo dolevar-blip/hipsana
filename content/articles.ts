@@ -7544,7 +7544,7 @@ export const articles: Article[] = [
       "A subpoena arrives for a patient's dental records. HIPAA says when you must comply, when you can't, and how one practice's mistake cost $853,000.",
     author: "Dolev Arama",
     datePublished: "2026-06-26T00:00:00+03:00",
-    dateModified: "2026-06-27T00:00:00+03:00",
+    dateModified: "2026-06-29T00:00:00+03:00",
     body: [
       {
         type: "p",
@@ -7849,7 +7849,7 @@ export const articles: Article[] = [
         runs: [
           "Handling a subpoena well is one piece of HIPAA compliance, and the gaps that draw OCR's largest fines usually sit elsewhere, in the security controls underneath. The free ",
           { text: "HIPAA Scorecard", href: "/scorecard" },
-          " checks the ten core Security Rule controls OCR cites most, like your risk analysis, your vendor agreements, and your breach-response plan, then scores your practice and names your biggest gap in about three minutes. It is a starting point, not a full audit, but it is the fastest way to see whether the rest of your compliance is on solid ground. If you want the broader picture, the related guide on ",
+          " checks ten core Security Rule controls that line up with the issues OCR raises most, like your risk analysis, your vendor agreements, and your breach-response plan, then scores your practice and names your biggest gap in about three minutes. It is a starting point, not a full audit, but it is the fastest way to see whether the rest of your compliance is on solid ground. If you want the broader picture, the related guide on ",
           {
             text: "handling a patient's own records request",
             href: "/articles/how-to-handle-a-patient-records-request-dental-practice",
@@ -9636,7 +9636,7 @@ export const articles: Article[] = [
       "What HIPAA requires of a dental practice: the four rules in plain language, plus a map from your situation to the guide that covers it. Primary-source cited.",
     author: "Dolev Arama",
     datePublished: "2026-06-28T12:00:00+03:00",
-    dateModified: "2026-06-28T12:00:00+03:00",
+    dateModified: "2026-06-29T12:00:00+03:00",
     body: [
       {
         type: "p",
@@ -10039,7 +10039,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "If you want a fast read on where your own practice stands, our free Scorecard checks the ten core Security Rule controls OCR cites most and shows whether the broader HIPAA foundation is in order. ",
+          "If you want a fast read on where your own practice stands, our free Scorecard checks ten core Security Rule controls that line up with the issues OCR raises most and shows whether the broader HIPAA foundation is in order. ",
           { text: "Check my practice", href: "/scorecard" },
           ".",
         ],
@@ -10124,7 +10124,7 @@ export const articles: Article[] = [
       {
         question: "How do I find out where my own practice stands?",
         answer:
-          "The fastest read is our free HIPAA Scorecard. It checks the ten core Security Rule controls OCR cites most and shows whether the broader HIPAA foundation is in order. It does not replace a full risk analysis, but it surfaces the obvious gaps in a few minutes. Check my practice.",
+          "The fastest read is our free HIPAA Scorecard. It checks ten core Security Rule controls that line up with the issues OCR raises most and shows whether the broader HIPAA foundation is in order. It does not replace a full risk analysis, but it surfaces the obvious gaps in a few minutes. Check my practice.",
       },
     ],
   },
