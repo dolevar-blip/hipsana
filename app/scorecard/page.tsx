@@ -64,7 +64,7 @@ export default function ScorecardPage() {
           </p>
           <p className="prose-hipsana mt-6">
             In about three minutes you get a score out of 100 and a written review
-            of what to fix.
+            of your biggest gaps.
           </p>
           <p className="mt-6 text-sm text-muted">
             This is an educational self-assessment based only on your answers, not
