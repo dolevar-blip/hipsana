@@ -78,7 +78,9 @@ export default function ScorecardPage() {
         </div>
 
         <p className="mt-6 max-w-prose text-sm text-muted">
-          We use your answers to prepare your review.
+          We use your answers to prepare your review. The Scorecard asks only
+          about your practice&rsquo;s security setup, so there&rsquo;s no need to
+          enter patient names, records, or any other patient information.
         </p>
 
         <p className="mt-3 max-w-prose text-sm text-muted">
