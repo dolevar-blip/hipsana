@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/scorecard`,
-      lastModified,
+      lastModified: "2026-06-29",
       changeFrequency: "monthly",
       priority: 0.9,
     },
