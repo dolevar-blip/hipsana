@@ -83,8 +83,8 @@ export default function PrivacyPage() {
           </li>
           <li>Schedule and hold your free risk review.</li>
           <li>
-            Connect you with a specialist partner who conducts the review
-            (see below).
+            Connect you with a specialist partner, but only if a referral
+            makes sense after your review (see below).
           </li>
           <li>Respond to your messages.</li>
           <li>Understand how the site is used so we can improve it.</li>
@@ -92,10 +92,12 @@ export default function PrivacyPage() {
 
         <h2>Who we share it with</h2>
         <p>
-          To deliver the free review, we share your details with one
-          specialist partner who carries out the assessment and may follow up
-          with you. We share your information with that one partner only. We do
-          not sell or rent it to data brokers, hand it to multiple companies, or share it for unrelated advertising.
+          We conduct your free review ourselves. Your Scorecard answers come to
+          us, and we do not automatically send them to any other company. If a
+          referral makes sense after that review, we share your details with one
+          specialist partner, and only that one, so they can help you. We do not
+          sell or rent your information to data brokers, hand it to multiple
+          companies, or share it for unrelated advertising.
         </p>
         <p>
           We may also share information with the service providers that run our
