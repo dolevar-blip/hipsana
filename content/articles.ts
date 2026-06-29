@@ -1187,7 +1187,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "If a colleague's breach is what brought you here, the honest next step is to find out whether your own practice would hold up, which is exactly what ",
+          "If a colleague's breach is what brought you here, the honest next step is to find out where your own practice is exposed, which is exactly what ",
           { text: "the Scorecard", href: "/scorecard" },
           " is built to show you before a regulator ever asks. And if you want to understand what a federal investigation involves before you ever face one, we walk through it in ",
           { text: "what happens when a dental practice fails a HIPAA audit", href: "/articles/what-happens-if-dental-practice-fails-hipaa-audit" },
@@ -4132,7 +4132,7 @@ export const articles: Article[] = [
         runs: [
           {
             strong:
-              "Most independent practices carry gaps they can't see from the inside. The free HIPAA Risk Scorecard checks the areas OCR most commonly cites, including whether your records-request process would hold up, then sends you a short written review and an introduction to a specialist if a referral makes sense. It takes about three minutes. ",
+              "Most independent practices carry gaps they can't see from the inside. The free HIPAA Risk Scorecard checks the areas OCR most commonly cites, including your risk analysis and vendor agreements, then sends you a short written review and an introduction to a specialist if a referral makes sense. It takes about three minutes. ",
           },
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
@@ -4753,7 +4753,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "If you are not sure where your current gaps are, the free HIPAA Scorecard checks your practice against the controls OCR actually enforces, including the marketing and disclosure points behind every case above. It takes a few minutes and ends with a short, no-pressure expert review. ",
+          "If you are not sure where your current gaps are, the free HIPAA Scorecard checks your practice against the security controls OCR most commonly cites. It takes a few minutes and ends with a short, no-pressure expert review. ",
           { text: "Check my practice \u2192", href: "/scorecard" },
         ],
       },
@@ -7849,7 +7849,7 @@ export const articles: Article[] = [
         runs: [
           "Handling a subpoena well is one piece of HIPAA compliance, and the gaps that draw OCR's largest fines usually sit elsewhere, in the security controls underneath. The free ",
           { text: "HIPAA Scorecard", href: "/scorecard" },
-          " checks ten core Security Rule controls that line up with the issues OCR raises most, like your risk analysis, your vendor agreements, and your breach-response plan, then scores your practice and names your biggest gap in about three minutes. It is a starting point, not a full audit, but it is the fastest way to see whether the rest of your compliance is on solid ground. If you want the broader picture, the related guide on ",
+          " checks ten core Security Rule controls that line up with the issues OCR raises most, like your risk analysis, your vendor agreements, and your breach-response plan, then scores your practice and names your biggest gap in about three minutes. It is a starting point, not a full audit, but it is the fastest way to find where those underlying controls leave you exposed. If you want the broader picture, the related guide on ",
           {
             text: "handling a patient's own records request",
             href: "/articles/how-to-handle-a-patient-records-request-dental-practice",
@@ -8636,7 +8636,7 @@ export const articles: Article[] = [
             text: "vendor agreements",
             href: "/articles/does-my-dental-practice-need-a-baa",
           },
-          ", then scores your practice and names your biggest gap in about three minutes. It does not check how you handle a deceased patient's records, but it shows whether your broader HIPAA foundation is in order.",
+          ", then scores your practice and names your biggest gap in about three minutes. It does not check how you handle a deceased patient's records, but it shows whether your broader HIPAA foundation is in place.",
         ],
       },
 
@@ -10039,7 +10039,7 @@ export const articles: Article[] = [
       {
         type: "p",
         runs: [
-          "If you want a fast read on where your own practice stands, our free Scorecard checks ten core Security Rule controls that line up with the issues OCR raises most and shows whether the broader HIPAA foundation is in order. ",
+          "If you want a fast read on where your own practice stands, our free Scorecard checks ten core Security Rule controls that line up with the issues OCR raises most and shows whether the broader HIPAA foundation is in place. ",
           { text: "Check my practice", href: "/scorecard" },
           ".",
         ],
@@ -10124,7 +10124,7 @@ export const articles: Article[] = [
       {
         question: "How do I find out where my own practice stands?",
         answer:
-          "The fastest read is our free HIPAA Scorecard. It checks ten core Security Rule controls that line up with the issues OCR raises most and shows whether the broader HIPAA foundation is in order. It does not replace a full risk analysis, but it surfaces the obvious gaps in a few minutes. Check my practice.",
+          "The fastest read is our free HIPAA Scorecard. It checks ten core Security Rule controls that line up with the issues OCR raises most and shows whether the broader HIPAA foundation is in place. It does not replace a full risk analysis, but it surfaces the obvious gaps in a few minutes. Check my practice.",
       },
     ],
   },
