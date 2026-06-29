@@ -127,21 +127,39 @@ export default function ScorecardPage() {
             <p className="prose-hipsana mt-4">
               Each Scorecard answer adds up to a score out of 100. Two controls carry
               the most weight: a Business Associate Agreement and a Security Risk
-              Analysis. They count for 14 points each; the other eight controls count
-              for 9 points each.
+              Analysis. The other eight controls are weighted evenly.
             </p>
             <p className="prose-hipsana mt-4">
               These two weigh more because each one, on its own, has repeatedly drawn
               HIPAA enforcement. The HHS Office for Civil Rights (OCR) names a missing
-              or inadequate risk analysis as the most common Security Rule violation
-              it finds. A single missing Business Associate Agreement led to a
-              $750,000 OCR settlement (Raleigh Orthopaedic Clinic).
+              or inadequate{" "}
+              <a
+                href="https://www.hhs.gov/hipaa/for-professionals/security/guidance/guidance-risk-analysis/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-teal underline decoration-teal/30 underline-offset-2 hover:decoration-teal"
+              >
+                risk analysis
+              </a>{" "}
+              as one of the most common Security Rule violations it finds. A single
+              missing Business Associate Agreement led to a $750,000 OCR settlement (
+              <a
+                href="https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/raleigh-orthopaedic-clinic/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-teal underline decoration-teal/30 underline-offset-2 hover:decoration-teal"
+              >
+                Raleigh Orthopaedic Clinic
+              </a>
+              ).
             </p>
             <p className="prose-hipsana mt-4">
               The heavier weighting reflects how often these two gaps show up in real
-              enforcement, not a ranking of which HIPAA rules matter more. The
-              Scorecard measures your practice&rsquo;s risk exposure, not whether you
-              are legally compliant.
+              enforcement, not a ranking of which HIPAA rules matter more. This
+              weighting is our own way of helping you see your biggest gaps first; it
+              is not an official OCR scoring model and not a formal HIPAA risk
+              analysis. The Scorecard measures your practice&rsquo;s risk exposure,
+              not whether you are legally compliant.
             </p>
 
             <h3 className="mt-12 text-xl font-semibold">A sample review</h3>
@@ -157,7 +175,7 @@ export default function ScorecardPage() {
                 <span className="font-semibold text-ink">
                   Your biggest gap: no risk analysis in the last 12 months.
                 </span>{" "}
-                A HIPAA Security Risk Analysis is the failure OCR cites most often,
+                A HIPAA Security Risk Analysis is among the failures OCR cites most often,
                 and it is one of the first documents an investigator asks for. A
                 current one maps where patient data lives and what could expose it. If
                 you have never run one, that is the highest-value place to start.
