@@ -33,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/disclosure`,
-      lastModified,
+      lastModified: "2026-06-29",
       changeFrequency: "yearly",
       priority: 0.5,
     },
@@ -57,7 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/privacy`,
-      lastModified,
+      lastModified: "2026-06-29",
       changeFrequency: "yearly",
       priority: 0.3,
     },
