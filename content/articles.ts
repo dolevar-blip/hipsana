@@ -52,47 +52,6 @@ export type Article = {
 
 export const articles: Article[] = [
   {
-    slug: "infrastructure-check",
-    status: "draft",
-    title: "Article infrastructure check",
-    description:
-      "Internal placeholder used to verify the article route, FAQ schema, and dynamic sitemap. Not indexed.",
-    author: "Dolev Arama",
-    datePublished: "2026-06-02",
-    dateModified: "2026-06-02",
-    body: [
-      {
-        type: "p",
-        runs: [
-          "This page exists only to confirm the article system renders correctly: server-rendered text, a canonical tag, FAQ structured data, and a dynamic sitemap. It is marked ",
-          { strong: "draft" },
-          ", so it is set to noindex and kept out of the sitemap.",
-        ],
-      },
-      { type: "h2", text: "What this proves" },
-      {
-        type: "ul",
-        items: [
-          [{ strong: "Routing: " }, "the URL /articles/infrastructure-check resolves."],
-          [{ strong: "Server rendering: " }, "this text is present in the initial HTML."],
-          [{ strong: "Structured data: " }, "the FAQ below emits FAQPage JSON-LD."],
-        ],
-      },
-    ],
-    faq: [
-      {
-        question: "Is this a real article?",
-        answer:
-          "No. It is an internal placeholder for verifying the article infrastructure and is not indexed by search engines.",
-      },
-      {
-        question: "Where do real articles go?",
-        answer:
-          "Each real article is added to the articles array in content/articles.ts with status set to published.",
-      },
-    ],
-  },
-  {
     slug: "do-dental-practices-need-hipaa-risk-assessment",
     status: "published",
     title: "Do Dental Practices Need a HIPAA Risk Assessment? (2026)",
