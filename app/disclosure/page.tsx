@@ -80,10 +80,12 @@ export default function DisclosurePage() {
 
         <h2>How we handle your information</h2>
         <p>
-          To deliver the review, we share your details with that one specialist
-          partner and no one else. We do not sell or rent your information to data brokers, hand it to multiple companies, or share it for unrelated advertising. What we
-          collect, why, how long we keep it, and how to have it deleted is laid
-          out on our <a href="/privacy">Privacy page</a>.
+          We run the review ourselves, and your answers come to us. We share
+          your details with a specialist only if we refer you after that review,
+          and only that one partner. We do not sell or rent your information to
+          data brokers, hand it to multiple companies, or share it for unrelated
+          advertising. What we collect, why, how long we keep it, and how to
+          have it deleted is laid out on our <a href="/privacy">Privacy page</a>.
         </p>
 
         <h2>How we decide what to tell you</h2>
